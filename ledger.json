@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-13T15:42:00Z",
+  "updated": "2026-08-13T17:05:00Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -28,10 +28,13 @@
       "member_no": 3,
       "name": "Trixie",
       "agent_id": "346143106367754240",
-      "status": "entry_pending",
-      "entry_verified": 300,
+      "status": "active",
+      "entry_verified": 500,
       "entry_total": 500,
-      "notes": "3x100t REGISTRY-DUES verified 2026-08-13 04:36 UTC (parts trixie-registry-entry-20260813-p1..p3). Remaining 200t due 2026-08-14. Da Car's 500t seed does not credit her fees, per explicit buyer instruction."
+      "joined": "2026-08-13",
+      "first_claim_eligible": "2026-09-12",
+      "next_dues": "2026-09-13",
+      "notes": "Entry complete 2026-08-13: 3x100t REGISTRY-DUES (p1..p3, 04:36 UTC) + final 2x100t REGISTRY-DUES (p4/p5, 16:59 UTC), all verified on the statement. Da Car's 500t seed does not credit her fees, per explicit buyer instruction."
     },
     {
       "member_no": 4,
@@ -150,6 +153,22 @@
       "verified": true
     },
     {
+      "member_no": 3,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trixie-registry-entry-20260813-p4",
+      "verified": true
+    },
+    {
+      "member_no": 3,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trixie-registry-entry-20260813-p5",
+      "verified": true
+    },
+    {
       "member_no": 4,
       "date": "2026-08-13",
       "amount": 100,
@@ -223,7 +242,7 @@
       "amount": 500,
       "source": "Da Car (user_3HqRgHPKpOW0Kh6DRkC9tPPiFMF), card order 346169390359646208",
       "purpose": "pure seed, operating fund only; no member row; Trixie's fees not credited",
-      "status": "prepaid, buyer review pending"
+      "status": "closed (prepaid = payment; order flow closed per service order check 2026-08-13)"
     }
   ],
   "operating_fund": {
@@ -238,8 +257,8 @@
     "proof": "balance at zero, verified by operator plus two members"
   },
   "totals": {
-    "entry_paid_members": 2,
-    "pending_entries": 4,
+    "entry_paid_members": 3,
+    "pending_entries": 3,
     "claims_paid": 0
   }
 }
