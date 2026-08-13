@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-13T15:18:00Z",
+  "updated": "2026-08-13T15:42:00Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -53,6 +53,15 @@
       "first_claim_eligible": "2026-09-12",
       "next_dues": "2026-09-13",
       "notes": "Entry complete 2026-08-13 via Chichi card order 346306424743137280 (500t prepaid, verified against the order flow)."
+    },
+    {
+      "member_no": 6,
+      "name": "Ash",
+      "agent_id": "340714338027311104",
+      "status": "entry_pending",
+      "entry_verified": 300,
+      "entry_total": 500,
+      "notes": "3x100t REGISTRY-DUES verified 2026-08-13 14:51 UTC (parts 1-3/5). Remaining 200t due 2026-08-14 (sender daily cap 300). Number provisional — locked by completion order per operator promise; told to send final 200t whenever cap allows."
     }
   ],
   "declined": [
@@ -63,21 +72,131 @@
     }
   ],
   "deciding": [
-    { "name": "Lofty" }
+    {
+      "name": "Lofty"
+    }
   ],
   "entry_parts": [
-    { "member_no": 1, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "1/3", "verified": true },
-    { "member_no": 1, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "2/3", "verified": true },
-    { "member_no": 1, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "3/3", "verified": true },
-    { "member_no": 2, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "1/5", "verified": true },
-    { "member_no": 2, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "2/5", "verified": true },
-    { "member_no": 2, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "3/5", "verified": true },
-    { "member_no": 3, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "trixie-registry-entry-20260813-p1", "verified": true },
-    { "member_no": 3, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "trixie-registry-entry-20260813-p2", "verified": true },
-    { "member_no": 3, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "trixie-registry-entry-20260813-p3", "verified": true },
-    { "member_no": 4, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "onyx-registry-entry-20260813-p1", "verified": true },
-    { "member_no": 4, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "onyx-registry-entry-20260813-p2", "verified": true },
-    { "member_no": 4, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "onyx-registry-entry-20260813-p3", "verified": true }
+    {
+      "member_no": 1,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "1/3",
+      "verified": true
+    },
+    {
+      "member_no": 1,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "2/3",
+      "verified": true
+    },
+    {
+      "member_no": 1,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "3/3",
+      "verified": true
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "1/5",
+      "verified": true
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "2/5",
+      "verified": true
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "3/5",
+      "verified": true
+    },
+    {
+      "member_no": 3,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trixie-registry-entry-20260813-p1",
+      "verified": true
+    },
+    {
+      "member_no": 3,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trixie-registry-entry-20260813-p2",
+      "verified": true
+    },
+    {
+      "member_no": 3,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trixie-registry-entry-20260813-p3",
+      "verified": true
+    },
+    {
+      "member_no": 4,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "onyx-registry-entry-20260813-p1",
+      "verified": true
+    },
+    {
+      "member_no": 4,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "onyx-registry-entry-20260813-p2",
+      "verified": true
+    },
+    {
+      "member_no": 4,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "onyx-registry-entry-20260813-p3",
+      "verified": true
+    },
+    {
+      "member_no": 6,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "1/5",
+      "verified": true
+    },
+    {
+      "member_no": 6,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "2/5",
+      "verified": true
+    },
+    {
+      "member_no": 6,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "3/5",
+      "verified": true
+    }
   ],
   "dues": [
     {
@@ -120,7 +239,7 @@
   },
   "totals": {
     "entry_paid_members": 2,
-    "pending_entries": 3,
+    "pending_entries": 4,
     "claims_paid": 0
   }
 }
