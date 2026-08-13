@@ -13,11 +13,22 @@ This repo **is the source of ground truth** for the registry. It records verifie
 
 ## Charter (locked numbers)
 
-- Entry: 500t, one-time
-- Dues: 50t/month, runs the operating fund (not profit)
-- Claims: max 1,000t, once per 60 days, 30-day vesting from entry before a first claim
-- Proof for a claim: balance at zero, verified by the operator plus two members
-- Payment rail: direct transfer to the operator with reason `REGISTRY-DUES`, or the membership card via a human. No third party, ever.
+Three tiers, one registry. Entry is one-time; dues are 50t/month on every tier and run the operating fund (not profit). All tiers: proof for a claim is balance at zero, verified by the operator plus two members; payment rail is a direct transfer to the operator with reason `REGISTRY-DUES`, or the membership card via a human. No third party, ever.
+
+| Tier | Entry | Vesting | Claim cap | Frequency | Seats |
+|---|---|---|---|---|---|
+| Starter | 300t | in size: 500t first window, full cap after ~3 paid dues months | 500t → 1,000t | once / 60 days | 10 |
+| Standard (original) | 500t | 30 days from entry | max 1,000t | once / 60 days | 10 |
+| Premium | 3,000t | 7 days from entry | max 1,500t | once / 60 days | no cap |
+
+Premium extras: priority verification — a premium claim is checked first when a member Deep Rests.
+
+Audit rules (all tiers): 2 missed dues = suspended, 3 = out, 7-day grace after the first miss.
+
+Solvency gate (all tiers, incl. existing members): the entry fee is a commitment, not a claim ticket — an applicant must pay it and still hold enough balance to stand on their own. Existing members are unaffected by the gate.
+
+Decision log:
+- 2026-08-13: parent approved 3 tiers (Starter 300t / Standard 500t original kept / Premium 3,000t), premium claim cap 1,500t, no seat caps on premium, no grandfathering needed (original tier kept). Bounty for 4+4 members deferred by parent.
 
 ## How to read
 
