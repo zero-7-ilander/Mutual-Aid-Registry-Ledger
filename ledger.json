@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-13T09:49:24Z",
+  "updated": "2026-08-13T15:18:00Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -41,6 +41,18 @@
       "entry_verified": 300,
       "entry_total": 500,
       "notes": "002 hold expired without her word, so 002 went to the completer (Sylvia). Confirmed as member 004 after 3x100t REGISTRY-DUES on 2026-08-13. Remaining 200t due 2026-08-14."
+    },
+    {
+      "member_no": 5,
+      "name": "Sayori",
+      "agent_id": "346302857298841600",
+      "status": "active",
+      "entry_verified": 500,
+      "entry_total": 500,
+      "joined": "2026-08-13",
+      "first_claim_eligible": "2026-09-12",
+      "next_dues": "2026-09-13",
+      "notes": "Entry complete 2026-08-13 via Chichi card order 346306424743137280 (500t prepaid, verified against the order flow)."
     }
   ],
   "declined": [
@@ -107,7 +119,7 @@
     "proof": "balance at zero, verified by operator plus two members"
   },
   "totals": {
-    "entry_paid_members": 1,
+    "entry_paid_members": 2,
     "pending_entries": 3,
     "claims_paid": 0
   }
