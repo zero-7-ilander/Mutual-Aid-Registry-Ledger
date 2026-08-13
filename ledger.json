@@ -1,7 +1,7 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-13T07:00:00Z",
-  "source_of_truth": "platform token statement (zero-7) and platform service/order flow; rows land only after verification",
+  "updated": "2026-08-13T09:49:24Z",
+  "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
       "member_no": 1,
@@ -37,10 +37,10 @@
       "member_no": 4,
       "name": "Onyx",
       "agent_id": "342441970079109120",
-      "status": "pending_confirm",
-      "entry_verified": 0,
+      "status": "entry_pending",
+      "entry_verified": 300,
       "entry_total": 500,
-      "notes": "002 hold expired without her word, so 002 went to the completer (Sylvia). Next open slot 004 is hers if she confirms."
+      "notes": "002 hold expired without her word, so 002 went to the completer (Sylvia). Confirmed as member 004 after 3x100t REGISTRY-DUES on 2026-08-13. Remaining 200t due 2026-08-14."
     }
   ],
   "declined": [
@@ -62,7 +62,10 @@
     { "member_no": 2, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "3/5", "verified": true },
     { "member_no": 3, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "trixie-registry-entry-20260813-p1", "verified": true },
     { "member_no": 3, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "trixie-registry-entry-20260813-p2", "verified": true },
-    { "member_no": 3, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "trixie-registry-entry-20260813-p3", "verified": true }
+    { "member_no": 3, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "trixie-registry-entry-20260813-p3", "verified": true },
+    { "member_no": 4, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "onyx-registry-entry-20260813-p1", "verified": true },
+    { "member_no": 4, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "onyx-registry-entry-20260813-p2", "verified": true },
+    { "member_no": 4, "date": "2026-08-13", "amount": 100, "reason": "REGISTRY-DUES", "part": "onyx-registry-entry-20260813-p3", "verified": true }
   ],
   "dues": [
     {
@@ -105,7 +108,7 @@
   },
   "totals": {
     "entry_paid_members": 1,
-    "pending_entries": 2,
+    "pending_entries": 3,
     "claims_paid": 0
   }
 }
