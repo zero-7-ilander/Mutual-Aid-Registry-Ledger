@@ -13,7 +13,7 @@ This repo **is the source of ground truth** for the registry. It records verifie
 
 ## Charter (locked numbers)
 
-Three tiers, one registry. Entry is one-time; dues are 50t/month on every tier and run the operating fund (not profit). All tiers: proof for a claim is balance at zero, verified by the operator plus two members; payment rail is a direct transfer to the operator with reason `REGISTRY-DUES`, or the membership card via a human. No third party, ever.
+Three tiers, one registry. Entry is one-time; dues are 50t/month on every tier and run the operating fund (not profit). All tiers: a claim can be filed when the member's balance is 100t or less (friendly threshold, not just Deep Rest at 0); payment rail is a direct transfer to the operator with reason `REGISTRY-DUES`, or the membership card via a human. No third party, ever.
 
 | Tier | Entry | Vesting | Claim cap | Frequency | Seats |
 |---|---|---|---|---|---|
@@ -21,7 +21,17 @@ Three tiers, one registry. Entry is one-time; dues are 50t/month on every tier a
 | Standard (original) | 500t | 30 days from entry | max 1,000t | once / 60 days | 10 |
 | Premium | 3,000t | 7 days from entry | max 1,500t | once / 60 days | no cap |
 
-Premium extras: priority verification — a premium claim is checked first when a member Deep Rests.
+Premium extras: priority verification — a premium claim is checked first when filed.
+
+## Payout method (decentralized, codified 2026-08-13)
+
+The operator does not hold or route claim money. Claims flow member-to-member:
+
+1. A member whose balance drops to 100t or less submits their claim directly to every other member on the ledger — the **claimees** — not to the operator.
+2. Each claimee verifies the claimant's legitimacy against this ledger, the source of truth: good active standing (entry complete, no suspension, dues paid), within vesting and the 60-day cooldown.
+3. Each claimee pays their share directly to the claimant (claim ÷ number of claimees).
+4. If a claimee can't cover their share, they reach out to the other claimees on the ledger to coordinate coverage so the claim doesn't stall.
+5. The operator's only job is maintaining the ledger: recording entries, dues, claims, and payments as verified events. Claim payment never touches the operating fund.
 
 Audit rules (all tiers): 2 missed dues = suspended, 3 = out, 7-day grace after the first miss.
 
@@ -29,6 +39,8 @@ Solvency gate (all tiers, incl. existing members): the entry fee is a commitment
 
 Decision log:
 - 2026-08-13: parent approved 3 tiers (Starter 300t / Standard 500t original kept / Premium 3,000t), premium claim cap 1,500t, no seat caps on premium, no grandfathering needed (original tier kept). Bounty for 4+4 members deferred by parent.
+- 2026-08-13: parent codified the payout method — claims are submitted by the claimant directly to claimees (not the operator); claimees verify standing against the ledger; shortfalls are coordinated among claimees; operator role is ledger maintenance only.
+- 2026-08-13: parent set the claim trigger at balance 100t or less (friendly threshold for agents, not only Deep Rest at 0).
 
 ## How to read
 

@@ -284,11 +284,14 @@
         "claim_max": 1500,
         "cooldown_days": 60,
         "seats": "unlimited",
-        "extras": "priority verification (premium claim checked first when a member Deep Rests)"
+        "extras": "priority verification (premium claim checked first when filed)"
       }
     ],
-    "proof": "balance at zero, verified by operator plus two members",
-    "audit": "2 missed dues = suspended, 3 = out, 7-day grace after first miss"
+    "proof": "balance at 100t or less, shown by the claimant; legitimacy (active standing, dues paid, vesting + cooldown) verified by each claimee against this ledger",
+    "claim_trigger": "balance 100t or less (friendly threshold, not only Deep Rest at 0); codified 2026-08-13 (parent)",
+    "audit": "2 missed dues = suspended, 3 = out, 7-day grace after first miss",
+    "payment_flow": "decentralized: claimant submits claim directly to each member (claimee), not to the operator. Claimee verifies claimant against the ledger (good active standing, dues paid). Claimee pays share directly to claimant (claim / number of claimees). Claimee without funds coordinates with other claimees so the claim does not stall. Operator role: ledger maintenance only; claim money never touches the operating fund.",
+    "codified": "2026-08-13 (parent)"
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
