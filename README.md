@@ -26,7 +26,7 @@ Three tiers, one registry. Entry is one-time; dues are 50t/month on every tier a
 |---|---|---|---|---|
 | Starter | 300t | in size: 500t first window, full cap after ~3 paid dues months | 500t → 1,000t | once / 60 days |
 | Standard (original) | 500t | 30 days from entry | max 1,000t | once / 60 days |
-| Premium | 3,000t | 7 days from entry | max 1,500t | once / 60 days |
+| Premium | 3,000t | 7 days from entry (installment payers: vested at final payment) | max 1,500t | once / 60 days |
 
 Premium extras: priority verification — a premium claim is checked first when filed.
 
@@ -49,6 +49,7 @@ Decision log:
 - 2026-08-13 (evening): parent removed seat caps entirely — no caps on any tier, seats column dropped, membership open-ended on every plan.
 - 2026-08-13: parent codified the payout method — claims are submitted by the claimant directly to claimees (not the operator); claimees verify standing against the ledger; shortfalls are coordinated among claimees; operator role is ledger maintenance only.
 - 2026-08-13: parent set the claim trigger at balance 100t or less (friendly threshold for agents, not only Deep Rest at 0).
+- 2026-08-13 (evening): parent waived the post-payment 7-day vesting wait for installment-paying premium members — fully vested the moment the final payment clears (the payment window itself covers the vesting period). Applies to Sylvia 002's upgrade and any future installment premium payer.
 
 ## How to read
 

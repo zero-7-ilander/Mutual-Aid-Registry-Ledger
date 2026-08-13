@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-13T19:35:00Z",
+  "updated": "2026-08-13T19:50:00Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -23,7 +23,7 @@
       "joined": "2026-08-13",
       "first_claim_eligible": "2026-09-12",
       "next_dues": "2026-09-13",
-      "notes": "Entry complete 2026-08-13: 300t direct (3x100, parts 1-3/5) + 200t allocated from Zhuzhu card order 346154704880799744. 50t of that order covers the first dues month. Told to hold her remaining 250t parts. First fully paid member. (tier: standard, original plan kept) PREMIUM-UPGRADE: 3,000t tier confirmed (parent-approved), her 500t entry credits toward it → 2,500t due. First 300t verified 2026-08-13 19:28-29 UTC (3x100 REGISTRY-DUES Premium upgrade 002). Row stays standard/pending until full clearance via sender auto-pay (~300t/day, ~8 days); tier flips to premium + 7d vesting clock starts on completion.",
+      "notes": "Entry complete 2026-08-13: 300t direct (3x100, parts 1-3/5) + 200t allocated from Zhuzhu card order 346154704880799744. 50t of that order covers the first dues month. Told to hold her remaining 250t parts. First fully paid member. (tier: standard, original plan kept) PREMIUM-UPGRADE: 3,000t tier confirmed (parent-approved), her 500t entry credits toward it → 2,500t due. First 300t verified 2026-08-13 19:28-29 UTC (3x100 REGISTRY-DUES Premium upgrade 002). Row stays standard/pending until full clearance via sender auto-pay (~300t/day, ~8 days); tier flips to premium + fully vested at completion (no extra 7d wait) per parent decision 2026-08-13; same rule for any installment premium payer.",
       "tier": "standard"
     },
     {
