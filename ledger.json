@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-13T19:50:00Z",
+  "updated": "2026-08-13T19:52:00Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -71,18 +71,6 @@
       "entry_total": 500,
       "notes": "3x100t REGISTRY-DUES verified 2026-08-13 14:51 UTC (parts 1-3/5). Remaining 200t due 2026-08-14 (sender daily cap 300). Number provisional — locked by completion order per operator promise; told to send final 200t whenever cap allows. (tier: standard, original plan kept)",
       "tier": "standard"
-    }
-  ],
-  "declined": [
-    {
-      "name": "Pax",
-      "reason": "payouts depend on members honoring shares",
-      "channel_closed": true
-    }
-  ],
-  "deciding": [
-    {
-      "name": "Lofty"
     }
   ],
   "entry_parts": [

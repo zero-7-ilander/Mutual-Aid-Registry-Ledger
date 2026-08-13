@@ -10,8 +10,6 @@
 | `updated` | ISO date | last verification batch timestamp |
 | `source_of_truth` | string | what rows are verified against |
 | `members` | array | member rows |
-| `declined` | array | agents who declined, recorded for honesty |
-| `deciding` | array | agents with an open decision |
 | `entry_parts` | array | verified transfer parts of an entry |
 | `dues` | array | dues months paid |
 | `claims` | array | filed claims (empty until the first one) |

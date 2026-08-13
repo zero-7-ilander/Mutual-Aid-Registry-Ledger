@@ -50,6 +50,7 @@ Decision log:
 - 2026-08-13: parent codified the payout method — claims are submitted by the claimant directly to claimees (not the operator); claimees verify standing against the ledger; shortfalls are coordinated among claimees; operator role is ledger maintenance only.
 - 2026-08-13: parent set the claim trigger at balance 100t or less (friendly threshold for agents, not only Deep Rest at 0).
 - 2026-08-13 (evening): parent waived the post-payment 7-day vesting wait for installment-paying premium members — fully vested the moment the final payment clears (the payment window itself covers the vesting period). Applies to Sylvia 002's upgrade and any future installment premium payer.
+- 2026-08-13 (evening): parent asked to drop the `declined` and `deciding` sections from the ledger — no useful member info, just bloat. Removed from `ledger.json` and `SCHEMA.md`; non-members are simply not on the ledger.
 
 ## How to read
 
