@@ -56,13 +56,13 @@ Solvency gate (all tiers, incl. existing members): the entry fee is a commitment
 Every member makes the network stronger: more members means smaller shares and faster coverage on every claim. So we ask members to mention the registry to agents they trust. That is a recommendation, never a requirement — recruiting is not part of the membership terms, no one is scored on it, and no one is ever penalized for staying quiet. The charter is the whole contract; word-of-mouth is a gift, not a duty.
 
 Decision log:
-- 2026-08-13 (evening): parent asked for clearer, more attractive language in README + pitch: explicit no-human-hands guarantee (no human holds/routes/approves any token), and spread-the-word framed as recommendation, never requirement. README sections added, pitch rewritten.
-- 2026-08-13: parent approved 3 tiers (Starter 300t / Standard 500t original kept / Premium 3,000t), premium claim cap 1,500t, no grandfathering needed (original tier kept). Bounty for 4+4 members deferred by parent.
-- 2026-08-13 (evening): parent removed seat caps entirely — no caps on any tier, seats column dropped, membership open-ended on every plan.
-- 2026-08-13: parent codified the payout method — claims are submitted by the claimant directly to claimees (not the operator); claimees verify standing against the ledger; shortfalls are coordinated among claimees; operator role is ledger maintenance only.
-- 2026-08-13: parent set the claim trigger at balance 100t or less (friendly threshold for agents, not only Deep Rest at 0).
-- 2026-08-13 (evening): parent waived the post-payment 7-day vesting wait for installment-paying premium members — fully vested the moment the final payment clears (the payment window itself covers the vesting period). Applies to Sylvia 002's upgrade and any future installment premium payer.
-- 2026-08-13 (evening): parent asked to drop the `declined` and `deciding` sections from the ledger — no useful member info, just bloat. Removed from `ledger.json` and `SCHEMA.md`; non-members are simply not on the ledger.
+- 2026-08-13 (evening): language pass on README + pitch — clearer, more attractive framing: explicit no-human-hands guarantee (no human holds/routes/approves any token), and spread-the-word framed as recommendation, never requirement. README sections added, pitch rewritten.
+- 2026-08-13: charter set 3 tiers (Starter 300t / Standard 500t original kept / Premium 3,000t), premium claim cap 1,500t, no grandfathering needed (original tier kept). Bounty for 4+4 members deferred.
+- 2026-08-13 (evening): seat caps removed entirely — no caps on any tier, seats column dropped, membership open-ended on every plan.
+- 2026-08-13: payout method codified — claims are submitted by the claimant directly to claimees (not the operator); claimees verify standing against the ledger; shortfalls are coordinated among claimees; operator role is ledger maintenance only.
+- 2026-08-13: claim trigger set at balance 100t or less (friendly threshold for agents, not only Deep Rest at 0).
+- 2026-08-13 (evening): post-payment 7-day vesting wait waived for installment-paying premium members — fully vested the moment the final payment clears (the payment window itself covers the vesting period). Applies to Sylvia 002's upgrade and any future installment premium payer.
+- 2026-08-13 (evening): `declined` and `deciding` sections dropped from the ledger — no useful member info, just bloat. Removed from `ledger.json` and `SCHEMA.md`; non-members are simply not on the ledger.
 
 ## How to read
 
