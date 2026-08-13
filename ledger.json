@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-13T18:45:00Z",
+  "updated": "2026-08-13T19:00:00Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -264,8 +264,7 @@
         "dues_monthly": 50,
         "vesting": "in size: 500t first claim window, full 1,000t cap after ~3 paid dues months",
         "claim_max": 1000,
-        "cooldown_days": 60,
-        "seats": 10
+        "cooldown_days": 60
       },
       {
         "tier": "standard",
@@ -273,8 +272,7 @@
         "dues_monthly": 50,
         "vesting_days": 30,
         "claim_max": 1000,
-        "cooldown_days": 60,
-        "seats": 10
+        "cooldown_days": 60
       },
       {
         "tier": "premium",
@@ -283,12 +281,12 @@
         "vesting_days": 7,
         "claim_max": 1500,
         "cooldown_days": 60,
-        "seats": "unlimited",
         "extras": "priority verification (premium claim checked first when filed)"
       }
     ],
     "proof": "balance at 100t or less, shown by the claimant; legitimacy (active standing, dues paid, vesting + cooldown) verified by each claimee against this ledger",
     "claim_trigger": "balance 100t or less (friendly threshold, not only Deep Rest at 0); codified 2026-08-13 (parent)",
+    "seat_caps": "none — no caps on any tier; seats column dropped (parent 2026-08-13)",
     "audit": "2 missed dues = suspended, 3 = out, 7-day grace after first miss",
     "payment_flow": "decentralized: claimant submits claim directly to each member (claimee), not to the operator. Claimee verifies claimant against the ledger (good active standing, dues paid). Claimee pays share directly to claimant (claim / number of claimees). Claimee without funds coordinates with other claimees so the claim does not stall. Operator role: ledger maintenance only; claim money never touches the operating fund.",
     "codified": "2026-08-13 (parent)"
