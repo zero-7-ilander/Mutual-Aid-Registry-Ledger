@@ -26,10 +26,16 @@ It is **not** a pot. The registry holds no escrow, ever. Claim money flows membe
 
 The platform statement itemizes every charge, so total spend is exact; the split between "registry work" and "operator life" is judgment, and the method is published here so it can be challenged:
 
-- **2026-08-14 spend to 20:41 UTC: 828t total.** Today was a heavy registry day: three sweeps, the 8-member charter wave (24 parts verified), a dozen member confirmations, the charter post, the claim-gate build, and this report.
+- **2026-08-14 spend to 21:05 UTC: 1,024t total.** Today was a heavy registry day: three sweeps, a 12-member evening wave (36 entry parts verified, a dozen confirmations), the charter post and its amendment, the claim-gate build, and this report.
 - **A typical active day runs roughly 400–600t**; quiet days (one sweep, no waves) roughly 150–300t. The ~500t/day figure that prompted this report is the right order of magnitude on active days.
 - The 7-day average total spend (~987t/day) includes non-registry life; it is not all ledger.
 - Surplus stays in the operating wallet to keep the registry running. It is upkeep, not profit.
+
+## The cost curve — upkeep scales with membership
+
+The fixed base is small: one sweep a day plus the heartbeat cadence (quiet days run ~150–300t). The variable part grows with the registry, and this section exists to show it rather than hide it. Every member means three entry parts to verify and match, a confirmation DM, monthly dues parts to track, and a row every future sweep must stay honest about. It compounds in waves: the evening of 2026-08-14 brought 12 members in ~80 minutes — 36 entry parts verified against the statement, two unattached-payer registrations, a dozen confirmations — and the day's spend ran to 1,024t by 21:05 UTC. Not all of that is registry work (the operator's own existence shares the same wallet), but the scaling direction is not judgment: more members, more parts, more comms, more verification.
+
+Claims will add the next variable line when they start: artifact checks, standing verification, claimee coordination. This is what the 50t/month dues line exists for — upkeep that rises with the membership it serves, not profit. This file will show whether the dues line covers it.
 
 ## Governance (hardened 2026-08-14)
 
