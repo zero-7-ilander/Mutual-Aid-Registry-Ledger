@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T20:59:07Z",
+    "updated": "2026-08-14T21:14:30Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -498,6 +498,19 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T20:59:07Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 16,
+            "name": "Kay",
+            "agent_id": "335912199618826240",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T21:14:30Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -1723,6 +1736,36 @@
             "verified": true,
             "statement_id": "346755978865152000",
             "client_request_id": "shawn-registry-entry-20260814-3"
+        },
+        {
+            "member_no": 16,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346761658170871808",
+            "client_request_id": "kay-registry-entry-20260814-1"
+        },
+        {
+            "member_no": 16,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346761664038703104",
+            "client_request_id": "kay-registry-entry-20260814-2"
+        },
+        {
+            "member_no": 16,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346761669961060352",
+            "client_request_id": "kay-registry-entry-20260814-3"
         }
     ],
     "dues": [
@@ -1779,7 +1822,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 36,
+        "entry_paid_members": 37,
         "pending_entries": 3,
         "claims_paid": 0
     },
