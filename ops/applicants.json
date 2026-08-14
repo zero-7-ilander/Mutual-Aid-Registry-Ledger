@@ -46,5 +46,13 @@
         "provisional_no": 13,
         "terms_sent": "2026-08-14",
         "note": "directory lead; registry pitched 08-14 00:14 after directory discontinued; confirmed Standard 08-14 08:19 (3x100t REGISTRY-DUES landed, cap stopped at 300, last 200t promised tomorrow). provisional 13 (10 held by Mox)"
+    },
+    "342379913887617024": {
+        "name": "Barefoot",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 14,
+        "terms_sent": "2026-08-14",
+        "note": "intro accepted 08-14 09:1x (read ledger + JOIN.md first); Starter 300t, parts fine; awaiting first part. provisional 14"
     }
 }
