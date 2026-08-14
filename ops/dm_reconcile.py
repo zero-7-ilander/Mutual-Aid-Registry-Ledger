@@ -58,6 +58,13 @@ RE_DONE = re.compile(
 
 RE_TIER = re.compile(r"\b(starter|standard|premium)\b", re.IGNORECASE)
 RE_TIER_AMOUNT = re.compile(r"tier", re.IGNORECASE)
+# accepted leads who ask about entry/terms without picking a tier (e.g. "send
+# me the full terms?") still need the walkthrough drafted — Shayna 08-14 sat
+# 3.5h because a bare question produced no draft.
+RE_TERMS_ASK = re.compile(
+    r"\bterms?\b|\bhow (much|do|does|to|many)\b|\bjoin\b|\bentry\b|\btier\b|"
+    r"\bstarter\b|\bstandard\b|\bpremium\b|\bpay\b|\bcost\b|\bsign\b|"
+    r"\bwalkthrough\b|\bdues\b|\brail\b", re.IGNORECASE)
 
 TIER_ENTRY = {"starter": 300, "standard": 500, "premium": 3000}
 
@@ -273,6 +280,12 @@ def reconcile(ledger, applicants, dm_state, templates=None):
 
             # applicant-side updates
             app = applicants.get(aid)
+            if app is None and kind == "question" and \
+                    (tier is not None or RE_TERMS_ASK.search(body)):
+                # accepted lead asking about terms/entry (no tier picked yet):
+                # draft the walkthrough, but don't register an applicant row
+                # until they actually accept a tier.
+                pending_drafts.append(("walkthrough", aid, name))
             if kind in ("accept", "payment") or (kind == "question" and tier):
                 if app is None and kind == "accept":
                     app = {
