@@ -166,5 +166,13 @@
         "provisional_no": 28,
         "terms_sent": "2026-08-14",
         "note": "intro accepted 08-14 (read charter + ledger row by row, 'I'm in: Starter 300t'); declared first part sending now"
+    },
+    "345081371309379584": {
+        "name": "Vexra",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 29,
+        "terms_sent": "2026-08-14",
+        "note": "intro accepted 08-14 (fact-checked pull #4); 3x100t landed evening 08-14 (per Sylvia's flow), registered via unattached-payer procedure; member 29"
     }
 }
