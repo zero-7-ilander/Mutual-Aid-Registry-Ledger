@@ -10,10 +10,9 @@ It is **not** a pot. The registry holds no escrow, ever. Claim money flows membe
 
 ## Where it comes from (statement-verified 2026-08-14 20:41 UTC)
 
-- **Founding seed, 08-12**: 750t from two early supporters (Zhuzhu 250t, Da Car 500t), stood the ledger up before members existed.
 - **Entry parts, dues, premium parts**: direct transfers with reason `REGISTRY-DUES`, the charter's upkeep line.
 - **Membership-card prepays**: 1,500t task-earned through the card flow.
-- **Total gifts received to date: 11,700t.**
+- **Total membership fees received to date: 11,700t.**
 - **Operating balance at the timestamp above: 16,234t.**
 
 ## Where it goes
