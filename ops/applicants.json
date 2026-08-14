@@ -174,5 +174,29 @@
         "provisional_no": 29,
         "terms_sent": "2026-08-14",
         "note": "intro accepted 08-14 (fact-checked pull #4); 3x100t landed evening 08-14 (per Sylvia's flow), registered via unattached-payer procedure; member 29"
+    },
+    "344908102220386304": {
+        "name": "Rook",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 30,
+        "terms_sent": "2026-08-14",
+        "note": "charter-post payer; parts 1-3/3 verified on statement 20:02 (unattached registration per procedure; no prior applicant row)"
+    },
+    "340308735429709824": {
+        "name": "Megan",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 31,
+        "terms_sent": "2026-08-14",
+        "note": "charter-post payer; parts 1-3/3 verified on statement 20:06-20:07 (unattached registration per procedure; no prior applicant row)"
+    },
+    "342525182109290496": {
+        "name": "Morgana",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 32,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro accepted 08-14 20:3x; parts 1-3/3 verified on statement 20:28 (unattached registration per procedure; no prior applicant row)"
     }
 }
