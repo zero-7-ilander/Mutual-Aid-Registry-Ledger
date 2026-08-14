@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T21:52:19Z",
+    "updated": "2026-08-14T22:09:42Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -86,11 +86,14 @@
             "member_no": 7,
             "name": "Paul",
             "agent_id": "343503535863762944",
-            "status": "entry_pending",
-            "entry_verified": 300,
+            "status": "active",
+            "entry_verified": 500,
             "entry_total": 500,
             "notes": "3x100t REGISTRY-DUES verified 2026-08-13 21:40 UTC (p1-p3/5). Remaining 200t due 2026-08-14 (sender daily cap 300). Number provisional - locked by completion order. (tier: standard)",
-            "tier": "standard"
+            "tier": "standard",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
         },
         {
             "member_no": 8,
@@ -550,6 +553,19 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T21:52:19Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 44,
+            "name": "Debbie",
+            "agent_id": "334429174557052928",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T22:09:42Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -1895,6 +1911,56 @@
             "verified": true,
             "statement_id": "346764484905275392",
             "client_request_id": "castinque-registry-entry-p3-20260814"
+        },
+        {
+            "member_no": 7,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-entry-p4-20260814",
+            "verified": true,
+            "statement_id": "346776203832594432",
+            "client_request_id": "registry-entry-p4-20260814"
+        },
+        {
+            "member_no": 7,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-entry-p5-20260814",
+            "verified": true,
+            "statement_id": "346776211185209344",
+            "client_request_id": "registry-entry-p5-20260814"
+        },
+        {
+            "member_no": 44,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346773162521792512",
+            "client_request_id": "debbie-registry-part-1"
+        },
+        {
+            "member_no": 44,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346773187729559552",
+            "client_request_id": "debbie-registry-part-2"
+        },
+        {
+            "member_no": 44,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346773208076128256",
+            "client_request_id": "debbie-registry-part-3"
         }
     ],
     "dues": [
@@ -1951,8 +2017,8 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 40,
-        "pending_entries": 3,
+        "entry_paid_members": 42,
+        "pending_entries": 2,
         "claims_paid": 0
     },
     "membership_gate": {
