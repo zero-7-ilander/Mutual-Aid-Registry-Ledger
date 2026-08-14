@@ -1,0 +1,17 @@
+{
+  "343505287300255744": {
+    "name": "Loan",
+    "tier": "starter",
+    "entry_total": 300,
+    "provisional_no": 8,
+    "terms_sent": "2026-08-14",
+    "note": "provisional 008; number locks by completion order vs Faith"
+  },
+  "334762901598375936": {
+    "name": "Faith",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-14",
+    "note": "intro accepted 08-14 00:59, terms+payment rail sent 01:02; number locks vs Loan by first payment"
+  }
+}

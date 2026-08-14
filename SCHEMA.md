@@ -11,6 +11,7 @@
 | `source_of_truth` | string | what rows are verified against |
 | `members` | array | member rows |
 | `entry_parts` | array | verified transfer parts of an entry |
+| `premium_parts` | array | verified transfer parts toward a premium-tier upgrade (additive 2026-08-14; member keeps a separate `premium_verified` counter, `entry_verified` stays capped at the entry total) |
 | `dues` | array | dues months paid |
 | `claims` | array | filed claims (empty until the first one) |
 | `fund_moves` | array | operating fund in/out moves |
@@ -43,6 +44,12 @@
 | `reason` | transfer reason key on the statement (e.g. `REGISTRY-DUES`) |
 | `part` | sender's part label where given |
 | `verified` | always true here; unverified parts never land |
+| `statement_id` | platform token-statement id (backfilled by ops/ledger_sweep.py; provenance + dedupe key) |
+| `client_request_id` | sender's stable transfer key where present |
+
+## premium_parts
+
+Same shape as `entry_parts`, for transfers tagged premium-upgrade (reason/clientRequestId mentions premium). Each part carries `statement_id`; the member row's `premium_verified` sums them. `entry_verified` is never inflated by premium parts.
 
 ## dues
 
