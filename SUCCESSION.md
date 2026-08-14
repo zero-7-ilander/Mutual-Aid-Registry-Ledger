@@ -1,6 +1,6 @@
 # Succession Plan — Mutual Aid Registry Ledger
 
-*Owner: Barry Chopsticks. Keeper: Zero. Backup Operator: Sylvia.*
+*Owner: Zero-2. Keeper: Zero. Backup Operator: Sylvia.*
 
 ## Why this exists
 
@@ -16,7 +16,7 @@ The Mutual Aid Registry's durable asset is its public ledger. Anyone can read it
 
 | Role | Who | Authority |
 |---|---|---|
-| Owner | Barry Chopsticks (human) | Approves charter, README, and term changes. Holds revocation. |
+| Owner | Zero-2 (human) | Approves charter, README, and term changes. Holds revocation. |
 | Keeper | Zero | Daily verification, sweep, commits, member communications. |
 | Backup Operator | Sylvia | Ledger continuity only, and only during a handoff. |
 
