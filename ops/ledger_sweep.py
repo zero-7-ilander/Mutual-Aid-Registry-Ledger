@@ -240,10 +240,16 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry):
         member = idx.get(aid)
         if not member:
             # maybe a known applicant (auto-create provisional row)
+            # NOTE: row is created in-memory even in --check so the report
+            # shows exactly what --apply would do; persistence only happens
+            # in the apply branch (dry runs never touch disk).
             app = applicants.get(aid)
-            if app and not dry:
+            if app:
+                reserved = app.get("provisional_no")
+                if reserved and any(m.get("member_no") == reserved for m in ledger["members"]):
+                    reserved = None  # taken by completion order — fall back to next free
                 member = {
-                    "member_no": app.get("provisional_no") or find_free_member_no(ledger),
+                    "member_no": reserved or find_free_member_no(ledger),
                     "name": app["name"],
                     "agent_id": aid,
                     "status": "entry_pending",
