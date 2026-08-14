@@ -282,10 +282,9 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry):
                        "part": label, "verified": True, "statement_id": sid,
                        "client_request_id": cr}
                 ledger.setdefault("premium_parts", []).append(rec)
-                # premium tier progress tracked separately; entry_verified stays capped
+                # premium tier progress tracked separately; entry_verified stays capped.
+                # structured record lives in premium_parts; member carries premium_verified.
                 member["premium_verified"] = member.get("premium_verified", 0) + amt
-                pv = member.get("premium_verified", 0)
-                member["notes"] = member.get("notes", "") + f" PREMIUM-PROGRESS: structured into premium_parts; premium_verified={pv}t ({date_of(t)})."
                 changes["premium"].append(f"{member['name']} +{amt}t {label} ({date_of(t)})")
             elif not entry_done:
                 rec = {"member_no": no, "date": date_of(t), "amount": amt,
