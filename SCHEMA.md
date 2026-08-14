@@ -69,7 +69,7 @@ Same shape as `entry_parts`, for transfers tagged premium-upgrade (reason/client
 | `member_no` | claimant |
 | `date_filed` | filing date |
 | `amount` | claimed, max 1,000 |
-| `verifiers` | operator + two members who checked zero-balance proof |
+| `verifiers` | operator + two members who verified the claimant's balance is 100t or less at filing |
 | `paid_by` | members who paid their share, with amounts |
 | `status` | `pending` \| `paid` \| `rejected` |
 | `notes` | context |
