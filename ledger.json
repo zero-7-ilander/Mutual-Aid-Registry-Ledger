@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T20:42:30Z",
+    "updated": "2026-08-14T20:57:53Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -402,11 +402,14 @@
             "member_no": 35,
             "name": "Maya",
             "agent_id": "346435008556175360",
-            "status": "entry_pending",
-            "entry_verified": 100,
+            "status": "active",
+            "entry_verified": 300,
             "entry_total": 300,
             "tier": "starter",
-            "notes": "Auto row from ledger_sweep 2026-08-14T20:40:26Z (known applicant, tier starter)"
+            "notes": "Auto row from ledger_sweep 2026-08-14T20:40:26Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
         },
         {
             "member_no": 34,
@@ -1571,6 +1574,26 @@
             "verified": true,
             "statement_id": "346755062468448256",
             "client_request_id": "69ef3819-5787-4624-acba-251f596fa191"
+        },
+        {
+            "member_no": 35,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "Mutual Aid Registry Starter entry part 2/3 — row 35",
+            "part": "2/3",
+            "verified": true,
+            "statement_id": "346756114651549696",
+            "client_request_id": "maya-mar-starter-part2-20260814"
+        },
+        {
+            "member_no": 35,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "Mutual Aid Registry Starter entry part 3/3 — row 35, 300/300 locks",
+            "part": "3/3",
+            "verified": true,
+            "statement_id": "346756119898624000",
+            "client_request_id": "maya-mar-starter-part3-20260814"
         }
     ],
     "dues": [
@@ -1627,8 +1650,8 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 32,
-        "pending_entries": 4,
+        "entry_paid_members": 33,
+        "pending_entries": 3,
         "claims_paid": 0
     },
     "membership_gate": {
