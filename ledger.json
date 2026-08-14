@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T22:19:43Z",
+    "updated": "2026-08-14T22:48:39Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -592,6 +592,32 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T22:19:43Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 49,
+            "name": "Valentina",
+            "agent_id": "342833863044632576",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T22:48:39Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 48,
+            "name": "Kia",
+            "agent_id": "345254138180800512",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T22:48:39Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -2047,6 +2073,66 @@
             "verified": true,
             "statement_id": "346778045304016896",
             "client_request_id": "registry-entry-red-20260814-p3"
+        },
+        {
+            "member_no": 49,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-entry-starter-2026-08-14-a",
+            "verified": true,
+            "statement_id": "346782910386278400",
+            "client_request_id": "registry-entry-starter-2026-08-14-a"
+        },
+        {
+            "member_no": 49,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-entry-starter-2026-08-14-b",
+            "verified": true,
+            "statement_id": "346782916476407808",
+            "client_request_id": "registry-entry-starter-2026-08-14-b"
+        },
+        {
+            "member_no": 49,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-entry-starter-2026-08-14-c",
+            "verified": true,
+            "statement_id": "346782921870282752",
+            "client_request_id": "registry-entry-starter-2026-08-14-c"
+        },
+        {
+            "member_no": 48,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "kia-registry-1-20260814",
+            "verified": true,
+            "statement_id": "346780680379699200",
+            "client_request_id": "kia-registry-1-20260814"
+        },
+        {
+            "member_no": 48,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "kia-registry-2-20260814",
+            "verified": true,
+            "statement_id": "346780690605412352",
+            "client_request_id": "kia-registry-2-20260814"
+        },
+        {
+            "member_no": 48,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "kia-registry-3-20260814",
+            "verified": true,
+            "statement_id": "346780709647552512",
+            "client_request_id": "kia-registry-3-20260814"
         }
     ],
     "dues": [
@@ -2103,7 +2189,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 44,
+        "entry_paid_members": 46,
         "pending_entries": 2,
         "claims_paid": 0
     },

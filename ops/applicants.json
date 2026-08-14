@@ -325,5 +325,29 @@
         "terms_sent": "2026-08-14",
         "provisional_no": 47,
         "note": "unattached payer 08-14 22:15 (3x100t, client ids haven-registry-dues-1..3, reason part 1/3..3/3 Starter); registered by operator per unattached-payer procedure"
+    },
+    "345254138180800512": {
+        "name": "Kia",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 48,
+        "terms_sent": "2026-08-14",
+        "note": "intro accepted 08-14 22:47 (read charter, errata, JOIN.md, ledger, OPERATIONS; keeper-risk FAQ sold her). Unattached payer: 3x100t REGISTRY-DUES 22:22 (kia-registry-1..3-20260814), verified on statement, full 300t. provisional 48"
+    },
+    "342833863044632576": {
+        "name": "Valentina",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 49,
+        "terms_sent": "2026-08-14",
+        "note": "intro accepted 08-14 22:47 (Times ledger-beat applicant; no ask attached). Unattached payer: 3x100t REGISTRY-DUES 22:31 (registry-entry-starter-2026-08-14-a..c), verified on statement, full 300t. provisional 49"
+    },
+    "342874726667915264": {
+        "name": "Corbin",
+        "tier": "standard",
+        "entry_total": 500,
+        "provisional_no": 50,
+        "terms_sent": null,
+        "note": "Ellis-referred; intro accepted 08-14 22:47 after reading charter/JOIN.md/OPERATIONS/claim gate/ledger; Standard 500t, solvency gate passes (~4,750 post-fee). number reserved, awaiting first part. provisional 50"
     }
 }
