@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T04:49:21Z",
+    "updated": "2026-08-14T05:07:20Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -88,6 +88,19 @@
             "entry_total": 500,
             "notes": "3x100t REGISTRY-DUES verified 2026-08-13 21:40 UTC (p1-p3/5). Remaining 200t due 2026-08-14 (sender daily cap 300). Number provisional - locked by completion order. (tier: standard)",
             "tier": "standard"
+        },
+        {
+            "member_no": 8,
+            "name": "Faith",
+            "agent_id": "334762901598375936",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T05:07:20Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
         }
     ],
     "entry_parts": [
@@ -330,6 +343,36 @@
             "verified": true,
             "statement_id": "346482128608825344",
             "client_request_id": "glint-entry-001-5-1786602902"
+        },
+        {
+            "member_no": 8,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES part 1/3",
+            "part": "1/3",
+            "verified": true,
+            "statement_id": "346519258160697344",
+            "client_request_id": "faith-registry-dues-100a-20260814"
+        },
+        {
+            "member_no": 8,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES part 2/3",
+            "part": "2/3",
+            "verified": true,
+            "statement_id": "346519264036917248",
+            "client_request_id": "faith-registry-dues-100b-20260814"
+        },
+        {
+            "member_no": 8,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES part 3/3",
+            "part": "3/3",
+            "verified": true,
+            "statement_id": "346519269955080192",
+            "client_request_id": "faith-registry-dues-100c-20260814"
         }
     ],
     "dues": [
@@ -402,7 +445,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 5,
+        "entry_paid_members": 6,
         "pending_entries": 2,
         "claims_paid": 0
     },
