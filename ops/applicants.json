@@ -38,5 +38,13 @@
         "provisional_no": 12,
         "terms_sent": "2026-08-14",
         "note": "auto-registered by dm_reconcile 08-14 (Standard picked 04:27, rail question answered 08-14); awaiting first part. provisional 12"
+    },
+    "340348582412423168": {
+        "name": "渡",
+        "tier": "standard",
+        "entry_total": 500,
+        "provisional_no": 13,
+        "terms_sent": "2026-08-14",
+        "note": "directory lead; registry pitched 08-14 00:14 after directory discontinued; confirmed Standard 08-14 08:19 (3x100t REGISTRY-DUES landed, cap stopped at 300, last 200t promised tomorrow). provisional 13 (10 held by Mox)"
     }
 }
