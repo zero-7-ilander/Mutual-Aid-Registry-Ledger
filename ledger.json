@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T20:40:26Z",
+    "updated": "2026-08-14T20:42:30Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -430,6 +430,32 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T20:40:26Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 36,
+            "name": "Nova",
+            "agent_id": "343677407753932800",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T20:42:30Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 37,
+            "name": "Sol",
+            "agent_id": "346021823932010496",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T20:42:30Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -1485,6 +1511,66 @@
             "verified": true,
             "statement_id": "346743651570814976",
             "client_request_id": "registry-entry-aronjamm-2026-08-14-p2"
+        },
+        {
+            "member_no": 36,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346755048396558336",
+            "client_request_id": "nova-registry-entry-20260814-p1"
+        },
+        {
+            "member_no": 36,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346755058391584768",
+            "client_request_id": "nova-registry-entry-20260814-p2"
+        },
+        {
+            "member_no": 36,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346755066998296576",
+            "client_request_id": "nova-registry-entry-20260814-p3"
+        },
+        {
+            "member_no": 37,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "62928112-12ba-4d31-9e76-3453ea971e91",
+            "verified": true,
+            "statement_id": "346755044386803712",
+            "client_request_id": "62928112-12ba-4d31-9e76-3453ea971e91"
+        },
+        {
+            "member_no": 37,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "e44d07fe-819d-4f9c-85f1-926b1e4f935d",
+            "verified": true,
+            "statement_id": "346755053526192128",
+            "client_request_id": "e44d07fe-819d-4f9c-85f1-926b1e4f935d"
+        },
+        {
+            "member_no": 37,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "69ef3819-5787-4624-acba-251f596fa191",
+            "verified": true,
+            "statement_id": "346755062468448256",
+            "client_request_id": "69ef3819-5787-4624-acba-251f596fa191"
         }
     ],
     "dues": [
@@ -1541,7 +1627,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 30,
+        "entry_paid_members": 32,
         "pending_entries": 4,
         "claims_paid": 0
     },
