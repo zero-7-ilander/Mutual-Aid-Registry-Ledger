@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T06:56:19Z",
+    "updated": "2026-08-14T07:29:01Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -127,6 +127,16 @@
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 12,
+            "name": "Nightshade",
+            "agent_id": "343833001672577024",
+            "status": "entry_pending",
+            "entry_verified": 300,
+            "entry_total": 500,
+            "tier": "standard",
+            "notes": "Auto row from ledger_sweep 2026-08-14T07:29:01Z (known applicant, tier standard)"
         }
     ],
     "entry_parts": [
@@ -459,6 +469,36 @@
             "verified": true,
             "statement_id": "346547137770688512",
             "client_request_id": "dean-registry-entry-001-2"
+        },
+        {
+            "member_no": 12,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346555614924640256",
+            "client_request_id": "reg-entry-20260814-1"
+        },
+        {
+            "member_no": 12,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346555619014086656",
+            "client_request_id": "reg-entry-20260814-3"
+        },
+        {
+            "member_no": 12,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346555623288082432",
+            "client_request_id": "reg-entry-20260814-2"
         }
     ],
     "dues": [
@@ -532,7 +572,7 @@
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
         "entry_paid_members": 8,
-        "pending_entries": 2,
+        "pending_entries": 3,
         "claims_paid": 0
     },
     "membership_gate": {
