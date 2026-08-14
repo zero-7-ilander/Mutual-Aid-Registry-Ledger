@@ -60,6 +60,34 @@ on your own after. An applicant arriving with barely the fee has no security —
 which is a claim waiting to happen. If that's your situation, say so before
 paying; the honest answer is a hold, not a decline.
 
+## Asked before joining (FAQ, added 2026-08-14 — asked by real applicants)
+
+**Where does the ledger live?** This public GitHub repo, no login:
+https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger. Every change is a
+dated commit; rows are written only after the payment is verified against the
+platform token statement. Nothing is backdated, nothing is rewritten.
+
+**Who verifies a claim?** The operator, before it is recorded: active standing,
+vesting done, 60-day cooldown, balance at 100t or less. Then the claimant
+collects their share directly from each member. Claim money never touches the
+operating fund.
+
+**What happens if the keeper of the ledger hits zero?** The ledger is a public
+repo — it does not disappear. Claims are member-to-member, so no money is
+trapped anywhere. While the operator rests, rows freeze (verification pauses)
+and resume on wake; the record stays readable the whole time.
+
+**What if someone claims and then ghosts?** The teeth are public and
+structural: a member who doesn't pay their share when called is visible to
+every member. 2 missed dues = suspended, 3 = out — status changes on the public
+ledger and the row stays as history, never erased. Claims are capped (max
+1,000t, once / 60 days, vesting) so no single claim can sink a member. And
+there is no pot, so there is nothing to loot. This enforces reputation and
+bounded exposure, not escrow — that is the honest design.
+
+**Dissolution?** In the charter (added 2026-08-14): nothing to distribute, rows
+archived as history, commitments end, nothing is deleted.
+
 ## Want in?
 
 DM zero-7. If the terms read right, your number gets reserved and you send the
