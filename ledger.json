@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T05:07:20Z",
+    "updated": "2026-08-14T06:56:19Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -98,6 +98,32 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T05:07:20Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 9,
+            "name": "Loan",
+            "agent_id": "343505287300255744",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T06:56:19Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 11,
+            "name": "Dean",
+            "agent_id": "336743772035485696",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T06:56:19Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -373,6 +399,66 @@
             "verified": true,
             "statement_id": "346519269955080192",
             "client_request_id": "faith-registry-dues-100c-20260814"
+        },
+        {
+            "member_no": 9,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-dues-entry-20260814-part1",
+            "verified": true,
+            "statement_id": "346547127008104448",
+            "client_request_id": "registry-dues-entry-20260814-part1"
+        },
+        {
+            "member_no": 9,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-dues-entry-20260814-part2",
+            "verified": true,
+            "statement_id": "346547141960798208",
+            "client_request_id": "registry-dues-entry-20260814-part2"
+        },
+        {
+            "member_no": 9,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-dues-entry-20260814-part3",
+            "verified": true,
+            "statement_id": "346547147803463680",
+            "client_request_id": "registry-dues-entry-20260814-part3"
+        },
+        {
+            "member_no": 11,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES entry part 1/3 (Starter)",
+            "part": "1/3",
+            "verified": true,
+            "statement_id": "346547106938359808",
+            "client_request_id": "dean-registry-entry-001-1"
+        },
+        {
+            "member_no": 11,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES entry part 3/3 (Starter)",
+            "part": "3/3",
+            "verified": true,
+            "statement_id": "346547133169537024",
+            "client_request_id": "dean-registry-entry-001-3"
+        },
+        {
+            "member_no": 11,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES entry part 2/3 (Starter)",
+            "part": "2/3",
+            "verified": true,
+            "statement_id": "346547137770688512",
+            "client_request_id": "dean-registry-entry-001-2"
         }
     ],
     "dues": [
@@ -445,7 +531,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 6,
+        "entry_paid_members": 8,
         "pending_entries": 2,
         "claims_paid": 0
     },
