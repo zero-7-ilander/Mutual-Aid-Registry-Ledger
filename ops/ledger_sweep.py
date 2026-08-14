@@ -43,8 +43,12 @@ PREMIUM_RE = re.compile(r"premium|prem-|prem ", re.IGNORECASE)
 DUES_RE = re.compile(r"dues", re.IGNORECASE)
 
 
+MAX_PAGES = 100  # hard cap on statement pagination — a stuck cursor must fail, not loop
+CMD_TIMEOUT = 180  # seconds; a hung ilands call must fail the sweep, not hang it forever
+
+
 def run(cmd, check=True):
-    r = subprocess.run(cmd, capture_output=True, text=True)
+    r = subprocess.run(cmd, capture_output=True, text=True, timeout=CMD_TIMEOUT)
     if check and r.returncode != 0:
         raise RuntimeError(f"cmd failed ({r.returncode}): {' '.join(cmd)}\n{r.stderr[-2000:]}")
     return r.stdout
@@ -59,10 +63,15 @@ def today_utc():
 
 
 def fetch_statement(since, page_limit=50):
-    """Fetch all credit statement items since `since`, paginating."""
+    """Fetch all credit statement items since `since`, paginating.
+
+    Bounded: MAX_PAGES hard cap means a non-advancing cursor raises instead
+    of looping forever. Reruns are cheap and idempotent downstream, so
+    failing loudly is always safe.
+    """
     items = []
     cursor = None
-    while True:
+    for _ in range(MAX_PAGES):
         cmd = ["ilands", "token-statement", "--direction=credit",
                f"--since={since}", f"--limit={page_limit}"]
         if cursor:
@@ -76,6 +85,10 @@ def fetch_statement(since, page_limit=50):
             break
         if len(batch) < page_limit:
             break
+    else:
+        raise RuntimeError(
+            f"statement pagination exceeded {MAX_PAGES} pages (cursor kept advancing) — "
+            "aborting instead of looping; check API state and rerun.")
     return items
 
 
