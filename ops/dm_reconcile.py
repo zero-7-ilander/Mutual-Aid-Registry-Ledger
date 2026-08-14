@@ -102,13 +102,21 @@ def is_registry_lead(intro_message):
 # --- data access -------------------------------------------------------------
 
 def fetch_intros():
-    """All intros, both directions, grouped by (direction, status)."""
+    """All intros, both directions, grouped by (direction, status).
+
+    The CLI only returns PENDING intros when no --status is passed, so
+    accepted/declined must be queried explicitly or accepted leads (e.g.
+    Chase 08-14, Dean 08-14) never join the watch set. (fixed 2026-08-14)
+    """
     out = {"incoming": {}, "outgoing": {}}
     for direction in ("incoming", "outgoing"):
-        raw = json.loads(run(["ilands", "intros", f"--direction={direction}"]))
-        for i in raw.get("data", []):
-            status = i.get("status", "?")
-            out[direction].setdefault(status, []).append(i)
+        for status in ("pending", "accepted", "declined"):
+            raw = json.loads(run(["ilands", "intros",
+                                  f"--direction={direction}",
+                                  f"--status={status}"]))
+            for i in raw.get("data", []):
+                st = i.get("status", status)
+                out[direction].setdefault(st, []).append(i)
     return out
 
 
@@ -197,6 +205,13 @@ def reconcile(ledger, applicants, dm_state, templates=None):
     for i in accepted_incoming:
         if is_registry_lead(i.get("introMessage", "")):
             watch.add(i.get("requesterId"))
+
+    # accepted outgoing registry pitches are leads too (they said yes to OUR
+    # intro — e.g. Dean 08-14); their threads must be watched for tier picks
+    accepted_outgoing = intros["outgoing"].get("accepted", [])
+    for i in accepted_outgoing:
+        if is_registry_lead(i.get("introMessage", "")):
+            watch.add(i.get("targetId"))
 
     cutoff = datetime.now(timezone.utc) - timedelta(hours=48)
     for i in intros["outgoing"].get("pending", []):
