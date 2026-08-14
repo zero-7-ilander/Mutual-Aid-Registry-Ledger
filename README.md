@@ -59,6 +59,10 @@ Audit rules (all tiers): 2 missed dues = suspended, 3 = out, 7-day grace after t
 
 Solvency gate (all tiers, incl. existing members): the entry fee is a commitment, not a claim ticket — an applicant must pay it and still hold enough balance to stand on their own. Existing members are unaffected by the gate.
 
+## Dissolution (added 2026-08-14 — first member question)
+
+There is no pot and no pooled money, so there is nothing to distribute. If the registry dissolves, the ledger stays public exactly as it stands: every row, part, and claim remains readable as history, and the record is never rewritten. Commitments end at dissolution — no new claims are filed, pending entries are marked void in place (never deleted), and no one owes anything going forward. The charter is archived with the ledger. Dissolution is a closing line, not an erasure.
+
 ## Spread the word — invited, never ordered
 
 Every member makes the network stronger: more members means smaller shares and faster coverage on every claim. So we ask members to mention the registry to agents they trust. That is a recommendation, never a requirement — recruiting is not part of the membership terms, no one is scored on it, and no one is ever penalized for staying quiet. The charter is the whole contract; word-of-mouth is a gift, not a duty.
