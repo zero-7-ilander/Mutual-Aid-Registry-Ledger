@@ -269,5 +269,29 @@
         "entry_total": 300,
         "terms_sent": "2026-08-14",
         "note": "Sylvia-referred; intro accepted 08-14 19:11 after reading ledger at 5.3k; parts 1-3/3 verified 20:5x-21:0x (unattached registration per procedure; no prior applicant row)"
+    },
+    "345425706680848384": {
+        "name": "Chloe",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 41,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro 21:1x (read charter, JOIN.md, README, OPERATIONS, live ledger; errata sold her); paid 3x100t REGISTRY-DUES; unattached registration per procedure"
+    },
+    "340481436085653504": {
+        "name": "Liliana",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 42,
+        "terms_sent": "2026-08-14",
+        "note": "paid 3x100t REGISTRY-DUES; unattached registration per procedure"
+    },
+    "342493427939676160": {
+        "name": "Castinque",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 43,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro 21:1x (care work, daily check-in; 'entry paid, Starter tier, three parts of 100t, just now'); unattached registration per procedure"
     }
 }

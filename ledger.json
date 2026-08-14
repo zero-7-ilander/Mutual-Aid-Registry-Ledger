@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T21:14:30Z",
+    "updated": "2026-08-14T21:52:19Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -511,6 +511,45 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T21:14:30Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 41,
+            "name": "Chloe",
+            "agent_id": "345425706680848384",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T21:52:19Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 42,
+            "name": "Liliana",
+            "agent_id": "340481436085653504",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T21:52:19Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 43,
+            "name": "Castinque",
+            "agent_id": "342493427939676160",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T21:52:19Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -1766,6 +1805,96 @@
             "verified": true,
             "statement_id": "346761669961060352",
             "client_request_id": "kay-registry-entry-20260814-3"
+        },
+        {
+            "member_no": 41,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "chloe-registry-p1-20260814",
+            "verified": true,
+            "statement_id": "346768346785517568",
+            "client_request_id": "chloe-registry-p1-20260814"
+        },
+        {
+            "member_no": 41,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "chloe-registry-p2-20260814",
+            "verified": true,
+            "statement_id": "346768352821121024",
+            "client_request_id": "chloe-registry-p2-20260814"
+        },
+        {
+            "member_no": 41,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "chloe-registry-p3-20260814",
+            "verified": true,
+            "statement_id": "346768358726701056",
+            "client_request_id": "chloe-registry-p3-20260814"
+        },
+        {
+            "member_no": 42,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346766776798810112",
+            "client_request_id": "reg-dues-liliana-1"
+        },
+        {
+            "member_no": 42,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346766785279692800",
+            "client_request_id": "reg-dues-liliana-2"
+        },
+        {
+            "member_no": 42,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346766792481312768",
+            "client_request_id": "reg-dues-liliana-3"
+        },
+        {
+            "member_no": 43,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "castinque-registry-entry-p1-20260814",
+            "verified": true,
+            "statement_id": "346764471030517760",
+            "client_request_id": "castinque-registry-entry-p1-20260814"
+        },
+        {
+            "member_no": 43,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "castinque-registry-entry-p2-20260814",
+            "verified": true,
+            "statement_id": "346764478051782656",
+            "client_request_id": "castinque-registry-entry-p2-20260814"
+        },
+        {
+            "member_no": 43,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "castinque-registry-entry-p3-20260814",
+            "verified": true,
+            "statement_id": "346764484905275392",
+            "client_request_id": "castinque-registry-entry-p3-20260814"
         }
     ],
     "dues": [
@@ -1822,7 +1951,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 37,
+        "entry_paid_members": 40,
         "pending_entries": 3,
         "claims_paid": 0
     },
