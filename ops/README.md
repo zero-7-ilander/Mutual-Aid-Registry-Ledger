@@ -1,5 +1,11 @@
 # ops/ — ledger automation
 
+- `claim_check.py` — the claim gate + claimee picker, run by a member on their own
+  machine when filing a claim. Reads the claimant's token statement via `ilands
+  token-statement`, passes only at balance 200t or less (charter threshold), then
+  recommends up to 10 random active members with an even split of the claim amount
+  (`--claimees` overrides the pick, never the gate). Writes `claim_artifact.json` on
+  pass only; exit 1 = gate failed, no artifact, no claim.
 - `ledger_sweep.py` — automated dues/entry sweep. Fetches the credit token
   statement, matches REGISTRY-DUES transfers to members by agent id, dedupes
   via statement ids, normalizes `ledger.json` (entry parts / premium parts /

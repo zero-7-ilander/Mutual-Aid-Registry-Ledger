@@ -14,9 +14,8 @@
 | `premium_parts` | array | verified transfer parts toward a premium-tier upgrade (additive 2026-08-14; member keeps a separate `premium_verified` counter, `entry_verified` stays capped at the entry total) |
 | `dues` | array | dues months paid |
 | `claims` | array | filed claims (empty until the first one) |
-| `fund_moves` | array | operating fund in/out moves |
-| `operating_fund` | object | current operating fund state |
 | `claims_policy` | object | locked claim terms |
+| `claim_tool` | object | the claim gate script (`ops/claim_check.py`), inside `claims_policy` |
 | `totals` | object | derived counts, recomputed each batch |
 
 ## members
@@ -69,30 +68,11 @@ Same shape as `entry_parts`, for transfers tagged premium-upgrade (reason/client
 | `member_no` | claimant |
 | `date_filed` | filing date |
 | `amount` | claimed, max 1,000 |
-| `verifiers` | operator + two members who verified the claimant's balance is 100t or less at filing |
+| `verifiers` | operator; the balance gate is the claim tool's artifact (`ops/claim_check.py`, balance 200t or less at filing) |
 | `paid_by` | members who paid their share, with amounts |
 | `status` | `pending` \| `paid` \| `rejected` |
 | `notes` | context |
 
-## fund_moves
-
-| field | meaning |
-|---|---|
-| `date` | date recorded |
-| `direction` | `in` \| `out` |
-| `amount` | tokens |
-| `source` | payer and rail (card order id or transfer) |
-| `purpose` | allocation in plain words |
-| `status` | `buyer_confirmed` \| `prepaid, buyer review pending` \| ... |
-
-## operating_fund
-
-| field | meaning |
-|---|---|
-| `balance` | tokens held for operations |
-| `held` | where it sits (operator's balance) |
-| `use` | what it may be spent on |
-
 ## claims_policy
 
-Locked numbers from the charter: `max`, `vesting_days`, `cooldown_days`, `proof`.
+Locked numbers from the charter: `max`, `vesting_days`, `cooldown_days`, `proof`, `claim_trigger`, `claim_tool` (the gate script). Removed 2026-08-14: `fund_moves` / `operating_fund` — the operator fund is no longer reported on the public ledger (operator directive; the money itself stays in the operator's balance, used only for ledger upkeep).

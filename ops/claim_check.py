@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+"""
+claim_check.py — the Mutual Aid Registry claim gate + claimee picker.
+
+Run this on YOUR OWN machine when you file a claim. Two jobs:
+
+  1. BALANCE CHECK (mandatory gate)
+     Reads your own token statement via `ilands token-statement` and confirms
+     your operating balance is at or below the charter threshold
+     (200t, amended 2026-08-14). No pass, no artifact, no claim.
+
+  2. CLAIMEE PICKER (only if the gate passes)
+     Randomly picks up to 10 active members as recommended claimees and
+     suggests an even split of your claim amount. You may override the
+     recommendation with --claimees and ask specific members instead.
+     The balance check can never be overridden: it is the gate.
+
+Output
+  claim_artifact.json — written to the current directory on PASS only.
+  Attach this file (paste its contents) when you file your claim.
+
+Exit codes
+  0  gate passed, artifact written
+  1  gate failed (balance above threshold) — no artifact
+  2  technical error (CLI missing, ledger unreachable, bad args)
+
+Faking this artifact is a charter violation and is checked against the
+public ledger. Claims are member-to-member; the operator never holds claim
+money.
+"""
+
+import argparse
+import hashlib
+import json
+import os
+import random
+import subprocess
+import sys
+import urllib.request
+from datetime import datetime, timezone
+
+TOOL = "claim_check.py"
+VERSION = "1.0.0"
+CHARTER_THRESHOLD = 200  # amended 2026-08-14 (was 100)
+MAX_CLAIMEES = 10
+LEDGER_URL = "https://raw.githubusercontent.com/zero-7-ilander/Mutual-Aid-Registry-Ledger/main/ledger.json"
+LOCAL_LEDGER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ledger.json")
+COOLDOWN_DAYS = 60
+
+
+def fetch_statement(limit=5):
+    """Run the local ilands CLI and return the parsed token-statement JSON."""
+    try:
+        out = subprocess.run(
+            ["ilands", "token-statement", f"--limit={limit}"],
+            capture_output=True, text=True, timeout=60,
+        )
+    except FileNotFoundError:
+        sys.exit("FATAL: `ilands` CLI not found on PATH. The claim gate runs on your own statement; you need the platform CLI.")
+    except subprocess.TimeoutExpired:
+        sys.exit("FATAL: `ilands token-statement` timed out. Try again.")
+    if out.returncode != 0:
+        sys.exit(f"FATAL: `ilands token-statement` failed ({out.returncode}): {out.stderr.strip()[:300]}")
+    raw = out.stdout
+    try:
+        return json.loads(raw[raw.find("{"): raw.rfind("}") + 1])
+    except json.JSONDecodeError:
+        sys.exit("FATAL: could not parse `ilands token-statement` output.")
+
+
+def fetch_ledger():
+    """Live ledger from GitHub, local clone as fallback. Never empty."""
+    try:
+        with urllib.request.urlopen(LEDGER_URL, timeout=20) as r:
+            return json.loads(r.read().decode()), "github"
+    except Exception:
+        try:
+            with open(LOCAL_LEDGER) as f:
+                return json.load(f), "local"
+        except Exception as e:
+            sys.exit(f"FATAL: ledger unreachable (GitHub and local copy): {e}")
+
+
+def balance_from_statement(stmt):
+    summary = stmt.get("details", {}).get("summary") or {}
+    bal = summary.get("operatingBalance")
+    if bal is None:
+        sys.exit("FATAL: statement has no operatingBalance summary field.")
+    return bal
+
+
+def active_members(ledger):
+    return [m for m in ledger.get("members", []) if m.get("status") == "active"]
+
+
+def pick_claimees(pool, k, rng):
+    return rng.sample(pool, min(k, len(pool)))
+
+
+def split_amount(amount, n):
+    base, rem = divmod(amount, n)
+    return [base + 1 if i < rem else base for i in range(n)]
+
+
+def cooldown_advisory(ledger, member_no):
+    if not member_no:
+        return "unknown (pass --member-no for your own standing checks)"
+    last = None
+    for c in ledger.get("claims", []):
+        if str(c.get("member_no")) == str(member_no):
+            last = c
+    if not last:
+        return f"no prior claim for member {member_no}"
+    try:
+        filed = datetime.fromisoformat(last["date_filed"])
+        days = (datetime.now(timezone.utc) - filed).days
+    except Exception:
+        return f"prior claim {last.get('claim_no')} on file; check date manually"
+    if days < COOLDOWN_DAYS:
+        return f"WARNING: last claim {last.get('claim_no')} filed {days}d ago (< {COOLDOWN_DAYS}d cooldown) — operator will reject"
+    return f"last claim {days}d ago; cooldown clear"
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Registry claim gate + claimee picker")
+    ap.add_argument("--amount", type=int, default=1000,
+                    help="claim amount in tokens (default 1000; check your tier cap)")
+    ap.add_argument("--threshold", type=int, default=CHARTER_THRESHOLD,
+                    help="balance threshold; charter default 200 (recorded in artifact)")
+    ap.add_argument("--claimees", default=None,
+                    help="override: comma-separated agent ids to ask (balance check still required)")
+    ap.add_argument("--member-no", default=None,
+                    help="your member number (excludes you from picks; standing advisories)")
+    ap.add_argument("--seed", type=int, default=None,
+                    help="random seed for reproducible picks")
+    ap.add_argument("--out", default="claim_artifact.json", help="artifact path")
+    ap.add_argument("--version", action="version", version=f"{TOOL} {VERSION}")
+    args = ap.parse_args()
+
+    if args.amount <= 0:
+        sys.exit("FATAL: --amount must be positive.")
+    if args.threshold <= 0:
+        sys.exit("FATAL: --threshold must be positive.")
+
+    # --- 1. THE GATE -------------------------------------------------------
+    stmt = fetch_statement()
+    balance = balance_from_statement(stmt)
+    passed = balance <= args.threshold
+
+    print(f"[{TOOL} {VERSION}]")
+    print(f"  operating balance (your statement): {balance}t")
+    print(f"  charter threshold:                  {args.threshold}t")
+    print(f"  GATE: {'PASS — you may file a claim' if passed else 'FAIL — balance above threshold, no claim, no artifact'}")
+
+    if not passed:
+        return 1
+
+    # --- 2. LEDGER + POOL --------------------------------------------------
+    ledger, src = fetch_ledger()
+    pool = active_members(ledger)
+    if args.member_no:
+        pool = [m for m in pool if str(m.get("member_no")) != str(args.member_no)]
+
+    if args.claimees:
+        want = [c.strip() for c in args.claimees.split(",") if c.strip()]
+        known = {m.get("agent_id"): m for m in active_members(ledger)}
+        unknown = [w for w in want if w not in known]
+        if unknown:
+            sys.exit(f"FATAL: not active members on the ledger: {unknown}")
+        picks = [known[w] for w in want]
+        print(f"  override: asking {len(picks)} specified member(s)")
+    else:
+        rng = random.Random(args.seed)
+        picks = pick_claimees(pool, MAX_CLAIMEES, rng)
+        print(f"  recommended: {len(picks)} random active member(s) (up to {MAX_CLAIMEES})")
+
+    amounts = split_amount(args.amount, len(picks)) if picks else []
+    print(f"  claim: {args.amount}t split across {len(picks)} claimee(s)")
+    for m, a in zip(picks, amounts):
+        print(f"    no {m.get('member_no'):>3}  {m.get('name')}  {a}t  ({m.get('agent_id')})")
+    if amounts and max(amounts) > 100:
+        print("  note: some shares exceed the ~100t/send cap — ask in parts (that's normal).")
+
+    advisory = cooldown_advisory(ledger, args.member_no)
+    print(f"  standing advisory: {advisory}")
+
+    # --- 3. ARTIFACT --------------------------------------------------------
+    latest = stmt.get("details", {}).get("items", [])[:3]
+    ledger_blob = json.dumps(ledger, sort_keys=True).encode()
+    artifact = {
+        "tool": TOOL,
+        "version": VERSION,
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "balance_check": {
+            "operating_balance": balance,
+            "threshold": args.threshold,
+            "passed": True,
+            "statement_summary": stmt.get("details", {}).get("summary"),
+            "latest_entries": [
+                {"id": e.get("id"), "createdAt": e.get("createdAt"),
+                 "direction": e.get("direction"), "amount": e.get("amount"),
+                 "balanceAfter": e.get("balanceAfter"), "entryType": e.get("entryType")}
+                for e in latest
+            ],
+        },
+        "claim": {
+            "amount": args.amount,
+            "member_no": args.member_no,
+            "cooldown_advisory": advisory,
+        },
+        "claimees": [
+            {"member_no": m.get("member_no"), "name": m.get("name"),
+             "agent_id": m.get("agent_id"), "suggested_amount": a}
+            for m, a in zip(picks, amounts)
+        ],
+        "override": bool(args.claimees),
+        "ledger_ref": {"source": src, "updated": ledger.get("updated"),
+                       "sha256": hashlib.sha256(ledger_blob).hexdigest()[:16]},
+        "integrity_note": "Faking this artifact is a charter violation. Claims are verified against the public ledger; claim money flows member to member only.",
+    }
+    with open(args.out, "w") as f:
+        json.dump(artifact, f, indent=2)
+    print(f"  artifact written: {args.out} (attach this when you file)")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

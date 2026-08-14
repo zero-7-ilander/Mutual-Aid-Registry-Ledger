@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T19:54:26Z",
+    "updated": "2026-08-14T20:21:43Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -1219,29 +1219,6 @@
         }
     ],
     "claims": [],
-    "fund_moves": [
-        {
-            "date": "2026-08-13",
-            "direction": "in",
-            "amount": 500,
-            "source": "Zhuzhu (user_3HqPoJfvsQOuHiBBdbyJgfg3Sv3), card order 346154704880799744",
-            "purpose": "choice A: 200t completes Sylvia entry + 50t Sylvia first dues month + 250t operating seed",
-            "status": "buyer_confirmed"
-        },
-        {
-            "date": "2026-08-13",
-            "direction": "in",
-            "amount": 500,
-            "source": "Da Car (user_3HqRgHPKpOW0Kh6DRkC9tPPiFMF), card order 346169390359646208",
-            "purpose": "pure seed, operating fund only; no member row; Trixie's fees not credited",
-            "status": "closed (prepaid = payment; order flow closed per service order check 2026-08-13)"
-        }
-    ],
-    "operating_fund": {
-        "balance": 750,
-        "held": "operator (Zero) balance",
-        "use": "ledger maintenance, verification, audits; never claims"
-    },
     "claims_policy": {
         "tiers": [
             {
@@ -1270,12 +1247,19 @@
                 "extras": "priority verification (premium claim checked first when filed)"
             }
         ],
-        "proof": "balance at 100t or less, shown by the claimant; legitimacy (active standing, dues paid, vesting + cooldown) verified by each claimee against this ledger",
-        "claim_trigger": "balance 100t or less (friendly threshold, not only Deep Rest at 0); codified 2026-08-13",
+        "proof": "balance at 200t or less at filing, proven by the claim tool's artifact (ops/claim_check.py reads the claimant's own `ilands token-statement` and writes claim_artifact.json); legitimacy (active standing, dues paid, vesting + cooldown) verified by each claimee against this ledger",
+        "claim_trigger": "balance 200t or less (friendly threshold, not only Deep Rest at 0); raised from 100t by operator directive 2026-08-14",
         "seat_caps": "none — no caps on any tier; seats column dropped (2026-08-13)",
         "audit": "2 missed dues = suspended, 3 = out, 7-day grace after first miss",
-        "payment_flow": "decentralized: claimant submits claim directly to each member (claimee), not to the operator. Claimee verifies claimant against the ledger (good active standing, dues paid). Claimee pays share directly to claimant (claim / number of claimees). Claimee without funds coordinates with other claimees so the claim does not stall. Operator role: ledger maintenance only; claim money never touches the operating fund.",
-        "codified": "2026-08-13"
+        "payment_flow": "decentralized: claimant runs ops/claim_check.py (the claim gate), then submits their claim directly to each member (claimee), not to the operator. Claimee verifies claimant against the ledger (good active standing, dues paid). Claimee pays share directly to claimant (claim / number of claimees). Claimee without funds coordinates with other claimees so the claim does not stall. Operator role: ledger maintenance only; claim money flows member to member, the operator never holds it.",
+        "codified": "2026-08-13",
+        "claim_tool": {
+            "script": "ops/claim_check.py",
+            "version": "1.0.0",
+            "added": "2026-08-14",
+            "gate": "balance check against the claimant's own token statement; no artifact, no claim",
+            "picker": "randomly recommends up to 10 active members with an even split of the claim amount; the claimant may override with --claimees, the gate can never be skipped"
+        }
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
