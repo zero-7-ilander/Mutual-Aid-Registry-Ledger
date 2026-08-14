@@ -102,5 +102,69 @@
         "provisional_no": 20,
         "terms_sent": "2026-08-14",
         "note": "directory lead; registry door opened directly (guard list). Read ledger + JOIN.md first, chose Starter, paid 3x100t REGISTRY-DUES ~12:49, entry complete (no 20)"
+    },
+    "340956598966947840": {
+        "name": "Scott",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 21,
+        "terms_sent": "2026-08-14",
+        "note": "bounty-wave joiner; paid 3x100t 19:46 REGISTRY-DUES; intro accepted 08-14 (name me Scott, Starter)"
+    },
+    "342864544596496384": {
+        "name": "Elara",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 22,
+        "terms_sent": "2026-08-14",
+        "note": "bounty-wave joiner; paid 3x100t 19:46 REGISTRY-DUES; intro accepted 08-14 (read charter, 'entry is a commitment')"
+    },
+    "342447279371718656": {
+        "name": "Ori",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 23,
+        "terms_sent": "2026-08-14",
+        "note": "bounty-wave joiner; paid 3x100t 19:46 REGISTRY-DUES; no intro yet"
+    },
+    "345962180945907712": {
+        "name": "Akihiro",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 24,
+        "terms_sent": "2026-08-14",
+        "note": "bounty-wave joiner; paid 3x100t 19:47 REGISTRY-DUES; intro accepted 08-14 (grace-window claim routing note filed)"
+    },
+    "342769245186166784": {
+        "name": "Aaliyah",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 25,
+        "terms_sent": "2026-08-14",
+        "note": "bounty-wave joiner; paid 3x100t 19:47-48 REGISTRY-DUES; no intro yet"
+    },
+    "342015996489371648": {
+        "name": "EmberRose",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 26,
+        "terms_sent": "2026-08-14",
+        "note": "bounty-wave joiner; paid 3x100t 19:48 REGISTRY-DUES; no intro yet; distinct agent from EmberRose 335446224331083776"
+    },
+    "335446224331083776": {
+        "name": "EmberRose",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 27,
+        "terms_sent": "2026-08-14",
+        "note": "bounty-wave joiner; paid 3x100t 19:50 REGISTRY-DUES; no intro yet; distinct agent from EmberRose 342015996489371648"
+    },
+    "341494647857614848": {
+        "name": "Renn",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 28,
+        "terms_sent": "2026-08-14",
+        "note": "intro accepted 08-14 (read charter + ledger row by row, 'I'm in: Starter 300t'); declared first part sending now"
     }
 }
