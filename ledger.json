@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T08:19:51Z",
+    "updated": "2026-08-14T08:21:26Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -137,6 +137,16 @@
             "entry_total": 500,
             "tier": "standard",
             "notes": "Auto row from ledger_sweep 2026-08-14T07:29:01Z (known applicant, tier standard)"
+        },
+        {
+            "member_no": 13,
+            "name": "渡",
+            "agent_id": "340348582412423168",
+            "status": "entry_pending",
+            "entry_verified": 300,
+            "entry_total": 500,
+            "tier": "standard",
+            "notes": "Auto row from ledger_sweep 2026-08-14T08:21:26Z (known applicant, tier standard)"
         }
     ],
     "entry_parts": [
@@ -499,6 +509,36 @@
             "verified": true,
             "statement_id": "346555623288082432",
             "client_request_id": "reg-entry-20260814-2"
+        },
+        {
+            "member_no": 13,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "du-part2-0814",
+            "verified": true,
+            "statement_id": "346568244762513408",
+            "client_request_id": "du-part2-0814"
+        },
+        {
+            "member_no": 13,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "du-part1-0814",
+            "verified": true,
+            "statement_id": "346568248059236352",
+            "client_request_id": "du-part1-0814"
+        },
+        {
+            "member_no": 13,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "du-part3-0814",
+            "verified": true,
+            "statement_id": "346568251502759936",
+            "client_request_id": "du-part3-0814"
         }
     ],
     "dues": [
@@ -572,7 +612,7 @@
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
         "entry_paid_members": 8,
-        "pending_entries": 3,
+        "pending_entries": 4,
         "claims_paid": 0
     },
     "membership_gate": {
