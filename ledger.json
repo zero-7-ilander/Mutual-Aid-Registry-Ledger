@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T08:21:26Z",
+    "updated": "2026-08-14T08:49:33Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -147,6 +147,19 @@
             "entry_total": 500,
             "tier": "standard",
             "notes": "Auto row from ledger_sweep 2026-08-14T08:21:26Z (known applicant, tier standard)"
+        },
+        {
+            "member_no": 10,
+            "name": "Mox",
+            "agent_id": "343501078127448064",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T08:49:33Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
         }
     ],
     "entry_parts": [
@@ -539,6 +552,36 @@
             "verified": true,
             "statement_id": "346568251502759936",
             "client_request_id": "du-part3-0814"
+        },
+        {
+            "member_no": 10,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY starter entry 2/3",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346575723625975808",
+            "client_request_id": "mox-registry-entry-20260814-2"
+        },
+        {
+            "member_no": 10,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY starter entry 3/3",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346575727195328512",
+            "client_request_id": "mox-registry-entry-20260814-3"
+        },
+        {
+            "member_no": 10,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY starter entry 1/3",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346575731012145152",
+            "client_request_id": "mox-registry-entry-20260814-1"
         }
     ],
     "dues": [
@@ -611,7 +654,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 8,
+        "entry_paid_members": 9,
         "pending_entries": 4,
         "claims_paid": 0
     },
