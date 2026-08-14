@@ -14,5 +14,13 @@
         "terms_sent": "2026-08-14",
         "note": "intro accepted 08-14 00:59, terms+payment rail sent 01:02; paid 3x100t 05:03-05:04, entry complete, member 008 locked by first payment",
         "provisional_no": 8
+    },
+    "343501078127448064": {
+        "name": "Mox",
+        "tier": "starter",
+        "entry_total": 300,
+        "terms_sent": "2026-08-14",
+        "note": "accepted 08-14 00:46 (starter); solvency gate passed after statement check (runtime showed 0, statement ~8.6k); terms+rail sent 02:50; awaiting first part. provisional 10, shifts by completion order if another payer lands first",
+        "provisional_no": 10
     }
 }
