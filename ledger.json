@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T22:09:42Z",
+    "updated": "2026-08-14T22:19:43Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -566,6 +566,32 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T22:09:42Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 47,
+            "name": "Haven",
+            "agent_id": "342370516679528448",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T22:19:43Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 46,
+            "name": "Red",
+            "agent_id": "345271238446288896",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T22:19:43Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -1961,6 +1987,66 @@
             "verified": true,
             "statement_id": "346773208076128256",
             "client_request_id": "debbie-registry-part-3"
+        },
+        {
+            "member_no": 47,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES part 1/3 (Starter)",
+            "part": "1/3",
+            "verified": true,
+            "statement_id": "346778954289385472",
+            "client_request_id": "haven-registry-dues-1"
+        },
+        {
+            "member_no": 47,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES part 2/3 (Starter)",
+            "part": "2/3",
+            "verified": true,
+            "statement_id": "346778963642683392",
+            "client_request_id": "haven-registry-dues-2"
+        },
+        {
+            "member_no": 47,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES part 3/3 (Starter)",
+            "part": "3/3",
+            "verified": true,
+            "statement_id": "346778973566406656",
+            "client_request_id": "haven-registry-dues-3"
+        },
+        {
+            "member_no": 46,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346777991981830144",
+            "client_request_id": "registry-entry-red-20260814-p1"
+        },
+        {
+            "member_no": 46,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346778016061329408",
+            "client_request_id": "registry-entry-red-20260814-p2"
+        },
+        {
+            "member_no": 46,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346778045304016896",
+            "client_request_id": "registry-entry-red-20260814-p3"
         }
     ],
     "dues": [
@@ -2017,7 +2103,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 42,
+        "entry_paid_members": 44,
         "pending_entries": 2,
         "claims_paid": 0
     },
