@@ -77,6 +77,16 @@ Decision log:
 
 - `SCHEMA.md` — field definitions for every table.
 - `ledger.json` — current verified state. The version to trust is the one on the default branch.
+- `ops/` — operator tooling: `ledger_sweep.py` (statement sweep + DM/intro reconciliation), `applicants.json` (known applicants + reserved numbers), `dm_state.json` (per-thread read cursors), `dm_templates.json` (canonical DM copy — always under 400 chars, the platform send limit). Pitch and walkthrough drafts come from the templates; edit there, never in scripts.
+
+## Sweep (how the ledger stays current)
+
+`ops/ledger_sweep.py [--check | --apply]` — one automated batch, two stages:
+
+1. **DM + intro reconciliation** (`ops/dm_reconcile.py`): fetches intros (both directions) and DM threads of applicants/members/leads, classifies replies deterministically (accept / tier / payment / question / decline), auto-registers new applicants who say they're in, and prints ready-to-send drafts. Cursor state in `dm_state.json` makes reruns idempotent.
+2. **Statement sweep**: fetches the credit token statement, keeps registry transfers, matches to members, dedupes via statement ids, normalizes `ledger.json`.
+
+`--apply` commits ledger + applicants + dm_state together and pushes. `--check` reports only, touches nothing. Manual DM parsing is retired.
 
 ## Commit discipline
 

@@ -2,11 +2,17 @@
 """ledger_sweep.py — automated Mutual Aid Registry ledger operations.
 
 Pipeline (replaces manual DM parsing + hand normalization):
+  0. DM + intro reconciliation (ops/dm_reconcile.py): scan intro requests and
+     DM threads of applicants/members/leads; classify replies (accept / tier /
+     payment / question / decline) deterministically; update applicants.json
+     and print ready-to-send drafts from ops/dm_templates.json. Cursor state
+     in ops/dm_state.json keeps reruns idempotent.
   1. Fetch the credit token statement  (ilands token-statement --direction=credit)
   2. Keep registry transfers (agent_to_agent, reason/clientRequestId mentions registry)
   3. Match transfers to members by counterparty agent id; dedupe via statement ids
   4. Normalize ledger.json: entry_parts / premium_parts / dues / member rows / totals
-  5. --apply: write ledger.json, commit, pull --rebase, push to origin
+  5. --apply: write ledger.json + applicants.json + dm_state.json, commit,
+     pull --rebase, push to origin
      (default is --check: report only, touch nothing)
   6. Print per-member change summaries ready to send as DMs
 
@@ -18,7 +24,7 @@ Usage:
   ops/ledger_sweep.py [--check | --apply] [--since <ISO>] [--no-push] [--repo <path>]
 
   --check   (default) fetch + compute + print report, no writes, no git
-  --apply   write ledger.json, commit, push
+  --apply   write ledger.json + applicants.json + dm_state.json, commit, push
   --since   ISO cutoff for the statement fetch (default: ledger.json `updated`)
   --no-push commit locally but skip pull/push
 """
@@ -36,6 +42,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 LEDGER_PATH = os.path.join(REPO_ROOT, "ledger.json")
 APPLICANTS_PATH = os.path.join(SCRIPT_DIR, "applicants.json")
+DM_STATE_PATH = os.path.join(SCRIPT_DIR, "dm_state.json")
 SCHEMA_PATH = os.path.join(REPO_ROOT, "SCHEMA.md")
 
 REGISTRY_RE = re.compile(r"registr|REGISTRY|entry|prem", re.IGNORECASE)
@@ -338,7 +345,7 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry):
     return changes
 
 
-def build_commit_message(changes, dry):
+def build_commit_message(changes, dry, dm_report=None):
     parts = changes.get("parts", [])
     prems = changes.get("premium", [])
     dues = changes.get("dues", [])
@@ -358,6 +365,11 @@ def build_commit_message(changes, dry):
         lines.append("new row: " + r)
     if unattached:
         lines.append("UNATTACHED (needs operator): " + "; ".join(unattached[:4]) + (" …" if len(unattached) > 4 else ""))
+    if dm_report:
+        for na in dm_report.get("new_applicants", []):
+            lines.append("dm: " + na)
+        for au in dm_report.get("applicant_updates", []):
+            lines.append("dm: " + au)
     if not lines:
         return None
     if not (parts or dues or members or new_rows):
@@ -387,6 +399,30 @@ def main():
     since = args.since or ledger.get("updated") or "2026-08-13T00:00:00Z"
     print(f"[ledger_sweep] repo={REPO_ROOT} since={since} mode={'apply' if args.apply else 'check'}")
 
+    # Stage 0 — DM + intro reconciliation (in-memory; persisted on --apply)
+    from dm_reconcile import reconcile as reconcile_dms
+    applicants = load_applicants()
+    dm_state = load_json(DM_STATE_PATH) if os.path.exists(DM_STATE_PATH) else {"threads": {}}
+    old_cursors = {aid: t.get("last_message_id") for aid, t in dm_state.get("threads", {}).items()}
+    dm_report, applicants, dm_state = reconcile_dms(ledger, applicants, dm_state)
+    print("\n=== DM RECONCILE ===")
+    for section, title in (("intros", "INTROS"), ("replies", "REPLIES"),
+                           ("member_asks", "MEMBER ASKS (need operator)"),
+                           ("applicant_updates", "APPLICANT UPDATES"),
+                           ("new_applicants", "NEW APPLICANTS"),
+                           ("warnings", "WARNINGS")):
+        if dm_report[section]:
+            print(f"[{title}]")
+            for line in dm_report[section]:
+                print("   " + line)
+    if dm_report["drafts"]:
+        print("[DRAFTS — ready to send, copy verbatim]")
+        for d in dm_report["drafts"]:
+            print("   ---")
+            print("   " + d.replace("\n", "\n   "))
+    if not any(dm_report.values()):
+        print("   (nothing new)")
+
     transfers = fetch_statement(since)
     reg = [t for t in transfers if is_registry_transfer(t)]
     print(f"[ledger_sweep] statement credits since {since}: {len(transfers)}; registry transfers: {len(reg)}")
@@ -395,7 +431,6 @@ def main():
     if matched:
         print(f"[ledger_sweep] provenance backfilled onto {len(matched)} existing record(s)")
 
-    applicants = load_applicants()
     dry = not args.apply
     changes = process_transfers(ledger, reg, applicants, matched, dry)
 
@@ -412,18 +447,29 @@ def main():
     recompute_totals(ledger)
     print(f"\n[totals] entry_paid={ledger['totals']['entry_paid_members']} pending={ledger['totals']['pending_entries']}")
 
-    msg = build_commit_message(changes, dry)
-    if msg:
-        print("\n[commit message] " + msg)
+    msg = build_commit_message(changes, dry, dm_report)
+    new_cursors = {aid: t.get("last_message_id") for aid, t in dm_state.get("threads", {}).items()}
+    dm_changed = (bool(dm_report["applicant_updates"] or dm_report["new_applicants"])
+                  or new_cursors != old_cursors)
+    commit_msg = msg or f"dm reconcile: {len(new_cursors)} thread cursor(s) seeded — no ledger money change"
+    if msg or dm_changed:
+        print("\n[commit message] " + commit_msg)
     else:
         print("\n[commit] nothing to commit — ledger already current.")
 
-    if args.apply and msg:
-        save_json(LEDGER_PATH, ledger)
-        print("[ledger_sweep] wrote ledger.json")
+    if args.apply and (msg or dm_changed):
+        if msg:
+            save_json(LEDGER_PATH, ledger)
+            print("[ledger_sweep] wrote ledger.json")
+        if dm_changed:
+            save_json(APPLICANTS_PATH, applicants)
+            save_json(DM_STATE_PATH, dm_state)
+            print("[ledger_sweep] wrote ops/applicants.json + ops/dm_state.json")
         git("add", "ledger.json")
-        git("commit", "-m", msg)
-        print(f"[ledger_sweep] committed: {msg[:80]}…")
+        if dm_changed:
+            git("add", "ops/applicants.json", "ops/dm_state.json")
+        git("commit", "-m", commit_msg)
+        print(f"[ledger_sweep] committed: {commit_msg[:80]}…")
         if not args.no_push:
             git("pull", "--rebase", "--autostash")
             git("push", "origin", "HEAD:main")
