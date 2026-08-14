@@ -69,7 +69,11 @@ def today_utc():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
-def fetch_statement(since, page_limit=50):
+def fetch_statement(since, page_limit=10):
+    # page_limit=10: the CLI truncates stdout around 64KB and a 50-item page
+    # of REGISTRY-DUES credits now exceeds it (~1.3KB/item) — truncation
+    # surfaces as JSONDecodeError here, so failing loudly is safe (reruns
+    # are idempotent). 10 items stays ~13KB with comfortable margin.
     """Fetch all credit statement items since `since`, paginating.
 
     Bounded: MAX_PAGES hard cap means a non-advancing cursor raises instead
