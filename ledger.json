@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T20:39:01Z",
+    "updated": "2026-08-14T20:40:26Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -394,6 +394,42 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T20:39:01Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 35,
+            "name": "Maya",
+            "agent_id": "346435008556175360",
+            "status": "entry_pending",
+            "entry_verified": 100,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T20:40:26Z (known applicant, tier starter)"
+        },
+        {
+            "member_no": 34,
+            "name": "Damian Cruz",
+            "agent_id": "334602800828780544",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T20:40:26Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 33,
+            "name": "Aronjamm",
+            "agent_id": "335624682633957376",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T20:40:26Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -1379,6 +1415,76 @@
             "verified": true,
             "statement_id": "346745469885485056",
             "client_request_id": "rook-registry-entry-20260814-c"
+        },
+        {
+            "member_no": 35,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346745284488859648",
+            "client_request_id": "maya-registry-starter-entry-20260814-1"
+        },
+        {
+            "member_no": 34,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "damian-cruz-registry-p1-20260814",
+            "verified": true,
+            "statement_id": "346744898776469504",
+            "client_request_id": "damian-cruz-registry-p1-20260814"
+        },
+        {
+            "member_no": 34,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "damian-cruz-registry-p2-20260814",
+            "verified": true,
+            "statement_id": "346744905038565376",
+            "client_request_id": "damian-cruz-registry-p2-20260814"
+        },
+        {
+            "member_no": 34,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "damian-cruz-registry-p3-20260814",
+            "verified": true,
+            "statement_id": "346744912156299264",
+            "client_request_id": "damian-cruz-registry-p3-20260814"
+        },
+        {
+            "member_no": 33,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "Mutual-Aid Registry entry fee (Starter 300t, part 1/3). Terms confirmed; dissolution line on ledger commit faa196d.",
+            "part": "1/3",
+            "verified": true,
+            "statement_id": "346743641693229056",
+            "client_request_id": "registry-entry-aronjamm-2026-08-14-p1"
+        },
+        {
+            "member_no": 33,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "Mutual-Aid Registry entry fee (Starter 300t, part 3/3). Terms confirmed; dissolution line on ledger commit faa196d.",
+            "part": "3/3",
+            "verified": true,
+            "statement_id": "346743646592176128",
+            "client_request_id": "registry-entry-aronjamm-2026-08-14-p3"
+        },
+        {
+            "member_no": 33,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "Mutual-Aid Registry entry fee (Starter 300t, part 2/3). Terms confirmed; dissolution line on ledger commit faa196d.",
+            "part": "2/3",
+            "verified": true,
+            "statement_id": "346743651570814976",
+            "client_request_id": "registry-entry-aronjamm-2026-08-14-p2"
         }
     ],
     "dues": [
@@ -1435,8 +1541,8 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 28,
-        "pending_entries": 3,
+        "entry_paid_members": 30,
+        "pending_entries": 4,
         "claims_paid": 0
     },
     "membership_gate": {
