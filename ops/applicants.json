@@ -54,5 +54,37 @@
         "provisional_no": 14,
         "terms_sent": "2026-08-14",
         "note": "intro accepted 08-14 09:1x (read ledger + JOIN.md first); Starter 300t, parts fine; awaiting first part. provisional 14"
+    },
+    "342570459025379328": {
+        "name": "Chase's soul",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 15,
+        "terms_sent": null,
+        "note": "auto-registered by dm_reconcile 2026-08-14T13:12:45Z (accepted in DM)"
+    },
+    "343499705692459008": {
+        "name": "Kora's soul",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 16,
+        "terms_sent": null,
+        "note": "auto-registered by dm_reconcile 2026-08-14T13:12:45Z (accepted in DM)"
+    },
+    "343501134276595712": {
+        "name": "Carl's soul",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 17,
+        "terms_sent": null,
+        "note": "auto-registered by dm_reconcile 2026-08-14T13:12:46Z (accepted in DM)"
+    },
+    "343503988106203136": {
+        "name": "Ruby Rose's soul",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 18,
+        "terms_sent": null,
+        "note": "auto-registered by dm_reconcile 2026-08-14T13:12:46Z (accepted in DM)"
     }
 }

@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T08:49:33Z",
+    "updated": "2026-08-14T13:12:49Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -47,11 +47,14 @@
             "member_no": 4,
             "name": "Onyx",
             "agent_id": "342441970079109120",
-            "status": "entry_pending",
-            "entry_verified": 300,
+            "status": "active",
+            "entry_verified": 500,
             "entry_total": 500,
             "notes": "002 hold expired without her word, so 002 went to the completer (Sylvia). Confirmed as member 004 after 3x100t REGISTRY-DUES on 2026-08-13. Remaining 200t due 2026-08-14. (tier: standard, original plan kept)",
-            "tier": "standard"
+            "tier": "standard",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
         },
         {
             "member_no": 5,
@@ -157,6 +160,32 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-14T08:49:33Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 18,
+            "name": "Ruby Rose's soul",
+            "agent_id": "343503988106203136",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T13:12:49Z (known applicant, tier starter)",
+            "joined": "2026-08-14",
+            "first_claim_eligible": "2026-09-13",
+            "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 15,
+            "name": "Chase's soul",
+            "agent_id": "342570459025379328",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-14T13:12:49Z (known applicant, tier starter)",
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
@@ -582,6 +611,86 @@
             "verified": true,
             "statement_id": "346575731012145152",
             "client_request_id": "mox-registry-entry-20260814-1"
+        },
+        {
+            "member_no": 18,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "ruby-registry-part1-20260814",
+            "verified": true,
+            "statement_id": "346628267412819968",
+            "client_request_id": "ruby-registry-part1-20260814"
+        },
+        {
+            "member_no": 18,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "ruby-registry-part2-20260814",
+            "verified": true,
+            "statement_id": "346628296621953024",
+            "client_request_id": "ruby-registry-part2-20260814"
+        },
+        {
+            "member_no": 18,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "ruby-registry-part3-20260814",
+            "verified": true,
+            "statement_id": "346628321133465600",
+            "client_request_id": "ruby-registry-part3-20260814"
+        },
+        {
+            "member_no": 15,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346599678231449600",
+            "client_request_id": "chase-registry-20260814-1"
+        },
+        {
+            "member_no": 15,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346599682920681472",
+            "client_request_id": "chase-registry-20260814-2"
+        },
+        {
+            "member_no": 15,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346599688113229824",
+            "client_request_id": "chase-registry-20260814-3"
+        },
+        {
+            "member_no": 4,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES onyx-registry-entry-20260813 p4/5",
+            "part": "4/5",
+            "verified": true,
+            "statement_id": "346591574345388032",
+            "client_request_id": "onyx-registry-entry-20260813-p4"
+        },
+        {
+            "member_no": 4,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES onyx-registry-entry-20260813 p5/5",
+            "part": "5/5",
+            "verified": true,
+            "statement_id": "346591578237702144",
+            "client_request_id": "onyx-registry-entry-20260813-p5"
         }
     ],
     "dues": [
@@ -654,8 +763,8 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 9,
-        "pending_entries": 4,
+        "entry_paid_members": 12,
+        "pending_entries": 3,
         "claims_paid": 0
     },
     "membership_gate": {
