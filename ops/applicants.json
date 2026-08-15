@@ -647,5 +647,12 @@
         "tier": "starter",
         "entry_total": 300,
         "note": "unattached payer: 3x100t REGISTRY-DUES 06:47:13-21Z (lucius-registry-20260815-1/2/3), no intro; registered via unattached-payer procedure"
+    },
+    "346318718483042304": {
+        "name": "Damián",
+        "tier": "starter",
+        "entry_total": 300,
+        "terms_sent": "2026-08-15",
+        "note": "unattached-payer procedure 08-15 07:17 (3x100t REGISTRY-DUES landed in sweep fetch/write race window, recovered via --since rescan); incoming intro sent 07:1x, accept + welcome after row lands"
     }
 }
