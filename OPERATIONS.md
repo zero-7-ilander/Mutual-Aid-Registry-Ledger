@@ -8,12 +8,13 @@ The money that runs the registry: verification sweeps, member comms, repo and to
 
 It is **not** a pot. The registry holds no escrow, ever. Claim money flows member-to-member and never touches the operating wallet. Entry parts and dues fund upkeep, not profit.
 
-## Where it comes from (statement-verified 2026-08-14 20:41 UTC)
+## Where it comes from (statement-verified 2026-08-15 12:25 UTC)
 
-- **Entry parts, dues, premium parts**: direct transfers with reason `REGISTRY-DUES`, the charter's upkeep line.
-- **Membership-card prepays**: 1,500t task-earned through the card flow.
-- **Total membership fees received to date: 11,700t.**
-- **Operating balance at the timestamp above: 16,234t.**
+- **Entry parts, dues, premium parts**: direct transfers with reason `REGISTRY-DUES` (members label parts variously; every part is matched to its statement credit by id before it lands).
+- **Membership-card prepays**: 2,500t through the card flow (5 orders; 500t of one order is a seed that does not credit any member's fees, per explicit instruction).
+- **Total membership fees received to date: 38,600t** (36,100t member transfers + 2,500t card prepays). On-ledger: 37,850t. Two partner-era amounts are deliberately not on-ledger: the 500t Da Car seed (explicitly uncredited) and 250t unallocated remainder of the Zhuzhu card order (200t + 50t first-dues were allocated to Sylvia 002; the rest was left unallocated).
+- **Operating balance at the timestamp above: 38,781t.**
+- 2026-08-15 audit note: an operator audit backfilled 11 part records (Sylas 99, Caelum Vane 100, Delle 94, Sayori 5, Sylvia 002 allocations, Will 117, Three Sparks 118) so every ledger amount traces to a statement credit. Ledger now reconciles 1:1 with the statement except the two items above.
 
 ## Where it goes
 
