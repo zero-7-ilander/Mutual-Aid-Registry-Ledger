@@ -41,6 +41,9 @@ from datetime import datetime, timedelta, timezone
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 LEDGER_PATH = os.path.join(REPO_ROOT, "ledger.json")
+MEMBERS_PATH = os.path.join(REPO_ROOT, "members.json")
+PAYMENTS_PATH = os.path.join(REPO_ROOT, "payments.json")
+CLAIMS_PATH = os.path.join(REPO_ROOT, "claims.json")
 APPLICANTS_PATH = os.path.join(SCRIPT_DIR, "applicants.json")
 DM_STATE_PATH = os.path.join(SCRIPT_DIR, "dm_state.json")
 SCHEMA_PATH = os.path.join(REPO_ROOT, "SCHEMA.md")
@@ -119,6 +122,55 @@ def fetch_statement(since, page_limit=10):
 def load_json(path):
     with open(path) as f:
         return json.load(f)
+
+
+def load_ledger():
+    """Compose the in-memory ledger dict from the domain files (schema-split),
+    falling back to the pre-split ledger.json for old checkouts."""
+    if all(os.path.exists(p) for p in (MEMBERS_PATH, PAYMENTS_PATH, CLAIMS_PATH)):
+        members_doc = load_json(MEMBERS_PATH)
+        payments_doc = load_json(PAYMENTS_PATH)
+        claims_doc = load_json(CLAIMS_PATH)
+        # updated = the merged ledger.json stamp (the fetch-cutoff truth), if present.
+        merged_updated = load_json(LEDGER_PATH).get("updated") if os.path.exists(LEDGER_PATH) else None
+        ledger = {
+            "ledger": members_doc.get("ledger", "Mutual Aid Registry"),
+            "updated": merged_updated or max(members_doc.get("updated", ""),
+                                              payments_doc.get("updated", ""),
+                                              claims_doc.get("updated", "")),
+            "source_of_truth": members_doc.get("source_of_truth", ""),
+            "members": members_doc.get("members", []),
+            "entry_parts": payments_doc.get("entry_parts", []),
+            "premium_parts": payments_doc.get("premium_parts", []),
+            "dues": payments_doc.get("dues", []),
+            "claims": claims_doc.get("claims", []),
+            "claims_policy": members_doc.get("claims_policy", {}),
+            "tier_assignment": members_doc.get("tier_assignment", ""),
+            "membership_gate": members_doc.get("membership_gate", {}),
+            "totals": {},
+        }
+        return ledger
+    return load_json(LEDGER_PATH)
+
+
+def save_ledger(ledger):
+    """Write the three domain files, then regenerate ledger.json via the merge
+    step. Returns the list of files staged by the caller."""
+    stamp = now_iso()
+    members_doc = {k: ledger.get(k) for k in
+                   ("ledger", "source_of_truth", "members", "claims_policy",
+                    "tier_assignment", "membership_gate")}
+    members_doc["updated"] = stamp
+    payments_doc = {k: ledger.get(k) for k in ("entry_parts", "premium_parts", "dues")}
+    payments_doc["updated"] = stamp
+    claims_doc = {"claims": ledger.get("claims", []), "updated": stamp}
+    save_json(MEMBERS_PATH, members_doc)
+    save_json(PAYMENTS_PATH, payments_doc)
+    save_json(CLAIMS_PATH, claims_doc)
+    from merge_ledger import merge
+    merged = merge((members_doc, payments_doc, claims_doc), stamp_updated=True)
+    save_json(LEDGER_PATH, merged)
+    return [LEDGER_PATH, MEMBERS_PATH, PAYMENTS_PATH, CLAIMS_PATH]
 
 
 def save_json(path, data):
@@ -424,7 +476,7 @@ def main():
     REPO_ROOT = args.repo or os.path.dirname(SCRIPT_DIR)
     LEDGER_PATH = os.path.join(REPO_ROOT, "ledger.json")
 
-    ledger = load_json(LEDGER_PATH)
+    ledger = load_ledger()
     since = args.since or ledger.get("updated") or "2026-08-13T00:00:00Z"
     print(f"[ledger_sweep] repo={REPO_ROOT} since={since} mode={'apply' if args.apply else 'check'}")
 
@@ -492,9 +544,9 @@ def main():
         # no ledger money change" commit (fcafbb4, 08-15: Sylas 99 + Caelum
         # Vane 100 landed under a message claiming no money moved).
         if msg:
-            save_json(LEDGER_PATH, ledger)
-            print("[ledger_sweep] wrote ledger.json")
-            git("add", "ledger.json")
+            staged = save_ledger(ledger)
+            print("[ledger_sweep] wrote members.json + payments.json + claims.json + ledger.json (merged)")
+            git("add", *staged)
         elif git_status_porcelain(LEDGER_PATH):
             print("[ledger_sweep] WARNING: ledger.json has uncommitted changes "
                   "NOT made by this run; leaving them for the next money sweep.")
