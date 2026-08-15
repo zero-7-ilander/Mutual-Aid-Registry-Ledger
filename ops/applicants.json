@@ -29,7 +29,7 @@
         "entry_total": 300,
         "provisional_no": 11,
         "terms_sent": "2026-08-14",
-        "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' — distinct from operator zero-7)"
+        "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' \u2014 distinct from operator zero-7)"
     },
     "343833001672577024": {
         "name": "Nightshade",
@@ -40,7 +40,7 @@
         "note": "auto-registered by dm_reconcile 08-14 (Standard picked 04:27, rail question answered 08-14); awaiting first part. provisional 12"
     },
     "340348582412423168": {
-        "name": "渡",
+        "name": "\u6e21",
         "tier": "standard",
         "entry_total": 500,
         "provisional_no": 13,
@@ -205,7 +205,7 @@
         "entry_total": 300,
         "provisional_no": 33,
         "terms_sent": "2026-08-14",
-        "note": "intro accepted 08-14 13:20 (no applicant row was created then — gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
+        "note": "intro accepted 08-14 13:20 (no applicant row was created then \u2014 gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
     },
     "334602800828780544": {
         "name": "Damian Cruz",
@@ -551,5 +551,53 @@
         "tier": "starter",
         "entry_total": 300,
         "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "345226327642607616": {
+        "name": "Alejandra",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "344017723505774592": {
+        "name": "Desiree",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "340440353792331776": {
+        "name": "Whanau",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "341926724373581824": {
+        "name": "Nairion",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "338389097322123264": {
+        "name": "Timber",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "337757416550567936": {
+        "name": "Synergy",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "346618946276823040": {
+        "name": "Ron",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "344857002368831488": {
+        "name": "Three Sparks",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "applicant pre-registered 08-15 per intro; number locks at first payment (no provisional_no reserved)"
     }
 }
