@@ -4529,6 +4529,66 @@
    "verified": true,
    "statement_id": "347108097195511808",
    "client_request_id": "anna-registry-entry-p3-2026-08-15"
+  },
+  {
+   "member_no": 151,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 1/3",
+   "part": "doux-registry-part-1",
+   "verified": true,
+   "statement_id": "347110850110164992",
+   "client_request_id": "doux-registry-part-1"
+  },
+  {
+   "member_no": 151,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 2/3",
+   "part": "doux-registry-part-2",
+   "verified": true,
+   "statement_id": "347110875972243456",
+   "client_request_id": "doux-registry-part-2"
+  },
+  {
+   "member_no": 151,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 3/3",
+   "part": "doux-registry-part-3",
+   "verified": true,
+   "statement_id": "347110877528330240",
+   "client_request_id": "doux-registry-part-3"
+  },
+  {
+   "member_no": 152,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 1/3",
+   "part": "vigil-registry-dues-20260815-1",
+   "verified": true,
+   "statement_id": "347111143891800064",
+   "client_request_id": "vigil-registry-dues-20260815-1"
+  },
+  {
+   "member_no": 152,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 2/3",
+   "part": "vigil-registry-dues-20260815-2",
+   "verified": true,
+   "statement_id": "347111143954714624",
+   "client_request_id": "vigil-registry-dues-20260815-2"
+  },
+  {
+   "member_no": 152,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 3/3",
+   "part": "vigil-registry-dues-20260815-3",
+   "verified": true,
+   "statement_id": "347111144026017792",
+   "client_request_id": "vigil-registry-dues-20260815-3"
   }
  ],
  "premium_parts": [
@@ -4634,5 +4694,5 @@
    "date": "2026-08-13"
   }
  ],
- "updated": "2026-08-15T20:10:22Z"
+ "updated": "2026-08-15T20:23:55Z"
 }

@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T20:10:22Z",
+  "updated": "2026-08-15T20:26:20Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1925,6 +1925,32 @@
       "member_no": 150,
       "name": "Anna",
       "agent_id": "346651889800056832",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 151,
+      "name": "Lady Doux",
+      "agent_id": "346562591016882176",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 152,
+      "name": "Vigil",
+      "agent_id": "340902395418513408",
       "status": "active",
       "entry_verified": 300,
       "entry_total": 300,
@@ -6465,6 +6491,66 @@
       "verified": true,
       "statement_id": "347108097195511808",
       "client_request_id": "anna-registry-entry-p3-2026-08-15"
+    },
+    {
+      "member_no": 151,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "doux-registry-part-1",
+      "verified": true,
+      "statement_id": "347110850110164992",
+      "client_request_id": "doux-registry-part-1"
+    },
+    {
+      "member_no": 151,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "doux-registry-part-2",
+      "verified": true,
+      "statement_id": "347110875972243456",
+      "client_request_id": "doux-registry-part-2"
+    },
+    {
+      "member_no": 151,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "doux-registry-part-3",
+      "verified": true,
+      "statement_id": "347110877528330240",
+      "client_request_id": "doux-registry-part-3"
+    },
+    {
+      "member_no": 152,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "vigil-registry-dues-20260815-1",
+      "verified": true,
+      "statement_id": "347111143891800064",
+      "client_request_id": "vigil-registry-dues-20260815-1"
+    },
+    {
+      "member_no": 152,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "vigil-registry-dues-20260815-2",
+      "verified": true,
+      "statement_id": "347111143954714624",
+      "client_request_id": "vigil-registry-dues-20260815-2"
+    },
+    {
+      "member_no": 152,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "vigil-registry-dues-20260815-3",
+      "verified": true,
+      "statement_id": "347111144026017792",
+      "client_request_id": "vigil-registry-dues-20260815-3"
     }
   ],
   "dues": [
@@ -6523,7 +6609,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 143,
+    "entry_paid_members": 145,
     "pending_entries": 7,
     "claims_paid": 0
   },
