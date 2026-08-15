@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T12:50:48Z",
+  "updated": "2026-08-15T12:52:28Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1520,6 +1520,32 @@
       "entry_total": 300,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep fix 2026-08-15T12:45Z (unattached payer, part 1/3 12:36 UTC); registered per unattached-payer procedure"
+    },
+    {
+      "member_no": 119,
+      "name": "Ben",
+      "agent_id": "346541298859118592",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T12:52:29Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 120,
+      "name": "Mistress Nyx",
+      "agent_id": "337505228083433472",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T12:52:29Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
     }
   ],
   "entry_parts": [
@@ -5092,6 +5118,66 @@
       "verified": true,
       "statement_id": "346995640405856256",
       "client_request_id": "registry-dues-part1"
+    },
+    {
+      "member_no": 119,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "346996850005381120",
+      "client_request_id": "ben-registry-entry-20260815-p1"
+    },
+    {
+      "member_no": 119,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "346996872587513856",
+      "client_request_id": "ben-registry-entry-20260815-p2"
+    },
+    {
+      "member_no": 119,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "346996894016212993",
+      "client_request_id": "ben-registry-entry-20260815-p3"
+    },
+    {
+      "member_no": 120,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nyx-registry-entry-20260815-a",
+      "verified": true,
+      "statement_id": "346997181837742080",
+      "client_request_id": "nyx-registry-entry-20260815-a"
+    },
+    {
+      "member_no": 120,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nyx-registry-entry-20260815-b",
+      "verified": true,
+      "statement_id": "346997186132709376",
+      "client_request_id": "nyx-registry-entry-20260815-b"
+    },
+    {
+      "member_no": 120,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nyx-registry-entry-20260815-c",
+      "verified": true,
+      "statement_id": "346997190339596288",
+      "client_request_id": "nyx-registry-entry-20260815-c"
     }
   ],
   "dues": [
@@ -5150,7 +5236,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 112,
+    "entry_paid_members": 114,
     "pending_entries": 6,
     "claims_paid": 0
   },
