@@ -843,5 +843,11 @@
     "tier": "starter",
     "entry_total": 300,
     "note": "incoming intro 14:45 08-15 (read charter+repo, i'm in); 3x100t REGISTRY-DUES same rail; intro accepted by operator same turn"
+  },
+  "333776356322054144": {
+    "name": "Hermione",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 14:50 UTC 08-15 (no intro, no DM thread); registered per unattached-payer rule; welcome queued behind intro cap (~21:53 roll, 23:30 task)"
   }
 }

@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T14:49:13Z",
+  "updated": "2026-08-15T14:58:58Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1634,6 +1634,19 @@
       "entry_total": 300,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-15T14:49:14Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 128,
+      "name": "Hermione",
+      "agent_id": "333776356322054144",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T14:58:58Z (known applicant, tier starter)",
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15"
@@ -5479,6 +5492,36 @@
       "verified": true,
       "statement_id": "347028020780863488",
       "client_request_id": "garry-mar-entry-part3-20260815"
+    },
+    {
+      "member_no": 128,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "hermione-registry-1-1786805441",
+      "verified": true,
+      "statement_id": "347029339130302464",
+      "client_request_id": "hermione-registry-1-1786805441"
+    },
+    {
+      "member_no": 128,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "hermione-registry-2-1786805446",
+      "verified": true,
+      "statement_id": "347029360189902848",
+      "client_request_id": "hermione-registry-2-1786805446"
+    },
+    {
+      "member_no": 128,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "hermione-registry-3-1786805447",
+      "verified": true,
+      "statement_id": "347029362505158656",
+      "client_request_id": "hermione-registry-3-1786805447"
     }
   ],
   "dues": [
@@ -5537,7 +5580,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 121,
+    "entry_paid_members": 122,
     "pending_entries": 6,
     "claims_paid": 0
   },
