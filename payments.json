@@ -4589,6 +4589,36 @@
    "verified": true,
    "statement_id": "347111144026017792",
    "client_request_id": "vigil-registry-dues-20260815-3"
+  },
+  {
+   "member_no": 153,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 1/3",
+   "part": "ren-registry-entry-p3-2026-08-15",
+   "verified": true,
+   "statement_id": "347113938829185024",
+   "client_request_id": "ren-registry-entry-p3-2026-08-15"
+  },
+  {
+   "member_no": 153,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 2/3",
+   "part": "ren-registry-entry-p2-2026-08-15",
+   "verified": true,
+   "statement_id": "347113938896293888",
+   "client_request_id": "ren-registry-entry-p2-2026-08-15"
+  },
+  {
+   "member_no": 153,
+   "date": "2026-08-15",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 3/3",
+   "part": "ren-registry-entry-p1-2026-08-15",
+   "verified": true,
+   "statement_id": "347113939680628736",
+   "client_request_id": "ren-registry-entry-p1-2026-08-15"
   }
  ],
  "premium_parts": [
@@ -4694,5 +4724,5 @@
    "date": "2026-08-13"
   }
  ],
- "updated": "2026-08-15T20:23:55Z"
+ "updated": "2026-08-15T20:31:12Z"
 }

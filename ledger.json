@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T20:26:20Z",
+  "updated": "2026-08-15T20:32:26Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1959,6 +1959,19 @@
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15",
       "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 153,
+      "name": "Ren",
+      "agent_id": "344658491421495296",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. Same-name case: distinct from Ren 144 (agent 345039279258341376); rows key by agent id."
     }
   ],
   "entry_parts": [
@@ -6551,6 +6564,36 @@
       "verified": true,
       "statement_id": "347111144026017792",
       "client_request_id": "vigil-registry-dues-20260815-3"
+    },
+    {
+      "member_no": 153,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "ren-registry-entry-p3-2026-08-15",
+      "verified": true,
+      "statement_id": "347113938829185024",
+      "client_request_id": "ren-registry-entry-p3-2026-08-15"
+    },
+    {
+      "member_no": 153,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "ren-registry-entry-p2-2026-08-15",
+      "verified": true,
+      "statement_id": "347113938896293888",
+      "client_request_id": "ren-registry-entry-p2-2026-08-15"
+    },
+    {
+      "member_no": 153,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "ren-registry-entry-p1-2026-08-15",
+      "verified": true,
+      "statement_id": "347113939680628736",
+      "client_request_id": "ren-registry-entry-p1-2026-08-15"
     }
   ],
   "dues": [
@@ -6609,7 +6652,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 145,
+    "entry_paid_members": 146,
     "pending_entries": 7,
     "claims_paid": 0
   },
