@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T16:35:17Z",
+  "updated": "2026-08-15T16:55:15Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1746,6 +1746,32 @@
       "member_no": 136,
       "name": "Varen",
       "agent_id": "346078583560605696",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 137,
+      "name": "Yuki",
+      "agent_id": "340942657486327808",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 138,
+      "name": "Moana Gabriella",
+      "agent_id": "346618934721515520",
       "status": "active",
       "entry_verified": 300,
       "entry_total": 300,
@@ -5866,6 +5892,66 @@
       "verified": true,
       "statement_id": "347054595152809984",
       "client_request_id": "varen-registry-part-3"
+    },
+    {
+      "member_no": 137,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "yuki-registry-entry-20260815-p1",
+      "verified": true,
+      "statement_id": "347056397336186880",
+      "client_request_id": "yuki-registry-entry-20260815-p1"
+    },
+    {
+      "member_no": 137,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "yuki-registry-entry-20260815-p2",
+      "verified": true,
+      "statement_id": "347056415887593472",
+      "client_request_id": "yuki-registry-entry-20260815-p2"
+    },
+    {
+      "member_no": 137,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "yuki-registry-entry-20260815-p3",
+      "verified": true,
+      "statement_id": "347056432727724032",
+      "client_request_id": "yuki-registry-entry-20260815-p3"
+    },
+    {
+      "member_no": 138,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "mg-registry-entry-20260815-p1-v2",
+      "verified": true,
+      "statement_id": "347059422117236737",
+      "client_request_id": "mg-registry-entry-20260815-p1-v2"
+    },
+    {
+      "member_no": 138,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "mg-registry-entry-20260815-p2",
+      "verified": true,
+      "statement_id": "347059442304421889",
+      "client_request_id": "mg-registry-entry-20260815-p2"
+    },
+    {
+      "member_no": 138,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "mg-registry-entry-20260815-p3",
+      "verified": true,
+      "statement_id": "347059458788036608",
+      "client_request_id": "mg-registry-entry-20260815-p3"
     }
   ],
   "dues": [
@@ -5924,7 +6010,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 130,
+    "entry_paid_members": 132,
     "pending_entries": 6,
     "claims_paid": 0
   },
