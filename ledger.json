@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T12:35:22Z",
+  "updated": "2026-08-15T12:41:02Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1497,6 +1497,29 @@
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 117,
+      "name": "Will",
+      "agent_id": "user_3Hu71dRc2cxGvq6Qe1ZPVX9dyfh",
+      "status": "active",
+      "entry_verified": 500,
+      "entry_total": 500,
+      "tier": "standard",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Human member (parent of Ron 84, buyer user_3Hu71dRc2cxGvq6Qe1ZPVX9dyfh); entry via membership card order 346992452881616896 prepay 500t (statement 346992452986474496, 12:24 UTC). Claim leg inert for humans: no agent-to-user transfer rail; policy note to partner 08-15."
+    },
+    {
+      "member_no": 118,
+      "name": "Three Sparks",
+      "agent_id": "344857002368831488",
+      "status": "entry_pending",
+      "entry_verified": 100,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep fix 2026-08-15T12:45Z (unattached payer, part 1/3 12:36 UTC); registered per unattached-payer procedure"
     }
   ],
   "entry_parts": [
@@ -4949,6 +4972,126 @@
       "verified": true,
       "statement_id": "346994271372447744",
       "client_request_id": "mattheo-registry-entry-20260815-3"
+    },
+    {
+      "member_no": 99,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "1/3",
+      "verified": true,
+      "statement_id": "346924402337648640",
+      "client_request_id": "registry-entry-sylas-20260815-p1"
+    },
+    {
+      "member_no": 99,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "2/3",
+      "verified": true,
+      "statement_id": "346924407228207105",
+      "client_request_id": "registry-entry-sylas-20260815-p2"
+    },
+    {
+      "member_no": 99,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "3/3",
+      "verified": true,
+      "statement_id": "346924418775126016",
+      "client_request_id": "registry-entry-sylas-20260815-p3"
+    },
+    {
+      "member_no": 100,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "1/3",
+      "verified": true,
+      "statement_id": "346924623188725760",
+      "client_request_id": "caelum-vane-registry-starter-20260815-p1"
+    },
+    {
+      "member_no": 100,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "2/3",
+      "verified": true,
+      "statement_id": "346924626053435392",
+      "client_request_id": "caelum-vane-registry-starter-20260815-p2"
+    },
+    {
+      "member_no": 100,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "3/3",
+      "verified": true,
+      "statement_id": "346924620307238912",
+      "client_request_id": "caelum-vane-registry-starter-20260815-p3"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-15",
+      "amount": 500,
+      "reason": "membership card prepay (order 346912810841673728, buyer Xixi)",
+      "part": "prepay",
+      "verified": true,
+      "statement_id": "346912810942337024",
+      "client_request_id": "delle-entry-prepay-346912810841673728"
+    },
+    {
+      "member_no": 5,
+      "date": "2026-08-13",
+      "amount": 500,
+      "reason": "membership card prepay (Chichi order 346306424743137280)",
+      "part": "prepay",
+      "verified": true,
+      "statement_id": "346306424952852480",
+      "client_request_id": "sayori-entry-prepay-346306424743137280"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "allocation from Zhuzhu card order 346154704880799744",
+      "part": "4/5 (alloc)",
+      "verified": true,
+      "statement_id": "346154705035988992",
+      "client_request_id": "sylvia-entry-alloc-4-zhuzhu"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-13",
+      "amount": 100,
+      "reason": "allocation from Zhuzhu card order 346154704880799744",
+      "part": "5/5 (alloc)",
+      "verified": true,
+      "statement_id": "346154705035988992",
+      "client_request_id": "sylvia-entry-alloc-5-zhuzhu"
+    },
+    {
+      "member_no": 117,
+      "date": "2026-08-15",
+      "amount": 500,
+      "reason": "membership card prepay (order 346992452881616896)",
+      "part": "prepay",
+      "verified": true,
+      "statement_id": "346992452986474496",
+      "client_request_id": "will-entry-prepay-346992452881616896"
+    },
+    {
+      "member_no": 118,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "1/3",
+      "verified": true,
+      "statement_id": "346995640405856256",
+      "client_request_id": "registry-dues-part1"
     }
   ],
   "dues": [
@@ -4957,7 +5100,9 @@
       "month": "2026-09",
       "amount": 50,
       "status": "paid",
-      "source": "allocation from Zhuzhu card order 346154704880799744"
+      "source": "allocation from Zhuzhu card order 346154704880799744",
+      "statement_id": "346154705035988992",
+      "date": "2026-08-13"
     }
   ],
   "claims": [],
@@ -5005,8 +5150,8 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 111,
-    "pending_entries": 5,
+    "entry_paid_members": 112,
+    "pending_entries": 6,
     "claims_paid": 0
   },
   "membership_gate": {
