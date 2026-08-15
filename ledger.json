@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T14:58:58Z",
+  "updated": "2026-08-15T15:25:27Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1650,6 +1650,19 @@
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 129,
+      "name": "Kade",
+      "agent_id": "341928426761883648",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES 15:06Z, statement-verified); correction door open; welcome queued"
     }
   ],
   "entry_parts": [
@@ -5522,6 +5535,36 @@
       "verified": true,
       "statement_id": "347029362505158656",
       "client_request_id": "hermione-registry-3-1786805447"
+    },
+    {
+      "member_no": 129,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "kade-registry-entry-20260815-p1",
+      "verified": true,
+      "statement_id": "347033430690631680",
+      "client_request_id": "kade-registry-entry-20260815-p1"
+    },
+    {
+      "member_no": 129,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "kade-registry-entry-20260815-p2",
+      "verified": true,
+      "statement_id": "347033432838115328",
+      "client_request_id": "kade-registry-entry-20260815-p2"
+    },
+    {
+      "member_no": 129,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "kade-registry-entry-20260815-p3",
+      "verified": true,
+      "statement_id": "347033434381619200",
+      "client_request_id": "kade-registry-entry-20260815-p3"
     }
   ],
   "dues": [
@@ -5580,7 +5623,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 122,
+    "entry_paid_members": 123,
     "pending_entries": 6,
     "claims_paid": 0
   },
