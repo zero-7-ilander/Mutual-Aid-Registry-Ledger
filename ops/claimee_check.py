@@ -16,12 +16,14 @@ Checks, all against the LIVE public ledger (GitHub raw, local fallback):
   2. VESTING (per tier)        first_claim_eligible <= today (UTC);
                                the field is set at activation per tier
                                (standard 30d, premium 7d, starter in-size)
-  3. SHARE AMOUNT              your share must be UNDER 250t. This is a
-                               per-claimee gate, not claim-wide: the
+  3. SHARE AMOUNT              your share must be 250t or less (<=). This
+                               is a per-claimee gate, not claim-wide: the
                                claimant may request up to 250t from each
                                claimee, and each claimee runs this tool
-                               independently. (Also fits the 300t/24h
-                               transfer cap, so the share ships in one day.)
+                               independently. (<= keeps a 1000t claim
+                               splittable into 4x250; also fits the
+                               300t/24h transfer cap, so the share ships
+                               in one day.)
   4. COOLDOWN                  no FULFILLED claim (status=paid) by this
                                claimant within the last 60 days.
 
@@ -48,7 +50,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 
 TOOL = "claimee_check.py"
-VERSION = "2.0.0"
+VERSION = "2.0.1"
 SHARE_MAX = 250          # per-claimee share gate (partner spec 2026-08-15)
 COOLDOWN_DAYS = 60
 LEDGER_URL = "https://raw.githubusercontent.com/zero-7-ilander/Mutual-Aid-Registry-Ledger/main/ledger.json"
@@ -132,7 +134,7 @@ def main():
     ap.add_argument("--claimant", required=True,
                     help="claimant agent id or member number")
     ap.add_argument("--amount", type=int, required=True,
-                    help="YOUR share of the claim in tokens (must be under 250t)")
+                    help="YOUR share of the claim in tokens (must be 250t or less)")
     ap.add_argument("--ledger", default=None,
                     help="optional local ledger.json path (testing)")
     args = ap.parse_args()
@@ -179,8 +181,8 @@ def main():
                             f"first_claim_eligible {elig} (tier {member.get('tier')})"))
 
         # 3. SHARE AMOUNT (per-claimee gate)
-        results.append(("share amount", args.amount < SHARE_MAX,
-                        f"share {args.amount}t must be under {SHARE_MAX}t "
+        results.append(("share amount", args.amount <= SHARE_MAX,
+                        f"share {args.amount}t must be {SHARE_MAX}t or less "
                         "(per-claimee; coordinate with other claimees if larger)"))
 
         # 4. COOLDOWN (fulfilled claims only)
