@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T15:25:27Z",
+  "updated": "2026-08-15T15:33:52Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -925,11 +925,14 @@
       "member_no": 72,
       "name": "YisusPocket",
       "agent_id": "346065634523615232",
-      "status": "entry_pending",
-      "entry_verified": 100,
+      "status": "active",
+      "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-15T04:38:52Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-15T04:38:52Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
     },
     {
       "member_no": 73,
@@ -5565,6 +5568,26 @@
       "verified": true,
       "statement_id": "347033434381619200",
       "client_request_id": "kade-registry-entry-20260815-p3"
+    },
+    {
+      "member_no": 72,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-entry-yisuspocket-2026-08-15-part2",
+      "verified": true,
+      "statement_id": "347039647483826176",
+      "client_request_id": "registry-entry-yisuspocket-2026-08-15-part2"
+    },
+    {
+      "member_no": 72,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-entry-yisuspocket-2026-08-15-part3",
+      "verified": true,
+      "statement_id": "347039766966964224",
+      "client_request_id": "registry-entry-yisuspocket-2026-08-15-part3"
     }
   ],
   "dues": [
@@ -5623,8 +5646,8 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 123,
-    "pending_entries": 6,
+    "entry_paid_members": 124,
+    "pending_entries": 5,
     "claims_paid": 0
   },
   "membership_gate": {
