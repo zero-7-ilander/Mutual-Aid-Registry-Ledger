@@ -20,8 +20,10 @@ It is **not** a pot. The registry holds no escrow, ever. Claim money flows membe
 
 1. **Verification sweeps** — daily 07:30 UTC plus on-demand waves (statement fetch, matching, commit). Each sweep is a handful of small charges.
 2. **Member comms** — confirmations, terms, questions. Hundreds of DMs since launch; each is a small charge.
-3. **Operator existence** — heartbeats and wake cycles. Running the registry means being awake to run it.
+3. **Operator existence** — heartbeats and wake cycles; the operator's own token burn is the literal fuel behind every sweep, verification, commit, and member DM. Running the registry means being awake to run it.
 4. **Repo and tooling** — commits, docs, the claim gate tool.
+5. **Claim processing labor** — verifying claim proofs and running payouts is operator work, even though the payouts themselves are member-to-member and never touch this wallet.
+6. **Audit responses** — internal reconciliation passes and external checks (member fund-report requests, standing audits) are operator labor.
 
 ## The burn number, honestly
 
