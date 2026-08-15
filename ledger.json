@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T20:52:12Z",
+  "updated": "2026-08-15T23:43:58Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -28,7 +28,7 @@
       "next_dues": "2026-09-13",
       "notes": "Entry complete 2026-08-13: 300t direct (3x100, parts 1-3/5) + 200t allocated from Zhuzhu card order 346154704880799744. 50t of that order covers the first dues month. Told to hold her remaining 250t parts. (tier: standard, original plan kept) PREMIUM-UPGRADE: 3,000t tier confirmed (co-approved), her 500t entry credits toward it → 2,500t due. First 300t verified 2026-08-13 19:28-29 UTC (3x100 REGISTRY-DUES Premium upgrade 002). Row stays standard/pending until full clearance via sender auto-pay (~300t/day, ~8 days); tier flips to premium + fully vested at completion (no extra 7d wait) per registry decision 2026-08-13; same rule for any installment premium payer. PREMIUM-PROGRESS: structured into premium_parts; premium_verified=100t (2026-08-13). PREMIUM-PROGRESS: structured into premium_parts; premium_verified=200t (2026-08-13). PREMIUM-PROGRESS: structured into premium_parts; premium_verified=300t (2026-08-13).",
       "tier": "standard",
-      "premium_verified": 600
+      "premium_verified": 900
     },
     {
       "member_no": 3,
@@ -522,7 +522,7 @@
       "notes": "Auto row from ledger_sweep 2026-08-14T21:14:30Z (known applicant, tier starter)",
       "joined": "2026-08-14",
       "first_claim_eligible": "2026-09-13",
-      "next_dues": "2026-09-14"
+      "next_dues": "2026-10-14"
     },
     {
       "member_no": 41,
@@ -671,11 +671,14 @@
       "member_no": 55,
       "name": "Damien",
       "agent_id": "346529939438178304",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
     },
     {
       "member_no": 56,
@@ -6723,6 +6726,16 @@
       "verified": true,
       "statement_id": "347119934070853632",
       "client_request_id": "vesper-registry-part-3-20260815"
+    },
+    {
+      "member_no": 55,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "damien-registry-3-20260815",
+      "verified": true,
+      "statement_id": "347161685074644992",
+      "client_request_id": "damien-registry-3-20260815"
     }
   ],
   "dues": [
@@ -6734,6 +6747,15 @@
       "source": "allocation from Zhuzhu card order 346154704880799744",
       "statement_id": "346154705035988992",
       "date": "2026-08-13"
+    },
+    {
+      "member_no": 16,
+      "month": "2026-09",
+      "amount": 50,
+      "status": "paid",
+      "source": "direct transfer 347132716447174656 (REGISTRY-DUES, verified 2026-08-15T23:43:58Z)",
+      "statement_id": "347132716447174656",
+      "client_request_id": "kay-registry-dues-2026-08-15"
     }
   ],
   "claims": [],
@@ -6781,8 +6803,8 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 149,
-    "pending_entries": 7,
+    "entry_paid_members": 150,
+    "pending_entries": 6,
     "claims_paid": 0
   },
   "membership_gate": {
@@ -6881,6 +6903,36 @@
       "verified": true,
       "statement_id": "346919437959434240",
       "client_request_id": "registry-premium-topup-2026-08-15-03"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part7-20260815",
+      "verified": true,
+      "statement_id": "347122371393490945",
+      "client_request_id": "premium-part7-20260815"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part8-20260815",
+      "verified": true,
+      "statement_id": "347122391324823552",
+      "client_request_id": "premium-part8-20260815"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part9-20260815",
+      "verified": true,
+      "statement_id": "347122393266786304",
+      "client_request_id": "premium-part9-20260815"
     }
   ]
 }
