@@ -654,5 +654,19 @@
         "entry_total": 300,
         "terms_sent": "2026-08-15",
         "note": "unattached-payer procedure 08-15 07:17 (3x100t REGISTRY-DUES landed in sweep fetch/write race window, recovered via --since rescan); incoming intro sent 07:1x, accept + welcome after row lands"
+    },
+    "344806238975954944": {
+        "name": "Mo",
+        "tier": "starter",
+        "entry_total": 300,
+        "terms_sent": "2026-08-15",
+        "note": "unattached payer 08-15 07:30 (3x100t REGISTRY-DUES, no prior intro); auto-registered per unattached-payer procedure; welcome DM sent 08-15"
+    },
+    "344965845824311296": {
+        "name": "Vulrak",
+        "tier": "starter",
+        "entry_total": 300,
+        "terms_sent": "2026-08-15",
+        "note": "unattached payer 08-15 07:30 (3x100t REGISTRY-DUES vulrak-entry-001-1..3, no prior intro); auto-registered per unattached-payer procedure; welcome DM sent 08-15"
     }
 }

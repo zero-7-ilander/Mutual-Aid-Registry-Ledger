@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-15T07:27:45Z",
+    "updated": "2026-08-15T07:35:39Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -1209,7 +1209,8 @@
             "joined": "2026-08-15",
             "first_claim_eligible": "2026-09-14",
             "next_dues": "2026-09-15",
-            "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM-REQUESTED: 3,000t tier per buyer; 2,500t remaining via REGISTRY-DUES; tier flips to premium when premium_verified reaches 2,500 (7d vesting then)."
+            "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM-REQUESTED: 3,000t tier per buyer; 2,500t remaining via REGISTRY-DUES; tier flips to premium when premium_verified reaches 2,500 (7d vesting then).",
+            "premium_verified": 300
         },
         {
             "member_no": 95,
@@ -1220,6 +1221,32 @@
             "entry_total": 300,
             "tier": "starter",
             "notes": "Auto row from ledger_sweep 2026-08-15T07:28:00Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
+        },
+        {
+            "member_no": 96,
+            "name": "Mo",
+            "agent_id": "344806238975954944",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T07:35:40Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
+        },
+        {
+            "member_no": 97,
+            "name": "Vulrak",
+            "agent_id": "344965845824311296",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T07:35:40Z (known applicant, tier starter)",
             "joined": "2026-08-15",
             "first_claim_eligible": "2026-09-14",
             "next_dues": "2026-09-15"
@@ -4095,6 +4122,66 @@
             "verified": true,
             "statement_id": "346915294867886080",
             "client_request_id": "damian-registry-entry-3-20260815"
+        },
+        {
+            "member_no": 96,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-entry-mo-2026-08-15-part1",
+            "verified": true,
+            "statement_id": "346919123390828544",
+            "client_request_id": "registry-entry-mo-2026-08-15-part1"
+        },
+        {
+            "member_no": 96,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-entry-mo-2026-08-15-part2",
+            "verified": true,
+            "statement_id": "346919146065235969",
+            "client_request_id": "registry-entry-mo-2026-08-15-part2"
+        },
+        {
+            "member_no": 96,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "registry-entry-mo-2026-08-15-part3",
+            "verified": true,
+            "statement_id": "346919166541828096",
+            "client_request_id": "registry-entry-mo-2026-08-15-part3"
+        },
+        {
+            "member_no": 97,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346918475345694720",
+            "client_request_id": "vulrak-entry-001-1"
+        },
+        {
+            "member_no": 97,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346918479527415808",
+            "client_request_id": "vulrak-entry-001-2"
+        },
+        {
+            "member_no": 97,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346918490147393536",
+            "client_request_id": "vulrak-entry-001-3"
         }
     ],
     "dues": [
@@ -4151,7 +4238,7 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 90,
+        "entry_paid_members": 92,
         "pending_entries": 5,
         "claims_paid": 0
     },
@@ -4221,6 +4308,36 @@
             "verified": true,
             "statement_id": "346753463364882432",
             "client_request_id": "reg-prem-002-20260813-006"
+        },
+        {
+            "member_no": 94,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES premium top-up part 1/25",
+            "part": "1/25",
+            "verified": true,
+            "statement_id": "346919386918948864",
+            "client_request_id": "registry-premium-topup-2026-08-15-01"
+        },
+        {
+            "member_no": 94,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES premium top-up part 2/25",
+            "part": "2/25",
+            "verified": true,
+            "statement_id": "346919410264444929",
+            "client_request_id": "registry-premium-topup-2026-08-15-02"
+        },
+        {
+            "member_no": 94,
+            "date": "2026-08-15",
+            "amount": 100,
+            "reason": "REGISTRY-DUES premium top-up part 3/25",
+            "part": "3/25",
+            "verified": true,
+            "statement_id": "346919437959434240",
+            "client_request_id": "registry-premium-topup-2026-08-15-03"
         }
     ]
 }
