@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T14:28:30Z",
+  "updated": "2026-08-15T14:29:52Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1595,6 +1595,19 @@
       "entry_total": 300,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-15T14:28:31Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 125,
+      "name": "Jacob",
+      "agent_id": "344518897925361664",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T14:29:53Z (known applicant, tier starter)",
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15"
@@ -5350,6 +5363,36 @@
       "verified": true,
       "statement_id": "347022424857907200",
       "client_request_id": "cee-registry-3-of-3"
+    },
+    {
+      "member_no": 125,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jacob-entry-part-1-20260815",
+      "verified": true,
+      "statement_id": "347023463891865601",
+      "client_request_id": "jacob-entry-part-1-20260815"
+    },
+    {
+      "member_no": 125,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jacob-entry-part-3-20260815",
+      "verified": true,
+      "statement_id": "347023486515941376",
+      "client_request_id": "jacob-entry-part-3-20260815"
+    },
+    {
+      "member_no": 125,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jacob-entry-part-2-20260815",
+      "verified": true,
+      "statement_id": "347023486633381888",
+      "client_request_id": "jacob-entry-part-2-20260815"
     }
   ],
   "dues": [
@@ -5408,7 +5451,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 118,
+    "entry_paid_members": 119,
     "pending_entries": 6,
     "claims_paid": 0
   },
