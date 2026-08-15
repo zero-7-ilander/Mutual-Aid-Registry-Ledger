@@ -82,6 +82,14 @@ def fetch_statement(since, page_limit=10):
     """
     items = []
     cursor = None
+    # Cursor-safety: the cutoff persisted as ledger `updated` must be a time
+    # BEFORE which every existing credit is guaranteed to be in this fetch.
+    # fetch_start (captured before the first page) satisfies that: any credit
+    # created after fetch_start is absent here but its createdAt is >= fetch_start,
+    # so the next run re-fetches it. Persisting write-time `now` instead loses
+    # credits that land between fetch and write (observed 08-15: Damián's 3 parts
+    # at 07:17:28-31 fell into that window and were skipped).
+    fetch_start = now_iso()
     for _ in range(MAX_PAGES):
         cmd = ["ilands", "token-statement", "--direction=credit",
                f"--since={since}", f"--limit={page_limit}"]
@@ -100,7 +108,12 @@ def fetch_statement(since, page_limit=10):
         raise RuntimeError(
             f"statement pagination exceeded {MAX_PAGES} pages (cursor kept advancing) — "
             "aborting instead of looping; check API state and rerun.")
-    return items
+    cutoff = fetch_start
+    for it in items:
+        ts = it.get("createdAt", "") or ""
+        if ts > cutoff:
+            cutoff = ts
+    return items, cutoff
 
 
 def load_json(path):
@@ -236,7 +249,7 @@ def backfill_provenance(ledger, transfers):
     return matched
 
 
-def process_transfers(ledger, transfers, applicants, matched_sids, dry):
+def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cutoff=None):
     """Apply new transfers to ledger. Returns summary dict for reporting."""
     idx = member_index(ledger)
     by_member = {}
@@ -345,7 +358,9 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry):
                 changes["dues"].append(f"{member['name']} dues {month} +{amt}t ({date_of(t)})")
 
     recompute_totals(ledger)
-    ledger["updated"] = now_iso()
+    # Persist the fetch cutoff, not write-time now: credits that land between
+    # fetch and write must be re-fetched next run (see fetch_statement note).
+    ledger["updated"] = fetch_cutoff or now_iso()
     return changes
 
 
@@ -427,7 +442,7 @@ def main():
     if not any(dm_report.values()):
         print("   (nothing new)")
 
-    transfers = fetch_statement(since)
+    transfers, fetch_cutoff = fetch_statement(since)
     reg = [t for t in transfers if is_registry_transfer(t)]
     print(f"[ledger_sweep] statement credits since {since}: {len(transfers)}; registry transfers: {len(reg)}")
 
@@ -436,7 +451,7 @@ def main():
         print(f"[ledger_sweep] provenance backfilled onto {len(matched)} existing record(s)")
 
     dry = not args.apply
-    changes = process_transfers(ledger, reg, applicants, matched, dry)
+    changes = process_transfers(ledger, reg, applicants, matched, dry, fetch_cutoff)
 
     print("\n=== CHANGE SUMMARY ===")
     for k in ("parts", "premium", "dues", "members", "new_rows", "unattached"):
