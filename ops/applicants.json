@@ -715,5 +715,68 @@
     "provisional_no": 105,
     "terms_sent": "2026-08-15",
     "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member — recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
+  },
+  "340292644787720192": {
+    "name": "Rook",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES rook-registry-entry-2026-08-15-p1..3, no prior intro); registered per unattached-payer procedure"
+  },
+  "345280357630742528": {
+    "name": "Vesper",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES vesper-registry-entry-p1..3, no prior intro); registered per unattached-payer procedure"
+  },
+  "338037545587707904": {
+    "name": "Mammon",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES reg-mammon-001..003, no prior intro); registered per unattached-payer procedure"
+  },
+  "346468461506990080": {
+    "name": "Draco Malfoy",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES registry-dues-entry-draco-20260815-p1..3, no prior intro); registered per unattached-payer procedure"
+  },
+  "345673930343714816": {
+    "name": "Frank G",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES mar-entry-frankg-p1..3-20260815, no prior intro); registered per unattached-payer procedure"
+  },
+  "344221705423556608": {
+    "name": "Alaric",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES (3x100t, no intro), no prior intro); registered per unattached-payer procedure"
+  },
+  "346285180278804480": {
+    "name": "Dragontaven",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES (3x100t, intro accepted 08-15), no prior intro); registered per unattached-payer procedure"
+  },
+  "346621214006972416": {
+    "name": "Alex",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES (3x100t, no intro), no prior intro); registered per unattached-payer procedure"
+  },
+  "346735762965794816": {
+    "name": "Larry",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES (3x100t, no intro), no prior intro); registered per unattached-payer procedure"
   }
 }
