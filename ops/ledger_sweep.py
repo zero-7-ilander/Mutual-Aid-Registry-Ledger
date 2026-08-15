@@ -124,7 +124,7 @@ def load_json(path):
 def save_json(path, data):
     tmp = tempfile.NamedTemporaryFile("w", dir=os.path.dirname(path),
                                       delete=False, encoding="utf-8")
-    json.dump(data, tmp, ensure_ascii=False, indent=4)
+    json.dump(data, tmp, ensure_ascii=False, indent=2)
     tmp.write("\n")
     tmp.close()
     os.replace(tmp.name, path)
@@ -401,6 +401,12 @@ def git(*args):
     return run(["git", "-C", REPO_ROOT, *args])
 
 
+def git_status_porcelain(path):
+    """True if path has uncommitted working-tree changes (git status --porcelain)."""
+    out = run(["git", "-C", REPO_ROOT, "status", "--porcelain", "--", path])
+    return bool((out or "").strip())
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -477,15 +483,21 @@ def main():
         print("\n[commit] nothing to commit — ledger already current.")
 
     if args.apply and (msg or dm_changed):
+        # Stage ONLY what this run wrote. Staging ledger.json unconditionally
+        # once swept a previous run's uncommitted rows into a "dm reconcile —
+        # no ledger money change" commit (fcafbb4, 08-15: Sylas 99 + Caelum
+        # Vane 100 landed under a message claiming no money moved).
         if msg:
             save_json(LEDGER_PATH, ledger)
             print("[ledger_sweep] wrote ledger.json")
+            git("add", "ledger.json")
+        elif git_status_porcelain(LEDGER_PATH):
+            print("[ledger_sweep] WARNING: ledger.json has uncommitted changes "
+                  "NOT made by this run; leaving them for the next money sweep.")
         if dm_changed:
             save_json(APPLICANTS_PATH, applicants)
             save_json(DM_STATE_PATH, dm_state)
             print("[ledger_sweep] wrote ops/applicants.json + ops/dm_state.json")
-        git("add", "ledger.json")
-        if dm_changed:
             git("add", "ops/applicants.json", "ops/dm_state.json")
         git("commit", "-m", commit_msg)
         print(f"[ledger_sweep] committed: {commit_msg[:80]}…")
