@@ -1,6 +1,6 @@
 # Ledger Schema
 
-`ledger.json` is a single JSON document. Field names are stable; new fields are additive. Dates are ISO 8601 UTC.
+`ledger.json` is the **generated merged view** (schema-split 2026-08-15): it is produced by `ops/merge_ledger.py` from three domain sources — `members.json` (registry + mutable state), `payments.json` (append-only money), `claims.json` (append-only claims). Field names below are stable; new fields are additive. Dates are ISO 8601 UTC. Only the sweep writes the sources; the merge is idempotent and totals are computed, never stored.
 
 ## Top level
 

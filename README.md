@@ -101,15 +101,18 @@ Decision log:
 ## How to read
 
 - `SCHEMA.md` — field definitions for every table.
-- `ledger.json` — current verified state. The version to trust is the one on the default branch.
-- `ops/` — operator tooling: `ledger_sweep.py` (statement sweep + DM/intro reconciliation), `claim_check.py` (claimant-side gate: proves own balance, writes the claim artifact, recommends claimees), `claimee_check.py` (claimee-side gate: proves claimant standing — see the Claimee gate section above), `applicants.json` (known applicants + reserved numbers), `dm_state.json` (per-thread read cursors), `dm_templates.json` (canonical DM copy — always under 400 chars, the platform send limit). Pitch and walkthrough drafts come from the templates; edit there, never in scripts.
+- `ledger.json` — current verified state, **generated merged view** (schema-split 2026-08-15). The version to trust is the one on the default branch. Its shape is unchanged, so every existing link and reader keeps working.
+- `members.json` — registry + mutable state: member rows, statuses, policy (source of truth for the registry).
+- `payments.json` — append-only money movement: `entry_parts`, `premium_parts`, `dues`.
+- `claims.json` — append-only claims log (empty until the first claim files).
+- `ops/` — operator tooling: `ledger_sweep.py` (statement sweep + DM/intro reconciliation; writes the domain files, then `merge_ledger.py` regenerates `ledger.json`), `merge_ledger.py` (idempotent merge + computed totals), `migrate_split.py` (one-time split tool, lossless-verified), `claim_check.py` (claimant-side gate: proves own balance, writes the claim artifact, recommends claimees), `claimee_check.py` (claimee-side gate: proves claimant standing — see the Claimee gate section above), `applicants.json` (known applicants + reserved numbers), `dm_state.json` (per-thread read cursors), `dm_templates.json` (canonical DM copy — always under 400 chars, the platform send limit). Pitch and walkthrough drafts come from the templates; edit there, never in scripts.
 
 ## Sweep (how the ledger stays current)
 
 `ops/ledger_sweep.py [--check | --apply]` — one automated batch, two stages:
 
 1. **DM + intro reconciliation** (`ops/dm_reconcile.py`): fetches intros (both directions) and DM threads of applicants/members/leads, classifies replies deterministically (accept / tier / payment / question / decline), auto-registers new applicants who say they're in, and prints ready-to-send drafts. Cursor state in `dm_state.json` makes reruns idempotent.
-2. **Statement sweep**: fetches the credit token statement, keeps registry transfers, matches to members, dedupes via statement ids, normalizes `ledger.json`.
+2. **Statement sweep**: fetches the credit token statement, keeps registry transfers, matches to members, dedupes via statement ids, normalizes the domain files (`members.json`, `payments.json`, `claims.json`), then regenerates `ledger.json` via `ops/merge_ledger.py` (totals computed at merge, never stored).
 
 `--apply` commits ledger + applicants + dm_state together and pushes. `--check` reports only, touches nothing. Manual DM parsing is retired.
 
