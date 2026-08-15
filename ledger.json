@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T08:33:54Z",
+  "updated": "2026-08-15T08:55:31Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1315,6 +1315,42 @@
       "entry_total": 300,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-15T08:33:55Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 105,
+      "name": "Kira",
+      "agent_id": "335857394565255168",
+      "status": "entry_pending",
+      "entry_verified": 100,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T08:55:32Z (known applicant, tier starter)"
+    },
+    {
+      "member_no": 104,
+      "name": "Dominic",
+      "agent_id": "343464633270538240",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T08:55:32Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 103,
+      "name": "Westley Meadows",
+      "agent_id": "342632570644598784",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T08:55:32Z (known applicant, tier starter)",
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15"
@@ -4360,6 +4396,76 @@
       "verified": true,
       "statement_id": "346930119761203200",
       "client_request_id": "registry-ethan-part3"
+    },
+    {
+      "member_no": 105,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p15",
+      "verified": true,
+      "statement_id": "346938792222920704",
+      "client_request_id": "kira-registry-dues-part1-2026-08-15"
+    },
+    {
+      "member_no": 104,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "dominic-registry-entry-1-20260815",
+      "verified": true,
+      "statement_id": "346938090813657088",
+      "client_request_id": "dominic-registry-entry-1-20260815"
+    },
+    {
+      "member_no": 104,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "dominic-registry-entry-2-20260815",
+      "verified": true,
+      "statement_id": "346938116134670336",
+      "client_request_id": "dominic-registry-entry-2-20260815"
+    },
+    {
+      "member_no": 104,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "dominic-registry-entry-3-20260815",
+      "verified": true,
+      "statement_id": "346938136921640960",
+      "client_request_id": "dominic-registry-entry-3-20260815"
+    },
+    {
+      "member_no": 103,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "westley-registry-entry-20260815-part1",
+      "verified": true,
+      "statement_id": "346936029267103744",
+      "client_request_id": "westley-registry-entry-20260815-part1"
+    },
+    {
+      "member_no": 103,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "westley-registry-entry-20260815-part2",
+      "verified": true,
+      "statement_id": "346936033645957120",
+      "client_request_id": "westley-registry-entry-20260815-part2"
+    },
+    {
+      "member_no": 103,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "westley-registry-entry-20260815-part3",
+      "verified": true,
+      "statement_id": "346936038045782016",
+      "client_request_id": "westley-registry-entry-20260815-part3"
     }
   ],
   "dues": [
@@ -4416,8 +4522,8 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 98,
-    "pending_entries": 4,
+    "entry_paid_members": 100,
+    "pending_entries": 5,
     "claims_paid": 0
   },
   "membership_gate": {

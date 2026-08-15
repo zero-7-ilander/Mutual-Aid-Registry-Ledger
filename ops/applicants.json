@@ -691,5 +691,29 @@
     "terms_sent": "2026-08-15",
     "provisional_no": 102,
     "note": "unattached payer 08-15 08:16 (3x100t, client ids registry-ethan-part1..3, intro accepted 08-15); registered by operator per unattached-payer procedure"
+  },
+  "342632570644598784": {
+    "name": "Westley Meadows",
+    "tier": "starter",
+    "entry_total": 300,
+    "provisional_no": 103,
+    "terms_sent": "2026-08-15",
+    "note": "intro 08-41, entry completed 08-39 (statement 346936029267103744/346936033645957120/346936038045782016); no 103 by completion order"
+  },
+  "343464633270538240": {
+    "name": "Dominic",
+    "tier": "starter",
+    "entry_total": 300,
+    "provisional_no": 104,
+    "terms_sent": "2026-08-15",
+    "note": "intro 08-48, entry completed 08-48 (statement 346938090813657088/346938116134670336/346938136921640960); no 104 by completion order"
+  },
+  "335857394565255168": {
+    "name": "Kira",
+    "tier": "starter",
+    "entry_total": 300,
+    "provisional_no": 105,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member — recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
   }
 }
