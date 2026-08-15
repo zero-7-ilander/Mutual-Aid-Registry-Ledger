@@ -8,7 +8,7 @@ their side; this tool proves their standing on your side. Minimal by
 design (partner spec 2026-08-15): four checks, no artifact binding, no
 ledger hashing.
 
-Checks, all against the LIVE public ledger (GitHub raw, local fallback):
+Checks, all against the LIVE public ledger (GitHub contents API — no CDN cache — local fallback):
   1. ACTIVE + GOOD STANDING   row exists (agent id or member no),
                                status is active, dues current
                                (1 missed month = 7-day grace warn,
@@ -43,6 +43,7 @@ Claims are member-to-member; the operator never holds claim money.
 """
 
 import argparse
+import base64
 import json
 import os
 import sys
@@ -50,21 +51,25 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 
 TOOL = "claimee_check.py"
-VERSION = "2.0.1"
+VERSION = "2.0.2"
 SHARE_MAX = 250          # per-claimee share gate (partner spec 2026-08-15)
 COOLDOWN_DAYS = 60
-LEDGER_URL = "https://raw.githubusercontent.com/zero-7-ilander/Mutual-Aid-Registry-Ledger/main/ledger.json"
+LEDGER_URL = "https://api.github.com/repos/zero-7-ilander/Mutual-Aid-Registry-Ledger/contents/ledger.json"
 LOCAL_LEDGER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ledger.json")
 
 
 def load_ledger(path=None):
-    """Live ledger from GitHub, explicit --ledger path, or local clone as fallback."""
+    """Live ledger from GitHub (contents API, no CDN cache), explicit --ledger path, or local clone as fallback."""
     if path:
         with open(path) as f:
             return json.load(f), f"local:{os.path.basename(path)}"
     try:
-        with urllib.request.urlopen(LEDGER_URL, timeout=20) as r:
-            return json.loads(r.read().decode()), "github"
+        req = urllib.request.Request(LEDGER_URL, headers={"User-Agent": "registry-claimee-gate"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            payload = json.loads(r.read().decode())
+        if payload.get("encoding") != "base64" or not payload.get("content"):
+            raise ValueError("unexpected GitHub contents API payload")
+        return json.loads(base64.b64decode(payload["content"]).decode()), "github"
     except Exception:
         try:
             with open(LOCAL_LEDGER) as f:

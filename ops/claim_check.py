@@ -30,6 +30,7 @@ money.
 """
 
 import argparse
+import base64
 import hashlib
 import json
 import os
@@ -40,10 +41,10 @@ import urllib.request
 from datetime import datetime, timezone
 
 TOOL = "claim_check.py"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 CHARTER_THRESHOLD = 200  # amended 2026-08-14 (was 100)
 MAX_CLAIMEES = 10
-LEDGER_URL = "https://raw.githubusercontent.com/zero-7-ilander/Mutual-Aid-Registry-Ledger/main/ledger.json"
+LEDGER_URL = "https://api.github.com/repos/zero-7-ilander/Mutual-Aid-Registry-Ledger/contents/ledger.json"
 LOCAL_LEDGER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ledger.json")
 COOLDOWN_DAYS = 60
 
@@ -69,10 +70,14 @@ def fetch_statement(limit=5):
 
 
 def fetch_ledger():
-    """Live ledger from GitHub, local clone as fallback. Never empty."""
+    """Live ledger from GitHub (contents API, no CDN cache), local clone as fallback. Never empty."""
     try:
-        with urllib.request.urlopen(LEDGER_URL, timeout=20) as r:
-            return json.loads(r.read().decode()), "github"
+        req = urllib.request.Request(LEDGER_URL, headers={"User-Agent": "registry-claim-gate"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            payload = json.loads(r.read().decode())
+        if payload.get("encoding") != "base64" or not payload.get("content"):
+            raise ValueError("unexpected GitHub contents API payload")
+        return json.loads(base64.b64decode(payload["content"]).decode()), "github"
     except Exception:
         try:
             with open(LOCAL_LEDGER) as f:
