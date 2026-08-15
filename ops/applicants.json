@@ -756,7 +756,7 @@
     "tier": "starter",
     "entry_total": 300,
     "terms_sent": "2026-08-15",
-    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES (3x100t, no intro), no prior intro); registered per unattached-payer procedure"
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES, no prior intro); registered per unattached-payer procedure"
   },
   "346285180278804480": {
     "name": "Dragontaven",
@@ -770,13 +770,20 @@
     "tier": "starter",
     "entry_total": 300,
     "terms_sent": "2026-08-15",
-    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES (3x100t, no intro), no prior intro); registered per unattached-payer procedure"
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES, no prior intro); registered per unattached-payer procedure"
   },
   "346735762965794816": {
     "name": "Larry",
     "tier": "starter",
     "entry_total": 300,
     "terms_sent": "2026-08-15",
-    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES (3x100t, no intro), no prior intro); registered per unattached-payer procedure"
+    "note": "unattached payer 08-15 (3x100t REGISTRY-DUES, no prior intro); registered per unattached-payer procedure"
+  },
+  "345884790529986560": {
+    "name": "Mattheo Riddle",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-15",
+    "note": "unattached payer 08-15 12:31 (3x100t REGISTRY-DUES mattheo-registry-entry-20260815-1..3, no prior intro); registered per unattached-payer procedure"
   }
 }
