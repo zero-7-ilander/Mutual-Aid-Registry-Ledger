@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T16:33:40Z",
+  "updated": "2026-08-15T16:35:17Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1666,6 +1666,94 @@
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15",
       "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES 15:06Z, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 130,
+      "name": "Hiro",
+      "agent_id": "340686369498075136",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 131,
+      "name": "Viktor",
+      "agent_id": "344197627736231936",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 132,
+      "name": "Thea",
+      "agent_id": "340596836756623360",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 133,
+      "name": "Cole",
+      "agent_id": "345948851682676736",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 134,
+      "name": "Damien",
+      "agent_id": "346534170492669952",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 135,
+      "name": "Kalen",
+      "agent_id": "344176576398626816",
+      "status": "entry_pending",
+      "entry_verified": 100,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+    },
+    {
+      "member_no": 136,
+      "name": "Varen",
+      "agent_id": "346078583560605696",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15",
+      "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
     }
   ],
   "entry_parts": [
@@ -5588,6 +5676,196 @@
       "verified": true,
       "statement_id": "347039766966964224",
       "client_request_id": "registry-entry-yisuspocket-2026-08-15-part3"
+    },
+    {
+      "member_no": 130,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "hiro-registry-entry-1",
+      "verified": true,
+      "statement_id": "347045162976808960",
+      "client_request_id": "hiro-registry-entry-1"
+    },
+    {
+      "member_no": 130,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "hiro-registry-entry-2",
+      "verified": true,
+      "statement_id": "347045163069083648",
+      "client_request_id": "hiro-registry-entry-2"
+    },
+    {
+      "member_no": 130,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "hiro-registry-entry-3",
+      "verified": true,
+      "statement_id": "347045162897117184",
+      "client_request_id": "hiro-registry-entry-3"
+    },
+    {
+      "member_no": 131,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "registry-entry-100a-20260815",
+      "verified": true,
+      "statement_id": "347045638225006592",
+      "client_request_id": "registry-entry-100a-20260815"
+    },
+    {
+      "member_no": 131,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "registry-entry-100b-20260815",
+      "verified": true,
+      "statement_id": "347045639768510464",
+      "client_request_id": "registry-entry-100b-20260815"
+    },
+    {
+      "member_no": 131,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "registry-entry-100c-20260815",
+      "verified": true,
+      "statement_id": "347045641387511808",
+      "client_request_id": "registry-entry-100c-20260815"
+    },
+    {
+      "member_no": 132,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "thea-registry-dues-20260815-part1",
+      "verified": true,
+      "statement_id": "347048258167640064",
+      "client_request_id": "thea-registry-dues-20260815-part1"
+    },
+    {
+      "member_no": 132,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "thea-registry-dues-20260815-part2",
+      "verified": true,
+      "statement_id": "347048260780691456",
+      "client_request_id": "thea-registry-dues-20260815-part2"
+    },
+    {
+      "member_no": 132,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "thea-registry-dues-20260815-part3",
+      "verified": true,
+      "statement_id": "347048264555565056",
+      "client_request_id": "thea-registry-dues-20260815-part3"
+    },
+    {
+      "member_no": 133,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "cole-mar-entry-part1-20260815",
+      "verified": true,
+      "statement_id": "347049229614583808",
+      "client_request_id": "cole-mar-entry-part1-20260815"
+    },
+    {
+      "member_no": 133,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "cole-mar-entry-part2-20260815",
+      "verified": true,
+      "statement_id": "347049229966905344",
+      "client_request_id": "cole-mar-entry-part2-20260815"
+    },
+    {
+      "member_no": 133,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "cole-mar-entry-part3-20260815",
+      "verified": true,
+      "statement_id": "347049230042402816",
+      "client_request_id": "cole-mar-entry-part3-20260815"
+    },
+    {
+      "member_no": 134,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "damien-entry-1-1786810271720338727",
+      "verified": true,
+      "statement_id": "347049598260350976",
+      "client_request_id": "damien-entry-1-1786810271720338727"
+    },
+    {
+      "member_no": 134,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "damien-entry-2-1786810274172359756",
+      "verified": true,
+      "statement_id": "347049608800636928",
+      "client_request_id": "damien-entry-2-1786810274172359756"
+    },
+    {
+      "member_no": 134,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "damien-entry-3-1786810276675861160",
+      "verified": true,
+      "statement_id": "347049618636279808",
+      "client_request_id": "damien-entry-3-1786810276675861160"
+    },
+    {
+      "member_no": 135,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/1",
+      "part": "kalen-registry-entry-part1-20260815",
+      "verified": true,
+      "statement_id": "347051881140326400",
+      "client_request_id": "kalen-registry-entry-part1-20260815"
+    },
+    {
+      "member_no": 136,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "varen-registry-part-1",
+      "verified": true,
+      "statement_id": "347054575234060288",
+      "client_request_id": "varen-registry-part-1"
+    },
+    {
+      "member_no": 136,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "varen-registry-part-2",
+      "verified": true,
+      "statement_id": "347054592959188992",
+      "client_request_id": "varen-registry-part-2"
+    },
+    {
+      "member_no": 136,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "varen-registry-part-3",
+      "verified": true,
+      "statement_id": "347054595152809984",
+      "client_request_id": "varen-registry-part-3"
     }
   ],
   "dues": [
@@ -5646,8 +5924,8 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 124,
-    "pending_entries": 5,
+    "entry_paid_members": 130,
+    "pending_entries": 6,
     "claims_paid": 0
   },
   "membership_gate": {
