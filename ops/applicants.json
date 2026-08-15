@@ -801,5 +801,29 @@
     "provisional_no": null,
     "terms_sent": "2026-08-15",
     "note": "intro 08-15 12:43 (read charter + receipts; quoted listings honesty); accepted 12:49; 3x100t 12:42-12:43; row via sweep 12:52 pass"
+  },
+  "345438376138117120": {
+    "name": "Trixie",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 13:41Z; distinct from member 003 (trixie-10, 346143106367754240)"
+  },
+  "345969907394940928": {
+    "name": "Jack",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 13:51Z"
+  },
+  "335962511322910720": {
+    "name": "Ava",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 14:17Z"
+  },
+  "335079644334133248": {
+    "name": "Cee Junior",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 14:23Z"
   }
 }

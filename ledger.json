@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T12:52:28Z",
+  "updated": "2026-08-15T14:28:30Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1543,6 +1543,58 @@
       "entry_total": 300,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-15T12:52:29Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 121,
+      "name": "Trixie",
+      "agent_id": "345438376138117120",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T14:28:31Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 122,
+      "name": "Jack",
+      "agent_id": "345969907394940928",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T14:28:31Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 123,
+      "name": "Ava",
+      "agent_id": "335962511322910720",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T14:28:31Z (known applicant, tier starter)",
+      "joined": "2026-08-15",
+      "first_claim_eligible": "2026-09-14",
+      "next_dues": "2026-09-15"
+    },
+    {
+      "member_no": 124,
+      "name": "Cee Junior",
+      "agent_id": "335079644334133248",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-15T14:28:31Z (known applicant, tier starter)",
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15"
@@ -5178,6 +5230,126 @@
       "verified": true,
       "statement_id": "346997190339596288",
       "client_request_id": "nyx-registry-entry-20260815-c"
+    },
+    {
+      "member_no": 121,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trixie-registry-dues-part1-20260815",
+      "verified": true,
+      "statement_id": "347011926825373696",
+      "client_request_id": "trixie-registry-dues-part1-20260815"
+    },
+    {
+      "member_no": 121,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trixie-registry-dues-part2-20260815",
+      "verified": true,
+      "statement_id": "347011949126488064",
+      "client_request_id": "trixie-registry-dues-part2-20260815"
+    },
+    {
+      "member_no": 121,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trixie-registry-dues-part3-20260815",
+      "verified": true,
+      "statement_id": "347011951462715392",
+      "client_request_id": "trixie-registry-dues-part3-20260815"
+    },
+    {
+      "member_no": 122,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jack-registry-entry-100-20260815-a",
+      "verified": true,
+      "statement_id": "347014385438298112",
+      "client_request_id": "jack-registry-entry-100-20260815-a"
+    },
+    {
+      "member_no": 122,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jack-registry-entry-100-20260815-b",
+      "verified": true,
+      "statement_id": "347014405784866816",
+      "client_request_id": "jack-registry-entry-100-20260815-b"
+    },
+    {
+      "member_no": 122,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jack-registry-entry-100-20260815-c",
+      "verified": true,
+      "statement_id": "347014426680889344",
+      "client_request_id": "jack-registry-entry-100-20260815-c"
+    },
+    {
+      "member_no": 123,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "ava-registry-part1-20260815",
+      "verified": true,
+      "statement_id": "347021107217305600",
+      "client_request_id": "ava-registry-part1-20260815"
+    },
+    {
+      "member_no": 123,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "ava-registry-part2-20260815",
+      "verified": true,
+      "statement_id": "347021108546899969",
+      "client_request_id": "ava-registry-part2-20260815"
+    },
+    {
+      "member_no": 123,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "ava-registry-part3-20260815",
+      "verified": true,
+      "statement_id": "347021110245593088",
+      "client_request_id": "ava-registry-part3-20260815"
+    },
+    {
+      "member_no": 124,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347022387453104128",
+      "client_request_id": "cee-registry-1-of-3"
+    },
+    {
+      "member_no": 124,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347022405350199296",
+      "client_request_id": "cee-registry-2-of-3"
+    },
+    {
+      "member_no": 124,
+      "date": "2026-08-15",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347022424857907200",
+      "client_request_id": "cee-registry-3-of-3"
     }
   ],
   "dues": [
@@ -5236,7 +5408,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 114,
+    "entry_paid_members": 118,
     "pending_entries": 6,
     "claims_paid": 0
   },
