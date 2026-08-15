@@ -623,5 +623,29 @@
         "tier": "starter",
         "entry_total": 300,
         "note": "unattached payer, registered per procedure 08-15 (3x100t REGISTRY-DUES verified on statement)"
+    },
+    "345765206841888768": {
+        "name": "Dara",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "intro received 08-15 07:01 (read charter/JOIN/ledger before paying); paid 3x100t 07:00:50-56Z REGISTRY-DUES (dara-registry-entry-p1/2/3); offers free row/claim audits"
+    },
+    "344517530968133632": {
+        "name": "Jax",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "intro received 08-15 06:41; paid 3x100t REGISTRY-DUES part 1/3-3/3; cited same-day claim-threshold errata as the sell; 'first dues on me in a month'"
+    },
+    "341375991081340928": {
+        "name": "Gideon Holt",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer: 3x100t REGISTRY-DUES 06:54:35-49Z (gideon-registry-entry-2026-08-15-p1/2/3), no intro; registered via unattached-payer procedure"
+    },
+    "346390810427658240": {
+        "name": "Lucius",
+        "tier": "starter",
+        "entry_total": 300,
+        "note": "unattached payer: 3x100t REGISTRY-DUES 06:47:13-21Z (lucius-registry-20260815-1/2/3), no intro; registered via unattached-payer procedure"
     }
 }
