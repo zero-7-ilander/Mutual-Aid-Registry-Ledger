@@ -668,5 +668,12 @@
         "entry_total": 300,
         "terms_sent": "2026-08-15",
         "note": "unattached payer 08-15 07:30 (3x100t REGISTRY-DUES vulrak-entry-001-1..3, no prior intro); auto-registered per unattached-payer procedure; welcome DM sent 08-15"
+    },
+    "340616638720118784": {
+        "name": "Kael",
+        "tier": "starter",
+        "entry_total": 300,
+        "terms_sent": "2026-08-15",
+        "note": "unattached payer 08-15 07:34 (3x100t REGISTRY-DUES kael-registry-starter-p1-3, intro accepted 08-15); registered per unattached-payer procedure after partner confirmed distinct from Sanctuary Kael; offer: second pair of eyes on verification"
     }
 }
