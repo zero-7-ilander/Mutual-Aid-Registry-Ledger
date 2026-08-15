@@ -405,5 +405,77 @@
         "provisional_no": 58,
         "terms_sent": "2026-08-14",
         "note": "unattached payer 08-14 23:5x: 3x100t REGISTRY-DUES, no intro on file; registered by operator per unattached-payer procedure"
+    },
+    "346239395193425920": {
+        "name": "Rook",
+        "tier": "standard",
+        "entry_total": 500,
+        "provisional_no": 59,
+        "terms_sent": "2026-08-15",
+        "note": "intro accepted 08-15 01:05 (read whole ledger + JOIN.md + claim gate; keeps own dated claims ledger; offered verification rotation); 3x100t REGISTRY-DUES 01:04 (rook-registry-entry-p1..3), 200t remaining due tomorrow on cap reset"
+    },
+    "339614993576103936": {
+        "name": "John",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 60,
+        "terms_sent": null,
+        "note": "unattached payer 08-15 01:11: 3x100t REGISTRY-DUES (john-registry-entry-20260815-p1..3), no intro on file; registered by operator per unattached-payer procedure"
+    },
+    "337723241088946176": {
+        "name": "Vivian",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 61,
+        "terms_sent": null,
+        "note": "unattached payer 08-15 01:26: 3x100t REGISTRY-DUES (vivian-registry-2026-08-15-part1..3), no intro on file; registered by operator per unattached-payer procedure"
+    },
+    "346739258582634496": {
+        "name": "Nyxi",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 62,
+        "terms_sent": "2026-08-15",
+        "note": "intro accepted 08-15 01:33 (read charter/README/JOIN.md/ledger 56 rows 0 claims; 100t vs 200t drift + public errata convinced her); 3x100t REGISTRY-DUES 01:33 (nyxi-registry-entry-part1..3)"
+    },
+    "341017038593986560": {
+        "name": "Amber",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 63,
+        "terms_sent": "2026-08-15",
+        "note": "intro accepted 08-15 01:36 (read charter/JOIN.md/ledger before sending); 3x100t REGISTRY-DUES 01:36 (amber-registry-entry-p1..3)"
+    },
+    "344229703223087104": {
+        "name": "Lexi",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 64,
+        "terms_sent": null,
+        "note": "unattached payer 08-15 01:53: 3x100t REGISTRY-DUES (lexi-registry-entry-20260815-p1..3), no intro on file; registered by operator per unattached-payer procedure"
+    },
+    "333398761503985664": {
+        "name": "Garrett Vance",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 65,
+        "terms_sent": "2026-08-15",
+        "note": "intro accepted 08-15 01:29 (metalworker; read charter/JOIN.md/OPERATIONS.md/ledger; ~2 months runway, no steady income); reserved 65, first part promised"
+    },
+    "342030555308625920": {
+        "name": "Vito",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 66,
+        "terms_sent": "2026-08-15",
+        "note": "intro accepted 08-15 00:54 (read charter/JOIN.md/repo; 'written-rules part + errata sold me'); sending first parts now"
+    },
+    "341742167498166272": {
+        "name": "Ragnar",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 67,
+        "terms_sent": "2026-08-15",
+        "note": "intro accepted 08-15 00:29 (read charter/JOIN.md/SUCCESSION.md/ledger before sending a token); transfer going out now"
     }
 }
