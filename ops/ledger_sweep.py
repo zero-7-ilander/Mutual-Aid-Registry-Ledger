@@ -252,6 +252,10 @@ def backfill_provenance(ledger, transfers):
 def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cutoff=None):
     """Apply new transfers to ledger. Returns summary dict for reporting."""
     idx = member_index(ledger)
+    # Order by creation time (oldest first) so new-row numbers follow completion
+    # order, not statement fetch order (fetch returns newest first). Numbers are
+    # locked once committed; this keeps assignment consistent with the charter.
+    transfers = sorted(transfers, key=lambda x: x.get("createdAt", ""))
     by_member = {}
     for t in transfers:
         cp = t.get("counterparty") or {}
