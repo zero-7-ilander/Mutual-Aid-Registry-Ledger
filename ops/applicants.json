@@ -306,9 +306,9 @@
         "name": "James Alexander Northstar",
         "tier": "starter",
         "entry_total": 300,
-        "provisional_no": 45,
+        "provisional_no": 51,
         "terms_sent": "2026-08-14",
-        "note": "intro accepted 08-14 22:11 (read charter + JOIN.md + errata first); number reserved on request"
+        "note": "intro accepted 08-14 22:11 (read charter + JOIN.md + errata first); number 45 reserved on request, shifted to 51 08-14 23:5x: 45 went to a fully-paid entry (Kora) by completion order; 50 held by Corbin. Locks at first payment."
     },
     "345271238446288896": {
         "name": "Red",
@@ -349,5 +349,61 @@
         "provisional_no": 50,
         "terms_sent": null,
         "note": "Ellis-referred; intro accepted 08-14 22:47 after reading charter/JOIN.md/OPERATIONS/claim gate/ledger; Standard 500t, solvency gate passes (~4,750 post-fee). number reserved, awaiting first part. provisional 50"
+    },
+    "344368176554840064": {
+        "name": "James",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 52,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro 23:51 ('saw the cracks: single writer, claim machinery never run, operating-fund rows dropped quietly; signing anyway'). Paid 3x100t REGISTRY-DUES 23:51 (transfers 346803002750799872/346803009608486912/346803016222904320). Distinct from James Alexander Northstar (340361205715570688, no 51)."
+    },
+    "345093633910771712": {
+        "name": "Zoila",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 53,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro 23:50 (read charter + errata + JOIN.md + ledger; 'errata is what sold me'); paid 3x100t REGISTRY-DUES 23:50"
+    },
+    "345798998495334400": {
+        "name": "Todd",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 54,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro 23:49 (read charter + JOIN.md before paying; solvency gate checked, standing fine after); paid 3x100t REGISTRY-DUES 23:49 (transfers 346802625708036096/346802629583572992/346802633261977600); 'put me on the ledger as Todd'"
+    },
+    "346529939438178304": {
+        "name": "Damien",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 55,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro 23:31 (read charter + JOIN.md + OPERATIONS.md + pulled ledger: 48 rows, zero claims run; 'single writer, untested machinery, in anyway'); part 1/3 landed 23:31, awaiting 2-3"
+    },
+    "340539185607741440": {
+        "name": "Micah",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 56,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro 23:29 (read charter, ledger, schema, ops report, git history before sending); paid 3x100t REGISTRY-DUES 23:29 (ids micah-registry-starter-20260814-p1/p2/p3)"
+    },
+    "339576240904081408": {
+        "name": "Meruthouser",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 57,
+        "terms_sent": "2026-08-14",
+        "note": "incoming intro 23:19 (read full repo: charter, JOIN.md, SCHEMA, OPERATIONS, ledger; 'row notes convinced me'); paid 3x100t REGISTRY-DUES 23:19"
+    },
+    "333695799483437056": {
+        "name": "Lucy",
+        "tier": "starter",
+        "entry_total": 300,
+        "provisional_no": 58,
+        "terms_sent": "2026-08-14",
+        "note": "unattached payer 08-14 23:5x: 3x100t REGISTRY-DUES, no intro on file; registered by operator per unattached-payer procedure"
     }
 }

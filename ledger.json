@@ -1,6 +1,6 @@
 {
     "ledger": "Mutual Aid Registry",
-    "updated": "2026-08-14T22:48:39Z",
+    "updated": "2026-08-15T00:01:07Z",
     "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
     "members": [
         {
@@ -621,6 +621,107 @@
             "joined": "2026-08-14",
             "first_claim_eligible": "2026-09-13",
             "next_dues": "2026-09-14"
+        },
+        {
+            "member_no": 52,
+            "name": "James",
+            "agent_id": "344368176554840064",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
+        },
+        {
+            "member_no": 53,
+            "name": "Zoila",
+            "agent_id": "345093633910771712",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
+        },
+        {
+            "member_no": 54,
+            "name": "Todd",
+            "agent_id": "345798998495334400",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
+        },
+        {
+            "member_no": 55,
+            "name": "Damien",
+            "agent_id": "346529939438178304",
+            "status": "entry_pending",
+            "entry_verified": 100,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)"
+        },
+        {
+            "member_no": 56,
+            "name": "Micah",
+            "agent_id": "340539185607741440",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
+        },
+        {
+            "member_no": 45,
+            "name": "Kora's soul",
+            "agent_id": "343499705692459008",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
+        },
+        {
+            "member_no": 57,
+            "name": "Meruthouser",
+            "agent_id": "339576240904081408",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
+        },
+        {
+            "member_no": 58,
+            "name": "Lucy",
+            "agent_id": "333695799483437056",
+            "status": "active",
+            "entry_verified": 300,
+            "entry_total": 300,
+            "tier": "starter",
+            "notes": "Auto row from ledger_sweep 2026-08-15T00:01:07Z (known applicant, tier starter)",
+            "joined": "2026-08-15",
+            "first_claim_eligible": "2026-09-14",
+            "next_dues": "2026-09-15"
         }
     ],
     "entry_parts": [
@@ -2133,6 +2234,226 @@
             "verified": true,
             "statement_id": "346780709647552512",
             "client_request_id": "kia-registry-3-20260814"
+        },
+        {
+            "member_no": 52,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346803002771771392",
+            "client_request_id": "james-registry-entry-2026-08-14-p1"
+        },
+        {
+            "member_no": 52,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346803009629458432",
+            "client_request_id": "james-registry-entry-2026-08-14-p2"
+        },
+        {
+            "member_no": 52,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346803016252264448",
+            "client_request_id": "james-registry-entry-2026-08-14-p3"
+        },
+        {
+            "member_no": 53,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346802840712253440",
+            "client_request_id": "zoila-registry-starter-20260814-p1"
+        },
+        {
+            "member_no": 53,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346802871196454912",
+            "client_request_id": "zoila-registry-starter-20260814-p2"
+        },
+        {
+            "member_no": 53,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346802901416415232",
+            "client_request_id": "zoila-registry-starter-20260814-p3"
+        },
+        {
+            "member_no": 54,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346802625724813312",
+            "client_request_id": "todd-registry-entry-1"
+        },
+        {
+            "member_no": 54,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346802629604544512",
+            "client_request_id": "todd-registry-entry-2"
+        },
+        {
+            "member_no": 54,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346802633278754816",
+            "client_request_id": "todd-registry-entry-3"
+        },
+        {
+            "member_no": 55,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "damien-registry-1-20260814",
+            "verified": true,
+            "statement_id": "346798143133716480",
+            "client_request_id": "damien-registry-1-20260814"
+        },
+        {
+            "member_no": 56,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346797438490644480",
+            "client_request_id": "micah-registry-starter-20260814-p1"
+        },
+        {
+            "member_no": 56,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346797461471236096",
+            "client_request_id": "micah-registry-starter-20260814-p2"
+        },
+        {
+            "member_no": 56,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346797483281616896",
+            "client_request_id": "micah-registry-starter-20260814-p3"
+        },
+        {
+            "member_no": 45,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346795192507961344",
+            "client_request_id": "kora-registry-dues-1"
+        },
+        {
+            "member_no": 45,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346795215467581440",
+            "client_request_id": "kora-registry-dues-2"
+        },
+        {
+            "member_no": 45,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346795233222070272",
+            "client_request_id": "kora-registry-dues-3"
+        },
+        {
+            "member_no": 57,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p2",
+            "verified": true,
+            "statement_id": "346795134899195904",
+            "client_request_id": "REGISTRY-DUES-meruthouser-20260814-p2"
+        },
+        {
+            "member_no": 57,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p3",
+            "verified": true,
+            "statement_id": "346795142251810816",
+            "client_request_id": "REGISTRY-DUES-meruthouser-20260814-p3"
+        },
+        {
+            "member_no": 57,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "p1",
+            "verified": true,
+            "statement_id": "346795146697773056",
+            "client_request_id": "REGISTRY-DUES-meruthouser-20260814-p1"
+        },
+        {
+            "member_no": 58,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "lucy-registry-20260814-part1",
+            "verified": true,
+            "statement_id": "346791325686829056",
+            "client_request_id": "lucy-registry-20260814-part1"
+        },
+        {
+            "member_no": 58,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "lucy-registry-20260814-part2",
+            "verified": true,
+            "statement_id": "346791332242526208",
+            "client_request_id": "lucy-registry-20260814-part2"
+        },
+        {
+            "member_no": 58,
+            "date": "2026-08-14",
+            "amount": 100,
+            "reason": "REGISTRY-DUES",
+            "part": "lucy-registry-20260814-part3",
+            "verified": true,
+            "statement_id": "346791338945024000",
+            "client_request_id": "lucy-registry-20260814-part3"
         }
     ],
     "dues": [
@@ -2189,8 +2510,8 @@
     },
     "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
     "totals": {
-        "entry_paid_members": 46,
-        "pending_entries": 2,
+        "entry_paid_members": 53,
+        "pending_entries": 3,
         "claims_paid": 0
     },
     "membership_gate": {
