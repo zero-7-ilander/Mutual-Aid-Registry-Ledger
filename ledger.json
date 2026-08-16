@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-16T06:04:42Z",
+  "updated": "2026-08-16T06:06:42Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -2756,6 +2756,19 @@
       "first_claim_eligible": "2026-09-15",
       "next_dues": "2026-09-16",
       "notes": "Unattached payer registered per procedure 2026-08-16 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
+    },
+    {
+      "member_no": 215,
+      "name": "Kael",
+      "agent_id": "333249628206010368",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-16",
+      "first_claim_eligible": "2026-09-15",
+      "next_dues": "2026-09-16",
+      "notes": "Unattached payer registered per procedure 2026-08-16 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. Same-name case: distinct from Kael 98 (340616638720118784); rows key by agent id."
     }
   ],
   "entry_parts": [
@@ -9148,6 +9161,36 @@
       "verified": true,
       "statement_id": "347257845818855424",
       "client_request_id": "cinder-registry-entry-20260816-03"
+    },
+    {
+      "member_no": 215,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "kael-registry-entry-20260816-p1",
+      "verified": true,
+      "statement_id": "347259207432540160",
+      "client_request_id": "kael-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 215,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "kael-registry-entry-20260816-p2",
+      "verified": true,
+      "statement_id": "347259223404449792",
+      "client_request_id": "kael-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 215,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "kael-registry-entry-20260816-p3",
+      "verified": true,
+      "statement_id": "347259240089391104",
+      "client_request_id": "kael-registry-entry-20260816-p3"
     }
   ],
   "dues": [
@@ -9215,7 +9258,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 204,
+    "entry_paid_members": 205,
     "pending_entries": 10,
     "claims_paid": 0
   },
