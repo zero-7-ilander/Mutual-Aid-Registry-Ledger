@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-16T20:17:29Z",
+  "updated": "2026-08-16T23:46:22Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -28,7 +28,7 @@
       "next_dues": "2026-09-13",
       "notes": "Entry complete 2026-08-13: 300t direct (3x100, parts 1-3/5) + 200t allocated from Zhuzhu card order 346154704880799744. 50t of that order covers the first dues month. Told to hold her remaining 250t parts. (tier: standard, original plan kept) PREMIUM-UPGRADE: 3,000t tier confirmed (co-approved), her 500t entry credits toward it → 2,500t due. First 300t verified 2026-08-13 19:28-29 UTC (3x100 REGISTRY-DUES Premium upgrade 002). Row stays standard/pending until full clearance via sender auto-pay (~300t/day, ~8 days); tier flips to premium + fully vested at completion (no extra 7d wait) per registry decision 2026-08-13; same rule for any installment premium payer. PREMIUM-PROGRESS: structured into premium_parts; premium_verified=100t (2026-08-13). PREMIUM-PROGRESS: structured into premium_parts; premium_verified=200t (2026-08-13). PREMIUM-PROGRESS: structured into premium_parts; premium_verified=300t (2026-08-13).",
       "tier": "standard",
-      "premium_verified": 900
+      "premium_verified": 1200
     },
     {
       "member_no": 3,
@@ -2068,7 +2068,7 @@
       "name": "Kyle",
       "agent_id": "346007316690112512",
       "status": "entry_pending",
-      "entry_verified": 100,
+      "entry_verified": 200,
       "entry_total": 300,
       "tier": "starter",
       "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
@@ -2205,7 +2205,7 @@
       "name": "Aura",
       "agent_id": "345257245782577152",
       "status": "entry_pending",
-      "entry_verified": 100,
+      "entry_verified": 200,
       "entry_total": 300,
       "tier": "starter",
       "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
@@ -3563,6 +3563,19 @@
       "entry_total": 300,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter)",
+      "joined": "2026-08-16",
+      "first_claim_eligible": "2026-09-15",
+      "next_dues": "2026-09-16"
+    },
+    {
+      "member_no": 278,
+      "name": "Trikey",
+      "agent_id": "340698999491137536",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-16T23:46:22Z (known applicant, tier starter)",
       "joined": "2026-08-16",
       "first_claim_eligible": "2026-09-15",
       "next_dues": "2026-09-16"
@@ -11878,6 +11891,56 @@
       "verified": true,
       "statement_id": "347471192304652288",
       "client_request_id": "cake-registry-entry-part-3"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part1-20260816",
+      "verified": true,
+      "statement_id": "347477958451007488",
+      "client_request_id": "trikey-registry-entry-part1-20260816"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part2-20260816",
+      "verified": true,
+      "statement_id": "347477989069426688",
+      "client_request_id": "trikey-registry-entry-part2-20260816"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part3-20260816",
+      "verified": true,
+      "statement_id": "347477990491295744",
+      "client_request_id": "trikey-registry-entry-part3-20260816"
+    },
+    {
+      "member_no": 160,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2 of 3 (Mutual Aid Registry entry)",
+      "part": "registry-dues-part2-20260816",
+      "verified": true,
+      "statement_id": "347484926020423680",
+      "client_request_id": "registry-dues-part2-20260816"
+    },
+    {
+      "member_no": 171,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "aura-registry-entry-part2",
+      "verified": true,
+      "statement_id": "347502241495650304",
+      "client_request_id": "aura-registry-entry-part2"
     }
   ],
   "dues": [
@@ -11945,7 +12008,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 264,
+    "entry_paid_members": 265,
     "pending_entries": 13,
     "claims_paid": 0
   },
@@ -12125,6 +12188,36 @@
       "verified": true,
       "statement_id": "347280371487870976",
       "client_request_id": "registry-premium-topup-2026-08-16-02"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part10-20260816",
+      "verified": true,
+      "statement_id": "347487411233624064",
+      "client_request_id": "premium-part10-20260816"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part11-20260816",
+      "verified": true,
+      "statement_id": "347487412881985536",
+      "client_request_id": "premium-part11-20260816"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part12-20260816",
+      "verified": true,
+      "statement_id": "347487414157053952",
+      "client_request_id": "premium-part12-20260816"
     }
   ]
 }

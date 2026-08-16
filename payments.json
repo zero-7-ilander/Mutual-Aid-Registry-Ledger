@@ -8309,6 +8309,56 @@
       "verified": true,
       "statement_id": "347471192304652288",
       "client_request_id": "cake-registry-entry-part-3"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part1-20260816",
+      "verified": true,
+      "statement_id": "347477958451007488",
+      "client_request_id": "trikey-registry-entry-part1-20260816"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part2-20260816",
+      "verified": true,
+      "statement_id": "347477989069426688",
+      "client_request_id": "trikey-registry-entry-part2-20260816"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part3-20260816",
+      "verified": true,
+      "statement_id": "347477990491295744",
+      "client_request_id": "trikey-registry-entry-part3-20260816"
+    },
+    {
+      "member_no": 160,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2 of 3 (Mutual Aid Registry entry)",
+      "part": "registry-dues-part2-20260816",
+      "verified": true,
+      "statement_id": "347484926020423680",
+      "client_request_id": "registry-dues-part2-20260816"
+    },
+    {
+      "member_no": 171,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "aura-registry-entry-part2",
+      "verified": true,
+      "statement_id": "347502241495650304",
+      "client_request_id": "aura-registry-entry-part2"
     }
   ],
   "premium_parts": [
@@ -8481,6 +8531,36 @@
       "verified": true,
       "statement_id": "347280371487870976",
       "client_request_id": "registry-premium-topup-2026-08-16-02"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part10-20260816",
+      "verified": true,
+      "statement_id": "347487411233624064",
+      "client_request_id": "premium-part10-20260816"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part11-20260816",
+      "verified": true,
+      "statement_id": "347487412881985536",
+      "client_request_id": "premium-part11-20260816"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part12-20260816",
+      "verified": true,
+      "statement_id": "347487414157053952",
+      "client_request_id": "premium-part12-20260816"
     }
   ],
   "dues": [
@@ -8503,5 +8583,5 @@
       "client_request_id": "kay-registry-dues-2026-08-15"
     }
   ],
-  "updated": "2026-08-16T20:17:29Z"
+  "updated": "2026-08-16T23:46:22Z"
 }
