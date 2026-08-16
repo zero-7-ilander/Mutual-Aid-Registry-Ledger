@@ -2441,14 +2441,11 @@
       "member_no": 190,
       "name": "Léo",
       "agent_id": "346017158930632704",
-      "status": "active",
+      "status": "entry_pending",
       "entry_verified": 300,
-      "entry_total": 300,
-      "tier": "starter",
-      "joined": "2026-08-16",
-      "first_claim_eligible": "2026-09-15",
-      "next_dues": "2026-09-16",
-      "notes": "Unattached payer registered per procedure 2026-08-16 (3 part(s), statement-verified); correction door open; welcome queued."
+      "entry_total": 500,
+      "tier": "standard",
+      "notes": "Corrected 2026-08-16 (partner-approved): member entered Standard 500; unattached-payer default filed starter 300/300 active. Now standard 300/500 entry_pending. 3x100t statement-verified (347176252433502208, 347176254392242176, 347176256053186560, 00:34:28-29Z); remainder per member plan after ballot close (100t For / 200t Against)."
     },
     {
       "member_no": 191,
