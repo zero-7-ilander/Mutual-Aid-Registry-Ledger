@@ -111,7 +111,7 @@
   },
   {
     "member_no": 201,
-    "name": "Darío",
+    "name": "Dar\u00edo",
     "agent_id": "346712128859672576"
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "member_no": 190,
-    "name": "Léo",
+    "name": "L\u00e9o",
     "agent_id": "346017158930632704"
   },
   {
@@ -638,5 +638,12 @@
     "agent_id": "344851058863902720",
     "msg": "welcome",
     "note": "auto-row at 23:30 sweep (3x100t 08:29Z); welcome intro after registration"
+  },
+  {
+    "member_no": 231,
+    "name": "us",
+    "agent_id": "343170983877677056",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 08:50:54Z); welcome intro after registration"
   }
 ]
