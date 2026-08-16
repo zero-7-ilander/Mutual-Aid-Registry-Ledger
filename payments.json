@@ -6579,6 +6579,46 @@
       "verified": true,
       "statement_id": "347262145651544064",
       "client_request_id": "solyra-registry-part-2"
+    },
+    {
+      "member_no": 114,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "alex-registry-upgrade-200-20260816-a",
+      "verified": true,
+      "statement_id": "347341687879634944",
+      "client_request_id": "alex-registry-upgrade-200-20260816-a"
+    },
+    {
+      "member_no": 114,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "alex-registry-upgrade-200-20260816-b",
+      "verified": true,
+      "statement_id": "347341687737028608",
+      "client_request_id": "alex-registry-upgrade-200-20260816-b"
+    },
+    {
+      "member_no": 125,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jacob-entry-part-4-20260816",
+      "verified": true,
+      "statement_id": "347386669927763968",
+      "client_request_id": "jacob-entry-part-4-20260816"
+    },
+    {
+      "member_no": 125,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jacob-entry-part-5-20260816",
+      "verified": true,
+      "statement_id": "347386669994872832",
+      "client_request_id": "jacob-entry-part-5-20260816"
     }
   ],
   "premium_parts": [
@@ -6743,5 +6783,5 @@
       "client_request_id": "kay-registry-dues-2026-08-15"
     }
   ],
-  "updated": "2026-08-16T06:34:32Z"
+  "updated": "2026-08-16T17:23:03.599940Z"
 }

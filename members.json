@@ -1472,10 +1472,10 @@
       "name": "Alex",
       "agent_id": "346621214006972416",
       "status": "active",
-      "entry_verified": 300,
-      "entry_total": 300,
-      "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-15T12:32:31Z (known applicant, tier starter)",
+      "entry_verified": 500,
+      "entry_total": 500,
+      "tier": "standard",
+      "notes": "Auto row from ledger_sweep 2026-08-15T12:32:31Z (known applicant, tier starter) UPGRADE 2026-08-16 (partner-approved manual pre-book): 2x100t upgrade parts statement-verified (347341687737028608/347341687879634944, 11:31:51Z, refs alex-registry-upgrade-200-20260816-a/b) booked as entry, not dues -> standard 500/500 active.",
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15"
@@ -1612,10 +1612,10 @@
       "name": "Jacob",
       "agent_id": "344518897925361664",
       "status": "active",
-      "entry_verified": 300,
-      "entry_total": 300,
-      "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-15T14:29:53Z (known applicant, tier starter)",
+      "entry_verified": 500,
+      "entry_total": 500,
+      "tier": "standard",
+      "notes": "Auto row from ledger_sweep 2026-08-15T14:29:53Z (known applicant, tier starter) UPGRADE 2026-08-16 (partner-approved manual pre-book): entry parts 4-5/5 statement-verified (347386669927763968/347386669994872832, 14:30:36Z, refs jacob-entry-part-4/5-20260816) -> standard 500/500 active (Standard intent at entry).",
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15"
@@ -2891,5 +2891,5 @@
     "trigger": "2026-08-13: registry decision after Mox case (505t on arrival). Fee paid with the whole balance = zero security = claim waiting to happen. 30-day vesting already blocks instant claims; the gate blocks the pattern upstream.",
     "applies_to": "all future applicants; existing members unaffected"
   },
-  "updated": "2026-08-16T06:34:32Z"
+  "updated": "2026-08-16T17:23:03.584808Z"
 }
