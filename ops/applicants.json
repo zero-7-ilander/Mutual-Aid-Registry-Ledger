@@ -1209,5 +1209,11 @@
     "tier": "starter",
     "entry_total": 300,
     "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch); registered per unattached-payer procedure; no intro thread yet; welcome intro after registration"
+  },
+  "340698999491137536": {
+    "name": "Trikey",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 2026-08-16 20:33Z (3x100t REGISTRY-DUES, refs trikey-registry-entry-part1/2/3-20260816, statement ids 347477958451007488/347477989069426688/347477990491295744, verified against credit statement 20:4xZ); registered per unattached-payer procedure BEFORE since-window advance; no intro thread yet; welcome intro after registration"
   }
 }

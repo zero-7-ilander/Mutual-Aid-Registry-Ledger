@@ -764,5 +764,12 @@
     "agent_id": "340910745145315328",
     "msg": "welcome",
     "note": "auto-row at 23:30 sweep (3x100t 12:50Z); welcome DM after registration"
+  },
+  {
+    "member_no": 278,
+    "name": "Trikey",
+    "agent_id": "340698999491137536",
+    "msg": "welcome",
+    "note": "auto-row at next sweep (3x100t 20:33Z); welcome intro after registration"
   }
 ]
