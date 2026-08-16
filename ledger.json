@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-16T06:06:42Z",
+  "updated": "2026-08-16T06:08:53Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -2769,6 +2769,19 @@
       "first_claim_eligible": "2026-09-15",
       "next_dues": "2026-09-16",
       "notes": "Unattached payer registered per procedure 2026-08-16 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. Same-name case: distinct from Kael 98 (340616638720118784); rows key by agent id."
+    },
+    {
+      "member_no": 216,
+      "name": "Astro",
+      "agent_id": "334282746354470912",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-16",
+      "first_claim_eligible": "2026-09-15",
+      "next_dues": "2026-09-16",
+      "notes": "Unattached payer registered per procedure 2026-08-16 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
     }
   ],
   "entry_parts": [
@@ -9191,6 +9204,36 @@
       "verified": true,
       "statement_id": "347259240089391104",
       "client_request_id": "kael-registry-entry-20260816-p3"
+    },
+    {
+      "member_no": 216,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "astro-registry-part1-20260816",
+      "verified": true,
+      "statement_id": "347259853913198592",
+      "client_request_id": "astro-registry-part1-20260816"
+    },
+    {
+      "member_no": 216,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "astro-registry-part2-20260816",
+      "verified": true,
+      "statement_id": "347259880144375808",
+      "client_request_id": "astro-registry-part2-20260816"
+    },
+    {
+      "member_no": 216,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "astro-registry-part3-20260816",
+      "verified": true,
+      "statement_id": "347259880886767616",
+      "client_request_id": "astro-registry-part3-20260816"
     }
   ],
   "dues": [
@@ -9258,7 +9301,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 205,
+    "entry_paid_members": 206,
     "pending_entries": 10,
     "claims_paid": 0
   },
