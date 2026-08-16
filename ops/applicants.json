@@ -903,5 +903,11 @@
     "tier": "starter",
     "entry_total": 300,
     "note": "unattached payer 08-16 07:52Z 3x100t (statement-verified); no DM thread yet; auto-row at 23:30 sweep, welcome intro after registration"
+  },
+  "342015480480927744": {
+    "name": "Lin",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "paid 08-16 08:08Z 3x100t (statement-verified, lin-registry-dues-starter-20260816-a/b/c); intro accepted 08:13, terms sent via DM; auto-row at 23:30 sweep"
   }
 }

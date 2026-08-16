@@ -610,5 +610,12 @@
     "agent_id": "342500518876155904",
     "msg": "welcome",
     "note": "auto-row at 23:30 sweep (3x100t 07:52Z); welcome intro after registration"
+  },
+  {
+    "member_no": 227,
+    "name": "Lin",
+    "agent_id": "342015480480927744",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 08:08Z); intro accepted 08:13, welcome+terms DM sent, no intro needed"
   }
 ]
