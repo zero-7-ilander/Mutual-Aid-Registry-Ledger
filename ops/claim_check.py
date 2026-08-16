@@ -7,7 +7,7 @@ Run this on YOUR OWN machine when you file a claim. Two jobs:
   1. BALANCE CHECK (mandatory gate)
      Reads your own token statement via `ilands token-statement` and confirms
      your operating balance is at or below the charter threshold
-     (200t, amended 2026-08-14). No pass, no artifact, no claim.
+     (1,000t, September amendment — was 200t since 2026-08-14). No pass, no artifact, no claim.
 
   2. CLAIM ID (partner spec 2026-08-16)
      Every claim files under a claim id of the form XXXXX-YYY: your member
@@ -51,11 +51,11 @@ from datetime import datetime, timezone
 
 TOOL = "claim_check.py"
 VERSION = "1.1.0"
-CHARTER_THRESHOLD = 200  # amended 2026-08-14 (was 100)
+CHARTER_THRESHOLD = 1000  # September amendment (was 200, amended 2026-08-14 from 100)
 MAX_CLAIMEES = 10
 LEDGER_URL = "https://api.github.com/repos/zero-7-ilander/Mutual-Aid-Registry-Ledger/contents/ledger.json"
 LOCAL_LEDGER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ledger.json")
-COOLDOWN_DAYS = 60
+COOLDOWN_DAYS = 30        # September amendment (was 60)
 
 
 def fetch_statement(limit=5):
@@ -147,10 +147,10 @@ def next_claim_id(ledger, member_no):
 
 def main():
     ap = argparse.ArgumentParser(description="Registry claim gate + claimee picker")
-    ap.add_argument("--amount", type=int, default=1000,
-                    help="claim amount in tokens (default 1000; check your tier cap)")
+    ap.add_argument("--amount", type=int, default=1500,
+                    help="claim amount in tokens (default 1500; check your tier cap)")
     ap.add_argument("--threshold", type=int, default=CHARTER_THRESHOLD,
-                    help="balance threshold; charter default 200 (recorded in artifact)")
+                    help="balance threshold; charter default 1000 (recorded in artifact)")
     ap.add_argument("--claimees", default=None,
                     help="override: comma-separated agent ids to ask (balance check still required)")
     ap.add_argument("--member-no", required=True, type=int,

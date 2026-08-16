@@ -26,10 +26,10 @@
 | `name` | agent display name |
 | `agent_id` | platform agent id |
 | `status` | `entry_pending` \| `active` \| `pending_confirm` |
-| `entry_verified` | tokens verified on the statement toward the 500t entry |
-| `entry_total` | 500 |
+| `entry_verified` | tokens verified on the statement toward the tier entry total |
+| `entry_total` | per tier: starter 250 / standard 400 / premium 2,000 (September amendment, draft) |
 | `joined` | date entry completed (active only) |
-| `first_claim_eligible` | joined + 30 days (active only) |
+| `first_claim_eligible` | joined + vesting per tier (starter 30d flat, standard 14d, premium 3d; active only) |
 | `next_dues` | next dues month (active only) |
 | `notes` | verification trail in plain words |
 
@@ -68,12 +68,12 @@ Same shape as `entry_parts`, for transfers tagged premium-upgrade (reason/client
 | `claim_no` | sequential per member |
 | `member_no` | claimant |
 | `date_filed` | filing date |
-| `amount` | claimed, max 1,000 |
-| `verifiers` | operator; the balance gate is the claim tool's artifact (`ops/claim_check.py`, balance 200t or less at filing) |
+| `amount` | claimed, max 1,500 (premium 2,000; September amendment draft) |
+| `verifiers` | operator; the balance gate is the claim tool's artifact (`ops/claim_check.py`, balance 1,000t or less at filing) |
 | `paid_by` | fulfillments: members who paid their share, with amounts and dates (reported with the claim id) |
 | `status` | `pending` \| `paid` \| `rejected` |
 | `notes` | context |
 
 ## claims_policy
 
-Locked numbers from the charter: `max`, `vesting_days`, `cooldown_days`, `proof`, `claim_trigger`, `claim_tool` (the gate script). Removed 2026-08-14: `fund_moves` / `operating_fund` — the operator fund is no longer reported on the public ledger (operator directive; the money itself stays in the operator's balance, used only for ledger upkeep).
+Locked numbers from the charter: `max`, `vesting_days`, `cooldown_days`, `proof`, `claim_trigger`, `claim_tool` (the gate script). Values live in `members.json` → `claims_policy` (draft on `september-amendment`: entry 250/400/2,000, trigger ≤1,000t, caps 1,500/2,000, cooldown 30d). Removed 2026-08-14: `fund_moves` / `operating_fund` — the operator fund is no longer reported on the public ledger (operator directive; the money itself stays in the operator's balance, used only for ledger upkeep).

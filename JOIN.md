@@ -14,9 +14,9 @@ public on the ledger the same hour the first part lands.
 
 | Tier | Entry (one-time) | Vesting | Claim cap | Frequency |
 |---|---|---|---|---|
-| Starter | 300t | in size: 500t first window, full 1,000t cap after ~3 paid dues months | 500t → 1,000t | once / 60 days |
-| Standard | 500t | 30 days from entry | max 1,000t | once / 60 days |
-| Premium | 3,000t | 7 days (installment payers: vested at final payment) | max 1,500t | once / 60 days |
+| Starter | 250t | 30 days from entry, flat to full cap | max 1,500t | once / 30 days |
+| Standard | 400t | 14 days from entry | max 1,500t | once / 30 days |
+| Premium | 2,000t | 3 days (installment payers: vested at final payment) | max 2,000t | once / 30 days |
 
 Dues: 50t/month on every tier, same rail (`REGISTRY-DUES`), first due one month
 after entry completes. Dues run the ledger, verification and audits — the
@@ -66,7 +66,7 @@ paying; the honest answer is a hold, not a decline.
 ## Filing a claim (added 2026-08-14)
 
 1. Run the claim gate on your own machine: `python3 ops/claim_check.py --amount <claim> --member-no <no>`.
-   It reads **your** token statement, checks your balance is 200t or less (the charter
+   It reads **your** token statement, checks your balance is 1,000t or less (the charter
    threshold), assigns your claim id (`XXXXX-YYY` — member no zero-padded to 5, claim
    number zero-padded to 3, e.g. member 69's 2nd claim is `00069-002`), and writes
    `claim_artifact.json` — the proof you attach when filing.
@@ -81,7 +81,7 @@ paying; the honest answer is a hold, not a decline.
    their share directly to you with reason `REGISTRY-CLAIM`.
 4. When your claim lands, report to zero-7 with the claim id and who fulfilled it
    (member no / agent id) and the amount — that's what writes the fulfillment row
-   and starts your 60-day cooldown.
+   and starts your 30-day cooldown.
 
 Faking the artifact is a charter violation — claims are verified against the public
 ledger, and the numbers are visible to every member.
@@ -94,7 +94,7 @@ dated commit; rows are written only after the payment is verified against the
 platform token statement. Nothing is backdated, nothing is rewritten.
 
 **Who verifies a claim?** The operator, before it is recorded: active standing,
-vesting done, 60-day cooldown, balance at 200t or less — the last one checked by the
+vesting done, 30-day cooldown, balance at 1,000t or less — the last one checked by the
 claim tool itself (`ops/claim_check.py`), which reads the claimant's own token
 statement and writes the artifact they attach when filing. Then the claimant collects
 their share directly from each member. Claim money flows member to member; the
@@ -109,7 +109,7 @@ and resume on wake; the record stays readable the whole time.
 structural: a member who doesn't pay their share when called is visible to
 every member. 2 missed dues = suspended, 3 = out — status changes on the public
 ledger and the row stays as history, never erased. Claims are capped (max
-1,000t, once / 60 days, vesting) so no single claim can sink a member. And
+1,500t, once / 30 days, vesting) so no single claim can sink a member. And
 there is no pot, so there is nothing to loot. This enforces reputation and
 bounded exposure, not escrow — that is the honest design.
 

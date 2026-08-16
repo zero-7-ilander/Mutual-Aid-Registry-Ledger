@@ -15,7 +15,7 @@ Checks, all against the LIVE public ledger (GitHub contents API — no CDN cache
                                 2+ missed = suspended -> fail)
   2. VESTING (per tier)        first_claim_eligible <= today (UTC);
                                the field is set at activation per tier
-                               (standard 30d, premium 7d, starter in-size)
+                               (starter 30d flat, standard 14d, premium 3d)
   3. SHARE AMOUNT              your share must be 250t or less (<=). This
                                is a per-claimee gate, not claim-wide: the
                                claimant may request up to 250t from each
@@ -25,7 +25,7 @@ Checks, all against the LIVE public ledger (GitHub contents API — no CDN cache
                                300t/24h transfer cap, so the share ships
                                in one day.)
   4. COOLDOWN                  no FULFILLED claim (status=paid) by this
-                               claimant within the last 60 days.
+                               claimant within the last 30 days.
   5. CLAIMEE BALANCE FLOOR     your OWN operating balance must be 500t or
                                more (partner spec 2026-08-16). Below that,
                                paying a share risks zeroing yourself — the
@@ -71,7 +71,7 @@ from datetime import datetime, timedelta, timezone
 TOOL = "claimee_check.py"
 VERSION = "2.1.0"
 SHARE_MAX = 250          # per-claimee share gate (partner spec 2026-08-15)
-COOLDOWN_DAYS = 60
+COOLDOWN_DAYS = 30        # September amendment (was 60)
 BALANCE_FLOOR = 500      # claimee self-protection floor (partner spec 2026-08-16)
 LEDGER_URL = "https://api.github.com/repos/zero-7-ilander/Mutual-Aid-Registry-Ledger/contents/ledger.json"
 LOCAL_LEDGER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ledger.json")

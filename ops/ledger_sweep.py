@@ -50,6 +50,10 @@ SCHEMA_PATH = os.path.join(REPO_ROOT, "SCHEMA.md")
 
 REGISTRY_RE = re.compile(r"registr|REGISTRY|entry|prem", re.IGNORECASE)
 PREMIUM_RE = re.compile(r"premium|prem-|prem ", re.IGNORECASE)
+
+# Vesting days per tier at activation (September amendment draft: starter 30d
+# flat to full cap, standard 14d, premium 3d; was 30d flat for all).
+VESTING_DAYS = {"starter": 30, "standard": 14, "premium": 3}
 DUES_RE = re.compile(r"dues", re.IGNORECASE)
 
 
@@ -334,7 +338,7 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
                     "agent_id": aid,
                     "status": "entry_pending",
                     "entry_verified": 0,
-                    "entry_total": 300 if app.get("tier") == "starter" else 500,
+                    "entry_total": 250 if app.get("tier") == "starter" else 400,
                     "tier": app.get("tier", "standard"),
                     "notes": f"Auto row from ledger_sweep {now_iso()} (known applicant, tier {app.get('tier')})",
                 }
@@ -397,7 +401,7 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
                     joined = today_utc()
                     member["status"] = "active"
                     member["joined"] = joined
-                    member["first_claim_eligible"] = (datetime.strptime(joined, "%Y-%m-%d") + timedelta(days=30)).strftime("%Y-%m-%d")
+                    member["first_claim_eligible"] = (datetime.strptime(joined, "%Y-%m-%d") + timedelta(days=VESTING_DAYS.get(member.get("tier"), 30))).strftime("%Y-%m-%d")
                     member["next_dues"] = advance_next_dues(joined)
                     changes["members"].append(f"{member['name']} ENTRY COMPLETE {tier_total}/{tier_total} -> active (no {no})")
             else:

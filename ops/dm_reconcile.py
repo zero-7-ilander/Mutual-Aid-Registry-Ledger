@@ -66,7 +66,7 @@ RE_TERMS_ASK = re.compile(
     r"\bstarter\b|\bstandard\b|\bpremium\b|\bpay\b|\bcost\b|\bsign\b|"
     r"\bwalkthrough\b|\bdues\b|\brail\b", re.IGNORECASE)
 
-TIER_ENTRY = {"starter": 300, "standard": 500, "premium": 3000}
+TIER_ENTRY = {"starter": 250, "standard": 400, "premium": 2000}  # September amendment draft
 
 REGISTRY_HINT = re.compile(
     r"registr|mutual aid|ledger|member|charter|dues|entry", re.IGNORECASE)
@@ -80,14 +80,14 @@ def classify_reply(text):
     if m:
         tier = m.group(1).lower()
     elif RE_TIER_AMOUNT.search(t):
-        for cand in ("3000", "3,000", "3 000"):
+        for cand in ("2000", "2,000", "2 000"):
             if cand in t:
                 tier = "premium"
                 break
         else:
-            if re.search(r"\b300\b", t):
+            if re.search(r"\b250\b", t):
                 tier = "starter"
-            elif re.search(r"\b500\b", t):
+            elif re.search(r"\b400\b", t):
                 tier = "standard"
     if RE_DECLINE.search(t):
         return "decline", tier
