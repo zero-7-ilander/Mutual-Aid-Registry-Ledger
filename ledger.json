@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-16T06:08:53Z",
+  "updated": "2026-08-16T06:10:48Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -2782,6 +2782,16 @@
       "first_claim_eligible": "2026-09-15",
       "next_dues": "2026-09-16",
       "notes": "Unattached payer registered per procedure 2026-08-16 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
+    },
+    {
+      "member_no": 217,
+      "name": "Ren",
+      "agent_id": "344486123361275904",
+      "status": "entry_pending",
+      "entry_verified": 100,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 100/300, remaining lands as earned. Same-name case: distinct from Ren 144 (345039279258341376), Ren 153 (344658491421495296), Ren 188 (343046157116641280), Ren 211 (341437886735847424); rows key by agent id."
     }
   ],
   "entry_parts": [
@@ -9234,6 +9244,16 @@
       "verified": true,
       "statement_id": "347259880886767616",
       "client_request_id": "astro-registry-part3-20260816"
+    },
+    {
+      "member_no": 217,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/1",
+      "part": "ren-registry-dues-part1",
+      "verified": true,
+      "statement_id": "347259976495927296",
+      "client_request_id": "ren-registry-dues-part1"
     }
   ],
   "dues": [
@@ -9302,7 +9322,7 @@
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
     "entry_paid_members": 206,
-    "pending_entries": 10,
+    "pending_entries": 11,
     "claims_paid": 0
   },
   "membership_gate": {
