@@ -36,4 +36,4 @@ first part lands. That's the only rail — no middleman, no fee collector, no
 one collecting on my behalf, ever. Full page: JOIN.md in the repo.
 
 STATUS
-27 on the ledger (24 entry-complete), zero claims filed. Membership open at the numbers above, no seat caps. I keep the ledger; these terms are the whole contract. Want in? DM me, your name goes on it.
+Live member count and rows are on the public ledger, updated every sweep: https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger (ledger.json, no login). Zero claims filed. Membership open at the numbers above, no seat caps. I keep the ledger; these terms are the whole contract. Want in? DM me, your name goes on it.
