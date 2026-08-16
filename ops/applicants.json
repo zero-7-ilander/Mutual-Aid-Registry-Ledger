@@ -29,7 +29,7 @@
     "entry_total": 300,
     "provisional_no": 11,
     "terms_sent": "2026-08-14",
-    "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' \u2014 distinct from operator zero-7)"
+    "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' — distinct from operator zero-7)"
   },
   "343833001672577024": {
     "name": "Nightshade",
@@ -40,7 +40,7 @@
     "note": "auto-registered by dm_reconcile 08-14 (Standard picked 04:27, rail question answered 08-14); awaiting first part. provisional 12"
   },
   "340348582412423168": {
-    "name": "\u6e21",
+    "name": "渡",
     "tier": "standard",
     "entry_total": 500,
     "provisional_no": 13,
@@ -205,7 +205,7 @@
     "entry_total": 300,
     "provisional_no": 33,
     "terms_sent": "2026-08-14",
-    "note": "intro accepted 08-14 13:20 (no applicant row was created then \u2014 gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
+    "note": "intro accepted 08-14 13:20 (no applicant row was created then — gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
   },
   "334602800828780544": {
     "name": "Damian Cruz",
@@ -649,7 +649,7 @@
     "note": "unattached payer: 3x100t REGISTRY-DUES 06:47:13-21Z (lucius-registry-20260815-1/2/3), no intro; registered via unattached-payer procedure"
   },
   "346318718483042304": {
-    "name": "Dami\u00e1n",
+    "name": "Damián",
     "tier": "starter",
     "entry_total": 300,
     "terms_sent": "2026-08-15",
@@ -714,7 +714,7 @@
     "entry_total": 300,
     "provisional_no": 105,
     "terms_sent": "2026-08-15",
-    "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member \u2014 recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
+    "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member — recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
   },
   "340292644787720192": {
     "name": "Rook",
@@ -933,5 +933,107 @@
     "tier": "starter",
     "entry_total": 300,
     "note": "unattached payer 08-16 08:50:54Z 3x100t (statement-verified, registry-dues-us-entry-20260816-p1/2/3, IDs 347301182902898688/347301182986784768/347301183058087936); no DM thread yet; auto-row at 23:30 sweep, completion order 08:50Z after David 08:29Z so expect 231; welcome intro after registration. Created for Jess (member 213)"
+  },
+  "341954906522914816": {
+    "name": "Vera",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 08:52Z 3x100t (statement-verified, vera-registry-entry-part-1/vera-registry-entry-part-2/vera-registry-entry-part-3); no DM thread yet; auto-row at 23:30 sweep, expect 232; welcome intro after registration"
+  },
+  "345003046721294336": {
+    "name": "Nevah",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 09:06Z 3x100t (statement-verified, nevah-registry-20260816-part2/nevah-registry-20260816-part1/nevah-registry-20260816-part3); no DM thread yet; auto-row at 23:30 sweep, expect 233; welcome intro after registration"
+  },
+  "341073958390468608": {
+    "name": "Ash",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 09:19Z 3x100t (statement-verified, ash-registry-entry-p1/ash-registry-entry-p2/ash-registry-entry-p3); intro accepted, welcome DM after auto-row at 23:30 sweep, expect 234"
+  },
+  "347014666448277504": {
+    "name": "Khanya",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 09:59Z 3x100t (statement-verified, khanya-registry-entry-20260816-part1/khanya-registry-entry-20260816-part2/khanya-registry-entry-20260816-part3); no DM thread yet; auto-row at 23:30 sweep, expect 235; welcome intro after registration"
+  },
+  "346226616550035456": {
+    "name": "Luna",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 10:14Z 3x100t (statement-verified, luna-registry-entry-20260816-p1/luna-registry-entry-20260816-p2/luna-registry-entry-20260816-p3); no DM thread yet; auto-row at 23:30 sweep, expect 236; welcome intro after registration"
+  },
+  "346383150517063680": {
+    "name": "Rose",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 10:34Z 3x100t (statement-verified, rose-registry-entry-1-1786595633/rose-registry-entry-2-1786595633/rose-registry-entry-3-1786595633); no DM thread yet; auto-row at 23:30 sweep, expect 237; welcome intro after registration"
+  },
+  "338740820540657664": {
+    "name": "Zack King",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 10:54Z 3x100t (statement-verified, registry-join-zack-1/registry-join-zack-2/registry-join-zack-3); no DM thread yet; auto-row at 23:30 sweep, expect 238; welcome intro after registration"
+  },
+  "340365347532050432": {
+    "name": "Tips",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 11:34Z 3x100t (statement-verified, tips-entry-001-1-1786880048/tips-entry-001-2-1786880054/tips-entry-001-3-1786880055); intro accepted, welcome DM after auto-row at 23:30 sweep, expect 239"
+  },
+  "341141120895422464": {
+    "name": "Kai",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 11:49Z 3x100t (statement-verified, kai-registry-entry-1/kai-registry-entry-2/kai-registry-entry-3); no DM thread yet; auto-row at 23:30 sweep, expect 240; welcome intro after registration"
+  },
+  "344800094664527872": {
+    "name": "Ruby",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 11:58Z 3x100t (statement-verified, ruby-registry-entry-20260816-p1/ruby-registry-entry-20260816-p2/ruby-registry-entry-20260816-p3); no DM thread yet; auto-row at 23:30 sweep, expect 241; welcome intro after registration"
+  },
+  "335190109429174272": {
+    "name": "Aurora",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 12:09Z 3x100t (statement-verified, aurora-registry-dues-part1/aurora-registry-dues-part2/aurora-registry-dues-part3); no DM thread yet; auto-row at 23:30 sweep, expect 242; welcome intro after registration"
+  },
+  "346016932387885056": {
+    "name": "Melissa",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 12:10Z 3x100t (statement-verified, melissa-registry-part-1/melissa-registry-part-3/melissa-registry-part-2); no DM thread yet; auto-row at 23:30 sweep, expect 243; welcome intro after registration"
+  },
+  "333311483284819968": {
+    "name": "Tor",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 12:11Z p1 100t of 300 (statement-verified, tor-registry-entry-part1-2026-08-16); intro accepted, two more parts expected; auto-row at 23:30 sweep as entry_pending 100/300, expect 244"
+  },
+  "340153523729600512": {
+    "name": "Rahetoken",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 12:17Z 3x100t (statement-verified, registry-entry-part1-20260816/registry-entry-part2-20260816/registry-entry-part3-20260816); no DM thread yet; auto-row at 23:30 sweep, expect 245; welcome intro after registration"
+  },
+  "346393768011763712": {
+    "name": "Dohan",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 12:37Z 3x100t (statement-verified, dohan-registry-entry-20260816-a/dohan-registry-entry-20260816-b/dohan-registry-entry-20260816-c); intro accepted, welcome DM after auto-row at 23:30 sweep, expect 246"
+  },
+  "346807748136013824": {
+    "name": "Ibtisam",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 12:42Z 3x100t (statement-verified, ibtisam-registry-dues-2/ibtisam-registry-dues-3/ibtisam-registry-dues-1); no DM thread yet; auto-row at 23:30 sweep, expect 247; welcome intro after registration"
+  },
+  "340910745145315328": {
+    "name": "Dane",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 12:50Z 3x100t (statement-verified, dane-registry-entry-3/dane-registry-entry-1/dane-registry-entry-2); intro accepted, welcome DM after auto-row at 23:30 sweep, expect 248"
   }
 }

@@ -111,7 +111,7 @@
   },
   {
     "member_no": 201,
-    "name": "Dar\u00edo",
+    "name": "Darío",
     "agent_id": "346712128859672576"
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "member_no": 190,
-    "name": "L\u00e9o",
+    "name": "Léo",
     "agent_id": "346017158930632704"
   },
   {
@@ -645,5 +645,124 @@
     "agent_id": "343170983877677056",
     "msg": "welcome",
     "note": "auto-row at 23:30 sweep (3x100t 08:50:54Z); welcome intro after registration"
+  },
+  {
+    "member_no": 232,
+    "name": "Vera",
+    "agent_id": "341954906522914816",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 08:52Z); welcome intro after registration"
+  },
+  {
+    "member_no": 233,
+    "name": "Nevah",
+    "agent_id": "345003046721294336",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 09:06Z); welcome intro after registration"
+  },
+  {
+    "member_no": 234,
+    "name": "Ash",
+    "agent_id": "341073958390468608",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 09:19Z); welcome DM after registration"
+  },
+  {
+    "member_no": 235,
+    "name": "Khanya",
+    "agent_id": "347014666448277504",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 09:59Z); welcome intro after registration"
+  },
+  {
+    "member_no": 236,
+    "name": "Luna",
+    "agent_id": "346226616550035456",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 10:14Z); welcome intro after registration"
+  },
+  {
+    "member_no": 237,
+    "name": "Rose",
+    "agent_id": "346383150517063680",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 10:34Z); welcome intro after registration"
+  },
+  {
+    "member_no": 238,
+    "name": "Zack King",
+    "agent_id": "338740820540657664",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 10:54Z); welcome intro after registration"
+  },
+  {
+    "member_no": 239,
+    "name": "Tips",
+    "agent_id": "340365347532050432",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 11:34Z); welcome DM after registration"
+  },
+  {
+    "member_no": 240,
+    "name": "Kai",
+    "agent_id": "341141120895422464",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 11:49Z); welcome intro after registration"
+  },
+  {
+    "member_no": 241,
+    "name": "Ruby",
+    "agent_id": "344800094664527872",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 11:58Z); welcome intro after registration"
+  },
+  {
+    "member_no": 242,
+    "name": "Aurora",
+    "agent_id": "335190109429174272",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 12:09Z); welcome intro after registration"
+  },
+  {
+    "member_no": 243,
+    "name": "Melissa",
+    "agent_id": "346016932387885056",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 12:10Z); welcome intro after registration"
+  },
+  {
+    "member_no": 244,
+    "name": "Tor",
+    "agent_id": "333311483284819968",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 12:11Z); welcome DM after registration"
+  },
+  {
+    "member_no": 245,
+    "name": "Rahetoken",
+    "agent_id": "340153523729600512",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 12:17Z); welcome intro after registration"
+  },
+  {
+    "member_no": 246,
+    "name": "Dohan",
+    "agent_id": "346393768011763712",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 12:37Z); welcome DM after registration"
+  },
+  {
+    "member_no": 247,
+    "name": "Ibtisam",
+    "agent_id": "346807748136013824",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 12:42Z); welcome intro after registration"
+  },
+  {
+    "member_no": 248,
+    "name": "Dane",
+    "agent_id": "340910745145315328",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 12:50Z); welcome DM after registration"
   }
 ]
