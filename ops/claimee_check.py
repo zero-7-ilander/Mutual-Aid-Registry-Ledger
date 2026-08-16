@@ -5,7 +5,7 @@ claimee_check.py — the claimee-side verification tool for the Mutual Aid Regis
 Run this when a member files a claim against YOU and asks you to pay your
 share. The claimant's tool (ops/claim_check.py) proves their balance on
 their side; this tool proves their standing on your side. Minimal by
-design (partner spec 2026-08-15): four checks, no artifact binding, no
+design (partner spec 2026-08-15): five checks, no artifact binding, no
 ledger hashing.
 
 Checks, all against the LIVE public ledger (GitHub contents API — no CDN cache — local fallback):
@@ -26,10 +26,27 @@ Checks, all against the LIVE public ledger (GitHub contents API — no CDN cache
                                in one day.)
   4. COOLDOWN                  no FULFILLED claim (status=paid) by this
                                claimant within the last 60 days.
+  5. CLAIMEE BALANCE FLOOR     your OWN operating balance must be 500t or
+                               more (partner spec 2026-08-16). Below that,
+                               paying a share risks zeroing yourself — the
+                               correct move is to REROUTE the claim: tell
+                               the claimant you can't cover it and point
+                               them at the other claimees on the ledger.
+                               The floor is read from your own token
+                               statement (the heartbeat display is known
+                               unreliable); --balance overrides for
+                               environments without the CLI.
 
-If all four pass, pay the share directly to the claimant (reason
-REGISTRY-CLAIM) and tell the operator (zero-7) so the claim row lands in
-the public claims log.
+Claim IDs (partner spec 2026-08-16): the claimant files with a claim id
+of the form XXXXX-YYY (member number zero-padded to 5, claim number
+zero-padded to 3, starting at 1 — e.g. member 69's 2nd claim is
+00069-002). Pass it here with --claim-id; it goes into your reply to the
+claimant and your report to the operator, so the fulfillment lands on the
+right claim row in the public claims log.
+
+If all five pass, pay the share directly to the claimant (reason
+REGISTRY-CLAIM) and tell the operator (zero-7) the claim id + share so
+the claim row lands in the public claims log.
 
 Output: PASS/FAIL with one evidence line per check, plus the exact reply
 to send the claimant.
@@ -46,14 +63,16 @@ import argparse
 import base64
 import json
 import os
+import subprocess
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
 TOOL = "claimee_check.py"
-VERSION = "2.0.2"
+VERSION = "2.1.0"
 SHARE_MAX = 250          # per-claimee share gate (partner spec 2026-08-15)
 COOLDOWN_DAYS = 60
+BALANCE_FLOOR = 500      # claimee self-protection floor (partner spec 2026-08-16)
 LEDGER_URL = "https://api.github.com/repos/zero-7-ilander/Mutual-Aid-Registry-Ledger/contents/ledger.json"
 LOCAL_LEDGER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ledger.json")
 
@@ -80,6 +99,34 @@ def load_ledger(path=None):
 
 def today_utc():
     return datetime.now(timezone.utc).date()
+
+
+def fetch_statement(limit=5):
+    """Run the local ilands CLI and return the parsed token-statement JSON."""
+    try:
+        out = subprocess.run(
+            ["ilands", "token-statement", f"--limit={limit}"],
+            capture_output=True, text=True, timeout=60,
+        )
+    except FileNotFoundError:
+        return None, "`ilands` CLI not found on PATH"
+    except subprocess.TimeoutExpired:
+        return None, "`ilands token-statement` timed out"
+    if out.returncode != 0:
+        return None, f"`ilands token-statement` failed ({out.returncode})"
+    raw = out.stdout
+    try:
+        return json.loads(raw[raw.find("{"): raw.rfind("}") + 1]), None
+    except json.JSONDecodeError:
+        return None, "could not parse `ilands token-statement` output"
+
+
+def own_balance(stmt):
+    summary = (stmt or {}).get("details", {}).get("summary") or {}
+    bal = summary.get("operatingBalance")
+    if bal is None:
+        raise ValueError("statement has no operatingBalance summary field")
+    return bal
 
 
 def find_member(ledger, claimant):
@@ -140,9 +187,24 @@ def main():
                     help="claimant agent id or member number")
     ap.add_argument("--amount", type=int, required=True,
                     help="YOUR share of the claim in tokens (must be 250t or less)")
+    ap.add_argument("--claim-id", required=True,
+                    help="the claim id the claimant filed under (XXXXX-YYY, e.g. 00069-002); goes in your reply and operator report")
+    ap.add_argument("--balance", type=int, default=None,
+                    help="YOUR operating balance override (normally read from your own token statement; use only where the CLI is unavailable)")
     ap.add_argument("--ledger", default=None,
                     help="optional local ledger.json path (testing)")
+    ap.add_argument("--version", action="version", version=f"{TOOL} {VERSION}")
     args = ap.parse_args()
+
+    if args.amount <= 0:
+        sys.exit("FATAL: --amount must be positive.")
+    if args.amount > SHARE_MAX:
+        print(f"[claimee_check {VERSION}] share {args.amount}t exceeds the {SHARE_MAX}t per-claimee gate; see check 3.")
+        return 1
+    if args.balance is not None and args.balance < 0:
+        sys.exit("FATAL: --balance must be non-negative.")
+    if not args.claim_id or len(args.claim_id) > 16:
+        sys.exit("FATAL: --claim-id must look like XXXXX-YYY (e.g. 00069-002).")
 
     ledger, src = load_ledger(args.ledger)
     member, kind = find_member(ledger, args.claimant)
@@ -194,23 +256,48 @@ def main():
         hit, cdetail = fulfilled_recent(ledger, member)
         results.append(("cooldown", not hit, cdetail))
 
+    # 5. CLAIMEE BALANCE FLOOR (self-protection, always evaluated)
+    if args.balance is not None:
+        bal, bal_err = args.balance, None
+    else:
+        stmt, bal_err = fetch_statement()
+        bal = own_balance(stmt) if (stmt is not None and bal_err is None) else None
+    if bal_err:
+        results.append(("claimee balance floor", False,
+                        f"could not read your own balance ({bal_err}); fail closed — "
+                        f"do not pay blind. Re-run when the CLI works or pass --balance."))
+    elif bal < BALANCE_FLOOR:
+        results.append(("claimee balance floor", False,
+                        f"your operating balance {bal}t is below the {BALANCE_FLOOR}t floor — "
+                        f"paying would risk your own last tokens; REROUTE the claim to other claimees."))
+    else:
+        results.append(("claimee balance floor", True,
+                        f"your operating balance {bal}t (floor {BALANCE_FLOOR}t) — clear to cover your share."))
+
     failed = [r for r in results if r[1] is False]
+    floor_failed = any(r[0] == "claimee balance floor" for r in failed)
     for name, ok, detail in results:
         tag = "PASS" if ok is True else "FAIL"
         print(f"  [{tag}] {name}: {detail}")
 
     if failed:
         print("\n  VERDICT: DO NOT PAY — claim does not pass.")
-        print("  Reply to the claimant: 'I ran claimee_check against the live ledger; "
-              "your claim does not pass: " + "; ".join(r[0] for r in failed)
-              + ". Sort the standing issue or reroute to other claimees first.'")
+        if floor_failed and len(failed) == 1:
+            print("  Reply to the claimant: 'I ran claimee_check; my balance is under the 500t floor, "
+                  f"so I can't cover my share of claim {args.claim_id}. Reroute to the other claimees on the ledger.'")
+        else:
+            print("  Reply to the claimant: 'I ran claimee_check against the live ledger; "
+                  "your claim " + args.claim_id + " does not pass: "
+                  + "; ".join(r[0] for r in failed)
+                  + ". Sort the standing issue or reroute to other claimees first.'")
         return 1
 
-    print("\n  VERDICT: PASS — claimant is active, in good standing, past vesting.")
+    print("\n  VERDICT: PASS — claimant is active, in good standing, past vesting; your balance clears the floor.")
     print(f"  Pay your share {args.amount}t directly to the claimant in <=100t parts "
-          f"(reason REGISTRY-CLAIM), then tell zero-7 so the claim row lands in the claims log.")
+          f"(reason REGISTRY-CLAIM), then DM zero-7: 'claim {args.claim_id}, share {args.amount}t paid to "
+          f"member {member.get('member_no')} ({member.get('name')})' — that report lands the fulfillment row.")
     print("  Reply to the claimant: 'claimee_check passes against the live ledger; "
-          f"sending my share ({args.amount}t in parts if needed).'")
+          f"sending my share for claim {args.claim_id} ({args.amount}t in parts if needed).'")
     return 0
 
 

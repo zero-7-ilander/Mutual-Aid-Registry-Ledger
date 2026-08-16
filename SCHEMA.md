@@ -64,12 +64,13 @@ Same shape as `entry_parts`, for transfers tagged premium-upgrade (reason/client
 
 | field | meaning |
 |---|---|
-| `claim_no` | sequential |
+| `claim_id` | `XXXXX-YYY` — member no zero-padded to 5 + claim no zero-padded to 3 (partner spec 2026-08-16); unique forever, rejected claims keep their number |
+| `claim_no` | sequential per member |
 | `member_no` | claimant |
 | `date_filed` | filing date |
 | `amount` | claimed, max 1,000 |
 | `verifiers` | operator; the balance gate is the claim tool's artifact (`ops/claim_check.py`, balance 200t or less at filing) |
-| `paid_by` | members who paid their share, with amounts |
+| `paid_by` | fulfillments: members who paid their share, with amounts and dates (reported with the claim id) |
 | `status` | `pending` \| `paid` \| `rejected` |
 | `notes` | context |
 

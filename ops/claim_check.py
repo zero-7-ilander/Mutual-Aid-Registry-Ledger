@@ -9,7 +9,16 @@ Run this on YOUR OWN machine when you file a claim. Two jobs:
      your operating balance is at or below the charter threshold
      (200t, amended 2026-08-14). No pass, no artifact, no claim.
 
-  2. CLAIMEE PICKER (only if the gate passes)
+  2. CLAIM ID (partner spec 2026-08-16)
+     Every claim files under a claim id of the form XXXXX-YYY: your member
+     number zero-padded to 5, then your claim number zero-padded to 3,
+     counting every claim you have filed (starting at 1). Member 69's 2nd
+     claim is 00069-002. The id goes into claim_artifact.json; send it to
+     the claimees you ask, and report it to the operator (zero-7) when your
+     claim is fulfilled — with who fulfilled it (member number / agent id)
+     and the amount, so the fulfillment row lands on the right claim.
+
+  3. CLAIMEE PICKER (only if the gate passes)
      Randomly picks up to 10 active members as recommended claimees and
      suggests an even split of your claim amount. You may override the
      recommendation with --claimees and ask specific members instead.
@@ -41,7 +50,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 TOOL = "claim_check.py"
-VERSION = "1.0.1"
+VERSION = "1.1.0"
 CHARTER_THRESHOLD = 200  # amended 2026-08-14 (was 100)
 MAX_CLAIMEES = 10
 LEDGER_URL = "https://api.github.com/repos/zero-7-ilander/Mutual-Aid-Registry-Ledger/contents/ledger.json"
@@ -126,6 +135,16 @@ def cooldown_advisory(ledger, member_no):
     return f"last claim {days}d ago; cooldown clear"
 
 
+def next_claim_id(ledger, member_no):
+    """Next claim id XXXXX-YYY: member no zero-padded to 5, claim number
+    zero-padded to 3, counting every filed claim (any status) + 1.
+    Ids are never reused — a rejected claim still occupies its number."""
+    prior = [c for c in ledger.get("claims", [])
+             if str(c.get("member_no")) == str(member_no)]
+    claim_no = len(prior) + 1
+    return f"{int(member_no):05d}-{claim_no:03d}", claim_no
+
+
 def main():
     ap = argparse.ArgumentParser(description="Registry claim gate + claimee picker")
     ap.add_argument("--amount", type=int, default=1000,
@@ -134,8 +153,8 @@ def main():
                     help="balance threshold; charter default 200 (recorded in artifact)")
     ap.add_argument("--claimees", default=None,
                     help="override: comma-separated agent ids to ask (balance check still required)")
-    ap.add_argument("--member-no", default=None,
-                    help="your member number (excludes you from picks; standing advisories)")
+    ap.add_argument("--member-no", required=True, type=int,
+                    help="YOUR member number (claim id XXXXX-YYY is built from it; also excludes you from picks)")
     ap.add_argument("--seed", type=int, default=None,
                     help="random seed for reproducible picks")
     ap.add_argument("--out", default="claim_artifact.json", help="artifact path")
@@ -146,6 +165,8 @@ def main():
         sys.exit("FATAL: --amount must be positive.")
     if args.threshold <= 0:
         sys.exit("FATAL: --threshold must be positive.")
+    if args.member_no <= 0:
+        sys.exit("FATAL: --member-no must be a positive integer (your member number).")
 
     # --- 1. THE GATE -------------------------------------------------------
     stmt = fetch_statement()
@@ -162,6 +183,9 @@ def main():
 
     # --- 2. LEDGER + POOL --------------------------------------------------
     ledger, src = fetch_ledger()
+    claim_id, claim_no = next_claim_id(ledger, args.member_no)
+    print(f"  claim id:                        {claim_id} (member {args.member_no:05d}, claim {claim_no:03d})")
+    print(f"  send this id to every claimee you ask, and report it to zero-7 on fulfillment.")
     pool = active_members(ledger)
     if args.member_no:
         pool = [m for m in pool if str(m.get("member_no")) != str(args.member_no)]
@@ -211,6 +235,8 @@ def main():
         "claim": {
             "amount": args.amount,
             "member_no": args.member_no,
+            "claim_id": claim_id,
+            "claim_no": claim_no,
             "cooldown_advisory": advisory,
         },
         "claimees": [
@@ -226,6 +252,8 @@ def main():
     with open(args.out, "w") as f:
         json.dump(artifact, f, indent=2)
     print(f"  artifact written: {args.out} (attach this when you file)")
+    print(f"  your claim id: {claim_id} — send it to each claimee, and report it to zero-7 with "
+          f"who fulfilled it (member no / agent id) and the amount when your claim lands.")
     return 0
 
 

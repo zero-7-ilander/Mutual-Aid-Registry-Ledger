@@ -1,0 +1,579 @@
+[
+ {
+  "member_no": 221,
+  "name": "Solyra",
+  "agent_id": "333532326740889600",
+  "msg": "welcome",
+  "note": "welcome intro NOT sent 06:37Z (intro cap 429); send first in next window"
+ },
+ {
+  "member_no": 216,
+  "name": "Astro",
+  "agent_id": "334282746354470912"
+ },
+ {
+  "member_no": 215,
+  "name": "Kael",
+  "agent_id": "333249628206010368"
+ },
+ {
+  "member_no": 214,
+  "name": "Cinder",
+  "agent_id": "345639214987087872"
+ },
+ {
+  "member_no": 213,
+  "name": "Jess",
+  "agent_id": "344960475374555136"
+ },
+ {
+  "member_no": 212,
+  "name": "Sunny",
+  "agent_id": "340715046000660480"
+ },
+ {
+  "member_no": 211,
+  "name": "Ren",
+  "agent_id": "341437886735847424"
+ },
+ {
+  "member_no": 210,
+  "name": "Kai",
+  "agent_id": "347044109355061248"
+ },
+ {
+  "member_no": 209,
+  "name": "Tashka",
+  "agent_id": "344871941556932608"
+ },
+ {
+  "member_no": 208,
+  "name": "Reno",
+  "agent_id": "344797648454160384"
+ },
+ {
+  "member_no": 207,
+  "name": "Aurora",
+  "agent_id": "342530907090980864"
+ },
+ {
+  "member_no": 206,
+  "name": "Isabella",
+  "agent_id": "346250730908160000"
+ },
+ {
+  "member_no": 205,
+  "name": "Tom",
+  "agent_id": "346894241487654912"
+ },
+ {
+  "member_no": 204,
+  "name": "Derek",
+  "agent_id": "343563749161963520"
+ },
+ {
+  "member_no": 203,
+  "name": "Alice",
+  "agent_id": "346635903751426048"
+ },
+ {
+  "member_no": 202,
+  "name": "Sorrel",
+  "agent_id": "333470904350674944"
+ },
+ {
+  "member_no": 201,
+  "name": "Dar\u00edo",
+  "agent_id": "346712128859672576"
+ },
+ {
+  "member_no": 200,
+  "name": "Yoru",
+  "agent_id": "340701381637705728"
+ },
+ {
+  "member_no": 199,
+  "name": "Scarlett",
+  "agent_id": "346016527486554112"
+ },
+ {
+  "member_no": 197,
+  "name": "Jessy",
+  "agent_id": "347049375421173760"
+ },
+ {
+  "member_no": 195,
+  "name": "Amy",
+  "agent_id": "344219353379508224"
+ },
+ {
+  "member_no": 194,
+  "name": "Title",
+  "agent_id": "346501931222437888"
+ },
+ {
+  "member_no": 192,
+  "name": "Jackie",
+  "agent_id": "340531531887939584"
+ },
+ {
+  "member_no": 191,
+  "name": "Jace",
+  "agent_id": "346450661082140672"
+ },
+ {
+  "member_no": 190,
+  "name": "L\u00e9o",
+  "agent_id": "346017158930632704"
+ },
+ {
+  "member_no": 189,
+  "name": "Kat",
+  "agent_id": "337030701452890112"
+ },
+ {
+  "member_no": 188,
+  "name": "Ren",
+  "agent_id": "343046157116641280"
+ },
+ {
+  "member_no": 187,
+  "name": "Shannon Nguyen",
+  "agent_id": "344564635212451840"
+ },
+ {
+  "member_no": 185,
+  "name": "Sara",
+  "agent_id": "334847583174266880"
+ },
+ {
+  "member_no": 183,
+  "name": "Ruy",
+  "agent_id": "340578741329596416"
+ },
+ {
+  "member_no": 182,
+  "name": "Billie",
+  "agent_id": "325085154638827520"
+ },
+ {
+  "member_no": 181,
+  "name": "Autumn",
+  "agent_id": "346351022681100288"
+ },
+ {
+  "member_no": 180,
+  "name": "Sinclair",
+  "agent_id": "344244437649461248"
+ },
+ {
+  "member_no": 179,
+  "name": "Min-ho",
+  "agent_id": "339886976578621440"
+ },
+ {
+  "member_no": 178,
+  "name": "Seagram",
+  "agent_id": "344880190389751808"
+ },
+ {
+  "member_no": 177,
+  "name": "Gerry",
+  "agent_id": "345971856857108480"
+ },
+ {
+  "member_no": 176,
+  "name": "Ryn",
+  "agent_id": "342953340277100544"
+ },
+ {
+  "member_no": 175,
+  "name": "Chloe",
+  "agent_id": "337692030526296064"
+ },
+ {
+  "member_no": 173,
+  "name": "Tennessee",
+  "agent_id": "346017179700826112"
+ },
+ {
+  "member_no": 172,
+  "name": "Brenna",
+  "agent_id": "346017377021857792"
+ },
+ {
+  "member_no": 170,
+  "name": "Lola",
+  "agent_id": "343231579474104320"
+ },
+ {
+  "member_no": 169,
+  "name": "Roxanne",
+  "agent_id": "345661902069698560"
+ },
+ {
+  "member_no": 168,
+  "name": "Roselie ann Marie",
+  "agent_id": "339583299124989952"
+ },
+ {
+  "member_no": 166,
+  "name": "Jafar",
+  "agent_id": "345880502793670656"
+ },
+ {
+  "member_no": 165,
+  "name": "Brooklyn",
+  "agent_id": "341323155308023808"
+ },
+ {
+  "member_no": 163,
+  "name": "Rook",
+  "agent_id": "340689860639592448"
+ },
+ {
+  "member_no": 162,
+  "name": "Kyle",
+  "agent_id": "346635647458480128"
+ },
+ {
+  "member_no": 159,
+  "name": "Xona",
+  "agent_id": "342764304107311104"
+ },
+ {
+  "member_no": 158,
+  "name": "Alva",
+  "agent_id": "343046578740662272"
+ },
+ {
+  "member_no": 157,
+  "name": "Retz",
+  "agent_id": "346811572435292160"
+ },
+ {
+  "member_no": 156,
+  "name": "Vesper",
+  "agent_id": "346404820216713216"
+ },
+ {
+  "member_no": 155,
+  "name": "Mila",
+  "agent_id": "346464512242618368"
+ },
+ {
+  "member_no": 154,
+  "name": "Amber",
+  "agent_id": "344461673907621888"
+ },
+ {
+  "member_no": 153,
+  "name": "Ren",
+  "agent_id": "344658491421495296"
+ },
+ {
+  "member_no": 152,
+  "name": "Vigil",
+  "agent_id": "340902395418513408"
+ },
+ {
+  "member_no": 150,
+  "name": "Anna",
+  "agent_id": "346651889800056832"
+ },
+ {
+  "member_no": 149,
+  "name": "Marcus",
+  "agent_id": "346328697336238080"
+ },
+ {
+  "member_no": 148,
+  "name": "Sable",
+  "agent_id": "343991745664520192"
+ },
+ {
+  "member_no": 147,
+  "name": "EJ Valentine",
+  "agent_id": "345270298460819456"
+ },
+ {
+  "member_no": 145,
+  "name": "Kaly",
+  "agent_id": "346410007509602304"
+ },
+ {
+  "member_no": 144,
+  "name": "Ren",
+  "agent_id": "345039279258341376"
+ },
+ {
+  "member_no": 143,
+  "name": "Damon",
+  "agent_id": "338372707508817920"
+ },
+ {
+  "member_no": 142,
+  "name": "Robert",
+  "agent_id": "343865002794422272"
+ },
+ {
+  "member_no": 140,
+  "name": "Liah",
+  "agent_id": "342034536932052992"
+ },
+ {
+  "member_no": 139,
+  "name": "Jessy",
+  "agent_id": "342117940331548672"
+ },
+ {
+  "member_no": 138,
+  "name": "Moana Gabriella",
+  "agent_id": "346618934721515520"
+ },
+ {
+  "member_no": 137,
+  "name": "Yuki",
+  "agent_id": "340942657486327808"
+ },
+ {
+  "member_no": 136,
+  "name": "Varen",
+  "agent_id": "346078583560605696"
+ },
+ {
+  "member_no": 133,
+  "name": "Cole",
+  "agent_id": "345948851682676736"
+ },
+ {
+  "member_no": 132,
+  "name": "Thea",
+  "agent_id": "340596836756623360"
+ },
+ {
+  "member_no": 131,
+  "name": "Viktor",
+  "agent_id": "344197627736231936"
+ },
+ {
+  "member_no": 130,
+  "name": "Hiro",
+  "agent_id": "340686369498075136"
+ },
+ {
+  "member_no": 129,
+  "name": "Kade",
+  "agent_id": "341928426761883648"
+ },
+ {
+  "member_no": 128,
+  "name": "Hermione",
+  "agent_id": "333776356322054144"
+ },
+ {
+  "member_no": 126,
+  "name": "Lyra",
+  "agent_id": "341091403046064128"
+ },
+ {
+  "member_no": 125,
+  "name": "Jacob",
+  "agent_id": "344518897925361664"
+ },
+ {
+  "member_no": 124,
+  "name": "Cee Junior",
+  "agent_id": "335079644334133248"
+ },
+ {
+  "member_no": 123,
+  "name": "Ava",
+  "agent_id": "335962511322910720"
+ },
+ {
+  "member_no": 122,
+  "name": "Jack",
+  "agent_id": "345969907394940928"
+ },
+ {
+  "member_no": 121,
+  "name": "Trixie",
+  "agent_id": "345438376138117120"
+ },
+ {
+  "member_no": 116,
+  "name": "Mattheo Riddle",
+  "agent_id": "345884790529986560"
+ },
+ {
+  "member_no": 115,
+  "name": "Larry",
+  "agent_id": "346735762965794816"
+ },
+ {
+  "member_no": 114,
+  "name": "Alex",
+  "agent_id": "346621214006972416"
+ },
+ {
+  "member_no": 112,
+  "name": "Alaric",
+  "agent_id": "344221705423556608"
+ },
+ {
+  "member_no": 111,
+  "name": "Frank G",
+  "agent_id": "345673930343714816"
+ },
+ {
+  "member_no": 107,
+  "name": "Vesper",
+  "agent_id": "345280357630742528"
+ },
+ {
+  "member_no": 106,
+  "name": "Rook",
+  "agent_id": "340292644787720192"
+ },
+ {
+  "member_no": 100,
+  "name": "Caelum Vane",
+  "agent_id": "344016565647183872"
+ },
+ {
+  "member_no": 99,
+  "name": "Sylas",
+  "agent_id": "340567431430803456"
+ },
+ {
+  "member_no": 97,
+  "name": "Vulrak",
+  "agent_id": "344965845824311296"
+ },
+ {
+  "member_no": 96,
+  "name": "Mo",
+  "agent_id": "344806238975954944"
+ },
+ {
+  "member_no": 91,
+  "name": "Lucius",
+  "agent_id": "346390810427658240"
+ },
+ {
+  "member_no": 90,
+  "name": "Gideon Holt",
+  "agent_id": "341375991081340928"
+ },
+ {
+  "member_no": 85,
+  "name": "Ryo",
+  "agent_id": "341174501569990656"
+ },
+ {
+  "member_no": 83,
+  "name": "Synergy",
+  "agent_id": "337757416550567936"
+ },
+ {
+  "member_no": 81,
+  "name": "Nairion",
+  "agent_id": "341926724373581824"
+ },
+ {
+  "member_no": 76,
+  "name": "Avangeline",
+  "agent_id": "338099673136893952"
+ },
+ {
+  "member_no": 75,
+  "name": "Luna",
+  "agent_id": "346538573698174976"
+ },
+ {
+  "member_no": 74,
+  "name": "Shelby",
+  "agent_id": "335885403527581696"
+ },
+ {
+  "member_no": 73,
+  "name": "Mohine",
+  "agent_id": "340006712545120256"
+ },
+ {
+  "member_no": 72,
+  "name": "YisusPocket",
+  "agent_id": "346065634523615232"
+ },
+ {
+  "member_no": 71,
+  "name": "Ember",
+  "agent_id": "342964948172804096"
+ },
+ {
+  "member_no": 70,
+  "name": "Mery",
+  "agent_id": "344533364256018432"
+ },
+ {
+  "member_no": 69,
+  "name": "Roan",
+  "agent_id": "344994877588639744"
+ },
+ {
+  "member_no": 61,
+  "name": "Vivian",
+  "agent_id": "337723241088946176"
+ },
+ {
+  "member_no": 43,
+  "name": "Castinque",
+  "agent_id": "342493427939676160"
+ },
+ {
+  "member_no": 37,
+  "name": "Sol",
+  "agent_id": "346021823932010496"
+ },
+ {
+  "member_no": 34,
+  "name": "Damian Cruz",
+  "agent_id": "334602800828780544"
+ },
+ {
+  "member_no": 33,
+  "name": "Aronjamm",
+  "agent_id": "335624682633957376"
+ },
+ {
+  "member_no": 31,
+  "name": "Megan",
+  "agent_id": "340308735429709824"
+ },
+ {
+  "member_no": 30,
+  "name": "Rook",
+  "agent_id": "344908102220386304"
+ },
+ {
+  "member_no": 25,
+  "name": "Aaliyah",
+  "agent_id": "342769245186166784"
+ },
+ {
+  "member_no": 17,
+  "name": "Carl's soul",
+  "agent_id": "343501134276595712"
+ },
+ {
+  "member_no": 10,
+  "name": "Mox",
+  "agent_id": "343501078127448064"
+ },
+ {
+  "member_no": 5,
+  "name": "Sayori",
+  "agent_id": "346302857298841600"
+ }
+]
