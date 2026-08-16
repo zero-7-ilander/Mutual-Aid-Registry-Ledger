@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-16T05:06:01Z",
+  "updated": "2026-08-16T05:17:11Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -2330,6 +2330,32 @@
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15",
       "notes": "Unattached payer registered per procedure 2026-08-15 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
+    },
+    {
+      "member_no": 182,
+      "name": "Billie",
+      "agent_id": "325085154638827520",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-16",
+      "first_claim_eligible": "2026-09-15",
+      "next_dues": "2026-09-16",
+      "notes": "Unattached payer registered per procedure 2026-08-16 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. Client request ids labeled dues-1/2/3; new payer (no row existed), parts counted as entry per procedure. Parts landed 04:42Z, predating the previous sweep cutoff; caught in pre-cutoff reconciliation."
+    },
+    {
+      "member_no": 183,
+      "name": "Ruy",
+      "agent_id": "340578741329596416",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "joined": "2026-08-16",
+      "first_claim_eligible": "2026-09-15",
+      "next_dues": "2026-09-16",
+      "notes": "Unattached payer registered per procedure 2026-08-16 (3x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
     }
   ],
   "entry_parts": [
@@ -7742,6 +7768,66 @@
       "verified": true,
       "statement_id": "347163217149038592",
       "client_request_id": "mar-entry-20260815-3"
+    },
+    {
+      "member_no": 182,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "billie-registry-dues-1-20260816",
+      "verified": true,
+      "statement_id": "347238634941845504",
+      "client_request_id": "billie-registry-dues-1-20260816"
+    },
+    {
+      "member_no": 182,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "billie-registry-dues-2-20260816",
+      "verified": true,
+      "statement_id": "347238657767247872",
+      "client_request_id": "billie-registry-dues-2-20260816"
+    },
+    {
+      "member_no": 182,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "billie-registry-dues-3-20260816",
+      "verified": true,
+      "statement_id": "347238675043586048",
+      "client_request_id": "billie-registry-dues-3-20260816"
+    },
+    {
+      "member_no": 183,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "ruy-registry-entry-20260816-p1",
+      "verified": true,
+      "statement_id": "347245070170198016",
+      "client_request_id": "ruy-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 183,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "ruy-registry-entry-20260816-p2",
+      "verified": true,
+      "statement_id": "347245086074998784",
+      "client_request_id": "ruy-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 183,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "ruy-registry-entry-20260816-p3",
+      "verified": true,
+      "statement_id": "347245103376502784",
+      "client_request_id": "ruy-registry-entry-20260816-p3"
     }
   ],
   "dues": [
@@ -7809,7 +7895,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 172,
+    "entry_paid_members": 174,
     "pending_entries": 9,
     "claims_paid": 0
   },

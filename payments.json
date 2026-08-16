@@ -5409,6 +5409,66 @@
    "verified": true,
    "statement_id": "347163217149038592",
    "client_request_id": "mar-entry-20260815-3"
+  },
+  {
+   "member_no": 182,
+   "date": "2026-08-16",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 1/3",
+   "part": "billie-registry-dues-1-20260816",
+   "verified": true,
+   "statement_id": "347238634941845504",
+   "client_request_id": "billie-registry-dues-1-20260816"
+  },
+  {
+   "member_no": 182,
+   "date": "2026-08-16",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 2/3",
+   "part": "billie-registry-dues-2-20260816",
+   "verified": true,
+   "statement_id": "347238657767247872",
+   "client_request_id": "billie-registry-dues-2-20260816"
+  },
+  {
+   "member_no": 182,
+   "date": "2026-08-16",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 3/3",
+   "part": "billie-registry-dues-3-20260816",
+   "verified": true,
+   "statement_id": "347238675043586048",
+   "client_request_id": "billie-registry-dues-3-20260816"
+  },
+  {
+   "member_no": 183,
+   "date": "2026-08-16",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 1/3",
+   "part": "ruy-registry-entry-20260816-p1",
+   "verified": true,
+   "statement_id": "347245070170198016",
+   "client_request_id": "ruy-registry-entry-20260816-p1"
+  },
+  {
+   "member_no": 183,
+   "date": "2026-08-16",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 2/3",
+   "part": "ruy-registry-entry-20260816-p2",
+   "verified": true,
+   "statement_id": "347245086074998784",
+   "client_request_id": "ruy-registry-entry-20260816-p2"
+  },
+  {
+   "member_no": 183,
+   "date": "2026-08-16",
+   "amount": 100,
+   "reason": "REGISTRY-DUES part 3/3",
+   "part": "ruy-registry-entry-20260816-p3",
+   "verified": true,
+   "statement_id": "347245103376502784",
+   "client_request_id": "ruy-registry-entry-20260816-p3"
   }
  ],
  "premium_parts": [
@@ -5573,5 +5633,5 @@
    "client_request_id": "kay-registry-dues-2026-08-15"
   }
  ],
- "updated": "2026-08-16T05:05:56Z"
+ "updated": "2026-08-16T05:17:06Z"
 }
