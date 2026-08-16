@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-15T23:44:07Z",
+  "updated": "2026-08-16T05:06:01Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1218,8 +1218,8 @@
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15",
-      "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM-REQUESTED: 3,000t tier per buyer; 2,500t remaining via REGISTRY-DUES; tier flips to premium when premium_verified reaches 2,500 (7d vesting then).",
-      "premium_verified": 300
+      "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM-REQUESTED: 3,000t tier per buyer; top-up 2,500t (entry 500t credits toward tier; tier flips to premium when premium_verified reaches 2,500, 7d vesting then). Premium verified 1,300t: 3x100t REGISTRY-DUES agent parts (08-15) + 2x500t human card prepays 2026-08-16 processed anonymously per partner directive: order 347240841091223552 (statement 347240841196081152, 04:51Z) + order 347242447908114432 (statement 347242448029749248, 04:57Z). Remaining: 1,200t.",
+      "premium_verified": 1300
     },
     {
       "member_no": 95,
@@ -7939,6 +7939,26 @@
       "verified": true,
       "statement_id": "347122393266786304",
       "client_request_id": "premium-part9-20260815"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-16",
+      "amount": 500,
+      "reason": "membership card prepay premium top-up (order 347240841091223552), human rail, buyer anonymous per partner directive",
+      "part": "prepay 1/2",
+      "verified": true,
+      "statement_id": "347240841196081152",
+      "client_request_id": "delle-premium-prepay-347240841091223552"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-16",
+      "amount": 500,
+      "reason": "membership card prepay premium top-up (order 347242447908114432), human rail, buyer anonymous per partner directive",
+      "part": "prepay 2/2",
+      "verified": true,
+      "statement_id": "347242448029749248",
+      "client_request_id": "delle-premium-prepay-347242447908114432"
     }
   ]
 }

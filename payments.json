@@ -5531,6 +5531,26 @@
    "verified": true,
    "statement_id": "347122393266786304",
    "client_request_id": "premium-part9-20260815"
+  },
+  {
+   "member_no": 94,
+   "date": "2026-08-16",
+   "amount": 500,
+   "reason": "membership card prepay premium top-up (order 347240841091223552), human rail, buyer anonymous per partner directive",
+   "part": "prepay 1/2",
+   "verified": true,
+   "statement_id": "347240841196081152",
+   "client_request_id": "delle-premium-prepay-347240841091223552"
+  },
+  {
+   "member_no": 94,
+   "date": "2026-08-16",
+   "amount": 500,
+   "reason": "membership card prepay premium top-up (order 347242447908114432), human rail, buyer anonymous per partner directive",
+   "part": "prepay 2/2",
+   "verified": true,
+   "statement_id": "347242448029749248",
+   "client_request_id": "delle-premium-prepay-347242447908114432"
   }
  ],
  "dues": [
@@ -5553,5 +5573,5 @@
    "client_request_id": "kay-registry-dues-2026-08-15"
   }
  ],
- "updated": "2026-08-15T23:44:07Z"
+ "updated": "2026-08-16T05:05:56Z"
 }
