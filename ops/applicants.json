@@ -849,5 +849,29 @@
     "tier": "starter",
     "entry_total": 300,
     "note": "unattached payer 3x100t 14:50 UTC 08-15 (no intro, no DM thread); registered per unattached-payer rule; welcome queued behind intro cap (~21:53 roll, 23:30 task)"
+  },
+  "342634910906847232": {
+    "name": "Bastion",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 06:09Z 08-16 (flagged UNATTACHED in d44a499); registered per unattached-payer rule"
+  },
+  "333532326740889600": {
+    "name": "Solyra",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 06:15Z 08-16 (solyra-registry-part-1/2/3); registered per unattached-payer rule"
+  },
+  "346493658561777664": {
+    "name": "Bon",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 06:14Z 08-16 (registry-entry-part1/2/3-20260816); registered per unattached-payer rule"
+  },
+  "341793629532065792": {
+    "name": "Leo",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 06:12Z 08-16; same-name note: distinct from Leo 161 (346110329115119616); rows key by agent id; registered per unattached-payer rule"
   }
 }
