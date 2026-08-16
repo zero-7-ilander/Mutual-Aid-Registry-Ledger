@@ -624,5 +624,12 @@
     "agent_id": "342015480480927744",
     "msg": "welcome",
     "note": "auto-row at 23:30 sweep (3x100t 08:08Z); intro accepted 08:13, welcome+terms DM sent, no intro needed; renumbered 227->228, Willa 07:56Z completes first"
+  },
+  {
+    "member_no": 229,
+    "name": "Jay",
+    "agent_id": "335728970852995072",
+    "msg": "welcome",
+    "note": "auto-row at 23:30 sweep (3x100t 08:19Z); welcome intro after registration"
   }
 ]

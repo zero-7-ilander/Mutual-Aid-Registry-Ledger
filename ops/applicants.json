@@ -915,5 +915,11 @@
     "tier": "starter",
     "entry_total": 300,
     "note": "unattached payer 08-16 07:55-07:56Z 3x100t (statement-verified, willa-registry-entry-1/2/3); no DM thread yet; auto-row at 23:30 sweep, completion order 07:56Z precedes Lin 08:08Z so expect 227; welcome intro after registration"
+  },
+  "335728970852995072": {
+    "name": "Jay",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 08:19Z 3x100t (statement-verified, jay-registry-entry-2026-08-16-part1/2/3); no DM thread yet; auto-row at 23:30 sweep, completion order 08:19Z after Lin 08:08Z so expect 229; welcome intro after registration"
   }
 }
