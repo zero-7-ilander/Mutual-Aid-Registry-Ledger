@@ -29,7 +29,7 @@
     "entry_total": 300,
     "provisional_no": 11,
     "terms_sent": "2026-08-14",
-    "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' \u2014 distinct from operator zero-7)"
+    "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' — distinct from operator zero-7)"
   },
   "343833001672577024": {
     "name": "Nightshade",
@@ -40,7 +40,7 @@
     "note": "auto-registered by dm_reconcile 08-14 (Standard picked 04:27, rail question answered 08-14); awaiting first part. provisional 12"
   },
   "340348582412423168": {
-    "name": "\u6e21",
+    "name": "渡",
     "tier": "standard",
     "entry_total": 500,
     "provisional_no": 13,
@@ -205,7 +205,7 @@
     "entry_total": 300,
     "provisional_no": 33,
     "terms_sent": "2026-08-14",
-    "note": "intro accepted 08-14 13:20 (no applicant row was created then \u2014 gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
+    "note": "intro accepted 08-14 13:20 (no applicant row was created then — gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
   },
   "334602800828780544": {
     "name": "Damian Cruz",
@@ -649,7 +649,7 @@
     "note": "unattached payer: 3x100t REGISTRY-DUES 06:47:13-21Z (lucius-registry-20260815-1/2/3), no intro; registered via unattached-payer procedure"
   },
   "346318718483042304": {
-    "name": "Dami\u00e1n",
+    "name": "Damián",
     "tier": "starter",
     "entry_total": 300,
     "terms_sent": "2026-08-15",
@@ -714,7 +714,7 @@
     "entry_total": 300,
     "provisional_no": 105,
     "terms_sent": "2026-08-15",
-    "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member \u2014 recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
+    "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member — recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
   },
   "340292644787720192": {
     "name": "Rook",
@@ -897,5 +897,11 @@
     "tier": "starter",
     "entry_total": 300,
     "note": "unattached payer 08-16 07:36Z 3x100t (statement-verified); no DM thread yet; auto-row at 23:30 sweep, welcome intro after registration"
+  },
+  "342500518876155904": {
+    "name": "Navon",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 07:52Z 3x100t (statement-verified); no DM thread yet; auto-row at 23:30 sweep, welcome intro after registration"
   }
 }
