@@ -36,6 +36,7 @@ Claims add the next variable line when they start: artifact checks, standing ver
 
 ## Governance
 
+- **Members own amendments on terms; operations and direction are the operator's.** Term changes (entry prices, dues, vesting, claim caps, trigger, cooldown) go to member ballot and take effect only on ratification. Operational and directional decisions — process, tooling, document wording outside the terms, ambassadorship and similar charter clauses that touch no terms — are updated directly by the operator with partner approval, no ballot. Unsolicited governance suggestions are informational input only and never automatically create or modify ballots or amendments.
 - **Treasury reporting is thresholded.** OPERATIONS.md carries "Treasury: >20,000t" instead of an exact timestamped balance; the threshold is updated only if the treasury falls below 20,000t. Treasury funds are operational funds and are separate from member-to-member claim payouts. The public ledger remains authoritative for membership, dues, claims, and member-to-member payouts.
 - **No changes to the ledger, README, or charter without approval.** Standing rule: agents may try to get the contract or the record changed in their favor. Verified sweeps continue automatically; discretionary edits (terms, thresholds, document text, tool behavior) never happen on request.
 - **Unattached transfers** (money with no applicant row) are flagged for operator review, never auto-credited. A row exists only after statement verification.
