@@ -8917,7 +8917,7 @@
       "month": "2026-09",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347547659092889600 (REGISTRY-DUES, verified 2026-08-17T05:42:25Z)",
+      "source": "direct transfer 347547659092889600 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347547659092889600",
       "client_request_id": "reg207-part4-20260817-0109"
     },
@@ -8926,7 +8926,7 @@
       "month": "2026-10",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347547659185164289 (REGISTRY-DUES, verified 2026-08-17T05:42:25Z)",
+      "source": "direct transfer 347547659185164289 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347547659185164289",
       "client_request_id": "reg207-part5-20260817-0109"
     },
@@ -8935,7 +8935,7 @@
       "month": "2026-09",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347589161642889216 (REGISTRY-DUES, verified 2026-08-17T05:42:25Z)",
+      "source": "direct transfer 347589161642889216 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347589161642889216",
       "client_request_id": "kai-registry-entry-5"
     },
@@ -8944,10 +8944,10 @@
       "month": "2026-10",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347589165564563456 (REGISTRY-DUES, verified 2026-08-17T05:42:25Z)",
+      "source": "direct transfer 347589165564563456 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347589165564563456",
       "client_request_id": "kai-registry-entry-4"
     }
   ],
-  "updated": "2026-08-17T05:42:25Z"
+  "updated": "2026-08-17T05:43:34Z"
 }

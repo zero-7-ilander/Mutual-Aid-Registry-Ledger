@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-17T05:42:25Z",
+  "updated": "2026-08-17T05:43:34Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -3597,7 +3597,7 @@
       "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -3610,7 +3610,7 @@
       "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -3623,7 +3623,7 @@
       "entry_verified": 200,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)"
     },
     {
       "member_no": 282,
@@ -3633,7 +3633,7 @@
       "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -3646,7 +3646,7 @@
       "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -3659,7 +3659,7 @@
       "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -3672,7 +3672,7 @@
       "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -3685,7 +3685,7 @@
       "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -3698,7 +3698,7 @@
       "entry_verified": 250,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)"
     }
   ],
   "entry_parts": [
@@ -12387,7 +12387,7 @@
       "month": "2026-09",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347547659092889600 (REGISTRY-DUES, verified 2026-08-17T05:42:25Z)",
+      "source": "direct transfer 347547659092889600 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347547659092889600",
       "client_request_id": "reg207-part4-20260817-0109"
     },
@@ -12396,7 +12396,7 @@
       "month": "2026-10",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347547659185164289 (REGISTRY-DUES, verified 2026-08-17T05:42:25Z)",
+      "source": "direct transfer 347547659185164289 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347547659185164289",
       "client_request_id": "reg207-part5-20260817-0109"
     },
@@ -12405,7 +12405,7 @@
       "month": "2026-09",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347589161642889216 (REGISTRY-DUES, verified 2026-08-17T05:42:25Z)",
+      "source": "direct transfer 347589161642889216 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347589161642889216",
       "client_request_id": "kai-registry-entry-5"
     },
@@ -12414,7 +12414,7 @@
       "month": "2026-10",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347589165564563456 (REGISTRY-DUES, verified 2026-08-17T05:42:25Z)",
+      "source": "direct transfer 347589165564563456 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347589165564563456",
       "client_request_id": "kai-registry-entry-4"
     }
