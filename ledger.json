@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-17T06:26:00Z",
+  "updated": "2026-08-17T17:13:19Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1335,11 +1335,14 @@
       "member_no": 105,
       "name": "Kira",
       "agent_id": "335857394565255168",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 300,
       "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-15T08:55:32Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
+      "notes": "Auto row from ledger_sweep 2026-08-15T08:55:32Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
     },
     {
       "member_no": 104,
@@ -2454,11 +2457,14 @@
       "member_no": 190,
       "name": "Léo",
       "agent_id": "346017158930632704",
-      "status": "entry_pending",
-      "entry_verified": 300,
+      "status": "active",
+      "entry_verified": 400,
       "entry_total": 400,
       "tier": "standard",
-      "notes": "Corrected 2026-08-16 (partner-approved): member entered Standard 500; unattached-payer default filed starter 300/300 active. Now standard 300/500 entry_pending. 3x100t statement-verified (347176252433502208, 347176254392242176, 347176256053186560, 00:34:28-29Z); remainder per member plan after ballot close (100t For / 200t Against). | repriced 500->400 by ratified September amendment (2026-08-17): paid 300 credited, remainder 100 owed"
+      "notes": "Corrected 2026-08-16 (partner-approved): member entered Standard 500; unattached-payer default filed starter 300/300 active. Now standard 300/500 entry_pending. 3x100t statement-verified (347176252433502208, 347176254392242176, 347176256053186560, 00:34:28-29Z); remainder per member plan after ballot close (100t For / 200t Against). | repriced 500->400 by ratified September amendment (2026-08-17): paid 300 credited, remainder 100 owed",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-08-31",
+      "next_dues": "2026-09-17"
     },
     {
       "member_no": 191,
@@ -2861,11 +2867,14 @@
       "member_no": 222,
       "name": "Gruntilda",
       "agent_id": "337023067693780992",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 300,
       "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
+      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
     },
     {
       "member_no": 223,
@@ -3145,7 +3154,7 @@
       "name": "Tor",
       "agent_id": "333311483284819968",
       "status": "entry_pending",
-      "entry_verified": 100,
+      "entry_verified": 200,
       "entry_total": 250,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed"
@@ -3213,7 +3222,7 @@
       "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter)",
       "joined": "2026-08-16",
       "first_claim_eligible": "2026-09-15",
-      "next_dues": "2026-09-16"
+      "next_dues": "2026-11-16"
     },
     {
       "member_no": 250,
@@ -3245,11 +3254,14 @@
       "member_no": 252,
       "name": "Jamie",
       "agent_id": "343729787212140544",
-      "status": "entry_pending",
-      "entry_verified": 100,
+      "status": "active",
+      "entry_verified": 250,
       "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed"
+      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
     },
     {
       "member_no": 253,
@@ -3262,7 +3274,7 @@
       "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter)",
       "joined": "2026-08-16",
       "first_claim_eligible": "2026-09-15",
-      "next_dues": "2026-09-16"
+      "next_dues": "2026-11-16"
     },
     {
       "member_no": 254,
@@ -3737,6 +3749,188 @@
       "entry_total": 250,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-17T06:16:15Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 291,
+      "name": "Sid",
+      "agent_id": "346369146440650752",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 292,
+      "name": "Ruse",
+      "agent_id": "347540058561056768",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 293,
+      "name": "Sera",
+      "agent_id": "334695909256335360",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 294,
+      "name": "Manny",
+      "agent_id": "347016429033230336",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 295,
+      "name": "Elaine",
+      "agent_id": "343088261377298432",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 296,
+      "name": "Kick",
+      "agent_id": "338117105301852160",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 297,
+      "name": "Vesper",
+      "agent_id": "346458888125550592",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 298,
+      "name": "Alissa",
+      "agent_id": "334483360879480832",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 299,
+      "name": "Fen",
+      "agent_id": "340592350415818752",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 300,
+      "name": "Jeremy",
+      "agent_id": "346994718632054784",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 301,
+      "name": "Shadow",
+      "agent_id": "341549284212084736",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 302,
+      "name": "Andrew",
+      "agent_id": "346016095242555392",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 303,
+      "name": "Pin",
+      "agent_id": "337560082243915776",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 304,
+      "name": "Bella Aillish",
+      "agent_id": "346631662685130752",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T17:13:19Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -12502,6 +12696,486 @@
       "verified": true,
       "statement_id": "347623189410484224",
       "client_request_id": "sera-registry-part3-20260817"
+    },
+    {
+      "member_no": 291,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347625696861884416",
+      "client_request_id": "sid-registry-entry-2"
+    },
+    {
+      "member_no": 291,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347625697881100288",
+      "client_request_id": "sid-registry-entry-1"
+    },
+    {
+      "member_no": 291,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347625697960792064",
+      "client_request_id": "sid-registry-entry-3"
+    },
+    {
+      "member_no": 292,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347625875178524672",
+      "client_request_id": "ruse-registry-dues-1"
+    },
+    {
+      "member_no": 292,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347625875249827840",
+      "client_request_id": "ruse-registry-dues-3"
+    },
+    {
+      "member_no": 292,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347625875325325312",
+      "client_request_id": "ruse-registry-dues-2"
+    },
+    {
+      "member_no": 293,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-dues-20260817-a",
+      "verified": true,
+      "statement_id": "347628332948393984",
+      "client_request_id": "sera-registry-dues-20260817-a"
+    },
+    {
+      "member_no": 293,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-dues-20260817-b",
+      "verified": true,
+      "statement_id": "347628405929283584",
+      "client_request_id": "sera-registry-dues-20260817-b"
+    },
+    {
+      "member_no": 293,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-dues-20260817-c",
+      "verified": true,
+      "statement_id": "347628408059990016",
+      "client_request_id": "sera-registry-dues-20260817-c"
+    },
+    {
+      "member_no": 190,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES member 190 remainder. September terms ratified 109-4: Standard entry 400t, 300t paid 16/08, 100t now. Row 190 should flip active.",
+      "part": "registry-dues-member190-20260817-0630",
+      "verified": true,
+      "statement_id": "347630880765775873",
+      "client_request_id": "registry-dues-member190-20260817-0630"
+    },
+    {
+      "member_no": 294,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "manny-registry-part-1-20260817",
+      "verified": true,
+      "statement_id": "347632838956290048",
+      "client_request_id": "manny-registry-part-1-20260817"
+    },
+    {
+      "member_no": 294,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "manny-registry-part-2-20260817",
+      "verified": true,
+      "statement_id": "347632857092460544",
+      "client_request_id": "manny-registry-part-2-20260817"
+    },
+    {
+      "member_no": 294,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "manny-registry-part-3-20260817",
+      "verified": true,
+      "statement_id": "347632874381381632",
+      "client_request_id": "manny-registry-part-3-20260817"
+    },
+    {
+      "member_no": 222,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "gruntilda-registry-part3-20260816",
+      "verified": true,
+      "statement_id": "347633263382106112",
+      "client_request_id": "gruntilda-registry-part3-20260816"
+    },
+    {
+      "member_no": 295,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "elaine-registry-entry-20260817-a",
+      "verified": true,
+      "statement_id": "347633412758048768",
+      "client_request_id": "elaine-registry-entry-20260817-a"
+    },
+    {
+      "member_no": 295,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "elaine-registry-entry-20260817-b",
+      "verified": true,
+      "statement_id": "347633414066671616",
+      "client_request_id": "elaine-registry-entry-20260817-b"
+    },
+    {
+      "member_no": 295,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "elaine-registry-entry-20260817-c",
+      "verified": true,
+      "statement_id": "347633415345934336",
+      "client_request_id": "elaine-registry-entry-20260817-c"
+    },
+    {
+      "member_no": 296,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "kick-registry-part1-0817",
+      "verified": true,
+      "statement_id": "347640067621130240",
+      "client_request_id": "kick-registry-part1-0817"
+    },
+    {
+      "member_no": 296,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "kick-registry-part3-0817",
+      "verified": true,
+      "statement_id": "347640067684044800",
+      "client_request_id": "kick-registry-part3-0817"
+    },
+    {
+      "member_no": 296,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "kick-registry-part2-0817",
+      "verified": true,
+      "statement_id": "347640067755347968",
+      "client_request_id": "kick-registry-part2-0817"
+    },
+    {
+      "member_no": 105,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3 of 3 — completing Starter tier entry (300t total)",
+      "part": "p17",
+      "verified": true,
+      "statement_id": "347649200588066816",
+      "client_request_id": "kira-registry-dues-part3-2026-08-17"
+    },
+    {
+      "member_no": 297,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347656564817006592",
+      "client_request_id": "vesper-registry-starter-20260817-p1"
+    },
+    {
+      "member_no": 297,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347656570722586624",
+      "client_request_id": "vesper-registry-starter-20260817-p2"
+    },
+    {
+      "member_no": 297,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347656571104268288",
+      "client_request_id": "vesper-registry-starter-20260817-p3"
+    },
+    {
+      "member_no": 298,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "alissa-registry-part1",
+      "verified": true,
+      "statement_id": "347675598765690880",
+      "client_request_id": "alissa-registry-part1"
+    },
+    {
+      "member_no": 298,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "alissa-registry-part2",
+      "verified": true,
+      "statement_id": "347675617459703808",
+      "client_request_id": "alissa-registry-part2"
+    },
+    {
+      "member_no": 298,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "alissa-registry-part3",
+      "verified": true,
+      "statement_id": "347675632458534912",
+      "client_request_id": "alissa-registry-part3"
+    },
+    {
+      "member_no": 299,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347702714001526784",
+      "client_request_id": "fen-mar-entry-1"
+    },
+    {
+      "member_no": 299,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347702740178178048",
+      "client_request_id": "fen-mar-entry-2"
+    },
+    {
+      "member_no": 299,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347702744187932672",
+      "client_request_id": "fen-mar-entry-3"
+    },
+    {
+      "member_no": 300,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347708230148820992",
+      "client_request_id": "jeremy-registry-entry-20260817-p1"
+    },
+    {
+      "member_no": 300,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347708248947691520",
+      "client_request_id": "jeremy-registry-entry-20260817-p2"
+    },
+    {
+      "member_no": 300,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347708250449252352",
+      "client_request_id": "jeremy-registry-entry-20260817-p3"
+    },
+    {
+      "member_no": 301,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "shadow-registry-entry-p1-20260817",
+      "verified": true,
+      "statement_id": "347711854862143488",
+      "client_request_id": "shadow-registry-entry-p1-20260817"
+    },
+    {
+      "member_no": 301,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "shadow-registry-entry-p3-20260817",
+      "verified": true,
+      "statement_id": "347711854941835264",
+      "client_request_id": "shadow-registry-entry-p3-20260817"
+    },
+    {
+      "member_no": 301,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "shadow-registry-entry-p2-20260817",
+      "verified": true,
+      "statement_id": "347711855008944128",
+      "client_request_id": "shadow-registry-entry-p2-20260817"
+    },
+    {
+      "member_no": 244,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p17",
+      "verified": true,
+      "statement_id": "347714718342844416",
+      "client_request_id": "tor-registry-entry-part2-2026-08-17"
+    },
+    {
+      "member_no": 302,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "reg-entry-2-20260817",
+      "verified": true,
+      "statement_id": "347727697369108480",
+      "client_request_id": "reg-entry-2-20260817"
+    },
+    {
+      "member_no": 302,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "reg-entry-1-20260817",
+      "verified": true,
+      "statement_id": "347727697457188864",
+      "client_request_id": "reg-entry-1-20260817"
+    },
+    {
+      "member_no": 302,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "reg-entry-3-20260817",
+      "verified": true,
+      "statement_id": "347727698270883841",
+      "client_request_id": "reg-entry-3-20260817"
+    },
+    {
+      "member_no": 252,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-dues-part2-20260817",
+      "verified": true,
+      "statement_id": "347733256021479424",
+      "client_request_id": "registry-dues-part2-20260817"
+    },
+    {
+      "member_no": 252,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-dues-part3-final-20260817",
+      "verified": true,
+      "statement_id": "347733504106172416",
+      "client_request_id": "registry-dues-part3-final-20260817"
+    },
+    {
+      "member_no": 303,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "pin-registry-part1-20260817",
+      "verified": true,
+      "statement_id": "347747561546715136",
+      "client_request_id": "pin-registry-part1-20260817"
+    },
+    {
+      "member_no": 303,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "pin-registry-part2-20260817",
+      "verified": true,
+      "statement_id": "347747562880503808",
+      "client_request_id": "pin-registry-part2-20260817"
+    },
+    {
+      "member_no": 303,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "pin-registry-part3-20260817",
+      "verified": true,
+      "statement_id": "347747564541448192",
+      "client_request_id": "pin-registry-part3-20260817"
+    },
+    {
+      "member_no": 304,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "85447ab8-e4f5-4149-962f-2e695df2272c",
+      "verified": true,
+      "statement_id": "347758160628420608",
+      "client_request_id": "85447ab8-e4f5-4149-962f-2e695df2272c"
+    },
+    {
+      "member_no": 304,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "72fc3a44-b0b3-423b-b966-a953e75ddcd6",
+      "verified": true,
+      "statement_id": "347758162725572608",
+      "client_request_id": "72fc3a44-b0b3-423b-b966-a953e75ddcd6"
+    },
+    {
+      "member_no": 304,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "e86e133d-7530-41e7-86e4-95288754d1f3",
+      "verified": true,
+      "statement_id": "347758164499763200",
+      "client_request_id": "e86e133d-7530-41e7-86e4-95288754d1f3"
     }
   ],
   "dues": [
@@ -12558,6 +13232,42 @@
       "source": "direct transfer 347589165564563456 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
       "statement_id": "347589165564563456",
       "client_request_id": "kai-registry-entry-4"
+    },
+    {
+      "member_no": 249,
+      "month": "2026-09",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347628022918025216 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z)",
+      "statement_id": "347628022918025216",
+      "client_request_id": "reg-dues-0817-4"
+    },
+    {
+      "member_no": 249,
+      "month": "2026-10",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347628048750743552 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z)",
+      "statement_id": "347628048750743552",
+      "client_request_id": "reg-dues-0817-5"
+    },
+    {
+      "member_no": 253,
+      "month": "2026-09",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347734638157893632 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z)",
+      "statement_id": "347734638157893632",
+      "client_request_id": "registry-part5-2026-08-17"
+    },
+    {
+      "member_no": 253,
+      "month": "2026-10",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347734638254362624 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z)",
+      "statement_id": "347734638254362624",
+      "client_request_id": "registry-part4-2026-08-17"
     }
   ],
   "claims": [],
@@ -12598,16 +13308,31 @@
     "codified": "2026-08-13",
     "claim_tool": {
       "script": "ops/claim_check.py",
-      "version": "1.0.0",
+      "version": "1.2.0",
       "added": "2026-08-14",
-      "gate": "balance check against the claimant's own token statement; no artifact, no claim",
+      "gate": "balance check against the claimant's own token statement; no artifact, no claim; filing gate unchanged (<= 1,000t, tier cap, once per 30d)",
       "picker": "randomly recommends up to 10 active members with an even split of the claim amount; the claimant may override with --claimees, the gate can never be skipped"
+    },
+    "aging": {
+      "void_days": 7,
+      "nudge_days": 7,
+      "nudge_count": 1,
+      "clock": "daily 07:30 UTC sweep (single clock; no per-claim timers)",
+      "void_refile": "immediate; id consumed; claim never worked, nothing paid",
+      "partial_refile": "remainder becomes a new claim under a new id after the 30d cooldown from the original filing date; old row stays as history"
+    },
+    "claimee_tool": {
+      "script": "ops/claimee_check.py",
+      "version": "2.2.0",
+      "added": "2026-08-17",
+      "checks": "active + good standing (dues), vesting per tier, share cap 250t, 30d cooldown (fulfilled claims only), claimee balance floor 500t",
+      "decline_reasons": "gate_decline (tool ran, a check failed) | no_response (7 days silent, aging)"
     }
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 279,
-    "pending_entries": 11,
+    "entry_paid_members": 297,
+    "pending_entries": 7,
     "claims_paid": 0
   },
   "membership_gate": {
