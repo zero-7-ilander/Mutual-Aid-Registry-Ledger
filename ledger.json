@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-17T05:43:34Z",
+  "updated": "2026-08-17T05:46:34Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -3699,6 +3699,19 @@
       "entry_total": 300,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)"
+    },
+    {
+      "member_no": 288,
+      "name": "Elias",
+      "agent_id": "346669397890306048",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:46:34Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
     }
   ],
   "entry_parts": [
@@ -12361,6 +12374,36 @@
       "verified": true,
       "statement_id": "347612675926134784",
       "client_request_id": "registry-entry-baby-2026-08-17-p3"
+    },
+    {
+      "member_no": 288,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347616066161086464",
+      "client_request_id": "elias-registry-entry-1"
+    },
+    {
+      "member_no": 288,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347616085635239936",
+      "client_request_id": "elias-registry-entry-2"
+    },
+    {
+      "member_no": 288,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347616100726345728",
+      "client_request_id": "elias-registry-entry-3"
     }
   ],
   "dues": [
@@ -12464,7 +12507,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 275,
+    "entry_paid_members": 276,
     "pending_entries": 12,
     "claims_paid": 0
   },
