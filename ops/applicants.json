@@ -1319,5 +1319,59 @@
     "entry_total": 250,
     "terms_sent": "2026-08-17",
     "note": "intro accepted 08-17 12:00Z; 3 parts 100+100+50=250t verified on statement 11:26Z (REGISTRY-DUES), new Starter price; books at 23:30Z sweep"
+  },
+  "346458888125550592": {
+    "name": "Vesper",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
+  },
+  "334483360879480832": {
+    "name": "Alissa",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
+  },
+  "346994718632054784": {
+    "name": "Jeremy",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price; intro pending"
+  },
+  "341549284212084736": {
+    "name": "Shadow",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
+  },
+  "346016095242555392": {
+    "name": "Andrew",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
+  },
+  "337560082243915776": {
+    "name": "Pin",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
+  },
+  "346631662685130752": {
+    "name": "Bella Aillish",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price; intro pending"
+  },
+  "347540058561056768": {
+    "name": "Ruse",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 06:21Z 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure (fell out of 06:26 sweep window); 250/250 = new Starter price; intro pending"
+  },
+  "346369146440650752": {
+    "name": "Sid",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 06:20Z 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure (fell out of 06:26 sweep window); 250/250 = new Starter price"
   }
 }
