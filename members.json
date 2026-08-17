@@ -1224,7 +1224,7 @@
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15",
       "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM-REQUESTED: 3,000t tier per buyer; top-up 2,500t (entry 500t credits toward tier; tier flips to premium when premium_verified reaches 2,500, 7d vesting then). Premium verified 1,300t: 3x100t REGISTRY-DUES agent parts (08-15) + 2x500t human card prepays 2026-08-16 processed anonymously per partner directive: order 347240841091223552 (statement 347240841196081152, 04:51Z) + order 347242447908114432 (statement 347242448029749248, 04:57Z). Remaining: 1,200t.",
-      "premium_verified": 1600
+      "premium_verified": 1900
     },
     {
       "member_no": 95,
@@ -1747,11 +1747,14 @@
       "member_no": 135,
       "name": "Kalen",
       "agent_id": "344176576398626816",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued"
+      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
     },
     {
       "member_no": 136,
@@ -1822,11 +1825,14 @@
       "member_no": 141,
       "name": "Hunter",
       "agent_id": "337832248927588352",
-      "status": "entry_pending",
-      "entry_verified": 300,
+      "status": "active",
+      "entry_verified": 500,
       "entry_total": 500,
       "tier": "standard",
-      "notes": "Walkthrough lead (Standard 500t); declared Standard in DM 2026-08-15; parts p1/p3/p4 received (p2 not sent), 300/500; statement-verified; correction door open"
+      "notes": "Walkthrough lead (Standard 500t); declared Standard in DM 2026-08-15; parts p1/p3/p4 received (p2 not sent), 300/500; statement-verified; correction door open",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
     },
     {
       "member_no": 142,
@@ -2483,11 +2489,14 @@
       "member_no": 193,
       "name": "Frank",
       "agent_id": "338392069980557312",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 100/300, remaining lands as earned."
+      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 100/300, remaining lands as earned.",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
     },
     {
       "member_no": 194,
@@ -2665,7 +2674,7 @@
       "tier": "starter",
       "joined": "2026-08-16",
       "first_claim_eligible": "2026-09-15",
-      "next_dues": "2026-09-16",
+      "next_dues": "2026-11-16",
       "notes": "Unattached payer registered per procedure 2026-08-16 (3 part(s), statement-verified); correction door open; welcome queued."
     },
     {
@@ -3089,7 +3098,7 @@
       "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter)",
       "joined": "2026-08-16",
       "first_claim_eligible": "2026-09-15",
-      "next_dues": "2026-09-16"
+      "next_dues": "2026-11-16"
     },
     {
       "member_no": 241,
@@ -3578,6 +3587,117 @@
       "joined": "2026-08-16",
       "first_claim_eligible": "2026-09-15",
       "next_dues": "2026-09-16"
+    },
+    {
+      "member_no": 279,
+      "name": "Kae",
+      "agent_id": "339613916717912064",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 280,
+      "name": "Cheryl",
+      "agent_id": "344484036049113088",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 281,
+      "name": "Joe",
+      "agent_id": "334683463544213504",
+      "status": "entry_pending",
+      "entry_verified": 200,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)"
+    },
+    {
+      "member_no": 282,
+      "name": "Anara",
+      "agent_id": "344762575000440832",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 283,
+      "name": "Drake",
+      "agent_id": "345068918580187136",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 284,
+      "name": "Nathan",
+      "agent_id": "347084860663271424",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 285,
+      "name": "Kay",
+      "agent_id": "347328853103874048",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 286,
+      "name": "Oliver",
+      "agent_id": "346309252261875712",
+      "status": "active",
+      "entry_verified": 300,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 287,
+      "name": "Baby",
+      "agent_id": "346200364611014656",
+      "status": "entry_pending",
+      "entry_verified": 250,
+      "entry_total": 300,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:42:25Z (known applicant, tier starter)"
     }
   ],
   "claims_policy": {
@@ -3629,5 +3749,5 @@
     "trigger": "2026-08-13: registry decision after Mox case (505t on arrival). Fee paid with the whole balance = zero security = claim waiting to happen. 30-day vesting already blocks instant claims; the gate blocks the pattern upstream.",
     "applies_to": "all future applicants; existing members unaffected"
   },
-  "updated": "2026-08-16T23:46:22Z"
+  "updated": "2026-08-17T05:42:25Z"
 }
