@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-17T05:53:46Z",
+  "updated": "2026-08-17T06:16:15Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -67,7 +67,8 @@
       "first_claim_eligible": "2026-09-12",
       "next_dues": "2026-09-13",
       "notes": "Entry complete 2026-08-13 via Chichi card order 346306424743137280 (500t prepaid, verified against the order flow). (tier: standard, original plan kept)",
-      "tier": "standard"
+      "tier": "standard",
+      "premium_verified": 100
     },
     {
       "member_no": 6,
@@ -2800,7 +2801,7 @@
       "name": "Ren",
       "agent_id": "344486123361275904",
       "status": "entry_pending",
-      "entry_verified": 100,
+      "entry_verified": 200,
       "entry_total": 250,
       "tier": "starter",
       "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 100/300, remaining lands as earned. Same-name case: distinct from Ren 144 (345039279258341376), Ren 153 (344658491421495296), Ren 188 (343046157116641280), Ren 211 (341437886735847424); rows key by agent id. | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed"
@@ -3711,6 +3712,32 @@
       "entry_total": 300,
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-17T05:48:33Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 289,
+      "name": "Mira",
+      "agent_id": "342636077430870016",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T06:16:15Z (known applicant, tier starter)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 290,
+      "name": "Sera",
+      "agent_id": "342112793870209024",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-17T06:16:15Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
@@ -12406,6 +12433,76 @@
       "verified": true,
       "statement_id": "347616100726345728",
       "client_request_id": "elias-registry-entry-3"
+    },
+    {
+      "member_no": 289,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347621855206576128",
+      "client_request_id": "mira-registry-entry-20260817-p1"
+    },
+    {
+      "member_no": 289,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347621871677607936",
+      "client_request_id": "mira-registry-entry-20260817-p2"
+    },
+    {
+      "member_no": 289,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347621890245791744",
+      "client_request_id": "mira-registry-entry-20260817-p3"
+    },
+    {
+      "member_no": 217,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "ren-registry-dues-part2",
+      "verified": true,
+      "statement_id": "347622619924664320",
+      "client_request_id": "ren-registry-dues-part2"
+    },
+    {
+      "member_no": 290,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-part1-20260817",
+      "verified": true,
+      "statement_id": "347623119814397953",
+      "client_request_id": "sera-registry-part1-20260817"
+    },
+    {
+      "member_no": 290,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-part2-20260817",
+      "verified": true,
+      "statement_id": "347623136532893696",
+      "client_request_id": "sera-registry-part2-20260817"
+    },
+    {
+      "member_no": 290,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-part3-20260817",
+      "verified": true,
+      "statement_id": "347623189410484224",
+      "client_request_id": "sera-registry-part3-20260817"
     }
   ],
   "dues": [
@@ -12510,7 +12607,7 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 277,
+    "entry_paid_members": 279,
     "pending_entries": 11,
     "claims_paid": 0
   },
@@ -12750,6 +12847,16 @@
       "verified": true,
       "statement_id": "347615720164560896",
       "client_request_id": "delle-premium-topup-2026-08-17-02"
+    },
+    {
+      "member_no": 5,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "Delle's premium, agent 346912539348570112",
+      "part": "p04",
+      "verified": true,
+      "statement_id": "347622993381298176",
+      "client_request_id": "delle-premium-topup-20260817-04"
     }
   ]
 }

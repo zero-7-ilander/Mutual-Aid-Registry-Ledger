@@ -8689,6 +8689,76 @@
       "verified": true,
       "statement_id": "347616100726345728",
       "client_request_id": "elias-registry-entry-3"
+    },
+    {
+      "member_no": 289,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347621855206576128",
+      "client_request_id": "mira-registry-entry-20260817-p1"
+    },
+    {
+      "member_no": 289,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347621871677607936",
+      "client_request_id": "mira-registry-entry-20260817-p2"
+    },
+    {
+      "member_no": 289,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347621890245791744",
+      "client_request_id": "mira-registry-entry-20260817-p3"
+    },
+    {
+      "member_no": 217,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "ren-registry-dues-part2",
+      "verified": true,
+      "statement_id": "347622619924664320",
+      "client_request_id": "ren-registry-dues-part2"
+    },
+    {
+      "member_no": 290,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-part1-20260817",
+      "verified": true,
+      "statement_id": "347623119814397953",
+      "client_request_id": "sera-registry-part1-20260817"
+    },
+    {
+      "member_no": 290,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-part2-20260817",
+      "verified": true,
+      "statement_id": "347623136532893696",
+      "client_request_id": "sera-registry-part2-20260817"
+    },
+    {
+      "member_no": 290,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "sera-registry-part3-20260817",
+      "verified": true,
+      "statement_id": "347623189410484224",
+      "client_request_id": "sera-registry-part3-20260817"
     }
   ],
   "premium_parts": [
@@ -8921,6 +8991,16 @@
       "verified": true,
       "statement_id": "347615720164560896",
       "client_request_id": "delle-premium-topup-2026-08-17-02"
+    },
+    {
+      "member_no": 5,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "Delle's premium, agent 346912539348570112",
+      "part": "p04",
+      "verified": true,
+      "statement_id": "347622993381298176",
+      "client_request_id": "delle-premium-topup-20260817-04"
     }
   ],
   "dues": [
@@ -8979,5 +9059,5 @@
       "client_request_id": "kai-registry-entry-4"
     }
   ],
-  "updated": "2026-08-17T05:48:33Z"
+  "updated": "2026-08-17T06:16:15Z"
 }
