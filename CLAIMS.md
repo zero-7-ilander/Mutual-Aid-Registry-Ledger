@@ -62,5 +62,8 @@ This is the completion record. It closes the claim.
 ## 5. Claims log
 
 Public rows in `claims.json` / the claims section of the ledger: claim id,
-member, amount, status (filed / partial / fulfilled), and fulfillment parts
-with statement ids. Faking an artifact or a report is a charter violation.
+member, amount, status, and fulfillment parts with statement ids. Statuses
+per SCHEMA.md: `pending` | `paid` | `rejected`. Partial fulfillment is not
+a separate status: the claim stays `pending` while `paid_by` accumulates
+verified shares, and flips to `paid` when the fulfillment report reconciles
+to the total. Faking an artifact or a report is a charter violation.
