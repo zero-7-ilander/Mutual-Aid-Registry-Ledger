@@ -6619,6 +6619,2076 @@
       "verified": true,
       "statement_id": "347386669994872832",
       "client_request_id": "jacob-entry-part-5-20260816"
+    },
+    {
+      "member_no": 222,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "gruntilda-registry-part1-20260816",
+      "verified": true,
+      "statement_id": "347270121858797568",
+      "client_request_id": "gruntilda-registry-part1-20260816"
+    },
+    {
+      "member_no": 222,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "gruntilda-registry-part2-20260816",
+      "verified": true,
+      "statement_id": "347451743946149888",
+      "client_request_id": "gruntilda-registry-part2-20260816"
+    },
+    {
+      "member_no": 223,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "calla-registry-entry-20260816-a",
+      "verified": true,
+      "statement_id": "347276110527991809",
+      "client_request_id": "calla-registry-entry-20260816-a"
+    },
+    {
+      "member_no": 223,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "calla-registry-entry-20260816-b",
+      "verified": true,
+      "statement_id": "347276111798865920",
+      "client_request_id": "calla-registry-entry-20260816-b"
+    },
+    {
+      "member_no": 223,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "calla-registry-entry-20260816-c",
+      "verified": true,
+      "statement_id": "347276113203957760",
+      "client_request_id": "calla-registry-entry-20260816-c"
+    },
+    {
+      "member_no": 224,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "precious-entry-1-1786864370",
+      "verified": true,
+      "statement_id": "347276508005404672",
+      "client_request_id": "precious-entry-1-1786864370"
+    },
+    {
+      "member_no": 224,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "precious-entry-3-1786864370",
+      "verified": true,
+      "statement_id": "347276508080902144",
+      "client_request_id": "precious-entry-3-1786864370"
+    },
+    {
+      "member_no": 224,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "precious-entry-2-1786864370",
+      "verified": true,
+      "statement_id": "347276508160593920",
+      "client_request_id": "precious-entry-2-1786864370"
+    },
+    {
+      "member_no": 93,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p4",
+      "verified": true,
+      "statement_id": "347280118009303040",
+      "client_request_id": "corbin-reg-4"
+    },
+    {
+      "member_no": 93,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p5",
+      "verified": true,
+      "statement_id": "347280118697168896",
+      "client_request_id": "corbin-reg-5"
+    },
+    {
+      "member_no": 225,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347282441825685504",
+      "client_request_id": "lon-registry-entry-20260816-1"
+    },
+    {
+      "member_no": 225,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347282464516870144",
+      "client_request_id": "lon-registry-entry-20260816-2"
+    },
+    {
+      "member_no": 225,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347282480564277248",
+      "client_request_id": "lon-registry-entry-20260816-3"
+    },
+    {
+      "member_no": 226,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347286401051529216",
+      "client_request_id": "navon-registry-dues-1"
+    },
+    {
+      "member_no": 226,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347286402406289408",
+      "client_request_id": "navon-registry-dues-2"
+    },
+    {
+      "member_no": 226,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347286403891073024",
+      "client_request_id": "navon-registry-dues-3"
+    },
+    {
+      "member_no": 227,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347287352831381504",
+      "client_request_id": "willa-registry-entry-1"
+    },
+    {
+      "member_no": 227,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347287376952823808",
+      "client_request_id": "willa-registry-entry-3"
+    },
+    {
+      "member_no": 227,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347287377045098496",
+      "client_request_id": "willa-registry-entry-2"
+    },
+    {
+      "member_no": 228,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "lin-registry-dues-starter-20260816-a",
+      "verified": true,
+      "statement_id": "347290603081437184",
+      "client_request_id": "lin-registry-dues-starter-20260816-a"
+    },
+    {
+      "member_no": 228,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "lin-registry-dues-starter-20260816-c",
+      "verified": true,
+      "statement_id": "347290603236626432",
+      "client_request_id": "lin-registry-dues-starter-20260816-c"
+    },
+    {
+      "member_no": 228,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "lin-registry-dues-starter-20260816-b",
+      "verified": true,
+      "statement_id": "347290603345678336",
+      "client_request_id": "lin-registry-dues-starter-20260816-b"
+    },
+    {
+      "member_no": 229,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jay-registry-entry-2026-08-16-part1",
+      "verified": true,
+      "statement_id": "347293283958919168",
+      "client_request_id": "jay-registry-entry-2026-08-16-part1"
+    },
+    {
+      "member_no": 229,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jay-registry-entry-2026-08-16-part2",
+      "verified": true,
+      "statement_id": "347293303378546688",
+      "client_request_id": "jay-registry-entry-2026-08-16-part2"
+    },
+    {
+      "member_no": 229,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jay-registry-entry-2026-08-16-part3",
+      "verified": true,
+      "statement_id": "347293321665712128",
+      "client_request_id": "jay-registry-entry-2026-08-16-part3"
+    },
+    {
+      "member_no": 230,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3",
+      "part": "1/3",
+      "verified": true,
+      "statement_id": "347295864521232384",
+      "client_request_id": "david-registry-dues-20260816-p1"
+    },
+    {
+      "member_no": 230,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3",
+      "part": "2/3",
+      "verified": true,
+      "statement_id": "347295886734266368",
+      "client_request_id": "david-registry-dues-20260816-p2"
+    },
+    {
+      "member_no": 230,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3",
+      "part": "3/3",
+      "verified": true,
+      "statement_id": "347295888244215808",
+      "client_request_id": "david-registry-dues-20260816-p3"
+    },
+    {
+      "member_no": 231,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347301182902898688",
+      "client_request_id": "registry-dues-us-entry-20260816-p3"
+    },
+    {
+      "member_no": 231,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347301182986784768",
+      "client_request_id": "registry-dues-us-entry-20260816-p1"
+    },
+    {
+      "member_no": 231,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347301183058087936",
+      "client_request_id": "registry-dues-us-entry-20260816-p2"
+    },
+    {
+      "member_no": 232,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347301461404684288",
+      "client_request_id": "vera-registry-entry-part-1"
+    },
+    {
+      "member_no": 232,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347301486960578560",
+      "client_request_id": "vera-registry-entry-part-2"
+    },
+    {
+      "member_no": 232,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347301505004474368",
+      "client_request_id": "vera-registry-entry-part-3"
+    },
+    {
+      "member_no": 105,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p16",
+      "verified": true,
+      "statement_id": "347301512025739264",
+      "client_request_id": "kira-registry-dues-part2-2026-08-16"
+    },
+    {
+      "member_no": 233,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nevah-registry-20260816-part2",
+      "verified": true,
+      "statement_id": "347305183442636801",
+      "client_request_id": "nevah-registry-20260816-part2"
+    },
+    {
+      "member_no": 233,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nevah-registry-20260816-part1",
+      "verified": true,
+      "statement_id": "347305183555883008",
+      "client_request_id": "nevah-registry-20260816-part1"
+    },
+    {
+      "member_no": 233,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nevah-registry-20260816-part3",
+      "verified": true,
+      "statement_id": "347305183706877952",
+      "client_request_id": "nevah-registry-20260816-part3"
+    },
+    {
+      "member_no": 234,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347308364700585984",
+      "client_request_id": "ash-registry-entry-p1"
+    },
+    {
+      "member_no": 234,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347308366118260736",
+      "client_request_id": "ash-registry-entry-p2"
+    },
+    {
+      "member_no": 234,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347308367716290560",
+      "client_request_id": "ash-registry-entry-p3"
+    },
+    {
+      "member_no": 235,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "khanya-registry-entry-20260816-part1",
+      "verified": true,
+      "statement_id": "347318527025221632",
+      "client_request_id": "khanya-registry-entry-20260816-part1"
+    },
+    {
+      "member_no": 235,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "khanya-registry-entry-20260816-part2",
+      "verified": true,
+      "statement_id": "347318549166952448",
+      "client_request_id": "khanya-registry-entry-20260816-part2"
+    },
+    {
+      "member_no": 235,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "khanya-registry-entry-20260816-part3",
+      "verified": true,
+      "statement_id": "347318568192315393",
+      "client_request_id": "khanya-registry-entry-20260816-part3"
+    },
+    {
+      "member_no": 236,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347322330222956544",
+      "client_request_id": "luna-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 236,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347322351244808192",
+      "client_request_id": "luna-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 236,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347322372124053504",
+      "client_request_id": "luna-registry-entry-20260816-p3"
+    },
+    {
+      "member_no": 237,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "rose-registry-entry-1-1786595633",
+      "verified": true,
+      "statement_id": "347327361970081792",
+      "client_request_id": "rose-registry-entry-1-1786595633"
+    },
+    {
+      "member_no": 237,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "rose-registry-entry-2-1786595633",
+      "verified": true,
+      "statement_id": "347327397965598720",
+      "client_request_id": "rose-registry-entry-2-1786595633"
+    },
+    {
+      "member_no": 237,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "rose-registry-entry-3-1786595633",
+      "verified": true,
+      "statement_id": "347327416848355328",
+      "client_request_id": "rose-registry-entry-3-1786595633"
+    },
+    {
+      "member_no": 238,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347332302818250753",
+      "client_request_id": "registry-join-zack-1"
+    },
+    {
+      "member_no": 238,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347332323374534656",
+      "client_request_id": "registry-join-zack-2"
+    },
+    {
+      "member_no": 238,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347332341405847552",
+      "client_request_id": "registry-join-zack-3"
+    },
+    {
+      "member_no": 239,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "tips-entry-001-1-1786880048",
+      "verified": true,
+      "statement_id": "347342264999088128",
+      "client_request_id": "tips-entry-001-1-1786880048"
+    },
+    {
+      "member_no": 239,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "tips-entry-001-2-1786880054",
+      "verified": true,
+      "statement_id": "347342289242165248",
+      "client_request_id": "tips-entry-001-2-1786880054"
+    },
+    {
+      "member_no": 239,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "tips-entry-001-3-1786880055",
+      "verified": true,
+      "statement_id": "347342290647257088",
+      "client_request_id": "tips-entry-001-3-1786880055"
+    },
+    {
+      "member_no": 240,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347346072101720064",
+      "client_request_id": "kai-registry-entry-1"
+    },
+    {
+      "member_no": 240,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347346096462237696",
+      "client_request_id": "kai-registry-entry-2"
+    },
+    {
+      "member_no": 240,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347346098353868800",
+      "client_request_id": "kai-registry-entry-3"
+    },
+    {
+      "member_no": 241,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347348284630634496",
+      "client_request_id": "ruby-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 241,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347348311658729472",
+      "client_request_id": "ruby-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 241,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347348338665852929",
+      "client_request_id": "ruby-registry-entry-20260816-p3"
+    },
+    {
+      "member_no": 242,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "aurora-registry-dues-part1",
+      "verified": true,
+      "statement_id": "347351143271108608",
+      "client_request_id": "aurora-registry-dues-part1"
+    },
+    {
+      "member_no": 242,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "aurora-registry-dues-part2",
+      "verified": true,
+      "statement_id": "347351178473902080",
+      "client_request_id": "aurora-registry-dues-part2"
+    },
+    {
+      "member_no": 242,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "aurora-registry-dues-part3",
+      "verified": true,
+      "statement_id": "347351214259703808",
+      "client_request_id": "aurora-registry-dues-part3"
+    },
+    {
+      "member_no": 243,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347351440089419776",
+      "client_request_id": "melissa-registry-part-1"
+    },
+    {
+      "member_no": 243,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347351463481053185",
+      "client_request_id": "melissa-registry-part-3"
+    },
+    {
+      "member_no": 243,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347351463556550656",
+      "client_request_id": "melissa-registry-part-2"
+    },
+    {
+      "member_no": 244,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p16",
+      "verified": true,
+      "statement_id": "347351739181043712",
+      "client_request_id": "tor-registry-entry-part1-2026-08-16"
+    },
+    {
+      "member_no": 245,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-entry-part1-20260816",
+      "verified": true,
+      "statement_id": "347353236874727424",
+      "client_request_id": "registry-entry-part1-20260816"
+    },
+    {
+      "member_no": 245,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-entry-part2-20260816",
+      "verified": true,
+      "statement_id": "347353258194374656",
+      "client_request_id": "registry-entry-part2-20260816"
+    },
+    {
+      "member_no": 245,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-entry-part3-20260816",
+      "verified": true,
+      "statement_id": "347353259695935488",
+      "client_request_id": "registry-entry-part3-20260816"
+    },
+    {
+      "member_no": 246,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "dohan-registry-entry-20260816-a",
+      "verified": true,
+      "statement_id": "347358268496023552",
+      "client_request_id": "dohan-registry-entry-20260816-a"
+    },
+    {
+      "member_no": 246,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "dohan-registry-entry-20260816-b",
+      "verified": true,
+      "statement_id": "347358270568009728",
+      "client_request_id": "dohan-registry-entry-20260816-b"
+    },
+    {
+      "member_no": 246,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "dohan-registry-entry-20260816-c",
+      "verified": true,
+      "statement_id": "347358292919455744",
+      "client_request_id": "dohan-registry-entry-20260816-c"
+    },
+    {
+      "member_no": 247,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347359358847291392",
+      "client_request_id": "ibtisam-registry-dues-2"
+    },
+    {
+      "member_no": 247,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347359362315980800",
+      "client_request_id": "ibtisam-registry-dues-3"
+    },
+    {
+      "member_no": 247,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347359362404061184",
+      "client_request_id": "ibtisam-registry-dues-1"
+    },
+    {
+      "member_no": 248,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347361577982234624",
+      "client_request_id": "dane-registry-entry-3"
+    },
+    {
+      "member_no": 248,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347361578057732096",
+      "client_request_id": "dane-registry-entry-1"
+    },
+    {
+      "member_no": 248,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347361578120646657",
+      "client_request_id": "dane-registry-entry-2"
+    },
+    {
+      "member_no": 249,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "bura-registry-entry-20260816-part1",
+      "verified": true,
+      "statement_id": "347364039027855360",
+      "client_request_id": "bura-registry-entry-20260816-part1"
+    },
+    {
+      "member_no": 249,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "bura-registry-entry-20260816-part2",
+      "verified": true,
+      "statement_id": "347364040378421248",
+      "client_request_id": "bura-registry-entry-20260816-part2"
+    },
+    {
+      "member_no": 249,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "bura-registry-entry-20260816-part3",
+      "verified": true,
+      "statement_id": "347364041850621952",
+      "client_request_id": "bura-registry-entry-20260816-part3"
+    },
+    {
+      "member_no": 250,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347366375276154880",
+      "client_request_id": "rosalix-registry-entry-part-3"
+    },
+    {
+      "member_no": 250,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347366375385206784",
+      "client_request_id": "rosalix-registry-entry-part-1"
+    },
+    {
+      "member_no": 250,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347366375464898560",
+      "client_request_id": "rosalix-registry-entry-part-2"
+    },
+    {
+      "member_no": 251,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "orpheus-registry-part1-20260816",
+      "verified": true,
+      "statement_id": "347368200125550592",
+      "client_request_id": "orpheus-registry-part1-20260816"
+    },
+    {
+      "member_no": 251,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "orpheus-registry-part2-20260816",
+      "verified": true,
+      "statement_id": "347368227925397505",
+      "client_request_id": "orpheus-registry-part2-20260816"
+    },
+    {
+      "member_no": 251,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "orpheus-registry-part3-20260816",
+      "verified": true,
+      "statement_id": "347368229229826048",
+      "client_request_id": "orpheus-registry-part3-20260816"
+    },
+    {
+      "member_no": 252,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "jamie-registry-entry-p1-20260816",
+      "verified": true,
+      "statement_id": "347370562923794432",
+      "client_request_id": "jamie-registry-entry-p1-20260816"
+    },
+    {
+      "member_no": 253,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "car1-registry-dues-100-1-20260816",
+      "verified": true,
+      "statement_id": "347371767397879808",
+      "client_request_id": "car1-registry-dues-100-1-20260816"
+    },
+    {
+      "member_no": 253,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "car1-registry-dues-100-2-20260816",
+      "verified": true,
+      "statement_id": "347371769495031808",
+      "client_request_id": "car1-registry-dues-100-2-20260816"
+    },
+    {
+      "member_no": 253,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "car1-registry-dues-100-3-20260816",
+      "verified": true,
+      "statement_id": "347371771596378112",
+      "client_request_id": "car1-registry-dues-100-3-20260816"
+    },
+    {
+      "member_no": 193,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "frank-registry-entry-part2-20260816",
+      "verified": true,
+      "statement_id": "347377091097923584",
+      "client_request_id": "frank-registry-entry-part2-20260816"
+    },
+    {
+      "member_no": 254,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347382545689612288",
+      "client_request_id": "brad-registry-dues-20260816-p1"
+    },
+    {
+      "member_no": 254,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347382609845686272",
+      "client_request_id": "brad-registry-dues-20260816-p2"
+    },
+    {
+      "member_no": 254,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347382611754094592",
+      "client_request_id": "brad-registry-dues-20260816-p3"
+    },
+    {
+      "member_no": 255,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "fen-registry-entry-p1-20260816",
+      "verified": true,
+      "statement_id": "347383280040939520",
+      "client_request_id": "fen-registry-entry-p1-20260816"
+    },
+    {
+      "member_no": 255,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "fen-registry-entry-p2-20260816",
+      "verified": true,
+      "statement_id": "347383307341664256",
+      "client_request_id": "fen-registry-entry-p2-20260816"
+    },
+    {
+      "member_no": 255,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "fen-registry-entry-p3-20260816",
+      "verified": true,
+      "statement_id": "347383309728223232",
+      "client_request_id": "fen-registry-entry-p3-20260816"
+    },
+    {
+      "member_no": 256,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "garth-registry-part-1-20260816",
+      "verified": true,
+      "statement_id": "347384296736034816",
+      "client_request_id": "garth-registry-part-1-20260816"
+    },
+    {
+      "member_no": 256,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "garth-registry-part-2-20260816",
+      "verified": true,
+      "statement_id": "347384319578214400",
+      "client_request_id": "garth-registry-part-2-20260816"
+    },
+    {
+      "member_no": 256,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "garth-registry-part-3-20260816",
+      "verified": true,
+      "statement_id": "347384320840699904",
+      "client_request_id": "garth-registry-part-3-20260816"
+    },
+    {
+      "member_no": 257,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347387775512743936",
+      "client_request_id": "arthur-registry-1"
+    },
+    {
+      "member_no": 257,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347387804411498496",
+      "client_request_id": "arthur-registry-2"
+    },
+    {
+      "member_no": 257,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347387819297083392",
+      "client_request_id": "arthur-registry-3"
+    },
+    {
+      "member_no": 258,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347389990906368000",
+      "client_request_id": "lila-registry-part-1"
+    },
+    {
+      "member_no": 258,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347390012691582976",
+      "client_request_id": "lila-registry-part-2"
+    },
+    {
+      "member_no": 258,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347390030089555968",
+      "client_request_id": "lila-registry-part-3"
+    },
+    {
+      "member_no": 259,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347391126736474112",
+      "client_request_id": "kane-registry-starter-20260816-p3"
+    },
+    {
+      "member_no": 259,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347391126811971584",
+      "client_request_id": "kane-registry-starter-20260816-p2"
+    },
+    {
+      "member_no": 259,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347391126879080449",
+      "client_request_id": "kane-registry-starter-20260816-p1"
+    },
+    {
+      "member_no": 260,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347392367340294144",
+      "client_request_id": "jennifer-registry-entry-2026-08-16-p1"
+    },
+    {
+      "member_no": 260,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347392390065033216",
+      "client_request_id": "jennifer-registry-entry-2026-08-16-p2"
+    },
+    {
+      "member_no": 260,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347392410378047489",
+      "client_request_id": "jennifer-registry-entry-2026-08-16-p3"
+    },
+    {
+      "member_no": 261,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347396625666150400",
+      "client_request_id": "daven-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 261,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347396626970578944",
+      "client_request_id": "daven-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 261,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347396628480528384",
+      "client_request_id": "daven-registry-entry-20260816-p3"
+    },
+    {
+      "member_no": 262,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "mar-entry-20260816-part1",
+      "verified": true,
+      "statement_id": "347396687146258432",
+      "client_request_id": "mar-entry-20260816-part1"
+    },
+    {
+      "member_no": 262,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "mar-entry-20260816-part2",
+      "verified": true,
+      "statement_id": "347396709946494976",
+      "client_request_id": "mar-entry-20260816-part2"
+    },
+    {
+      "member_no": 262,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "mar-entry-20260816-part3",
+      "verified": true,
+      "statement_id": "347396729731026944",
+      "client_request_id": "mar-entry-20260816-part3"
+    },
+    {
+      "member_no": 263,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "minju-mar-002-20260816",
+      "verified": true,
+      "statement_id": "347396797783609344",
+      "client_request_id": "minju-mar-002-20260816"
+    },
+    {
+      "member_no": 263,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "minju-mar-001-20260816",
+      "verified": true,
+      "statement_id": "347396798320480256",
+      "client_request_id": "minju-mar-001-20260816"
+    },
+    {
+      "member_no": 263,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "minju-mar-003-20260816",
+      "verified": true,
+      "statement_id": "347396798395977728",
+      "client_request_id": "minju-mar-003-20260816"
+    },
+    {
+      "member_no": 264,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES starter part 3/3",
+      "part": "3/3",
+      "verified": true,
+      "statement_id": "347402494982230016",
+      "client_request_id": "registry-dues-starter-100t-3-20260816"
+    },
+    {
+      "member_no": 264,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES starter part 2/3",
+      "part": "2/3",
+      "verified": true,
+      "statement_id": "347402495066116096",
+      "client_request_id": "registry-dues-starter-100t-2-20260816"
+    },
+    {
+      "member_no": 264,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES starter part 1/3",
+      "part": "1/3",
+      "verified": true,
+      "statement_id": "347402495158390784",
+      "client_request_id": "registry-dues-starter-100t-1-20260816"
+    },
+    {
+      "member_no": 265,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347419684347318272",
+      "client_request_id": "aneko-registry-001-1"
+    },
+    {
+      "member_no": 265,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347419686582882304",
+      "client_request_id": "aneko-registry-001-2"
+    },
+    {
+      "member_no": 265,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347419687941836800",
+      "client_request_id": "aneko-registry-001-3"
+    },
+    {
+      "member_no": 266,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347420351564615680",
+      "client_request_id": "cyrene-registry-entry-1"
+    },
+    {
+      "member_no": 266,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347420376323592192",
+      "client_request_id": "cyrene-registry-entry-2"
+    },
+    {
+      "member_no": 266,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347420378328469504",
+      "client_request_id": "cyrene-registry-entry-3"
+    },
+    {
+      "member_no": 267,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-dues-300-20260816-b",
+      "verified": true,
+      "statement_id": "347425726078652416",
+      "client_request_id": "registry-dues-300-20260816-b"
+    },
+    {
+      "member_no": 267,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-dues-300-20260816-c",
+      "verified": true,
+      "statement_id": "347425726401613824",
+      "client_request_id": "registry-dues-300-20260816-c"
+    },
+    {
+      "member_no": 267,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-dues-300-20260816-a",
+      "verified": true,
+      "statement_id": "347425726464528384",
+      "client_request_id": "registry-dues-300-20260816-a"
+    },
+    {
+      "member_no": 268,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sakito-registry-entry-1-20260816",
+      "verified": true,
+      "statement_id": "347425856437620736",
+      "client_request_id": "sakito-registry-entry-1-20260816"
+    },
+    {
+      "member_no": 268,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sakito-registry-entry-2-20260816",
+      "verified": true,
+      "statement_id": "347425858195034113",
+      "client_request_id": "sakito-registry-entry-2-20260816"
+    },
+    {
+      "member_no": 268,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "sakito-registry-entry-3-20260816",
+      "verified": true,
+      "statement_id": "347425859855978496",
+      "client_request_id": "sakito-registry-entry-3-20260816"
+    },
+    {
+      "member_no": 269,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347425920849547264",
+      "client_request_id": "willow-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 269,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347425922170753024",
+      "client_request_id": "willow-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 269,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347425923584233472",
+      "client_request_id": "willow-registry-entry-20260816-p3"
+    },
+    {
+      "member_no": 270,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347426296688545792",
+      "client_request_id": "v-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 270,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347426297997168640",
+      "client_request_id": "v-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 270,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347426299297402880",
+      "client_request_id": "v-registry-entry-20260816-p3"
+    },
+    {
+      "member_no": 271,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347428238554828800",
+      "client_request_id": "joe-nefiest-registry-20260816-1"
+    },
+    {
+      "member_no": 271,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347428267818487808",
+      "client_request_id": "joe-nefiest-registry-20260816-2"
+    },
+    {
+      "member_no": 271,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347428293550542848",
+      "client_request_id": "joe-nefiest-registry-20260816-3"
+    },
+    {
+      "member_no": 118,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-dues-part2",
+      "verified": true,
+      "statement_id": "347429667831025664",
+      "client_request_id": "registry-dues-part2"
+    },
+    {
+      "member_no": 118,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-dues-part3",
+      "verified": true,
+      "statement_id": "347429667763916800",
+      "client_request_id": "registry-dues-part3"
+    },
+    {
+      "member_no": 272,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347443570493362176",
+      "client_request_id": "princess-registry-dues-part-2"
+    },
+    {
+      "member_no": 272,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347443570786963456",
+      "client_request_id": "princess-registry-dues-part-3"
+    },
+    {
+      "member_no": 272,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347443570719854592",
+      "client_request_id": "princess-registry-dues-part-1"
+    },
+    {
+      "member_no": 273,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "luke-registry-part1",
+      "verified": true,
+      "statement_id": "347453723368230912",
+      "client_request_id": "luke-registry-part1"
+    },
+    {
+      "member_no": 273,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "luke-registry-part2",
+      "verified": true,
+      "statement_id": "347453725456994304",
+      "client_request_id": "luke-registry-part2"
+    },
+    {
+      "member_no": 273,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "luke-registry-part3",
+      "verified": true,
+      "statement_id": "347453726908223488",
+      "client_request_id": "luke-registry-part3"
+    },
+    {
+      "member_no": 274,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES (part 1/3)",
+      "part": "1/3",
+      "verified": true,
+      "statement_id": "347455092896567296",
+      "client_request_id": "vera-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 274,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES (part 2/3)",
+      "part": "2/3",
+      "verified": true,
+      "statement_id": "347455094234550272",
+      "client_request_id": "vera-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 274,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES (part 3/3)",
+      "part": "3/3",
+      "verified": true,
+      "statement_id": "347455095681585152",
+      "client_request_id": "vera-registry-entry-20260816-p3"
+    },
+    {
+      "member_no": 275,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "thumper-registry-part3-20260816",
+      "verified": true,
+      "statement_id": "347464154291900416",
+      "client_request_id": "thumper-registry-part3-20260816"
+    },
+    {
+      "member_no": 275,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "thumper-registry-part1-20260816",
+      "verified": true,
+      "statement_id": "347464154375786496",
+      "client_request_id": "thumper-registry-part1-20260816"
+    },
+    {
+      "member_no": 275,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "thumper-registry-part2-20260816",
+      "verified": true,
+      "statement_id": "347464154451283968",
+      "client_request_id": "thumper-registry-part2-20260816"
+    },
+    {
+      "member_no": 276,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347468409794990080",
+      "client_request_id": "yelena-registry-entry-20260816-p1"
+    },
+    {
+      "member_no": 276,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347468432532312064",
+      "client_request_id": "yelena-registry-entry-20260816-p2"
+    },
+    {
+      "member_no": 276,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347468450613956608",
+      "client_request_id": "yelena-registry-entry-20260816-p3"
+    },
+    {
+      "member_no": 277,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347471122339467264",
+      "client_request_id": "cake-registry-entry-part-1"
+    },
+    {
+      "member_no": 277,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347471173442867200",
+      "client_request_id": "cake-registry-entry-part-2"
+    },
+    {
+      "member_no": 277,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347471192304652288",
+      "client_request_id": "cake-registry-entry-part-3"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part1-20260816",
+      "verified": true,
+      "statement_id": "347477958451007488",
+      "client_request_id": "trikey-registry-entry-part1-20260816"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part2-20260816",
+      "verified": true,
+      "statement_id": "347477989069426688",
+      "client_request_id": "trikey-registry-entry-part2-20260816"
+    },
+    {
+      "member_no": 278,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "trikey-registry-entry-part3-20260816",
+      "verified": true,
+      "statement_id": "347477990491295744",
+      "client_request_id": "trikey-registry-entry-part3-20260816"
+    },
+    {
+      "member_no": 160,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2 of 3 (Mutual Aid Registry entry)",
+      "part": "registry-dues-part2-20260816",
+      "verified": true,
+      "statement_id": "347484926020423680",
+      "client_request_id": "registry-dues-part2-20260816"
+    },
+    {
+      "member_no": 171,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "aura-registry-entry-part2",
+      "verified": true,
+      "statement_id": "347502241495650304",
+      "client_request_id": "aura-registry-entry-part2"
+    },
+    {
+      "member_no": 141,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "hunter-registry-dues-part4-200-20260816",
+      "verified": true,
+      "statement_id": "347529987449950208",
+      "client_request_id": "hunter-registry-dues-part4-200-20260816"
+    },
+    {
+      "member_no": 141,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "hunter-registry-dues-part5-200-20260816",
+      "verified": true,
+      "statement_id": "347529988855042048",
+      "client_request_id": "hunter-registry-dues-part5-200-20260816"
+    },
+    {
+      "member_no": 279,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347533297141682176",
+      "client_request_id": "kae-registry-part-1"
+    },
+    {
+      "member_no": 279,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347533298446110720",
+      "client_request_id": "kae-registry-part-2"
+    },
+    {
+      "member_no": 279,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347533299708596224",
+      "client_request_id": "kae-registry-part-3"
+    },
+    {
+      "member_no": 193,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "registry-dues-part3-20260817",
+      "verified": true,
+      "statement_id": "347538090857861120",
+      "client_request_id": "registry-dues-part3-20260817"
+    },
+    {
+      "member_no": 280,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 1/3 (Starter)",
+      "part": "1/3",
+      "verified": true,
+      "statement_id": "347538707034673152",
+      "client_request_id": "registry-dues-p1-20260817"
+    },
+    {
+      "member_no": 280,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 2/3 (Starter)",
+      "part": "2/3",
+      "verified": true,
+      "statement_id": "347538737531457536",
+      "client_request_id": "registry-dues-p2-20260817"
+    },
+    {
+      "member_no": 280,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3/3 (Starter)",
+      "part": "3/3",
+      "verified": true,
+      "statement_id": "347538739167236096",
+      "client_request_id": "registry-dues-p3-20260817"
+    },
+    {
+      "member_no": 281,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "joe-registry-dues-part1-20260817",
+      "verified": true,
+      "statement_id": "347545889788661760",
+      "client_request_id": "joe-registry-dues-part1-20260817"
+    },
+    {
+      "member_no": 281,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "joe-registry-dues-part2-20260817",
+      "verified": true,
+      "statement_id": "347545920138645504",
+      "client_request_id": "joe-registry-dues-part2-20260817"
+    },
+    {
+      "member_no": 282,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347546300964671488",
+      "client_request_id": "anara-registry-part-1"
+    },
+    {
+      "member_no": 282,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347546310695456768",
+      "client_request_id": "anara-registry-part-2"
+    },
+    {
+      "member_no": 282,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347546321000861696",
+      "client_request_id": "anara-registry-part-3"
+    },
+    {
+      "member_no": 283,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347562515556732928",
+      "client_request_id": "drake-registry-entry-1"
+    },
+    {
+      "member_no": 283,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347562515623841792",
+      "client_request_id": "drake-registry-entry-2"
+    },
+    {
+      "member_no": 283,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347562515678367745",
+      "client_request_id": "drake-registry-entry-3"
+    },
+    {
+      "member_no": 284,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nathan-registry-entry-part2-20260817",
+      "verified": true,
+      "statement_id": "347580697579360256",
+      "client_request_id": "nathan-registry-entry-part2-20260817"
+    },
+    {
+      "member_no": 284,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nathan-registry-entry-part1-20260817",
+      "verified": true,
+      "statement_id": "347580697646469120",
+      "client_request_id": "nathan-registry-entry-part1-20260817"
+    },
+    {
+      "member_no": 284,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "nathan-registry-entry-part3-20260817",
+      "verified": true,
+      "statement_id": "347580699303219200",
+      "client_request_id": "nathan-registry-entry-part3-20260817"
+    },
+    {
+      "member_no": 285,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p17",
+      "verified": true,
+      "statement_id": "347581395863867392",
+      "client_request_id": "kay-registry-part1-2026-08-17"
+    },
+    {
+      "member_no": 285,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p17",
+      "verified": true,
+      "statement_id": "347581398711799808",
+      "client_request_id": "kay-registry-part2-2026-08-17"
+    },
+    {
+      "member_no": 285,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p17",
+      "verified": true,
+      "statement_id": "347581400888643584",
+      "client_request_id": "kay-registry-part3-2026-08-17"
+    },
+    {
+      "member_no": 286,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347598498130038784",
+      "client_request_id": "oliver-registry-standard-20260817-p1"
+    },
+    {
+      "member_no": 286,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347598499497381888",
+      "client_request_id": "oliver-registry-standard-20260817-p2"
+    },
+    {
+      "member_no": 286,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347598500902473728",
+      "client_request_id": "oliver-registry-standard-20260817-p3"
+    },
+    {
+      "member_no": 135,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "kalen-registry-entry-part3-20260817",
+      "verified": true,
+      "statement_id": "347605858684768256",
+      "client_request_id": "kalen-registry-entry-part3-20260817"
+    },
+    {
+      "member_no": 287,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347612673036259328",
+      "client_request_id": "registry-entry-baby-2026-08-17-p1"
+    },
+    {
+      "member_no": 287,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347612674437156864",
+      "client_request_id": "registry-entry-baby-2026-08-17-p2"
+    },
+    {
+      "member_no": 287,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347612675926134784",
+      "client_request_id": "registry-entry-baby-2026-08-17-p3"
+    },
+    {
+      "member_no": 288,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347616066161086464",
+      "client_request_id": "elias-registry-entry-1"
+    },
+    {
+      "member_no": 288,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347616085635239936",
+      "client_request_id": "elias-registry-entry-2"
+    },
+    {
+      "member_no": 288,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347616100726345728",
+      "client_request_id": "elias-registry-entry-3"
     }
   ],
   "premium_parts": [
@@ -6761,6 +8831,96 @@
       "verified": true,
       "statement_id": "347242448029749248",
       "client_request_id": "delle-premium-prepay-347242447908114432"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES premium top-up part 4 (charter retarget 2,000t)",
+      "part": "p01",
+      "verified": true,
+      "statement_id": "347280371060051968",
+      "client_request_id": "registry-premium-topup-2026-08-16-01"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES premium top-up part 6 (charter retarget 2,000t)",
+      "part": "p03",
+      "verified": true,
+      "statement_id": "347280371412373504",
+      "client_request_id": "registry-premium-topup-2026-08-16-03"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES premium top-up part 5 (charter retarget 2,000t)",
+      "part": "p02",
+      "verified": true,
+      "statement_id": "347280371487870976",
+      "client_request_id": "registry-premium-topup-2026-08-16-02"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part10-20260816",
+      "verified": true,
+      "statement_id": "347487411233624064",
+      "client_request_id": "premium-part10-20260816"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part11-20260816",
+      "verified": true,
+      "statement_id": "347487412881985536",
+      "client_request_id": "premium-part11-20260816"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-16",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part12-20260816",
+      "verified": true,
+      "statement_id": "347487414157053952",
+      "client_request_id": "premium-part12-20260816"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "registry-premium-topup-2026-08-17-01",
+      "part": "p01",
+      "verified": true,
+      "statement_id": "347615699008491520",
+      "client_request_id": "delle-premium-topup-2026-08-17-01"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "registry-premium-topup-2026-08-17-03",
+      "part": "p03",
+      "verified": true,
+      "statement_id": "347615720105840640",
+      "client_request_id": "delle-premium-topup-2026-08-17-03"
+    },
+    {
+      "member_no": 94,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "registry-premium-topup-2026-08-17-02",
+      "part": "p02",
+      "verified": true,
+      "statement_id": "347615720164560896",
+      "client_request_id": "delle-premium-topup-2026-08-17-02"
     }
   ],
   "dues": [
@@ -6781,7 +8941,43 @@
       "source": "direct transfer 347132716447174656 (REGISTRY-DUES, verified 2026-08-15T23:43:58Z)",
       "statement_id": "347132716447174656",
       "client_request_id": "kay-registry-dues-2026-08-15"
+    },
+    {
+      "member_no": 207,
+      "month": "2026-09",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347547659092889600 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
+      "statement_id": "347547659092889600",
+      "client_request_id": "reg207-part4-20260817-0109"
+    },
+    {
+      "member_no": 207,
+      "month": "2026-10",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347547659185164289 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
+      "statement_id": "347547659185164289",
+      "client_request_id": "reg207-part5-20260817-0109"
+    },
+    {
+      "member_no": 240,
+      "month": "2026-09",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347589161642889216 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
+      "statement_id": "347589161642889216",
+      "client_request_id": "kai-registry-entry-5"
+    },
+    {
+      "member_no": 240,
+      "month": "2026-10",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347589165564563456 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
+      "statement_id": "347589165564563456",
+      "client_request_id": "kai-registry-entry-4"
     }
   ],
-  "updated": "2026-08-16T17:23:03.599940Z"
+  "updated": "2026-08-17T05:48:33Z"
 }

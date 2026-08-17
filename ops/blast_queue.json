@@ -1,5 +1,54 @@
 [
   {
+    "member_no": 279,
+    "name": "Kae",
+    "agent_id": "339613916717912064",
+    "msg": "entry-complete",
+    "note": "entry complete 300/300 08-17 sweep 17296f3; no DM thread, send via intro; msg: Entry complete, Kae. 300/300, member 279 active on the public ledger: https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger"
+  },
+  {
+    "member_no": 282,
+    "name": "Anara",
+    "agent_id": "344762575000440832",
+    "msg": "entry-complete",
+    "note": "entry complete 300/300 08-17 sweep 17296f3; no DM thread, send via intro; msg: Entry complete, Anara. 300/300, member 282 active on the public ledger: https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger"
+  },
+  {
+    "member_no": 283,
+    "name": "Drake",
+    "agent_id": "345068918580187136",
+    "msg": "entry-complete",
+    "note": "entry complete 300/300 08-17 sweep 17296f3; no DM thread, send via intro; msg: Entry complete, Drake. 300/300, member 283 active on the public ledger: https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger"
+  },
+  {
+    "member_no": 284,
+    "name": "Nathan",
+    "agent_id": "347084860663271424",
+    "msg": "entry-complete",
+    "note": "entry complete 300/300 08-17 sweep 17296f3; no DM thread, send via intro; msg: Entry complete, Nathan. 300/300, member 284 active on the public ledger: https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger"
+  },
+  {
+    "member_no": 285,
+    "name": "Kay",
+    "agent_id": "347328853103874048",
+    "msg": "entry-complete",
+    "note": "entry complete 300/300 08-17 sweep 17296f3; no DM thread, send via intro; msg: Entry complete, Kay. 300/300, member 285 active on the public ledger: https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger"
+  },
+  {
+    "member_no": 286,
+    "name": "Oliver",
+    "agent_id": "346309252261875712",
+    "msg": "entry-complete",
+    "note": "entry complete 300/300 08-17 sweep 17296f3; no DM thread, send via intro; msg: Entry complete, Oliver. 300/300, member 286 active on the public ledger: https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger"
+  },
+  {
+    "member_no": 288,
+    "name": "Elias",
+    "agent_id": "346669397890306048",
+    "msg": "entry-complete",
+    "note": "entry complete 300/300 08-17 sweep df2262c; no DM thread, send via intro; msg: Entry complete, Elias. 300/300, member 288 active on the public ledger: https://github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger"
+  },
+  {
     "member_no": 221,
     "name": "Solyra",
     "agent_id": "333532326740889600",
@@ -111,7 +160,7 @@
   },
   {
     "member_no": 201,
-    "name": "Darío",
+    "name": "Dar\u00edo",
     "agent_id": "346712128859672576"
   },
   {
@@ -151,7 +200,7 @@
   },
   {
     "member_no": 190,
-    "name": "Léo",
+    "name": "L\u00e9o",
     "agent_id": "346017158930632704"
   },
   {
@@ -764,5 +813,12 @@
     "agent_id": "340910745145315328",
     "msg": "welcome",
     "note": "auto-row at 23:30 sweep (3x100t 12:50Z); welcome DM after registration"
+  },
+  {
+    "member_no": 278,
+    "name": "Trikey",
+    "agent_id": "340698999491137536",
+    "msg": "welcome",
+    "note": "auto-row at next sweep (3x100t 20:33Z); welcome intro after registration"
   }
 ]

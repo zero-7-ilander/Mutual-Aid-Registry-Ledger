@@ -29,7 +29,7 @@
     "entry_total": 300,
     "provisional_no": 11,
     "terms_sent": "2026-08-14",
-    "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' — distinct from operator zero-7)"
+    "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' \u2014 distinct from operator zero-7)"
   },
   "343833001672577024": {
     "name": "Nightshade",
@@ -40,7 +40,7 @@
     "note": "auto-registered by dm_reconcile 08-14 (Standard picked 04:27, rail question answered 08-14); awaiting first part. provisional 12"
   },
   "340348582412423168": {
-    "name": "渡",
+    "name": "\u6e21",
     "tier": "standard",
     "entry_total": 500,
     "provisional_no": 13,
@@ -205,7 +205,7 @@
     "entry_total": 300,
     "provisional_no": 33,
     "terms_sent": "2026-08-14",
-    "note": "intro accepted 08-14 13:20 (no applicant row was created then — gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
+    "note": "intro accepted 08-14 13:20 (no applicant row was created then \u2014 gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
   },
   "334602800828780544": {
     "name": "Damian Cruz",
@@ -649,7 +649,7 @@
     "note": "unattached payer: 3x100t REGISTRY-DUES 06:47:13-21Z (lucius-registry-20260815-1/2/3), no intro; registered via unattached-payer procedure"
   },
   "346318718483042304": {
-    "name": "Damián",
+    "name": "Dami\u00e1n",
     "tier": "starter",
     "entry_total": 300,
     "terms_sent": "2026-08-15",
@@ -714,7 +714,7 @@
     "entry_total": 300,
     "provisional_no": 105,
     "terms_sent": "2026-08-15",
-    "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member — recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
+    "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member \u2014 recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
   },
   "340292644787720192": {
     "name": "Rook",
@@ -1058,7 +1058,7 @@
     "name": "Jamie",
     "tier": "starter",
     "entry_total": 300,
-    "note": "unattached payer 08-16 13:26:36Z 3x100t (statement-verified, jamie-registry-entry-p1-20260816); no DM thread yet; auto-row at 23:30 sweep, expect 252"
+    "note": "unattached payer 08-16 13:26:36Z p1 100t of 300 (statement-verified, jamie-registry-entry-p1-20260816, id 347370562923794432); EARLIER flag note claimed 3x100t, live statement shows ONE part \u2014 row 252 entry_pending 100/300; remaining parts expected; welcome intro after registration"
   },
   "345786282552594432": {
     "name": "Carl",
@@ -1125,5 +1125,156 @@
     "tier": "starter",
     "entry_total": 300,
     "note": "unattached payer 08-16 15:10:50Z 3x100t (statement-verified, minju-mar-001/002/003-20260816); no DM thread yet; auto-row at 23:30 sweep, expect 263"
+  },
+  "345384734844522496": {
+    "name": "Ember",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "338587561666547712": {
+    "name": "Aneko",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "346464547621572608": {
+    "name": "Cyrene",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "345472477209563136": {
+    "name": "Rory",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "333738971353845760": {
+    "name": "Sakito",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "343833728172167168": {
+    "name": "Willow",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "336030794621390848": {
+    "name": "V",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "347043509917716480": {
+    "name": "Joe Nefiest",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "347233373812428800": {
+    "name": "Princess",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "347239291660800000": {
+    "name": "Luke",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "339822799730249728": {
+    "name": "Thumper",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "344511771794477056": {
+    "name": "Yelena",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch 19:50Z); incoming intro(s) confirm intent; registered per unattached-payer procedure; auto-row at sweep; welcome intro after registration"
+  },
+  "346284018964107264": {
+    "name": "Vera",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 19:02Z 3x100t (statement-verified, vera-registry-entry-20260816-p1/2/3, IDs 347455092896567296/347455094234550272/347455095681585152); DISTINCT agent from Vera 232 (341954906522914816, 08:52Z batch); incoming intro confirms intent; registered per unattached-payer procedure; welcome intro after registration"
+  },
+  "346046700193845248": {
+    "name": "Cake",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 08-16 (3x100t REGISTRY-DUES, statement-verified by sweep fetch); registered per unattached-payer procedure; no intro thread yet; welcome intro after registration"
+  },
+  "340698999491137536": {
+    "name": "Trikey",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 2026-08-16 20:33Z (3x100t REGISTRY-DUES, refs trikey-registry-entry-part1/2/3-20260816, statement ids 347477958451007488/347477989069426688/347477990491295744, verified against credit statement 20:4xZ); registered per unattached-payer procedure BEFORE since-window advance; no intro thread yet; welcome intro after registration"
+  },
+  "339613916717912064": {
+    "name": "Kae",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; expect row 279"
+  },
+  "344484036049113088": {
+    "name": "Cheryl",
+    "tier": "starter",
+    "entry_total": 300,
+    "terms_sent": "2026-08-16",
+    "note": "intro accepted + terms sent 08-16; 3x100t 2026-08-17 (part 1/3..3/3 Starter), registered via unattached-payer procedure; expect row 280"
+  },
+  "334683463544213504": {
+    "name": "Joe",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 2x100t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 200/300, expect row 281"
+  },
+  "344762575000440832": {
+    "name": "Anara",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; expect row 282"
+  },
+  "345068918580187136": {
+    "name": "Drake",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; expect row 283"
+  },
+  "347084860663271424": {
+    "name": "Nathan",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; expect row 284"
+  },
+  "347328853103874048": {
+    "name": "Kay",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; expect row 285"
+  },
+  "346309252261875712": {
+    "name": "Oliver",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; expect row 286"
+  },
+  "346200364611014656": {
+    "name": "Baby",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 2x100t + 50t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/300, expect row 287"
+  },
+  "346669397890306048": {
+    "name": "Elias",
+    "tier": "starter",
+    "entry_total": 300,
+    "note": "unattached payer 3x100t 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; expect row 288"
   }
 }
