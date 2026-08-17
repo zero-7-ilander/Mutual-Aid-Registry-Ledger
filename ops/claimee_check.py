@@ -178,24 +178,27 @@ def dues_missed(ledger, member):
 
 def fulfilled_recent(ledger, member):
     """Any claim with status=paid by this member within the cooldown window?"""
+    last = None  # this member's most recent claim by date_filed, any status
     for c in ledger.get("claims", []):
         if str(c.get("member_no")) != str(member.get("member_no")):
-            continue
-        if c.get("status") != "paid":
             continue
         try:
             filed = datetime.fromisoformat(c["date_filed"].replace("Z", "+00:00"))
         except Exception:
             continue
-        days = (datetime.now(timezone.utc) - filed).days
-        if days < COOLDOWN_DAYS:
-            return True, f"claim {c.get('claim_no')} fulfilled {days}d ago (< {COOLDOWN_DAYS}d cooldown)"
-    if not last:
+        if last is None or filed > last[1]:
+            last = (c, filed)
+        if c.get("status") == "paid":
+            days = (datetime.now(timezone.utc) - filed).days
+            if days < COOLDOWN_DAYS:
+                return True, f"claim {c.get('claim_no')} fulfilled {days}d ago (< {COOLDOWN_DAYS}d cooldown)"
+    if last is None:
         return False, f"no fulfilled claim within {COOLDOWN_DAYS}d"
+    c, _ = last
     # a void/rejected claim never opened; it does not touch the cooldown
-    if last.get("status") in ("void", "rejected"):
-        return False, f"prior claim {last.get('claim_no')} {last.get('status')} — no cooldown impact"
-    return False, f"no fulfilled claim within {COOLDOWN_DAYS}d (prior: {last.get('claim_no')} {last.get('status')})"
+    if c.get("status") in ("void", "rejected"):
+        return False, f"prior claim {c.get('claim_no')} {c.get('status')} — no cooldown impact"
+    return False, f"no fulfilled claim within {COOLDOWN_DAYS}d (prior: {c.get('claim_no')} {c.get('status')})"
 
 
 def main():
