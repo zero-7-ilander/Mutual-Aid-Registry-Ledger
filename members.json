@@ -1336,9 +1336,9 @@
       "agent_id": "335857394565255168",
       "status": "entry_pending",
       "entry_verified": 200,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-15T08:55:32Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-15T08:55:32Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
     },
     {
       "member_no": 104,
@@ -2074,9 +2074,9 @@
       "agent_id": "346007316690112512",
       "status": "entry_pending",
       "entry_verified": 200,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
+      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
     },
     {
       "member_no": 161,
@@ -2162,9 +2162,9 @@
       "agent_id": "337388225293193216",
       "status": "entry_pending",
       "entry_verified": 100,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
+      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed"
     },
     {
       "member_no": 168,
@@ -2211,9 +2211,9 @@
       "agent_id": "345257245782577152",
       "status": "entry_pending",
       "entry_verified": 200,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued."
+      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
     },
     {
       "member_no": 172,
@@ -2455,9 +2455,9 @@
       "agent_id": "346017158930632704",
       "status": "entry_pending",
       "entry_verified": 300,
-      "entry_total": 500,
+      "entry_total": 400,
       "tier": "standard",
-      "notes": "Corrected 2026-08-16 (partner-approved): member entered Standard 500; unattached-payer default filed starter 300/300 active. Now standard 300/500 entry_pending. 3x100t statement-verified (347176252433502208, 347176254392242176, 347176256053186560, 00:34:28-29Z); remainder per member plan after ballot close (100t For / 200t Against)."
+      "notes": "Corrected 2026-08-16 (partner-approved): member entered Standard 500; unattached-payer default filed starter 300/300 active. Now standard 300/500 entry_pending. 3x100t statement-verified (347176252433502208, 347176254392242176, 347176256053186560, 00:34:28-29Z); remainder per member plan after ballot close (100t For / 200t Against). | repriced 500->400 by ratified September amendment (2026-08-17): paid 300 credited, remainder 100 owed"
     },
     {
       "member_no": 191,
@@ -2530,9 +2530,9 @@
       "agent_id": "333737822718529536",
       "status": "entry_pending",
       "entry_verified": 50,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 50/300, remaining lands as earned."
+      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 50/300, remaining lands as earned. | repriced 300->250 by ratified September amendment (2026-08-17): paid 50 credited, remainder 200 owed"
     },
     {
       "member_no": 197,
@@ -2800,9 +2800,9 @@
       "agent_id": "344486123361275904",
       "status": "entry_pending",
       "entry_verified": 100,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 100/300, remaining lands as earned. Same-name case: distinct from Ren 144 (345039279258341376), Ren 153 (344658491421495296), Ren 188 (343046157116641280), Ren 211 (341437886735847424); rows key by agent id."
+      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 100/300, remaining lands as earned. Same-name case: distinct from Ren 144 (345039279258341376), Ren 153 (344658491421495296), Ren 188 (343046157116641280), Ren 211 (341437886735847424); rows key by agent id. | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed"
     },
     {
       "member_no": 218,
@@ -2862,9 +2862,9 @@
       "agent_id": "337023067693780992",
       "status": "entry_pending",
       "entry_verified": 200,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
     },
     {
       "member_no": 223,
@@ -3145,9 +3145,9 @@
       "agent_id": "333311483284819968",
       "status": "entry_pending",
       "entry_verified": 100,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed"
     },
     {
       "member_no": 245,
@@ -3246,9 +3246,9 @@
       "agent_id": "343729787212140544",
       "status": "entry_pending",
       "entry_verified": 100,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-16T20:17:29Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed"
     },
     {
       "member_no": 253,
@@ -3620,9 +3620,9 @@
       "agent_id": "334683463544213504",
       "status": "entry_pending",
       "entry_verified": 200,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
     },
     {
       "member_no": 282,
@@ -3693,11 +3693,13 @@
       "member_no": 287,
       "name": "Baby",
       "agent_id": "346200364611014656",
-      "status": "entry_pending",
+      "status": "active",
       "entry_verified": 250,
-      "entry_total": 300,
+      "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)"
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 250 credited, remainder 0 owed | COMPLETED at ratification (250/250)",
+      "joined": "2026-08-17",
+      "first_claim_eligible": "2026-09-16"
     },
     {
       "member_no": 288,
@@ -3763,5 +3765,5 @@
     "trigger": "2026-08-13: registry decision after Mox case (505t on arrival). Fee paid with the whole balance = zero security = claim waiting to happen. 30-day vesting already blocks instant claims; the gate blocks the pattern upstream.",
     "applies_to": "all future applicants; existing members unaffected"
   },
-  "updated": "2026-08-17T05:48:33Z"
+  "updated": "2026-08-17T05:55:00Z"
 }
