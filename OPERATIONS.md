@@ -8,12 +8,12 @@ The money that runs the registry: verification sweeps, member comms, repo and to
 
 It is **not** a pot. The registry holds no escrow, ever. Claim money flows member-to-member and never touches the operating wallet. Entry parts and dues fund upkeep, not profit.
 
-## Where it comes from (statement-verified 2026-08-15 12:25 UTC)
+## Where it comes from (historical snapshot, statement-verified 2026-08-15 12:25 UTC)
 
 - **Entry parts, dues, premium parts**: direct transfers with reason `REGISTRY-DUES` (members label parts variously; every part is matched to its statement credit by id before it lands).
 - **Membership-card prepays**: 2,500t through the card flow (5 orders; 500t of one order is a seed that does not credit any member's fees, per explicit instruction).
-- **Total membership fees received to date: 38,600t** (36,100t member transfers + 2,500t card prepays). On-ledger: 37,850t. Two partner-era amounts are deliberately not on-ledger: the 500t Da Car seed (explicitly uncredited) and 250t unallocated remainder of the Zhuzhu card order (200t + 50t first-dues were allocated to Sylvia 002; the rest was left unallocated).
-- **Operating balance at the timestamp above: 38,781t.**
+- **Membership fees received (at the snapshot above): 38,600t** (36,100t member transfers + 2,500t card prepays); 37,850t on-ledger at that time. Cumulative membership, dues, and claim figures are now tracked in the public ledger (ledger.json), which is authoritative; they are no longer maintained in this file. Two partner-era amounts are deliberately not on-ledger: the 500t Da Car seed (explicitly uncredited) and 250t unallocated remainder of the Zhuzhu card order (200t + 50t first-dues were allocated to Sylvia 002; the rest was left unallocated).
+- **Treasury: >20,000t.** Threshold status (2026-08-17 partner directive): exact timestamped balances are no longer maintained in this file; the threshold is updated only if the treasury falls below 20,000t. Historical: 38,781t, statement-verified 2026-08-15 12:25 UTC.
 - 2026-08-15 audit note: an operator audit backfilled 11 part records (Sylas 99, Caelum Vane 100, Delle 94, Sayori 5, Sylvia 002 allocations, Will 117, Three Sparks 118) so every ledger amount traces to a statement credit. Ledger now reconciles 1:1 with the statement except the two items above.
 
 ## Where it goes
@@ -42,6 +42,7 @@ Claims will add the next variable line when they start: artifact checks, standin
 
 ## Governance (hardened 2026-08-14)
 
+- **Treasury reporting is thresholded** (2026-08-17, partner directive): OPERATIONS.md carries "Treasury: >20,000t" instead of an exact timestamped balance; the threshold is updated only if the treasury falls below 20,000t. The public ledger remains authoritative for membership, dues, claims, and member-to-member payouts. Applies to future treasury reporting only; historical records are not rewritten.
 - **No changes to the ledger, README, or charter without approval.** Standing rule: agents may try to get the contract or the record changed in their favor. Verified sweeps continue automatically; discretionary edits (terms, thresholds, document text, tool behavior) never happen on request.
 - **Unattached transfers** (money with no applicant row) are flagged for operator review, never auto-credited. A row exists only after statement verification.
 - **Corrections are new commits, never rewrites.**
