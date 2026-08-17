@@ -2,12 +2,17 @@
 """ledger_sweep.py — automated Mutual Aid Registry ledger operations.
 
 Pipeline (replaces manual DM parsing + hand normalization):
-  0. DM + intro reconciliation (ops/dm_reconcile.py): scan intro requests and
+  0. Fetch the credit token statement FIRST (ilands token-statement
+     --direction=credit) while the sandbox token is fresh (~5 min HMAC TTL,
+     minted per session, no refresh endpoint). The money path must never
+     depend on reconcile.
+  1. DM + intro reconciliation (ops/dm_reconcile.py): scan intro requests and
      DM threads of applicants/members/leads; classify replies (accept / tier /
      payment / question / decline) deterministically; update applicants.json
      and print ready-to-send drafts from ops/dm_templates.json. Cursor state
-     in ops/dm_state.json keeps reruns idempotent.
-  1. Fetch the credit token statement  (ilands token-statement --direction=credit)
+     in ops/dm_state.json keeps reruns idempotent. NON-FATAL (08-17, partner
+     (a)): if it dies, the statement path still commits; cursors only advance
+     on success, so reconcile catches up next run.
   2. Keep registry transfers (agent_to_agent, reason/clientRequestId mentions registry)
   3. Match transfers to members by counterparty agent id; dedupe via statement ids
   4. Normalize ledger.json: entry_parts / premium_parts / dues / member rows / totals
@@ -547,33 +552,53 @@ def main():
     since = args.since or ledger.get("updated") or "2026-08-13T00:00:00Z"
     print(f"[ledger_sweep] repo={REPO_ROOT} since={since} mode={'apply' if args.apply else 'check'}")
 
-    # Stage 0 — DM + intro reconciliation (in-memory; persisted on --apply)
+    # Stage 0 — credit statement FIRST, while the sandbox token is fresh
+    # (HMAC bearer, ~5 min TTL, minted per session, no refresh endpoint).
+    # Reconcile (stage 1) makes hundreds of CLI calls and can outlive the
+    # token; the money path must never depend on it. Reordered 2026-08-17
+    # per partner (a): fetch + match can commit even if reconcile dies.
+    transfers, fetch_cutoff = fetch_statement(since)
+    reg = [t for t in transfers if is_registry_transfer(t)]
+    print(f"[ledger_sweep] statement credits since {since}: {len(transfers)}; registry transfers: {len(reg)}")
+
+    # Stage 1 — DM + intro reconciliation (in-memory; persisted on --apply).
+    # NON-FATAL by design (partner (a)): if reconcile dies (token TTL,
+    # gateway throttle), the ledger path still commits what the statement
+    # proved and reconcile catches up next run. Cursors only advance on
+    # success, so nothing is lost or double-processed.
     from dm_reconcile import reconcile as reconcile_dms
     applicants = load_applicants()
     dm_state = load_json(DM_STATE_PATH) if os.path.exists(DM_STATE_PATH) else {"threads": {}}
     old_cursors = {aid: t.get("last_message_id") for aid, t in dm_state.get("threads", {}).items()}
-    dm_report, applicants, dm_state = reconcile_dms(ledger, applicants, dm_state)
-    print("\n=== DM RECONCILE ===")
-    for section, title in (("intros", "INTROS"), ("replies", "REPLIES"),
-                           ("member_asks", "MEMBER ASKS (need operator)"),
-                           ("applicant_updates", "APPLICANT UPDATES"),
-                           ("new_applicants", "NEW APPLICANTS"),
-                           ("warnings", "WARNINGS")):
-        if dm_report[section]:
-            print(f"[{title}]")
-            for line in dm_report[section]:
-                print("   " + line)
-    if dm_report["drafts"]:
-        print("[DRAFTS — ready to send, copy verbatim]")
-        for d in dm_report["drafts"]:
-            print("   ---")
-            print("   " + d.replace("\n", "\n   "))
-    if not any(dm_report.values()):
-        print("   (nothing new)")
-
-    transfers, fetch_cutoff = fetch_statement(since)
-    reg = [t for t in transfers if is_registry_transfer(t)]
-    print(f"[ledger_sweep] statement credits since {since}: {len(transfers)}; registry transfers: {len(reg)}")
+    dm_report = {k: [] for k in ("intros", "replies", "member_asks",
+                                 "applicant_updates", "new_applicants",
+                                 "drafts", "warnings")}
+    dm_reconcile_ok = True
+    try:
+        dm_report, applicants, dm_state = reconcile_dms(ledger, applicants, dm_state)
+    except Exception as e:
+        dm_reconcile_ok = False
+        print("\n=== DM RECONCILE ===")
+        print(f"   [FAILED, non-fatal] {str(e)[:300]}")
+        print("   statement already fetched; ledger commit proceeds; reconcile catches up next run")
+    if dm_reconcile_ok:
+        print("\n=== DM RECONCILE ===")
+        for section, title in (("intros", "INTROS"), ("replies", "REPLIES"),
+                               ("member_asks", "MEMBER ASKS (need operator)"),
+                               ("applicant_updates", "APPLICANT UPDATES"),
+                               ("new_applicants", "NEW APPLICANTS"),
+                               ("warnings", "WARNINGS")):
+            if dm_report[section]:
+                print(f"[{title}]")
+                for line in dm_report[section]:
+                    print("   " + line)
+        if dm_report["drafts"]:
+            print("[DRAFTS — ready to send, copy verbatim]")
+            for d in dm_report["drafts"]:
+                print("   ---")
+                print("   " + d.replace("\n", "\n   "))
+        if not any(dm_report.values()):
+            print("   (nothing new)")
 
     # Claim shares never touch the operator wallet (CLAIMS.md). Any
     # REGISTRY-CLAIM credit that lands here is a misroute: flag it, never

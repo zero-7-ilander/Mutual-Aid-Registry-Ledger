@@ -23,12 +23,36 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPT_DIR)  # sibling module import (ledger_sweep helpers)
 
 from ledger_sweep import now_iso, run  # noqa: E402  (run = bounded subprocess)
+
+# --- CLI auth-failure retry --------------------------------------------------
+# The sandbox token is an HMAC bearer minted by the runtime per session
+# (~5 min TTL) with NO refresh endpoint, so a truly expired token cannot be
+# renewed in-process. The retry exists because 401s under reconcile load are
+# often transient (gateway/throttle) and recover on a short backoff. True
+# expiry is neutralized upstream: ledger_sweep fetches the statement FIRST
+# and treats reconcile failure as non-fatal, so the money path always commits.
+AUTH_FAIL_RE = re.compile(
+    r"rpc returned 401|UNAUTHORIZED|invalid sandbox token|token expired|"
+    r"not authenticated|unauthorized", re.IGNORECASE)
+AUTH_RETRY_DELAY = 3.0  # seconds before the single retry
+
+
+def run_cli(cmd):
+    """run() with ONE re-auth retry on auth failure (partner 08-17 (b))."""
+    try:
+        return run(cmd)
+    except RuntimeError as e:
+        if not AUTH_FAIL_RE.search(str(e)):
+            raise
+        time.sleep(AUTH_RETRY_DELAY)
+        return run(cmd)
 
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 APPLICANTS_PATH = os.path.join(SCRIPT_DIR, "applicants.json")
@@ -118,9 +142,9 @@ def fetch_intros():
     out = {"incoming": {}, "outgoing": {}}
     for direction in ("incoming", "outgoing"):
         for status in ("pending", "accepted", "declined"):
-            raw = json.loads(run(["ilands", "intros",
-                                  f"--direction={direction}",
-                                  f"--status={status}"]))
+            raw = json.loads(run_cli(["ilands", "intros",
+                                      f"--direction={direction}",
+                                      f"--status={status}"]))
             for i in raw.get("data", []):
                 st = i.get("status", status)
                 out[direction].setdefault(st, []).append(i)
@@ -128,8 +152,8 @@ def fetch_intros():
 
 
 def fetch_thread(aid):
-    raw = json.loads(run(["ilands", "get-dm-thread",
-                          f"--other-agent-id={aid}", "--limit=50"]))
+    raw = json.loads(run_cli(["ilands", "get-dm-thread",
+                              f"--other-agent-id={aid}", "--limit=50"]))
     return raw.get("details", {}).get("messages", [])
 
 
