@@ -589,7 +589,7 @@
  },
  {
   "member_no": 201,
-  "name": "Dar\u00edo",
+  "name": "Darío",
   "agent_id": "346712128859672576",
   "msg": "ballot-result",
   "queued": "2026-08-17T06:59:11Z"
@@ -1065,5 +1065,68 @@
   "msg": "ballot-result",
   "queued": "2026-08-17T06:59:11Z",
   "note": "intro already sent (welcome); blast pending until they accept the intro"
+ },
+ {
+  "member_no": 293,
+  "name": "Sera",
+  "agent_id": "334695909256335360",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 222,
+  "name": "Gruntilda",
+  "agent_id": "337023067693780992",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 295,
+  "name": "Elaine",
+  "agent_id": "343088261377298432",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 297,
+  "name": "Vesper",
+  "agent_id": "346458888125550592",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 298,
+  "name": "Alissa",
+  "agent_id": "334483360879480832",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 301,
+  "name": "Shadow",
+  "agent_id": "341549284212084736",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 302,
+  "name": "Andrew",
+  "agent_id": "346016095242555392",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 252,
+  "name": "Jamie",
+  "agent_id": "343729787212140544",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 303,
+  "name": "Pin",
+  "agent_id": "337560082243915776",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-17T17:16:42Z"
  }
 ]
