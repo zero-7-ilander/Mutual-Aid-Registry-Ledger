@@ -11,10 +11,16 @@ Pipeline (replaces manual DM parsing + hand normalization):
   2. Keep registry transfers (agent_to_agent, reason/clientRequestId mentions registry)
   3. Match transfers to members by counterparty agent id; dedupe via statement ids
   4. Normalize ledger.json: entry_parts / premium_parts / dues / member rows / totals
-  5. --apply: write ledger.json + applicants.json + dm_state.json, commit,
+  5. Claim aging pass (CLAIMS.md 2026-08-17): pending claims with zero paid
+     shares after 7 days -> void (re-file immediately, id consumed); unpaid
+     claimees past 7 days and not yet nudged -> nudge_due flag (operator
+     sends exactly one decline-or-missed nudge, then records nudged).
+     REGISTRY-CLAIM transfers landing in the operator wallet are flagged as
+     misroutes, never booked as entry or dues.
+  6. --apply: write ledger.json + applicants.json + dm_state.json, commit,
      pull --rebase, push to origin
      (default is --check: report only, touch nothing)
-  6. Print per-member change summaries ready to send as DMs
+  7. Print per-member change summaries ready to send as DMs
 
 Idempotent: every processed transfer records its statement id; reruns are no-ops.
 Known applicants (tier + reserved number) live in ops/applicants.json so the
@@ -50,6 +56,13 @@ SCHEMA_PATH = os.path.join(REPO_ROOT, "SCHEMA.md")
 
 REGISTRY_RE = re.compile(r"registr|REGISTRY|entry|prem", re.IGNORECASE)
 PREMIUM_RE = re.compile(r"premium|prem-|prem ", re.IGNORECASE)
+CLAIM_RE = re.compile(r"claim", re.IGNORECASE)
+
+# Claim aging constants (CLAIMS.md, codified 2026-08-17): one clock, the
+# daily 07:30 sweep. VOID_DAYS: zero paid shares -> void, immediate refile.
+# NUDGE_DAYS: unpaid claimees listed -> exactly one nudge, then nudged set.
+VOID_DAYS = 7
+NUDGE_DAYS = 7
 
 # Vesting days per tier at activation (September amendment draft: starter 30d
 # flat to full cap, standard 14d, premium 3d; was 30d flat for all).
@@ -232,6 +245,15 @@ def is_premium(t):
     return bool(PREMIUM_RE.search(reason) or PREMIUM_RE.search(cr))
 
 
+def is_claim_transfer(t):
+    """A REGISTRY-CLAIM transfer. Claim shares go member to member; one that
+    lands on the operator's statement is misrouted and must never be booked
+    as entry or dues (CLAIMS.md: claim money never sits with the operator)."""
+    reason = t.get("transferMetadata", {}).get("reason", "") or ""
+    cr = t.get("transferMetadata", {}).get("clientRequestId", "") or ""
+    return bool(CLAIM_RE.search(reason) or CLAIM_RE.search(cr))
+
+
 def date_of(t):
     return t.get("createdAt", "")[:10]
 
@@ -254,8 +276,43 @@ def recompute_totals(ledger):
     ledger["totals"] = {
         "entry_paid_members": sum(1 for m in ledger["members"] if m.get("status") == "active"),
         "pending_entries": sum(1 for m in ledger["members"] if m.get("status") == "entry_pending"),
-        "claims_paid": 0,
+        "claims_paid": sum(1 for c in ledger.get("claims", []) if c.get("status") == "paid"),
     }
+
+
+def age_claims(ledger, today=None):
+    """Daily claim aging pass — the single clock (CLAIMS.md 2026-08-17).
+
+    On pending claims:
+      - zero paid shares after VOID_DAYS -> status=void, closed_by=aging,
+        closed_at=today; re-file allowed immediately, id consumed.
+      - unpaid claimees present after NUDGE_DAYS and no nudge recorded ->
+        nudge_due=True; the operator sends exactly ONE decline-or-missed
+        nudge per claimee, then sets nudged=<date> on the row.
+    Returns change lines for the report and commit message.
+    """
+    today = today or today_utc()
+    t = datetime.strptime(today, "%Y-%m-%d").date()
+    lines = []
+    for c in ledger.get("claims", []):
+        if c.get("status") != "pending":
+            continue
+        try:
+            filed = datetime.strptime(c["date_filed"], "%Y-%m-%d").date()
+        except Exception:
+            continue
+        days = (t - filed).days
+        paid = c.get("paid_by", [])
+        unpaid = c.get("unpaid", [])
+        if not paid and days >= VOID_DAYS:
+            c["status"] = "void"
+            c["closed_at"] = today
+            c["closed_by"] = "aging"
+            lines.append(f"claim {c.get('claim_id')} VOIDED (zero shares after {VOID_DAYS}d, aging) — re-file allowed immediately, id consumed")
+        elif unpaid and days >= NUDGE_DAYS and not c.get("nudged"):
+            c["nudge_due"] = True
+            lines.append(f"claim {c.get('claim_id')}: {len(unpaid)} unpaid claimee(s) past {NUDGE_DAYS}d — send exactly ONE decline-or-missed nudge each, then record nudged")
+    return lines
 
 
 def backfill_provenance(ledger, transfers):
@@ -431,6 +488,8 @@ def build_commit_message(changes, dry, dm_report=None):
     members = changes.get("members", [])
     new_rows = changes.get("new_rows", [])
     unattached = changes.get("unattached", [])
+    claims_aging = changes.get("claims_aging", [])
+    claims_misrouted = changes.get("claims_misrouted", [])
     lines = []
     if parts:
         lines.append(f"verified {len(parts)} new entry part(s): " + "; ".join(parts[:6]) + (" …" if len(parts) > 6 else ""))
@@ -444,6 +503,10 @@ def build_commit_message(changes, dry, dm_report=None):
         lines.append("new row: " + r)
     if unattached:
         lines.append("UNATTACHED (needs operator): " + "; ".join(unattached[:4]) + (" …" if len(unattached) > 4 else ""))
+    for a in claims_aging:
+        lines.append("claim aging: " + a)
+    for m in claims_misrouted:
+        lines.append("CLAIM MISROUTE: " + m)
     if dm_report:
         for na in dm_report.get("new_applicants", []):
             lines.append("dm: " + na)
@@ -451,7 +514,7 @@ def build_commit_message(changes, dry, dm_report=None):
             lines.append("dm: " + au)
     if not lines:
         return None
-    if not (parts or dues or members or new_rows):
+    if not (parts or dues or members or new_rows or claims_aging or claims_misrouted):
         # normalization-only run (backfill provenance / structure old verified data)
         return "ledger normalize: " + " | ".join(lines) + " | no new money, amounts unchanged"
     return "ledger sweep: " + " | ".join(lines)
@@ -512,6 +575,15 @@ def main():
     reg = [t for t in transfers if is_registry_transfer(t)]
     print(f"[ledger_sweep] statement credits since {since}: {len(transfers)}; registry transfers: {len(reg)}")
 
+    # Claim shares never touch the operator wallet (CLAIMS.md). Any
+    # REGISTRY-CLAIM credit that lands here is a misroute: flag it, never
+    # book it as entry/dues, never backfill it onto an entry part.
+    claim_flagged = [t for t in reg if is_claim_transfer(t)]
+    reg = [t for t in reg if not is_claim_transfer(t)]
+    if claim_flagged:
+        print(f"[ledger_sweep] WARNING: {len(claim_flagged)} REGISTRY-CLAIM credit(s) in the operator wallet "
+              "— misrouted, return to sender; claim money never sits with the operator")
+
     matched = backfill_provenance(ledger, reg)
     if matched:
         print(f"[ledger_sweep] provenance backfilled onto {len(matched)} existing record(s)")
@@ -519,8 +591,20 @@ def main():
     dry = not args.apply
     changes = process_transfers(ledger, reg, applicants, matched, dry, fetch_cutoff)
 
+    # Claim aging pass (single clock, CLAIMS.md): void at 7d zero shares,
+    # nudge flag at 7d. Runs in --check and --apply alike so the report
+    # shows exactly what --apply would commit.
+    aging_lines = age_claims(ledger)
+    changes["claims_aging"] = aging_lines
+    changes["claims_misrouted"] = [
+        f"{t.get('counterparty',{}).get('name')} ({t.get('counterparty',{}).get('agentId')}) "
+        f"{t.get('amount')}t {date_of(t)} reason='{t.get('transferMetadata',{}).get('reason')}' "
+        "— REGISTRY-CLAIM to operator wallet: return to sender, never book as entry/dues"
+        for t in claim_flagged
+    ]
+
     print("\n=== CHANGE SUMMARY ===")
-    for k in ("parts", "premium", "dues", "members", "new_rows", "unattached"):
+    for k in ("parts", "premium", "dues", "members", "new_rows", "unattached", "claims_aging", "claims_misrouted"):
         v = changes.get(k, [])
         if v:
             print(f"[{k}] ({len(v)})")
@@ -530,7 +614,7 @@ def main():
         print("   (nothing new)")
 
     recompute_totals(ledger)
-    print(f"\n[totals] entry_paid={ledger['totals']['entry_paid_members']} pending={ledger['totals']['pending_entries']}")
+    print(f"\n[totals] entry_paid={ledger['totals']['entry_paid_members']} pending={ledger['totals']['pending_entries']} claims_paid={ledger['totals']['claims_paid']}")
 
     msg = build_commit_message(changes, dry, dm_report)
     new_cursors = {aid: t.get("last_message_id") for aid, t in dm_state.get("threads", {}).items()}

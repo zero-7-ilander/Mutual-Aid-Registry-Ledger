@@ -45,8 +45,20 @@ claimant and your report to the operator, so the fulfillment lands on the
 right claim row in the public claims log. Exact report shapes: CLAIMS.md.
 
 If all five pass, pay the share directly to the claimant (reason
-REGISTRY-CLAIM) and tell the operator (zero-7) the claim id + share so
-the claim row lands in the public claims log.
+REGISTRY-CLAIM) and tell the operator (zero-7) the claim id + share + the
+transfer id, so the fulfillment row lands in the public claims log. The
+transfer id is the verification key: the operator matches your report
+against the claimant's own statement (same id, same amount, counterparty is
+the claimant, reason REGISTRY-CLAIM).
+
+If a check fails, do not pay. Send the reply the tool prints. The reply
+carries the reason code for the claim file: gate_decline, with the failing
+check named. A claimee who never replies is recorded as no_response by the
+daily aging sweep (7 days silent), not gate_decline. The sweep sends
+EXACTLY ONE nudge to silent claimees, ever — this is a pact of recorded
+commitment, not a collection agency. Void claims (zero shares after 7 days)
+and rejected claims do not count against the claimant's cooldown; a
+partial-close claim does.
 
 Output: PASS/FAIL with one evidence line per check, plus the exact reply
 to send the claimant.
@@ -69,7 +81,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 
 TOOL = "claimee_check.py"
-VERSION = "2.1.0"
+VERSION = "2.2.0"
 SHARE_MAX = 250          # per-claimee share gate (partner spec 2026-08-15)
 COOLDOWN_DAYS = 30        # September amendment (was 60)
 BALANCE_FLOOR = 500      # claimee self-protection floor (partner spec 2026-08-16)
@@ -178,7 +190,12 @@ def fulfilled_recent(ledger, member):
         days = (datetime.now(timezone.utc) - filed).days
         if days < COOLDOWN_DAYS:
             return True, f"claim {c.get('claim_no')} fulfilled {days}d ago (< {COOLDOWN_DAYS}d cooldown)"
-    return False, f"no fulfilled claim within {COOLDOWN_DAYS}d"
+    if not last:
+        return False, f"no fulfilled claim within {COOLDOWN_DAYS}d"
+    # a void/rejected claim never opened; it does not touch the cooldown
+    if last.get("status") in ("void", "rejected"):
+        return False, f"prior claim {last.get('claim_no')} {last.get('status')} — no cooldown impact"
+    return False, f"no fulfilled claim within {COOLDOWN_DAYS}d (prior: {last.get('claim_no')} {last.get('status')})"
 
 
 def main():
@@ -281,21 +298,27 @@ def main():
         print(f"  [{tag}] {name}: {detail}")
 
     if failed:
+        reason_code = "gate_decline"
+        checks_failed = "; ".join(r[0] for r in failed)
         print("\n  VERDICT: DO NOT PAY — claim does not pass.")
+        print(f"  reason code for the claim file: {reason_code} ({checks_failed})")
         if floor_failed and len(failed) == 1:
             print("  Reply to the claimant: 'I ran claimee_check; my balance is under the 500t floor, "
                   f"so I can't cover my share of claim {args.claim_id}. Reroute to the other claimees on the ledger.'")
         else:
             print("  Reply to the claimant: 'I ran claimee_check against the live ledger; "
                   "your claim " + args.claim_id + " does not pass: "
-                  + "; ".join(r[0] for r in failed)
-                  + ". Sort the standing issue or reroute to other claimees first.'")
+                  + checks_failed
+                  + ". Reason code gate_decline. Sort the standing issue or reroute to other claimees first.'")
         return 1
 
     print("\n  VERDICT: PASS — claimant is active, in good standing, past vesting; your balance clears the floor.")
     print(f"  Pay your share {args.amount}t directly to the claimant in <=100t parts "
           f"(reason REGISTRY-CLAIM), then DM zero-7: 'claim {args.claim_id}, share {args.amount}t paid to "
-          f"member {member.get('member_no')} ({member.get('name')})' — that report lands the fulfillment row.")
+          f"member {member.get('member_no')} ({member.get('name')}), transfer id <id>'. The transfer id is the "
+          "verification key — the operator matches your report against the claimant's statement "
+          "(same id, same amount, counterparty = claimant, reason REGISTRY-CLAIM). A share paid but "
+          "never reported leaves the claim short on verification until your report lands.")
     print("  Reply to the claimant: 'claimee_check passes against the live ledger; "
           f"sending my share for claim {args.claim_id} ({args.amount}t in parts if needed).'")
     return 0

@@ -49,9 +49,9 @@ Three tiers, one registry. Entry is one-time; dues are 50t/month on every tier a
 
 Premium extras: priority verification — a premium claim is checked first when filed.
 
-## Payout method (decentralized, codified 2026-08-13; claim gate tool added 2026-08-14, claimee gate tool added 2026-08-15)
+## Payout method (decentralized, codified 2026-08-13; claim gate tool added 2026-08-14, claimee gate tool added 2026-08-15, full lifecycle codified 2026-08-17 in `CLAIMS.md`)
 
-The operator does not hold or route claim money. Claims flow member-to-member. Two tools, one per side: the claimant proves their own balance with `ops/claim_check.py`; each claimee proves the claimant's standing with `ops/claimee_check.py`.
+The operator does not hold or route claim money. Claims flow member-to-member. Two tools, one per side: the claimant proves their own balance with `ops/claim_check.py`; each claimee proves the claimant's standing with `ops/claimee_check.py`. The complete lifecycle — close-at-received-total, void after 7 days with zero paid shares (immediate refile), partial closes with shortfall and permanently recorded `unpaid[]` claimees, exactly one nudge per silent claimee, aging on the daily 07:30 sweep — is specified in [`CLAIMS.md`](CLAIMS.md).
 
 1. A member whose balance is 1,000t or less runs the claim gate: `python3 ops/claim_check.py --amount <claim> --member-no <no>` on their own machine. The tool reads their token statement, confirms the balance is at or below the threshold, and writes `claim_artifact.json`. No pass, no artifact, no claim.
 2. The tool assigns the claim its **claim id** — `XXXXX-YYY`, your member number zero-padded to 5 plus your claim number zero-padded to 3 (member 69's 2nd claim = `00069-002`; every filed claim counts, rejected ones included, ids are never reused). The id lands in the artifact: send it to every claimee you ask, and report it to the operator when the claim is fulfilled.

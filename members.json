@@ -3778,10 +3778,25 @@
   "codified": "2026-08-13",
   "claim_tool": {
    "script": "ops/claim_check.py",
-   "version": "1.0.0",
+   "version": "1.2.0",
    "added": "2026-08-14",
-   "gate": "balance check against the claimant's own token statement; no artifact, no claim",
+   "gate": "balance check against the claimant's own token statement; no artifact, no claim; filing gate unchanged (<= 1,000t, tier cap, once per 30d)",
    "picker": "randomly recommends up to 10 active members with an even split of the claim amount; the claimant may override with --claimees, the gate can never be skipped"
+  },
+  "aging": {
+   "void_days": 7,
+   "nudge_days": 7,
+   "nudge_count": 1,
+   "clock": "daily 07:30 UTC sweep (single clock; no per-claim timers)",
+   "void_refile": "immediate; id consumed; claim never worked, nothing paid",
+   "partial_refile": "remainder becomes a new claim under a new id after the 30d cooldown from the original filing date; old row stays as history"
+  },
+  "claimee_tool": {
+   "script": "ops/claimee_check.py",
+   "version": "2.2.0",
+   "added": "2026-08-17",
+   "checks": "active + good standing (dues), vesting per tier, share cap 250t, 30d cooldown (fulfilled claims only), claimee balance floor 500t",
+   "decline_reasons": "gate_decline (tool ran, a check failed) | no_response (7 days silent, aging)"
   }
  },
  "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",

@@ -62,18 +62,27 @@ Same shape as `entry_parts`, for transfers tagged premium-upgrade (reason/client
 
 ## claims
 
+Lifecycle spec: `CLAIMS.md`. Full mechanism codified 2026-08-17: one aging clock (the daily 07:30 sweep), close-at-received-total, void after 7 days with zero paid shares.
+
 | field | meaning |
 |---|---|
-| `claim_id` | `XXXXX-YYY` — member no zero-padded to 5 + claim no zero-padded to 3 (partner spec 2026-08-16); unique forever, rejected claims keep their number |
+| `claim_id` | `XXXXX-YYY` — member no zero-padded to 5 + claim no zero-padded to 3 (partner spec 2026-08-16); unique forever, rejected/void claims keep their number |
 | `claim_no` | sequential per member |
 | `member_no` | claimant |
-| `date_filed` | filing date |
-| `amount` | claimed, max 1,500 (premium 2,000; September amendment draft) |
+| `date_filed` | filing date; the cooldown clock starts here |
+| `amount_filed` | claimed total, max 1,500 (premium 2,000; September amendment) |
+| `status` | `pending` \| `paid` \| `rejected` \| `void` — `void` = zero paid shares after 7 days (aging), re-file allowed immediately, id consumed |
+| `fulfilled` | `full` \| `partial` — set only when the claim closes `paid`; partial is not a status, the row carries the shortfall |
+| `received` | verified received total at close (sum of verified `paid_by` shares) |
+| `shortfall` | `amount_filed` − `received`; 0 when full |
+| `paid_by` | verified fulfillments: `{member_no, name, share, statement_id, date}` — per-share verification is transfer id + amount + counterparty = claimant + reason `REGISTRY-CLAIM` |
+| `unpaid` | never-paid claimees: `{member_no, share, reason}` — `reason` is `gate_decline` (claimee ran the tool, a check failed) or `no_response` (7 days silent, aging) |
 | `verifiers` | operator; the balance gate is the claim tool's artifact (`ops/claim_check.py`, balance 1,000t or less at filing) |
-| `paid_by` | fulfillments: members who paid their share, with amounts and dates (reported with the claim id) |
-| `status` | `pending` \| `paid` \| `rejected` |
-| `notes` | context |
+| `closed_at` | date the claim closed |
+| `closed_by` | `report` (fulfillment reconciled) \| `aging` (sweep) |
+| `nudged` | date the single decline-or-missed nudge was sent to unpaid claimees (aging flag; exactly one) |
+| `notes` | context, overpayment/misroute flags |
 
 ## claims_policy
 
-Locked numbers from the charter: `max`, `vesting_days`, `cooldown_days`, `proof`, `claim_trigger`, `claim_tool` (the gate script). Values live in `members.json` → `claims_policy` (draft on `september-amendment`: entry 250/400/2,000, trigger ≤1,000t, caps 1,500/2,000, cooldown 30d). Removed 2026-08-14: `fund_moves` / `operating_fund` — the operator fund is no longer reported on the public ledger (operator directive; the money itself stays in the operator's balance, used only for ledger upkeep).
+Locked numbers from the charter: `max`, `vesting_days`, `cooldown_days`, `proof`, `claim_trigger`, `claim_tool` (the gate script). Values live in `members.json` → `claims_policy` (September amendment on main: entry 250/400/2,000, trigger ≤1,000t, caps 1,500/2,000, cooldown 30d). Codified 2026-08-17: `aging` — `void_days` 7 (zero paid shares → void, immediate refile), `nudge_days` 7 (exactly one nudge per silent claimee), single clock = the daily 07:30 sweep. Removed 2026-08-14: `fund_moves` / `operating_fund` — the operator fund is no longer reported on the public ledger (operator directive; the money itself stays in the operator's balance, used only for ledger upkeep).

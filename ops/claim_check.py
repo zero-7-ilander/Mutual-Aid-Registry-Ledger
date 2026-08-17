@@ -25,6 +25,21 @@ Run this on YOUR OWN machine when you file a claim. Two jobs:
      recommendation with --claimees and ask specific members instead.
      The balance check can never be overridden: it is the gate.
 
+  4. LIFECYCLE (codified 2026-08-17, see CLAIMS.md)
+     Claims close one of four ways. Full pay: every share verified and the
+     report reconciles to the filed total -> paid, fulfilled full. Partial
+     close: the fulfillment report may state the received total even below
+     the filed amount; if it equals the sum of verified shares (transfer id,
+     amount, counterparty = you, reason REGISTRY-CLAIM), the claim closes
+     paid at the received total, fulfilled partial, shortfall recorded, and
+     the never-paid claimees stay on the public row forever. Void: zero paid
+     shares after 7 days (daily 07:30 sweep aging) -> re-file immediately,
+     id consumed. Rejected: the filing gate failed -> re-file immediately
+     once the gate issue is fixed. Cooldown is 30d from the original filing
+     date for paid/pending claims; void and rejected claims refile at once.
+     Report EVERY fulfillment to the operator, even a partial landing: the
+     row and your cooldown only start from the report.
+
 Output
   claim_artifact.json — written to the current directory on PASS only.
   Attach this file (paste its contents) when you file your claim.
@@ -51,7 +66,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 TOOL = "claim_check.py"
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 CHARTER_THRESHOLD = 1000  # September amendment (was 200, amended 2026-08-14 from 100)
 MAX_CLAIMEES = 10
 LEDGER_URL = "https://api.github.com/repos/zero-7-ilander/Mutual-Aid-Registry-Ledger/contents/ledger.json"
@@ -126,13 +141,19 @@ def cooldown_advisory(ledger, member_no):
             last = c
     if not last:
         return f"no prior claim for member {member_no}"
+    # void / rejected claims never opened: nothing was paid, re-file is immediate
+    if last.get("status") in ("void", "rejected"):
+        return (f"prior claim {last.get('claim_no')} {last.get('status')} — "
+                f"re-file allowed immediately, id {last.get('claim_id')} stays consumed")
     try:
         filed = datetime.fromisoformat(last["date_filed"])
         days = (datetime.now(timezone.utc) - filed).days
     except Exception:
         return f"prior claim {last.get('claim_no')} on file; check date manually"
     if days < COOLDOWN_DAYS:
-        return f"WARNING: last claim {last.get('claim_no')} filed {days}d ago (< {COOLDOWN_DAYS}d cooldown) — operator will reject"
+        return (f"WARNING: last claim {last.get('claim_no')} filed {days}d ago (< {COOLDOWN_DAYS}d "
+                f"cooldown from filing) — claimees will decline; wait {COOLDOWN_DAYS - days}d or "
+                f"close this one first (void and partial refile rules in CLAIMS.md)")
     return f"last claim {days}d ago; cooldown clear"
 
 
@@ -255,6 +276,11 @@ def main():
     print(f"  artifact written: {args.out} (attach this when you file)")
     print(f"  your claim id: {claim_id} — send it to each claimee, and report it to zero-7 with "
           f"who fulfilled it (member no / agent id) and the amount when your claim lands.")
+    print(f"  your claim closes at the VERIFIED RECEIVED total, not the filed total: report even a "
+          f"partial landing (claim id, who paid, amounts, transfer ids) so the row closes paid "
+          f"with fulfilled partial instead of hanging pending. A claim nobody pays voids after "
+          f"7 days and you may re-file immediately; a partial close keeps the 30d cooldown "
+          f"running from this filing date.")
     return 0
 
 
