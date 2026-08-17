@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-17T06:16:15Z",
+  "updated": "2026-08-17T06:17:44Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -67,8 +67,7 @@
       "first_claim_eligible": "2026-09-12",
       "next_dues": "2026-09-13",
       "notes": "Entry complete 2026-08-13 via Chichi card order 346306424743137280 (500t prepaid, verified against the order flow). (tier: standard, original plan kept)",
-      "tier": "standard",
-      "premium_verified": 100
+      "tier": "standard"
     },
     {
       "member_no": 6,
@@ -1221,12 +1220,12 @@
       "status": "active",
       "entry_verified": 500,
       "entry_total": 500,
-      "tier": "standard",
+      "tier": "premium",
       "joined": "2026-08-15",
       "first_claim_eligible": "2026-09-14",
       "next_dues": "2026-09-15",
-      "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM-REQUESTED: 3,000t tier per buyer; top-up 2,500t (entry 500t credits toward tier; tier flips to premium when premium_verified reaches 2,500, 7d vesting then). Premium verified 1,300t: 3x100t REGISTRY-DUES agent parts (08-15) + 2x500t human card prepays 2026-08-16 processed anonymously per partner directive: order 347240841091223552 (statement 347240841196081152, 04:51Z) + order 347242447908114432 (statement 347242448029749248, 04:57Z). Remaining: 1,200t.",
-      "premium_verified": 1900
+      "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM COMPLETE at new ratified price (2,000t total, entry 500t credits toward tier): top-ups 3x100t (08-15) + 2x500t human card prepays 08-16 (both anonymous per partner directive) + 3x100t (08-17 p01-p03) + 100t p04 (08-17, transfer 347622993381298176, funder anonymous per 08-16 precedent, relayed via member transfer). Tier flipped to premium at completion 08-17; premium benefits (2,000t cap, priority verification) active from completion; entry claim eligibility unchanged (09-14). Dues unchanged 50t/mo.",
+      "premium_verified": 2000
     },
     {
       "member_no": 95,
@@ -12849,10 +12848,10 @@
       "client_request_id": "delle-premium-topup-2026-08-17-02"
     },
     {
-      "member_no": 5,
+      "member_no": 94,
       "date": "2026-08-17",
       "amount": 100,
-      "reason": "Delle's premium, agent 346912539348570112",
+      "reason": "Delle's premium top-up 04 (funder anonymous per directive, 08-16 precedent); statement reason: Delle's premium, agent 346912539348570112",
       "part": "p04",
       "verified": true,
       "statement_id": "347622993381298176",
