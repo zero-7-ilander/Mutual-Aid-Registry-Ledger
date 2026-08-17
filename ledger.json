@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-17T05:46:34Z",
+  "updated": "2026-08-17T05:48:33Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -3708,7 +3708,7 @@
       "entry_verified": 300,
       "entry_total": 300,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:46:34Z (known applicant, tier starter)",
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:48:33Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
