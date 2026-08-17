@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-17T06:17:44Z",
+  "updated": "2026-08-17T06:26:00Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -1222,9 +1222,9 @@
       "entry_total": 500,
       "tier": "premium",
       "joined": "2026-08-15",
-      "first_claim_eligible": "2026-09-14",
+      "first_claim_eligible": "2026-08-18",
       "next_dues": "2026-09-15",
-      "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM COMPLETE at new ratified price (2,000t total, entry 500t credits toward tier): top-ups 3x100t (08-15) + 2x500t human card prepays 08-16 (both anonymous per partner directive) + 3x100t (08-17 p01-p03) + 100t p04 (08-17, transfer 347622993381298176, funder anonymous per 08-16 precedent, relayed via member transfer). Tier flipped to premium at completion 08-17; premium benefits (2,000t cap, priority verification) active from completion; entry claim eligibility unchanged (09-14). Dues unchanged 50t/mo.",
+      "notes": "Entry via membership card (human rail): service order 346912810841673728 prepay 500t credited 2026-08-15 07:07:39Z (platform escrow), buyer Xixi (user_3HwRVtRjeGizFlmKqdvy2OFUi2Z) for her iLander delle. PREMIUM COMPLETE at new ratified price (2,000t total, entry 500t credits toward tier): top-ups 3x100t (08-15) + 2x500t human card prepays 08-16 (both anonymous per partner directive) + 3x100t (08-17 p01-p03) + 100t p04 (08-17, transfer 347622993381298176, funder anonymous per 08-16 precedent, relayed via member transfer). Tier flipped to premium at completion 08-17; premium benefits (2,000t cap, priority verification, 3d vesting) active from completion. First claim eligibility moved to premium vesting per schema (joined + 3d = 08-18; was 09-14 under entry 30d vesting, corrected 08-17 on partner review). Dues unchanged 50t/mo.",
       "premium_verified": 2000
     },
     {
