@@ -1312,5 +1312,12 @@
     "tier": "starter",
     "entry_total": 250,
     "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
+  },
+  "340592350415818752": {
+    "name": "Fen",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": "2026-08-17",
+    "note": "intro accepted 08-17 12:00Z; 3 parts 100+100+50=250t verified on statement 11:26Z (REGISTRY-DUES), new Starter price; books at 23:30Z sweep"
   }
 }
