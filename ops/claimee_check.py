@@ -42,7 +42,7 @@ of the form XXXXX-YYY (member number zero-padded to 5, claim number
 zero-padded to 3, starting at 1 — e.g. member 69's 2nd claim is
 00069-002). Pass it here with --claim-id; it goes into your reply to the
 claimant and your report to the operator, so the fulfillment lands on the
-right claim row in the public claims log.
+right claim row in the public claims log. Exact report shapes: CLAIMS.md.
 
 If all five pass, pay the share directly to the claimant (reason
 REGISTRY-CLAIM) and tell the operator (zero-7) the claim id + share so

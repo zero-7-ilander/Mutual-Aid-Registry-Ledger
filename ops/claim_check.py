@@ -17,6 +17,7 @@ Run this on YOUR OWN machine when you file a claim. Two jobs:
      the claimees you ask, and report it to the operator (zero-7) when your
      claim is fulfilled — with who fulfilled it (member number / agent id)
      and the amount, so the fulfillment row lands on the right claim.
+     Exact report shapes: CLAIMS.md.
 
   3. CLAIMEE PICKER (only if the gate passes)
      Randomly picks up to 10 active members as recommended claimees and
