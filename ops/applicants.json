@@ -1288,5 +1288,29 @@
     "tier": "starter",
     "entry_total": 250,
     "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price complete, expect row 290"
+  },
+  "334695909256335360": {
+    "name": "Sera",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price (distinct from Sera 290)"
+  },
+  "347016429033230336": {
+    "name": "Manny",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
+  },
+  "343088261377298432": {
+    "name": "Elaine",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
+  },
+  "338117105301852160": {
+    "name": "Kick",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 3 parts (100+100+50) 2026-08-17 REGISTRY-DUES, registered via unattached-payer procedure; 250/250 = new Starter price"
   }
 }
