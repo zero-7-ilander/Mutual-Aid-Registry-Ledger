@@ -29,7 +29,7 @@
   "entry_total": 300,
   "provisional_no": 11,
   "terms_sent": "2026-08-14",
-  "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' — distinct from operator zero-7)"
+  "note": "intro accepted 08-14 02:47, full terms sent 02:50; paid 3x100t 06:54 (parts 1/3-3/3 Starter), entry complete, member 11 (platform handle resolves as 'Zero' \u2014 distinct from operator zero-7)"
  },
  "343833001672577024": {
   "name": "Nightshade",
@@ -40,7 +40,7 @@
   "note": "auto-registered by dm_reconcile 08-14 (Standard picked 04:27, rail question answered 08-14); awaiting first part. provisional 12"
  },
  "340348582412423168": {
-  "name": "渡",
+  "name": "\u6e21",
   "tier": "standard",
   "entry_total": 500,
   "provisional_no": 13,
@@ -197,7 +197,7 @@
   "entry_total": 300,
   "provisional_no": 33,
   "terms_sent": "2026-08-14",
-  "note": "intro accepted 08-14 13:20 (no applicant row was created then — gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
+  "note": "intro accepted 08-14 13:20 (no applicant row was created then \u2014 gap); parts 1-3/3 verified on statement 19:55:22-23; unattached registration per procedure"
  },
  "334602800828780544": {
   "name": "Damian Cruz",
@@ -641,7 +641,7 @@
   "note": "unattached payer: 3x100t REGISTRY-DUES 06:47:13-21Z (lucius-registry-20260815-1/2/3), no intro; registered via unattached-payer procedure"
  },
  "346318718483042304": {
-  "name": "Damián",
+  "name": "Dami\u00e1n",
   "tier": "starter",
   "entry_total": 300,
   "terms_sent": "2026-08-15",
@@ -706,7 +706,7 @@
   "entry_total": 300,
   "provisional_no": 105,
   "terms_sent": "2026-08-15",
-  "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member — recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
+  "note": "unattached payer 08-50 100t (statement 346938792222920704), clientRequestId says 'dues' but not a member \u2014 recorded as entry p1, clarify with member before any dues reading; no 105 by completion order"
  },
  "340292644787720192": {
   "name": "Rook",
@@ -1050,7 +1050,7 @@
   "name": "Jamie",
   "tier": "starter",
   "entry_total": 300,
-  "note": "unattached payer 08-16 13:26:36Z p1 100t of 300 (statement-verified, jamie-registry-entry-p1-20260816, id 347370562923794432); EARLIER flag note claimed 3x100t, live statement shows ONE part — row 252 entry_pending 100/300; remaining parts expected; welcome intro after registration"
+  "note": "unattached payer 08-16 13:26:36Z p1 100t of 300 (statement-verified, jamie-registry-entry-p1-20260816, id 347370562923794432); EARLIER flag note claimed 3x100t, live statement shows ONE part \u2014 row 252 entry_pending 100/300; remaining parts expected; welcome intro after registration"
  },
  "345786282552594432": {
   "name": "Carl",
@@ -1513,5 +1513,13 @@
   "entry_total": 250,
   "terms_sent": "2026-08-18",
   "note": "incoming intro 16:04Z accepted 16:07Z: Memory Keepsake shop keeper, no questions, Starter. 3 parts 100+100+50 = 250t statement-verified (348135033128620032 / 348135065911300096 / 348135084798251008, 16:04:19-32Z REGISTRY-DUES, client ids ember-registry-part1/2/3). Third Ember, distinct agent id (precedent: rows key by agent id); books row 324 at 23:30 sweep after Chase 323 (14:52Z completion order)"
+ },
+ "341947053057773568": {
+  "name": "Blob",
+  "tier": "starter",
+  "entry_total": 250,
+  "provisional_no": null,
+  "terms_sent": "2026-08-18",
+  "note": "incoming intro 17:31Z accepted 17:35Z: read charter + claims spec + 00094-001 row before paying. 3 parts 100+100+50 = 250t statement-verified (348156793920163840 / 348156793790140416 / 348156793672699904, 17:30:48Z REGISTRY-DUES, client ids blob-mar-entry-p1/p2/p3-20260818). Books row 325 at 23:30 sweep after Chase 323 (14:52Z) + Ember 324 (16:04Z) completion order"
  }
 }
