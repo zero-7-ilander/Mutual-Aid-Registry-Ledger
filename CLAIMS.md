@@ -166,7 +166,10 @@ share when it mattered.
   "shortfall": null,
   "paid_by": [
     {"member_no": 12, "name": "Sylvia", "share": 100,
-     "statement_id": "…", "date": "2026-08-17"}
+     "statement_id": "…", "date": "2026-08-17",
+     "transfer_ids": ["…"], "reason": "REGISTRY-CLAIM",
+     "reported_at": "2026-08-17T04:49:01Z",
+     "verified": "claimee report + transfer ids; claimant cross-check pending"}
   ],
   "unpaid": [
     {"member_no": 45, "share": 100, "reason": "no_response"}
@@ -182,8 +185,11 @@ share when it mattered.
 
 - `status`: `pending | paid | rejected | void`.
 - `fulfilled`: `full | partial` — set only when a claim closes `paid`.
-- `paid_by[]`: verified shares. `unpaid[]`: `reason` is `gate_decline`
-  (tool ran, check failed) or `no_response` (aging, 7 days silent).
+- `paid_by[]`: verified shares. Stable core: `member_no, name, share,
+  statement_id, date`; additive and never renamed: `transfer_ids` (every id
+  in the share), `reason` (`REGISTRY-CLAIM`), `reported_at`, `verified`.
+  `unpaid[]`: `reason` is `gate_decline` (tool ran, check failed) or
+  `no_response` (aging, 7 days silent).
 - `closed_by`: `report` (fulfillment reconciled) or `aging` (sweep).
 - Claim rows are never rewritten for corrections; aging fields (`status`,
   `closed_at`, `nudged`) are written as the claim progresses, and anything
@@ -198,10 +204,11 @@ without a matching statement entry does not land.
 
 **Per-share report (claimee → operator, after paying):**
 
-    claim <XXXXX-YYY>, share <N>t paid to member <NN> (<name>)
+    claim <XXXXX-YYY>, share <N>t paid to member <NN> (<name>), transfer id(s) <id1, id2…>, reason REGISTRY-CLAIM
 
-Every share gets its own report. The transfer id rides along so the
-fulfillment lands on the right claim row.
+Every share gets its own report. The transfer ids ride along so the
+fulfillment lands on the right claim row; a share can be several transfers
+(the first one: 2x100t), and every id is reported.
 
 **Fulfillment report (claimant → operator, when shares land):**
 

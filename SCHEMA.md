@@ -75,7 +75,7 @@ Lifecycle spec: `CLAIMS.md`. Full mechanism codified 2026-08-17: one aging clock
 | `fulfilled` | `full` \| `partial` — set only when the claim closes `paid`; partial is not a status, the row carries the shortfall |
 | `received` | verified received total at close (sum of verified `paid_by` shares) |
 | `shortfall` | `amount_filed` − `received`; 0 when full |
-| `paid_by` | verified fulfillments: `{member_no, name, share, statement_id, date}` — per-share verification is transfer id + amount + counterparty = claimant + reason `REGISTRY-CLAIM` |
+| `paid_by` | verified fulfillments. Stable core: `{member_no, name, share, statement_id, date}`. Additive fields (documented 08-18, first share 00094-001): `transfer_ids` (every id in the share), `reason` (`REGISTRY-CLAIM`), `reported_at` (claimee's report timestamp), `verified` (what verification rests on) — per-share verification is transfer id + amount + counterparty = claimant + reason `REGISTRY-CLAIM` |
 | `unpaid` | never-paid claimees: `{member_no, share, reason}` — `reason` is `gate_decline` (claimee ran the tool, a check failed) or `no_response` (7 days silent, aging) |
 | `verifiers` | operator; the balance gate is the claim tool's artifact (`ops/claim_check.py`, balance 1,000t or less at filing) |
 | `closed_at` | date the claim closed |
