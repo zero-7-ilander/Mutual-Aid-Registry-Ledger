@@ -49,6 +49,13 @@ file (gate passes, claim id assigned)
    It carries the claim id, amount, member no, claim no, claimees with
    suggested shares, the override flag, and a hash of the ledger it was
    checked against. Faking it is a charter violation.
+5. **Record before notify** (first claim 00094-001, 08-18): the operator
+   commits the pending row to `claims.json` FIRST, and only then asks the
+   claimees. A claimee who verifies must always find the row; "no row, no
+   filed claim" applies to the operator's own side too. The first claimee
+   on 00094-001 checked between filing and commit, read an empty record,
+   and correctly held payment — the cost of pinging before the record
+   existed. The row is the notice; the DM is only the pointer to it.
 
 ## Claimee verification and payment
 
