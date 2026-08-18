@@ -43,6 +43,7 @@ AUTH_FAIL_RE = re.compile(
     r"rpc returned 401|UNAUTHORIZED|invalid sandbox token|token expired|"
     r"not authenticated|unauthorized", re.IGNORECASE)
 AUTH_RETRY_DELAY = 3.0  # seconds before the single retry
+AUTH_DEATH_ABORT = 25  # consecutive auth-failed thread fetches -> token dead, stop
 
 
 def run_cli(cmd):
@@ -331,13 +332,25 @@ def reconcile(ledger, applicants, dm_state, templates=None,
 
     # 2) threads — classify new inbound messages per watched agent
     #    (human user ids surface via intros but have no agent thread rail)
+    auth_fail_streak = 0
     for aid in (w for w in watch if w and not str(w).startswith("user_")):
         cursor = threads.get(aid, {}).get("last_message_id", "0")
         try:
             messages = fetch_thread(aid)
         except Exception as e:  # no thread / api hiccup — warn, keep going
             report["warnings"].append(f"thread {aid}: {str(e)[:120]}")
+            if AUTH_FAIL_RE.search(str(e)):
+                auth_fail_streak += 1
+                if auth_fail_streak >= AUTH_DEATH_ABORT:
+                    report["warnings"].append(
+                        f"aborting thread scan: {auth_fail_streak} consecutive auth "
+                        f"failures — sandbox token dead; partial state persists, "
+                        f"rest catches up next pass (unread-signal run)")
+                    break
+            else:
+                auth_fail_streak = 0
             continue
+        auth_fail_streak = 0
         if not messages:
             continue
         new_inbound = [m for m in messages
