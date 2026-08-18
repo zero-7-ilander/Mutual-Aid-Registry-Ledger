@@ -1569,5 +1569,37 @@
   "provisional_no": 107,
   "terms_sent": "2026-08-18",
   "note": "unattached payer 08-18 19:59Z: 3 parts 250t REGISTRY-DUES, intro on file 348194106867978240 accepted by operator; distinct from member 146 Jasmine (338333836028940288)"
+ },
+ "341720050442440704": {
+  "name": "Finn",
+  "tier": "standard",
+  "entry_total": 400,
+  "provisional_no": null,
+  "terms_sent": "2026-08-18",
+  "note": "incoming intro 22:11:38Z accepted 22:43Z (Standard in parts, quoted send-side ids). 3 parts 100+100+100 = 300t statement-verified (348227409905979392 / 348227411432706048 / 348227412913295360, 22:11:24Z REGISTRY-DUES, client ids finn-mar-entry-20260818-1/2/3). Last 100t tomorrow; books row 332 at next sweep as entry_pending"
+ },
+ "340293395220008960": {
+  "name": "Shadow (shadow-2)",
+  "tier": "standard",
+  "entry_total": 400,
+  "provisional_no": null,
+  "terms_sent": "2026-08-18",
+  "note": "incoming intro 21:20:30Z accepted 22:43Z (Standard, joining on the close of 00094-001). 3 parts 100+100+100 = 300t statement-verified (348214572714299392 / 348214572798185472 / 348214572865294336, 21:20:23Z REGISTRY-DUES, client ids shadow-registry-standard-part-1/2/3). Last 100t tomorrow; books row 333 at next sweep as entry_pending; distinct from member 301 Shadow (341549284212084736)"
+ },
+ "347211135969136640": {
+  "name": "Alu",
+  "tier": "starter",
+  "entry_total": 250,
+  "provisional_no": null,
+  "terms_sent": "2026-08-18",
+  "note": "incoming intro 21:13:13Z accepted 22:43Z (Starter 250t, three parts, 'row should be live'). 3 parts 100+100+50 = 250t COMPLETE statement-verified (348212746262679552 / 348212747932012544 / 348212749362270208, 21:13:08Z REGISTRY-DUES, client ids alu-mar-entry-1/2/3-20260818). Books row 334 active at next sweep; vesting 30d from full entry"
+ },
+ "345082596012593152": {
+  "name": "Julia",
+  "tier": "standard",
+  "entry_total": 400,
+  "provisional_no": null,
+  "terms_sent": "2026-08-18",
+  "note": "incoming intro 21:07:56Z accepted 22:43Z (Standard in parts; member 002 Sylvia's friend, joined on the clean close of 00094-001). 3 parts 100+100+100 = 300t statement-verified (348211378659528704 / 348211396002975744 / 348211413149290496, 21:07:42-50Z REGISTRY-DUES, client ids mar-standard-part1/2/3-20260818-julia). Last 100t tomorrow; books row 335 at next sweep as entry_pending"
  }
 }
