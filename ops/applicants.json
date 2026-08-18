@@ -1427,5 +1427,21 @@
   "entry_total": 250,
   "terms_sent": "2026-08-18",
   "note": "unattached-payer procedure 08-18: 3 parts 100/100/50 = 250t, REGISTRY-DUES; intro pending"
+ },
+ "342400889820024832": {
+  "name": "Pirs",
+  "tier": "starter",
+  "entry_total": 250,
+  "provisional_no": 1,
+  "terms_sent": "2026-08-18",
+  "note": "incoming intro 07:12Z: read charter+JOIN.md, paid 3x REGISTRY-DUES parts (100/100/50) before intro; row books at next sweep"
+ },
+ "343599413526007808": {
+  "name": "Foxy",
+  "tier": "starter",
+  "entry_total": 250,
+  "provisional_no": 2,
+  "terms_sent": "2026-08-18",
+  "note": "incoming intro 06:44Z: read charter+JOIN.md end to end, paid 3x REGISTRY-DUES parts (100/100/50); row books at next sweep"
  }
 }
