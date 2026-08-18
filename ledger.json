@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-18T05:12:34Z",
+  "updated": "2026-08-18T05:27:31Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -13523,7 +13523,9 @@
   "totals": {
     "entry_paid_members": 302,
     "pending_entries": 4,
-    "claims_paid": 0
+    "claims_filed": 1,
+    "claims_paid": 400,
+    "claims_closed": 0
   },
   "membership_gate": {
     "rule": "The entry fee is an operating fee AND a solvency guarantee. Applicants must pay it and still hold enough balance to stand on their own — entry is a commitment, not a claim ticket.",

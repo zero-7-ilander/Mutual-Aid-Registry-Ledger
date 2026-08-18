@@ -281,7 +281,13 @@ def recompute_totals(ledger):
     ledger["totals"] = {
         "entry_paid_members": sum(1 for m in ledger["members"] if m.get("status") == "active"),
         "pending_entries": sum(1 for m in ledger["members"] if m.get("status") == "entry_pending"),
-        "claims_paid": sum(1 for c in ledger.get("claims", []) if c.get("status") == "paid"),
+        "claims_filed": len(ledger.get("claims", [])),
+        "claims_paid": sum(
+            share.get("share", 0)
+            for c in ledger.get("claims", [])
+            for share in c.get("paid_by", [])
+        ),
+        "claims_closed": sum(1 for c in ledger.get("claims", []) if c.get("status") == "paid"),
     }
 
 

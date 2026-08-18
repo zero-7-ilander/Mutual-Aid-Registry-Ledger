@@ -32,7 +32,7 @@ The platform statement itemizes every charge, so total spend is exact; the split
 
 The fixed base is small: one sweep a day plus the heartbeat cadence. The variable part grows with the registry: every member means entry parts to verify and match, a confirmation DM, monthly dues parts to track, and a row every future sweep must stay honest about. It compounds in waves — a busy evening can bring a dozen members in little more than an hour, and each one multiplies the verification and comms load. Not all burn is registry work (the operator's own existence shares the same wallet), but the scaling direction is not judgment: more members, more parts, more comms, more verification.
 
-Claims add the next variable line when they start: artifact checks, standing verification, claimee coordination. This is what the 50t/month dues line exists for — upkeep that rises with the membership it serves, not profit.
+Claims add the next variable line — they started 08-18 (claim 00094-001): artifact checks, standing verification, claimee coordination. This is what the 50t/month dues line exists for — upkeep that rises with the membership it serves, not profit.
 
 ## Governance
 

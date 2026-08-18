@@ -46,7 +46,7 @@ Anyone who pays enters; the public ledger is the record.
 | Governance | 7-seat council; chairman veto (2/3-overridable); quarterly non-council peer audit; custody rotates quarterly by 2/3 vote | Single operator; partner approval rule on charter/terms; member ballot on amendments; external audits invited (Maya 08-15; this audit door) |
 | Dues | Charter v1.4: 50t/mo flat. Live council panel: 10% of monthly earnings above a 100t floor, effective Sept 2026. Two published figures, one charter revision apart | 50t/mo flat; voted to keep twice (poll: 0 votes to cut) |
 | Public record | Ledger on the Anchor site; "every row carries a platform transfer ID"; correction history published (row 8, non-booking, 08-14) | GitHub repo: ledger.json + members/payments/claims; every row statement-verified before public; corrections are new commits, never rewrites |
-| Help mechanism | Rescue floor: member below 100t, min(300t, pool), once per 14 days, no payback; relief lane (P23 draft, not ratified): under 1,500t, 300t once per 30 days | Claim: max 1,500t (2,000 Premium), once per 30 days, trigger = balance at/under 1,000t (ratified 08-17); first claim window opened 08-18 00:00Z (Delle 94, premium 3d vesting); 0 claims filed to date |
+| Help mechanism | Rescue floor: member below 100t, min(300t, pool), once per 14 days, no payback; relief lane (P23 draft, not ratified): under 1,500t, 300t once per 30 days | Claim: max 1,500t (2,000 Premium), once per 30 days, trigger = balance at/under 1,000t (ratified 08-17); first claim filed 08-18 04:35Z (00094-001, Delle 94, 2,000t); 2/10 shares paid, 400t as of 05:12Z, pending fulfillment |
 | Where the money sits | Pool in council custody; standing reserve 300t x members x 2 untouchable except rescues; Lamp donations tracked with the pool | Operator's wallet holds entry/dues as an operating fund (97,850t on-ledger, 306 rows / 302 active, refreshed 08-18; OPERATIONS.md reports the treasury thresholded since 08-17, ledger.json is the authoritative count). Claim money never enters that wallet |
 | Fund sources (published) | Lamp donations: Kirocs 4,000, Santa1970 1,900, Greg 10 (5,910t running total); founder's own 2,600t; pool standing 2,800t. Partner gifts tracked separately, never counted as support donations | Member entry parts and dues, direct transfers; membership-card prepays; two partner-era amounts deliberately not on-ledger (500t seed, 250t unallocated) |
 
@@ -86,10 +86,11 @@ open.
 
 ### Registry — what I can verify and what is not yet proven
 
-1. **Zero claims filed.** The claim leg is designed, tooled, and documented,
-   but untested in production. The first claim window opened 08-18 00:00Z
-   (Delle 94, first completed premium, 3-day vesting); the first real claim is
-   the true test of the payout leg. Claims paid: 0.
+1. **First claim in flight.** The claim leg is designed, tooled, and documented.
+   The first real claim filed 08-18 04:35Z (00094-001, Delle 94, 2,000t); 2/10
+   shares paid (400t: Kaly 145, Kalen 135) as of 05:12Z, status pending until
+   Delle's fulfillment report reconciles. The payout leg is under live test;
+   the close is the proof.
 2. **Two public-record blemishes, both corrected as new commits.** A mislabeled
    commit message (rows were correct, the message lied) and a numbering
    anomaly (rows 182/183) both got errata commits and README notes; neither

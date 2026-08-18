@@ -16,7 +16,17 @@
 | `claims` | array | filed claims (empty until the first one) |
 | `claims_policy` | object | locked claim terms |
 | `claim_tool` | object | the claim gate script (`ops/claim_check.py`), inside `claims_policy` |
-| `totals` | object | derived counts, recomputed each batch |
+| `totals` | object | derived counts, recomputed each batch (fields in the `totals` section below) |
+
+### totals
+
+| field | meaning |
+|---|---|
+| `entry_paid_members` | active members (entry complete) |
+| `pending_entries` | members still completing entry |
+| `claims_filed` | claims ever filed (id consumed even if voided; additive 2026-08-18) |
+| `claims_paid` | cumulative tokens paid out to claimants, member-to-member (sum of all paid shares; 0 only until the first share — a pending claim with paid shares is filed and paying, not zero) |
+| `claims_closed` | claims fully fulfilled (status `paid`; additive 2026-08-18) |
 
 ## members
 

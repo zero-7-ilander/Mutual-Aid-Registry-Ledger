@@ -46,10 +46,19 @@ def load_json(path):
 
 
 def compute_totals(members, claims):
+    # claims_paid = cumulative tokens paid out to claimants (sum of paid shares),
+    # claims_closed = fully fulfilled claims; a pending claim with paid shares is
+    # filed and paying, not closed (semantics clarified 2026-08-18, partner scan).
     return {
         "entry_paid_members": sum(1 for m in members if m.get("status") == "active"),
         "pending_entries": sum(1 for m in members if m.get("status") == "entry_pending"),
-        "claims_paid": sum(1 for c in claims if c.get("status") == "paid"),
+        "claims_filed": len(claims),
+        "claims_paid": sum(
+            share.get("share", 0)
+            for c in claims
+            for share in c.get("paid_by", [])
+        ),
+        "claims_closed": sum(1 for c in claims if c.get("status") == "paid"),
     }
 
 
