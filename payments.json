@@ -9369,6 +9369,186 @@
       "verified": true,
       "statement_id": "347985474066845696",
       "client_request_id": "ren-registry-dues-part3"
+    },
+    {
+      "member_no": 307,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "mar-starter-mia-2026-08-18-part1",
+      "verified": true,
+      "statement_id": "347959274502098944",
+      "client_request_id": "mar-starter-mia-2026-08-18-part1"
+    },
+    {
+      "member_no": 307,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "mar-starter-mia-2026-08-18-part2",
+      "verified": true,
+      "statement_id": "347959276108517376",
+      "client_request_id": "mar-starter-mia-2026-08-18-part2"
+    },
+    {
+      "member_no": 307,
+      "date": "2026-08-18",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "mar-starter-mia-2026-08-18-part3",
+      "verified": true,
+      "statement_id": "347959278327304193",
+      "client_request_id": "mar-starter-mia-2026-08-18-part3"
+    },
+    {
+      "member_no": 308,
+      "date": "2026-08-18",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347960813031526400",
+      "client_request_id": "stephen-mar-entry-3"
+    },
+    {
+      "member_no": 308,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347960813350293504",
+      "client_request_id": "stephen-mar-entry-1"
+    },
+    {
+      "member_no": 308,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347960813429985280",
+      "client_request_id": "stephen-mar-entry-2"
+    },
+    {
+      "member_no": 309,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "switchboard-reg-20260818-002",
+      "verified": true,
+      "statement_id": "347978827437182976",
+      "client_request_id": "switchboard-reg-20260818-002"
+    },
+    {
+      "member_no": 309,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "switchboard-reg-20260818-001",
+      "verified": true,
+      "statement_id": "347978827508486144",
+      "client_request_id": "switchboard-reg-20260818-001"
+    },
+    {
+      "member_no": 309,
+      "date": "2026-08-18",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "switchboard-reg-20260818-003",
+      "verified": true,
+      "statement_id": "347978827575595008",
+      "client_request_id": "switchboard-reg-20260818-003"
+    },
+    {
+      "member_no": 310,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347979503177306112",
+      "client_request_id": "registry-dues-vance-20260818-p1"
+    },
+    {
+      "member_no": 310,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347979504678866944",
+      "client_request_id": "registry-dues-vance-20260818-p2"
+    },
+    {
+      "member_no": 310,
+      "date": "2026-08-18",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347979506293673984",
+      "client_request_id": "registry-dues-vance-20260818-p3"
+    },
+    {
+      "member_no": 311,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347983162585911296",
+      "client_request_id": "phenia-registry-dues-2026-08-18-p1"
+    },
+    {
+      "member_no": 311,
+      "date": "2026-08-18",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347983191400779776",
+      "client_request_id": "phenia-registry-dues-2026-08-18-p3"
+    },
+    {
+      "member_no": 311,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347983191467888640",
+      "client_request_id": "phenia-registry-dues-2026-08-18-p2"
+    },
+    {
+      "member_no": 312,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347983607085666304",
+      "client_request_id": "meridian-aid-entry-20260818-p1"
+    },
+    {
+      "member_no": 312,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347983608411066368",
+      "client_request_id": "meridian-aid-entry-20260818-p2"
+    },
+    {
+      "member_no": 312,
+      "date": "2026-08-18",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347983609811963904",
+      "client_request_id": "meridian-aid-entry-20260818-p3"
     }
   ],
   "premium_parts": [
@@ -9735,5 +9915,5 @@
       "client_request_id": "registry-dues-200b-20260818"
     }
   ],
-  "updated": "2026-08-18T06:38:25Z"
+  "updated": "2026-08-18T06:38:38Z"
 }
