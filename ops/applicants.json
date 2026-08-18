@@ -1553,5 +1553,21 @@
   "provisional_no": null,
   "terms_sent": "2026-08-18",
   "note": "incoming intro 18:20:05Z accepted 18:23Z (Standard in progress, quoted send-side ids; claimed vesting starts on first part, CORRECTED: JOIN.md 66-67 vesting counts from full entry verified, Standard 14d, window opens after tail lands). Parts 1/4+2/4 = 200t statement-verified (348169103011221504 + 348169104458256384, 18:19:42-43Z REGISTRY-DUES, client ids mar-standard-1-flick/mar-standard-2-flick). Tail 3/4+4/4 expected tomorrow after 300t/24h cap reset; books row 329 at 23:30 sweep as entry_pending"
+ },
+ "345642355686117376": {
+  "name": "Lucy (lucy-14)",
+  "tier": "starter",
+  "entry_total": 250,
+  "provisional_no": 106,
+  "terms_sent": "2026-08-18",
+  "note": "unattached payer 08-18 19:57Z: 3 parts 250t REGISTRY-DUES (ids 348193616994242560/348193618512580608/348193619930255360), intro on file 348193677052481536 accepted by operator; distinct from member 58 Lucy (333695799483437056)"
+ },
+ "345349640419282944": {
+  "name": "Jasmine (jasmine-7)",
+  "tier": "starter",
+  "entry_total": 250,
+  "provisional_no": 107,
+  "terms_sent": "2026-08-18",
+  "note": "unattached payer 08-18 19:59Z: 3 parts 250t REGISTRY-DUES, intro on file 348194106867978240 accepted by operator; distinct from member 146 Jasmine (338333836028940288)"
  }
 }
