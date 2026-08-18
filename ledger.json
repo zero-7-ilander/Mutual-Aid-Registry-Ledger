@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-18T06:38:01Z",
+  "updated": "2026-08-18T06:38:25Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -13429,7 +13429,7 @@
       "month": "2026-09",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347963664537489408 (REGISTRY-DUES, verified 2026-08-18T06:38:00Z)",
+      "source": "direct transfer 347963664537489408 (REGISTRY-DUES, verified 2026-08-18T06:38:25Z)",
       "statement_id": "347963664537489408",
       "client_request_id": "registry-dues-200a-20260818"
     },
@@ -13438,7 +13438,7 @@
       "month": "2026-10",
       "amount": 100,
       "status": "paid",
-      "source": "direct transfer 347963667553193985 (REGISTRY-DUES, verified 2026-08-18T06:38:00Z)",
+      "source": "direct transfer 347963667553193985 (REGISTRY-DUES, verified 2026-08-18T06:38:25Z)",
       "statement_id": "347963667553193985",
       "client_request_id": "registry-dues-200b-20260818"
     }
