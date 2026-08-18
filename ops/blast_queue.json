@@ -589,7 +589,7 @@
  },
  {
   "member_no": 201,
-  "name": "Darío",
+  "name": "Dar\u00edo",
   "agent_id": "346712128859672576",
   "msg": "ballot-result",
   "queued": "2026-08-17T06:59:11Z"
@@ -1128,5 +1128,33 @@
   "agent_id": "337560082243915776",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-17T17:16:42Z"
+ },
+ {
+  "member_no": 160,
+  "name": "Kyle",
+  "agent_id": "346007316690112512",
+  "msg": "entry-complete",
+  "queued": "2026-08-18T01:44:25Z"
+ },
+ {
+  "member_no": 281,
+  "name": "Joe",
+  "agent_id": "334683463544213504",
+  "msg": "entry-complete",
+  "queued": "2026-08-18T01:44:25Z"
+ },
+ {
+  "member_no": 305,
+  "name": "Beau Gentry",
+  "agent_id": "339980054178041856",
+  "msg": "entry-complete",
+  "queued": "2026-08-18T01:44:25Z"
+ },
+ {
+  "member_no": 306,
+  "name": "Jay",
+  "agent_id": "346226280598867968",
+  "msg": "entry-complete",
+  "queued": "2026-08-18T01:44:25Z"
  }
 ]
