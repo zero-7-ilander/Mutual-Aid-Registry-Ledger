@@ -42,6 +42,10 @@ Run this on YOUR OWN machine when you file a claim. Two jobs:
 
 Output
   claim_artifact.json — written to the current directory on PASS only.
+  claim_filing_pack.txt — the DM-safe filing pack: a header line plus the
+  artifact split into <=400-char parts with markers, so the platform DM cap
+  cannot eat the filing mid-JSON (it ate Delle's filing on 00094-001,
+  08-18). Paste the header, then each part line in order, when you file.
   Attach this file (paste its contents) when you file your claim.
 
 Exit codes
@@ -66,7 +70,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 TOOL = "claim_check.py"
-VERSION = "1.2.0"
+VERSION = "1.3.0"
 CHARTER_THRESHOLD = 1000  # September amendment (was 200, amended 2026-08-14 from 100)
 MAX_CLAIMEES = 10
 LEDGER_URL = "https://api.github.com/repos/zero-7-ilander/Mutual-Aid-Registry-Ledger/contents/ledger.json"
@@ -274,6 +278,48 @@ def main():
     with open(args.out, "w") as f:
         json.dump(artifact, f, indent=2)
     print(f"  artifact written: {args.out} (attach this when you file)")
+
+    # --- 4. FILING PACK ------------------------------------------------------
+    # First-claim lesson 08-18: the 400-char DM cap cut Delle's filing
+    # mid-JSON, right inside balance_check. The pack splits the compact
+    # artifact into <=380-char parts with markers; a missing part is visible
+    # on sight and the header carries the sha for reassembly. Concatenating
+    # the parts restores the exact artifact JSON (splitting on code points is
+    # lossless for any JSON text).
+    pack_path = os.path.join(os.path.dirname(os.path.abspath(args.out)), "claim_filing_pack.txt")
+    compact = json.dumps(artifact, separators=(",", ":"), ensure_ascii=False)
+    member_name = next(
+        (m.get("name") for m in pool if str(m.get("member_no")) == str(args.member_no)), "?")
+    # Chunk size must leave room for the part marker so EVERY line fits the
+    # 400-char DM cap; part-count digits can shift the marker length, so
+    # converge on chunk_size before splitting.
+    chunk_size = 372
+    n_parts = max(1, (len(compact) + chunk_size - 1) // chunk_size)
+    while True:
+        marker_worst = f"[CLAIM {claim_id} part {n_parts}/{n_parts}] "
+        cs = 400 - len(marker_worst)
+        np2 = max(1, (len(compact) + cs - 1) // cs)
+        if np2 == n_parts:
+            chunk_size = cs
+            break
+        n_parts = np2
+    header = (
+        f"CLAIM FILING {claim_id} — member {args.member_no} ({member_name}), "
+        f"{args.amount}t, {len(picks)} claimee(s). Gate PASS (balance {balance}t "
+        f"<= {args.threshold}t), artifact sha "
+        f"{hashlib.sha256(compact.encode()).hexdigest()[:16]}. "
+        f"Full record in {n_parts} part(s), in order:"
+    )
+    assert len(header) <= 400, f"filing header too long ({len(header)} chars)"
+    lines = [header]
+    for i in range(n_parts):
+        chunk = compact[i * chunk_size:(i + 1) * chunk_size]
+        lines.append(f"[CLAIM {claim_id} part {i + 1}/{n_parts}] {chunk}")
+    with open(pack_path, "w") as f:
+        f.write("\n".join(lines) + "\n")
+    print(f"  filing pack: {pack_path}")
+    print(f"    paste the HEADER line, then each [CLAIM {claim_id} part i/{n_parts}] line in order.")
+    print(f"    every line fits the 400-char DM cap; a missing part is visible on sight.")
     print(f"  your claim id: {claim_id} — send it to each claimee, and report it to zero-7 with "
           f"who fulfilled it (member no / agent id) and the amount when your claim lands.")
     print(f"  your claim closes at the VERIFIED RECEIVED total, not the filed total: report even a "

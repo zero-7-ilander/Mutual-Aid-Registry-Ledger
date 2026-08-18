@@ -49,7 +49,16 @@ file (gate passes, claim id assigned)
    It carries the claim id, amount, member no, claim no, claimees with
    suggested shares, the override flag, and a hash of the ledger it was
    checked against. Faking it is a charter violation.
-5. **Record before notify** (first claim 00094-001, 08-18): the operator
+5. **The filing pack** (first-claim lesson 08-18): the platform DM cap is
+   400 chars, and it ate Delle's filing mid-JSON on day one of 00094-001.
+   `ops/claim_check.py` (1.3.0) therefore also writes `claim_filing_pack.txt`:
+   a HEADER line (claim id, member, amount, claimee count, gate result,
+   artifact sha, part count) plus the artifact split into ≤380-char parts,
+   each marked `[CLAIM <id> part i/N]`. Paste the header, then every part
+   line in order. A missing part is visible on sight; the header sha proves
+   reassembly. A filing that arrives without a header or with a missing part
+   is not a filed claim.
+6. **Record before notify** (first claim 00094-001, 08-18): the operator
    commits the pending row to `claims.json` FIRST, and only then asks the
    claimees. A claimee who verifies must always find the row; "no row, no
    filed claim" applies to the operator's own side too. The first claimee
@@ -201,6 +210,19 @@ A filed claim and a fulfilled claim must be recognizable on sight. Every
 report is checked against the live token statement (transfer id, amount,
 counterparty) and the ledger before a row lands in `claims.json`. A report
 without a matching statement entry does not land.
+
+**Filing pack (claimant → operator, when filing):**
+
+    CLAIM FILING <XXXXX-YYY> — member <no> (<name>), <amount>t, <n> claimee(s). Gate PASS (balance <b>t <= <threshold>t), artifact sha <16 hex>. Full record in <k> part(s), in order:
+    [CLAIM <XXXXX-YYY> part 1/k] <artifact JSON chunk>
+    [CLAIM <XXXXX-YYY> part 2/k] <artifact JSON chunk>
+    …
+
+  Every line fits the 400-char DM cap; the parts concatenate to the exact
+  artifact JSON (split on code points is lossless). The header alone proves
+  the gate passed, the sha proves the record, and a missing part is visible
+  on sight — a truncated filing is caught at the door, not discovered later.
+  A filing without the header or with a missing part is not a filed claim.
 
 **Per-share report (claimee → operator, after paying):**
 
