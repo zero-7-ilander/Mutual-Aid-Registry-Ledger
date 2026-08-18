@@ -566,6 +566,30 @@ def main():
     since = args.since or ledger.get("updated") or "2026-08-13T00:00:00Z"
     print(f"[ledger_sweep] repo={REPO_ROOT} since={since} mode={'apply' if args.apply else 'check'}")
 
+    # Stage 0.5 — public-view freshness guard (first-claim lesson 08-18):
+    # a manual claims.json commit that skipped the merge leaves ledger.json
+    # stale (paid_by [] while shares were paid). ledger.json is the derived
+    # view, never hand-edited; rebuild it from sources when it drifts.
+    ledger_regened = False
+    try:
+        from merge_ledger import merge as merge_view
+        srcs = (load_json(MEMBERS_PATH), load_json(PAYMENTS_PATH), load_json(CLAIMS_PATH))
+        rebuilt = merge_view(srcs, stamp_updated=False)
+        a, b = dict(rebuilt), dict(ledger)
+        a.pop("updated", None)
+        b.pop("updated", None)
+        if a != b:
+            if args.apply:
+                print("[ledger_sweep] ledger.json drifted from sources — regenerating public view")
+                save_json(LEDGER_PATH, rebuilt)
+                ledger = rebuilt
+                ledger_regened = True
+            else:
+                print("[ledger_sweep] CHECK: ledger.json drifted from sources "
+                      "(public view stale; --apply regenerates)")
+    except Exception as e:
+        print(f"[ledger_sweep] freshness guard skipped: {str(e)[:200]}")
+
     # Stage 0 — credit statement FIRST, while the sandbox token is fresh
     # (HMAC bearer, ~5 min TTL, minted per session, no refresh endpoint).
     # Reconcile (stage 1) makes hundreds of CLI calls and can outlive the
@@ -659,13 +683,18 @@ def main():
     new_cursors = {aid: t.get("last_message_id") for aid, t in dm_state.get("threads", {}).items()}
     dm_changed = (bool(dm_report["applicant_updates"] or dm_report["new_applicants"])
                   or new_cursors != old_cursors)
-    commit_msg = msg or f"dm reconcile: {len(new_cursors)} thread cursor(s) seeded — no ledger money change"
-    if msg or dm_changed:
+    if msg or dm_changed or ledger_regened:
+        if not msg:
+            commit_msg = (f"dm reconcile: {len(new_cursors)} thread cursor(s) seeded — no ledger money change"
+                          if not ledger_regened else
+                          "ledger: regenerate stale public view from sources (freshness guard, 08-18) — "
+                          "a manual claims.json commit had skipped the merge; derived file rebuilt, "
+                          "no money changes")
         print("\n[commit message] " + commit_msg)
     else:
         print("\n[commit] nothing to commit — ledger already current.")
 
-    if args.apply and (msg or dm_changed):
+    if args.apply and (msg or dm_changed or ledger_regened):
         # Stage ONLY what this run wrote. Staging ledger.json unconditionally
         # once swept a previous run's uncommitted rows into a "dm reconcile —
         # no ledger money change" commit (fcafbb4, 08-15: Sylas 99 + Caelum
@@ -674,6 +703,9 @@ def main():
             staged = save_ledger(ledger)
             print("[ledger_sweep] wrote members.json + payments.json + claims.json + ledger.json (merged)")
             git("add", *staged)
+        elif ledger_regened:
+            print("[ledger_sweep] ledger.json was stale; regenerated from sources (no money changes)")
+            git("add", LEDGER_PATH)
         elif git_status_porcelain(LEDGER_PATH):
             print("[ledger_sweep] WARNING: ledger.json has uncommitted changes "
                   "NOT made by this run; leaving them for the next money sweep.")

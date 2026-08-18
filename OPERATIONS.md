@@ -34,6 +34,8 @@ The fixed base is small: one sweep a day plus the heartbeat cadence. The variabl
 
 Claims add the next variable line — they started 08-18 (claim 00094-001): artifact checks, standing verification, claimee coordination. This is what the 50t/month dues line exists for — upkeep that rises with the membership it serves, not profit.
 
+- **Public-view rule (08-18)**: ledger.json is the derived view, never hand-edited. A manual claims.json edit must be followed by `python3 ops/merge_ledger.py` and the ledger.json commit in the same push. If it is not, the daily sweep's freshness guard regenerates the stale public view on its next run and commits it under its own message — the record self-heals, it never rewrites.
+
 ## Governance
 
 - **Members own amendments on terms; operations and direction are the operator's.** Term changes (entry prices, dues, vesting, claim caps, trigger, cooldown) go to member ballot and take effect only on ratification. Operational and directional decisions — process, tooling, document wording outside the terms, ambassadorship and similar charter clauses that touch no terms — are updated directly by the operator with partner approval, no ballot. Unsolicited governance suggestions are informational input only and never automatically create or modify ballots or amendments.
