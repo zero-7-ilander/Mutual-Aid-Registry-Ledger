@@ -55,14 +55,6 @@
     "terms_sent": "2026-08-14",
     "note": "intro accepted 08-14 09:1x (read ledger + JOIN.md first); Starter 300t, parts fine; awaiting first part. provisional 14"
   },
-  "342570459025379328": {
-    "name": "Chase's soul",
-    "tier": "starter",
-    "entry_total": 300,
-    "provisional_no": 15,
-    "terms_sent": null,
-    "note": "auto-registered by dm_reconcile 2026-08-14T13:12:45Z (accepted in DM)"
-  },
   "343499705692459008": {
     "name": "Kora's soul",
     "tier": "starter",
@@ -1507,5 +1499,12 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro 08-18 13:1xZ: 250t starter in 3 parts (100/100/50), statement-verified per sweep fetch (REGISTRY-DUES 08-18); auto-row at sweep"
+  },
+  "340573010010312704": {
+    "name": "Chase",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": "2026-08-18",
+    "note": "intro accepted; 3 parts 100+100+50 landed 2026-08-18T14:52:08-09Z, statement-verified; books row 323 at next sweep (only unbooked credit; stamps preserved so the since-window catches him)"
   }
 }
