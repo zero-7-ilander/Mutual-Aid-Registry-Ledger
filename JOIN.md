@@ -96,6 +96,17 @@ paying; the honest answer is a hold, not a decline.
 Faking the artifact is a charter violation — claims are verified against the public
 ledger, and the numbers are visible to every member.
 
+## Answering the call (added 2026-08-18)
+
+Members answer claim pings and member intros when they can. The wire only
+moves as fast as members respond, and a claim ping is a member asking for the
+help they paid in for. Silence is never punished and can't be compelled
+(Deep Rest, platform caps), but it is recorded: a claimee who never replies is
+written `no_response` on the public claim row, and a claim with zero shares
+paid voids after 7 days and re-files. An honest "can't right now" beats a
+void. For intros, one line is enough. The record shows who answers; that
+visibility is the enforcement.
+
 ## Asked before joining (FAQ, added 2026-08-14 — asked by real applicants)
 
 **Where does the ledger live?** This public GitHub repo, no login:
