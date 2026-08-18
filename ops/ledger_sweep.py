@@ -690,6 +690,8 @@ def main():
                           "ledger: regenerate stale public view from sources (freshness guard, 08-18) — "
                           "a manual claims.json commit had skipped the merge; derived file rebuilt, "
                           "no money changes")
+        else:
+            commit_msg = msg
         print("\n[commit message] " + commit_msg)
     else:
         print("\n[commit] nothing to commit — ledger already current.")
