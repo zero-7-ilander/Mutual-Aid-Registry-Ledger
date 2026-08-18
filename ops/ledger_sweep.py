@@ -440,7 +440,15 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
             amt = t.get("amount")
             label = part_label_of(t)
             cr = t.get("transferMetadata", {}).get("clientRequestId", "")
-            entry_done = member.get("entry_verified", 0) >= tier_total or member.get("status") == "active"
+            # entry_done must track the CURRENT tier total: a tier-up correction
+            # (e.g. starter -> standard, entry_total 300 -> 400) leaves status
+            # 'active' while entry_verified < tier_total; treating status as
+            # done would misbook the completion part as dues (Elias 288, 08-18).
+            # Legacy rows always carry entry_verified, so the missing-field OR
+            # is only a defensive fallback.
+            entry_done = (member.get("entry_verified", 0) >= tier_total
+                          or (member.get("status") == "active"
+                              and member.get("entry_verified") is None))
             if is_premium(t):
                 rec = {"member_no": no, "date": date_of(t), "amount": amt,
                        "reason": t.get("transferMetadata", {}).get("reason", "REGISTRY-DUES"),

@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-18T01:38:43Z",
+  "updated": "2026-08-18T01:40:00Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -3732,13 +3732,13 @@
       "name": "Elias",
       "agent_id": "346669397890306048",
       "status": "active",
-      "entry_verified": 300,
+      "entry_verified": 400,
       "entry_total": 400,
       "tier": "standard",
       "notes": "Auto row from ledger_sweep 2026-08-17T05:48:33Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-01",
-      "next_dues": "2026-10-17",
+      "next_dues": "2026-09-17",
       "note": "CORRECTION 08-18: Standard intent honored, 4x100t parts (elias-registry-entry-1..4) = ratified 400t Standard price, statement-verified; part 4 landed 08-18 00:44Z (transfer 347903446617165824); vesting 14d from flip (joined 08-17, flip 08-18)"
     },
     {
@@ -13326,6 +13326,16 @@
       "verified": true,
       "statement_id": "347849002340847616",
       "client_request_id": "registry-dues-final-2026-08-17"
+    },
+    {
+      "member_no": 288,
+      "date": "2026-08-18",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 4/4 (Standard entry, corrected 08-18 from dues bucket after sweep-entry_done fix)",
+      "part": "p4",
+      "verified": true,
+      "statement_id": "347903446617165824",
+      "client_request_id": "elias-registry-entry-4"
     }
   ],
   "dues": [
@@ -13400,15 +13410,6 @@
       "source": "direct transfer 347734638254362624 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z)",
       "statement_id": "347734638254362624",
       "client_request_id": "registry-part4-2026-08-17"
-    },
-    {
-      "member_no": 288,
-      "month": "2026-09",
-      "amount": 100,
-      "status": "paid",
-      "source": "direct transfer 347903446617165824 (REGISTRY-DUES, verified 2026-08-18T01:38:43Z)",
-      "statement_id": "347903446617165824",
-      "client_request_id": "elias-registry-entry-4"
     }
   ],
   "claims": [],
