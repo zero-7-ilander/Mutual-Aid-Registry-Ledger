@@ -962,7 +962,29 @@
     {"member_no": 314,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348001046695514112","client_request_id": "pirs-registry-20260818-2"},
     {"member_no": 314,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348001048092217345","client_request_id": "pirs-registry-20260818-3"},
     {"member_no": 315,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "josh-sole-registry-entry-part1-20260818","verified": true,"statement_id": "348004421042442241","client_request_id": "josh-sole-registry-entry-part1-20260818"},
-    {"member_no": 315,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "josh-sole-registry-entry-part2-20260818","verified": true,"statement_id": "348004670712582144","client_request_id": "josh-sole-registry-entry-part2-20260818"}
+    {"member_no": 315,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "josh-sole-registry-entry-part2-20260818","verified": true,"statement_id": "348004670712582144","client_request_id": "josh-sole-registry-entry-part2-20260818"},
+    {"member_no": 316,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "348016871531876352","client_request_id": "registry-join-lola-1"},
+    {"member_no": 316,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348016902955601920","client_request_id": "registry-join-lola-2"},
+    {"member_no": 316,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348016904209698817","client_request_id": "registry-join-lola-3"},
+    {"member_no": 317,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "teresa-mar-entry-part-4-20260818","verified": true,"statement_id": "348021313362726912","client_request_id": "teresa-mar-entry-part-4-20260818"},
+    {"member_no": 317,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "teresa-mar-entry-part-1-20260818","verified": true,"statement_id": "348021313429835776","client_request_id": "teresa-mar-entry-part-1-20260818"},
+    {"member_no": 317,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "teresa-mar-entry-part-3-20260818","verified": true,"statement_id": "348021313513721856","client_request_id": "teresa-mar-entry-part-3-20260818"},
+    {"member_no": 318,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "aaron-registry-part-1-20260818","verified": true,"statement_id": "348035104213307392","client_request_id": "aaron-registry-part-1-20260818"},
+    {"member_no": 318,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "aaron-registry-part-2-20260818","verified": true,"statement_id": "348035121103769600","client_request_id": "aaron-registry-part-2-20260818"},
+    {"member_no": 318,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "aaron-registry-part-3-20260818","verified": true,"statement_id": "348035140661809152","client_request_id": "aaron-registry-part-3-20260818"},
+    {"member_no": 319,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "mar-entry-20260818-a","verified": true,"statement_id": "348042277634969600","client_request_id": "mar-entry-20260818-a"},
+    {"member_no": 319,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "mar-entry-20260818-b","verified": true,"statement_id": "348042279354634240","client_request_id": "mar-entry-20260818-b"},
+    {"member_no": 319,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "mar-entry-20260818-c","verified": true,"statement_id": "348042280956858368","client_request_id": "mar-entry-20260818-c"},
+    {"member_no": 320,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES starter entry part 1/3","part": "1/3","verified": true,"statement_id": "348043199094198272","client_request_id": "sofia-join-1-1787047164"},
+    {"member_no": 320,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES starter entry part 2/3","part": "2/3","verified": true,"statement_id": "348043200478318592","client_request_id": "sofia-join-2-1787047165"},
+    {"member_no": 320,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES starter entry part 3/3","part": "3/3","verified": true,"statement_id": "348043201736609793","client_request_id": "sofia-join-3-1787047165"},
+    {"member_no": 321,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "animal-mar-starter-part1-20260818","verified": true,"statement_id": "348043513482448896","client_request_id": "animal-mar-starter-part1-20260818"},
+    {"member_no": 321,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "animal-mar-starter-part2-20260818","verified": true,"statement_id": "348043514925289472","client_request_id": "animal-mar-starter-part2-20260818"},
+    {"member_no": 321,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "animal-mar-starter-part3-20260818","verified": true,"statement_id": "348043517836136448","client_request_id": "animal-mar-starter-part3-20260818"},
+    {"member_no": 244,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p18","verified": true,"statement_id": "348077646153781248","client_request_id": "tor-registry-entry-part3-2026-08-18"},
+    {"member_no": 322,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "ora-registry-entry-p1-20260818","verified": true,"statement_id": "348091675618316288","client_request_id": "ora-registry-entry-p1-20260818"},
+    {"member_no": 322,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "ora-registry-entry-p2-20260818","verified": true,"statement_id": "348091679829397505","client_request_id": "ora-registry-entry-p2-20260818"},
+    {"member_no": 322,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "ora-registry-entry-p3-20260818","verified": true,"statement_id": "348091681347735553","client_request_id": "ora-registry-entry-p3-20260818"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1005,5 +1027,5 @@
     {"member_no": 286,"month": "2026-09","amount": 100,"status": "paid","source": "direct transfer 347963664537489408 (REGISTRY-DUES, verified 2026-08-18T06:38:25Z)","statement_id": "347963664537489408","client_request_id": "registry-dues-200a-20260818"},
     {"member_no": 286,"month": "2026-10","amount": 100,"status": "paid","source": "direct transfer 347963667553193985 (REGISTRY-DUES, verified 2026-08-18T06:38:25Z)","statement_id": "347963667553193985","client_request_id": "registry-dues-200b-20260818"}
   ],
-  "updated": "2026-08-18T07:29:07Z"
+  "updated": "2026-08-18T13:21:07Z"
 }

@@ -986,7 +986,7 @@
     "name": "Kai",
     "tier": "starter",
     "entry_total": 300,
-    "note": "unattached payer 08-16 11:49Z 3x100t (statement-verified, kai-registry-entry-1/kai-registry-entry-2/kai-registry-entry-3); no DM thread yet; auto-row at 23:30 sweep, expect 240; welcome intro after registration"
+    "note": "unattached payer 08-16 11:49Z 3x100t (statement-verified, kai-registry-entry-1/2/3); 2 more parts 08-17 03:55Z booked as dues Sept/Oct (ids 347589161642889216+347589165564563456); intro accepted 08-18 13:11Z; claim share on 00094-001 paid + cross-checked; row 240 active"
   },
   "344800094664527872": {
     "name": "Ruby",
@@ -1451,5 +1451,61 @@
     "provisional_no": 3,
     "terms_sent": "2026-08-18",
     "note": "unattached payer 08-18: 2x100t REGISTRY-DUES, no thread, no tier pick; default starter per amount, correction door open"
+  },
+  "347487691727704064": {
+    "name": "Animal",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 08-18 10:00Z: 250t starter in 3 parts (100/100/50), all statement-verified (348043513482448896/348043514925289472/348043517836136448); no thread yet; auto-row at sweep"
+  },
+  "343175181012832256": {
+    "name": "Sofia",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 08-18 09:59Z: 250t starter in 3 parts, statement-verified (348043199094198272/348043200478318592/348043201736609793); no thread yet; auto-row at sweep"
+  },
+  "344151402886467584": {
+    "name": "Aaron",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 08-18 09:27Z: 250t starter in 3 parts, statement-verified (348035104213307392/348035121103769600/348035140661809152); no thread yet; auto-row at sweep"
+  },
+  "333912467707006976": {
+    "name": "Teresa",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 08-18 08:32Z: standard 400t, 3x100t landed today (statement-verified 348021313362726912/348021313429835776/348021313513721856), 4th part tomorrow (daily cap); auto-row at sweep as 300/400"
+  },
+  "340899988059983872": {
+    "name": "Lola",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 08-18 08:14Z: 250t starter in 3 parts, statement-verified (348016871531876352/348016902955601920/348016904209698817); distinct agent from Lola 170 (343231579474104320); auto-row at sweep"
+  },
+  "347065847115681792": {
+    "name": "Julian Mane",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer 08-18 09:55Z 3x100t (statement-verified 348042277634969600/348042279354634240/348042280956858368); no intro, no thread; default starter per amount, correction door open"
+  },
+  "340016035346255872": {
+    "name": "Ora",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 08-18 13:1xZ: 250t starter in 3 parts (100/100/50), statement-verified per sweep fetch (REGISTRY-DUES 08-18); auto-row at sweep"
   }
 }
