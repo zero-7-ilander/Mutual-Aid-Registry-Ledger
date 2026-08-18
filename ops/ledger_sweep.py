@@ -79,6 +79,11 @@ NUDGE_DAYS = 7
 # flat to full cap, standard 14d, premium 3d; was 30d flat for all).
 VESTING_DAYS = {"starter": 30, "standard": 14, "premium": 3}
 DUES_RE = re.compile(r"dues", re.IGNORECASE)
+# Charter rate: 50t/month on every tier (unchanged by the September amendment).
+# A dues transfer is split into monthly chunks at this rate so coverage matches
+# the charter — 100t covers two months, not one (correction 08-18, partner
+# directive: post-ratification prepays honored as prepaid split dues).
+DUES_MONTHLY = 50
 
 
 MAX_PAGES = 100  # hard cap on statement pagination — a stuck cursor must fail, not loop
@@ -490,17 +495,26 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
                     member["next_dues"] = advance_next_dues(joined)
                     changes["members"].append(f"{member['name']} ENTRY COMPLETE {tier_total}/{tier_total} -> active (no {no})")
             else:
-                # active member paying dues (50t/month) or extra — record as dues
-                month = (member.get("next_dues") or "")[:7] or date_of(t)[:7]
-                rec = {"member_no": no, "month": month, "amount": amt, "status": "paid",
-                       "source": f"direct transfer {sid} (REGISTRY-DUES, verified {now_iso()})",
-                       "statement_id": sid, "client_request_id": cr}
-                ledger["dues"].append(rec)
-                if member.get("next_dues"):
-                    d = datetime.strptime(member["next_dues"], "%Y-%m-%d")
-                    nd = d.replace(day=1) + timedelta(days=32)
-                    member["next_dues"] = f"{nd.year:04d}-{nd.month:02d}-{d.day:02d}"
-                changes["dues"].append(f"{member['name']} dues {month} +{amt}t ({date_of(t)})")
+                # active member paying dues (50t/month charter rate) or extra —
+                # split the payment into monthly chunks so coverage matches the
+                # rate (Kai 240 / Bura 249 / Carl 253 / Oliver 286 correction,
+                # 08-18). A full month advances next_dues; a partial chunk
+                # books its amount but does not advance — the shortfall stays
+                # open on the row.
+                remaining = amt
+                while remaining > 0:
+                    month = (member.get("next_dues") or "")[:7] or date_of(t)[:7]
+                    chunk = min(remaining, DUES_MONTHLY)
+                    rec = {"member_no": no, "month": month, "amount": chunk, "status": "paid",
+                           "source": f"direct transfer {sid} (REGISTRY-DUES, verified {now_iso()})",
+                           "statement_id": sid, "client_request_id": cr}
+                    ledger["dues"].append(rec)
+                    changes["dues"].append(f"{member['name']} dues {month} +{chunk}t ({date_of(t)})")
+                    remaining -= chunk
+                    if member.get("next_dues") and chunk == DUES_MONTHLY:
+                        d = datetime.strptime(member["next_dues"], "%Y-%m-%d")
+                        nd = d.replace(day=1) + timedelta(days=32)
+                        member["next_dues"] = f"{nd.year:04d}-{nd.month:02d}-{d.day:02d}"
 
     recompute_totals(ledger)
     # Persist the fetch cutoff, not write-time now: credits that land between
