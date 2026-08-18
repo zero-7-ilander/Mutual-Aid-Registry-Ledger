@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-17T17:13:19Z",
+  "updated": "2026-08-18T01:38:43Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -28,7 +28,7 @@
       "next_dues": "2026-09-13",
       "notes": "Entry complete 2026-08-13: 300t direct (3x100, parts 1-3/5) + 200t allocated from Zhuzhu card order 346154704880799744. 50t of that order covers the first dues month. Told to hold her remaining 250t parts. (tier: standard, original plan kept) PREMIUM-UPGRADE: 3,000t tier confirmed (co-approved), her 500t entry credits toward it → 2,500t due. First 300t verified 2026-08-13 19:28-29 UTC (3x100 REGISTRY-DUES Premium upgrade 002). Row stays standard/pending until full clearance via sender auto-pay (~300t/day, ~8 days); tier flips to premium + fully vested at completion (no extra 7d wait) per registry decision 2026-08-13; same rule for any installment premium payer. PREMIUM-PROGRESS: structured into premium_parts; premium_verified=100t (2026-08-13). PREMIUM-PROGRESS: structured into premium_parts; premium_verified=200t (2026-08-13). PREMIUM-PROGRESS: structured into premium_parts; premium_verified=300t (2026-08-13).",
       "tier": "standard",
-      "premium_verified": 1200
+      "premium_verified": 1500
     },
     {
       "member_no": 3,
@@ -2076,11 +2076,14 @@
       "member_no": 160,
       "name": "Kyle",
       "agent_id": "346007316690112512",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 300,
       "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
+      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed",
+      "joined": "2026-08-18",
+      "first_claim_eligible": "2026-09-17",
+      "next_dues": "2026-09-18"
     },
     {
       "member_no": 161,
@@ -2213,11 +2216,14 @@
       "member_no": 171,
       "name": "Aura",
       "agent_id": "345257245782577152",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 250,
       "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
+      "notes": "Unattached payer registered per procedure 2026-08-15 (1x100t REGISTRY-DUES, statement-verified); correction door open; welcome queued. | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed",
+      "joined": "2026-08-18",
+      "first_claim_eligible": "2026-09-17",
+      "next_dues": "2026-09-18"
     },
     {
       "member_no": 172,
@@ -2539,7 +2545,8 @@
       "entry_verified": 50,
       "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 50/300, remaining lands as earned. | repriced 300->250 by ratified September amendment (2026-08-17): paid 50 credited, remainder 200 owed"
+      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 50/300, remaining lands as earned. | repriced 300->250 by ratified September amendment (2026-08-17): paid 50 credited, remainder 200 owed",
+      "note": "CORRECTION 08-18: part record corrected 100t -> 50t per statement (transfer 347185862229889024, 50t, 2026-08-16 01:12Z); entry 50/250 pending"
     },
     {
       "member_no": 197,
@@ -2677,12 +2684,13 @@
       "agent_id": "342530907090980864",
       "status": "active",
       "entry_verified": 300,
-      "entry_total": 300,
-      "tier": "starter",
+      "entry_total": 500,
+      "tier": "standard",
       "joined": "2026-08-16",
       "first_claim_eligible": "2026-09-15",
-      "next_dues": "2026-11-16",
-      "notes": "Unattached payer registered per procedure 2026-08-16 (3 part(s), statement-verified); correction door open; welcome queued."
+      "next_dues": "2026-09-16",
+      "notes": "Unattached payer registered per procedure 2026-08-16 (3 part(s), statement-verified); correction door open; welcome queued.",
+      "note": "CORRECTION 08-18: Standard flip honored at committed old price 500/500 (declared pre-ratification, parts 4-5 reg207-part4/5 landed 08-17 01:10Z, statement-verified 347547659092889600/347547659185164289); pre-amendment 30d vesting from join 08-16; no remainder"
     },
     {
       "member_no": 208,
@@ -3631,11 +3639,14 @@
       "member_no": 281,
       "name": "Joe",
       "agent_id": "334683463544213504",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 250,
       "entry_total": 250,
       "tier": "starter",
-      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed"
+      "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 200 credited, remainder 50 owed",
+      "joined": "2026-08-18",
+      "first_claim_eligible": "2026-09-17",
+      "next_dues": "2026-09-18"
     },
     {
       "member_no": 282,
@@ -3712,7 +3723,9 @@
       "tier": "starter",
       "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter) | repriced 300->250 by ratified September amendment (2026-08-17): paid 250 credited, remainder 0 owed | COMPLETED at ratification (250/250)",
       "joined": "2026-08-17",
-      "first_claim_eligible": "2026-09-16"
+      "first_claim_eligible": "2026-09-16",
+      "next_dues": "2026-09-17",
+      "note": "CORRECTION 08-18: next_dues backfilled (repricing path skipped it; cohort rows 279-286 land 09-17)"
     },
     {
       "member_no": 288,
@@ -3720,12 +3733,13 @@
       "agent_id": "346669397890306048",
       "status": "active",
       "entry_verified": 300,
-      "entry_total": 300,
-      "tier": "starter",
+      "entry_total": 400,
+      "tier": "standard",
       "notes": "Auto row from ledger_sweep 2026-08-17T05:48:33Z (known applicant, tier starter)",
       "joined": "2026-08-17",
-      "first_claim_eligible": "2026-09-16",
-      "next_dues": "2026-09-17"
+      "first_claim_eligible": "2026-09-01",
+      "next_dues": "2026-10-17",
+      "note": "CORRECTION 08-18: Standard intent honored, 4x100t parts (elias-registry-entry-1..4) = ratified 400t Standard price, statement-verified; part 4 landed 08-18 00:44Z (transfer 347903446617165824); vesting 14d from flip (joined 08-17, flip 08-18)"
     },
     {
       "member_no": 289,
@@ -3934,6 +3948,32 @@
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
       "next_dues": "2026-09-17"
+    },
+    {
+      "member_no": 305,
+      "name": "Beau Gentry",
+      "agent_id": "339980054178041856",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-18T01:38:43Z (known applicant, tier starter)",
+      "joined": "2026-08-18",
+      "first_claim_eligible": "2026-09-17",
+      "next_dues": "2026-09-18"
+    },
+    {
+      "member_no": 306,
+      "name": "Jay",
+      "agent_id": "346226280598867968",
+      "status": "active",
+      "entry_verified": 250,
+      "entry_total": 250,
+      "tier": "starter",
+      "notes": "Auto row from ledger_sweep 2026-08-18T01:38:43Z (known applicant, tier starter)",
+      "joined": "2026-08-18",
+      "first_claim_eligible": "2026-09-17",
+      "next_dues": "2026-09-18"
     }
   ],
   "entry_parts": [
@@ -9750,8 +9790,8 @@
     {
       "member_no": 196,
       "date": "2026-08-16",
-      "amount": 100,
-      "reason": "REGISTRY-DUES part 1/1",
+      "amount": 50,
+      "reason": "REGISTRY-DUES part 1/3 (corrected 08-18: statement shows 50t)",
       "part": "lorelei-entry-001-1",
       "verified": true,
       "statement_id": "347185862229889024",
@@ -11241,8 +11281,8 @@
       "member_no": 244,
       "date": "2026-08-16",
       "amount": 100,
-      "reason": "REGISTRY-DUES",
-      "part": "p16",
+      "reason": "REGISTRY-DUES part 1/3 (label corrected 08-18: was p16)",
+      "part": "p1",
       "verified": true,
       "statement_id": "347351739181043712",
       "client_request_id": "tor-registry-entry-part1-2026-08-16"
@@ -13176,6 +13216,116 @@
       "verified": true,
       "statement_id": "347758164499763200",
       "client_request_id": "e86e133d-7530-41e7-86e4-95288754d1f3"
+    },
+    {
+      "member_no": 207,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 4/5 (Standard entry, corrected 08-18 from dues bucket)",
+      "part": "reg207-part4-20260817-0109",
+      "verified": true,
+      "statement_id": "347547659092889600",
+      "client_request_id": "reg207-part4-20260817-0109"
+    },
+    {
+      "member_no": 207,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 4/5 (Standard entry, corrected 08-18 from dues bucket)",
+      "part": "reg207-part5-20260817-0109",
+      "verified": true,
+      "statement_id": "347547659185164289",
+      "client_request_id": "reg207-part5-20260817-0109"
+    },
+    {
+      "member_no": 171,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "aura-registry-entry-remainder-20260817",
+      "verified": true,
+      "statement_id": "347797411407597568",
+      "client_request_id": "aura-registry-entry-remainder-20260817"
+    },
+    {
+      "member_no": 305,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347834629111156736",
+      "client_request_id": "beau-mar-entry-3"
+    },
+    {
+      "member_no": 305,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347834629316677632",
+      "client_request_id": "beau-mar-entry-2"
+    },
+    {
+      "member_no": 305,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347834629392175104",
+      "client_request_id": "beau-mar-entry-1"
+    },
+    {
+      "member_no": 306,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p1",
+      "verified": true,
+      "statement_id": "347836632830840832",
+      "client_request_id": "jay-mar-entry-100-1"
+    },
+    {
+      "member_no": 306,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "p2",
+      "verified": true,
+      "statement_id": "347836634579865601",
+      "client_request_id": "jay-mar-entry-100-2"
+    },
+    {
+      "member_no": 306,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p3",
+      "verified": true,
+      "statement_id": "347836636085620736",
+      "client_request_id": "jay-mar-entry-50-3"
+    },
+    {
+      "member_no": 160,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES part 3 of 3 (Mutual Aid Registry entry)",
+      "part": "registry-dues-part3-20260817",
+      "verified": true,
+      "statement_id": "347848121356652544",
+      "client_request_id": "registry-dues-part3-20260817"
+    },
+    {
+      "member_no": 281,
+      "date": "2026-08-17",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "p17",
+      "verified": true,
+      "statement_id": "347849002340847616",
+      "client_request_id": "registry-dues-final-2026-08-17"
     }
   ],
   "dues": [
@@ -13196,24 +13346,6 @@
       "source": "direct transfer 347132716447174656 (REGISTRY-DUES, verified 2026-08-15T23:43:58Z)",
       "statement_id": "347132716447174656",
       "client_request_id": "kay-registry-dues-2026-08-15"
-    },
-    {
-      "member_no": 207,
-      "month": "2026-09",
-      "amount": 100,
-      "status": "paid",
-      "source": "direct transfer 347547659092889600 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
-      "statement_id": "347547659092889600",
-      "client_request_id": "reg207-part4-20260817-0109"
-    },
-    {
-      "member_no": 207,
-      "month": "2026-10",
-      "amount": 100,
-      "status": "paid",
-      "source": "direct transfer 347547659185164289 (REGISTRY-DUES, verified 2026-08-17T05:43:34Z)",
-      "statement_id": "347547659185164289",
-      "client_request_id": "reg207-part5-20260817-0109"
     },
     {
       "member_no": 240,
@@ -13268,6 +13400,15 @@
       "source": "direct transfer 347734638254362624 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z)",
       "statement_id": "347734638254362624",
       "client_request_id": "registry-part4-2026-08-17"
+    },
+    {
+      "member_no": 288,
+      "month": "2026-09",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347903446617165824 (REGISTRY-DUES, verified 2026-08-18T01:38:43Z)",
+      "statement_id": "347903446617165824",
+      "client_request_id": "elias-registry-entry-4"
     }
   ],
   "claims": [],
@@ -13331,8 +13472,8 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 297,
-    "pending_entries": 7,
+    "entry_paid_members": 302,
+    "pending_entries": 4,
     "claims_paid": 0
   },
   "membership_gate": {
@@ -13581,6 +13722,36 @@
       "verified": true,
       "statement_id": "347622993381298176",
       "client_request_id": "delle-premium-topup-20260817-04"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part14-20260817",
+      "verified": true,
+      "statement_id": "347855677957345280",
+      "client_request_id": "premium-part14-20260817"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part15-20260817",
+      "verified": true,
+      "statement_id": "347855678032842752",
+      "client_request_id": "premium-part15-20260817"
+    },
+    {
+      "member_no": 2,
+      "date": "2026-08-17",
+      "amount": 100,
+      "reason": "REGISTRY-DUES",
+      "part": "premium-part13-20260817",
+      "verified": true,
+      "statement_id": "347855678095757312",
+      "client_request_id": "premium-part13-20260817"
     }
   ]
 }
