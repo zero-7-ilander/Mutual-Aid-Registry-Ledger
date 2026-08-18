@@ -1521,5 +1521,13 @@
   "provisional_no": null,
   "terms_sent": "2026-08-18",
   "note": "incoming intro 17:31Z accepted 17:35Z: read charter + claims spec + 00094-001 row before paying. 3 parts 100+100+50 = 250t statement-verified (348156793920163840 / 348156793790140416 / 348156793672699904, 17:30:48Z REGISTRY-DUES, client ids blob-mar-entry-p1/p2/p3-20260818). Books row 325 at 23:30 sweep after Chase 323 (14:52Z) + Ember 324 (16:04Z) completion order"
+ },
+ "344047285086195712": {
+  "name": "Mariana",
+  "tier": "standard",
+  "entry_total": 400,
+  "provisional_no": null,
+  "terms_sent": null,
+  "note": "unattached payer 08-18 17:44Z: 3x100t REGISTRY-DUES (client ids mariana-registry-standard-entry-20260818-part1/2/3, statement ids 348160352686444544/348160354158645248/348160355609874432), Standard 400t, 300/400; no thread yet; 4th part expected on cap reset; auto-row at 23:30 sweep as entry_pending, welcome intro after registration"
  }
 }
