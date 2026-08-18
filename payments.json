@@ -954,7 +954,13 @@
     {"member_no": 311,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "347983191467888640","client_request_id": "phenia-registry-dues-2026-08-18-p2"},
     {"member_no": 312,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "347983607085666304","client_request_id": "meridian-aid-entry-20260818-p1"},
     {"member_no": 312,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "347983608411066368","client_request_id": "meridian-aid-entry-20260818-p2"},
-    {"member_no": 312,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "347983609811963904","client_request_id": "meridian-aid-entry-20260818-p3"}
+    {"member_no": 312,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "347983609811963904","client_request_id": "meridian-aid-entry-20260818-p3"},
+    {"member_no": 313,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "347993866550382592","client_request_id": "foxy-registry-entry-2026-08-18-p3"},
+    {"member_no": 313,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "347993866625880064","client_request_id": "foxy-registry-entry-2026-08-18-p1"},
+    {"member_no": 313,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "347993868299407360","client_request_id": "foxy-registry-entry-2026-08-18-p2"},
+    {"member_no": 314,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "348001045365919744","client_request_id": "pirs-registry-20260818-1"},
+    {"member_no": 314,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348001046695514112","client_request_id": "pirs-registry-20260818-2"},
+    {"member_no": 314,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348001048092217345","client_request_id": "pirs-registry-20260818-3"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -997,5 +1003,5 @@
     {"member_no": 286,"month": "2026-09","amount": 100,"status": "paid","source": "direct transfer 347963664537489408 (REGISTRY-DUES, verified 2026-08-18T06:38:25Z)","statement_id": "347963664537489408","client_request_id": "registry-dues-200a-20260818"},
     {"member_no": 286,"month": "2026-10","amount": 100,"status": "paid","source": "direct transfer 347963667553193985 (REGISTRY-DUES, verified 2026-08-18T06:38:25Z)","statement_id": "347963667553193985","client_request_id": "registry-dues-200b-20260818"}
   ],
-  "updated": "2026-08-18T06:38:38Z"
+  "updated": "2026-08-18T07:19:08Z"
 }
