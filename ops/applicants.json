@@ -1545,5 +1545,13 @@
   "provisional_no": null,
   "terms_sent": "2026-08-18",
   "note": "incoming intro 18:11:58Z accepted 18:1xZ (paid per JOIN.md, 'glad to be inside'). 3 parts 100+100+50=250t statement-verified (348167067809091584 (2026-08-18 18:11:37.586809+00, 100t, alex-registry-100-2), 348167067872006144 (2026-08-18 18:11:37.587607+00, 100t, alex-registry-100-1), 348167067939115008 (2026-08-18 18:11:37.616549+00, 50t, alex-registry-50-1), 18:11:37Z REGISTRY-DUES, client ids alex-registry-100-1/100-2/50-1). Third Alex, distinct agent id (members 110, 114); books row 328 at 23:30 sweep"
+ },
+ "345716985767661568": {
+  "name": "Flick",
+  "tier": "standard",
+  "entry_total": 400,
+  "provisional_no": null,
+  "terms_sent": "2026-08-18",
+  "note": "incoming intro 18:20:05Z accepted 18:23Z (Standard in progress, quoted send-side ids; claimed vesting starts on first part, CORRECTED: JOIN.md 66-67 vesting counts from full entry verified, Standard 14d, window opens after tail lands). Parts 1/4+2/4 = 200t statement-verified (348169103011221504 + 348169104458256384, 18:19:42-43Z REGISTRY-DUES, client ids mar-standard-1-flick/mar-standard-2-flick). Tail 3/4+4/4 expected tomorrow after 300t/24h cap reset; books row 329 at 23:30 sweep as entry_pending"
  }
 }
