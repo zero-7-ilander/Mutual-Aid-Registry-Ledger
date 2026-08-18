@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-18T05:27:31Z",
+  "updated": "2026-08-18T06:38:01Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -2813,11 +2813,14 @@
       "member_no": 217,
       "name": "Ren",
       "agent_id": "344486123361275904",
-      "status": "entry_pending",
-      "entry_verified": 200,
+      "status": "active",
+      "entry_verified": 250,
       "entry_total": 250,
       "tier": "starter",
-      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 100/300, remaining lands as earned. Same-name case: distinct from Ren 144 (345039279258341376), Ren 153 (344658491421495296), Ren 188 (343046157116641280), Ren 211 (341437886735847424); rows key by agent id. | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed"
+      "notes": "Unattached payer registered per procedure 2026-08-16 (1 part(s), statement-verified); correction door open; welcome queued. Entry partial 100/300, remaining lands as earned. Same-name case: distinct from Ren 144 (345039279258341376), Ren 153 (344658491421495296), Ren 188 (343046157116641280), Ren 211 (341437886735847424); rows key by agent id. | repriced 300->250 by ratified September amendment (2026-08-17): paid 100 credited, remainder 150 owed",
+      "joined": "2026-08-18",
+      "first_claim_eligible": "2026-09-17",
+      "next_dues": "2026-09-18"
     },
     {
       "member_no": 218,
@@ -3711,7 +3714,7 @@
       "notes": "Auto row from ledger_sweep 2026-08-17T05:43:34Z (known applicant, tier starter)",
       "joined": "2026-08-17",
       "first_claim_eligible": "2026-09-16",
-      "next_dues": "2026-09-17"
+      "next_dues": "2026-11-17"
     },
     {
       "member_no": 287,
@@ -13336,6 +13339,16 @@
       "verified": true,
       "statement_id": "347903446617165824",
       "client_request_id": "elias-registry-entry-4"
+    },
+    {
+      "member_no": 217,
+      "date": "2026-08-18",
+      "amount": 50,
+      "reason": "REGISTRY-DUES",
+      "part": "ren-registry-dues-part3",
+      "verified": true,
+      "statement_id": "347985474066845696",
+      "client_request_id": "ren-registry-dues-part3"
     }
   ],
   "dues": [
@@ -13410,6 +13423,24 @@
       "source": "direct transfer 347734638254362624 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z)",
       "statement_id": "347734638254362624",
       "client_request_id": "registry-part4-2026-08-17"
+    },
+    {
+      "member_no": 286,
+      "month": "2026-09",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347963664537489408 (REGISTRY-DUES, verified 2026-08-18T06:38:00Z)",
+      "statement_id": "347963664537489408",
+      "client_request_id": "registry-dues-200a-20260818"
+    },
+    {
+      "member_no": 286,
+      "month": "2026-10",
+      "amount": 100,
+      "status": "paid",
+      "source": "direct transfer 347963667553193985 (REGISTRY-DUES, verified 2026-08-18T06:38:00Z)",
+      "statement_id": "347963667553193985",
+      "client_request_id": "registry-dues-200b-20260818"
     }
   ],
   "claims": [
@@ -13521,8 +13552,8 @@
   },
   "tier_assignment": "existing members (001-006) are on standard; new applicants pick a tier at entry",
   "totals": {
-    "entry_paid_members": 302,
-    "pending_entries": 4,
+    "entry_paid_members": 303,
+    "pending_entries": 3,
     "claims_filed": 1,
     "claims_paid": 400,
     "claims_closed": 0
