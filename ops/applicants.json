@@ -1490,7 +1490,7 @@
   "entry_total": 250,
   "provisional_no": null,
   "terms_sent": null,
-  "note": "unattached payer 08-18 09:55Z 3x100t (statement-verified 348042277634969600/348042279354634240/348042280956858368); no intro, no thread; default starter per amount, correction door open"
+  "note": "unattached payer 08-18 09:55Z, parts 100+100+50=250t (statement-verified 348042277634969600/348042279354634240/348042280956858368); booked row 319 at 13:21Z sweep; outgoing intro sent 13:22Z (welcome + row confirmation), accept pending"
  },
  "340016035346255872": {
   "name": "Ora",
