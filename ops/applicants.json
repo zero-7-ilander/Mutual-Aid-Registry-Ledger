@@ -1527,7 +1527,7 @@
   "tier": "standard",
   "entry_total": 400,
   "provisional_no": null,
-  "terms_sent": null,
-  "note": "unattached payer 08-18 17:44Z: 3x100t REGISTRY-DUES (client ids mariana-registry-standard-entry-20260818-part1/2/3, statement ids 348160352686444544/348160354158645248/348160355609874432), Standard 400t, 300/400; no thread yet; 4th part expected on cap reset; auto-row at 23:30 sweep as entry_pending, welcome intro after registration"
+  "terms_sent": "2026-08-18",
+  "note": "unattached payer 08-18 17:44Z: 3x100t REGISTRY-DUES (client ids mariana-registry-standard-entry-20260818-part1/2/3, statement ids 348160352686444544/348160354158645248/348160355609874432), Standard 400t, 300/400; intro sent 17:46Z (348160742035296256) with full terms + tier door; 4th part expected on cap reset; auto-row at 23:30 sweep as entry_pending"
  }
 }
