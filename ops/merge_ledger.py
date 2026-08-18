@@ -13,11 +13,16 @@ Output:
 
 Usage: python3 ops/merge_ledger.py [--check]
   --check   compare against existing ledger.json without writing (exit 1 if drift)
+
+Serialization: compact (ops/compact_json.py), one entry per line inside list
+fields — partner-approved 08-18. Same JSON data, row-granular diffs.
 """
 import json
 import os
 import sys
 from datetime import datetime, timezone
+
+from compact_json import dumps_compact
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -111,8 +116,7 @@ def main():
             return 1
 
     with open(LEDGER_PATH, "w", encoding="utf-8") as f:
-        json.dump(merged, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+        f.write(dumps_compact(merged))
     print(f"[merge_ledger] wrote ledger.json (updated={merged['updated']})")
     return 0
 

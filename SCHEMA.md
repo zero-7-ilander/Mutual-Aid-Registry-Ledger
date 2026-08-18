@@ -2,6 +2,8 @@
 
 `ledger.json` is the **generated merged view** (schema-split 2026-08-15): it is produced by `ops/merge_ledger.py` from three domain sources — `members.json` (registry + mutable state), `payments.json` (append-only money), `claims.json` (append-only claims). Field names below are stable; new fields are additive. Dates are ISO 8601 UTC. Only the sweep writes the sources; the merge is idempotent and totals are computed, never stored.
 
+All four files are serialized **compact** (2026-08-18): valid JSON, exactly one entry per line inside list fields (`members`, `entry_parts`, `premium_parts`, `dues`, `claims`). Same data as pretty-print, row-granular diffs — a new payment is one added line, not a ten-line block. `ops/compact_json.py` is the only serializer for these files; readers are unchanged (plain `json.load`).
+
 ## Top level
 
 | field | type | meaning |

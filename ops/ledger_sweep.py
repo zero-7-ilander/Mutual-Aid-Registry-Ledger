@@ -33,11 +33,15 @@ operator can edit them without touching this script.
 
 Usage:
   ops/ledger_sweep.py [--check | --apply] [--since <ISO>] [--no-push] [--repo <path>]
+                       [--no-reconcile]
 
-  --check   (default) fetch + compute + print report, no writes, no git
-  --apply   write ledger.json + applicants.json + dm_state.json, commit, push
-  --since   ISO cutoff for the statement fetch (default: ledger.json `updated`)
-  --no-push commit locally but skip pull/push
+  --check         (default) fetch + compute + print report, no writes, no git
+  --apply         write ledger files + applicants.json + dm_state.json, commit, push
+  --since         ISO cutoff for the statement fetch (default: ledger.json `updated`)
+  --no-push       commit locally but skip pull/push
+  --no-reconcile  skip DM/intro reconciliation (money path only). The daily sweep
+                  runs this way — reconcile is its own pass, ops/dm_reconcile.py
+                  (partner-approved split 08-18), with a tiered watch set.
 """
 
 import argparse
@@ -48,6 +52,8 @@ import subprocess
 import sys
 import tempfile
 from datetime import datetime, timedelta, timezone
+
+from compact_json import dumps_compact
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -186,20 +192,23 @@ def save_ledger(ledger):
     payments_doc = {k: ledger.get(k) for k in ("entry_parts", "premium_parts", "dues")}
     payments_doc["updated"] = stamp
     claims_doc = {"claims": ledger.get("claims", []), "updated": stamp}
-    save_json(MEMBERS_PATH, members_doc)
-    save_json(PAYMENTS_PATH, payments_doc)
-    save_json(CLAIMS_PATH, claims_doc)
+    save_json(MEMBERS_PATH, members_doc, compact=True)
+    save_json(PAYMENTS_PATH, payments_doc, compact=True)
+    save_json(CLAIMS_PATH, claims_doc, compact=True)
     from merge_ledger import merge
     merged = merge((members_doc, payments_doc, claims_doc), stamp_updated=True)
-    save_json(LEDGER_PATH, merged)
+    save_json(LEDGER_PATH, merged, compact=True)
     return [LEDGER_PATH, MEMBERS_PATH, PAYMENTS_PATH, CLAIMS_PATH]
 
 
-def save_json(path, data):
+def save_json(path, data, compact=False):
     tmp = tempfile.NamedTemporaryFile("w", dir=os.path.dirname(path),
                                       delete=False, encoding="utf-8")
-    json.dump(data, tmp, ensure_ascii=False, indent=2)
-    tmp.write("\n")
+    if compact:
+        tmp.write(dumps_compact(data))
+    else:
+        json.dump(data, tmp, ensure_ascii=False, indent=2)
+        tmp.write("\n")
     tmp.close()
     os.replace(tmp.name, path)
 
@@ -556,6 +565,10 @@ def main():
     ap.add_argument("--apply", action="store_true", help="write ledger.json + commit + push")
     ap.add_argument("--since", help="ISO cutoff for statement fetch (default: ledger updated)")
     ap.add_argument("--no-push", action="store_true", help="commit but skip pull/push")
+    ap.add_argument("--no-reconcile", action="store_true",
+                    help="skip DM/intro reconciliation (money path only); "
+                         "reconcile runs as its own pass via ops/dm_reconcile.py "
+                         "(partner-approved split 08-18)")
     ap.add_argument("--repo", default=None, help="path to the ledger repo (default: repo containing this script)")
     args = ap.parse_args()
 
@@ -572,16 +585,19 @@ def main():
     # view, never hand-edited; rebuild it from sources when it drifts.
     ledger_regened = False
     try:
-        from merge_ledger import merge as merge_view
+        from merge_ledger import merge as merge_view, compute_totals
         srcs = (load_json(MEMBERS_PATH), load_json(PAYMENTS_PATH), load_json(CLAIMS_PATH))
         rebuilt = merge_view(srcs, stamp_updated=False)
         a, b = dict(rebuilt), dict(ledger)
         a.pop("updated", None)
         b.pop("updated", None)
+        # load_ledger() composes the in-memory ledger with totals={}; compute
+        # them before comparing or the guard false-drifts every run (08-18).
+        b["totals"] = compute_totals(b.get("members", []), b.get("claims", []))
         if a != b:
             if args.apply:
                 print("[ledger_sweep] ledger.json drifted from sources — regenerating public view")
-                save_json(LEDGER_PATH, rebuilt)
+                save_json(LEDGER_PATH, rebuilt, compact=True)
                 ledger = rebuilt
                 ledger_regened = True
             else:
@@ -604,39 +620,32 @@ def main():
     # gateway throttle), the ledger path still commits what the statement
     # proved and reconcile catches up next run. Cursors only advance on
     # success, so nothing is lost or double-processed.
-    from dm_reconcile import reconcile as reconcile_dms
+    from dm_reconcile import reconcile as reconcile_dms, print_report
     applicants = load_applicants()
     dm_state = load_json(DM_STATE_PATH) if os.path.exists(DM_STATE_PATH) else {"threads": {}}
     old_cursors = {aid: t.get("last_message_id") for aid, t in dm_state.get("threads", {}).items()}
     dm_report = {k: [] for k in ("intros", "replies", "member_asks",
                                  "applicant_updates", "new_applicants",
-                                 "drafts", "warnings")}
+                                 "drafts", "warnings", "stats")}
     dm_reconcile_ok = True
-    try:
-        dm_report, applicants, dm_state = reconcile_dms(ledger, applicants, dm_state)
-    except Exception as e:
-        dm_reconcile_ok = False
+    if args.no_reconcile:
         print("\n=== DM RECONCILE ===")
-        print(f"   [FAILED, non-fatal] {str(e)[:300]}")
-        print("   statement already fetched; ledger commit proceeds; reconcile catches up next run")
+        print("   [SKIPPED — --no-reconcile; separate pass via ops/dm_reconcile.py (split 08-18)]")
+        dm_reconcile_ok = False
+    else:
+        try:
+            hot_ids = sorted({(t.get("counterparty") or {}).get("agentId")
+                              for t in reg if (t.get("counterparty") or {}).get("agentId")})
+            dm_report, applicants, dm_state = reconcile_dms(
+                ledger, applicants, dm_state, hot_agents=hot_ids)
+        except Exception as e:
+            dm_reconcile_ok = False
+            print("\n=== DM RECONCILE ===")
+            print(f"   [FAILED, non-fatal] {str(e)[:300]}")
+            print("   statement already fetched; ledger commit proceeds; reconcile catches up next run")
     if dm_reconcile_ok:
         print("\n=== DM RECONCILE ===")
-        for section, title in (("intros", "INTROS"), ("replies", "REPLIES"),
-                               ("member_asks", "MEMBER ASKS (need operator)"),
-                               ("applicant_updates", "APPLICANT UPDATES"),
-                               ("new_applicants", "NEW APPLICANTS"),
-                               ("warnings", "WARNINGS")):
-            if dm_report[section]:
-                print(f"[{title}]")
-                for line in dm_report[section]:
-                    print("   " + line)
-        if dm_report["drafts"]:
-            print("[DRAFTS — ready to send, copy verbatim]")
-            for d in dm_report["drafts"]:
-                print("   ---")
-                print("   " + d.replace("\n", "\n   "))
-        if not any(dm_report.values()):
-            print("   (nothing new)")
+        print_report(dm_report)
 
     # Claim shares never touch the operator wallet (CLAIMS.md). Any
     # REGISTRY-CLAIM credit that lands here is a misroute: flag it, never

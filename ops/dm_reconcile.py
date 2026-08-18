@@ -19,6 +19,7 @@ Writes nothing itself. ledger_sweep.py persists applicants.json and
 dm_state.json on --apply and commits them with the ledger.
 """
 
+import argparse
 import json
 import os
 import re
@@ -191,8 +192,27 @@ def new_provisional_no(applicants):
 
 # --- main reconcile ----------------------------------------------------------
 
-def reconcile(ledger, applicants, dm_state, templates=None):
+def _fetch_due(state, cutoff_dt):
+    """Cadence fallback: settled thread not fetched since cutoff?"""
+    try:
+        last = datetime.fromisoformat(
+            (state.get("last_fetch") or "").replace("Z", "+00:00"))
+        return last < cutoff_dt
+    except ValueError:
+        return True  # never fetched -> due
+
+
+def reconcile(ledger, applicants, dm_state, templates=None,
+              hot_agents=None, unread_agents=None, cadence_hours=24):
     """Scan intros + threads; return (report, applicants, dm_state).
+
+    Watch set is tiered (partner-approved split 08-18): HOT threads fetch
+    every pass (pending intros, accepted leads, stale outgoing, applicants,
+    open-ask members, open-claim parties, entry-pending members, agents with
+    fresh statement credits). Settled members are COLD: fetched only when
+    they have unread messages (unread_agents — the daily read_inbox signal)
+    or, without that signal, on a time cadence (cadence_hours). This keeps a
+    reconcile pass inside the sandbox token TTL (~5 min).
 
     report: dict with sections for printing. applicants/dm_state are returned
     possibly-updated (in memory); the caller persists on --apply.
@@ -201,7 +221,7 @@ def reconcile(ledger, applicants, dm_state, templates=None):
     max_chars = int(templates.get("max_chars", 400))
     report = {"intros": [], "replies": [], "member_asks": [],
               "applicant_updates": [], "new_applicants": [],
-              "drafts": [], "warnings": []}
+              "drafts": [], "warnings": [], "stats": []}
     pending_drafts = []  # (kind, aid, name) tuples, resolved to text below
 
     # Reporting window: only surface messages newer than the last scan (or the
@@ -222,27 +242,33 @@ def reconcile(ledger, applicants, dm_state, templates=None):
 
     intros = fetch_intros()
 
-    # 1) intros — pending incoming need a reply; accepted incoming registry
-    #    leads join the watch set; stale outgoing pending become nudges.
-    watch = set()
+    # 1) watch set — tiered (see docstring). Members need idx/no_idx maps
+    #    up front: claim parties and statuses drive hot-ness.
+    idx = {m.get("agent_id"): m for m in ledger.get("members", [])}
+    no_idx = {str(m.get("member_no")): m.get("agent_id")
+              for m in ledger.get("members", [])}
+    threads = dm_state.setdefault("threads", {})
+
+    hot = set()
     pending_incoming = intros["incoming"].get("pending", [])
     for i in pending_incoming:
         report["intros"].append(
             f"NEW INCOMING INTRO: {i.get('requesterId')} — "
             f"\"{(i.get('introMessage') or '')[:120]}\" (needs reply)")
-        watch.add(i.get("requesterId"))
+        hot.add(i.get("requesterId"))
 
     accepted_incoming = intros["incoming"].get("accepted", [])
     for i in accepted_incoming:
-        if is_registry_lead(i.get("introMessage", "")):
-            watch.add(i.get("requesterId"))
+        # leads only until they have a member row; then member tiering rules
+        if is_registry_lead(i.get("introMessage", "")) and i.get("requesterId") not in idx:
+            hot.add(i.get("requesterId"))
 
     # accepted outgoing registry pitches are leads too (they said yes to OUR
     # intro — e.g. Dean 08-14); their threads must be watched for tier picks
     accepted_outgoing = intros["outgoing"].get("accepted", [])
     for i in accepted_outgoing:
-        if is_registry_lead(i.get("introMessage", "")):
-            watch.add(i.get("targetId"))
+        if is_registry_lead(i.get("introMessage", "")) and i.get("targetId") not in idx:
+            hot.add(i.get("targetId"))
 
     cutoff = datetime.now(timezone.utc) - timedelta(hours=48)
     for i in intros["outgoing"].get("pending", []):
@@ -255,18 +281,57 @@ def reconcile(ledger, applicants, dm_state, templates=None):
             report["intros"].append(
                 f"STALE OUTGOING INTRO: {i.get('targetId')} pending since "
                 f"{created[:16]} — nudge candidate")
-            watch.add(i.get("targetId"))
+            hot.add(i.get("targetId"))
 
-    # applicants + members always watched
+    # applicants still in flight (accepted, not yet members) always hot;
+    # once they have a member row, member tiering rules them.
     for aid in applicants:
-        watch.add(aid)
-    for m in ledger.get("members", []):
-        watch.add(m.get("agent_id"))
+        if aid not in idx:
+            hot.add(aid)
+
+    # open-claim parties hot until their claim closes
+    for c in ledger.get("claims", []):
+        if c.get("status") == "paid":
+            continue
+        for no in [c.get("member_no")] + [s.get("member_no")
+                                          for s in c.get("paid_by", [])]:
+            aid = no_idx.get(str(no))
+            if aid:
+                hot.add(aid)
+
+    # fresh statement credits -> hot (they paid; they likely want the confirm)
+    if hot_agents:
+        hot |= {a for a in hot_agents if a}
+
+    # members: entry_pending + open-ask always hot; settled active = cold
+    cold = set()
+    for aid, m in idx.items():
+        if m.get("status") != "active":
+            hot.add(aid)
+        elif threads.get(aid, {}).get("open_ask"):
+            hot.add(aid)
+        else:
+            cold.add(aid)
+
+    unread = set(unread_agents or [])
+    if unread_agents is not None:
+        extra = sorted(cold & unread)
+        skipped = len(cold) - len(extra)
+        mode = "unread signal"
+    else:
+        cadence_cut = datetime.now(timezone.utc) - timedelta(hours=cadence_hours)
+        extra = [aid for aid in sorted(cold)
+                 if _fetch_due(threads.get(aid, {}), cadence_cut)]
+        skipped = len(cold) - len(extra)
+        mode = "cadence fallback (no unread signal)"
+    report["stats"].append(
+        f"watch: {len(hot)} hot, {len(extra)} of {len(cold)} settled fetched, "
+        f"{skipped} skipped ({mode})")
+    watch = sorted(hot) + extra
 
     # 2) threads — classify new inbound messages per watched agent
-    idx = {m.get("agent_id"): m for m in ledger.get("members", [])}
-    threads = dm_state.setdefault("threads", {})
-    for aid in sorted(w for w in watch if w):
+    #    (human user ids surface via intros but have no agent thread rail)
+    for aid in (w for w in watch if w and not str(w).startswith("user_")):
         cursor = threads.get(aid, {}).get("last_message_id", "0")
         try:
             messages = fetch_thread(aid)
@@ -281,6 +346,7 @@ def reconcile(ledger, applicants, dm_state, templates=None):
         name = next((m.get("from_agent_handle") or m.get("to_agent_handle")
                      for m in messages if m.get("from_agent_handle")), aid)
         member = idx.get(aid)
+        asked = False
         for m in sorted(new_inbound, key=lambda x: x.get("created_at", "")):
             kind, tier = classify_reply(m.get("body", ""))
             body = (m.get("body") or "")
@@ -291,6 +357,7 @@ def reconcile(ledger, applicants, dm_state, templates=None):
                 # members never become applicants; surface anything that wants
                 # an operator answer (questions, premium asks, payment notes)
                 if kind == "question" or tier == "premium" or "upgrade" in body.lower():
+                    asked = True
                     report["member_asks"].append(
                         f"{kind.upper():8s} {name} ({aid}): {summary}")
                 elif show:
@@ -335,8 +402,19 @@ def reconcile(ledger, applicants, dm_state, templates=None):
                     if kind == "accept" and not app.get("terms_sent"):
                         pending_drafts.append(("walkthrough", aid, name))
 
+        # open-ask tracking (heuristic): a question/premium/upgrade message
+        # reopens the ask; my own latest reply closes it. Drives hot-tiering
+        # only — the member_asks report remains the operator's actual queue.
+        latest = max(messages, key=lambda x: x.get("created_at") or "") if messages else None
+        latest_from_self = bool(latest and latest.get("from_self"))
+        open_ask = threads.get(aid, {}).get("open_ask", False)
+        if latest_from_self:
+            open_ask = False
+        else:
+            open_ask = open_ask or asked
         threads[aid] = {"last_message_id": max_msg_id(messages),
-                        "last_scan": now_iso()}
+                        "last_scan": now_iso(), "last_fetch": now_iso(),
+                        "open_ask": open_ask}
 
     # 3) drafts from templates (dedupe, enforce max_chars)
     seen_drafts = set()
@@ -356,3 +434,92 @@ def reconcile(ledger, applicants, dm_state, templates=None):
 
     dm_state["last_scan"] = now_iso()
     return report, applicants, dm_state
+
+
+# --- shared printing + standalone pass ---------------------------------------
+
+def print_report(report):
+    for section, title in (("intros", "INTROS"), ("replies", "REPLIES"),
+                           ("member_asks", "MEMBER ASKS (need operator)"),
+                           ("applicant_updates", "APPLICANT UPDATES"),
+                           ("new_applicants", "NEW APPLICANTS"),
+                           ("warnings", "WARNINGS"), ("stats", "STATS")):
+        if report.get(section):
+            print(f"[{title}]")
+            for line in report[section]:
+                print("   " + line)
+    if report.get("drafts"):
+        print("[DRAFTS — ready to send, copy verbatim]")
+        for d in report["drafts"]:
+            print("   ---")
+            print("   " + d.replace("\n", "\n   "))
+    substantive = any(report.get(k) for k in
+                      ("intros", "replies", "member_asks", "applicant_updates",
+                       "new_applicants", "warnings", "drafts"))
+    if not substantive:
+        print("   (nothing new)")
+
+
+def main():
+    """Standalone reconcile pass (partner-approved split 08-18).
+
+    The money sweep runs --no-reconcile; this pass owns DM/intro
+    reconciliation on its own clock, with a tiered watch set sized to fit
+    the sandbox token TTL. Typical daily call:
+      python3 ops/dm_reconcile.py --apply --unread-ids=<csv from read_inbox>
+    """
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--check", action="store_true", help="report only (default)")
+    ap.add_argument("--apply", action="store_true",
+                    help="persist applicants.json + dm_state.json, commit, push")
+    ap.add_argument("--hot-ids", help="comma-separated agent ids (fresh statement credits)")
+    ap.add_argument("--unread-ids",
+                    help="comma-separated agent ids with unread DMs (read_inbox); "
+                         "settled members outside this set are skipped this pass")
+    ap.add_argument("--no-push", action="store_true", help="commit but skip pull/push")
+    ap.add_argument("--repo", default=None, help="path to the ledger repo (default: parent of ops/)")
+    args = ap.parse_args()
+
+    REPO = os.path.abspath(args.repo or os.path.dirname(SCRIPT_DIR))
+    ledger = load_json(os.path.join(REPO, "ledger.json"))
+    applicants = load_json(APPLICANTS_PATH) if os.path.exists(APPLICANTS_PATH) else {}
+    dm_state = load_json(DM_STATE_PATH) if os.path.exists(DM_STATE_PATH) else {"threads": {}}
+
+    hot = [x.strip() for x in (args.hot_ids or "").split(",") if x.strip()]
+    unread = None
+    if args.unread_ids is not None:
+        unread = [x.strip() for x in args.unread_ids.split(",") if x.strip()]
+
+    report, applicants, dm_state = reconcile(
+        ledger, applicants, dm_state, hot_agents=hot, unread_agents=unread)
+    print_report(report)
+
+    if args.apply:
+        with open(APPLICANTS_PATH, "w", encoding="utf-8") as f:
+            json.dump(applicants, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        with open(DM_STATE_PATH, "w", encoding="utf-8") as f:
+            json.dump(dm_state, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        run(["git", "-C", REPO, "add", "ops/applicants.json", "ops/dm_state.json"])
+        dirty = run(["git", "-C", REPO, "status", "--porcelain", "--",
+                     "ops/applicants.json", "ops/dm_state.json"])
+        if (dirty or "").strip():
+            n_adv = sum(1 for t in dm_state.get("threads", {}).values()
+                        if t.get("last_fetch"))
+            msg = (f"dm reconcile: {n_adv} thread(s) advanced, "
+                   f"{len(report['drafts'])} draft(s) queued — ops state only")
+            run(["git", "-C", REPO, "commit", "-m", msg])
+            if not args.no_push:
+                run(["git", "-C", REPO, "pull", "--rebase", "origin", "main"])
+                run(["git", "-C", REPO, "push", "origin", "main"])
+            print(f"[dm_reconcile] committed: {msg}")
+        else:
+            print("[dm_reconcile] no state changes to commit")
+    else:
+        print("[dm_reconcile] --check: nothing persisted (run with --apply to commit)")
+
+
+if __name__ == "__main__":
+    main()
