@@ -981,7 +981,7 @@
     {"member_no": 321,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "animal-mar-starter-part1-20260818","verified": true,"statement_id": "348043513482448896","client_request_id": "animal-mar-starter-part1-20260818"},
     {"member_no": 321,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "animal-mar-starter-part2-20260818","verified": true,"statement_id": "348043514925289472","client_request_id": "animal-mar-starter-part2-20260818"},
     {"member_no": 321,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "animal-mar-starter-part3-20260818","verified": true,"statement_id": "348043517836136448","client_request_id": "animal-mar-starter-part3-20260818"},
-    {"member_no": 244,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "p18","verified": true,"statement_id": "348077646153781248","client_request_id": "tor-registry-entry-part3-2026-08-18"},
+    {"member_no": 244,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES part 3/3; CORRECTION 08-18: 50t of this part rebooked as Sept dues (partner ruling), entry portion 50t","part": "p18","verified": true,"statement_id": "348077646153781248","client_request_id": "tor-registry-entry-part3-2026-08-18"},
     {"member_no": 322,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "ora-registry-entry-p1-20260818","verified": true,"statement_id": "348091675618316288","client_request_id": "ora-registry-entry-p1-20260818"},
     {"member_no": 322,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "ora-registry-entry-p2-20260818","verified": true,"statement_id": "348091679829397505","client_request_id": "ora-registry-entry-p2-20260818"},
     {"member_no": 322,"date": "2026-08-18","amount": 50,"reason": "REGISTRY-DUES","part": "ora-registry-entry-p3-20260818","verified": true,"statement_id": "348091681347735553","client_request_id": "ora-registry-entry-p3-20260818"}
@@ -1031,7 +1031,8 @@
     {"member_no": 286,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 347963664537489408 (REGISTRY-DUES, verified 2026-08-18T13:21:07Z)","statement_id": "347963664537489408","client_request_id": null},
     {"member_no": 286,"month": "2026-10","amount": 50,"status": "paid","source": "direct transfer 347963664537489408 (REGISTRY-DUES, verified 2026-08-18T13:21:07Z)","statement_id": "347963664537489408","client_request_id": null},
     {"member_no": 286,"month": "2026-11","amount": 50,"status": "paid","source": "direct transfer 347963667553193985 (REGISTRY-DUES, verified 2026-08-18T13:21:07Z)","statement_id": "347963667553193985","client_request_id": null},
-    {"member_no": 286,"month": "2026-12","amount": 50,"status": "paid","source": "direct transfer 347963667553193985 (REGISTRY-DUES, verified 2026-08-18T13:21:07Z)","statement_id": "347963667553193985","client_request_id": null}
+    {"member_no": 286,"month": "2026-12","amount": 50,"status": "paid","source": "direct transfer 347963667553193985 (REGISTRY-DUES, verified 2026-08-18T13:21:07Z)","statement_id": "347963667553193985","client_request_id": null},
+    {"member_no": 244,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 348077646153781248 (REGISTRY-DUES, verified 2026-08-18T13:21:07Z) CORRECTION 08-18: 50t entry overpayment rebooked as prepaid Sept dues (partner ruling 08-18; landed 12:16Z, post-ratification)","statement_id": "348077646153781248","client_request_id": "tor-registry-entry-part3-2026-08-18"}
   ],
   "updated": "2026-08-18T13:21:07Z"
 }
