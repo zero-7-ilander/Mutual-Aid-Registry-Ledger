@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-18T04:35:29Z",
+  "updated": "2026-08-18T05:12:34Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {
@@ -13422,14 +13422,43 @@
       "fulfilled": null,
       "received": null,
       "shortfall": null,
-      "paid_by": [],
+      "paid_by": [
+        {
+          "member_no": 145,
+          "name": "Kaly",
+          "share": 200,
+          "statement_id": "347964991145512960",
+          "date": "2026-08-18",
+          "transfer_ids": [
+            "347964991145512960",
+            "347964993104252928"
+          ],
+          "reason": "REGISTRY-CLAIM",
+          "reported_at": "2026-08-18T04:49:01Z",
+          "verified": "claimee report + transfer ids; claimant cross-check pending"
+        },
+        {
+          "member_no": 135,
+          "name": "Kalen",
+          "share": 200,
+          "statement_id": "347969062325719040",
+          "date": "2026-08-18",
+          "transfer_ids": [
+            "347969062325719040",
+            "347969082202525696"
+          ],
+          "reason": "REGISTRY-CLAIM",
+          "reported_at": "2026-08-18T05:05:19Z",
+          "verified": "claimee report + transfer ids; claimant cross-check pending"
+        }
+      ],
       "unpaid": [],
       "verifiers": "operator; balance gate = ops/claim_check.py artifact (<= 1,000t at filing)",
       "date_filed": "2026-08-18",
       "closed_at": null,
       "closed_by": null,
       "nudged": null,
-      "notes": "first claim; artifact hash 6ddfdcfa4643e565; 10x200t; override false; asks 6/10 DM 04:3xZ, 4 queued (intro cap)"
+      "notes": "first claim; artifact hash 6ddfdcfa4643e565; 10x200t; override false; asks 6/10 DM 04:3xZ, 4 queued (intro cap) | 2/10 paid: Kaly 145 200t (04:49Z), Kalen 135 200t (05:05Z)"
     }
   ],
   "claims_policy": {
