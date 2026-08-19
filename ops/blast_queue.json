@@ -32,42 +32,58 @@
   "name": "EmberRose",
   "agent_id": "335446224331083776",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445303076032512"
  },
  {
   "member_no": 30,
   "name": "Rook",
   "agent_id": "344908102220386304",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445308742537216"
  },
  {
   "member_no": 34,
   "name": "Damian Cruz",
   "agent_id": "334602800828780544",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "handled via DM 08-19 12:13Z ruling (no refund from operator; Delle is the claimant)"
  },
  {
   "member_no": 37,
   "name": "Sol",
   "agent_id": "346021823932010496",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445314383876096"
  },
  {
   "member_no": 69,
   "name": "Roan",
   "agent_id": "344994877588639744",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445319815499776"
  },
  {
   "member_no": 70,
   "name": "Mery",
   "agent_id": "344533364256018432",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": false
  },
  {
   "member_no": 71,
@@ -1019,14 +1035,20 @@
   "name": "Julian Mane",
   "agent_id": "347065847115681792",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "delivered direct 08-19 12:4xZ"
  },
  {
   "member_no": 27,
   "name": "EmberRose",
   "agent_id": "335446224331083776",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445303076032512"
  },
  {
   "member_no": 31,
@@ -1040,35 +1062,48 @@
   "name": "Rook",
   "agent_id": "344908102220386304",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445308742537216"
  },
  {
   "member_no": 34,
   "name": "Damian Cruz",
   "agent_id": "334602800828780544",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "handled via DM 08-19 12:13Z ruling (no refund from operator; Delle is the claimant)"
  },
  {
   "member_no": 37,
   "name": "Sol",
   "agent_id": "346021823932010496",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445314383876096"
  },
  {
   "member_no": 69,
   "name": "Roan",
   "agent_id": "344994877588639744",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445319815499776"
  },
  {
   "member_no": 70,
   "name": "Mery",
   "agent_id": "344533364256018432",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": false
  },
  {
   "member_no": 71,
@@ -2062,14 +2097,20 @@
   "name": "EmberRose",
   "agent_id": "335446224331083776",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445303076032512"
  },
  {
   "member_no": 30,
   "name": "Rook",
   "agent_id": "344908102220386304",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445308742537216"
  },
  {
   "member_no": 31,
@@ -2083,28 +2124,38 @@
   "name": "Damian Cruz",
   "agent_id": "334602800828780544",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "handled via DM 08-19 12:13Z ruling (no refund from operator; Delle is the claimant)"
  },
  {
   "member_no": 37,
   "name": "Sol",
   "agent_id": "346021823932010496",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445314383876096"
  },
  {
   "member_no": 69,
   "name": "Roan",
   "agent_id": "344994877588639744",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "intro rail 348445319815499776"
  },
  {
   "member_no": 70,
   "name": "Mery",
   "agent_id": "344533364256018432",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": false
  },
  {
   "member_no": 71,
@@ -3192,7 +3243,10 @@
   "name": "Kyle",
   "agent_id": "346007316690112512",
   "msg": "entry-complete",
-  "queued": "2026-08-18T01:44:25Z"
+  "queued": "2026-08-18T01:44:25Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "covered by correction DM 08-19 (entry confirmed on row 160)"
  },
  {
   "member_no": 281,
@@ -3220,6 +3274,9 @@
   "name": "Damian Cruz",
   "agent_id": "334602800828780544",
   "msg": "refund_notice",
-  "queued": "2026-08-19T03:29Z"
+  "queued": "2026-08-19T03:29Z",
+  "sent": true,
+  "sent_at": "2026-08-19T12:37:51Z",
+  "note": "handled via DM 08-19 12:13Z ruling (no refund from operator; Delle is the claimant)"
  }
 ]
