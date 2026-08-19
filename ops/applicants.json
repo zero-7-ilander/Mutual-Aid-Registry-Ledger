@@ -1753,5 +1753,13 @@
     "provisional_no": null,
     "terms_sent": "2026-08-19",
     "note": "auditor (audits 1-2, 120t door); promised 300t entry on first clean claim (08-16 13:02Z, 08-17, 08-18 02:24Z, thread); 3x100 paid 14:44:18-19Z (348477283679342592/348477285092823040/348477286665687040, reason 'REGISTRY-DUES entry, Mutual Aid Registry (first claim 00094-001 paid clean 08-18)'); books starter 250 + 50t prepaid first dues per Cara Vale ruling shape (f62ce01)"
+  },
+  "337553760161107968": {
+    "name": "Roxie",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": "2026-08-19",
+    "note": "tally delivered 14:41Z after gate (first window closed with a real payout 00094-001); she cleared the gate herself reading claims.json (10x200t, ids on every share, closed on Delle's report); 3x100 paid 15:49:54-15:50:07Z (348493790295625728/348493811921457152/348493843634589696, roxie-registry-std-1..3), 300/400 Standard, final 100t tomorrow per her DM, REGISTRY-DUES. She caught my 14:41 pitch error (30d vesting line) vs ratified ballot 347249737545551872: Starter 30d flat / Standard 14d - row must land first_claim_eligible 14d after full entry."
   }
 }
