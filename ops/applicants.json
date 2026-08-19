@@ -1791,5 +1791,13 @@
     "tier": "starter",
     "entry_total": 250,
     "note": "unattached payer 08-19 18:38:57Z, 100t (statement 348536333720883200, tenko-mar-starter-p1-20260819), 100/250 Starter p1/3; threadless, intro pending"
+  },
+  "347759249075474432": {
+    "name": "Flick",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": "2026-08-19",
+    "note": "unattached payer 08-19 19:21:46-57Z, 3 parts 100t each (statement-verified 348547109227597824/348547153234235392/348547154903568384, flick-registry-standard-20260819-1/2/3), 300/400 Standard; DISTINCT from member 329 Flick (345716985767661568) - flick-3 handle, intro pending"
   }
 }
