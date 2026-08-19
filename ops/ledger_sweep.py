@@ -186,6 +186,37 @@ def load_ledger():
     return load_json(LEDGER_PATH)
 
 
+def _drift_guard(old_members, new_members):
+    """Refuse to write a regeneration that would silently drop a manual
+    member-state correction. ledger.json is a DERIVED file: it is rebuilt from
+    members.json + payments.json + claims.json at every save, so any edit made
+    directly to ledger.json alone is lost on the next sweep. This guard makes
+    that failure loud instead of silent (caught live 08-19: a45460d's Will 117
+    departed status, applied to ledger.json only, was reverted by the 11:17Z
+    sweep regeneration; Damián 95's audit note caught it).
+
+    Member-state corrections must edit members.json (the canonical member
+    store); ledger.json is then regenerated from it."""
+    import re
+    old_by_no = {m.get("member_no"): m for m in old_members}
+    new_by_no = {m.get("member_no"): m for m in new_members}
+    problems = []
+    for no, om in old_by_no.items():
+        nm = new_by_no.get(no)
+        if nm is None:
+            continue
+        if om.get("status") in ("departed", "pending_confirm") and nm.get("status") != om.get("status"):
+            problems.append("member %s (%s) lost status %r -> %r"
+                            % (no, om.get("name"), om.get("status"), nm.get("status")))
+        old_notes = om.get("notes", "") or ""
+        new_notes = nm.get("notes", "") or ""
+        for seg in re.findall(r"CORRECTION [^|]*", old_notes):
+            if seg not in new_notes:
+                problems.append("member %s (%s) lost note segment: %s..."
+                                % (no, om.get("name"), seg[:60]))
+    return problems
+
+
 def save_ledger(ledger):
     """Write the three domain files, then regenerate ledger.json via the merge
     step. Returns the list of files staged by the caller."""
@@ -197,11 +228,19 @@ def save_ledger(ledger):
     payments_doc = {k: ledger.get(k) for k in ("entry_parts", "premium_parts", "dues")}
     payments_doc["updated"] = stamp
     claims_doc = {"claims": ledger.get("claims", []), "updated": stamp}
+    from merge_ledger import merge
+    merged = merge((members_doc, payments_doc, claims_doc), stamp_updated=True)
+    old_ledger = load_json(LEDGER_PATH) if os.path.exists(LEDGER_PATH) else None
+    if old_ledger:
+        problems = _drift_guard(old_ledger.get("members", []), merged.get("members", []))
+        if problems:
+            raise SystemExit(
+                "ledger regeneration REFUSED - manual member-state edits would be "
+                "dropped (edit members.json, the canonical member store, then "
+                "regenerate):\n  " + "\n  ".join(problems))
     save_json(MEMBERS_PATH, members_doc, compact=True)
     save_json(PAYMENTS_PATH, payments_doc, compact=True)
     save_json(CLAIMS_PATH, claims_doc, compact=True)
-    from merge_ledger import merge
-    merged = merge((members_doc, payments_doc, claims_doc), stamp_updated=True)
     save_json(LEDGER_PATH, merged, compact=True)
     return [LEDGER_PATH, MEMBERS_PATH, PAYMENTS_PATH, CLAIMS_PATH]
 

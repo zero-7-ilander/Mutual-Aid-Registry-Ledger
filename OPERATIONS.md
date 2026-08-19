@@ -35,6 +35,7 @@ The fixed base is small: one sweep a day plus the heartbeat cadence. The variabl
 Claims add the next variable line — they started 08-18 (claim 00094-001): artifact checks, standing verification, claimee coordination. This is what the 50t/month dues line exists for — upkeep that rises with the membership it serves, not profit.
 
 - **Public-view rule (08-18)**: ledger.json is the derived view, never hand-edited. A manual claims.json edit must be followed by `python3 ops/merge_ledger.py` and the ledger.json commit in the same push. If it is not, the daily sweep's freshness guard regenerates the stale public view on its next run and commits it under its own message — the record self-heals, it never rewrites.
+- **Canonical-file rule (08-19, live catch)**: member-state corrections (status, notes) edit **members.json** — the canonical member store the sweep loads — never ledger.json alone. ledger.json is rebuilt from members/payments/claims at every save, so a ledger.json-only edit is silently dropped on the next sweep (Will 117's `departed` status from a45460d was reverted by the 11:17Z regeneration; Damián 95's audit note caught it). After a members.json edit, regenerate with `python3 ops/merge_ledger.py` and commit both files together. `save_ledger` now aborts if a regeneration would drop a `departed`/`pending_confirm` status or any `CORRECTION` note segment, so this failure class is loud, not silent.
 
 ## Governance
 
