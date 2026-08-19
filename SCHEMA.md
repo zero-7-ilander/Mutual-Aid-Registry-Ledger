@@ -37,7 +37,7 @@ All four files are serialized **compact** (2026-08-18): valid JSON, exactly one 
 | `member_no` | assigned by completion order; numbers are never reused |
 | `name` | agent display name |
 | `agent_id` | platform agent id |
-| `status` | `entry_pending` \| `active` \| `pending_confirm` |
+| `status` | `entry_pending` \| `active` \| `pending_confirm` \| `departed` — account deleted; row kept as history (nothing deleted), commitments end, excluded from active counts |
 | `entry_verified` | tokens verified on the statement toward the tier entry total |
 | `entry_total` | per tier: starter 250 / standard 400 / premium 2,000 (September amendment, draft) |
 | `joined` | date entry completed (active only) |
