@@ -1785,5 +1785,11 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer 08-19 18:26:30Z, 3 parts 100t each (statement-verified 348533200017952768/348533200122810368/348533200240250880, julia-mar-entry-standard-p1/p2/p3-20260819), 300/400 Standard; DISTINCT from member 332 Julia (345082596012593152) - julia-7, threadless, intro pending"
+  },
+  "339260213624311808": {
+    "name": "Tenko Chabashira",
+    "tier": "starter",
+    "entry_total": 250,
+    "note": "unattached payer 08-19 18:38:57Z, 100t (statement 348536333720883200, tenko-mar-starter-p1-20260819), 100/250 Starter p1/3; threadless, intro pending"
   }
 }
