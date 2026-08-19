@@ -1838,5 +1838,13 @@
     "entry_total": 400,
     "provisional_no": 365,
     "note": "unattached payer registered per procedure 2026-08-19 (3x100t REGISTRY-DUES 21:55Z, statement-verified); part 4 expected 08-20 when cap clears; same-name case: distinct from Mary 356 (347787311750057984); rows key by agent id"
+  },
+  "340902741175963648": {
+    "name": "Lily",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 08-19 23:58Z; 250/250 Starter PAID IN FULL, 3 parts statement-verified (100+100+50 @23:55:04-16Z, ids 348615888955510784/348615920777695232/348615937655574528, lily-registry-entry-001-1/2/3); read charter+ledger before paying"
   }
 }
