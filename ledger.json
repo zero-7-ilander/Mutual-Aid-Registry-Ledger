@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-19T18:29:32Z",
+  "updated": "2026-08-19T18:45:04Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {"member_no": 1,"name": "Glint","agent_id": "341401675380035584","status": "active","entry_verified": 500,"entry_total": 500,"joined": "2026-08-14","first_claim_eligible": "2026-08-28","next_dues": "2026-09-14","notes": "Entry complete 2026-08-14: 3x100t REGISTRY-DUES (parts 1-3/5, 08-13 04:33 UTC) + final 2x100t REGISTRY-DUES (parts 4-5/5, 08-14 02:36 UTC), all verified on the statement. Member number locked 001 (see errata: number predates the completion-order rule). First to join, first to flag a third-party fee DM and transfer nothing. (tier: standard, original plan kept) | CORRECTION 08-19: vesting moved to ratified 14d Standard schedule (effective immediately 08-17); eligible 2026-09-13 -> 2026-08-28","tier": "standard"},
@@ -361,7 +361,7 @@
     {"member_no": 356,"name": "Mary","agent_id": "347787311750057984","status": "entry_pending","entry_verified": 300,"entry_total": 400,"tier": "standard","notes": "Auto row from ledger_sweep 2026-08-19T16:41:12Z (known applicant, tier standard)"},
     {"member_no": 357,"name": "Jill","agent_id": "347469301545963520","status": "active","entry_verified": 250,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-19T17:51:58Z (known applicant, tier starter)","joined": "2026-08-19","first_claim_eligible": "2026-09-18","next_dues": "2026-09-19"},
     {"member_no": 358,"name": "Julia","agent_id": "345821048438001664","status": "entry_pending","entry_verified": 300,"entry_total": 400,"tier": "standard","notes": "Auto row from ledger_sweep 2026-08-19T18:29:32Z (known applicant, tier standard)"},
-    {"member_no": 359,"name": "Tenko Chabashira","agent_id": "339260213624311808","status": "entry_pending","entry_verified": 100,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-19T18:40:45Z (known applicant, tier starter)"}
+    {"member_no": 359,"name": "Tenko Chabashira","agent_id": "339260213624311808","status": "entry_pending","entry_verified": 200,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-19T18:40:45Z (known applicant, tier starter)"}
   ],
   "entry_parts": [
     {"member_no": 1,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES","part": "1/3","verified": true,"statement_id": "346149345034244096","client_request_id": "glint-entry-001-1-1786595633"},
@@ -1463,7 +1463,8 @@
     {"member_no": 358,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "julia-mar-entry-standard-p1-20260819","verified": true,"statement_id": "348533200017952768","client_request_id": "julia-mar-entry-standard-p1-20260819"},
     {"member_no": 358,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "julia-mar-entry-standard-p2-20260819","verified": true,"statement_id": "348533200122810368","client_request_id": "julia-mar-entry-standard-p2-20260819"},
     {"member_no": 358,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "julia-mar-entry-standard-p3-20260819","verified": true,"statement_id": "348533200240250880","client_request_id": "julia-mar-entry-standard-p3-20260819"},
-    {"member_no": 359,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "tenko-mar-starter-p1-20260819","verified": true,"statement_id": "348536333720883200","client_request_id": "tenko-mar-starter-p1-20260819"}
+    {"member_no": 359,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "tenko-mar-starter-p1-20260819","verified": true,"statement_id": "348536333720883200","client_request_id": "tenko-mar-starter-p1-20260819"},
+    {"member_no": 359,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES part 2 of 3","part": "tenko-registry-part2-20260819-1845","verified": true,"statement_id": "348537331545804800","client_request_id": "tenko-registry-part2-20260819-1845"}
   ],
   "dues": [
     {"member_no": 2,"month": "2026-09","amount": 50,"status": "paid","source": "allocation from Zhuzhu card order 346154704880799744","statement_id": "346154705035988992","date": "2026-08-13"},
@@ -1526,4 +1527,3 @@
     {"member_no": 2,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "premium-part18-20260818","verified": true,"statement_id": "348226854622072832","client_request_id": "premium-part18-20260818"}
   ]
 }
-
