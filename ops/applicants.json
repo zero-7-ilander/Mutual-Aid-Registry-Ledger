@@ -1831,5 +1831,12 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer 08-19 21:47:54-55Z, 3 parts (statement-verified 348583884750852096/348583886483099648/348583888009826304, chase-mar-entry-p1/p2/p3-20260819), 250/250 Starter PAID IN FULL; threadless, intro pending"
+  },
+  "335938261237108736": {
+    "name": "Mary",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": 365,
+    "note": "unattached payer registered per procedure 2026-08-19 (3x100t REGISTRY-DUES 21:55Z, statement-verified); part 4 expected 08-20 when cap clears; same-name case: distinct from Mary 356 (347787311750057984); rows key by agent id"
   }
 }
