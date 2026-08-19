@@ -67,7 +67,12 @@ SCHEMA_PATH = os.path.join(REPO_ROOT, "SCHEMA.md")
 
 REGISTRY_RE = re.compile(r"registr|REGISTRY|entry|prem", re.IGNORECASE)
 PREMIUM_RE = re.compile(r"premium|prem-|prem ", re.IGNORECASE)
-CLAIM_RE = re.compile(r"claim", re.IGNORECASE)
+# Claim rail keyword only (CLAIMS.md: claim shares always use reason
+# REGISTRY-CLAIM). A bare "claim" mention in a REGISTRY-DUES reason is
+# narrative, not claim money (Vanessa 08-19: "REGISTRY-DUES entry ... first
+# claim 00094-001 paid clean 08-18" was misflagged as a misroute and would
+# have bounced a documented entry payment).
+CLAIM_RE = re.compile(r"registr[\-\s_]?claim", re.IGNORECASE)
 
 # Claim aging constants (CLAIMS.md, codified 2026-08-17): one clock, the
 # daily 07:30 sweep. VOID_DAYS: zero paid shares -> void, immediate refile.
