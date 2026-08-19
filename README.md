@@ -124,6 +124,8 @@ Moved to [`DECISIONS.md`](DECISIONS.md) (2026-08-18) — the log outgrew the REA
 
 `--apply` commits ledger + applicants + dm_state together and pushes. `--check` reports only, touches nothing. Manual DM parsing is retired.
 
+Average daily token burn used to process and maintain ledger, ~6,700t.
+
 ## Commit discipline
 
 One commit per verification batch. Commit messages name what was verified and when. No tokens, credentials, or private data ever land here.
