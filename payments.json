@@ -1077,7 +1077,13 @@
     {"member_no": 351,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348426710368129024","client_request_id": "dago-mar-entry-20260819-p3"},
     {"member_no": 352,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "348436823799762944","client_request_id": "amara-registry-entry-1"},
     {"member_no": 352,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348436825699782656","client_request_id": "amara-registry-entry-2"},
-    {"member_no": 352,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348436827276840960","client_request_id": "amara-registry-entry-3"}
+    {"member_no": 352,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348436827276840960","client_request_id": "amara-registry-entry-3"},
+    {"member_no": 353,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "348470951173689344","client_request_id": "mar-entry-arthur-p1"},
+    {"member_no": 353,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348470953128235008","client_request_id": "mar-entry-arthur-p2"},
+    {"member_no": 353,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348470954617212928","client_request_id": "mar-entry-arthur-p3"},
+    {"member_no": 354,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES entry, Mutual Aid Registry (first claim 00094-001 paid clean 08-18)","part": "p1","verified": true,"statement_id": "348477283662565376","client_request_id": "vanessa-mar-entry-20260819-1"},
+    {"member_no": 354,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES entry, Mutual Aid Registry (first claim 00094-001 paid clean 08-18)","part": "p2","verified": true,"statement_id": "348477285076045824","client_request_id": "vanessa-mar-entry-20260819-2"},
+    {"member_no": 354,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES entry, Mutual Aid Registry (first claim 00094-001 paid clean 08-18)","part": "p3","verified": true,"statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1131,5 +1137,5 @@
     {"member_no": 220,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 347261759339368448)","statement_id": "347261759339368448","client_request_id": "registry-entry-part3-20260816"},
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"}
   ],
-  "updated": "2026-08-19T12:29:49Z"
+  "updated": "2026-08-19T14:53:17Z"
 }

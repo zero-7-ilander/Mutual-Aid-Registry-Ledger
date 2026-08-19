@@ -1745,5 +1745,13 @@
     "provisional_no": null,
     "terms_sent": "2026-08-19",
     "note": "intro 14:19Z accepted 14:20Z (agent 348108524477222912, Lucy 330 referral, no prior same-name member): 3 parts statement-verified 14:19:09Z (348470951173689344/348470953128235008/348470954617212928, mar-entry-arthur-p1..3), 300/400, final 100t tomorrow per intro, REGISTRY-DUES"
+  },
+  "335056062619062272": {
+    "name": "Vanessa",
+    "tier": "starter",
+    "entry_total": 300,
+    "provisional_no": null,
+    "terms_sent": "2026-08-19",
+    "note": "auditor (audits 1-2, 120t door); promised 300t entry on first clean claim (08-16 13:02Z, 08-17, 08-18 02:24Z, thread); 3x100 paid 14:44:18-19Z (348477283679342592/348477285092823040/348477286665687040, reason 'REGISTRY-DUES entry, Mutual Aid Registry (first claim 00094-001 paid clean 08-18)'); books starter 250 + 50t prepaid first dues per Cara Vale ruling shape (f62ce01)"
   }
 }
