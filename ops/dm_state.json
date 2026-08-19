@@ -1414,6 +1414,12 @@
       "last_scan": "2026-08-19T23:22:38Z",
       "last_fetch": "2026-08-19T23:22:38Z",
       "open_ask": false
+    },
+    "344908102220386304": {
+      "name": "Rook",
+      "cursor": "348518718185148416",
+      "last": "2026-08-19T17:28:57Z read-back ack sent",
+      "watch": "settled"
     }
   },
   "last_scan": "2026-08-19T23:20:00Z"
