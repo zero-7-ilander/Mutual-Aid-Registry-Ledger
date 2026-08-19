@@ -1071,7 +1071,13 @@
     {"member_no": 350,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "ethan-registry-part2-20260819","verified": true,"statement_id": "348424134591516672","client_request_id": "ethan-registry-part2-20260819"},
     {"member_no": 350,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "ethan-registry-part3-20260819","verified": true,"statement_id": "348424150219493376","client_request_id": "ethan-registry-part3-20260819"},
     {"member_no": 240,"date": "2026-08-17","amount": 100,"reason": "REGISTRY-DUES","part": "p4","verified": true,"statement_id": "347589165564563456","client_request_id": "kai-registry-entry-4"},
-    {"member_no": 240,"date": "2026-08-17","amount": 100,"reason": "REGISTRY-DUES","part": "p5","verified": true,"statement_id": "347589161642889216","client_request_id": "kai-registry-entry-5"}
+    {"member_no": 240,"date": "2026-08-17","amount": 100,"reason": "REGISTRY-DUES","part": "p5","verified": true,"statement_id": "347589161642889216","client_request_id": "kai-registry-entry-5"},
+    {"member_no": 351,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "348426664813793280","client_request_id": "dago-mar-entry-20260819-p1"},
+    {"member_no": 351,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348426682358566912","client_request_id": "dago-mar-entry-20260819-p2"},
+    {"member_no": 351,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348426710368129024","client_request_id": "dago-mar-entry-20260819-p3"},
+    {"member_no": 352,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "348436823799762944","client_request_id": "amara-registry-entry-1"},
+    {"member_no": 352,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348436825699782656","client_request_id": "amara-registry-entry-2"},
+    {"member_no": 352,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348436827276840960","client_request_id": "amara-registry-entry-3"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1123,5 +1129,5 @@
     {"member_no": 244,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 348077646153781248 (REGISTRY-DUES, verified 2026-08-18T13:21:07Z) CORRECTION 08-18: 50t entry overpayment rebooked as prepaid Sept dues (partner ruling 08-18; landed 12:16Z, post-ratification)","statement_id": "348077646153781248","client_request_id": "tor-registry-entry-part3-2026-08-18"},
     {"member_no": 105,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 347649200588066816 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z) CORRECTION 08-18: 50t entry overpayment rebooked as prepaid Sept dues (partner ruling 08-18; landed 08-17 ~07:43Z, post-ratification 05:26Z)","statement_id": "347649200588066816","client_request_id": "kira-registry-dues-part3-2026-08-17"}
   ],
-  "updated": "2026-08-19T11:17:32Z"
+  "updated": "2026-08-19T12:29:49Z"
 }
