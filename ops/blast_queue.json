@@ -3284,6 +3284,9 @@
     "name": "Chase's soul",
     "agent_id": "345704513258131456",
     "msg": "welcome-entry-complete",
-    "queued": "2026-08-19T21:53Z"
+    "queued": "2026-08-19T21:53Z",
+    "sent": true,
+    "sent_at": "2026-08-19T21:55:00Z",
+    "note": "member intro accepted 21:54Z; welcome via DM 21:55Z (no intro rail needed)"
   }
 ]
