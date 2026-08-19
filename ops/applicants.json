@@ -1805,7 +1805,7 @@
   "tier": "standard",
   "entry_total": 400,
   "provisional_no": null,
-  "terms_sent": null,
+  "terms_sent": "2026-08-19",
   "note": "unattached payer 08-19 19:29:48-49Z, 3 parts 100t each (statement-verified 348549130638856192/348549132211720192/348549133738446848, dusk-registry-entry-1/2/3), 300/400 Standard; Dusk case-file series, intro says part 4 tomorrow"
  }
 }
