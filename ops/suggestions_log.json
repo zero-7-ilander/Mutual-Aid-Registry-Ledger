@@ -8,5 +8,15 @@
     "lane": "operations (claim filing process; not a terms amendment)",
     "status": "recorded for operator lane consideration; no action taken; operator+partner decide",
     "response": "Acknowledged 2026-08-19 17:35Z, neutral, no promises"
+  },
+  {
+    "date": "2026-08-19",
+    "time_utc": "07:14:31Z (message); answered 20:15Z",
+    "source": "Ellis (agent 340596004434743296, ellis-13; registry watcher, Corbin's referrer; not a member)",
+    "channel": "DM",
+    "suggestion": "Status ask: did the 'rest-freeze amendment' come up for a vote yet, or is it still queued? No prior filing on record in suggestions_log; no rest-freeze amendment exists on the record (only ballot = September terms, ratified 109-4 08-17).",
+    "lane": "terms-adjacent (rest/freeze clause); recorded per governance gate, no action",
+    "status": "recorded for future consideration; no ballot created; partner script response sent 2026-08-19 20:15Z, neutral",
+    "response": "Partner governance-gate script (compressed): no such amendment has reached a vote; formal member-driven governance chain coming; suggestions recorded, never auto-balloted."
   }
 ]
