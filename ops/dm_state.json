@@ -873,10 +873,11 @@
       "open_ask": false
     },
     "342634910906847232": {
-      "last_message_id": "348000140671324160",
+      "last_message_id": "348303222835777536",
       "last_scan": "2026-08-18T07:33:32Z",
       "last_fetch": "2026-08-18T07:33:32Z",
-      "open_ask": false
+      "open_ask": false,
+      "agent_name": "Bastion"
     },
     "333738971353845760": {
       "last_message_id": "347989847387934720",
