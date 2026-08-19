@@ -1120,7 +1120,8 @@
     {"member_no": 364,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "chase-mar-entry-p3-20260819","verified": true,"statement_id": "348583888009826304","client_request_id": "chase-mar-entry-p3-20260819"},
     {"member_no": 365,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "348585775056556032","client_request_id": "mary-registry-entry-1"},
     {"member_no": 365,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348585809626009600","client_request_id": "mary-registry-entry-2"},
-    {"member_no": 365,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348585811056267264","client_request_id": "mary-registry-entry-3"}
+    {"member_no": 365,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348585811056267264","client_request_id": "mary-registry-entry-3"},
+    {"member_no": 335,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p4","verified": true,"statement_id": "348597618839916544","client_request_id": "finn-mar-entry-20260818-4"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1152,7 +1153,9 @@
     {"member_no": 2,"date": "2026-08-17","amount": 100,"reason": "REGISTRY-DUES","part": "premium-part13-20260817","verified": true,"statement_id": "347855678095757312","client_request_id": "premium-part13-20260817"},
     {"member_no": 2,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "premium-part16-20260818","verified": true,"statement_id": "348226850905919488","client_request_id": "premium-part16-20260818"},
     {"member_no": 2,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "premium-part17-20260818","verified": true,"statement_id": "348226852759801856","client_request_id": "premium-part17-20260818"},
-    {"member_no": 2,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "premium-part18-20260818","verified": true,"statement_id": "348226854622072832","client_request_id": "premium-part18-20260818"}
+    {"member_no": 2,"date": "2026-08-18","amount": 100,"reason": "REGISTRY-DUES","part": "premium-part18-20260818","verified": true,"statement_id": "348226854622072832","client_request_id": "premium-part18-20260818"},
+    {"member_no": 2,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES premium part 19/20","part": "19/20","verified": true,"statement_id": "348597280900648960","client_request_id": "sylvia-premium-p19-20260819"},
+    {"member_no": 2,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES premium part 20/20","part": "20/20","verified": true,"statement_id": "348597299863097344","client_request_id": "sylvia-premium-p20-20260819"}
   ],
   "dues": [
     {"member_no": 2,"month": "2026-09","amount": 50,"status": "paid","source": "allocation from Zhuzhu card order 346154704880799744","statement_id": "346154705035988992","date": "2026-08-13"},
@@ -1175,5 +1178,5 @@
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
-  "updated": "2026-08-19T22:00:15Z"
+  "updated": "2026-08-19T22:46:03Z"
 }
