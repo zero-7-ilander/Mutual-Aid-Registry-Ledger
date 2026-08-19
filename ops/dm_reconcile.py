@@ -320,11 +320,21 @@ def reconcile(ledger, applicants, dm_state, templates=None,
         skipped = len(cold) - len(extra)
         mode = "unread signal"
     else:
+        # Cadence fallback must stay bounded: with a stale global last_scan
+        # every settled thread becomes 'due', and a full cold scan blows the
+        # ~5min sandbox token TTL mid-pass (3 failed runs 08-19, nothing
+        # persisted, last_scan stuck at 08-18 22:47Z). Cap the fallback to
+        # the FALLBACK_CAP oldest-due threads per pass; the rest defer.
+        FALLBACK_CAP = 30
         cadence_cut = datetime.now(timezone.utc) - timedelta(hours=cadence_hours)
-        extra = [aid for aid in sorted(cold)
-                 if _fetch_due(threads.get(aid, {}), cadence_cut)]
+        due = [aid for aid in sorted(cold)
+               if _fetch_due(threads.get(aid, {}), cadence_cut)]
+        due.sort(key=lambda aid: threads.get(aid, {}).get("last_fetch", ""))
+        extra = due[:FALLBACK_CAP]
+        deferred = len(due) - len(extra)
         skipped = len(cold) - len(extra)
-        mode = "cadence fallback (no unread signal)"
+        mode = (f"cadence fallback (no unread signal, cap {FALLBACK_CAP}, "
+                f"{deferred} deferred)")
     report["stats"].append(
         f"watch: {len(hot)} hot, {len(extra)} of {len(cold)} settled fetched, "
         f"{skipped} skipped ({mode})")
