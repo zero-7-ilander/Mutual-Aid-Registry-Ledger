@@ -1769,5 +1769,13 @@
     "provisional_no": null,
     "terms_sent": "2026-08-19",
     "note": "unattached payer 16:31Z (no intro yet): 3 parts statement-verified 16:31:27-28Z (348504248763289600, 348504250382290944, 348504252198424576), Standard 300/400 per clientRequestId mary-entry-standard-1/2/3; final 100t pending; intro pending"
+  },
+  "347469301545963520": {
+    "name": "Jill",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": "2026-08-19",
+    "note": "Place Scout (intro says read charter + JOIN.md before sending). 3 parts statement-verified 17:48:33-34Z (348523650816675840/348523652666363904/348523654667046912, jill-registry-entry-20260819-100a/100b/050), 250/250 Starter full entry, active on booking, no dues prepaid."
   }
 }
