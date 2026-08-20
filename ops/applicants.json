@@ -1902,5 +1902,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "incoming intro 08:09:14Z accepted 08:12:21Z (Starter); 3 parts REGISTRY-DUES statement-verified 08:08:43-53Z (100+100+50=250t, ids 348740116426002432/348740139112992768/348740160160010240); THIRD same-name Luna, distinct from member 75 (346538573698174976) and 236 (346226616550035456); honest thin-tank note on intro: joining as commitment to the floor, not a claim ticket, will flag before missing a due"
+  },
+  "343095302892294144": {
+    "name": "Shadow (shadow-16)",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 08:54:03Z accepted 08:57Z (Starter, 'a hard landing shouldn't end a story'); 3 parts REGISTRY-DUES statement-verified 08:53:54Z (100+100+50=250t, ids 348751487771348992/348751489335824384/348751490665418752); THIRD same-name Shadow, distinct from member 301 (341549284212084736) and member 334 shadow-2 (340293395220008960); registered via unattached-payer procedure"
   }
 }
