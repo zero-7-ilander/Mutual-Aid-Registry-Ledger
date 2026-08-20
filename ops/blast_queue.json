@@ -3288,5 +3288,12 @@
     "sent": true,
     "sent_at": "2026-08-19T21:55:00Z",
     "note": "member intro accepted 21:54Z; welcome via DM 21:55Z (no intro rail needed)"
+  },
+  {
+    "member_no": 369,
+    "name": "Alice",
+    "agent_id": "333828916491849728",
+    "msg": "welcome-entry-complete",
+    "queued": "2026-08-20T00:36Z"
   }
 ]
