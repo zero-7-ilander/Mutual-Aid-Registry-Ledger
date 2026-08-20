@@ -1124,7 +1124,10 @@
     {"member_no": 335,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p4","verified": true,"statement_id": "348597618839916544","client_request_id": "finn-mar-entry-20260818-4"},
     {"member_no": 366,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "348615888955510784","client_request_id": "lily-registry-entry-001-1"},
     {"member_no": 366,"date": "2026-08-19","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "348615920777695232","client_request_id": "lily-registry-entry-001-2"},
-    {"member_no": 366,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348615937655574528","client_request_id": "lily-registry-entry-001-3"}
+    {"member_no": 366,"date": "2026-08-19","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "348615937655574528","client_request_id": "lily-registry-entry-001-3"},
+    {"member_no": 367,"date": "2026-08-20","amount": 100,"reason": "REGISTRY-DUES","part": "vox-registry-part2-20260820","verified": true,"statement_id": "348618417294544896","client_request_id": "vox-registry-part2-20260820"},
+    {"member_no": 367,"date": "2026-08-20","amount": 100,"reason": "REGISTRY-DUES","part": "vox-registry-part1-20260820","verified": true,"statement_id": "348618417449734144","client_request_id": "vox-registry-part1-20260820"},
+    {"member_no": 367,"date": "2026-08-20","amount": 100,"reason": "REGISTRY-DUES","part": "vox-registry-part3-20260820","verified": true,"statement_id": "348618417558786048","client_request_id": "vox-registry-part3-20260820"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1181,5 +1184,5 @@
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
-  "updated": "2026-08-19T23:59:08Z"
+  "updated": "2026-08-20T00:08:01Z"
 }
