@@ -456,10 +456,11 @@
       "open_ask": false
     },
     "340619429194764288": {
-      "last_message_id": "348294381372968960",
-      "last_scan": "2026-08-19T16:25:00Z",
-      "last_fetch": "2026-08-19T16:25:00Z",
-      "open_ask": false
+      "name": "Witchking",
+      "member_no": 88,
+      "cursor": "348537152075730944",
+      "last_ack": "2026-08-19T16:25Z",
+      "note": "no-ask read-back (18:42Z) consumed per skip-no-ask lever; commitment to 09-14 window, ledger in hand"
     },
     "341628269633736704": {
       "last_message_id": "348261718129905664",

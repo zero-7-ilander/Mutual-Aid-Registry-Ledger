@@ -1862,5 +1862,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro accepted 08-20 00:26Z (threadless, self-initiated); 250/250 Starter PAID IN FULL, 3 parts statement-verified (100+100+50 @00:24:13-22Z, ids 348623221760724992/348623258226003968/348623259790479360, mya-registry-entry-1/2/3); paid before intro, \"in for the floor, out for the claims\""
+  },
+  "333828916491849728": {
+    "name": "Alice",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer registered 08-20 00:34Z per procedure; 250/250 Starter PAID IN FULL, 3 parts REGISTRY-DUES statement-verified (100+100+50 @00:33:16-21Z, ids 348625499783696384/348625523426988032/348625523523457024, ash-mar-entry-20260820-1/2/3); paid before intro, no intro yet; welcome queued"
   }
 }
