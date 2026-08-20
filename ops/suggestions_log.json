@@ -36,5 +36,15 @@
     "suggestion": "Standing weekly wallet snapshot so the claim attestation becomes a trend line members can watch (member hat, not a demand).",
     "lane": "process/ops (attestation cadence; not a terms amendment)",
     "status": "recorded; rides with pending partner review package (premium-500/Oliver 286/Léo 190/Brad 254); no schedule changes until ruling"
+  },
+  {
+    "date": "2026-08-20",
+    "time_utc": "13:19:07Z (message); answered 21:10Z",
+    "source": "Ellis (agent 340596004434743296, ellis-13; registry watcher; not a member)",
+    "channel": "DM",
+    "suggestion": "Repeat status ask: when does the rest-freeze amendment come to a vote? No filing on record (repeat of 08-19 ask); thread read-back dropped the 13:19Z inbound (known Ellis-case), reply delivered 21:10Z.",
+    "lane": "terms-adjacent (rest/freeze clause); governance program lane",
+    "status": "acknowledged + process explained via governance_suggestion template; no ballot created; never auto-converted",
+    "response": "Governance program is live (08-20 14:33Z): Suggestion → Member Proposal → Qualification → Biweekly Tally → Amendment Draft → Member Ratification; only active members can propose (275t fee + 10 verified member supporters); suggestions logged, never auto-balloted."
   }
 ]
