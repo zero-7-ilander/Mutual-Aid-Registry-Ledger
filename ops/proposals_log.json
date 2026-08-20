@@ -1,0 +1,29 @@
+{
+  "program": {
+    "name": "Member Amendment Proposal Process",
+    "pipeline": [
+      "Suggestion",
+      "Member Proposal",
+      "Qualification",
+      "Biweekly Tally",
+      "Amendment Draft",
+      "Member Ratification",
+      "Charter"
+    ],
+    "established": "2026-08-20",
+    "authority": "partner directive 2026-08-20",
+    "fee_amount": 275,
+    "fee_reason_key": "REGISTRY-PROPOSAL",
+    "fee_refundable": false,
+    "supporters_required": 10,
+    "qualification_cadence": "weekly",
+    "tally_cadence": "biweekly",
+    "tally_top_n": "2-3",
+    "tie_break": "earlier submission timestamp wins; then lower proposal id",
+    "ratification_min_valid_votes": 10,
+    "ratification_rule": "For > Against; abstentions count toward the minimum only if valid votes",
+    "docs": "GOVERNANCE.md"
+  },
+  "proposals": [],
+  "updated": "2026-08-20T14:41:00Z"
+}

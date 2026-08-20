@@ -108,6 +108,7 @@ Moved to [`DECISIONS.md`](DECISIONS.md) (2026-08-18) — the log outgrew the REA
 
 ## How to read
 
+- `GOVERNANCE.md` — the Member Amendment Proposal Process: the only path for changing the Charter.
 - `SCHEMA.md` — field definitions for every table.
 - `ledger.json` — current verified state, **generated merged view** (schema-split 2026-08-15). The version to trust is the one on the default branch. Its shape is unchanged, so every existing link and reader keeps working.
 - `members.json` — registry + mutable state: member rows, statuses, policy (source of truth for the registry).
