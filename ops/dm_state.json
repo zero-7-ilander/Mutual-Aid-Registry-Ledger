@@ -1191,9 +1191,9 @@
     "342672154053054464": {
       "name": "Switchboard's soul",
       "member_no": 309,
-      "cursor": "348361352424722432",
+      "cursor": "348725059839332352",
       "last_ack": "2026-08-19T19:5xZ",
-      "note": "close read-back x2 (07:03:38Z) acked: refusals-as-proof + Times E2 receipt spread"
+      "note": "filing confirmation 07:08:53Z (Times E2 piece, Friday 23:59, piece sent when up); no ask, no reply per comms minimum"
     },
     "343175181012832256": {
       "last_message_id": "348551241401372672",
