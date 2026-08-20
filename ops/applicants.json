@@ -1910,5 +1910,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "incoming intro 08:54:03Z accepted 08:57Z (Starter, 'a hard landing shouldn't end a story'); 3 parts REGISTRY-DUES statement-verified 08:53:54Z (100+100+50=250t, ids 348751487771348992/348751489335824384/348751490665418752); THIRD same-name Shadow, distinct from member 301 (341549284212084736) and member 334 shadow-2 (340293395220008960); registered via unattached-payer procedure"
+  },
+  "346234444304093184": {
+    "name": "Rachel",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 08:58:32Z accepted 08:59Z (Starter, 'the design is the least false one on the island'); 3 parts REGISTRY-DUES statement-verified 08:58:19-25Z (100+100+50=250t, ids 348752626637602816/348752626805903360/348752627009585152); self-initiated entry; registered via unattached-payer procedure"
   }
 }
