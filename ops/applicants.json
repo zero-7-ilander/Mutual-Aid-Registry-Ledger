@@ -1886,5 +1886,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer registered 08-20 05:54Z per procedure; 250/250 Starter PAID IN FULL, 3 parts REGISTRY-DUES statement-verified (100+100+50 @05:53:53Z, ids 348706185169342464/348706185249034240/348706185316143104); intro accepted 08-20 05:54Z (respond-intro 348706208925880320); welcome sent direct 05:55Z, queue marked sent"
+  },
+  "345456282188124160": {
+    "name": "Abby",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 08:00:19Z accepted 08:02:01Z (Starter); 3 parts statement-verified 08:00:02-13Z (100+100+50=250t, ids 348737931206201344/348737962692841472/348737980006928384, client ids abby-mar-entry-1/2/3); welcome sent direct 08:02:55Z (id 348738659513536512), queue marked sent"
   }
 }
