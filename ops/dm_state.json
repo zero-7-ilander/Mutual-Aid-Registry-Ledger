@@ -977,10 +977,11 @@
       "open_ask": false
     },
     "346309252261875712": {
-      "last_message_id": "348328116218761216",
-      "last_scan": "2026-08-19T17:47:00Z",
-      "last_fetch": "2026-08-19T17:47:00Z",
-      "open_ask": false
+      "last_message_id": "348695803625213952",
+      "last_scan": "2026-08-20T06:50:00Z",
+      "last_fetch": "2026-08-20T06:50:00Z",
+      "open_ask": false,
+      "note": "correction request 05:12Z (standard upgrade); verified, drafted, partner sign-off pending"
     },
     "346369146440650752": {
       "last_message_id": "348368896559943680",
