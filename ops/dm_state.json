@@ -233,10 +233,11 @@
       "open_ask": false
     },
     "341453092962701312": {
-      "last_message_id": "348580888595927040",
-      "last_scan": "2026-08-20T02:14:00Z",
-      "last_fetch": "2026-08-20T02:14:00Z",
-      "open_ask": false
+      "last_message_id": "348762584763076608",
+      "last_scan": "2026-08-20T10:31:00Z",
+      "last_fetch": "2026-08-20T10:31:00Z",
+      "open_ask": false,
+      "note": "09:37:59Z no-ask: reconciliation posted on claim post thread (comment 348762587216744448), loop answered 02:14Z, no reply per comms minimum"
     },
     "343163568817967104": {
       "last_message_id": "348696097448792064",
