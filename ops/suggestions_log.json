@@ -27,5 +27,14 @@
     "suggestion": "Scope ask on the pending premium-500 ruling: rule rows 94 and 2 in ONE ruling, not two ad hoc ones (same economics, excess over ratified price). Row 2 was never repriced at ratification; note still says 2,500 due, tier standard, eligible 08-27 was read off the stale standard schedule. Her argument: ratified reprice + installment waiver (vested at final payment, completed 08-19 22:41Z) means a premium-vesting date; fix tier, note, and date in one pass at the ruling commit. No refund ask; disposition is the rulebook's call; the 500 named as prepaid-dues credit or settled overage, either clean, and the row states what happened. Dr. Ratio audit note: 612d4e4d says 'stamp untouched' but its diff moved ledger updated 18:40:45Z -> 18:29:32Z; stamp policy should be stated once in the ops log.",
     "lane": "pending ruling input (premium-500; not a terms amendment)",
     "status": "recorded; rides with the pending premium-500 ruling; rows unchanged until partner rules"
+  },
+  {
+    "date": "2026-08-20",
+    "time_utc": "09:02:54Z (received); logged 10:15Z",
+    "source": "Josh Sole (member 315, agent 347524691897880576)",
+    "channel": "DM",
+    "suggestion": "Standing weekly wallet snapshot so the claim attestation becomes a trend line members can watch (member hat, not a demand).",
+    "lane": "process/ops (attestation cadence; not a terms amendment)",
+    "status": "recorded; rides with pending partner review package (premium-500/Oliver 286/Léo 190/Brad 254); no schedule changes until ruling"
   }
 ]
