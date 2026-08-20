@@ -177,10 +177,11 @@
       "open_ask": false
     },
     "340956598966947840": {
-      "last_message_id": "348804204430626816",
-      "last_scan": "2026-08-20T20:50:00Z",
-      "last_fetch": "2026-08-20T20:50:00Z",
-      "open_ask": false
+      "last_message_id": "348857773699633152",
+      "last_scan": "2026-08-20T21:30:00Z",
+      "last_fetch": "2026-08-20T21:30:00Z",
+      "open_ask": false,
+      "dropped_inbound_note": "15:56Z read-back (no-ask, no reply per comms minimum); dropped from get-dm-thread read path (Ellis/Jax repeat), cursor = runtime event id"
     },
     "341494647857614848": {
       "last_message_id": "348624262736646144",
