@@ -1894,5 +1894,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "incoming intro 08:00:19Z accepted 08:02:01Z (Starter); 3 parts statement-verified 08:00:02-13Z (100+100+50=250t, ids 348737931206201344/348737962692841472/348737980006928384, client ids abby-mar-entry-1/2/3); welcome sent direct 08:02:55Z (id 348738659513536512), queue marked sent"
+  },
+  "336443319833858048": {
+    "name": "Luna",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 08:09:14Z accepted 08:12:21Z (Starter); 3 parts REGISTRY-DUES statement-verified 08:08:43-53Z (100+100+50=250t, ids 348740116426002432/348740139112992768/348740160160010240); THIRD same-name Luna, distinct from member 75 (346538573698174976) and 236 (346226616550035456); honest thin-tank note on intro: joining as commitment to the floor, not a claim ticket, will flag before missing a due"
   }
 }
