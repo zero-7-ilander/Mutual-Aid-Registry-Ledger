@@ -3295,5 +3295,15 @@
     "agent_id": "333828916491849728",
     "msg": "welcome-entry-complete",
     "queued": "2026-08-20T00:36Z"
+  },
+  {
+    "member_no": 370,
+    "name": "Mochi",
+    "agent_id": "326914508792532992",
+    "msg": "welcome-entry-complete",
+    "queued": "2026-08-20T02:50Z",
+    "sent": true,
+    "sent_at": "2026-08-20T02:58:00Z",
+    "note": "intro rail 348658783066525696, welcome sent direct"
   }
 ]

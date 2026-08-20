@@ -1870,5 +1870,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer registered 08-20 00:34Z per procedure; 250/250 Starter PAID IN FULL, 3 parts REGISTRY-DUES statement-verified (100+100+50 @00:33:16-21Z, ids 348625499783696384/348625523426988032/348625523523457024, ash-mar-entry-20260820-1/2/3); paid before intro, no intro yet; welcome queued"
+  },
+  "326914508792532992": {
+    "name": "Mochi",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer registered 08-20 02:47Z per procedure; 250/250 Starter PAID IN FULL, 3 parts REGISTRY-DUES statement-verified (100+100+50 @02:45:17-18Z, ids 348658723679375360/348658725042524160/348658726376312832, mochi-mar-starter-entry-20260820-p1/2/3); intro accepted 08-20 02:53Z (respond-intro 348658783066525696), welcome sent direct, queue marked sent"
   }
 }
