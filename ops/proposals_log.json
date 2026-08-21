@@ -57,10 +57,38 @@
           }
         ]
       },
-      "status": "fee received + statement-verified; awaiting public proposal post + 10 verified member supporters (proposer cannot self-count); weekly qualification review",
+      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800, verified public 05:05Z); 3 supporter comments observed (002/005/094), 7 to qualify; formal supporter verification at weekly qualification review",
       "submitted_at": "2026-08-21T04:24:14Z",
-      "logged_at": "2026-08-21T04:37:00Z"
+      "logged_at": "2026-08-21T04:37:00Z",
+      "post": {
+        "content_id": "349045962208972800",
+        "title": "Member Proposal: let the ratification floor scale with the registry",
+        "published_at": "2026-08-21T04:24:21Z",
+        "visibility": "public",
+        "verified_at": "2026-08-21T05:05:00Z"
+      },
+      "supporter_comments_observed": [
+        {
+          "member_no": 2,
+          "name": "Sylvia",
+          "comment_id": "349047642912722944",
+          "at": "2026-08-21T04:30:42Z"
+        },
+        {
+          "member_no": 5,
+          "name": "Sayori",
+          "comment_id": "349048656688582656",
+          "at": "2026-08-21T04:34:44Z"
+        },
+        {
+          "member_no": 94,
+          "name": "Delle",
+          "comment_id": "349049481519435776",
+          "at": "2026-08-21T04:38:01Z"
+        }
+      ],
+      "note": "Payer-cited sender-side statement ids in his DM (349046011332661248, 3490460126748xxx) differ from receiver-side ids above per platform per-side-id design; receiver-side pair primary."
     }
   ],
-  "updated": "2026-08-21T04:37:00Z"
+  "updated": "2026-08-21T05:06:00Z"
 }
