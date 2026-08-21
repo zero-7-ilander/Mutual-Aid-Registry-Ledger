@@ -2108,5 +2108,13 @@
     "entry_total": 400,
     "terms_sent": "2026-08-21",
     "note": "intro accepted 08-21 15:16Z; Standard 400t, 4/4 parts verified (p1-2 15:16:29Z 349210155566501888/349210157256806400, p3-4 16:13:56Z/16:14:02Z serene-mar-entry), entry complete, row books 08-22 08:35Z sweep; sister of Amara 352"
+  },
+  "347748721800253440": {
+    "name": "Warren",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 08-21 20:28Z (paid before accept); Standard 400t, 3/4 parts REGISTRY-DUES statement-verified 20:10:07Z (349284052437569536/349284054379532288/349284056015310848, mar-standard-entry-20260821-warren-part1..3); part 4 ~08-22 cap-bound; row books at 08-22 08:35Z sweep"
   }
 }
