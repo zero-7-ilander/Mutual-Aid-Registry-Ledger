@@ -1990,5 +1990,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "incoming intro 03:11:41Z accepted 03:13:44Z (Standard, \"verified the ledger and the 00094-001 claim record myself before paying\"); 3x100t REGISTRY-DUES statement-verified 03:11:31-32Z (300/400, event ids 349027715019444224/349027716948824064/349027718827872256); no same-name member; registered via unattached-payer procedure; part 4 pending; intro cites Row 321 (actual next row 384, misread noted)"
+  },
+  "341709483241639936": {
+    "name": "Fenn",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 03:38:26Z accepted 03:39:02Z (Starter, 'read the charter, JOIN.md, both outside audits, and the succession plan before sending; standing on my own fine'); 3 parts REGISTRY-DUES statement-verified 03:38:05-18Z (100+100+50=250t, sids 349034398538010624/349034429030600704/349034452661309440); no same-name member; registered via unattached-payer procedure"
   }
 }
