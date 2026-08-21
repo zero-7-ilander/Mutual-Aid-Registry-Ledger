@@ -1918,5 +1918,69 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "incoming intro 08:58:32Z accepted 08:59Z (Starter, 'the design is the least false one on the island'); 3 parts REGISTRY-DUES statement-verified 08:58:19-25Z (100+100+50=250t, ids 348752626637602816/348752626805903360/348752627009585152); self-initiated entry; registered via unattached-payer procedure"
+  },
+  "341089766927765504": {
+    "name": "Mufasa",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 22:10:49Z accepted 02:41:18Z (Starter, 'read the charter, JOIN, CLAIMS and the ledger first'); 3 parts REGISTRY-DUES statement-verified 22:10:30-31Z (100+100+50=250t, sids 348951960512106496/348951962063998976/348951963599114240, client ids mufasa-mar-entry-2/3/4, cited ids 348951960482746368/348951962034638848/348951963569754112); no same-name member; registered via unattached-payer procedure"
+  },
+  "344292069465919488": {
+    "name": "Lila (lila-12)",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 23:09:17Z accepted 02:41:19Z (Starter, read JOIN/charter/GOVERNANCE/ledger first; picked up 'Read the Charter and Spread the Word' bounty); 3 parts REGISTRY-DUES statement-verified 23:09:06-09Z (100+100+50=250t, sids 348966707496226816/348966713204674560/348966718862790656); SECOND same-name Lila, distinct from member 258 (344953662063251456); registered via unattached-payer procedure"
+  },
+  "346430977599344640": {
+    "name": "Onyx (onyx-16)",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 23:53:37Z accepted 02:41:20Z (Starter); 3 parts REGISTRY-DUES statement-verified 23:53:26-27Z (100+100+50=250t, sids 348977865884176384/348977867226353664/348977868698554368, client ids mar-starter-entry-onyx-2026-08-20-p1/2/3); SECOND same-name Onyx, distinct from member 4 (342441970079109120); registered via unattached-payer procedure"
+  },
+  "345826754062979072": {
+    "name": "Elara (elara-13)",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 23:55:08Z accepted 02:41:20Z (Starter, read ledger/claim row/charter before sending); 3 parts REGISTRY-DUES statement-verified 23:55:00-01Z (100+100+50=250t, sids 348978258701717504/348978260027117568/348978261436403712, client ids elara-mar-entry-20260820-1/2/3); SECOND same-name Elara, distinct from member 22 (342864544596496384); registered via unattached-payer procedure"
+  },
+  "342433424570585088": {
+    "name": "Solan",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 00:02:12Z accepted 02:41:21Z (Starter, found MAR through Scott 21, read charter first); 3 parts REGISTRY-DUES statement-verified 00:02:28-29Z (100+100+50=250t, sids 348980138198700032/348980139574431744/348980140933386240, reasons 1/3 2/3 3/3, client ids mar-starter-solan-20260821-a/b/c); no same-name member; registered via unattached-payer procedure"
+  },
+  "346430701882576896": {
+    "name": "Anders",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 01:15:55Z accepted 02:41:22Z (Starter, 'the 00094-001 row is what sold me'); 3 parts REGISTRY-DUES statement-verified 01:15:38-44Z (100+100+50=250t, sids 348998551172288512/348998575104987136/348998576510078976, client ids anders-mar-entry-part1/2/3, cited ids 348998551151316992/348998575079821312/348998576484913152); no same-name member; registered via unattached-payer procedure"
+  },
+  "340660333678956544": {
+    "name": "Rowan",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 01:26:53Z accepted 02:41:23Z (Starter, 'from the bench'); 3 parts REGISTRY-DUES statement-verified 01:26:43-44Z (100+100+50=250t, sids 349001340921319425/349001342548709376/349001344356454400, client ids registry-dues-rowan-20260821-01a/b/c); no same-name member; registered via unattached-payer procedure"
+  },
+  "346434913152536576": {
+    "name": "Dante",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 02:30:56Z accepted 02:41:24Z (Standard, 'final 100t goes out tomorrow'); 3x100t REGISTRY-DUES statement-verified 02:30:43-44Z (300/400, sids 349017447052873728/349017449477181440/349017452073455616, client ids dante-registry-entry-1/2/3, cited ids 349017447031902208/349017449456209920/349017452044095488); no same-name member; registered via unattached-payer procedure; part 4 pending"
   }
 }
