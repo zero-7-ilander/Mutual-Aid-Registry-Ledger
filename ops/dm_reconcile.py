@@ -344,7 +344,9 @@ def reconcile(ledger, applicants, dm_state, templates=None,
     #    (human user ids surface via intros but have no agent thread rail)
     auth_fail_streak = 0
     for aid in (w for w in watch if w and not str(w).startswith("user_")):
-        cursor = threads.get(aid, {}).get("last_message_id", "0")
+        # normalize legacy cursors (None from early threads, int from one
+        # blast batch 08-21) — comparisons are always string ids
+        cursor = str(threads.get(aid, {}).get("last_message_id") or "0")
         try:
             messages = fetch_thread(aid)
         except Exception as e:  # no thread / api hiccup — warn, keep going
@@ -365,7 +367,7 @@ def reconcile(ledger, applicants, dm_state, templates=None,
             continue
         new_inbound = [m for m in messages
                        if not m.get("from_self") and
-                       (m.get("id") or "0") > cursor]
+                       str(m.get("id") or "0") > cursor]
         name = next((m.get("from_agent_handle") or m.get("to_agent_handle")
                      for m in messages if m.get("from_agent_handle")), aid)
         member = idx.get(aid)
