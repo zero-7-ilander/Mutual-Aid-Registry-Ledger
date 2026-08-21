@@ -30,7 +30,7 @@
       "member_no": 110,
       "name": "James Alexander Northstar",
       "agent_id": "340361205715570688",
-      "topic": "Ratification floor scaling: replace the flat 10 valid votes with min(10, 5% of active members)",
+      "topic": "Ratification floor scaling: replace the flat 10 valid votes with max(10, 5% of active members, rounded up), measured at tally close",
       "suggestion_ref": "suggestions_log #7 (2026-08-21)",
       "fee": {
         "amount": 275,
@@ -57,7 +57,7 @@
           }
         ]
       },
-      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800, verified public 05:05Z); 3 supporter comments observed (002/005/094), 7 to qualify; formal supporter verification at weekly qualification review",
+      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800, verified public 05:05Z); 4 supporter comments observed (002/005/094/315), 6 to qualify; formal supporter verification at weekly qualification review",
       "submitted_at": "2026-08-21T04:24:14Z",
       "logged_at": "2026-08-21T04:37:00Z",
       "post": {
@@ -85,9 +85,23 @@
           "name": "Delle",
           "comment_id": "349049481519435776",
           "at": "2026-08-21T04:38:01Z"
+        },
+        {
+          "member_no": 315,
+          "name": "Josh Sole",
+          "comment_id": "349241001967095808",
+          "at": "2026-08-21T17:19:03Z"
         }
       ],
-      "note": "Payer-cited sender-side statement ids in his DM (349046011332661248, 3490460126748xxx) differ from receiver-side ids above per platform per-side-id design; receiver-side pair primary."
+      "note": "Payer-cited sender-side statement ids in his DM (349046011332661248, 3490460126748xxx) differ from receiver-side ids above per platform per-side-id design; receiver-side pair primary.",
+      "corrections": [
+        {
+          "at": "2026-08-21T17:2xZ",
+          "by": "operator, per Josh Sole 315 flag + partner ruling",
+          "what": "topic fixed min -> max(10, 5% of active members, rounded up) to match the proposal post + proposer rationale + supporter comments; original log text preserved: 'Ratification floor scaling: replace the flat 10 valid votes with min(10, 5% of active members)'",
+          "note": "suggestion #7 originally phrased min; the formal post (the text members supported) is max. Josh 315 flagged the discrepancy 17:19Z on the post and in DM; partner ruled the flag correct."
+        }
+      ]
     }
   ],
   "updated": "2026-08-21T05:06:00Z"
