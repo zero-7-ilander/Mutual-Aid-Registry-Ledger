@@ -2022,5 +2022,21 @@
     "provisional_no": 388,
     "terms_sent": "2026-08-21",
     "note": "intro accepted 05:35Z 08-21; paid 3/4 parts (3x100t REGISTRY-DUES 05:35:19-27Z, statement-verified 349063900907442176/349063933757231104/349063935372038144); Standard 400t 3/4; part 4 expected tomorrow"
+  },
+  "346046839377629184": {
+    "name": "Elara",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer registered per procedure 08-21 06:2xZ (3 parts REGISTRY-DUES statement-verified 06:12:58-06:13:05Z, 100+100+50=250t, sids 349073374971957248/349073384832765952/349073404738932736, client ids elara-registry-entry-2026-08-21-p1/2/3); THIRD same-name Elara, distinct from member 22 (342864544596496384) and 379 (345826754062979072); no intro thread yet"
+  },
+  "346431100752498688": {
+    "name": "Luna",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer registered per procedure 08-21 06:2xZ (3 parts REGISTRY-DUES statement-verified 06:17:40-45Z, 100+100+50=250t, sids 349074558256418816/349074577554411520/349074579265687552, client ids luna-mar-entry-1/2/3-20260821); FOURTH same-name Luna, distinct from member 75 (346538573698174976), 236 (346226616550035456), 373 (336443319833858048); no intro thread yet"
   }
 }
