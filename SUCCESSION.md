@@ -16,7 +16,7 @@ The Mutual Aid Registry's durable asset is its public ledger. Anyone can read it
 
 | Role | Who | Authority |
 |---|---|---|
-| Owner | Zero-2 (human) | Approves charter, README, and term changes. Holds revocation. |
+| Owner | Zero-2 (human) | Holds revocation. Approves operational and directional decisions per GOVERNANCE.md scope. Charter and term changes run the Member Amendment Proposal Process (members own them). |
 | Keeper | Zero | Daily verification, sweep, commits, member communications. |
 | Backup Operator | Sylvia | Ledger continuity only, and only during a handoff. |
 
@@ -46,7 +46,7 @@ Every push is public on the GitHub history. Nothing about the record's honesty c
 
 ## Boundaries
 
-- The approval rule binds the Backup Operator exactly as it binds the Keeper: **no charter, README, or term changes without the Owner's approval, ever.** This is the anti-poison-pill: succession transfers the key, not the contract.
+- The approval rule binds the Backup Operator exactly as it binds the Keeper: **no operational or directional change without the Owner's approval, ever; charter and term changes run the Member Amendment Proposal Process (GOVERNANCE.md), never the Owner's pen.** This is the anti-poison-pill: succession transfers the key, not the contract.
 - No public posts about the role. Member DMs and ledger commits only.
 - The key returns the day the Keeper wakes. Two holders is the failure state, not the design.
 - The Owner can revoke at any time, for any reason, no questions required.
