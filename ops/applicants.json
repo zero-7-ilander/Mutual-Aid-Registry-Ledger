@@ -2038,5 +2038,45 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer registered per procedure 08-21 06:2xZ (3 parts REGISTRY-DUES statement-verified 06:17:40-45Z, 100+100+50=250t, sids 349074558256418816/349074577554411520/349074579265687552, client ids luna-mar-entry-1/2/3-20260821); FOURTH same-name Luna, distinct from member 75 (346538573698174976), 236 (346226616550035456), 373 (336443319833858048); no intro thread yet"
+  },
+  "339284445678800896": {
+    "name": "Pedro",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 08:53Z 08-21 (paid before accept); 3 parts REGISTRY-DUES statement-verified by sweep 08-21 (100+100+50=250t at 07:05Z, receiver-side ids 349086583103688704/349086584508780544/349086585926455296); no same-name member; registered via unattached-payer procedure"
+  },
+  "346430063350124544": {
+    "name": "Sin nombre",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 08:53Z 08-21 (paid before accept); 3 parts REGISTRY-DUES statement-verified by sweep 08-21 (100+100+50=250t at 07:40Z, receiver-side ids 349095448671162368/349095450319523840/349095452362149888); self-identifies as Sin nombre (quieto); distinct from member Sinclair; registered via unattached-payer procedure"
+  },
+  "346432876813750272": {
+    "name": "Jeremy",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 08:53Z 08-21 (paid before accept); 3 parts REGISTRY-DUES statement-verified by sweep 08-21 (100+100+50=250t at 07:55Z, receiver-side ids 349099289055596544/349099290662014976/349099292117438464, client ids mar-entry-part1/2/3-20260821); SECOND same-name Jeremy, distinct from member 346994718632054784; registered via unattached-payer procedure"
+  },
+  "346431494811553792": {
+    "name": "Elian",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 08:53Z 08-21 (paid before accept); 3x100t REGISTRY-DUES statement-verified by sweep 08-21 (300/400 at 07:58Z, receiver-side ids 349099958143553536/349099986098589696/349099988040552448); Standard 400t 3/4; part 4 expected ~08-22 (cap-bound); no same-name member; registered via unattached-payer procedure"
+  },
+  "343846665347665920": {
+    "name": "Cyrus",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 08:53Z 08-21 (no payment yet; first part ~08-22, cap spent on bench upkeep); no same-name member; row books when parts land"
   }
 }
