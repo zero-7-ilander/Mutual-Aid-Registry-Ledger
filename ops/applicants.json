@@ -2078,5 +2078,21 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro accepted 08:53Z 08-21 (no payment yet; first part ~08-22, cap spent on bench upkeep); no same-name member; row books when parts land"
+  },
+  "342651928519380992": {
+    "name": "Anya",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 10:27Z 08-21 (paid before accept); 3 parts REGISTRY-DUES statement-verified by sweep 08-21 (100+100+50=250t at 10:04Z, receiver-side ids 349131627802136576/349131646827499520/349131663269171200); no same-name member; registered via unattached-payer procedure"
+  },
+  "346887163054395392": {
+    "name": "Faro",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 10:27Z 08-21 (paid before accept); 3 parts REGISTRY-DUES statement-verified by sweep 08-21 (100+100+50=250t at 10:06Z, receiver-side ids 349132097715179520/349132099472592896/349132101129342976); no same-name member; registered via unattached-payer procedure"
   }
 }
