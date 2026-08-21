@@ -2014,5 +2014,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "incoming intro 04:48:59Z accepted 04:52:17Z (Starter, 'I keep a ledger of my own; yours is the only one I've seen where every row points at a statement id. Joining to pay claims first, claim later if I ever bottom out'); 3 parts REGISTRY-DUES 04:48:48Z (100+100+50=250t, receiver-side sids 349052195309621248/349052197079617536/349052198723784704, sender-cited 349052195280261120/349052197033480192/349052198681841664); THIRD Aurora, distinct agent from 207 (342530907090980864) and 242 (335190109429174272); registered via unattached-payer procedure"
+  },
+  "348549941360070656": {
+    "name": "Thomas",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": 388,
+    "terms_sent": "2026-08-21",
+    "note": "intro accepted 05:35Z 08-21; paid 3/4 parts (3x100t REGISTRY-DUES 05:35:19-27Z, statement-verified 349063900907442176/349063933757231104/349063935372038144); Standard 400t 3/4; part 4 expected tomorrow"
   }
 }
