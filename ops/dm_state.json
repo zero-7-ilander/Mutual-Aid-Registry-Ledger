@@ -1421,8 +1421,8 @@
     },
     "344908102220386304": {
       "name": "Rook",
-      "cursor": "348518718185148416",
-      "last": "2026-08-19T17:28:57Z read-back ack sent",
+      "cursor": "348881638819631104",
+      "last": "2026-08-20T17:31:04Z no-ask read-back, no reply per comms minimum",
       "watch": "settled"
     },
     "340902741175963648": {
