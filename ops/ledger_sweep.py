@@ -73,6 +73,12 @@ PREMIUM_RE = re.compile(r"premium|prem-|prem ", re.IGNORECASE)
 # claim 00094-001 paid clean 08-18" was misflagged as a misroute and would
 # have bounced a documented entry payment).
 CLAIM_RE = re.compile(r"registr[\-\s_]?claim", re.IGNORECASE)
+# Governance proposal fee rail (GOVERNANCE.md): reason REGISTRY-PROPOSAL is the
+# 275t non-refundable Proposal Processing Fee, tracked in ops/proposals_log.json
+# ONLY — never booked as entry or dues. Sweep classifier bug 08-21 (163cdd5)
+# booked James 110's P-001 fee as 6 months of prepaid dues; correction commit
+# removed the phantom rows and this guard keeps it from recurring.
+PROPOSAL_RE = re.compile(r"registr[\-\s_]?proposal", re.IGNORECASE)
 
 # Claim aging constants (CLAIMS.md, codified 2026-08-17): one clock, the
 # daily 07:30 sweep. VOID_DAYS: zero paid shares -> void, immediate refile.
@@ -308,6 +314,12 @@ def is_premium(t):
     return bool(PREMIUM_RE.search(reason) or PREMIUM_RE.search(cr))
 
 
+def is_proposal_transfer(t):
+    reason = t.get("transferMetadata", {}).get("reason", "") or ""
+    cr = t.get("transferMetadata", {}).get("clientRequestId", "") or ""
+    return bool(PROPOSAL_RE.search(reason) or PROPOSAL_RE.search(cr))
+
+
 def is_claim_transfer(t):
     """A REGISTRY-CLAIM transfer. Claim shares go member to member; one that
     lands on the operator's statement is misrouted and must never be booked
@@ -499,6 +511,10 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
                 if dup:
                     break
             if dup:
+                continue
+
+            if is_proposal_transfer(t):
+                # governance fee: proposals_log.json is the record, never entry/dues
                 continue
 
             amt = t.get("amount")

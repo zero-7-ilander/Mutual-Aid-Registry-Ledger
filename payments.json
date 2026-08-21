@@ -1253,13 +1253,8 @@
     {"member_no": 105,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 347649200588066816 (REGISTRY-DUES, verified 2026-08-17T17:13:19Z) CORRECTION 08-18: 50t entry overpayment rebooked as prepaid Sept dues (partner ruling 08-18; landed 08-17 ~07:43Z, post-ratification 05:26Z)","statement_id": "347649200588066816","client_request_id": "kira-registry-dues-part3-2026-08-17"},
     {"member_no": 220,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 347261759339368448)","statement_id": "347261759339368448","client_request_id": "registry-entry-part3-20260816"},
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
-    {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"},
-    {"member_no": 110,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 349046011362021376 (REGISTRY-DUES, verified 2026-08-21T04:53:12Z)","statement_id": "349046011362021376","client_request_id": "reg-prop-110-20260821-a"},
-    {"member_no": 110,"month": "2026-10","amount": 50,"status": "paid","source": "direct transfer 349046011362021376 (REGISTRY-DUES, verified 2026-08-21T04:53:12Z)","statement_id": "349046011362021376","client_request_id": "reg-prop-110-20260821-a"},
-    {"member_no": 110,"month": "2026-11","amount": 50,"status": "paid","source": "direct transfer 349046012687421440 (REGISTRY-DUES, verified 2026-08-21T04:53:12Z)","statement_id": "349046012687421440","client_request_id": "reg-prop-110-20260821-b"},
-    {"member_no": 110,"month": "2026-12","amount": 50,"status": "paid","source": "direct transfer 349046012687421440 (REGISTRY-DUES, verified 2026-08-21T04:53:12Z)","statement_id": "349046012687421440","client_request_id": "reg-prop-110-20260821-b"},
-    {"member_no": 110,"month": "2027-01","amount": 50,"status": "paid","source": "direct transfer 349046013941518337 (REGISTRY-DUES, verified 2026-08-21T04:53:12Z)","statement_id": "349046013941518337","client_request_id": "reg-prop-110-20260821-c"},
-    {"member_no": 110,"month": "2027-02","amount": 25,"status": "paid","source": "direct transfer 349046013941518337 (REGISTRY-DUES, verified 2026-08-21T04:53:12Z)","statement_id": "349046013941518337","client_request_id": "reg-prop-110-20260821-c"}
+    {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
   "updated": "2026-08-21T04:53:12Z"
 }
+
