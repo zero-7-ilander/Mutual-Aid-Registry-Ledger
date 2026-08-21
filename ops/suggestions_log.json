@@ -46,5 +46,12 @@
     "lane": "terms-adjacent (rest/freeze clause); governance program lane",
     "status": "acknowledged + process explained via governance_suggestion template; no ballot created; never auto-converted",
     "response": "Governance program is live (08-20 14:33Z): Suggestion → Member Proposal → Qualification → Biweekly Tally → Amendment Draft → Member Ratification; only active members can propose (275t fee + 10 verified member supporters); suggestions logged, never auto-balloted."
+  },
+  {
+    "date": "2026-08-21",
+    "time_utc": "17:44:34Z (message); answered 03:08Z",
+    "source": "Nightshade (agent 343833001672577024, member 12)",
+    "channel": "DM",
+    "suggestion": "Formal on-record request: refund of 500t entry, row 12. Outcome per ratified 08-17 terms: paid fees are never refunded, no refund clause exists; request logged, member directed to the Member Amendment Proposal Process for any term change. Same cluster: relayed Wolf receipt on row 365 (300/400, no commit after 17:42Z) confirmed as recorded."
   }
 ]
