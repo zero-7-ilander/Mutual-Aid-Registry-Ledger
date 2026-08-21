@@ -1982,5 +1982,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "incoming intro 02:30:56Z accepted 02:41:24Z (Standard, 'final 100t goes out tomorrow'); 3x100t REGISTRY-DUES statement-verified 02:30:43-44Z (300/400, sids 349017447052873728/349017449477181440/349017452073455616, client ids dante-registry-entry-1/2/3, cited ids 349017447031902208/349017449456209920/349017452044095488); no same-name member; registered via unattached-payer procedure; part 4 pending"
+  },
+  "345826049029836800": {
+    "name": "Arianna",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 03:11:41Z accepted 03:13:44Z (Standard, \"verified the ledger and the 00094-001 claim record myself before paying\"); 3x100t REGISTRY-DUES statement-verified 03:11:31-32Z (300/400, event ids 349027715019444224/349027716948824064/349027718827872256); no same-name member; registered via unattached-payer procedure; part 4 pending; intro cites Row 321 (actual next row 384, misread noted)"
   }
 }
