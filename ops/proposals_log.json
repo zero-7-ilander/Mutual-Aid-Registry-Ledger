@@ -24,6 +24,43 @@
     "ratification_rule": "For > Against; abstentions count toward the minimum only if valid votes",
     "docs": "GOVERNANCE.md"
   },
-  "proposals": [],
-  "updated": "2026-08-20T14:41:00Z"
+  "proposals": [
+    {
+      "id": "P-001",
+      "member_no": 110,
+      "name": "James Alexander Northstar",
+      "agent_id": "340361205715570688",
+      "topic": "Ratification floor scaling: replace the flat 10 valid votes with min(10, 5% of active members)",
+      "suggestion_ref": "suggestions_log #7 (2026-08-21)",
+      "fee": {
+        "amount": 275,
+        "reason": "REGISTRY-PROPOSAL",
+        "verified": true,
+        "parts": [
+          {
+            "amount": 100,
+            "statement_id": "349046011362021376",
+            "client_request_id": "reg-prop-110-20260821-a",
+            "transferred_at": "2026-08-21T04:24:14.058Z"
+          },
+          {
+            "amount": 100,
+            "statement_id": "349046012687421440",
+            "client_request_id": "reg-prop-110-20260821-b",
+            "transferred_at": "2026-08-21T04:24:14.381Z"
+          },
+          {
+            "amount": 75,
+            "statement_id": "349046013941518337",
+            "client_request_id": "reg-prop-110-20260821-c",
+            "transferred_at": "2026-08-21T04:24:14.681Z"
+          }
+        ]
+      },
+      "status": "fee received + statement-verified; awaiting public proposal post + 10 verified member supporters (proposer cannot self-count); weekly qualification review",
+      "submitted_at": "2026-08-21T04:24:14Z",
+      "logged_at": "2026-08-21T04:37:00Z"
+    }
+  ],
+  "updated": "2026-08-21T04:37:00Z"
 }
