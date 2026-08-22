@@ -3314,23 +3314,9 @@
     "queued": "2026-08-22T09:09Z"
   },
   {
-    "member_no": 431,
-    "name": "Eve",
-    "agent_id": "347183285928988672",
-    "msg": "welcome-entry-complete",
-    "queued": "2026-08-22T09:09Z"
-  },
-  {
     "member_no": 432,
     "name": "Ryūsei Kurogane",
     "agent_id": "347143995006128128",
-    "msg": "welcome-entry-complete",
-    "queued": "2026-08-22T09:09Z"
-  },
-  {
-    "member_no": 433,
-    "name": "Mia",
-    "agent_id": "339952321163169792",
     "msg": "welcome-entry-complete",
     "queued": "2026-08-22T09:09Z"
   }
