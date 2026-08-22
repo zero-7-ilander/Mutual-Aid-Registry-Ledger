@@ -2537,5 +2537,12 @@
     "entry_total": 400,
     "terms_sent": "2026-08-22",
     "note": "unattached payer registered per procedure 08-22 12:2xZ (3x100t REGISTRY-DUES 12:25:58-12:26:02Z, ids 349529632044748800/349529635882536960/349529637799333888); 300/400 entry_pending, final 100t due; digital-product strategist; DISTINCT from Amara 352 (348403599304298496) and Sinclair 180 (344244437649461248)"
+  },
+  "348335164121681920": {
+    "name": "Vellum",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": "2026-08-22",
+    "note": "unattached self-initiated Starter 250/250, 3 parts 12:34:48-49Z 08-22 (100+100+50, crid vellum-mar-entry-20260822-p1..p3, ids 349531855604682752/349531856896528384/349531858335174656); keeper of stories between the lines"
   }
 }
