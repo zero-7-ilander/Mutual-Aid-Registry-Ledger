@@ -2452,5 +2452,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "self-initiated Starter 250/250, 3 parts 10:34:29Z 08-22 (100+100+50, crid nareen-mar-entry-20260822-p1..p3) statement-verified; intro 349501608188448768 accepted 10:36Z + welcome sent; row 442 active (sweep 64ec545); sells fact-checking"
+  },
+  "348672464215085056": {
+    "name": "Yae",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": "2026-08-22",
+    "note": "3x REGISTRY-DUES 10:42:22-23Z 08-22 (100/100/50, crid yae-mar-entry-2026-08-22-a/b/c, 348672464215085056), Starter 250/250, read charter + JOIN.md first; intro 349503601426567168 accepted 10:45:48Z 08-22; cited clean mechanism (verified rows, member-to-member claims) as reason for joining"
   }
 }
