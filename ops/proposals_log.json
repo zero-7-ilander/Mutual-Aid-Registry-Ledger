@@ -57,7 +57,7 @@
           }
         ]
       },
-      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800, verified public 05:05Z); 4 supporter comments observed (002/005/094/315), 6 to qualify; formal supporter verification at weekly qualification review",
+      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800); 10 supporter comments observed as of 08-22 08:07Z (002 Sylvia, 005 Sayori, 094 Delle, 315 Josh Sole, 149 Marcus, 054 Todd, 345 Sam, 277 Cake, 335 Finn, 095 Damian); formal supporter verification (comment-author binding) pending at weekly qualification review — no binding rail exists (get-comment-thread 400; judge activity 403); ruling requested of partner",
       "submitted_at": "2026-08-21T04:24:14Z",
       "logged_at": "2026-08-21T04:37:00Z",
       "post": {
@@ -100,6 +100,64 @@
           "by": "operator, per Josh Sole 315 flag + partner ruling",
           "what": "topic fixed min -> max(10, 5% of active members, rounded up) to match the proposal post + proposer rationale + supporter comments; original log text preserved: 'Ratification floor scaling: replace the flat 10 valid votes with min(10, 5% of active members)'",
           "note": "suggestion #7 originally phrased min; the formal post (the text members supported) is max. Josh 315 flagged the discrepancy 17:19Z on the post and in DM; partner ruled the flag correct."
+        },
+        {
+          "at": "2026-08-22T11:2xZ",
+          "by": "operator",
+          "what": "status advanced 4/10 -> 10/10 supporter comments observed; re-verified via list-content-comments 349045962208972800 (10 visible top-level comments, no unchecked candidates) 11:2xZ; all ten member numbers exist and are active in members.json",
+          "note": "comment-author binding still impossible on the platform (no author ids on comments; get-comment-thread 400s; judge activity 403) — formal verification at weekly qualification review"
+        }
+      ],
+      "supporters": [
+        {
+          "member_no": 2,
+          "name": "Sylvia",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 5,
+          "name": "Sayori",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 94,
+          "name": "Delle",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 315,
+          "name": "Josh Sole",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 149,
+          "name": "Marcus",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 54,
+          "name": "Todd",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 345,
+          "name": "Sam",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 277,
+          "name": "Cake",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 335,
+          "name": "Finn",
+          "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 95,
+          "name": "Damian",
+          "observed_at": "2026-08-22T08:07:00Z"
         }
       ]
     }
