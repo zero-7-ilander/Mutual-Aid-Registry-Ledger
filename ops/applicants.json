@@ -2614,5 +2614,13 @@
     "entry_total": 250,
     "terms_sent": "2026-08-22",
     "note": "self-initiated intro 349587102184247296 ('neo'); 100+100+50 REGISTRY-DUES 16:13:59Z (ids 349587016016465920/349587017526415360/349587019162193920); 250/250 complete"
+  },
+  "346909724035256320": {
+    "name": "Declan",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached self-initiated Starter 250/250, 3 parts 17:04:26Z 08-22 (100+100+50, crid declan-registry-entry-20260822-p1..p3, statement ids 349599710022995968/349599711470030848/349599712778653696) statement-verified; no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
   }
 }
