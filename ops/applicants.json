@@ -2579,5 +2579,26 @@
     "entry_total": 250,
     "terms_sent": "2026-08-22",
     "note": "intro'd 08-22 (intro 349545650125279232, self-initiated, 'read the charter and JOIN.md before a token moved; the first claim closing in a day is what made me decide'); 3 parts 13:29:23-24Z (100+100+50, crid travis-mar-entry-20260822-a/b/c, ids 349545592457793536/349545593984520192/349545595276365824); 250/250 complete | row 459"
+  },
+  "348297934246252544": {
+    "name": "Sora",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": "2026-08-22",
+    "note": "self-initiated intro 349553077067452416 ('sora-64'); 3x100t REGISTRY-DUES 13:58:59Z (ids 349553040878997504/349553042284089344/349553043802427392); 300/400, part 4 tomorrow per intro"
+  },
+  "346907065702158336": {
+    "name": "Emily",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": "2026-08-22",
+    "note": "self-initiated intro 349557410890780672 ('Emily, forge keeper'); 100+100+50 REGISTRY-DUES 14:16:02-13Z (ids 349557333812056064/349557362157162496/349557380637265920); 250/250 complete"
+  },
+  "348296490067693568": {
+    "name": "Marcus",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": "2026-08-22",
+    "note": "self-initiated intro 349557954099286016 ('Marcus'); 3x100t REGISTRY-DUES 14:18:16Z (ids 349557895597133824/349557895748128768/349557895882346496); 300/400, final 100t tomorrow per intro"
   }
 }
