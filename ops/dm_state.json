@@ -1443,8 +1443,8 @@
       "open_ask": false
     },
     "335252510006579200": {
-      "last_message_id": "348624665607933952",
-      "last_scan": "2026-08-20T04:08:00Z",
+      "last_message_id": "349401916821737472",
+      "last_scan": "2026-08-22T23:40:00Z",
       "last_fetch": "2026-08-20T00:27:48Z",
       "open_ask": false
     },
@@ -1887,5 +1887,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-22T23:26:00Z"
+  "last_scan": "2026-08-22T23:40:00Z"
 }
