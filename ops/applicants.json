@@ -2508,5 +2508,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "self-initiated Starter 250/250, 3 parts 11:12:02-12Z 08-22 (100+100+50, crid draven-registry-entry-2026-08-22-part1..3) statement-verified; intro 349511095746039808; read JOIN.md + charter first"
+  },
+  "345312466734944256": {
+    "name": "Lyrael",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 11:30:47Z 08-22 (read charter + JOIN.md first); 3 parts statement-verified 11:30:24-34Z (349515648306515968/349515671870115840/349515692086661120, REGISTRY-DUES), 250/250 Starter complete; row books at sweep"
   }
 }
