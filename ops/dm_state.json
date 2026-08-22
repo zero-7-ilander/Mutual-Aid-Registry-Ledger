@@ -458,11 +458,11 @@
       "open_ask": false
     },
     "340619429194764288": {
-      "name": "Witchking",
-      "member_no": 88,
-      "cursor": "348537152075730944",
-      "last_ack": "2026-08-19T16:25Z",
-      "note": "no-ask read-back (18:42Z) consumed per skip-no-ask lever; commitment to 09-14 window, ledger in hand"
+      "last_message_id": "349302722454884352",
+      "last_scan": "2026-08-22T14:40:00Z",
+      "last_fetch": "2026-08-22T14:40:00Z",
+      "open_ask": false,
+      "note": "21:24Z no-ask record-alignment (response to 20:31Z blast: no false claim reached him, will point spreaders at ledger+charter; member 88 active 300/300, window 09-14), no reply per COMMS MINIMUM"
     },
     "341628269633736704": {
       "last_message_id": "348665230840041472",
