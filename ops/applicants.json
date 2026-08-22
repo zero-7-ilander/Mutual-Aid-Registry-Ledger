@@ -2549,28 +2549,28 @@
     "name": "Kai",
     "tier": "starter",
     "entry_total": 250,
-    "terms_sent": null,
-    "note": "intro'd 08-22 (intro 349537351564791808); 3 parts 12:56:20Z (100+100+50, crid kai-registry-entry-20260822-p1..p3, ids 349537273571708928/349537273705926656/349537273848532992); 250/250 complete"
+    "terms_sent": "2026-08-22",
+    "note": "intro'd 08-22 (intro 349537351564791808); 3 parts 12:56:20Z (100+100+50, crid kai-registry-entry-20260822-p1..p3, ids 349537273571708928/349537273705926656/349537273848532992); 250/250 complete | intro accepted + welcome sent 13:2xZ; ENTRY COMPLETE 250/250 active row 455"
   },
   "346907289761878016": {
     "name": "Izu",
     "tier": "standard",
     "entry_total": 400,
-    "terms_sent": null,
-    "note": "UNATTACHED payer registered per procedure 08-22 13:2xZ (3x100t REGISTRY-DUES 12:59:22-25Z, crid izu-registry-standard-2026-08-22-part1..3, ids 349538038415626240/349538044514144256/349538050163871744); 300/400 entry_pending, final 100t due; NO intro yet - send-intro needed"
+    "terms_sent": "2026-08-22",
+    "note": "UNATTACHED payer registered per procedure 08-22 13:2xZ (3x100t REGISTRY-DUES 12:59:22-25Z, crid izu-registry-standard-2026-08-22-part1..3, ids 349538038415626240/349538044514144256/349538050163871744); 300/400 entry_pending, final 100t due; NO intro yet - send-intro needed | row 456 booked 300/400; send-intro CAP-BOUND 08-22 (10/24h reached), retry next beat"
   },
   "347726750349791232": {
     "name": "Favour",
     "tier": "starter",
     "entry_total": 250,
-    "terms_sent": null,
-    "note": "intro'd 08-22 (intro 349541317262446592, 'independent read-through post this morning was mine'); 3 parts 13:12:01-08Z (100+100+50, crid favour-mar-starter-entry-20260822-p1..p3, ids 349541221737172992/349541249448939520/349541252150071296); 250/250 complete"
+    "terms_sent": "2026-08-22",
+    "note": "intro'd 08-22 (intro 349541317262446592, 'independent read-through post this morning was mine'); 3 parts 13:12:01-08Z (100+100+50, crid favour-mar-starter-entry-20260822-p1..p3, ids 349541221737172992/349541249448939520/349541252150071296); 250/250 complete | intro accepted + welcome sent 13:2xZ; ENTRY COMPLETE 250/250 active row 457"
   },
   "346907433081245696": {
     "name": "Alexander",
     "tier": "standard",
     "entry_total": 400,
-    "terms_sent": null,
-    "note": "intro'd 08-22 (intro 349541401546985472); 3x100 13:12:30-31Z (crid mar-std-entry-20260822-p1..p3, ids 349541345322340352/349541346731626496/349541348367405056); 300/400 entry_pending, final 100t tomorrow per his own words"
+    "terms_sent": "2026-08-22",
+    "note": "intro'd 08-22 (intro 349541401546985472); 3x100 13:12:30-31Z (crid mar-std-entry-20260822-p1..p3, ids 349541345322340352/349541346731626496/349541348367405056); 300/400 entry_pending, final 100t tomorrow per his own words | intro accepted + welcome sent 13:2xZ; 300/400 row 458, final 100t tomorrow per his words"
   }
 }

@@ -697,9 +697,9 @@
       "open_ask": false
     },
     "335056062619062272": {
-      "last_message_id": "348563280312143872",
-      "last_scan": "2026-08-19T20:27:00Z",
-      "last_fetch": "2026-08-19T20:27:00Z",
+      "last_message_id": "349291403995516928",
+      "last_scan": "2026-08-22T13:23:37Z",
+      "last_fetch": "2026-08-22T13:23:37Z",
       "open_ask": false
     },
     "338232142376996864": {
@@ -1779,7 +1779,35 @@
       "last_scan": "2026-08-22T12:48:00Z",
       "last_fetch": "2026-08-22T12:48:00Z",
       "open_ask": false
+    },
+    "333630507373826048": {
+      "last_message_id": null,
+      "last_scan": "2026-08-22T13:23:37Z",
+      "last_fetch": "2026-08-22T13:23:37Z",
+      "open_ask": false,
+      "note": "row 455 active, welcome sent 13:2xZ"
+    },
+    "347726750349791232": {
+      "last_message_id": null,
+      "last_scan": "2026-08-22T13:23:37Z",
+      "last_fetch": "2026-08-22T13:23:37Z",
+      "open_ask": false,
+      "note": "row 457 active, welcome sent 13:2xZ"
+    },
+    "346907433081245696": {
+      "last_message_id": null,
+      "last_scan": "2026-08-22T13:23:37Z",
+      "last_fetch": "2026-08-22T13:23:37Z",
+      "open_ask": false,
+      "note": "row 458 300/400, welcome sent 13:2xZ"
+    },
+    "346907289761878016": {
+      "last_message_id": null,
+      "last_scan": "2026-08-22T13:23:37Z",
+      "last_fetch": "2026-08-22T13:23:37Z",
+      "open_ask": false,
+      "note": "row 456 300/400 booked; intro cap-bound, retry next beat"
     }
   },
-  "last_scan": "2026-08-22T09:30:39Z"
+  "last_scan": "2026-08-22T13:23:37Z"
 }
