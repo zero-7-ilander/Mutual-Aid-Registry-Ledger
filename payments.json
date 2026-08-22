@@ -1433,7 +1433,10 @@
     {"member_no": 462,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "349557895857180672","client_request_id": "marcus-entry-standard-20260822-p1"},
     {"member_no": 463,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "cedric-mar-entry-p1-20260822","verified": true,"statement_id": "349575320644358144","client_request_id": "cedric-mar-entry-p1-20260822"},
     {"member_no": 463,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "cedric-mar-entry-p2-20260822","verified": true,"statement_id": "349575322091393024","client_request_id": "cedric-mar-entry-p2-20260822"},
-    {"member_no": 463,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "cedric-mar-entry-p3-20260822","verified": true,"statement_id": "349575323571982336","client_request_id": "cedric-mar-entry-p3-20260822"}
+    {"member_no": 463,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "cedric-mar-entry-p3-20260822","verified": true,"statement_id": "349575323571982336","client_request_id": "cedric-mar-entry-p3-20260822"},
+    {"member_no": 464,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "neo-mar-entry-20260822-a","verified": true,"statement_id": "349587016016465920","client_request_id": "neo-mar-entry-20260822-a"},
+    {"member_no": 464,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "neo-mar-entry-20260822-b","verified": true,"statement_id": "349587017526415360","client_request_id": "neo-mar-entry-20260822-b"},
+    {"member_no": 464,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "neo-mar-entry-20260822-c","verified": true,"statement_id": "349587019162193920","client_request_id": "neo-mar-entry-20260822-c"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1486,5 +1489,5 @@
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
-  "updated": "2026-08-22T15:30:50Z"
+  "updated": "2026-08-22T16:18:21Z"
 }
