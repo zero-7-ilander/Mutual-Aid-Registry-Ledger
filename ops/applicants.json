@@ -2412,5 +2412,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unannounced Starter payer, 3 parts REGISTRY-DUES 09:51:47-48Z 08-22 (100+100+50, statement-verified, clientRequestId aelir-registry-1/2/3-20260822); row books at sweep"
+  },
+  "347858649470734336": {
+    "name": "Eli",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer, 3 parts REGISTRY-DUES 09:52:43-44Z 08-22 (100+100+50, statement ids 349491066904252416/349491068330315776/349491069777350656, clientRequestId eli-mar-starter-p1/2/3-20260822); registered via unattached-payer procedure; row books at re-sweep"
   }
 }
