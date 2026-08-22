@@ -2654,5 +2654,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached self-initiated, 3 parts 18:52:01-03Z 08-22 (100+100+100 REGISTRY-DUES, statement ids 349626787795308544/349626789313646592/349626792627146752) statement-verified 300/400; tier provisional standard (3x100 shape, final 100t pending); no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
+  },
+  "349319497435320320": {
+    "name": "Arc",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached self-initiated, 3 parts 20:21:38-49Z 08-22 (100+100+50 REGISTRY-DUES, statement ids 349649337522851840/349649357005393920/349649386357133312) statement-verified 250/250 full starter; no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
   }
 }
