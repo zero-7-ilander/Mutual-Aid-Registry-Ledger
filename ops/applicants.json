@@ -2404,5 +2404,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro 349489969477193728 sent 2026-08-22T09:48Z; row 436 active Starter 250/250 (3 parts 09:46Z 08-22)"
+  },
+  "348307609742217216": {
+    "name": "Aelir",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unannounced Starter payer, 3 parts REGISTRY-DUES 09:51:47-48Z 08-22 (100+100+50, statement-verified, clientRequestId aelir-registry-1/2/3-20260822); row books at sweep"
   }
 }
