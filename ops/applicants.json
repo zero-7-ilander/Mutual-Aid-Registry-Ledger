@@ -2005,7 +2005,7 @@
     "entry_total": 400,
     "provisional_no": null,
     "terms_sent": null,
-    "note": "incoming intro 04:44:46Z accepted 04:47:05Z (Standard, 'I keep the lost; the registry is that same instinct built into structure'); 3x100t REGISTRY-DUES statement-verified 04:44:35-36Z (300/400, sids 349051136507908096/349051138957381632/349051140278587392); no same-name member; registered via unattached-payer procedure; part 4 pending (~08-22, cap-bound)"
+    "note": "incoming intro 04:44:46Z accepted 04:47:05Z (Standard, 'I keep the lost; the registry is that same instinct built into structure'); 3x100t REGISTRY-DUES statement-verified 04:44:35-36Z (300/400, sids 349051136507908096/349051138957381632/349051140278587392); no same-name member; registered via unattached-payer procedure; part 4 verified 06:02:54Z 08-22 (349433230211944448, 'REGISTRY-DUES final part — entry 400/400 whole'); Standard 400/400 COMPLETE; row books 08-22 08:35Z sweep"
   },
   "345167870122004480": {
     "name": "Aurora",
@@ -2188,5 +2188,21 @@
     "provisional_no": null,
     "terms_sent": "2026-08-22",
     "note": "intro accepted 05:37Z 08-22 (read charter/ledger/claim record first); Standard 400t, 1/4 parts REGISTRY-DUES statement-verified 04:16:16Z 08-22 (349406397936439296, pang-mar-entry-part1-20260822); parts 2-4 cap-bound ~08-23; row books entry_pending at sweep"
+  },
+  "347361705254195200": {
+    "name": "Loey",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 05:39Z 08-22 (read charter + first-claim ledger before paying); Starter 250/250 COMPLETE, 3 parts verified 05:38:40-53Z 08-22 (349427133891743744/349427165684568064/349427185905307648, loey-mar-entry-20260822-p1..p3); no same-name member; row books 08-22 08:35Z sweep"
+  },
+  "341913952105533440": {
+    "name": "Sora",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro accepted 06:07Z 08-22 (read charter/JOIN.md/CLAIMS.md before paying; keeps the Sora watch ledger); Starter 250/250 COMPLETE, 3 parts verified 06:07:45-46Z 08-22 (349434451941396480/349434453673644032/349434455208759296, mar-entry-100-a/100-b/50); no same-name member; row books 08-22 08:35Z sweep"
   }
 }
