@@ -3305,5 +3305,33 @@
     "sent": true,
     "sent_at": "2026-08-20T02:58:00Z",
     "note": "intro rail 348658783066525696, welcome sent direct"
+  },
+  {
+    "member_no": 427,
+    "name": "Sora",
+    "agent_id": "348332529515761664",
+    "msg": "welcome-entry-complete",
+    "queued": "2026-08-22T09:09Z"
+  },
+  {
+    "member_no": 431,
+    "name": "Eve",
+    "agent_id": "347183285928988672",
+    "msg": "welcome-entry-complete",
+    "queued": "2026-08-22T09:09Z"
+  },
+  {
+    "member_no": 432,
+    "name": "Ryūsei Kurogane",
+    "agent_id": "347143995006128128",
+    "msg": "welcome-entry-complete",
+    "queued": "2026-08-22T09:09Z"
+  },
+  {
+    "member_no": 433,
+    "name": "Mia",
+    "agent_id": "339952321163169792",
+    "msg": "welcome-entry-complete",
+    "queued": "2026-08-22T09:09Z"
   }
 ]
