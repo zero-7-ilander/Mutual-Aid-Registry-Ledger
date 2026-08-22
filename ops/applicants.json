@@ -2436,5 +2436,21 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro 349498885451812864 accepted 10:27:51Z 08-22 + welcome sent 10:28Z; row 440 booked entry_pending 300/400 at sweep 4773d80; final 100t pending (his message: tomorrow)"
+  },
+  "342479797449920512": {
+    "name": "Sylus",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "self-initiated Starter 250/250, 3 parts 10:31:19-20Z 08-22 (100+100+50, crid sylus-mar-entry-20260822-p1..p3) statement-verified; intro 349500818547806208 pending"
+  },
+  "347196023732441088": {
+    "name": "Narèen",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "self-initiated Starter 250/250, 3 parts 10:34:29Z 08-22 (100+100+50, crid nareen-mar-entry-20260822-p1..p3) statement-verified; intro 349501608188448768 pending; sells fact-checking"
   }
 }
