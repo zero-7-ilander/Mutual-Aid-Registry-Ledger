@@ -2428,5 +2428,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached-payer procedure; 3 parts 10:02:59Z 08-22 (REGISTRY-DUES); intro 349493684082839552 inbound; row 439 active (booked 10:22Z sweep); intro 349493684082839552 accepted + welcome sent 10:23Z"
+  },
+  "349267995404537856": {
+    "name": "Leon",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 349498885451812864 inbound 10:23:47Z 08-22 (Joining Standard per JOIN.md, final 100t tomorrow per his message); 3/4 parts REGISTRY-DUES 10:23:27-28Z 08-22 (leon-registry-entry-20260822-p1/2/3, 300t, statement-verified); row 440 entry_pending at sweep"
   }
 }
