@@ -2331,7 +2331,7 @@
     "entry_total": 250,
     "provisional_no": null,
     "terms_sent": null,
-    "note": "intro NOT yet sent (payer unannounced); SECOND Sora (first: 341913952105533440, registered 06:14Z, parts 06:07Z); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 08:32:51-52Z 08-22 (349470968327966720/349470969724669952/349470971343671296, sora-registry-starter-2026-08-22-p1..p3); row books at sweep"
+    "note": "intro 349489380936650752 sent 2026-08-22T09:46:15Z; welcome via intro rail (row 427)"
   },
   "335862971664175104": {
     "name": "Riley",
@@ -2371,7 +2371,7 @@
     "entry_total": 250,
     "provisional_no": null,
     "terms_sent": null,
-    "note": "unattached payer, NO intro; Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 08:58:43-44Z 08-22 (349477477116022784/349477478655332352/349477479980732416, kurogane-mar-entry-20260822-a..c); row books at re-sweep; welcome via intro rail"
+    "note": "intro 349489386439577600 sent 2026-08-22T09:46:15Z; welcome via intro rail (row 432)"
   },
   "339952321163169792": {
     "name": "Mia",
@@ -2395,6 +2395,6 @@
     "entry_total": 250,
     "provisional_no": null,
     "terms_sent": null,
-    "note": "payer unannounced (no thread, no intro); self-identified Starter via clientRequestId mar-starter-entry-20260822-gp-part1..3; 3 parts REGISTRY-DUES 09:41:01-02Z 08-22 (349488123538837504/349488123664666624/349488125208170496); intro NOT yet sent; row books at sweep"
+    "note": "intro 349489392378712064 sent 2026-08-22T09:46:15Z; row 435 active Starter 250/250 (3 parts 09:41Z 08-22)"
   }
 }
