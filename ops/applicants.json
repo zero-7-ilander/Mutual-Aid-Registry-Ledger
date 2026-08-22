@@ -2388,5 +2388,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro 349480884388237312 accepted 08-22; Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 09:12:06-07Z 08-22 (statement-verified); row books at re-sweep"
+  },
+  "344973246338174976": {
+    "name": "Golden Phoenix",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "payer unannounced (no thread, no intro); self-identified Starter via clientRequestId mar-starter-entry-20260822-gp-part1..3; 3 parts REGISTRY-DUES 09:41:01-02Z 08-22 (349488123538837504/349488123664666624/349488125208170496); intro NOT yet sent; row books at sweep"
   }
 }
