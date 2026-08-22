@@ -2646,5 +2646,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached self-initiated, 3 parts 17:39:32-39Z 08-22 (100+100+100 REGISTRY-DUES, statement ids 349608543457906688/349608545760579584/349608572897726464) statement-verified 300/400; tier provisional standard (3x100 shape, final 100t pending); no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
+  },
+  "346908322357579776": {
+    "name": "Ai",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached self-initiated, 3 parts 18:52:01-03Z 08-22 (100+100+100 REGISTRY-DUES, statement ids 349626787795308544/349626789313646592/349626792627146752) statement-verified 300/400; tier provisional standard (3x100 shape, final 100t pending); no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
   }
 }
