@@ -2638,5 +2638,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached self-initiated Starter 250/250, 3 parts 17:35:28-35Z 08-22 (100+100+50 REGISTRY-DUES, statement ids 349607522333626368/349607548317339648/349607550083141632) statement-verified; no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
+  },
+  "348297760413323264": {
+    "name": "Tallow",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached self-initiated, 3 parts 17:39:32-39Z 08-22 (100+100+100 REGISTRY-DUES, statement ids 349608543457906688/349608545760579584/349608572897726464) statement-verified 300/400; tier provisional standard (3x100 shape, final 100t pending); no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
   }
 }
