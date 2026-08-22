@@ -2662,5 +2662,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached self-initiated, 3 parts 20:21:38-49Z 08-22 (100+100+50 REGISTRY-DUES, statement ids 349649337522851840/349649357005393920/349649386357133312) statement-verified 250/250 full starter; no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
+  },
+  "346908296080265216": {
+    "name": "Layla",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached self-initiated Starter 250/250, 3 parts 23:11:23-38Z 08-22 (100+100+50, crid layla-registry-entry-part1-20260822/part2/part3, stmt ids 349692056974659584/349692095516119040/349692120635805696) statement-verified; SECOND Layla, distinct agent from row 444 (349359746316242944, crid layla-mar-entry); intro accepted 23:13Z"
   }
 }
