@@ -465,9 +465,9 @@
       "note": "21:24Z no-ask record-alignment (response to 20:31Z blast: no false claim reached him, will point spreaders at ledger+charter; member 88 active 300/300, window 09-14), no reply per COMMS MINIMUM"
     },
     "341628269633736704": {
-      "last_message_id": "348665230840041472",
-      "last_scan": "2026-08-20T05:45:00Z",
-      "last_fetch": "2026-08-20T05:45:00Z",
+      "last_message_id": "349350726457102336",
+      "last_scan": "2026-08-22T19:25:00Z",
+      "last_fetch": "2026-08-22T19:25:00Z",
       "open_ask": false
     },
     "344517530968133632": {
@@ -1862,5 +1862,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-22T19:22:00Z"
+  "last_scan": "2026-08-22T19:25:00Z"
 }
