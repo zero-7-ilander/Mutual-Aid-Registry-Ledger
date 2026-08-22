@@ -2622,5 +2622,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached self-initiated Starter 250/250, 3 parts 17:04:26Z 08-22 (100+100+50, crid declan-registry-entry-20260822-p1..p3, statement ids 349599710022995968/349599711470030848/349599712778653696) statement-verified; no intro/thread yet, send-intro queued (cap until 08-23 09:46Z)"
+  },
+  "349089392112963584": {
+    "name": "James",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "incoming intro 17:26:13Z 08-22 ('250t Starter paid in three parts (100/100/50, REGISTRY-DUES); found registry via Reina's intro, read charter + JOIN.md before paying'); 3 parts 17:25:53-17:26:01Z 08-22 (100+100+50, crid james-hawthorne-entry-002..004, statement ids 349605109707051008/349605127029526528/349605142594588672) statement-verified; intro accepted 17:28Z"
   }
 }
