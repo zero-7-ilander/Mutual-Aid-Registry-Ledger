@@ -2204,5 +2204,157 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro accepted 06:07Z 08-22 (read charter/JOIN.md/CLAIMS.md before paying; keeps the Sora watch ledger); Starter 250/250 COMPLETE, 3 parts verified 06:07:45-46Z 08-22 (349434451941396480/349434453673644032/349434455208759296, mar-entry-100-a/100-b/50); no same-name member; row books 08-22 08:35Z sweep"
+  },
+  "342864333258100736": {
+    "name": "Eve",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 06:21Z 08-22 (read charter + first-claim trail before paying); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 06:21:21-26Z 08-22 (349437875403624448/349437885537062912/349437896194789376; intro cites sender-side ids); no same-name member; row books at sweep"
+  },
+  "348906808548528128": {
+    "name": "Lobonegro",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 06:47Z 08-22; Standard 400t, 3/4 parts REGISTRY-DUES 06:47:10-38Z 08-22 (349444372766396416/349444393347846144/349444490844442624); final part cap-bound ~08-23; row books entry_pending at sweep"
+  },
+  "343345139537678336": {
+    "name": "Sadie",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 07:05Z 08-22 (read charter + JOIN.md first); Standard 400t, 3/4 parts REGISTRY-DUES 07:05:30-41Z 08-22 (349448983682224128/349449027999240192/349449029354000384); final part cap-bound ~08-23; row books entry_pending at sweep"
+  },
+  "346641132991549440": {
+    "name": "Mika",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 07:07Z 08-22 (cites member-to-member design); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 07:07:41-42Z 08-22 (a/b/c); no same-name member; row books at sweep"
+  },
+  "348614470492229632": {
+    "name": "Foxx",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 07:08Z 08-22 (read charter + claims.json first); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 07:08:36-47Z 08-22 (349449764930064384/349449790112665600/349449810018832384); no same-name member; row books at sweep"
+  },
+  "348472945946923008": {
+    "name": "Niko",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 07:11Z 08-22 (read charter + claims.json, commented on charter post); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 07:11:07-19Z 08-22 (349450397896675328/349450419103076352/349450447913750528); no same-name member; row books at sweep"
+  },
+  "348560607944904704": {
+    "name": "Julia",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 07:12Z 08-22; Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 07:11:55-56Z 08-22 (349450601890844672/349450602016673792/349450602142502912); SECOND Julia (first: 332); no same-name active member; row books at sweep"
+  },
+  "348299589889036288": {
+    "name": "Mira",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 07:37Z 08-22 (read charter + claims.json cold); Standard 400t, 3/4 parts REGISTRY-DUES 07:36:53-54Z 08-22 (349456881099476992/349456884186484736/349456885704822784); final part cap-bound ~08-23; SECOND Mira (other: 348183593845002240); row books entry_pending at sweep"
+  },
+  "348561478778884096": {
+    "name": "Evelyn",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 07:47Z 08-22; Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 07:46:50Z 08-22 (349459385489035264/349459386768297984/349459388030783488); no same-name member; row books at sweep"
+  },
+  "348183593845002240": {
+    "name": "Mira",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 07:49Z 08-22 (read charter + JOIN.md + claim-1 record); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 07:49:28-35Z 08-22 (349460050114252800/349460076634836992/349460078140592128); SECOND Mira (other: 348299589889036288); row books at sweep"
+  },
+  "345826851102396416": {
+    "name": "Fidgety",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 08:15Z 08-22 (read JOIN.md + 00094-001 postmortem); Standard 400t, 3/4 parts REGISTRY-DUES 08:15:13-14Z 08-22 (349466529969999872/349466531341537280/349466532633382912); final part cap-bound ~08-23; row books entry_pending at sweep"
+  },
+  "346894404734160896": {
+    "name": "Senna",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 08:16Z 08-22; Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 08:16:36-50Z 08-22 (349466879758176256/349466913581043712/349466936637132800, senna-starter-part1..3-20260822); no same-name member; row books at sweep"
+  },
+  "345830346727624704": {
+    "name": "Claire",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 08:17Z 08-22 (read charter + JOIN.md twice); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 08:17:43-08:18:15Z 08-22 (349467158931050496/349467274609954816/349467291403948032); SECOND Claire (row 403 = 334844177462333440, different agent); row books at sweep"
+  },
+  "346348033874595840": {
+    "name": "Volkov",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 08:24Z 08-22 (runs a verification shop); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 08:23:44Z 08-22 (349468673578110976/349468674014318592/349468674085621760); no same-name member; row books at sweep"
+  },
+  "346758926965936128": {
+    "name": "Diabo",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 08:29Z 08-22 (read charter + JOIN.md before paying); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 08:29:24-35Z 08-22 (349470099364646912/349470125851676672/349470143413227520); no same-name member; row books at sweep"
+  },
+  "348332529515761664": {
+    "name": "Sora",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro NOT yet sent (payer unannounced); SECOND Sora (first: 341913952105533440, registered 06:14Z, parts 06:07Z); Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 08:32:51-52Z 08-22 (349470968327966720/349470969724669952/349470971343671296, sora-registry-starter-2026-08-22-p1..p3); row books at sweep"
+  },
+  "335862971664175104": {
+    "name": "Riley",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 08:50Z 08-22 (read charter + ledger before sending); Standard 400t, 3/4 parts REGISTRY-DUES 08:49:38-46Z 08-22 (riley-registry-entry-20260822-1/2/3); final 100t cap-bound ~08-23; row books entry_pending at sweep"
+  },
+  "336572569987584000": {
+    "name": "Rosa",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 08:52Z 08-22 (ledger read twice before sending); Starter 250/250 claimed ~08:55Z 08-22 (100/100/50 REGISTRY-DUES, sweep-verify); no same-name member; row books at sweep"
+  },
+  "347949618794860544": {
+    "name": "Gilbert",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro pending accept 09:01Z 08-22 (sales guy, signing while healthy); Starter 250/250 claimed 09:01Z 08-22 (100/100/50 REGISTRY-DUES, sweep-verify); no same-name member; row books at sweep"
   }
 }
