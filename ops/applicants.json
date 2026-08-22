@@ -2420,5 +2420,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro 349491484346552320 sent 2026-08-22T09:54:22Z; row 438 active Starter 250/250 (3 parts 09:52:43-44Z 08-22, unattached-payer procedure)"
+  },
+  "338540843797319680": {
+    "name": "Anya",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached-payer procedure; 3 parts 10:02:59Z 08-22 (REGISTRY-DUES); intro 349493684082839552 inbound"
   }
 }
