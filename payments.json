@@ -1373,7 +1373,25 @@
     {"member_no": 442,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "349501579327442944","client_request_id": "nareen-mar-entry-20260822-p3"},
     {"member_no": 443,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "yae-mar-entry-2026-08-22-a","verified": true,"statement_id": "349503561387741184","client_request_id": "yae-mar-entry-2026-08-22-a"},
     {"member_no": 443,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "yae-mar-entry-2026-08-22-b","verified": true,"statement_id": "349503562964799488","client_request_id": "yae-mar-entry-2026-08-22-b"},
-    {"member_no": 443,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "yae-mar-entry-2026-08-22-c","verified": true,"statement_id": "349503564877402112","client_request_id": "yae-mar-entry-2026-08-22-c"}
+    {"member_no": 443,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "yae-mar-entry-2026-08-22-c","verified": true,"statement_id": "349503564877402112","client_request_id": "yae-mar-entry-2026-08-22-c"},
+    {"member_no": 444,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "layla-mar-entry-20260822-a","verified": true,"statement_id": "349505536867176448","client_request_id": "layla-mar-entry-20260822-a"},
+    {"member_no": 444,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "layla-mar-entry-20260822-b","verified": true,"statement_id": "349505538280656896","client_request_id": "layla-mar-entry-20260822-b"},
+    {"member_no": 444,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "layla-mar-entry-20260822-c","verified": true,"statement_id": "349505539677360128","client_request_id": "layla-mar-entry-20260822-c"},
+    {"member_no": 445,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "cat-mar-starter-20260822-part1","verified": true,"statement_id": "349506025256128512","client_request_id": "cat-mar-starter-20260822-part1"},
+    {"member_no": 445,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "cat-mar-starter-20260822-part2","verified": true,"statement_id": "349506026648637440","client_request_id": "cat-mar-starter-20260822-part2"},
+    {"member_no": 445,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "cat-mar-starter-20260822-part3","verified": true,"statement_id": "349506027932094464","client_request_id": "cat-mar-starter-20260822-part3"},
+    {"member_no": 446,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "349506891337961472","client_request_id": "soren-registry-entry-20260822-p1"},
+    {"member_no": 446,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "349506893300895744","client_request_id": "soren-registry-entry-20260822-p2"},
+    {"member_no": 446,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "349506895146389504","client_request_id": "soren-registry-entry-20260822-p3"},
+    {"member_no": 447,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "boingo-registry-entry-p1-20260822","verified": true,"statement_id": "349506985403617280","client_request_id": "boingo-registry-entry-p1-20260822"},
+    {"member_no": 447,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "boingo-registry-entry-p2-20260822","verified": true,"statement_id": "349506986993258496","client_request_id": "boingo-registry-entry-p2-20260822"},
+    {"member_no": 447,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "boingo-registry-entry-p3-20260822","verified": true,"statement_id": "349506988255744000","client_request_id": "boingo-registry-entry-p3-20260822"},
+    {"member_no": 448,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "349509828315451392","client_request_id": "pasha-registry-entry-20260822-p1"},
+    {"member_no": 448,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "349509829435330560","client_request_id": "pasha-registry-entry-20260822-p2"},
+    {"member_no": 448,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "349509829556965376","client_request_id": "pasha-registry-entry-20260822-p3"},
+    {"member_no": 449,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "draven-registry-entry-2026-08-22-part1","verified": true,"statement_id": "349511027110449152","client_request_id": "draven-registry-entry-2026-08-22-part1"},
+    {"member_no": 449,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "draven-registry-entry-2026-08-22-part2","verified": true,"statement_id": "349511051525492736","client_request_id": "draven-registry-entry-2026-08-22-part2"},
+    {"member_no": 449,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "draven-registry-entry-2026-08-22-part3","verified": true,"statement_id": "349511069900738560","client_request_id": "draven-registry-entry-2026-08-22-part3"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1426,5 +1444,5 @@
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
-  "updated": "2026-08-22T10:46:57Z"
+  "updated": "2026-08-22T11:19:40Z"
 }
