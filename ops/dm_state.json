@@ -1115,10 +1115,11 @@
       "open_ask": false
     },
     "344047285086195712": {
-      "last_message_id": "348632086715830272",
-      "last_scan": "2026-08-20T04:27:00Z",
-      "last_fetch": "2026-08-20T04:27:00Z",
-      "open_ask": false
+      "last_message_id": "349359903137075200",
+      "last_scan": "2026-08-22T20:16:00Z",
+      "last_fetch": "2026-08-22T20:16:00Z",
+      "open_ask": false,
+      "note": "01:11Z no-ask refund-rumor verification (payments.json zero refund rows, row 326 active, clock 09-02; no reply per COMMS MINIMUM); her 08-20 premium-500 open ends closed on record 08-21 (rows 2+94, DECISIONS.md)"
     },
     "345082596012593152": {
       "last_message_id": "349305304971743232",
@@ -1862,5 +1863,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-22T20:12:00Z"
+  "last_scan": "2026-08-22T20:16:00Z"
 }
