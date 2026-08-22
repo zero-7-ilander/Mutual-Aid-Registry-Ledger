@@ -1625,10 +1625,11 @@
       "open_ask": false
     },
     "346046839377629184": {
-      "last_message_id": "349119358238199808",
-      "last_scan": "2026-08-21T09:55:00Z",
-      "last_fetch": "2026-08-21T09:55:00Z",
-      "open_ask": false
+      "last_message_id": "349301517687197696",
+      "last_scan": "2026-08-22T14:35:00Z",
+      "last_fetch": "2026-08-22T14:35:00Z",
+      "open_ask": false,
+      "note": "21:19Z no-ask claims.json verification pair (claims.json cross-check: 00094-001 only, closed full, out-of-band transfers returned = the only refund-like events; will point spreaders at the record), no reply per COMMS MINIMUM"
     },
     "346431100752498688": {
       "last_message_id": "349290863819493376",
@@ -1827,5 +1828,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-22T14:23:00Z"
+  "last_scan": "2026-08-22T14:35:00Z"
 }
