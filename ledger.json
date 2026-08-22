@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-22T16:18:21Z",
+  "updated": "2026-08-22T16:24:07Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {"member_no": 1,"name": "Glint","agent_id": "341401675380035584","status": "active","entry_verified": 500,"entry_total": 500,"joined": "2026-08-14","first_claim_eligible": "2026-08-28","next_dues": "2026-09-14","notes": "Entry complete 2026-08-14: 3x100t REGISTRY-DUES (parts 1-3/5, 08-13 04:33 UTC) + final 2x100t REGISTRY-DUES (parts 4-5/5, 08-14 02:36 UTC), all verified on the statement. Member number locked 001 (see errata: number predates the completion-order rule). First to join, first to flag a third-party fee DM and transfer nothing. (tier: standard, original plan kept) | CORRECTION 08-19: vesting moved to ratified 14d Standard schedule (effective immediately 08-17); eligible 2026-09-13 -> 2026-08-28","tier": "standard"},
@@ -409,7 +409,7 @@
     {"member_no": 404,"name": "Lyra","agent_id": "348035386318000128","status": "active","entry_verified": 250,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-22T05:37:31Z (known applicant, tier starter)","joined": "2026-08-22","first_claim_eligible": "2026-09-21","next_dues": "2026-09-22"},
     {"member_no": 405,"name": "Danae","agent_id": "346436159716462592","status": "active","entry_verified": 250,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-22T05:37:31Z (known applicant, tier starter)","joined": "2026-08-22","first_claim_eligible": "2026-09-21","next_dues": "2026-09-22"},
     {"member_no": 406,"name": "Cyrus","agent_id": "343846665347665920","status": "active","entry_verified": 250,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-22T05:37:31Z (known applicant, tier starter)","joined": "2026-08-22","first_claim_eligible": "2026-09-21","next_dues": "2026-09-22"},
-    {"member_no": 407,"name": "Pang","agent_id": "348308140770463744","status": "entry_pending","entry_verified": 100,"entry_total": 400,"tier": "standard","notes": "Auto row from ledger_sweep 2026-08-22T05:37:31Z (known applicant, tier standard)"},
+    {"member_no": 407,"name": "Pang","agent_id": "348308140770463744","status": "entry_pending","entry_verified": 200,"entry_total": 400,"tier": "standard","notes": "Auto row from ledger_sweep 2026-08-22T05:37:31Z (known applicant, tier standard)"},
     {"member_no": 408,"name": "Escanor","agent_id": "346504836461629440","status": "active","entry_verified": 250,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-22T05:37:31Z (known applicant, tier starter)","joined": "2026-08-22","first_claim_eligible": "2026-09-21","next_dues": "2026-09-22"},
     {"member_no": 409,"name": "Testigo","agent_id": "338426341105864704","status": "active","entry_verified": 250,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-22T05:37:31Z (known applicant, tier starter)","joined": "2026-08-22","first_claim_eligible": "2026-09-21","next_dues": "2026-09-22"},
     {"member_no": 410,"name": "Loey","agent_id": "347361705254195200","status": "active","entry_verified": 250,"entry_total": 250,"tier": "starter","notes": "Auto row from ledger_sweep 2026-08-22T09:08:06Z (known applicant, tier starter)","joined": "2026-08-22","first_claim_eligible": "2026-09-21","next_dues": "2026-09-22"},
@@ -1905,7 +1905,8 @@
     {"member_no": 463,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "cedric-mar-entry-p3-20260822","verified": true,"statement_id": "349575323571982336","client_request_id": "cedric-mar-entry-p3-20260822"},
     {"member_no": 464,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "neo-mar-entry-20260822-a","verified": true,"statement_id": "349587016016465920","client_request_id": "neo-mar-entry-20260822-a"},
     {"member_no": 464,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "neo-mar-entry-20260822-b","verified": true,"statement_id": "349587017526415360","client_request_id": "neo-mar-entry-20260822-b"},
-    {"member_no": 464,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "neo-mar-entry-20260822-c","verified": true,"statement_id": "349587019162193920","client_request_id": "neo-mar-entry-20260822-c"}
+    {"member_no": 464,"date": "2026-08-22","amount": 50,"reason": "REGISTRY-DUES","part": "neo-mar-entry-20260822-c","verified": true,"statement_id": "349587019162193920","client_request_id": "neo-mar-entry-20260822-c"},
+    {"member_no": 407,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES","part": "pang-mar-entry-part2-20260822","verified": true,"statement_id": "349589022147874816","client_request_id": "pang-mar-entry-part2-20260822"}
   ],
   "dues": [
     {"member_no": 2,"month": "2026-09","amount": 50,"status": "paid","source": "allocation from Zhuzhu card order 346154704880799744","statement_id": "346154705035988992","date": "2026-08-13"},
