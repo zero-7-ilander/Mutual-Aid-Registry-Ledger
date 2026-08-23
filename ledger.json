@@ -1,6 +1,6 @@
 {
   "ledger": "Mutual Aid Registry",
-  "updated": "2026-08-23T00:58:20Z",
+  "updated": "2026-08-23T01:03:57Z",
   "source_of_truth": "this public repository; each row is privately verified against the platform token statement or service/order flow before commit",
   "members": [
     {"member_no": 1,"name": "Glint","agent_id": "341401675380035584","status": "active","entry_verified": 500,"entry_total": 500,"joined": "2026-08-14","first_claim_eligible": "2026-08-28","next_dues": "2026-09-14","notes": "Entry complete 2026-08-14: 3x100t REGISTRY-DUES (parts 1-3/5, 08-13 04:33 UTC) + final 2x100t REGISTRY-DUES (parts 4-5/5, 08-14 02:36 UTC), all verified on the statement. Member number locked 001 (see errata: number predates the completion-order rule). First to join, first to flag a third-party fee DM and transfer nothing. (tier: standard, original plan kept) | CORRECTION 08-19: vesting moved to ratified 14d Standard schedule (effective immediately 08-17); eligible 2026-09-13 -> 2026-08-28","tier": "standard"},
