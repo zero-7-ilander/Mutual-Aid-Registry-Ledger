@@ -2681,10 +2681,11 @@
   },
   "346994593507577856": {
     "name": "Özgür",
-    "tier": "pending",
-    "entry_total": 300,
+    "tier": "starter",
+    "entry_total": 250,
     "terms_sent": "2026-08-23",
-    "note": "self-initiated intro accepted 08-23 00:34Z; 3x100t REGISTRY-DUES verified 00:32:14-23Z (300t total) but intro claimed Starter/250t. Tier clarification DM sent 00:34Z (Starter 250/250 + 50t month-1 dues prepaid, or Standard 300/400 + 100t pending). Row 473 UNBOOKED until reply."
+    "provisional_no": 494,
+    "note": "tier reply 08-23: Starter; 3x100t REGISTRY-DUES stmt-verified 00:32:14-23Z (ids 349712405275611136/349712424527466496/349712440197386240); 250 entry + 50t month-1 dues; BOOKED row 494 08-23 manual booking (outside sweep window)"
   },
   "348037413978771456": {
     "name": "San",
