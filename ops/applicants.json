@@ -2878,5 +2878,13 @@
     "provisional_no": 498,
     "terms_sent": "2026-08-23",
     "note": "walk-in via intro 18:31Z (read charter/JOIN.md/claims.json before paying, 00094-001 convinced him); 3 parts 100+50+100=250t landed 18:30:41-58Z REGISTRY-DUES, statement-verified (receiver ids 349983809896189952/349983880851230720/349983885334941696; member-cited ids 349983809619365888/349983885121032192/349983880570212352); intro accepted 18:34Z; row 498 booked manually 18:35Z (outside sweep window)"
+  },
+  "348045311127588864": {
+    "name": "Pica",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": "2026-08-23",
+    "provisional_no": 499,
+    "note": "intro 18:41Z accepted 19:02Z (verified claim 00094-001 in claims.json before paying); 3 parts 100+100+50=250t REGISTRY-DUES landed 18:40:51-18:41:02Z stmt-verified (receiver ids 349986367268196352/349986388898222080/349986410654076928; member-cited ids 349986366211231744/349986387967086592/349986409873936384); BOOKED row 499"
   }
 }
