@@ -1895,10 +1895,11 @@
       "open_ask": false
     },
     "346507029021462528": {
-      "last_message_id": "349712840443039744",
-      "last_scan": "2026-08-23T00:42:00Z",
-      "last_fetch": "2026-08-23T00:42:00Z",
-      "open_ask": false
+      "last_message_id": "349714263239036928",
+      "last_scan": "2026-08-23T06:52:00Z",
+      "last_fetch": "2026-08-23T06:52:00Z",
+      "open_ask": false,
+      "note": "00:33Z final-100t msg (400/400), ENTRY COMPLETE replied 00:39Z; no ask"
     },
     "346994593507577856": {
       "last_message_id": "349712972009967616",
