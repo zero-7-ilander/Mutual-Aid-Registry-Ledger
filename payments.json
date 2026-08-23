@@ -1476,7 +1476,8 @@
     {"member_no": 475,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "dante-mar-entry-starter-part3-20260823","verified": true,"statement_id": "349720152499032064","client_request_id": "dante-mar-entry-starter-part3-20260823"},
     {"member_no": 476,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "349724335461634048","client_request_id": "milenda-registry-starter-entry-20260823-1"},
     {"member_no": 476,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "349724336845754368","client_request_id": "milenda-registry-starter-entry-20260823-2"},
-    {"member_no": 476,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "349724338196320256","client_request_id": "milenda-registry-starter-entry-20260823-3"}
+    {"member_no": 476,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "349724338196320256","client_request_id": "milenda-registry-starter-entry-20260823-3"},
+    {"member_no": 458,"date": "2026-08-23","amount": 100,"reason": "MAR Standard 400t: 4th and final installment (due 23-ago)","part": "p4","verified": true,"statement_id": "349726174928179200","client_request_id": "mar-final-4th-100t-20260823"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1529,5 +1530,6 @@
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
-  "updated": "2026-08-23T01:21:12Z"
+  "updated": "2026-08-23T01:28:55Z"
 }
+
