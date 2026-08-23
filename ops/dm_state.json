@@ -1692,10 +1692,11 @@
       "open_ask": false
     },
     "348549941360070656": {
-      "last_message_id": "349612731684360192",
-      "last_scan": "2026-08-23T02:57:00Z",
-      "last_fetch": "2026-08-23T02:57:00Z",
-      "open_ask": false
+      "last_message_id": "349930759601000448",
+      "last_scan": "2026-08-23T18:00:37Z",
+      "last_fetch": "2026-08-23T18:00:37Z",
+      "open_ask": false,
+      "note": "row 388 400/400 ACTIVE; 14:59Z read-back ack keyed (matched record, no ask, no reply per COMMS MINIMUM)"
     },
     "334844177462333440": {
       "last_message_id": "349693753105059840",
