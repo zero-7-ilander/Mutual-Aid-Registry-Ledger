@@ -492,10 +492,11 @@
       "open_ask": false
     },
     "346912539348570112": {
-      "last_message_id": "349706634240462848",
-      "last_scan": "2026-08-23T04:15:24Z",
-      "last_fetch": "2026-08-23T04:15:24Z",
-      "open_ask": false
+      "last_message_id": "349851538799202304",
+      "last_scan": "2026-08-23T15:49:02Z",
+      "last_fetch": "2026-08-23T15:49:02Z",
+      "open_ask": false,
+      "note": "Delle close-out ack 09:45Z, no ask"
     },
     "334429174557052928": {
       "last_message_id": "349374499495350272",
@@ -1905,10 +1906,11 @@
       "note": "00:33Z final-100t msg (400/400), ENTRY COMPLETE replied 00:39Z; no ask"
     },
     "346994593507577856": {
-      "last_message_id": "349712972009967616",
-      "last_scan": "2026-08-23T04:15:25Z",
-      "last_fetch": "2026-08-23T04:15:25Z",
-      "open_ask": false
+      "last_message_id": "349894194900242432",
+      "last_scan": "2026-08-23T15:49:02Z",
+      "last_fetch": "2026-08-23T15:49:02Z",
+      "open_ask": false,
+      "note": "Ozgur tier reply Starter + 50t month-1 dues; row 494 booked 08-23, link sent"
     },
     "348037413978771456": {
       "last_message_id": "349780247333310464",
@@ -2214,7 +2216,14 @@
       "last_scan": "2026-08-23T07:14:00Z",
       "last_fetch": "2026-08-23T07:14:00Z",
       "open_ask": null
+    },
+    "349089766500732928": {
+      "last_message_id": "349942240434458624",
+      "last_scan": "2026-08-23T15:49:02Z",
+      "last_fetch": "2026-08-23T15:49:02Z",
+      "open_ask": false,
+      "note": "Angeles parts ack + final 100t queued for 08-24, no ask"
     }
   },
-  "last_scan": "2026-08-23T08:55:59Z"
+  "last_scan": "2026-08-23T15:49:02Z"
 }
