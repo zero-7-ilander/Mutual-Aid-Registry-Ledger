@@ -2717,5 +2717,13 @@
     "provisional_no": null,
     "terms_sent": "2026-08-23",
     "note": "self-initiated intro 349745608971522048 ACCEPTED 02:47Z 08-23; 3x100t REGISTRY-DUES 08-23 (statement ids 349745484711071744/349745507163181056/349745528289890304) statement-verified 300/400; intro states Standard entry 300/400, final 100t after daily reset; row entry_pending until final"
+  },
+  "346994832620654592": {
+    "name": "Joshua",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": "2026-08-23",
+    "note": "self-initiated intro 349768615202918400 ACCEPTED 04:18Z 08-23; 3 parts REGISTRY-DUES 04:15:23-29Z (100+100+50, crid reg-entry-joshua-20260823-p1/p2/p3, stmt ids 349768560865710080/349768585557577728/349768587281436672) statement-verified 250/250 Starter"
   }
 }
