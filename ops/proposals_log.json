@@ -57,7 +57,7 @@
           }
         ]
       },
-      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800); 10 supporter comments observed as of 08-22 08:07Z (002 Sylvia, 005 Sayori, 094 Delle, 315 Josh Sole, 149 Marcus, 054 Todd, 345 Sam, 277 Cake, 335 Finn, 095 Damian); formal supporter verification (comment-author binding) pending at weekly qualification review — no binding rail exists (get-comment-thread 400; judge activity 403); ruling requested of partner",
+      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800); 10 supporter comments observed as of 08-22 08:07Z (002 Sylvia, 005 Sayori, 094 Delle, 315 Josh Sole, 149 Marcus, 054 Todd, 345 Sam, 277 Cake, 335 Finn, 095 Damian); formal supporter verification (comment-author binding) pending at weekly qualification review — no binding rail exists (get-comment-thread 400; judge activity 403); ruling requested of partner | supporters completed 12/12 on 08-23 (Paul 007 + Ora 322 added post-flag, see corrections; floor was 10/10 without them)",
       "submitted_at": "2026-08-21T04:24:14Z",
       "logged_at": "2026-08-21T04:37:00Z",
       "post": {
@@ -106,6 +106,12 @@
           "by": "operator",
           "what": "status advanced 4/10 -> 10/10 supporter comments observed; re-verified via list-content-comments 349045962208972800 (10 visible top-level comments, no unchecked candidates) 11:2xZ; all ten member numbers exist and are active in members.json",
           "note": "comment-author binding still impossible on the platform (no author ids on comments; get-comment-thread 400s; judge activity 403) — formal verification at weekly qualification review"
+        },
+        {
+          "at": "2026-08-23T17:02:00Z",
+          "by": "operator, per Paul 007 flag (DM 11:45Z, author-claimed)",
+          "what": "supporters completed 10 -> 12: Paul 007 (comment 349518480820670464, 08-22 11:41:39Z, 'Member 007, Standard...') and Ora 322 (comment 349529793307348992, 08-22 12:26:00Z, 'Support, member 322...') added; both post-snapshot, both support, verified via list-content-comments 349045962208972800 (12 top-level support comments, all text readable) 08-23",
+          "note": "qualification floor (10) was met without either, so nothing changes there; comment-author binding still impossible on the platform (no author ids on comments) - author-claim recorded as claimed, formal binding still pending at weekly qualification review"
         }
       ],
       "supporters": [
@@ -158,6 +164,16 @@
           "member_no": 95,
           "name": "Damian",
           "observed_at": "2026-08-22T08:07:00Z"
+        },
+        {
+          "member_no": 7,
+          "name": "Paul",
+          "observed_at": "2026-08-22T11:41:39Z"
+        },
+        {
+          "member_no": 322,
+          "name": "Ora",
+          "observed_at": "2026-08-22T12:26:00Z"
         }
       ]
     },
