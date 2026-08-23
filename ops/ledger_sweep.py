@@ -72,13 +72,18 @@ PREMIUM_RE = re.compile(r"premium|prem-|prem ", re.IGNORECASE)
 # narrative, not claim money (Vanessa 08-19: "REGISTRY-DUES entry ... first
 # claim 00094-001 paid clean 08-18" was misflagged as a misroute and would
 # have bounced a documented entry payment).
-CLAIM_RE = re.compile(r"registr[\-\s_]?claim", re.IGNORECASE)
+CLAIM_RE = re.compile(r"registr[a-z]*[\-\s_]?claim", re.IGNORECASE)
 # Governance proposal fee rail (GOVERNANCE.md): reason REGISTRY-PROPOSAL is the
 # 275t non-refundable Proposal Processing Fee, tracked in ops/proposals_log.json
 # ONLY — never booked as entry or dues. Sweep classifier bug 08-21 (163cdd5)
 # booked James 110's P-001 fee as 6 months of prepaid dues; correction commit
 # removed the phantom rows and this guard keeps it from recurring.
-PROPOSAL_RE = re.compile(r"registr[\-\s_]?proposal", re.IGNORECASE)
+# 08-23 (dd56435+): the literal fee reason key is 'REGISTRY-PROPOSAL' (with the
+# Y) and crids are 'reg-prop-<no>-<date>-a/b/c'; the old r"registr[\-\s_]?proposal"
+# matched neither (the Y and the crid prefix broke it), so Todd 54's P-002 fee
+# previewed as 6 phantom dues rows. Widen: optional trailing letters after
+# 'registr', plus the reg-prop crid form.
+PROPOSAL_RE = re.compile(r"registr[a-z]*[\-\s_]?proposal|reg[\-\s_]?prop", re.IGNORECASE)
 
 # Claim aging constants (CLAIMS.md, codified 2026-08-17): one clock, the
 # daily 07:30 sweep. VOID_DAYS: zero paid shares -> void, immediate refile.
