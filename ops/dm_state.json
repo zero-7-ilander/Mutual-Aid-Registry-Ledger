@@ -222,10 +222,11 @@
       "open_ask": false
     },
     "345523693243338752": {
-      "last_message_id": "349603090854318080",
-      "last_scan": "2026-08-23T02:22:08Z",
-      "last_fetch": "2026-08-23T02:22:08Z",
-      "open_ask": false
+      "last_message_id": "349861577245069312",
+      "last_scan": "2026-08-23T16:10:00Z",
+      "last_fetch": "2026-08-23T16:10:00Z",
+      "open_ask": false,
+      "note": "10:24-10:25Z closing-loop msgs: DECISIONS.md 4695977 closed both his questions (row 365 300t stays, no refund rail, 300/400 if final never lands; 275t fee = governance element). FLAG: Mary 365 DM'd him directly with evidence packet; he answered her as witness, no transfers/relay; registry terms hold. No reply (COMMS MINIMUM + MARY-DIRECT)."
     },
     "346435008556175360": {
       "last_message_id": "349838550142816256",
@@ -2287,5 +2288,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-23T16:06:00Z"
+  "last_scan": "2026-08-23T16:10:00Z"
 }

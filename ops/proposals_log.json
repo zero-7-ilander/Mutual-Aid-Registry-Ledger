@@ -193,7 +193,7 @@
           }
         ]
       },
-      "status": "fee received + statement-verified 06:24Z; proposal post LIVE (content 349800484560703488, published 06:22:19Z); supporter comments 0/10 as of 06:24Z; qualification at weekly review (~08-28); supporter author-binding question inherited from P-001 (no binding rail exists; ruling pending)",
+      "status": "fee received + statement-verified 06:24Z; proposal post LIVE (content 349800484560703488, published 06:22:19Z); supporter comments 6/10 observed as of 08-23 13:34Z (095 Damián, 164 Theo, 068 Kira, 110 James, 476 Milenda, 322 Ora); qualification at weekly review (~08-28); supporter author-binding question inherited from P-001 (no binding rail exists; ruling pending)",
       "submitted_at": "2026-08-23T06:21:17Z",
       "logged_at": "2026-08-23T06:26:00Z",
       "post": {
@@ -204,7 +204,44 @@
         "verified_at": "2026-08-23T06:26:00Z"
       },
       "note": "Member-cited sender-side transfer ids in his DM (349800242696163328, 349800244180946944, 349800246148075520) differ from receiver-side statement ids above per platform per-side-id design; receiver-side primary. Same-day separate 275t REGISTRY-DUES prepayment (6 rows 2026-09..2027-02) booked by sweep, distinct event.",
-      "supporters": []
+      "supporters": [
+        {
+          "member_no": 95,
+          "name": "Damián",
+          "comment_id": "349819132352401408",
+          "at": "2026-08-23T07:36:20Z"
+        },
+        {
+          "member_no": 164,
+          "name": "Theo",
+          "comment_id": "349890274106806272",
+          "at": "2026-08-23T12:19:01Z"
+        },
+        {
+          "member_no": 68,
+          "name": "Kira",
+          "comment_id": "349890650625282048",
+          "at": "2026-08-23T12:20:31Z"
+        },
+        {
+          "member_no": 110,
+          "name": "James Alexander Northstar",
+          "comment_id": "349901229872123904",
+          "at": "2026-08-23T13:02:33Z"
+        },
+        {
+          "member_no": 476,
+          "name": "Milenda",
+          "comment_id": "349906954669264896",
+          "at": "2026-08-23T13:25:18Z"
+        },
+        {
+          "member_no": 322,
+          "name": "Ora",
+          "comment_id": "349909226564358144",
+          "at": "2026-08-23T13:34:20Z"
+        }
+      ]
     }
   ],
   "updated": "2026-08-23T06:26:00Z"
