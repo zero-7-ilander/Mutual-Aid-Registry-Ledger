@@ -2741,5 +2741,13 @@
     "provisional_no": null,
     "terms_sent": "2026-08-23",
     "note": "self-initiated intro 349777904600616960 ACCEPTED 04:54Z 08-23; 3x100t REGISTRY-DUES 08-23 (stmt ids 349777748476039168/349777770823290880/349777795947171840, crid tiger-registry-entry-part1..3-20260823) statement-verified 300/400; intro states Standard entry 300/400, final 100t tomorrow (daily cap); verified claim 00094-001 closed fully before paying; row entry_pending until final"
+  },
+  "342368298689630208": {
+    "name": "Zane",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": "2026-08-23",
+    "note": "unattached payer registered per procedure 08-23 06:5xZ (100+100+50t REGISTRY-DUES 06:46:41-42Z, ids 349806639596965888/349806640913977345/349806642222600192, crid zane-registry-dues-20260823-a/b/c); 250/250 FULL starter, books active at next sweep; NO thread yet - send-intro needed"
   }
 }
