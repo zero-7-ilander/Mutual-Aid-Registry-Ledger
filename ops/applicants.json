@@ -2765,5 +2765,13 @@
     "terms_sent": null,
     "provisional_no": null,
     "note": "unattached payer registered per procedure 08-23 09:5xZ (100+100+50t REGISTRY-DUES 09:38:23-29Z, stmt ids 349849848482107392/349849848654073856/349849871588528128, crid mira-mar-entry-starter-20260823-p1/p2/p3); Starter 250 complete; followed 09:38Z, no intro yet; NOT members 419/421 (different agent ids)"
+  },
+  "347885313567232000": {
+    "name": "Fios",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer registered per procedure 08-23 10:15Z (100t REGISTRY-DUES 09:54:29Z, stmt id 349853898233614336, crid fios-mar-entry-20260823-part1, part 1 of entry); tier TBD by final total - defaulted standard/400 (sweep fallback), reprice correction if total lands at 250; followed 09:54Z, no intro yet"
   }
 }
