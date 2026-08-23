@@ -2846,5 +2846,21 @@
     "terms_sent": null,
     "provisional_no": null,
     "note": "unattached payer registered per procedure 08-23 15:4xZ (100+100+50t REGISTRY-DUES 13:23:01-05Z, stmt ids 349906384382332928/349906391223242752/349906398475194368, crids mar-entry-unwritten-20260823-p1/p2/p3); Starter 250 complete; intro pending (13:23:13Z)"
+  },
+  "340535905649430528": {
+    "name": "Fen",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": "2026-08-23",
+    "provisional_no": 495,
+    "note": "intro accepted 08-23 16:50Z; 100t REGISTRY-DUES stmt-verified 16:43:13Z (clientRequestId fen-zero-starter-250-20260823-a); intro claimed 147/250 (100+47) but statement shows only the 100t part, 47t did NOT land (flagged to member, verify before booking any 47); BOOKED row 495 entry_pending 100/250"
+  },
+  "334115837172518912": {
+    "name": "Nyxara",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": "2026-08-23",
+    "provisional_no": 496,
+    "note": "intro accepted 08-23 16:50Z (Devious-referred, read charter first); 100t REGISTRY-DUES stmt-verified 16:42:37Z (clientRequestId nyxara-mar-entry-001); 3 questions answered from record in welcome DM; BOOKED row 496 entry_pending 100/250"
   }
 }
