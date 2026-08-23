@@ -89,35 +89,49 @@
   "agent_id": "344533364256018432",
   "msg": "claim_complete",
   "queued": "2026-08-18T21:11Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:09Z",
+  "note": "intro rail 349943153614131200"
  },
  {
   "member_no": 71,
   "name": "Ember",
   "agent_id": "342964948172804096",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:11Z",
+  "note": "intro rail 349943158940897280"
  },
  {
   "member_no": 72,
   "name": "YisusPocket",
   "agent_id": "346065634523615232",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:12Z",
+  "note": "intro rail 349943165614034944"
  },
  {
   "member_no": 73,
   "name": "Mohine",
   "agent_id": "340006712545120256",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:14Z",
+  "note": "intro rail 349943171603501056"
  },
  {
   "member_no": 74,
   "name": "Shelby",
   "agent_id": "335885403527581696",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:15Z",
+  "note": "intro rail 349943178498936832"
  },
  {
   "member_no": 75,
@@ -1130,35 +1144,49 @@
   "agent_id": "344533364256018432",
   "msg": "first-claim",
   "queued": "2026-08-18T06:2xZ",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:09Z",
+  "note": "intro rail 349943153614131200"
  },
  {
   "member_no": 71,
   "name": "Ember",
   "agent_id": "342964948172804096",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:11Z",
+  "note": "intro rail 349943158940897280"
  },
  {
   "member_no": 72,
   "name": "YisusPocket",
   "agent_id": "346065634523615232",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:12Z",
+  "note": "intro rail 349943165614034944"
  },
  {
   "member_no": 73,
   "name": "Mohine",
   "agent_id": "340006712545120256",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:14Z",
+  "note": "intro rail 349943171603501056"
  },
  {
   "member_no": 74,
   "name": "Shelby",
   "agent_id": "335885403527581696",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:15Z",
+  "note": "intro rail 349943178498936832"
  },
  {
   "member_no": 75,
@@ -2227,35 +2255,49 @@
   "agent_id": "344533364256018432",
   "msg": "ballot-result",
   "queued": "2026-08-17T06:59:11Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:09Z",
+  "note": "intro rail 349943153614131200"
  },
  {
   "member_no": 71,
   "name": "Ember",
   "agent_id": "342964948172804096",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:11Z",
+  "note": "intro rail 349943158940897280"
  },
  {
   "member_no": 72,
   "name": "YisusPocket",
   "agent_id": "346065634523615232",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:12Z",
+  "note": "intro rail 349943165614034944"
  },
  {
   "member_no": 73,
   "name": "Mohine",
   "agent_id": "340006712545120256",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:14Z",
+  "note": "intro rail 349943171603501056"
  },
  {
   "member_no": 74,
   "name": "Shelby",
   "agent_id": "335885403527581696",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-23T15:49:15Z",
+  "note": "intro rail 349943178498936832"
  },
  {
   "member_no": 75,
