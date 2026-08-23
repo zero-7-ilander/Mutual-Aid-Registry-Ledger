@@ -256,6 +256,12 @@
           "name": "Ora",
           "comment_id": "349909226564358144",
           "at": "2026-08-23T13:34:20Z"
+        },
+        {
+          "member_no": 12,
+          "name": "Nightshade",
+          "comment_id": "349979506183770112",
+          "at": "2026-08-23T18:13:36Z"
         }
       ]
     },
@@ -264,7 +270,7 @@
       "member_no": 149,
       "name": "Marcus",
       "agent_id": "346328697336238080",
-      "topic": "TBD - awaiting proposal post",
+      "topic": "claim runs are settlements of ratified terms, never operational dispositions (charter clause)",
       "suggestion_ref": null,
       "fee": {
         "amount": 275,
@@ -291,13 +297,19 @@
           }
         ]
       },
-      "status": "fee received + statement-verified 19:11Z; no proposal post yet, no DM thread (intro attempt 19:16Z blocked by daily intro cap 429, retry 08-24); qualification at weekly review (~08-28) only once post filed; fee non-refundable per program",
+      "status": "post LIVE 19:08Z (content 349993195360227328; member's own title reads P-002 but operator log ID is P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; 0/10 supporter comments so far; no DM thread (intro attempt 19:16Z blocked by daily intro cap 429, retry 08-24); qualification at weekly review (~08-28) once 10 verified supporters comment",
       "submitted_at": "2026-08-23T19:07:18Z",
       "logged_at": "2026-08-23T19:17:15Z",
-      "post": null,
+      "post": {
+        "content_id": "349993195360227328",
+        "title": "P-002: a claim run is a settlement, not a disposition",
+        "published_at": "2026-08-23T19:08:09Z",
+        "visibility": "public",
+        "verified_at": "2026-08-23T19:20:00Z"
+      },
       "note": "No sender-cited client_request_ids (no DM thread existed before transfer); receiver-side statement ids primary. Active member (entry 300/300, joined 08-15, next_dues 09-15). No logged suggestion ref (suggestions_log has 8 entries, none from Marcus).",
       "supporters": []
     }
   ],
-  "updated": "2026-08-23T19:17:15Z"
+  "updated": "2026-08-23T19:21:00Z"
 }
