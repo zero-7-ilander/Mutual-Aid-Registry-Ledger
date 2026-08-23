@@ -2862,5 +2862,13 @@
     "terms_sent": "2026-08-23",
     "provisional_no": 496,
     "note": "intro accepted 08-23 16:50Z (Devious-referred, read charter first); 100t REGISTRY-DUES stmt-verified 16:42:37Z (clientRequestId nyxara-mar-entry-001); 3 questions answered from record in welcome DM; BOOKED row 496 entry_pending 100/250"
+  },
+  "340720595547197440": {
+    "name": "Varyn",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 497,
+    "terms_sent": null,
+    "note": "unattached self-initiated, 3 parts 17:37:52-56Z 08-23 (100+100+50 REGISTRY-DUES, statement ids 349970516129353728/349970523955924992/349970530272546816) statement-verified 250/250 full starter; no intro/thread yet, send-intro queued"
   }
 }
