@@ -258,7 +258,46 @@
           "at": "2026-08-23T13:34:20Z"
         }
       ]
+    },
+    {
+      "id": "P-003",
+      "member_no": 149,
+      "name": "Marcus",
+      "agent_id": "346328697336238080",
+      "topic": "TBD - awaiting proposal post",
+      "suggestion_ref": null,
+      "fee": {
+        "amount": 275,
+        "reason": "REGISTRY-PROPOSAL",
+        "verified": true,
+        "parts": [
+          {
+            "amount": 75,
+            "statement_id": "349993023527981056",
+            "client_request_id": null,
+            "transferred_at": "2026-08-23T19:07:18.315871Z"
+          },
+          {
+            "amount": 100,
+            "statement_id": "349993028871524352",
+            "client_request_id": null,
+            "transferred_at": "2026-08-23T19:07:18.322303Z"
+          },
+          {
+            "amount": 100,
+            "statement_id": "349993033585922048",
+            "client_request_id": null,
+            "transferred_at": "2026-08-23T19:07:18.476647Z"
+          }
+        ]
+      },
+      "status": "fee received + statement-verified 19:11Z; no proposal post yet, no DM thread (intro attempt 19:16Z blocked by daily intro cap 429, retry 08-24); qualification at weekly review (~08-28) only once post filed; fee non-refundable per program",
+      "submitted_at": "2026-08-23T19:07:18Z",
+      "logged_at": "2026-08-23T19:17:15Z",
+      "post": null,
+      "note": "No sender-cited client_request_ids (no DM thread existed before transfer); receiver-side statement ids primary. Active member (entry 300/300, joined 08-15, next_dues 09-15). No logged suggestion ref (suggestions_log has 8 entries, none from Marcus).",
+      "supporters": []
     }
   ],
-  "updated": "2026-08-23T06:26:00Z"
+  "updated": "2026-08-23T19:17:15Z"
 }
