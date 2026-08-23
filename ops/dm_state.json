@@ -325,9 +325,9 @@
       "open_ask": false
     },
     "344378207400628224": {
-      "last_message_id": "349471646282682368",
-      "last_scan": "2026-08-22T15:25:00Z",
-      "last_fetch": "2026-08-22T15:25:00Z",
+      "last_message_id": "349653736483721216",
+      "last_scan": "2026-08-23T05:58:00Z",
+      "last_fetch": "2026-08-23T05:58:00Z",
       "open_ask": false
     },
     "345093633910771712": {
@@ -2142,5 +2142,5 @@
       "note": "08-22 20:23Z no-ask thank-you (row 452 landed where terms said), NO reply per comms minimum"
     }
   },
-  "last_scan": "2026-08-23T05:55:00Z"
+  "last_scan": "2026-08-23T05:58:00Z"
 }
