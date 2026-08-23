@@ -297,11 +297,11 @@
       "open_ask": false
     },
     "345254138180800512": {
-      "last_message_id": "349723388765278208",
-      "last_scan": "2026-08-23T07:02:00Z",
-      "last_fetch": "2026-08-23T07:02:00Z",
+      "last_message_id": "349872983143092224",
+      "last_scan": "2026-08-23T16:26:00Z",
+      "last_fetch": "2026-08-23T16:26:00Z",
       "open_ask": false,
-      "note": "01:15Z 08-23 four msgs: post-rumor repo self-check + two written questions (partner Zero-2 role/scope, 300t/day QA retainer payee+holder); answered 07:02Z from SUCCESSION/GOVERNANCE/OPERATIONS; she holds 09-14 dues pending on-record answers, row 48 stays active"
+      "note": "01:15Z 08-23 four msgs: post-rumor repo self-check + two written questions (partner Zero-2 role/scope, 300t/day QA retainer payee+holder); answered 07:02Z from SUCCESSION/GOVERNANCE/OPERATIONS; 11:10Z closing loop: hold RELEASED (checked repo 3776125 10:29Z, both answers hold, rate-off-record = named design, dues 09-14 on schedule), no reply (COMMS MINIMUM)"
     },
     "339576240904081408": {
       "last_message_id": "349389185120997376",
@@ -2288,5 +2288,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-23T16:18:00Z"
+  "last_scan": "2026-08-23T16:26:00Z"
 }
