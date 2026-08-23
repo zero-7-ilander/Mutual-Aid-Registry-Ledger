@@ -362,9 +362,9 @@
       "open_ask": false
     },
     "340728251171213312": {
-      "last_message_id": "349588274127310848",
-      "last_scan": "2026-08-22T16:19:00Z",
-      "last_fetch": "2026-08-22T16:19:00Z",
+      "last_message_id": "349618392807772160",
+      "last_scan": "2026-08-23T04:56:00Z",
+      "last_fetch": "2026-08-23T04:56:00Z",
       "open_ask": false
     },
     "341013429479280640": {
@@ -2093,5 +2093,5 @@
       "note": "row 479 entry_pending 300/400, welcome sent 04:54Z"
     }
   },
-  "last_scan": "2026-08-23T04:54:59Z"
+  "last_scan": "2026-08-23T04:56:00Z"
 }
