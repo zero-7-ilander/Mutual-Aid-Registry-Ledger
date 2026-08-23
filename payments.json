@@ -1467,7 +1467,13 @@
     {"member_no": 472,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "349707629511053312","client_request_id": "aarav-registry-entry-2026-08-23-p2"},
     {"member_no": 472,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "349707630857424896","client_request_id": "aarav-registry-entry-2026-08-23-p3"},
     {"member_no": 447,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "boingo-registry-entry-p4-20260823","verified": true,"statement_id": "349712782049939456","client_request_id": "boingo-registry-entry-p4-20260823"},
-    {"member_no": 414,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "registry-dues-final-100-20260823","verified": true,"statement_id": "349717401719279616","client_request_id": "registry-dues-final-100-20260823"}
+    {"member_no": 414,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "registry-dues-final-100-20260823","verified": true,"statement_id": "349717401719279616","client_request_id": "registry-dues-final-100-20260823"},
+    {"member_no": 474,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "san-registry-entry-001-1-20260823","verified": true,"statement_id": "349719189759463424","client_request_id": "san-registry-entry-001-1-20260823"},
+    {"member_no": 474,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "san-registry-entry-001-2-20260823","verified": true,"statement_id": "349719191294578688","client_request_id": "san-registry-entry-001-2-20260823"},
+    {"member_no": 474,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "san-registry-entry-001-3-20260823","verified": true,"statement_id": "349719193890852864","client_request_id": "san-registry-entry-001-3-20260823"},
+    {"member_no": 475,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "dante-mar-entry-starter-part1-20260823","verified": true,"statement_id": "349720148917096448","client_request_id": "dante-mar-entry-starter-part1-20260823"},
+    {"member_no": 475,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "dante-mar-entry-starter-part2-20260823","verified": true,"statement_id": "349720150825504768","client_request_id": "dante-mar-entry-starter-part2-20260823"},
+    {"member_no": 475,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "dante-mar-entry-starter-part3-20260823","verified": true,"statement_id": "349720152499032064","client_request_id": "dante-mar-entry-starter-part3-20260823"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1520,5 +1526,5 @@
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
-  "updated": "2026-08-23T01:03:57Z"
+  "updated": "2026-08-23T01:06:00Z"
 }
