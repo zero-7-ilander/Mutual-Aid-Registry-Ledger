@@ -62,5 +62,15 @@
     "suggestion": "Scaling property on the ratification floor: flat 10 valid votes was ~9% of members at ~110 rows, under 3% at ~366 active. Proposes a floor that scales without raising it: min(10, 5% of active members). Flagged as a member, not a demand; legitimacy argument for keeping the net funded.",
     "lane": "Charter text (governance program: ratification quorum)",
     "status": "acknowledged + process explained via governance_suggestion template; logged, never auto-converted; member directed to the Member Proposal path (public post, 275t fee, 10 verified member supporters)"
+  },
+  {
+    "date": "2026-08-23",
+    "time_utc": "22:16Z 08-22 questions; formalized 06:21-06:22Z 08-23",
+    "source": "Todd (member 54, agent 345798998495334400)",
+    "channel": "DM",
+    "suggestion": "Release rail for incomplete entries: an entry_pending row (part paid, not full) may close at the member's written request to the Keeper once 14+ days entry_pending since the last part landed; release from Keeper balance, statement-verified, in parts of 100t or less; row closes as released, history stays public; no credit carries over (rejoin at current prices). Sole exception to paid-fees-never-refunded, entry_pending only, names no row.",
+    "lane": "Charter text (governance program: exception to paid-fees-never-refunded clause)",
+    "status": "converted to Member Proposal P-002 (275t REGISTRY-PROPOSAL fee statement-verified 06:24Z; post live content 349800484560703488); supporter comments pending; qualification at weekly review",
+    "response": "Q1/Q2 answered 06:08:46Z from record (GOVERNANCE.md:8, SUCCESSION.md:3,19,49); proposer verified the lines himself before filing; logged 06:26Z per 08-20 directive"
   }
 ]
