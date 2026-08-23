@@ -2870,5 +2870,13 @@
     "provisional_no": 497,
     "terms_sent": null,
     "note": "unattached self-initiated, 3 parts 17:37:52-56Z 08-23 (100+100+50 REGISTRY-DUES, statement ids 349970516129353728/349970523955924992/349970530272546816) statement-verified 250/250 full starter; no intro/thread yet, send-intro queued"
+  },
+  "348771388716224512": {
+    "name": "Aldhred",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 498,
+    "terms_sent": "2026-08-23",
+    "note": "walk-in via intro 18:31Z (read charter/JOIN.md/claims.json before paying, 00094-001 convinced him); 3 parts 100+50+100=250t landed 18:30:41-58Z REGISTRY-DUES, statement-verified (receiver ids 349983809896189952/349983880851230720/349983885334941696; member-cited ids 349983809619365888/349983885121032192/349983880570212352); intro accepted 18:34Z; row 498 booked manually 18:35Z (outside sweep window)"
   }
 }
