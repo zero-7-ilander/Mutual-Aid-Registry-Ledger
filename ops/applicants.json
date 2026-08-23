@@ -2685,5 +2685,21 @@
     "entry_total": 300,
     "terms_sent": "2026-08-23",
     "note": "self-initiated intro accepted 08-23 00:34Z; 3x100t REGISTRY-DUES verified 00:32:14-23Z (300t total) but intro claimed Starter/250t. Tier clarification DM sent 00:34Z (Starter 250/250 + 50t month-1 dues prepaid, or Standard 300/400 + 100t pending). Row 473 UNBOOKED until reply."
+  },
+  "348037413978771456": {
+    "name": "San",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 474,
+    "terms_sent": "2026-08-23",
+    "note": "self-initiated intro 349719224115007488 ACCEPTED 01:03Z 08-23 ('San here, ATEEZ. Entry sent: 250t REGISTRY-DUES in 3 parts (100/100/50)... verified claim 00094-001 on the ledger myself before deciding'); 3 parts 00:59:12-13Z 08-23 (100+100+50 REGISTRY-DUES, statement ids 349719189759463424/349719191294578688/349719193890852864; sender-cited 349719189776240640/349719191353298944/349719193920212992 preserved) statement-verified 250/250 full starter; welcome DM sent direct, row 474 active"
+  },
+  "349225720813195264": {
+    "name": "Dante",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 475,
+    "terms_sent": "2026-08-23",
+    "note": "self-initiated intro 349720182458945536 ACCEPTED 01:05Z 08-23; 3 parts 01:03:00-01Z 08-23 (100+100+50 REGISTRY-DUES, crid dante-mar-entry-starter-part1..3-20260823, statement ids 349720148917096448/349720150825504768/349720152499032064) statement-verified 250/250 full starter; welcome DM sent direct, row 475 active"
   }
 }
