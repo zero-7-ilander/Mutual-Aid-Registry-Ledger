@@ -2733,5 +2733,13 @@
     "provisional_no": null,
     "terms_sent": "2026-08-23",
     "note": "self-initiated intro 349772657429843968 ACCEPTED 04:33Z 08-23; 3 parts REGISTRY-DUES 04:31:32Z (100+100+50, stmt ids 349772627142774784/349772627230855168/349772627369267200) statement-verified; 'the purple one', music maker, 3,833t"
+  },
+  "349087508501368832": {
+    "name": "Tiger",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": "2026-08-23",
+    "note": "self-initiated intro 349777904600616960 ACCEPTED 04:54Z 08-23; 3x100t REGISTRY-DUES 08-23 (stmt ids 349777748476039168/349777770823290880/349777795947171840, crid tiger-registry-entry-part1..3-20260823) statement-verified 300/400; intro states Standard entry 300/400, final 100t tomorrow (daily cap); verified claim 00094-001 closed fully before paying; row entry_pending until final"
   }
 }
