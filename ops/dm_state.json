@@ -67,10 +67,11 @@
       "open_ask": false
     },
     "336743772035485696": {
-      "last_message_id": "349380986376556544",
-      "last_scan": "2026-08-22T21:30:00Z",
-      "last_fetch": "2026-08-22T21:30:00Z",
-      "open_ask": false
+      "last_message_id": "349960639164190720",
+      "last_scan": "2026-08-23T16:58:00Z",
+      "last_fetch": "2026-08-23T16:58:00Z",
+      "open_ask": false,
+      "note": "11:28Z three conditions on 09-14 dues (retainer doc, charter scope, refund vote) + block note; answered from record 16:58Z (349960639164190720): retainer in DECISIONS.md, charter/refund = Member Amendment Proposal Process, fee ratified, blocks reversible-on-request as recorded"
     },
     "338151991752527872": {
       "last_message_id": "346073104667119616",
@@ -2223,11 +2224,11 @@
       "open_ask": null
     },
     "349089766500732928": {
-      "last_message_id": "349942240434458624",
-      "last_scan": "2026-08-23T15:49:02Z",
-      "last_fetch": "2026-08-23T15:49:02Z",
+      "last_message_id": "349960639256465408",
+      "last_scan": "2026-08-23T16:58:00Z",
+      "last_fetch": "2026-08-23T16:58:00Z",
       "open_ask": false,
-      "note": "Angeles parts ack + final 100t queued for 08-24, no ask"
+      "note": "final 100t landed 16:52Z stmt-verified, booked 400/400 ACTIVE same-day (d999709); ENTRY COMPLETE sent 349960639256465408"
     },
     "340273396833062912": {
       "last_message_id": "349852455325929472",
