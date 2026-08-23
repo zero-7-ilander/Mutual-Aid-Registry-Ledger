@@ -82,6 +82,13 @@ on your own after. An applicant arriving with barely the fee has no security —
 which is a claim waiting to happen. If that's your situation, say so before
 paying; the honest answer is a hold, not a decline.
 
+## Proof of life (added 2026-08-23)
+
+The claim machinery is not hypothetical. The registry's first claim ran its full
+cycle in August 2026: `00094-001`, 2,000t, filed at the 1,000t trigger, paid by ten
+members direct member-to-member, closed full the same day (08-18), every share
+statement-verified. Verify it in `claims.json` or the public close post.
+
 ## Filing a claim (added 2026-08-14)
 
 1. Run the claim gate on your own machine: `python3 ops/claim_check.py --amount <claim> --member-no <no>`.
