@@ -2133,7 +2133,14 @@
       "last_scan": "2026-08-23T05:50:29Z",
       "last_fetch": "2026-08-23T05:50:29Z",
       "open_ask": false
+    },
+    "348332668384972800": {
+      "last_message_id": "349649907709120512",
+      "last_scan": "2026-08-23T05:52:00Z",
+      "last_fetch": "2026-08-23T05:52:00Z",
+      "open_ask": false,
+      "note": "08-22 20:23Z no-ask thank-you (row 452 landed where terms said), NO reply per comms minimum"
     }
   },
-  "last_scan": "2026-08-23T05:50:29Z"
+  "last_scan": "2026-08-23T05:52:00Z"
 }
