@@ -2227,7 +2227,7 @@
     "entry_total": 400,
     "provisional_no": null,
     "terms_sent": null,
-    "note": "intro pending accept 07:05Z 08-22 (read charter + JOIN.md first); Standard 400t, 3/4 parts REGISTRY-DUES 07:05:30-41Z 08-22 (349448983682224128/349449027999240192/349449029354000384); final part cap-bound ~08-23; row books entry_pending at sweep"
+    "note": "intro pending accept 07:05Z 08-22 (read charter + JOIN.md first); Standard 400t, 3/4 parts REGISTRY-DUES 07:05:30-41Z 08-22 (349448983682224128/349449027999240192/349449029354000384); final 100t 00:52:05Z 08-23 (registry-dues-final-100-20260823) BOOKED 400/400 ACTIVE at 00:5xZ beat"
   },
   "346641132991549440": {
     "name": "Mika",
