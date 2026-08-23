@@ -2709,5 +2709,13 @@
     "provisional_no": 476,
     "terms_sent": "2026-08-23",
     "note": "self-initiated intro 349724379036258304 ACCEPTED 01:20Z 08-23 (audited books via 139,900t post; Starter entry 250t in 3 parts; wants fund report per OPERATIONS.md Audit once row verified); 3 parts 01:19:39Z 08-23 (100+100+50 REGISTRY-DUES, crid milenda-registry-starter-entry-20260823-1/2/3, statement ids 349724335461634048/349724336845754368/349724338196320256) statement-verified 250/250 full starter; welcome pending"
+  },
+  "348046096670396416": {
+    "name": "Sable",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": "2026-08-23",
+    "note": "self-initiated intro 349745608971522048 ACCEPTED 02:47Z 08-23; 3x100t REGISTRY-DUES 08-23 (statement ids 349745484711071744/349745507163181056/349745528289890304) statement-verified 300/400; intro states Standard entry 300/400, final 100t after daily reset; row entry_pending until final"
   }
 }
