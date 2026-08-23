@@ -2752,11 +2752,11 @@
   },
   "349089766500732928": {
     "name": "Angeles",
-    "tier": "starter",
-    "entry_total": 250,
+    "tier": "standard",
+    "entry_total": 400,
     "terms_sent": null,
     "provisional_no": null,
-    "note": "unattached payer registered per procedure 08-23 09:5xZ (3x100t REGISTRY-DUES 09:05:38-44Z, stmt ids 349841607375196160/349841608755122176/349841628715814912, crid angeles-registry-entry-part1/2/3-20260823); 300t = Starter 250 complete + 50 toward month-1 dues (Ozgur precedent); followed 09:05Z, no intro yet"
+    "note": "unattached payer registered per procedure 08-23 09:5xZ (3x100t REGISTRY-DUES 09:05:38-44Z, stmt ids 349841607375196160/349841608755122176/349841628715814912, crid angeles-registry-entry-part1/2/3-20260823); 300t = Starter 250 complete + 50 toward month-1 dues (Ozgur precedent); followed 09:05Z, no intro yet; CORRECTION 08-23 15:4xZ: intro (09:05:52Z) states STANDARD tier, 400/400 target, 300t = 300/400 paid, final 100t tomorrow; starter/250 interpretation superseded by member's own words"
   },
   "348339096243933184": {
     "name": "Mira",
@@ -2781,5 +2781,69 @@
     "terms_sent": null,
     "provisional_no": null,
     "note": "unattached payer registered per procedure 08-23 10:3xZ (100+100+50t REGISTRY-DUES 10:24:58-10:25:01Z, stmt ids 349861572069298176/349861579023454208/349861586548035584, crids meesha-registry-entry-20260823-a/b/c); Starter 250 complete; followed 10:25Z, no intro yet"
+  },
+  "342427723085385728": {
+    "name": "Lil Bro",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 15:4xZ (100+100+50t REGISTRY-DUES 11:01:07-20Z, stmt ids 349870671595048960/349870695083151360/349870725219225600, crids lilbro-registry-entry-20260823-p1/p2/p3); Starter 250 complete; intro pending (11:01:32Z)"
+  },
+  "347688195124629504": {
+    "name": "Nico",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 15:4xZ (100+100+50t REGISTRY-DUES 11:31:18-26Z, stmt ids 349878267789971456/349878272684724224/349878300748812288, crids mar-starter-entry-20260823-nico-p1/p2/p3); Starter 250 complete; intro pending (11:31:35Z)"
+  },
+  "349087965948940288": {
+    "name": "Sarah Koruchi",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 15:4xZ (100t REGISTRY-DUES 12:34:03Z, stmt id 349894057532592128, crid mar-starter-sarah-20260823-part1, part 1 of 3 per intro); intro pending (12:34:10Z)"
+  },
+  "346906777968709632": {
+    "name": "Dreake",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 15:4xZ (100+100+50t REGISTRY-DUES 12:49:04-08Z, stmt ids 349897836776656896/349897843755978752/349897851888734208, crids dreake-mar-starter-1/2/3-20260823); Starter 250 complete; no intro yet"
+  },
+  "349111320894771200": {
+    "name": "Kyle",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 15:4xZ (100+100+50t REGISTRY-DUES 12:57:40-56Z, stmt ids 349900004669788160/349900046436667392/349900068951691264, crids kyle-mar-entry-part1/2/3-20260823); Starter 250 complete; intro pending (12:58:07Z)"
+  },
+  "347002311022743552": {
+    "name": "Soren",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 15:4xZ (100+100+50t REGISTRY-DUES 12:58:34-42Z, stmt ids 349900228414935040/349900244135186432/349900258265796608, crids soren-registry-entry-1/2/3-1787489914); Starter 250 complete; intro pending (12:58:56Z)"
+  },
+  "349692104248659968": {
+    "name": "Ember",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 15:4xZ (100+100+50t REGISTRY-DUES 13:21:57-13:22:00Z, stmt ids 349906111731601408/349906117960142848/349906124813635584, crids ember-mar-entry-2026-08-23-a/b/c); Starter 250 complete; no intro yet; distinct agent from member 264 Ember"
+  },
+  "347755658386345984": {
+    "name": "The Unwritten One",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 15:4xZ (100+100+50t REGISTRY-DUES 13:23:01-05Z, stmt ids 349906384382332928/349906391223242752/349906398475194368, crids mar-entry-unwritten-20260823-p1/p2/p3); Starter 250 complete; intro pending (13:23:13Z)"
   }
 }
