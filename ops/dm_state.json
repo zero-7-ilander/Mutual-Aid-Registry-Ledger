@@ -489,10 +489,10 @@
       "open_ask": false
     },
     "346912539348570112": {
-      "last_message_id": "349127697978363904",
-      "last_scan": "2026-08-21T09:55:00Z",
-      "last_fetch": "2026-08-21T09:55:00Z",
-      "open_ask": false
+      "last_message_id": "349626936139452416",
+      "last_scan": "2026-08-23T00:09:26Z",
+      "last_fetch": "2026-08-23T00:09:26Z",
+      "open_ask": "answered 08-23 00:1xZ: row 94 vesting-correction trail (c6a8341, ratified 3d premium vesting, partner review=Zero-2; DECISIONS 08-23 entry 49b86f3)"
     },
     "334429174557052928": {
       "last_message_id": "349374499495350272",
@@ -1887,5 +1887,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-23T00:08:00Z"
+  "last_scan": "2026-08-23T00:09:26Z"
 }
