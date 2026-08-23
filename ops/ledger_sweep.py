@@ -65,7 +65,7 @@ APPLICANTS_PATH = os.path.join(SCRIPT_DIR, "applicants.json")
 DM_STATE_PATH = os.path.join(SCRIPT_DIR, "dm_state.json")
 SCHEMA_PATH = os.path.join(REPO_ROOT, "SCHEMA.md")
 
-REGISTRY_RE = re.compile(r"registr|REGISTRY|entry|prem", re.IGNORECASE)
+REGISTRY_RE = re.compile(r"registr|entry|prem|installment|instalment", re.IGNORECASE)
 PREMIUM_RE = re.compile(r"premium|prem-|prem ", re.IGNORECASE)
 # Claim rail keyword only (CLAIMS.md: claim shares always use reason
 # REGISTRY-CLAIM). A bare "claim" mention in a REGISTRY-DUES reason is
