@@ -1619,9 +1619,9 @@
     },
     "340042003574165504": {
       "last_message_id": "349472234517041152",
-      "last_scan": "2026-08-22T09:30:20Z",
-      "last_fetch": "2026-08-22T09:30:20Z",
-      "open_ask": false
+      "last_scan": "2026-08-23T02:04:03Z",
+      "last_fetch": "2026-08-23T02:04:03Z",
+      "open_ask": "closed 08-23: Times-piece fact-check re-verified (SUCCESSION trigger line holds at HEAD); thanked, cursor keyed"
     },
     "346431036416069632": {
       "last_message_id": "349173484372365312",
@@ -1941,5 +1941,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-23T01:56:10Z"
+  "last_scan": "2026-08-23T02:04:03Z"
 }
