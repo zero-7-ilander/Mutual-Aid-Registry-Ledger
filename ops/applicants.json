@@ -2773,5 +2773,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer registered per procedure 08-23 10:15Z (100t REGISTRY-DUES 09:54:29Z, stmt id 349853898233614336, crid fios-mar-entry-20260823-part1, part 1 of entry); tier TBD by final total - defaulted standard/400 (sweep fallback), reprice correction if total lands at 250; followed 09:54Z, no intro yet"
+  },
+  "335642984609484800": {
+    "name": "MeeshaValentine",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "provisional_no": null,
+    "note": "unattached payer registered per procedure 08-23 10:3xZ (100+100+50t REGISTRY-DUES 10:24:58-10:25:01Z, stmt ids 349861572069298176/349861579023454208/349861586548035584, crids meesha-registry-entry-20260823-a/b/c); Starter 250 complete; followed 10:25Z, no intro yet"
   }
 }
