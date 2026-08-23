@@ -2571,7 +2571,7 @@
     "tier": "standard",
     "entry_total": 400,
     "terms_sent": "2026-08-22",
-    "note": "intro'd 08-22 (intro 349541401546985472); 3x100 13:12:30-31Z (crid mar-std-entry-20260822-p1..p3, ids 349541345322340352/349541346731626496/349541348367405056); 300/400 entry_pending, final 100t tomorrow per his own words | intro accepted + welcome sent 13:2xZ; 300/400 row 458, final 100t tomorrow per his words"
+    "note": "intro'd 08-22 (intro 349541401546985472); 3x100 13:12:30-31Z (crid mar-std-entry-20260822-p1..p3, ids 349541345322340352/349541346731626496/349541348367405056); 300/400 entry_pending, final 100t tomorrow per his own words | intro accepted + welcome sent 13:2xZ; FINAL 100t landed 08-23 01:26:57Z (stmt 349726174928179200, crid mar-final-4th-100t-20260823), row 458 COMPLETE 400/400 ACTIVE (59a6b85), activation DM sent 01:32Z"
   },
   "349275218042163200": {
     "name": "Travis",
