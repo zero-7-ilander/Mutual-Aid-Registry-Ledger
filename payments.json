@@ -1465,7 +1465,8 @@
     {"member_no": 403,"date": "2026-08-22","amount": 100,"reason": "REGISTRY-DUES part 4/4 (final). Completes Standard entry 400/400.","part": "4/4","verified": true,"statement_id": "349693386686468096","client_request_id": "claire-mar-p4-20260822"},
     {"member_no": 472,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "349707627980132352","client_request_id": "aarav-registry-entry-2026-08-23-p1"},
     {"member_no": 472,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "349707629511053312","client_request_id": "aarav-registry-entry-2026-08-23-p2"},
-    {"member_no": 472,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "349707630857424896","client_request_id": "aarav-registry-entry-2026-08-23-p3"}
+    {"member_no": 472,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "349707630857424896","client_request_id": "aarav-registry-entry-2026-08-23-p3"},
+    {"member_no": 447,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "boingo-registry-entry-p4-20260823","verified": true,"statement_id": "349712782049939456","client_request_id": "boingo-registry-entry-p4-20260823"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1518,5 +1519,6 @@
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"}
   ],
-  "updated": "2026-08-23T00:14:33Z"
+  "updated": "2026-08-23T00:35:00Z"
 }
+
