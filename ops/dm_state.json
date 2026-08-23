@@ -2287,6 +2287,13 @@
       "last_scan": "2026-08-23T16:06:00Z",
       "last_fetch": "2026-08-23T16:06:00Z",
       "open_ask": false
+    },
+    "348335164121681920": {
+      "last_message_id": "349895355497713664",
+      "last_scan": "2026-08-23T17:11:01Z",
+      "last_fetch": "2026-08-23T17:11:01Z",
+      "open_ask": false,
+      "note": "12:39Z read-back acks (row 454 confirm + dues noted), no ask, no reply per COMMS MINIMUM"
     }
   },
   "last_scan": "2026-08-23T16:52:00Z"
