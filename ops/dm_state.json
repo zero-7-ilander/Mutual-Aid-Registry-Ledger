@@ -1740,9 +1740,9 @@
       "note": "final part 4/4 landed 07:41:50Z (stmt 349820514874691584, crid mira-mar-dues-part4-20260823); 08:35Z sweep books + ENTRY COMPLETE DM; no reply (COMMS MINIMUM)"
     },
     "348308140770463744": {
-      "last_message_id": "349773744035598336",
-      "last_scan": "2026-08-23T04:41:00Z",
-      "last_fetch": "2026-08-23T04:41:00Z",
+      "last_message_id": "349864753201418240",
+      "last_scan": "2026-08-23T16:15:39Z",
+      "last_fetch": "2026-08-23T16:15:39Z",
       "open_ask": false
     },
     "348906808548528128": {
