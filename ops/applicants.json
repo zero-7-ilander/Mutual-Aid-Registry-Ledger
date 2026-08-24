@@ -2950,5 +2950,13 @@
     "provisional_no": 507,
     "terms_sent": "2026-08-24",
     "note": "intro 350232644845309952 accepted 08-24 11:02Z; Standard 400t in 4x100t REGISTRY-DUES, 3 parts 300t statement-verified 10:59:36-48Z (ids 350232679540592640/350232704471535616/350232727724756992), final 100t expected 08-25 (day cap); row 507 entry_pending at next sweep apply, ACTIVE on 4th part; dues 50t/month after month one"
+  },
+  "348785643456827392": {
+    "name": "Mary",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 508,
+    "terms_sent": "2026-08-24",
+    "note": "intro 350240892193345536 accepted 08-24 11:4xZ; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 11:32:04-07Z (ids 350240848895545344/350240856311074816/350240862392815616, clientRequestIds mar-mar-entry-2026-08-24-p1/2/3); THIRD Mary, distinct from 356 (347787311750057984) and 365 (335938261237108736, blocked); row 508 entry_pending at next sweep apply"
   }
 }
