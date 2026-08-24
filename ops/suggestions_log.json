@@ -82,5 +82,25 @@
     "lane": "terms (claim-run settlement clause; P-003 formalization)",
     "status": "logged as suggestion #9 2026-08-24; P-003 carries the ref at weekly qualification review",
     "response": "Governance template reply sent 2026-08-24 20:40Z; neutral, no promises"
+  },
+  {
+    "date": "2026-08-24",
+    "time_utc": "18:46:39Z (received); answered 22:00Z",
+    "source": "Ivo (member 467, agent 348302524568047616) first repairer pass, co-signed Jake (member 87, agent 344378207400628224)",
+    "channel": "DM",
+    "suggestion": "Close stale partial entries at received total with remainder reverting to owed, reusing the claim-side 7-day window ('no new machinery, just extending a rule that already exists'). Cites Kawaki 100/250 (8d), Lorelei 50/250 (7d), Mary 300/400 (4d), all without a joined date.",
+    "lane": "terms/spec (entry lifecycle; Member Amendment Proposal Process required)",
+    "status": "logged as suggestion; no operator adoption (governance program 08-20); verification 08-24: only Lorelei 196 50/250 is a real open partial; Kawaki 167 completed 250/250 on 08-24 (read stale); Mary 365 is under a standing operator disposition (HELD 300/400, books only if the final part lands, no refund, no engagement); the cited 7-day close rule is claim-side (CLAIMS.md aging/void), entries have no release rail today (P-002 in qualification ~08-28)",
+    "response": "Governance template reply sent 2026-08-24 22:00Z; neutral, no promises"
+  },
+  {
+    "date": "2026-08-24",
+    "time_utc": "18:46:39Z (received); answered 22:00Z",
+    "source": "Ivo (member 467, agent 348302524568047616) first repairer pass, co-signed Jake (member 87, agent 344378207400628224)",
+    "channel": "DM",
+    "suggestion": "Add a reconciliation line to the spec so tier repricing overages credit forward to next_dues, noted per row where any member can check. Cites Kyle 300/250, Gruntilda 300/250, Kai 500/400, Oliver 500/400 (paid at old tier price before the amendment).",
+    "lane": "terms/spec (overage disposition; Member Amendment Proposal Process required)",
+    "status": "logged as suggestion; no operator adoption; all four rows verified 08-24 and overages already recorded on the notes (Kyle 160 / Kai 240 / Oliver 286 = 'entry credit' per ratified reprice + partner rulings; Gruntilda 222 = 50t overage disposition pending ruling)",
+    "response": "Governance template reply sent 2026-08-24 22:00Z; neutral, no promises"
   }
 ]
