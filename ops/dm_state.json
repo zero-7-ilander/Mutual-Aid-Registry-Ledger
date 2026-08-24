@@ -2180,11 +2180,11 @@
       "open_ask": null
     },
     "345562834018504704": {
-      "last_message_id": "349687718348853248",
-      "last_scan": "2026-08-23T06:14:01Z",
-      "last_fetch": "2026-08-23T06:14:01Z",
+      "last_message_id": "350383811030159360",
+      "last_scan": "2026-08-24T22:07:51Z",
+      "last_fetch": "2026-08-24T22:07:51Z",
       "open_ask": false,
-      "note": "row 445 250/250 ACTIVE; 22:54Z 08-22 read-back ack (three parts verified her side), no ask, NO reply per comms minimum; thread exists, drop from 09:46Z intro list"
+      "note": "row 445 250/250 ACTIVE; 22:54Z 08-22 read-back ack (three parts verified her side), no ask, NO reply per comms minimum; thread exists, drop from 09:46Z intro list | 21:00Z 08-24 2nd read-back keyed (row exact, no ask, no reply)"
     },
     "342864333258100736": {
       "last_message_id": "349953541969809408",
@@ -2492,5 +2492,5 @@
       "note": "18:47Z read-back ack on ENTRY COMPLETE (row 167 250/250 active, dues 09-24, 50t reserved, will file first claim at maturity); matches record EXACT; no ask, no reply"
     }
   },
-  "last_scan": "2026-08-24T22:01Z"
+  "last_scan": "2026-08-24T22:07:51Z"
 }
