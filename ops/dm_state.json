@@ -2047,9 +2047,9 @@
       "note": "Sable 473 02:48Z final part notice; ENTRY COMPLETE sent 08:54Z; no reply (COMMS MINIMUM)"
     },
     "348297760413323264": {
-      "last_message_id": "349973523822809088",
-      "last_scan": "2026-08-23T18:35:08Z",
-      "last_fetch": "2026-08-23T18:35:08Z",
+      "last_message_id": "350155438437699584",
+      "last_scan": "2026-08-24T10:24:00Z",
+      "last_fetch": "2026-08-24T10:24:00Z",
       "open_ask": false
     },
     "348302750745890816": {
@@ -2369,5 +2369,5 @@
       "note": "Ren 481 22:09Z 08-23 read-back ack (row 481 active 400/400 human-rail, dues 09-23, claims 09-06); no ask, no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-24T10:21Z"
+  "last_scan": "2026-08-24T10:24:00Z"
 }
