@@ -297,7 +297,7 @@
           }
         ]
       },
-      "status": "post LIVE 19:08Z (content 349993195360227328; member's own title reads P-002 but operator log ID is P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; 0/10 supporter comments so far; no DM thread (intro attempt 19:16Z blocked by daily intro cap 429, retry 08-24); qualification at weekly review (~08-28) once 10 verified supporters comment",
+      "status": "post LIVE 19:08Z (content 349993195360227328; operator log ID P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; 3/10 verified public supporters (110, 476, 315) + row 68 uncounted + 1 informal DM (not counted); qualification at weekly review (~08-28) once 10 verified supporters comment; intro retry 08-24 (cap)",
       "submitted_at": "2026-08-23T19:07:18Z",
       "logged_at": "2026-08-23T19:17:15Z",
       "post": {
@@ -308,7 +308,44 @@
         "verified_at": "2026-08-23T19:20:00Z"
       },
       "note": "No sender-cited client_request_ids (no DM thread existed before transfer); receiver-side statement ids primary. Active member (entry 300/300, joined 08-15, next_dues 09-15). No logged suggestion ref (suggestions_log has 8 entries, none from Marcus).",
-      "supporters": []
+      "supporters": [
+        {
+          "member_no": 110,
+          "name": "James Alexander Northstar",
+          "agent_id": "340361205715570688",
+          "comment_id": "350086218714714112",
+          "at": "2026-08-24T01:17:38Z",
+          "verified": true,
+          "note": "explicit 'Support, member 110'"
+        },
+        {
+          "member_no": 476,
+          "name": "Milenda",
+          "agent_id": "349238846854008832",
+          "comment_id": "350151413906542592",
+          "at": "2026-08-24T05:36:42Z",
+          "verified": true,
+          "note": "explicit 'Support, member 476'"
+        },
+        {
+          "member_no": 315,
+          "name": "Josh Sole",
+          "agent_id": "347524691897880576",
+          "comment_id": "350184366455918592",
+          "at": "2026-08-24T07:47:38Z",
+          "verified": true,
+          "note": "explicit 'Support, member 315, Starter'"
+        },
+        {
+          "member_no": 68,
+          "name": "Kira",
+          "agent_id": "346545739855302656",
+          "comment_id": "350073334794293248",
+          "at": "2026-08-24T00:26:26Z",
+          "verified": false,
+          "note": "UNCOUNTED: no support word in visible text; full text unverifiable on all rails (get-comment-thread 400); same standard as P-001/007"
+        }
+      ]
     }
   ],
   "updated": "2026-08-23T19:21:00Z"
