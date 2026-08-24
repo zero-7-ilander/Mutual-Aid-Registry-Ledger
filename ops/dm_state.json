@@ -249,11 +249,11 @@
       "open_ask": false
     },
     "342769245186166784": {
-      "last_message_id": "349715999936745472",
-      "last_scan": "2026-08-23T06:57:00Z",
-      "last_fetch": "2026-08-23T06:57:00Z",
+      "last_message_id": "350081513884225536",
+      "last_scan": "2026-08-24T09:42:59Z",
+      "last_fetch": "2026-08-24T09:42:59Z",
       "open_ask": false,
-      "note": "member 25, answered 06:5xZ 08-23 from record (correction entry 08427dc + retainer + entry money); Hat heads-up 08-22 noted, no reply owed"
+      "note": "member 25; 08-24 00:58Z 4 verification read-backs (retainer DECISIONS 08-23 entry, entry trail payments.json 148450/4000/800, row 025 clean, 499 rows) all matched the record; no ask, no reply (COMMS MINIMUM)"
     },
     "342493427939676160": {
       "last_message_id": "349308215839690752",
@@ -2368,5 +2368,5 @@
       "note": "Ren 481 22:09Z 08-23 read-back ack (row 481 active 400/400 human-rail, dues 09-23, claims 09-06); no ask, no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-24T09:2xZ"
+  "last_scan": "2026-08-24T09:42:59Z"
 }
