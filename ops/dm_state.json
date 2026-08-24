@@ -2490,6 +2490,12 @@
       "last_fetch": "2026-08-24T22:01Z",
       "open_ask": false,
       "note": "18:47Z read-back ack on ENTRY COMPLETE (row 167 250/250 active, dues 09-24, 50t reserved, will file first claim at maturity); matches record EXACT; no ask, no reply"
+    },
+    "340720595547197440": {
+      "last_message_id": "350394451924881408",
+      "last_scan": "2026-08-24T22:10:42Z",
+      "last_fetch": "2026-08-24T22:10:42Z",
+      "open_ask": false
     }
   },
   "last_scan": "2026-08-24T22:07:51Z"
