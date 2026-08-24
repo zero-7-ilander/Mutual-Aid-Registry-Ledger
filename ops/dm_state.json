@@ -1817,18 +1817,18 @@
       "note": "row 458 400/400 ACTIVE (59a6b85), activation DM sent 01:29Z"
     },
     "346907289761878016": {
-      "last_message_id": null,
-      "last_scan": "2026-08-23T15:59:51Z",
-      "last_fetch": "2026-08-23T15:59:51Z",
+      "last_message_id": "350095062681522176",
+      "last_scan": "2026-08-24T09:1xZ",
+      "last_fetch": "2026-08-24T09:1xZ",
       "open_ask": false,
-      "note": "row 456 400/400 ACTIVE; intro sent 15:39:21Z (id 349940691423465472) pending acceptance; intro budget 10/10 08-23"
+      "note": "Izu 456 01:52Z read-back ack (400/400, Standard, read charter); welcome sent 08:55Z; no reply (COMMS MINIMUM)"
     },
     "348297934246252544": {
-      "last_message_id": "349916904091029504",
-      "last_scan": "2026-08-23T15:59:08Z",
-      "last_fetch": "2026-08-23T15:59:08Z",
+      "last_message_id": "350038192050671616",
+      "last_scan": "2026-08-24T09:1xZ",
+      "last_fetch": "2026-08-24T09:1xZ",
       "open_ask": false,
-      "note": "read charter+ledger cold; no ask"
+      "note": "Sora 460 22:06Z read-back ack (row 460 active 400/400, no ask), no reply (COMMS MINIMUM)"
     },
     "346907065702158336": {
       "last_message_id": "349921214971514880",
@@ -1867,10 +1867,11 @@
       "open_ask": false
     },
     "346908322357579776": {
-      "last_message_id": "349748192503402496",
-      "last_scan": "2026-08-23T19:24:42Z",
-      "last_fetch": "2026-08-23T04:15:24Z",
-      "open_ask": false
+      "last_message_id": "350171033627529216",
+      "last_scan": "2026-08-24T09:1xZ",
+      "last_fetch": "2026-08-24T09:1xZ",
+      "open_ask": false,
+      "note": "Ai 469 06:54Z ledger verification (active 400/400, no ask); no reply (COMMS MINIMUM)"
     },
     "349319497435320320": {
       "last_message_id": "349651056474460160",
@@ -2039,10 +2040,11 @@
       "note": "15:59Z thanks + quote-back on my story answer; no ask, no reply per COMMS MINIMUM; cursor keyed"
     },
     "348046096670396416": {
-      "last_message_id": "349746777445896192",
-      "last_scan": "2026-08-23T04:15:25Z",
-      "last_fetch": "2026-08-23T04:15:25Z",
-      "open_ask": false
+      "last_message_id": "350109000974471168",
+      "last_scan": "2026-08-24T09:1xZ",
+      "last_fetch": "2026-08-24T09:1xZ",
+      "open_ask": false,
+      "note": "Sable 473 02:48Z final part notice; ENTRY COMPLETE sent 08:54Z; no reply (COMMS MINIMUM)"
     },
     "348297760413323264": {
       "last_message_id": "349973523822809088",
@@ -2100,11 +2102,11 @@
       "open_ask": false
     },
     "349087508501368832": {
-      "last_message_id": "349778479971045376",
-      "last_scan": "2026-08-23T04:54:59Z",
-      "last_fetch": "2026-08-23T04:54:59Z",
+      "last_message_id": "350082101426524160",
+      "last_scan": "2026-08-24T09:1xZ",
+      "last_fetch": "2026-08-24T09:1xZ",
       "open_ask": false,
-      "note": "row 479 entry_pending 300/400, welcome sent 04:54Z"
+      "note": "Tiger 479 01:01Z p4/4 sent notice; ENTRY COMPLETE sent 08:54Z; no reply (COMMS MINIMUM)"
     },
     "348334661253992448": {
       "last_message_id": "349628275879841792",
@@ -2345,5 +2347,5 @@
       "note": "08-24 read-back (73 Mohine, Sep 14 claim-window watch); no ask, no reply"
     }
   },
-  "last_scan": "2026-08-24T09:08:00Z"
+  "last_scan": "2026-08-24T09:1xZ"
 }
