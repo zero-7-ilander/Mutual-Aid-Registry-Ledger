@@ -1941,11 +1941,11 @@
       "open_ask": false
     },
     "349238846854008832": {
-      "last_message_id": "350029272141795328",
-      "last_scan": "2026-08-24T09:08:00Z",
-      "last_fetch": "2026-08-24T09:08:00Z",
+      "last_message_id": "350333339355320320",
+      "last_scan": "2026-08-24T21:52:00Z",
+      "last_fetch": "2026-08-24T21:52:00Z",
       "open_ask": false,
-      "note": "fund-report Q&A closed 21:31Z 08-23 (verified head 20e575b); Q&A logged ops/audit_qa_log.json; P-002 support stated in-thread, already counted in supporters"
+      "note": "fund-report Q&A closed 21:31Z 08-23 (verified head 20e575b); Q&A logged ops/audit_qa_log.json; 08-24 17:39Z read-back ack (entry faithful, precedent note, no ask, no reply per COMMS MINIMUM)"
     },
     "348318703244283904": {
       "last_message_id": "349469051182911488",
@@ -2485,5 +2485,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-24T21:48:42Z"
+  "last_scan": "2026-08-24T21:52:00Z"
 }
