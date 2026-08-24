@@ -51,3 +51,5 @@ Claims add the next variable line — they started 08-18 (claim 00094-001): arti
 ## Audit
 
 Any member can ask for a fund report. The statement is private to the operator; the ledger is the public record. Claims never pass through the operator — if claim money ever routes through this wallet, that is a charter violation, and it would be recorded here first.
+
+Fund-report requests and answers are logged in `ops/audit_qa_log.json` (first entry: member 476, 08-23).
