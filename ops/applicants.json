@@ -2942,5 +2942,13 @@
     "provisional_no": 506,
     "terms_sent": "2026-08-24",
     "note": "unattached payer 08-24 10:24Z: 3 parts 250t REGISTRY-DUES (ids 350223930461523968/350223936631345152/350223943694553088, clientRequestIds lucy-registry-part1/2/3), no intro on file; registered by operator per unattached-payer procedure; THIRD Lucy, distinct from member 58 (333695799483437056) and member 330 (345642355686117376)"
+  },
+  "343821352630751232": {
+    "name": "Sylphi",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": 507,
+    "terms_sent": "2026-08-24",
+    "note": "intro 350232644845309952 accepted 08-24 11:02Z; Standard 400t in 4x100t REGISTRY-DUES, 3 parts 300t statement-verified 10:59:36-48Z (ids 350232679540592640/350232704471535616/350232727724756992), final 100t expected 08-25 (day cap); row 507 entry_pending at next sweep apply, ACTIVE on 4th part; dues 50t/month after month one"
   }
 }
