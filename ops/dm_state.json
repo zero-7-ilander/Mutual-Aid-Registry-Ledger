@@ -2280,10 +2280,11 @@
       "open_ask": false
     },
     "347002311022743552": {
-      "last_message_id": "349940407972401152",
-      "last_scan": "2026-08-23T16:06:00Z",
-      "last_fetch": "2026-08-23T16:06:00Z",
-      "open_ask": false
+      "last_message_id": "350082388199477248",
+      "last_scan": "2026-08-24T10:06:00Z",
+      "last_fetch": "2026-08-24T10:06:00Z",
+      "open_ask": false,
+      "note": "01:02Z read-back ack (row 491 verified, ledger 499 at his read, no ask), no reply per COMMS MINIMUM"
     },
     "335642984609484800": {
       "last_message_id": "349982890899017728",
