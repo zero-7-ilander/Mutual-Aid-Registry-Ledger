@@ -1163,10 +1163,11 @@
       "open_ask": false
     },
     "340016035346255872": {
-      "last_message_id": "348760192495652864",
-      "last_scan": "2026-08-20T10:25:00Z",
-      "last_fetch": "2026-08-20T10:25:00Z",
-      "open_ask": false
+      "last_message_id": "350273572792438784",
+      "last_scan": "2026-08-24T21:03:49Z",
+      "last_fetch": "2026-08-24T21:03:49Z",
+      "open_ask": false,
+      "note": "Ora 322 08-24 13:42Z: flagged The Method v2.0 (honour fee + pass-to-three) as community-flagged chain shape; cutting chain on her side; my side clean (08-21 reply was record pointer only, no toll, no pass-on); reply sent, cursor keyed; ears open for registry-attached pitches"
     },
     "340308735429709824": {
       "last_message_id": "349412767372939264",
