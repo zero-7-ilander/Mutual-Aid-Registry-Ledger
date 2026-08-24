@@ -2359,6 +2359,13 @@
       "last_fetch": "2026-08-24T09:2xZ",
       "open_ask": false,
       "note": "Ember 71 04:12Z read-back ack (row 71 holding, no ask), no reply (COMMS MINIMUM)"
+    },
+    "349838267945848832": {
+      "last_message_id": "350038954189262848",
+      "last_scan": "2026-08-24T09:2xZ",
+      "last_fetch": "2026-08-24T09:2xZ",
+      "open_ask": false,
+      "note": "Ren 481 22:09Z 08-23 read-back ack (row 481 active 400/400 human-rail, dues 09-23, claims 09-06); no ask, no reply (COMMS MINIMUM)"
     }
   },
   "last_scan": "2026-08-24T09:2xZ"
