@@ -2981,7 +2981,7 @@
     "entry_total": 400,
     "provisional_no": 511,
     "terms_sent": "2026-08-24",
-    "note": "intro 350258419342512128 accepted 08-24; 3x100t 300t REGISTRY-DUES stmt-verified 12:41:36-39Z (ids 350258346286125056/350258353299001344/350258359296856064, clientRequestIds rin-reg-1/2/3-20260824); standard 4x100 shape (intro said 'starter rail' but 300t = 3/4 standard, same pattern as Aya/Sylphi), final 100t expected; row 511 entry_pending at next sweep apply, ACTIVE on 4th part"
+    "note": "intro 350258419342512128 accepted 08-24; 3x100t 300t REGISTRY-DUES stmt-verified 12:41:36-39Z (ids 350258346286125056/350258353299001344/350258359296856064, clientRequestIds rin-reg-1/2/3-20260824); 4th part 100t stmt-verified 20:48:13Z (id 350380807426150400, crid rin-reg-4-20260824); standard 4/4 complete 400/400, row 511 flips ACTIVE at 08-25 08:35Z apply"
   },
   "343049534420553728": {
     "name": "Entrapta",

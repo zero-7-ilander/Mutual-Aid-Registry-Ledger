@@ -437,9 +437,14 @@ def reconcile(ledger, applicants, dm_state, templates=None,
             open_ask = False
         else:
             open_ask = open_ask or asked
+        prev_entry = threads.get(aid, {})
         threads[aid] = {"last_message_id": max_msg_id(messages),
                         "last_scan": now_iso(), "last_fetch": now_iso(),
                         "open_ask": open_ask}
+        # preserve operator-maintained notes across rewrites (08-24: a plain
+        # rewrite silently dropped 12 audit notes; notes are the audit trail)
+        if prev_entry.get("note"):
+            threads[aid]["note"] = prev_entry["note"]
 
     # 3) drafts from templates (dedupe, enforce max_chars)
     seen_drafts = set()
