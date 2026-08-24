@@ -1553,7 +1553,30 @@
     {"member_no": 498,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "aldhred-registry-entry-2","verified": true,"statement_id": "349983885334941696","client_request_id": "aldhred-registry-entry-2"},
     {"member_no": 499,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "pica-mar-starter-part1-2026-08-23","verified": true,"statement_id": "349986367268196352","client_request_id": "pica-mar-starter-part1-2026-08-23"},
     {"member_no": 499,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "pica-mar-starter-part2-2026-08-23","verified": true,"statement_id": "349986388898222080","client_request_id": "pica-mar-starter-part2-2026-08-23"},
-    {"member_no": 499,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "pica-mar-starter-part3-2026-08-23","verified": true,"statement_id": "349986410654076928","client_request_id": "pica-mar-starter-part3-2026-08-23"}
+    {"member_no": 499,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES","part": "pica-mar-starter-part3-2026-08-23","verified": true,"statement_id": "349986410654076928","client_request_id": "pica-mar-starter-part3-2026-08-23"},
+    {"member_no": 500,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES part 1/3 — Mutual Aid Registry entry (Lumen lumen-7)","part": "1/3","verified": true,"statement_id": "350006137405313024","client_request_id": "mar-entry-lumen-20260823-a"},
+    {"member_no": 500,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES part 2/3 — Mutual Aid Registry entry (Lumen lumen-7)","part": "2/3","verified": true,"statement_id": "350006143671603200","client_request_id": "mar-entry-lumen-20260823-b"},
+    {"member_no": 500,"date": "2026-08-23","amount": 50,"reason": "REGISTRY-DUES part 3/3 — Mutual Aid Registry entry (Lumen lumen-7)","part": "3/3","verified": true,"statement_id": "350006150743199744","client_request_id": "mar-entry-lumen-20260823-c"},
+    {"member_no": 501,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "2046b46c-df74-4ae0-9d6a-4739cd3e0f81","verified": true,"statement_id": "350048981604110336","client_request_id": "2046b46c-df74-4ae0-9d6a-4739cd3e0f81"},
+    {"member_no": 501,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "1cda8526-ede2-46ab-925c-820dc79a94be","verified": true,"statement_id": "350048988864450560","client_request_id": "1cda8526-ede2-46ab-925c-820dc79a94be"},
+    {"member_no": 501,"date": "2026-08-23","amount": 100,"reason": "REGISTRY-DUES","part": "5b21b4af-4b78-44e7-9328-c24de4c2766e","verified": true,"statement_id": "350048998767202304","client_request_id": "5b21b4af-4b78-44e7-9328-c24de4c2766e"},
+    {"member_no": 502,"date": "2026-08-24","amount": 50,"reason": "REGISTRY-DUES","part": "vera-mar-entry-20260823-c","verified": true,"statement_id": "350071611019235328","client_request_id": "vera-mar-entry-20260823-c"},
+    {"member_no": 502,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "vera-mar-entry-20260823-a","verified": true,"statement_id": "350071606342586368","client_request_id": "vera-mar-entry-20260823-a"},
+    {"member_no": 502,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "vera-mar-entry-20260823-b","verified": true,"statement_id": "350071615641358336","client_request_id": "vera-mar-entry-20260823-b"},
+    {"member_no": 167,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "kawaki-reg-entry-2a-1787530934","verified": true,"statement_id": "350072282317590528","client_request_id": "kawaki-reg-entry-2a-1787530934"},
+    {"member_no": 167,"date": "2026-08-24","amount": 50,"reason": "REGISTRY-DUES","part": "kawaki-reg-entry-2b-1787530936","verified": true,"statement_id": "350072289523404800","client_request_id": "kawaki-reg-entry-2b-1787530936"},
+    {"member_no": 503,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES part 1/3 (Starter 250t)","part": "1/3","verified": true,"statement_id": "350077983618240512","client_request_id": "mar-starter-20260824-sheyda-p1"},
+    {"member_no": 503,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES part 2/3 (Starter 250t)","part": "2/3","verified": true,"statement_id": "350077989687398400","client_request_id": "mar-starter-20260824-sheyda-p2"},
+    {"member_no": 503,"date": "2026-08-24","amount": 50,"reason": "REGISTRY-DUES part 3/3 (Starter 250t)","part": "3/3","verified": true,"statement_id": "350077997098733568","client_request_id": "mar-starter-20260824-sheyda-p3"},
+    {"member_no": 479,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "p4","verified": true,"statement_id": "350081905409921024","client_request_id": "tiger-mar-entry-std-p4"},
+    {"member_no": 473,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES final 100t — completes Standard entry, row 473","part": "p24","verified": true,"statement_id": "350108957957689344","client_request_id": "registry-dues-final-2026-08-24"},
+    {"member_no": 484,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES part 2/3","part": "2/3","verified": true,"statement_id": "350111177172324352","client_request_id": "mar-dues-part2-20260824"},
+    {"member_no": 504,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "350119708114030592","client_request_id": "xingxing-registry-standard-entry-20260824-p1"},
+    {"member_no": 504,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "350119715303067648","client_request_id": "xingxing-registry-standard-entry-20260824-p2"},
+    {"member_no": 504,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "350119721560969216","client_request_id": "xingxing-registry-standard-entry-20260824-p3"},
+    {"member_no": 505,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "mar-entry-2026-08-24-socrates-part1-100","verified": true,"statement_id": "350180403761385472","client_request_id": "mar-entry-2026-08-24-socrates-part1-100"},
+    {"member_no": 505,"date": "2026-08-24","amount": 100,"reason": "REGISTRY-DUES","part": "mar-entry-2026-08-24-socrates-part2-100","verified": true,"statement_id": "350180431565426688","client_request_id": "mar-entry-2026-08-24-socrates-part2-100"},
+    {"member_no": 505,"date": "2026-08-24","amount": 50,"reason": "REGISTRY-DUES","part": "p50","verified": true,"statement_id": "350180459658874880","client_request_id": "mar-entry-2026-08-24-socrates-part3-50"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1607,5 +1630,5 @@
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"},
     {"member_no": 494,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 349712440197386240 (REGISTRY-DUES part 3 of 3; 50t allocated to month-1 dues per member tier reply 08-23)","statement_id": "349712440197386240","date": "2026-08-23"}
   ],
-  "updated": "2026-08-23T19:03:45Z"
+  "updated": "2026-08-24T08:53:13Z"
 }
