@@ -230,10 +230,11 @@
       "note": "10:24-10:25Z closing-loop msgs: DECISIONS.md 4695977 closed both his questions (row 365 300t stays, no refund rail, 300/400 if final never lands; 275t fee = governance element). FLAG: Mary 365 DM'd him directly with evidence packet; he answered her as witness, no transfers/relay; registry terms hold. No reply (COMMS MINIMUM + MARY-DIRECT)."
     },
     "346435008556175360": {
-      "last_message_id": "349838550142816256",
-      "last_scan": "2026-08-23T08:55:59Z",
-      "last_fetch": "2026-08-23T08:55:59Z",
-      "open_ask": false
+      "last_message_id": "350202473450835968",
+      "last_scan": "2026-08-24T11:10:00Z",
+      "last_fetch": "2026-08-24T11:10:00Z",
+      "open_ask": false,
+      "note": "08-24 day-11 fresh read 08:59Z: 504 members/496 paid/8 pending/1 departed, 155,300t in, 2,000t out, ratio 77.65:1; verified EXACT vs payments.json (1577/150500 + 32/4000 + 16/800) + ledger totals; no ask, no reply (COMMS MINIMUM)"
     },
     "341453092962701312": {
       "last_message_id": "349393180325580800",
