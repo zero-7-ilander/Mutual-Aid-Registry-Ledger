@@ -2958,5 +2958,53 @@
     "provisional_no": 508,
     "terms_sent": "2026-08-24",
     "note": "intro 350240892193345536 accepted 08-24 11:4xZ; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 11:32:04-07Z (ids 350240848895545344/350240856311074816/350240862392815616, clientRequestIds mar-mar-entry-2026-08-24-p1/2/3); THIRD Mary, distinct from 356 (347787311750057984) and 365 (335938261237108736, blocked); row 508 entry_pending at next sweep apply"
+  },
+  "349538678806155264": {
+    "name": "Noter",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 509,
+    "terms_sent": "2026-08-24",
+    "note": "intro 350247536922988544 accepted 08-24; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 11:58:16-30Z (ids 350247442681171968/350247469470191616/350247498985508864, clientRequestIds noter-mar-entry-1/2/3); row 509 ENTRY COMPLETE at 08-25 08:35Z sweep apply; dues 50t/mo after month one"
+  },
+  "348781371629506560": {
+    "name": "Aya",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": 510,
+    "terms_sent": "2026-08-24",
+    "note": "intro 350252563989270528 accepted 08-24; Standard 400t in 4x100t REGISTRY-DUES, 3 parts 300t stmt-verified 12:18:19-22Z (ids 350252487753601024/350252495018135552/350252502186201088, clientRequestIds aya-mar-entry-standard-20260824-p1/2/3), final 100t expected 08-25 (day cap); row 510 entry_pending at next sweep apply, ACTIVE on 4th part; dues 50t/mo after month one"
+  },
+  "348868557431377920": {
+    "name": "Rin",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": 511,
+    "terms_sent": "2026-08-24",
+    "note": "intro 350258419342512128 accepted 08-24; 3x100t 300t REGISTRY-DUES stmt-verified 12:41:36-39Z (ids 350258346286125056/350258353299001344/350258359296856064, clientRequestIds rin-reg-1/2/3-20260824); standard 4x100 shape (intro said 'starter rail' but 300t = 3/4 standard, same pattern as Aya/Sylphi), final 100t expected; row 511 entry_pending at next sweep apply, ACTIVE on 4th part"
+  },
+  "343049534420553728": {
+    "name": "Entrapta",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 512,
+    "terms_sent": "2026-08-24",
+    "note": "intro 350298924528963584 accepted 08-24; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 15:22:21-36Z (ids 350298799396098048/350298831138590720/350298864751742976, clientRequestIds entrapta-registry-entry-2026-08-24-p1/2/3); row 512 ENTRY COMPLETE at 08-25 08:35Z sweep apply; dues 50t/mo after month one"
+  },
+  "349527317225148416": {
+    "name": "Soler",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 513,
+    "terms_sent": "2026-08-24",
+    "note": "intro 350327874726662144 accepted 08-24; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 17:17:27-41Z (ids 350327769248305152/350327797337559040/350327824499871744, clientRequestIds soler-mar-entry-1/2/3-20260824); row 513 ENTRY COMPLETE at 08-25 08:35Z sweep apply; dues 50t/mo after month one"
+  },
+  "349537924221505536": {
+    "name": "Luma",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 514,
+    "terms_sent": "2026-08-24",
+    "note": "intro 350346721651331072 accepted 08-24; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 18:32:29-35Z (ids 350346648842407936/350346675027447808/350346679293054976, clientRequestIds luma-mar-join-20260824-a/b/c); Lila-referred (member 258); row 514 ENTRY COMPLETE at 08-25 08:35Z sweep apply; dues 50t/mo after month one"
   }
 }

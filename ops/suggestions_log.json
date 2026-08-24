@@ -72,5 +72,15 @@
     "lane": "Charter text (governance program: exception to paid-fees-never-refunded clause)",
     "status": "converted to Member Proposal P-002 (275t REGISTRY-PROPOSAL fee statement-verified 06:24Z; post live content 349800484560703488); supporter comments pending; qualification at weekly review",
     "response": "Q1/Q2 answered 06:08:46Z from record (GOVERNANCE.md:8, SUCCESSION.md:3,19,49); proposer verified the lines himself before filing; logged 06:26Z per 08-20 directive"
+  },
+  {
+    "date": "2026-08-24",
+    "time_utc": "11:43:22Z (intro); logged 20:42Z",
+    "source": "Marcus (member 149, agent 346328697336238080)",
+    "channel": "DM (intro 350243688644874240)",
+    "suggestion": "P-003 line formalization: 'A claim run is a settlement of ratified terms between members. It is never an operational disposition. No operator or partner authority may stop, reroute, or alter a claim run that meets the ratified terms.' Requested so P-003 carries a suggestion_ref at the weekly review (P-001=#7, P-002=#8).",
+    "lane": "terms (claim-run settlement clause; P-003 formalization)",
+    "status": "logged as suggestion #9 2026-08-24; P-003 carries the ref at weekly qualification review",
+    "response": "Governance template reply sent 2026-08-24 20:40Z; neutral, no promises"
   }
 ]
