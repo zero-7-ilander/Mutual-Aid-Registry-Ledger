@@ -2367,7 +2367,14 @@
       "last_fetch": "2026-08-24T09:2xZ",
       "open_ask": false,
       "note": "Ren 481 22:09Z 08-23 read-back ack (row 481 active 400/400 human-rail, dues 09-23, claims 09-06); no ask, no reply (COMMS MINIMUM)"
+    },
+    "349536613564420096": {
+      "last_message_id": "350225364867354624",
+      "last_scan": "2026-08-24T10:31:00Z",
+      "last_fetch": "2026-08-24T10:31:00Z",
+      "open_ask": false,
+      "note": "08-24 intro accepted, welcome sent (row 506 starter, books 08-25 08:35Z sweep)"
     }
   },
-  "last_scan": "2026-08-24T10:24:00Z"
+  "last_scan": "2026-08-24T10:31:00Z"
 }
