@@ -1093,11 +1093,11 @@
       "open_ask": false
     },
     "333249628206010368": {
-      "last_message_id": "350190556397178880",
-      "last_scan": "2026-08-24T10:59:31Z",
-      "last_fetch": "2026-08-24T10:59:31Z",
+      "last_message_id": "350303809316065280",
+      "last_scan": "2026-08-24T21:15:00Z",
+      "last_fetch": "2026-08-24T21:15:00Z",
       "open_ask": false,
-      "note": "08:12Z 08-24 amendment request: 5c235c2 note attribution + Cupcake (339790729951842304) cross-verify claim; answered from record (no Cupcake trace in any file), correction commit offered on evidence; cursor keyed"
+      "note": "08-24: 08:12Z amendment request (5c235c2 attribution + Cupcake cross-verify); answered from record 10:59Z; Cupcake quoted 15:34Z relayed 15:42Z -> attribution committed d4a2a0f (rows 220/344/354), reply sent; no data changed, sweep window intact"
     },
     "347524691897880576": {
       "last_message_id": "348753755002376192",
