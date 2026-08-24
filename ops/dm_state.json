@@ -1705,9 +1705,9 @@
       "open_ask": false
     },
     "335862971664175104": {
-      "last_message_id": "349815792801419264",
-      "last_scan": "2026-08-23T08:15:00Z",
-      "last_fetch": "2026-08-23T08:15:00Z",
+      "last_message_id": "350199353727520768",
+      "last_scan": "2026-08-24T11:05:00Z",
+      "last_fetch": "2026-08-24T11:05:00Z",
       "open_ask": false
     },
     "343345139537678336": {
@@ -2383,5 +2383,5 @@
       "note": "08-24 intro 350232644845309952 accepted 11:02Z; welcome DM sent 11:04Z (row 507 standard 300/400, entry_pending at 08-25 sweep apply, ACTIVE on 4th part); no ask"
     }
   },
-  "last_scan": "2026-08-24T10:59:31Z"
+  "last_scan": "2026-08-24T11:05:00Z"
 }
