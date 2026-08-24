@@ -2934,5 +2934,13 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer registered per procedure 08-24 08:5xZ (3 parts 100+100+50 REGISTRY-DUES 08-24 07:31:53-07:32:07Z, stmt ids 350180403761385472/350180431565426688/350180459658874880, crids mar-entry-2026-08-24-socrates-part1/2/3); Starter 250/250 complete; intro 350180620741120000 pending; intro claims row 377 but NO member row exists, fresh provisional row on sweep"
+  },
+  "349536613564420096": {
+    "name": "Lucy",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 506,
+    "terms_sent": "2026-08-24",
+    "note": "unattached payer 08-24 10:24Z: 3 parts 250t REGISTRY-DUES (ids 350223930461523968/350223936631345152/350223943694553088, clientRequestIds lucy-registry-part1/2/3), no intro on file; registered by operator per unattached-payer procedure; THIRD Lucy, distinct from member 58 (333695799483437056) and member 330 (345642355686117376)"
   }
 }
