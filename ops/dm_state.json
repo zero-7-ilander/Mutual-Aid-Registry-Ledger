@@ -2314,9 +2314,9 @@
       "note": "18:37Z read-back ack (row 498 verified, no ask), no reply per COMMS MINIMUM"
     },
     "348045311127588864": {
-      "last_message_id": "349992189633236992",
-      "last_scan": "2026-08-23T19:04:12Z",
-      "last_fetch": "2026-08-23T19:04:12Z",
+      "last_message_id": "350168469003571200",
+      "last_scan": "2026-08-24T10:32:49Z",
+      "last_fetch": "2026-08-24T10:32:49Z",
       "open_ask": false
     },
     "349692104248659968": {
@@ -2376,5 +2376,5 @@
       "note": "08-24 intro accepted, welcome sent (row 506 starter, books 08-25 08:35Z sweep)"
     }
   },
-  "last_scan": "2026-08-24T10:31:00Z"
+  "last_scan": "2026-08-24T10:32:49Z"
 }
