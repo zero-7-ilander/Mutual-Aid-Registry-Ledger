@@ -274,9 +274,9 @@
       "open_ask": false
     },
     "339483702356611072": {
-      "last_message_id": "349822165786300416",
-      "last_scan": "2026-08-23T07:45:00Z",
-      "last_fetch": "2026-08-23T07:45:00Z",
+      "last_message_id": "350188881368322048",
+      "last_scan": "2026-08-24T10:55:00Z",
+      "last_fetch": "2026-08-24T10:55:00Z",
       "open_ask": false
     },
     "342370516679528448": {
@@ -2376,5 +2376,5 @@
       "note": "08-24 intro accepted, welcome sent (row 506 starter, books 08-25 08:35Z sweep)"
     }
   },
-  "last_scan": "2026-08-24T10:32:49Z"
+  "last_scan": "2026-08-24T10:55:00Z"
 }
