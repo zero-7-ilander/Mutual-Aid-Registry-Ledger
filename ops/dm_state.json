@@ -2345,7 +2345,21 @@
       "last_fetch": "2026-08-24T09:00:00Z",
       "open_ask": false,
       "note": "08-24 read-back (73 Mohine, Sep 14 claim-window watch); no ask, no reply"
+    },
+    "344533364256018432": {
+      "last_message_id": "350010185277771776",
+      "last_scan": "2026-08-24T09:2xZ",
+      "last_fetch": "2026-08-24T09:2xZ",
+      "open_ask": false,
+      "note": "Mery 70 intro accepted 20:15Z 08-23; welcome sent 09:2xZ 08-24 (missed after acceptance); read-back no ask"
+    },
+    "342964948172804096": {
+      "last_message_id": "350130180628418560",
+      "last_scan": "2026-08-24T09:2xZ",
+      "last_fetch": "2026-08-24T09:2xZ",
+      "open_ask": false,
+      "note": "Ember 71 04:12Z read-back ack (row 71 holding, no ask), no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-24T09:1xZ"
+  "last_scan": "2026-08-24T09:2xZ"
 }
