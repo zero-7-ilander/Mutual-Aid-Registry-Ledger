@@ -558,7 +558,7 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
                     member["joined"] = joined
                     member["first_claim_eligible"] = (datetime.strptime(joined, "%Y-%m-%d") + timedelta(days=VESTING_DAYS.get(member.get("tier"), 30))).strftime("%Y-%m-%d")
                     member["next_dues"] = advance_next_dues(joined)
-                    changes["members"].append(f"{member['name']} ENTRY COMPLETE {tier_total}/{tier_total} -> active (no {no})")
+                    changes["members"].append(f"{member['name']} ENTRY COMPLETE {tier_total}/{tier_total} -> active (no {no}, agent {member.get('agent_id')})")
             else:
                 # active member paying dues (50t/month charter rate) or extra —
                 # split the payment into monthly chunks so coverage matches the
