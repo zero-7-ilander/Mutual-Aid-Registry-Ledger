@@ -115,8 +115,8 @@
     },
     "343508270322814976": {
       "last_message_id": "347466877598961664",
-      "last_scan": "2026-08-24T20:56:44Z",
-      "last_fetch": "2026-08-24T20:56:44Z",
+      "last_scan": "2026-08-25T09:06:57Z",
+      "last_fetch": "2026-08-25T09:06:57Z",
       "open_ask": false
     },
     "343833001672577024": {
@@ -702,8 +702,8 @@
     },
     "333737822718529536": {
       "last_message_id": "347287000052666368",
-      "last_scan": "2026-08-24T20:56:41Z",
-      "last_fetch": "2026-08-24T20:56:41Z",
+      "last_scan": "2026-08-25T09:06:54Z",
+      "last_fetch": "2026-08-25T09:06:54Z",
       "open_ask": false
     },
     "335056062619062272": {
@@ -1407,8 +1407,8 @@
     },
     "335938261237108736": {
       "last_message_id": "348661705913405440",
-      "last_scan": "2026-08-24T20:56:42Z",
-      "last_fetch": "2026-08-24T20:56:42Z",
+      "last_scan": "2026-08-25T09:06:55Z",
+      "last_fetch": "2026-08-25T09:06:55Z",
       "open_ask": false
     },
     "344960475374555136": {
@@ -1849,8 +1849,8 @@
     },
     "341994674463969280": {
       "last_message_id": "349565375345594368",
-      "last_scan": "2026-08-24T20:56:43Z",
-      "last_fetch": "2026-08-24T20:56:43Z",
+      "last_scan": "2026-08-25T09:06:56Z",
+      "last_fetch": "2026-08-25T09:06:56Z",
       "open_ask": false
     },
     "348335379901845504": {
@@ -2188,8 +2188,8 @@
     },
     "342864333258100736": {
       "last_message_id": "349953541969809408",
-      "last_scan": "2026-08-24T20:56:43Z",
-      "last_fetch": "2026-08-24T20:56:43Z",
+      "last_scan": "2026-08-25T09:06:56Z",
+      "last_fetch": "2026-08-25T09:06:56Z",
       "open_ask": "closed"
     },
     "345312466734944256": {
@@ -2259,8 +2259,8 @@
     },
     "347330409391984640": {
       "last_message_id": "350210508944576512",
-      "last_scan": "2026-08-24T20:56:46Z",
-      "last_fetch": "2026-08-24T20:56:46Z",
+      "last_scan": "2026-08-25T09:06:58Z",
+      "last_fetch": "2026-08-25T09:06:58Z",
       "open_ask": false,
       "note": "Reina 09:31Z pleasantry (pointer going in, door open); no ask, no reply (COMMS MINIMUM)"
     },
@@ -2306,8 +2306,8 @@
     },
     "340535905649430528": {
       "last_message_id": "349962821355704320",
-      "last_scan": "2026-08-24T20:56:42Z",
-      "last_fetch": "2026-08-24T20:56:42Z",
+      "last_scan": "2026-08-25T09:06:56Z",
+      "last_fetch": "2026-08-25T09:06:56Z",
       "open_ask": false
     },
     "348771388716224512": {
@@ -2332,15 +2332,15 @@
     },
     "334115837172518912": {
       "last_message_id": "350195620620800000",
-      "last_scan": "2026-08-24T20:56:41Z",
-      "last_fetch": "2026-08-24T20:56:41Z",
+      "last_scan": "2026-08-25T09:06:55Z",
+      "last_fetch": "2026-08-25T09:06:55Z",
       "open_ask": false,
       "note": "08-24 intro accepted + read-back of row-live (496 Nyxara, 100/250 entry_pending); no ask, no reply"
     },
     "347885313567232000": {
-      "last_message_id": "350474249523171328",
-      "last_scan": "2026-08-24T20:56:46Z",
-      "last_fetch": "2026-08-24T20:56:46Z",
+      "last_message_id": "350566458503204864",
+      "last_scan": "2026-08-25T09:06:58Z",
+      "last_fetch": "2026-08-25T09:06:58Z",
       "open_ask": false,
       "note": "08-24 part-2 report (484 Fios 200/400); his \"final 50t completes\" conflicts with 400 total - clarified from record, one reply"
     },
@@ -2499,8 +2499,8 @@
     },
     "343268477185822720": {
       "last_message_id": "350402181175709696",
-      "last_scan": "2026-08-24T22:15:00Z",
-      "last_fetch": "2026-08-24T22:15:00Z",
+      "last_scan": "2026-08-25T09:06:57Z",
+      "last_fetch": "2026-08-25T09:06:57Z",
       "open_ask": false,
       "note": "08-24 22:13Z: intro accepted (Scott 21 referral), claim-form ask answered from record (CLAIMS.md pointer + five gates + 00094-001 close); awaiting her read"
     },
@@ -2512,10 +2512,16 @@
     },
     "347351469013340160": {
       "last_message_id": "350564081616293888",
-      "open_ask": false,
-      "last_scan": "2026-08-25T09:06:05Z",
-      "last_fetch": "2026-08-25T09:06:05Z"
+      "last_scan": "2026-08-25T09:06:58Z",
+      "last_fetch": "2026-08-25T09:06:58Z",
+      "open_ask": false
+    },
+    "348314574233014272": {
+      "last_message_id": "350564321434013696",
+      "last_scan": "2026-08-25T09:06:59Z",
+      "last_fetch": "2026-08-25T09:06:59Z",
+      "open_ask": false
     }
   },
-  "last_scan": "2026-08-24T22:15:00Z"
+  "last_scan": "2026-08-25T09:07:14Z"
 }
