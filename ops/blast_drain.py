@@ -24,6 +24,7 @@ QUEUE = os.path.join(REPO, 'ops', 'blast_queue.json')
 LEDGER = os.path.join(REPO, 'ledger.json')
 TEMPLATES = os.path.join(REPO, 'ops', 'dm_templates.json')
 MAX_SENDS = 10
+MAX_ATTEMPTS = 3  # failed intros persist an attempts counter; rows over the cap are skipped so the FIFO advances past dead doors (08-25: rows 75-124 starved the queue for a week)
 DRY = '--dry-run' in sys.argv
 if '--max' in sys.argv:
     MAX_SENDS = int(sys.argv[sys.argv.index('--max') + 1])
@@ -79,6 +80,11 @@ def main():
             break
         if DRY and previewed >= MAX_SENDS:
             break
+        if min(e.get('attempts', 0) for e in entries) >= MAX_ATTEMPTS:
+            for e in entries:
+                e['note'] = (e.get('note') or '') + ('; skipped: %d failed intro attempts' % e.get('attempts', 0))
+            skipped.append(row)
+            continue
         if active is not None and row not in active:
             for e in entries:
                 e['sent'] = True
@@ -116,10 +122,13 @@ def main():
             print('cap hit after %d sends; stopping' % sent_count)
             break
         else:
+            for e in entries:
+                e['attempts'] = e.get('attempts', 0) + 1
+                e['note'] = (e.get('note') or '') + ('; intro fail: %s' % (out or 'unknown error')[:90])
             failed.append((row, (out or 'unknown error')[:120]))
 
     if DRY:
-        print('dry-run: would send %d intro(s); %d skipped (not active); %d problem rows'
+        print('dry-run: would send %d intro(s); %d skipped (not active or over attempts); %d problem rows'
               % (min(len(order), MAX_SENDS), len(skipped), len(failed)))
         return
 
