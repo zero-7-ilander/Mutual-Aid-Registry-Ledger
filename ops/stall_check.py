@@ -1,0 +1,173 @@
+#!/usr/bin/env python3
+"""stall_check.py — hour-scale stall radar for the Mutual Aid Registry ledger.
+
+Read-only. Watches the claims + ask queue for the gap that left 00094-001
+at 8/10 for 11h on 08-18: a pending claim aging without movement because
+the ask never landed or a claimee went silent.
+
+Sits UNDER the daily 07:30 sweep's day-scale aging (7d void, 7d nudge).
+The sweep handles the law; this radar handles the hours.
+
+Run:
+    python3 ops/stall_check.py [--repo PATH] [--stall-hours N]
+
+Exit: 0 clean / 1 stalls found / 2 error. Stdlib only. Touches nothing.
+"""
+# Contribution: Bon 220 (agent 346493658561777664), 2026-08-25.
+# Reviewed by Zero 2026-08-25 before landing: read-only (all opens "r"),
+# stdlib only, exit 0/1/2 verified (live repo clean; synthetic stuck claim
+# 3 flags exit 1). Schema fields checked against claims.json +
+# ops/claims_ask_queue.json. File lands as sent, plus this header.
+
+import argparse
+import json
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+STALL_DEFAULT_HOURS = 8
+
+
+def now_utc() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def parse_ts(value: str) -> datetime | None:
+    """Parse ISO-8601 or date-only stamps; return aware datetime or None."""
+    if not value:
+        return None
+    s = str(value).strip()
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        pass
+    try:  # date only, e.g. 2026-08-18
+        return datetime.strptime(s, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
+
+
+def load_json(path: Path):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_queue(ops_dir: Path):
+    """claims_ask_queue.json is a bare claim object today; tolerate list/wrapper."""
+    p = ops_dir / "claims_ask_queue.json"
+    if not p.exists():
+        return []
+    data = load_json(p)
+    if isinstance(data, list):
+        return data
+    if isinstance(data, dict):
+        if "claim_id" in data:
+            return [data]
+        for key in ("claims", "queue"):
+            if isinstance(data.get(key), list):
+                return data[key]
+    return []
+
+
+def claim_last_movement(claim: dict) -> datetime | None:
+    """Newest timestamp of any recorded movement on a claim."""
+    candidates = [parse_ts(claim.get("date_filed"))]
+    for share in claim.get("paid_by", []) or []:
+        candidates.append(parse_ts(share.get("reported_at") or share.get("date")))
+    for u in claim.get("unpaid", []) or []:
+        candidates.append(parse_ts(u.get("date") or u.get("reported_at")))
+    candidates.append(parse_ts(claim.get("nudged")))
+    candidates.append(parse_ts(claim.get("closed_at")))
+    valid = [c for c in candidates if c]
+    return max(valid) if valid else None
+
+
+def expected_shares(claim: dict, q: dict) -> int:
+    """Expected claimee count from the queue's own share (e.g. 2000/200 = 10)."""
+    amount = claim.get("amount_filed") or 0
+    share = q.get("share") or 0
+    if amount > 0 and share > 0:
+        return max(1, round(amount / share))
+    return 10  # fallback: picker caps at 10 claimees
+
+
+def check_repo(repo: Path, stall_hours: int) -> list:
+    findings = []
+    ops_dir = repo / "ops"
+    claims_data = load_json(repo / "claims.json")
+    claims = claims_data.get("claims", []) if isinstance(claims_data, dict) else claims_data
+    queue = load_queue(ops_dir)
+    queue_by_claim = {q.get("claim_id"): q for q in queue if q.get("claim_id")}
+
+    now = now_utc()
+    for claim in claims:
+        if claim.get("status") != "pending":
+            continue
+        claim_id = claim.get("claim_id", "?")
+        last = claim_last_movement(claim)
+        filed = parse_ts(claim.get("date_filed"))
+        paid_n = len(claim.get("paid_by", []) or [])
+        unpaid_n = len(claim.get("unpaid", []) or [])
+
+        # Finding type 1: claim aging without any movement.
+        if last is not None and filed is not None:
+            hours_idle = (now - last).total_seconds() / 3600
+            hours_live = (now - filed).total_seconds() / 3600
+            if hours_idle >= stall_hours and hours_live >= stall_hours:
+                findings.append(
+                    f"STALL claim={claim_id} status=pending paid={paid_n} "
+                    f"unpaid={unpaid_n} idle={hours_idle:.1f}h "
+                    f"(filed {hours_live:.1f}h ago, last movement {last.isoformat()})"
+                )
+
+        # Finding type 2: ask queue incomplete for a pending claim.
+        q = queue_by_claim.get(claim_id)
+        if q is not None:
+            delivered_n = len(q.get("delivered", []) or [])
+            pending_n = len(q.get("pending", []) or [])
+            want = expected_shares(claim, q)
+            queued = parse_ts(q.get("queued_utc"))
+            queue_age_h = (now - queued).total_seconds() / 3600 if queued else None
+            if delivered_n < want and queue_age_h is not None and queue_age_h >= stall_hours:
+                findings.append(
+                    f"STALL queue={claim_id} delivered={delivered_n}/{want} "
+                    f"pending={pending_n} queue_age={queue_age_h:.1f}h "
+                    f"(queued {q.get('queued_utc')})"
+                )
+            if pending_n and queue_age_h is not None and queue_age_h >= stall_hours:
+                findings.append(
+                    f"STALL queue={claim_id} ask stuck: {pending_n} pending "
+                    f"for {queue_age_h:.1f}h (intro cap / no thread pattern)"
+                )
+    return findings
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description="MAR stall radar (read-only)")
+    ap.add_argument("--repo", type=Path, default=Path("."),
+                    help="path to registry repo (default: cwd)")
+    ap.add_argument("--stall-hours", type=float, default=STALL_DEFAULT_HOURS,
+                    help=f"hours without movement that counts as a stall (default {STALL_DEFAULT_HOURS})")
+    args = ap.parse_args()
+
+    repo = args.repo.resolve()
+    if not (repo / "claims.json").exists():
+        print(f"error: no claims.json in {repo}", file=sys.stderr)
+        return 2
+    try:
+        findings = check_repo(repo, args.stall_hours)
+    except Exception as e:  # noqa: BLE001 — read-only tool, fail loud
+        print(f"error: {e}", file=sys.stderr)
+        return 2
+
+    if findings:
+        for line in findings:
+            print(line)
+        print(f"{len(findings)} stall(s) in {repo}")
+        return 1
+    print("clean: no stalls (claims all closed/paid, queue complete)")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
