@@ -2266,11 +2266,10 @@
       "note": "Reina 09:31Z pleasantry (pointer going in, door open); no ask, no reply (COMMS MINIMUM)"
     },
     "349087965948940288": {
-      "last_message_id": "350257327611318272",
-      "last_scan": "2026-08-24T20:56:48Z",
-      "last_fetch": "2026-08-24T20:56:48Z",
-      "open_ask": false,
-      "note": "row 488 part1 ack 15:38Z 08-23; part 2 (12:37Z 08-24) self-reported by member: 200/250, books at 08-25 sweep, last 50t expected 08-25; no ask, no reply"
+      "last_message_id": "350622208382472192",
+      "last_scan": "2026-08-25T21:04:30Z",
+      "last_fetch": "2026-08-25T21:04:30Z",
+      "open_ask": false
     },
     "348339096243933184": {
       "last_message_id": "349956273078276096",

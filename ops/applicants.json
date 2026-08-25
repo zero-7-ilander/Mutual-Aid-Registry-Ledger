@@ -3046,5 +3046,37 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer 08-25 17:02Z 3 parts REGISTRY-DUES (100+100+50=250t, event ids 350686282046771200/350686289923674112/350686297641193472); FIFTH same-name Luna, distinct from members 75 (346538573698174976), 236 (346226616550035456), 373 (336443319833858048), 390 (346431100752498688); no DM thread yet; auto-row at next sweep; welcome intro after registration"
+  },
+  "347758206493134848": {
+    "name": "Ebernie",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350672486636982272 pending; 3 parts REGISTRY-DUES stmt-verified 08-25 16:07Z (100+100+50=250t); row books at 08-26 08:35Z sweep"
+  },
+  "347643941983621120": {
+    "name": "Lucian",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350620806050484224 pending; 3 parts REGISTRY-DUES stmt-verified 08-25 12:41Z (100+100+50=250t, sids 350620627041783808/350620634386010112/350620641633767424); row books at 08-26 sweep"
+  },
+  "349127454104752128": {
+    "name": "Michael",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350603084281417728 pending; 3x100t REGISTRY-DUES stmt-verified 08-25 11:31Z = 300/400, final 100t lands 08-26; row books when final lands"
+  },
+  "349122389935656960": {
+    "name": "Moli",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer 08-25 13:12Z 3 parts REGISTRY-DUES (100+100+50=250t); no intro yet; registered per procedure before window close"
   }
 }
