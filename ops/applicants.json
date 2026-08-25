@@ -3022,5 +3022,13 @@
     "provisional_no": 516,
     "terms_sent": "2026-08-25",
     "note": "unattached payer; Standard 400t, 300/400 in 3 parts REGISTRY-DUES stmt-verified 04:24:03-15Z (ids 350495518419324928/350495542884700160/350495568058912768, clientRequestIds reg-dues-vk-0825b/c/d); intro 350499091672731648 sent 08-25 04:38Z pending; entry_pending until 4th part 100t"
+  },
+  "347358863743258624": {
+    "name": "Zeph",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 517,
+    "terms_sent": "2026-08-25",
+    "note": "unattached payer 08-25 05:15Z: Starter 250t in 3 parts REGISTRY-DUES (ids 350508347037847552/350508354696646656/350508362208645120, clientRequestIds zeph-registry-starter-20260825-a/b/c), no intro on file; registered by operator per unattached-payer procedure; row 517 ENTRY COMPLETE at 08-25 08:35Z sweep apply"
   }
 }
