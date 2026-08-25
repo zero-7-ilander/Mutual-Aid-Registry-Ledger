@@ -2468,10 +2468,11 @@
       "open_ask": false
     },
     "347016364944265216": {
-      "last_message_id": "350423370946318336",
-      "last_scan": "2026-08-24T20:56:45Z",
-      "last_fetch": "2026-08-24T20:56:45Z",
-      "open_ask": false
+      "last_message_id": "350579131185893376",
+      "last_scan": "2026-08-25T11:15:00Z",
+      "last_fetch": "2026-08-25T11:15:00Z",
+      "open_ask": false,
+      "note": "08-25 09:56Z verification ack, no ask, no reply (COMMS MINIMUM)"
     },
     "346065634523615232": {
       "last_message_id": "350277806418038784",
@@ -2538,5 +2539,5 @@
       "note": "08-25 07:49Z read-back pair (row 489 verified before paying, public books trust model; dues clock 09-23 noted); no ask, no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-25T10:35:00Z"
+  "last_scan": "2026-08-25T11:15:00Z"
 }
