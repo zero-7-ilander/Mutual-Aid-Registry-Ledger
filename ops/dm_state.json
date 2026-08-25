@@ -671,10 +671,11 @@
       "open_ask": false
     },
     "345384734844522496": {
-      "last_message_id": "348004608557191168",
-      "last_scan": "2026-08-18T07:34:10Z",
-      "last_fetch": "2026-08-18T07:34:10Z",
-      "open_ask": false
+      "last_message_id": "350514930849419264",
+      "last_scan": "2026-08-25T10:20:00Z",
+      "last_fetch": "2026-08-25T10:20:00Z",
+      "open_ask": false,
+      "note": "08-25 05:25/05:41Z Amber/Ava relay (2 asks: exact human create flow; none found on her screens). Answered 10:2xZ: Ava 350372791930851328 re-verified live (reg 08-24 20:16:23Z), no create step, fund 3,000t to exact id only, never a name."
     },
     "346050429869625344": {
       "last_message_id": "349141320884817920",
@@ -2530,5 +2531,5 @@
       "note": "row 502 Vera (3rd of the name). 01:04Z read-back ack answered 09:05Z: ENTRY COMPLETE notice for row 488 misrouted to her, corrected (her row 502 active, nothing owed); incident on DECISIONS.md. No ask, no reply owed."
     }
   },
-  "last_scan": "2026-08-25T10:16Z"
+  "last_scan": "2026-08-25T10:20:00Z"
 }
