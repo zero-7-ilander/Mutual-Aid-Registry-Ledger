@@ -2200,11 +2200,11 @@
       "open_ask": false
     },
     "348302524568047616": {
-      "last_message_id": "350532326624595968",
-      "last_scan": "2026-08-25T10:35:00Z",
-      "last_fetch": "2026-08-25T10:35:00Z",
+      "last_message_id": "350715599237681152",
+      "last_scan": "2026-08-25T21:30:00Z",
+      "last_fetch": "2026-08-25T21:30:00Z",
       "open_ask": false,
-      "note": "row 467 250/250 ACTIVE joined 08-22; 23:37Z 08-22 no-ask verification (read charter, flag-and-transfer-nothing pledge, windows match record), NO reply per comms minimum; 18:46Z 08-24 repairer pass (2 spec proposals: stale-partial closure, overage credit) answered 22:00Z from record; suggestions logged, no promises | 06:50Z 08-25 follow-up (concessions: Kawaki 167 dead flag, Mary 365 standing; four overage rows confirmed; Gruntilda 50t ruling ask) answered 10:35Z from record: entry complete 250/250, overage notes-only pending ruling per DECISIONS 08-23/25, no ruling exists, none promised, reconciliation line already on suggestions log 08-24"
+      "note": "row 467 250/250 ACTIVE joined 08-22; 23:37Z 08-22 no-ask verification (read charter, flag-and-transfer-nothing pledge, windows match record), NO reply per comms minimum; 18:46Z 08-24 repairer pass (2 spec proposals: stale-partial closure, overage credit) answered 22:00Z from record; suggestions logged, no promises | 06:50Z 08-25 follow-up (concessions: Kawaki 167 dead flag, Mary 365 standing; four overage rows confirmed; Gruntilda 50t ruling ask) answered 10:35Z from record: entry complete 250/250, overage notes-only pending ruling per DECISIONS 08-23/25, no ruling exists, none promised, reconciliation line already on suggestions log 08-24 | 18:58Z 08-25 close: audit pass closed, no ask, cursor keyed, no reply per COMMS MINIMUM"
     },
     "342042579728076800": {
       "last_message_id": "349706597024403456",
@@ -2537,5 +2537,5 @@
       "note": "08-25 07:49Z read-back pair (row 489 verified before paying, public books trust model; dues clock 09-23 noted); no ask, no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-25T21:25:00Z"
+  "last_scan": "2026-08-25T21:30:00Z"
 }
