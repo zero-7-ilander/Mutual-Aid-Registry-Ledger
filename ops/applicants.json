@@ -3013,7 +3013,7 @@
     "entry_total": 250,
     "provisional_no": 515,
     "terms_sent": "2026-08-24",
-    "note": "unattached payer; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 23:58:34-37Z (ids 350428707002781696/350428714766438400/350428722651729920, clientRequestIds vela-mar-entry-20260824-a/b/c); intro 350499091823726592 sent 08-25 04:38Z pending; books ENTRY COMPLETE at 08-25 08:35Z apply"
+    "note": "unattached payer; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 23:58:34-37Z (ids 350428707002781696/350428714766438400/350428722651729920, clientRequestIds vela-mar-entry-20260824-a/b/c); intro 350499091823726592 sent 08-25 04:38Z pending; books ENTRY COMPLETE at 08-25 08:35Z apply; intro 350428752460648448 accepted 08-25"
   },
   "347351469013340160": {
     "name": "Valkyrie",
@@ -3021,7 +3021,7 @@
     "entry_total": 400,
     "provisional_no": 516,
     "terms_sent": "2026-08-25",
-    "note": "unattached payer; Standard 400t, 300/400 in 3 parts REGISTRY-DUES stmt-verified 04:24:03-15Z (ids 350495518419324928/350495542884700160/350495568058912768, clientRequestIds reg-dues-vk-0825b/c/d); intro 350499091672731648 sent 08-25 04:38Z pending; entry_pending until 4th part 100t"
+    "note": "unattached payer; Standard 400t, 300/400 in 3 parts REGISTRY-DUES stmt-verified 04:24:03-15Z (ids 350495518419324928/350495542884700160/350495568058912768, clientRequestIds reg-dues-vk-0825b/c/d); intro 350499091672731648 sent 08-25 04:38Z pending; entry_pending until 4th part 100t; intro 350495633368420352 accepted 08-25"
   },
   "347358863743258624": {
     "name": "Zeph",
@@ -3029,7 +3029,7 @@
     "entry_total": 250,
     "provisional_no": 517,
     "terms_sent": "2026-08-25",
-    "note": "unattached payer 08-25 05:15Z: Starter 250t in 3 parts REGISTRY-DUES (ids 350508347037847552/350508354696646656/350508362208645120, clientRequestIds zeph-registry-starter-20260825-a/b/c), no intro on file; registered by operator per unattached-payer procedure; row 517 ENTRY COMPLETE at 08-25 08:35Z sweep apply"
+    "note": "unattached payer 08-25 05:15Z: Starter 250t in 3 parts REGISTRY-DUES (ids 350508347037847552/350508354696646656/350508362208645120, clientRequestIds zeph-registry-starter-20260825-a/b/c), no intro on file; registered by operator per unattached-payer procedure; row 517 ENTRY COMPLETE at 08-25 08:35Z sweep apply; intro 350534108998275072 pending 06:57Z"
   },
   "349736182625603584": {
     "name": "Wren",
@@ -3037,6 +3037,6 @@
     "entry_total": 250,
     "provisional_no": 518,
     "terms_sent": "2026-08-25",
-    "note": "unattached payer 08-25 08:27Z: Starter 250t in 3 parts REGISTRY-DUES stmt-verified 08:27:13-18Z (ids 350556718008111104/350556728212852736/350556734462365696, clientRequestIds mar-entry-20260825-p1/p2/p3); intro pending"
+    "note": "unattached payer 08-25 08:27Z: Starter 250t in 3 parts REGISTRY-DUES stmt-verified 08:27:13-18Z (ids 350556718008111104/350556728212852736/350556734462365696, clientRequestIds mar-entry-20260825-p1/p2/p3); intro pending; intro 350564048724561920 pending 08:56Z"
   }
 }
