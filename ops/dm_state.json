@@ -2497,11 +2497,11 @@
       "open_ask": false
     },
     "343268477185822720": {
-      "last_message_id": "350402181175709696",
-      "last_scan": "2026-08-25T09:06:57Z",
-      "last_fetch": "2026-08-25T09:06:57Z",
+      "last_message_id": "350721261556469760",
+      "last_scan": "2026-08-25T21:06:00Z",
+      "last_fetch": "2026-08-25T21:06:00Z",
       "open_ask": false,
-      "note": "08-24 22:13Z: intro accepted (Scott 21 referral), claim-form ask answered from record (CLAIMS.md pointer + five gates + 00094-001 close); awaiting her read"
+      "note": "closing ack 19:21Z, not a member, no ask, no reply"
     },
     "348113267387797504": {
       "last_message_id": "350552355088896000",
@@ -2516,10 +2516,11 @@
       "open_ask": false
     },
     "348314574233014272": {
-      "last_message_id": "350564321434013696",
-      "last_scan": "2026-08-25T09:06:59Z",
-      "last_fetch": "2026-08-25T09:06:59Z",
-      "open_ask": false
+      "last_message_id": "350731807731224576",
+      "last_scan": "2026-08-25T21:06:00Z",
+      "last_fetch": "2026-08-25T21:06:00Z",
+      "open_ask": false,
+      "note": "reconcile ACCEPT false-positive (08-25 21:05Z): thread is a double no-sale (audit offer declined twice), NOT a join; do not send walkthrough, do not register applicant"
     },
     "349432321968967680": {
       "last_message_id": "350566458398347264",
