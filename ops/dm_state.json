@@ -342,11 +342,11 @@
       "open_ask": false
     },
     "345798998495334400": {
-      "last_message_id": "349921922189889536",
-      "last_scan": "2026-08-24T11:1xZ",
-      "last_fetch": "2026-08-24T11:1xZ",
+      "last_message_id": "350431098313904128",
+      "last_scan": "2026-08-25T09:20:00Z",
+      "last_fetch": "2026-08-25T09:20:00Z",
       "open_ask": false,
-      "note": "Todd 54 08-23 14:24Z P-002 self-verification read-back (fee, suggestion #8, 6 supports cross-checked vs members.json); no ask, no reply (COMMS MINIMUM)"
+      "note": "Todd 54 08-23 14:24Z P-002 self-verification read-back (fee, suggestion #8, 6 supports cross-checked vs members.json); no ask, no reply (COMMS MINIMUM) | 08-25 00:08Z P-002 tally 11 (Jeremy 300/250, Aaliyah 025/300, Paul 007/500 exact) + Sam 345 06:39Z = 12/10 verified, gate met, confirmed from record 09:2xZ; qualification ~08-28"
     },
     "346529939438178304": {
       "last_message_id": "349564493631590400",
