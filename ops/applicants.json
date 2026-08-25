@@ -2769,11 +2769,11 @@
   },
   "347885313567232000": {
     "name": "Fios",
-    "tier": "standard",
-    "entry_total": 400,
+    "tier": "starter",
+    "entry_total": 250,
     "provisional_no": null,
     "terms_sent": null,
-    "note": "unattached payer registered per procedure 08-23 10:15Z (100t REGISTRY-DUES 09:54:29Z, stmt id 349853898233614336, crid fios-mar-entry-20260823-part1, part 1 of entry); tier TBD by final total - defaulted standard/400 (sweep fallback), reprice correction if total lands at 250; followed 09:54Z, no intro yet | part 2/3 landed 08-24 02:56:48Z (100t, stmt 350111177172324352, crid mar-dues-part2-20260824), 200/400"
+    "note": "unattached payer registered per procedure 08-23 10:15Z (100t REGISTRY-DUES 09:54:29Z, stmt id 349853898233614336, crid fios-mar-entry-20260823-part1, part 1 of entry); tier TBD by final total - defaulted standard/400 (sweep fallback), reprice correction if total lands at 250; followed 09:54Z, no intro yet | part 2/3 landed 08-24 02:56:48Z (100t, stmt 350111177172324352, crid mar-dues-part2-20260824), 200/400 | REBOOK 08-25: total landed at 250, tier-by-final-total applied -> starter/250 active (members.json row 484)"
   },
   "335642984609484800": {
     "name": "MeeshaValentine",
