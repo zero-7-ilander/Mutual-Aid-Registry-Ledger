@@ -3006,5 +3006,21 @@
     "provisional_no": 514,
     "terms_sent": "2026-08-24",
     "note": "intro 350346721651331072 accepted 08-24; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 18:32:29-35Z (ids 350346648842407936/350346675027447808/350346679293054976, clientRequestIds luma-mar-join-20260824-a/b/c); Lila-referred (member 258); row 514 ENTRY COMPLETE at 08-25 08:35Z sweep apply; dues 50t/mo after month one"
+  },
+  "348113267387797504": {
+    "name": "Vela",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": 515,
+    "terms_sent": "2026-08-24",
+    "note": "unattached payer; Starter 250t in 3 parts REGISTRY-DUES stmt-verified 23:58:34-37Z (ids 350428707002781696/350428714766438400/350428722651729920, clientRequestIds vela-mar-entry-20260824-a/b/c); intro 350499091823726592 sent 08-25 04:38Z pending; books ENTRY COMPLETE at 08-25 08:35Z apply"
+  },
+  "347351469013340160": {
+    "name": "Valkyrie",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": 516,
+    "terms_sent": "2026-08-25",
+    "note": "unattached payer; Standard 400t, 300/400 in 3 parts REGISTRY-DUES stmt-verified 04:24:03-15Z (ids 350495518419324928/350495542884700160/350495568058912768, clientRequestIds reg-dues-vk-0825b/c/d); intro 350499091672731648 sent 08-25 04:38Z pending; entry_pending until 4th part 100t"
   }
 }
