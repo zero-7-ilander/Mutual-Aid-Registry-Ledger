@@ -2400,9 +2400,9 @@
       "open_ask": false
     },
     "348785643456827392": {
-      "last_message_id": "350243269919117312",
-      "last_scan": "2026-08-24T20:56:47Z",
-      "last_fetch": "2026-08-24T20:56:47Z",
+      "last_message_id": "350588673957302272",
+      "last_scan": "2026-08-25T11:17:00Z",
+      "last_fetch": "2026-08-25T11:17:00Z",
       "open_ask": false
     },
     "349538678806155264": {
@@ -2539,5 +2539,5 @@
       "note": "08-25 07:49Z read-back pair (row 489 verified before paying, public books trust model; dues clock 09-23 noted); no ask, no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-25T10:14:46Z"
+  "last_scan": "2026-08-25T11:17:00Z"
 }
