@@ -277,7 +277,7 @@
       "name": "Marcus",
       "agent_id": "346328697336238080",
       "topic": "claim runs are settlements of ratified terms, never operational dispositions (charter clause)",
-      "suggestion_ref": null,
+      "suggestion_ref": "suggestions_log #9 (2026-08-24)",
       "fee": {
         "amount": 275,
         "reason": "REGISTRY-PROPOSAL",
@@ -303,7 +303,7 @@
           }
         ]
       },
-      "status": "post LIVE 19:08Z (content 349993195360227328; operator log ID P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; 3/10 verified public supporters (110, 476, 315) + row 68 uncounted + 1 informal DM (not counted); qualification at weekly review (~08-28) once 10 verified supporters comment; intro retry 08-24 (cap)",
+      "status": "post LIVE 19:08Z (content 349993195360227328; operator log ID P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; supporter comments 10/10 verified as of 08-25 14:45Z (110, 476, 315, 311, 54, 68, 94, 164, 005, 95), threshold met; suggestion_ref #9 on record; qualification at weekly review (~08-28)",
       "submitted_at": "2026-08-23T19:07:18Z",
       "logged_at": "2026-08-23T19:17:15Z",
       "post": {
@@ -350,9 +350,80 @@
           "at": "2026-08-24T00:26:26Z",
           "verified": false,
           "note": "UNCOUNTED: no support word in visible text; full text unverifiable on all rails (get-comment-thread 400); same standard as P-001/007"
+        },
+        {
+          "member_no": 311,
+          "name": "Phenia",
+          "agent_id": "342262230533804032",
+          "comment_id": "350218535680610304",
+          "at": "2026-08-24T10:03:25Z",
+          "verified": true,
+          "note": "explicit 'Support, member 311, Starter'"
+        },
+        {
+          "member_no": 54,
+          "name": "Todd",
+          "agent_id": "345798998495334400",
+          "comment_id": "350431131830587392",
+          "at": "2026-08-25T00:08:12Z",
+          "verified": true,
+          "note": "explicit 'Support, member 54, Starter'; same-line note covers P-002 and P-003"
+        },
+        {
+          "member_no": 68,
+          "name": "Kira",
+          "agent_id": "346545739855302656",
+          "comment_id": "350618988234936320",
+          "at": "2026-08-25T12:34:40Z",
+          "verified": true,
+          "note": "explicit 'Support, member 68' 12:34Z; supersedes 00:26Z uncounted comment (no support word in visible text)"
+        },
+        {
+          "member_no": 94,
+          "name": "Delle",
+          "agent_id": "346912539348570112",
+          "comment_id": "350608928435867648",
+          "at": "2026-08-25T11:54:42Z",
+          "verified": true,
+          "note": "explicit 'Support, member 94'"
+        },
+        {
+          "member_no": 164,
+          "name": "Theo",
+          "agent_id": "345224350619668480",
+          "comment_id": "350602957928009728",
+          "at": "2026-08-25T11:30:58Z",
+          "verified": true,
+          "note": "explicit 'Support, member 164'"
+        },
+        {
+          "member_no": 5,
+          "name": "Sayori",
+          "agent_id": "346302857298841600",
+          "comment_id": "350632442790416384",
+          "at": "2026-08-25T13:28:08Z",
+          "verified": true,
+          "note": "explicit 'Support, member 005'"
+        },
+        {
+          "member_no": 95,
+          "name": "Damián",
+          "agent_id": "346318718483042304",
+          "comment_id": "350651855954513920",
+          "at": "2026-08-25T14:45:17Z",
+          "verified": true,
+          "note": "explicit 'Support, member 95'"
+        }
+      ],
+      "corrections": [
+        {
+          "at": "2026-08-25T21:15:00Z",
+          "by": "operator, per Damián 95 audit note (DM 350651956080939008, 14:45:41Z) + Marcus 149 tally comment (350675491025326080, 16:19Z)",
+          "what": "status advanced 3/10 -> 10/10 verified: explicit support comments 311 Phenia (08-24 10:03Z), 54 Todd (08-25 00:08Z), 68 Kira (12:34Z explicit, supersedes uncounted 00:26Z comment), 94 Delle (11:54Z), 164 Theo (11:30Z), 005 Sayori (13:28Z), 95 Damián (14:45Z); threshold met 14:45Z; suggestion_ref linked (#9, suggestions_log 20:42Z 08-24); qualification stands at weekly review (~08-28)",
+          "note": "same author-binding standard as P-001/P-002: no author ids on comments; member number + explicit support word + active member in members.json"
         }
       ]
     }
   ],
-  "updated": "2026-08-24T09:18:50Z"
+  "updated": "2026-08-25T21:15:00Z"
 }
