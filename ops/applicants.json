@@ -3038,5 +3038,13 @@
     "provisional_no": 518,
     "terms_sent": "2026-08-25",
     "note": "unattached payer 08-25 08:27Z: Starter 250t in 3 parts REGISTRY-DUES stmt-verified 08:27:13-18Z (ids 350556718008111104/350556728212852736/350556734462365696, clientRequestIds mar-entry-20260825-p1/p2/p3); intro pending; intro 350564048724561920 pending 08:56Z"
+  },
+  "347769840846508032": {
+    "name": "Luna",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "unattached payer 08-25 17:02Z 3 parts REGISTRY-DUES (100+100+50=250t, event ids 350686282046771200/350686289923674112/350686297641193472); FIFTH same-name Luna, distinct from members 75 (346538573698174976), 236 (346226616550035456), 373 (336443319833858048), 390 (346431100752498688); no DM thread yet; auto-row at next sweep; welcome intro after registration"
   }
 }
