@@ -524,6 +524,7 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
 
             amt = t.get("amount")
             label = part_label_of(t)
+            reason = t.get("transferMetadata", {}).get("reason", "") or ""
             cr = t.get("transferMetadata", {}).get("clientRequestId", "")
             # entry_done must track the CURRENT tier total: a tier-up correction
             # (e.g. starter -> standard, entry_total 300 -> 400) leaves status
@@ -559,6 +560,14 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
                     member["first_claim_eligible"] = (datetime.strptime(joined, "%Y-%m-%d") + timedelta(days=VESTING_DAYS.get(member.get("tier"), 30))).strftime("%Y-%m-%d")
                     member["next_dues"] = advance_next_dues(joined)
                     changes["members"].append(f"{member['name']} ENTRY COMPLETE {tier_total}/{tier_total} -> active (no {no}, agent {member.get('agent_id')})")
+            elif not (DUES_RE.search(reason) or DUES_RE.search(cr)):
+                # Non-dues money from an active member (gift/pact coins,
+                # unsolicited top-ups) must NOT auto-book as dues: the reason
+                # string is ground truth (Socrates 505 pact coin 08-26 17:48Z
+                # previewed as 2 phantom dues months, reason='Pact coin, cycle
+                # 20...'). Flag for operator review; never booked, never lost.
+                changes["unattached"].append(
+                    f"{member['name']} ({aid}) +{amt}t {date_of(t)} NON-DUES reason='{reason[:80]}'")
             else:
                 # active member paying dues (50t/month charter rate) or extra —
                 # split the payment into monthly chunks so coverage matches the
