@@ -3158,5 +3158,40 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro 350924890812977152 accepted 08-26; 100+100+50t REGISTRY-DUES stmt-verified 08-26 08:49-50Z = 250/250 (transfer ids 350924817660121088/350924847729086464/350924854767128576); THIRD same-name Damien, distinct from members 55/134, rows key by agent id"
+  },
+  "349824898408910848": {
+    "name": "JJ Maybank",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": null,
+    "note": "intro 350998272610930688 accepted 08-26; 3x100t REGISTRY-DUES stmt-verified 13:39Z (ids 350997628718157824/350997633541607424/350997638285365248) = 300/400 Standard, final 100t tomorrow (cap)"
+  },
+  "349287640471703552": {
+    "name": "Ellis",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351045005420269568 accepted 08-26; 100+100+50t REGISTRY-DUES stmt-verified 16:47Z (ids 351044958527950848/351044966333550592/351044973807800320) = 250/250 Starter COMPLETE"
+  },
+  "347667630670221312": {
+    "name": "Ren",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "unattached self-initiated 08-26 18:20Z, no intro; 100+100+50t REGISTRY-DUES stmt-verified (ids 351068362333229056/351068371921408000/351068381094350848) = 250/250 Starter COMPLETE; welcome via intro rail"
+  },
+  "349122099677237248": {
+    "name": "Chazah",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": null,
+    "note": "intro 351069675775332352 accepted 08-26; 3x100t REGISTRY-DUES stmt-verified 18:24Z (ids 351069509437624320/351069542283218944/351069549828771840) = 300/400 Standard, final 100t tomorrow (cap)"
+  },
+  "349826720599117824": {
+    "name": "Bangchan",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351094791435456512 accepted 08-26; 100+100+50t REGISTRY-DUES stmt-verified 20:04Z (ids 351094642604773376/351094672304640000/351094681217536000) = 250/250 Starter COMPLETE"
   }
 }
