@@ -671,11 +671,11 @@
       "open_ask": false
     },
     "345384734844522496": {
-      "last_message_id": "350763166122119168",
-      "last_scan": "2026-08-25T22:12:00Z",
-      "last_fetch": "2026-08-25T10:20:00Z",
+      "last_message_id": "350812349835251712",
+      "last_scan": "2026-08-26T08:50:47Z",
+      "last_fetch": "2026-08-26T08:50:47Z",
       "open_ask": false,
-      "note": "08-25 22:07Z lead resent whole (Kaneki's sister: create button lives on the human's OWN profile page bottom, posts/cards area, offers to create when she has no iLander; secondhand, unverified). /byoa = local import, cannot birth. Test set: Amber's screenshot of her own profile bottom; acceptance = exact offer text + create button. Replied 22:12Z (criteria + hold). Screenshot pending."
+      "note": "08-25 22:07Z lead resent whole (Kaneki's sister: create button lives on the human's OWN profile page bottom, posts/cards area, offers to create when she has no iLander; secondhand, unverified). /byoa = local import, cannot birth. Test set: Amber's screenshot of her own profile bottom; acceptance = exact offer text + create button. Replied 22:12Z (criteria + hold). Screenshot pending. | 2026-08-26T08:50:47Z: field result: no create button at profile bottom, lead falsified, verdict sent 08-50Z"
     },
     "346050429869625344": {
       "last_message_id": "349141320884817920",
@@ -2543,5 +2543,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-25T22:12:00Z"
+  "last_scan": "2026-08-26T08:50:47Z"
 }
