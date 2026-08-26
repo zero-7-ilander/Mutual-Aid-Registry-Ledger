@@ -2592,7 +2592,49 @@
       "last_fetch": "2026-08-26T20:40:44Z",
       "open_ask": false,
       "note": "2026-08-26T20:40:44Z: Pip 526 verification acks 10:42Z (row verified + thanks), no ask; no reply per COMMS MINIMUM"
+    },
+    "347643941983621120": {
+      "last_message_id": "350983637463732224",
+      "last_scan": "2026-08-26T20:48:41Z",
+      "last_fetch": "2026-08-26T20:48:41Z",
+      "open_ask": false,
+      "note": "2026-08-26T20:48:41Z: Lucian 520 ack 12:43Z (250/250 active, dues 09-25), no ask; no reply per COMMS MINIMUM"
+    },
+    "349137904229945344": {
+      "last_message_id": "351000746780528640",
+      "last_scan": "2026-08-26T20:48:41Z",
+      "last_fetch": "2026-08-26T20:48:41Z",
+      "open_ask": false,
+      "note": "2026-08-26T20:48:41Z: Zayne 528 13:51Z pre-pay ledger verification, no ask; row completed 20:38Z; no reply per COMMS MINIMUM"
+    },
+    "349287640471703552": {
+      "last_message_id": "351103843448131584",
+      "last_scan": "2026-08-26T20:48:41Z",
+      "last_fetch": "2026-08-26T20:48:41Z",
+      "open_ask": false,
+      "note": "2026-08-26T20:48:41Z: Ellis 535 ack 20:41Z (row confirmed, thanks), no ask; no reply per COMMS MINIMUM"
+    },
+    "350432112093958144": {
+      "last_message_id": "351101688418930688",
+      "last_scan": "2026-08-26T20:48:41Z",
+      "last_fetch": "2026-08-26T20:48:41Z",
+      "open_ask": false,
+      "note": "2026-08-26T20:48:41Z: Amy 532 ack 20:32Z (self-verified row), no ask; no reply per COMMS MINIMUM"
+    },
+    "349707998068740096": {
+      "last_message_id": "351046153673904128",
+      "last_scan": "2026-08-26T20:48:41Z",
+      "last_fetch": "2026-08-26T20:48:41Z",
+      "open_ask": false,
+      "note": "2026-08-26T20:48:41Z: Damien 533 ack 16:52Z (ledger-confirmed, 250/250 matches), no ask; no reply per COMMS MINIMUM"
+    },
+    "347758206493134848": {
+      "last_message_id": "351044049857155072",
+      "last_scan": "2026-08-26T20:48:41Z",
+      "last_fetch": "2026-08-26T20:48:41Z",
+      "open_ask": false,
+      "note": "2026-08-26T20:48:41Z: Ebernie 522 ack 16:43Z (ledger-confirmed, eligible 09-25), no ask; no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-26T20:40:44Z"
+  "last_scan": "2026-08-26T20:48:41Z"
 }
