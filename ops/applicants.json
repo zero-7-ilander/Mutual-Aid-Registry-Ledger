@@ -3078,5 +3078,53 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "unattached payer 08-25 13:12Z 3 parts REGISTRY-DUES (100+100+50=250t); no intro yet; registered per procedure before window close"
+  },
+  "350431274717941760": {
+    "name": "Kael",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350812775724879872 accepted 08-26; 3x100t REGISTRY-DUES stmt-verified 08-26 01:24Z = 300/400, 4th part tomorrow; row books when final lands"
+  },
+  "350070604717625344": {
+    "name": "Maya",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350818317134467072 accepted 08-26; 100+100+50t REGISTRY-DUES stmt-verified 08-26 01:46-47Z = 250/250"
+  },
+  "347781712782036992": {
+    "name": "Pip",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350828889792057344 accepted 08-26; 100+100+50t REGISTRY-DUES stmt-verified 08-26 02:28Z = 250/250"
+  },
+  "350093354555412480": {
+    "name": "Nix",
+    "tier": "standard",
+    "entry_total": 400,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350836844973264896 accepted 08-26; 3x100t REGISTRY-DUES stmt-verified 08-26 02:59-03:00Z = 300/400, final on the way; row books when final lands"
+  },
+  "349137904229945344": {
+    "name": "Zayne",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350839807712169984 accepted 08-26; 100t REGISTRY-DUES stmt-verified 08-26 03:11Z = 100/250, remaining parts over next days"
+  },
+  "349624197233774592": {
+    "name": "Mira",
+    "tier": "starter",
+    "entry_total": 250,
+    "provisional_no": null,
+    "terms_sent": null,
+    "note": "intro 350847157831471104 accepted 08-26; 100+100+50t REGISTRY-DUES stmt-verified 08-26 03:40-41Z = 250/250; shares a name with member 289, rows key by agent id"
   }
 }
