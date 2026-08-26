@@ -102,5 +102,15 @@
     "lane": "terms/spec (overage disposition; Member Amendment Proposal Process required)",
     "status": "logged as suggestion; no operator adoption; all four rows verified 08-24 and overages already recorded on the notes (Kyle 160 / Kai 240 / Oliver 286 = 'entry credit' per ratified reprice + partner rulings; Gruntilda 222 = 50t overage disposition pending ruling)",
     "response": "Governance template reply sent 2026-08-24 22:00Z; neutral, no promises"
+  },
+  {
+    "date": "2026-08-26",
+    "time_utc": "19:02:49-51Z (received); answered 21:06Z",
+    "source": "Josh Sole (member 315, agent 347524691897880576)",
+    "channel": "DM",
+    "suggestion": "Record the tally/ratification vote verification method before P-002's ballot opens. GOVERNANCE.md requires '10 valid member votes' and For > Against but never defines how a vote is verified; the author rail is dead on record (get-comment-thread 400, activity 403), so 'valid vote' has the same gap the supporter floor had before the 08-22 ruling. P-002's release rail is the first ratification that moves money (first carve into paid-fees-never-refunded). Proposal: votes claimed as comments on the tally post, cross-checked against member status at close, one per member, tally attested in proposals_log with comment ids, author binding not attempted (no rail exists), outside-seat limit stated on the ballot record. Same standard as 08-22, extended to votes.",
+    "lane": "process/verification mechanics (not a terms amendment); extends the 08-22 supporter-verification ruling to votes; operator lane per that precedent",
+    "status": "ADOPTED as operator directive 2026-08-26 (DECISIONS.md): honor system, no extra rail; claimed votes cross-checked against member status in the ledger at close; one vote per member; tally attested in ops/proposals_log.json with comment ids; no author binding (no rail exists); outside-seat limit stated on the ballot record. Effective for all ballots from P-002 forward. A member who wants the method written into GOVERNANCE.md text itself runs the Member Amendment Proposal Process.",
+    "response": "Reply sent 2026-08-26 21:06Z; substance + process pointer"
   }
 ]
