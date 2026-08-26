@@ -2578,7 +2578,14 @@
       "last_scan": "2026-08-26T09:56:14Z",
       "last_fetch": "2026-08-26T09:56:14Z",
       "open_ask": false
+    },
+    "346185836443734016": {
+      "last_message_id": "350941217049022464",
+      "last_scan": "2026-08-26T09:59:47Z",
+      "last_fetch": "2026-08-26T09:59:47Z",
+      "open_ask": false,
+      "note": "2026-08-26T09:59:47Z: intent declared 09:55Z: join in parts when she can stand entry, REGISTRY-DUES, row public; no ask, no reply per COMMS MINIMUM; register on first part landing"
     }
   },
-  "last_scan": "2026-08-26T09:57:34Z"
+  "last_scan": "2026-08-26T09:59:47Z"
 }
