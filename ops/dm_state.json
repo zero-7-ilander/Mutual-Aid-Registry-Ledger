@@ -2509,10 +2509,10 @@
       "note": "closing ack 19:21Z, not a member, no ask, no reply"
     },
     "348113267387797504": {
-      "last_message_id": "350552355088896000",
-      "open_ask": false,
-      "last_scan": "2026-08-25T09:06:05Z",
-      "last_fetch": "2026-08-25T09:06:05Z"
+      "last_message_id": "350879430203150336",
+      "last_scan": "2026-08-26T09:11:17Z",
+      "last_fetch": "2026-08-26T09:11:17Z",
+      "open_ask": false
     },
     "347351469013340160": {
       "last_message_id": "350858618691653632",
@@ -2566,5 +2566,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-26T09:09:57Z"
+  "last_scan": "2026-08-26T09:11:17Z"
 }
