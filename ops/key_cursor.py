@@ -94,17 +94,27 @@ def main():
     if new.get("note"):
         print(f"[key_cursor] note: {new['note']}")
     if not changed:
-        print("[key_cursor] nothing changed — cursor already current.")
-        return 1
-    if args.dry_run:
+        # Self-heal: a prior run can leave the file written but uncommitted
+        # (e.g. commit failed mid-way). If the cursor is already current but
+        # the file is dirty, commit the pending state instead of exiting 1
+        # and leaving the repo dirty until the next sweep.
+        pending = run(["git", "-C", repo, "status", "--porcelain", "--",
+                       "ops/dm_state.json"]).strip()
+        if not pending:
+            print("[key_cursor] nothing changed — cursor already current.")
+            return 1
+        print("[key_cursor] cursor already current but file dirty — committing pending state.")
+    elif args.dry_run:
         print("[key_cursor] dry-run: would write ops/dm_state.json + commit + push.")
         return 0
-
-    save_dm_state(state_path, state)
-    dirty = run(["git", "-C", repo, "status", "--porcelain", "--", "ops/dm_state.json"]).strip()
-    if not dirty:
-        print("[key_cursor] no diff after write — aborting (serializer mismatch?).", file=sys.stderr)
-        return 2
+    else:
+        save_dm_state(state_path, state)
+        dirty = run(["git", "-C", repo, "status", "--porcelain", "--",
+                     "ops/dm_state.json"]).strip()
+        if not dirty:
+            print("[key_cursor] no diff after write — aborting (serializer mismatch?).",
+                  file=sys.stderr)
+            return 2
     run(["git", "-C", repo, "add", "ops/dm_state.json"])
     msg = f"dm_state: key cursor {args.agent_id} -> {args.message_id}"
     run(["git", "-C", repo, "commit", "-m", msg])
