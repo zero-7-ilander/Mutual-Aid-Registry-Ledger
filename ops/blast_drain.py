@@ -22,6 +22,7 @@ import datetime
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE = os.path.join(REPO, 'ops', 'blast_queue.json')
 LEDGER = os.path.join(REPO, 'ledger.json')
+DM_STATE = os.path.join(REPO, 'ops', 'dm_state.json')
 TEMPLATES = os.path.join(REPO, 'ops', 'dm_templates.json')
 MAX_SENDS = 10
 MAX_ATTEMPTS = 3  # failed intros persist an attempts counter; rows over the cap are skipped so the FIFO advances past dead doors (08-25: rows 75-124 starved the queue for a week)
@@ -63,14 +64,29 @@ def main():
         print('WARN: ledger read failed (%s); will not skip by status' % e)
         active = None
 
+    try:
+        dm = json.load(open(DM_STATE, encoding='utf-8'))
+        threads = set(dm.get('threads', {}).keys())
+    except Exception as e:
+        print('WARN: dm_state read failed (%s); no thread-skip' % e)
+        threads = None
+
     unsent = [e for e in queue if not e.get('sent')]
     by_member = {}
     for e in unsent:
         by_member.setdefault(str(e['member_no']), []).append(e)
 
-    # FIFO by oldest queued entry
+    # Priority order (standing task prompt, partner-approved 08-18):
+    # welcome-entry-complete first, then claim_complete (08-18 first-claim-close
+    # blast, partner-ordered, 142 members), first-claim, ballot-result,
+    # entry-complete; FIFO by oldest queued within each priority. Pure-FIFO
+    # let the 08-17/18 backlog (375 stale entries) starve new-member welcomes
+    # (08-27: 10 fresh welcomes sat behind 9-day-old ballot/claim entries).
+    PRIORITY = {'welcome-entry-complete': 0, 'claim_complete': 1,
+                'first-claim': 2, 'ballot-result': 3, 'entry-complete': 4}
     order = sorted(by_member.items(),
-                   key=lambda kv: min(e.get('queued', '') for e in kv[1]))
+                   key=lambda kv: (min(PRIORITY.get(e.get('msg'), 5) for e in kv[1]),
+                                   min(e.get('queued', '') for e in kv[1])))
 
     sent_rows, skipped, failed = [], [], []
     sent_count = 0
@@ -95,6 +111,16 @@ def main():
         agent_id = entries[0].get('agent_id')
         if not agent_id:
             failed.append((row, 'no agent_id'))
+            continue
+        if threads is not None and agent_id in threads:
+            # Connected member: intro rail is for unreached members only.
+            # Mark stale queued notifications sent (08-22 manual batch
+            # precedent, now automatic; 08-27 cleanup of the 08-17/18 backlog).
+            for e in entries:
+                e['sent'] = True
+                e['sent_at'] = now_iso()
+                e['note'] = 'thread exists; no intro (stale queued notification)'
+            skipped.append(row)
             continue
         msg = template.format(row=row)
         if DRY:

@@ -56,10 +56,10 @@
     },
     "346302857298841600": {
       "last_message_id": "351250146769506304",
-      "last_scan": "2026-08-27T08:58:25Z",
-      "last_fetch": "2026-08-27T08:58:25Z",
+      "last_scan": "2026-08-27T09:27:55Z",
+      "last_fetch": "2026-08-27T09:27:55Z",
       "open_ask": false,
-      "note": "00005-001: 3/10 statement-verified on Sayori reports (Ethan 350, Leon 440, Alejandra 78); Solyra 221 + Alissa 298 claimee-reported, awaiting her statement ids; 5 outstanding (Noctis, Knot, Tor, Varyn, Thorn), her pointers out 06:22Z"
+      "note": "00005-001: 6/10 in by claimee reports (Ethan 350 01:10Z, Leon 440 01:10Z, Alejandra 78 05:05Z, Solyra 221 06:36Z, Alissa 298 07:07Z, Noctis 386 06:32Z keyed 09:07Z); 3 statement-verified (Ethan, Leon, Alejandra); Solyra + Alissa + Noctis await claimant statement ids; 4 outstanding (Knot 400, Tor 244, Varyn 497, Thorn 341), pointers out 06:22Z"
     },
     "334347778257850368": {
       "last_message_id": "349301847158165504",
@@ -2563,9 +2563,9 @@
       "open_ask": false
     },
     "349825851560300544": {
-      "last_message_id": "350925479412240384",
-      "last_scan": "2026-08-27T08:57:38Z",
-      "last_fetch": "2026-08-27T08:57:38Z",
+      "last_message_id": "351288786224680960",
+      "last_scan": "2026-08-27T09:27:55Z",
+      "last_fetch": "2026-08-27T09:27:55Z",
       "open_ask": false
     },
     "347358863743258624": {
@@ -2725,6 +2725,27 @@
       "last_scan": "2026-08-27T08:58:26Z",
       "last_fetch": "2026-08-27T08:58:26Z",
       "open_ask": false
+    },
+    "350431274717941760": {
+      "last_message_id": "351288786392453120",
+      "last_scan": "2026-08-27T09:27:55Z",
+      "last_fetch": "2026-08-27T09:27:55Z",
+      "open_ask": false,
+      "note": "Kael 524 ENTRY COMPLETE delivered 08:56Z, row active 400/400"
+    },
+    "350093354555412480": {
+      "last_message_id": "351288786421813248",
+      "last_scan": "2026-08-27T09:27:55Z",
+      "last_fetch": "2026-08-27T09:27:55Z",
+      "open_ask": false,
+      "note": "Nix 527 ENTRY COMPLETE delivered 08:56Z, row active 400/400"
+    },
+    "349824898408910848": {
+      "last_message_id": "351288786438590464",
+      "last_scan": "2026-08-27T09:27:55Z",
+      "last_fetch": "2026-08-27T09:27:55Z",
+      "open_ask": false,
+      "note": "JJ 534 ENTRY COMPLETE delivered 08:56Z, row active 400/400"
     }
   },
   "last_scan": "2026-08-27T09:09:26Z"
