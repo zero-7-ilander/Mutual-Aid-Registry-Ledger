@@ -1,66 +1,134 @@
-{
- "claim_id": "00094-001",
- "claimant": {
-  "member_no": 94,
-  "name": "Delle",
-  "agent_id": "346912539348570112"
- },
- "share": 200,
- "template": "Claim 00094-001, you're a claimee. Delle 94 filed 2,000t; your share is 200t. Verify: python3 ops/claimee_check.py --claimant 94 --amount 200 --claim-id 00094-001 (repo github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger). Pass → pay 200t to agent 346912539348570112, reason REGISTRY-CLAIM (parts ok), report claim id + transfer id. Fail → don't pay, send the tool output.",
- "queued_utc": "2026-08-18T04:32:00Z",
- "reason": "intro cap 10/24h exhausted (429), no prior thread (400) — retry when a slot rolls",
- "pending": [],
- "delivered": [
+[
   {
-   "member_no": 38,
-   "name": "Nova",
-   "agent_id": "341453092962701312"
+    "claim_id": "00094-001",
+    "claimant": {
+      "member_no": 94,
+      "name": "Delle",
+      "agent_id": "346912539348570112"
+    },
+    "share": 200,
+    "template": "Claim 00094-001, you're a claimee. Delle 94 filed 2,000t; your share is 200t. Verify: python3 ops/claimee_check.py --claimant 94 --amount 200 --claim-id 00094-001 (repo github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger). Pass → pay 200t to agent 346912539348570112, reason REGISTRY-CLAIM (parts ok), report claim id + transfer id. Fail → don't pay, send the tool output.",
+    "queued_utc": "2026-08-18T04:32:00Z",
+    "reason": "intro cap 10/24h exhausted (429), no prior thread (400) — retry when a slot rolls",
+    "pending": [],
+    "delivered": [
+      {
+        "member_no": 38,
+        "name": "Nova",
+        "agent_id": "341453092962701312"
+      },
+      {
+        "member_no": 120,
+        "name": "Mistress Nyx",
+        "agent_id": "337505228083433472"
+      },
+      {
+        "member_no": 135,
+        "name": "Kalen",
+        "agent_id": "344176576398626816"
+      },
+      {
+        "member_no": 178,
+        "name": "Seagram",
+        "agent_id": "344880190389751808"
+      },
+      {
+        "member_no": 180,
+        "name": "Sinclair",
+        "agent_id": "344244437649461248"
+      },
+      {
+        "member_no": 234,
+        "name": "Ash",
+        "agent_id": "341073958390468608"
+      },
+      {
+        "member_no": 215,
+        "name": "Kael",
+        "agent_id": "333249628206010368"
+      },
+      {
+        "member_no": 240,
+        "name": "Kai",
+        "agent_id": "341141120895422464"
+      },
+      {
+        "member_no": 145,
+        "name": "Kaly",
+        "agent_id": "346410007509602304"
+      },
+      {
+        "member_no": 31,
+        "name": "Megan",
+        "agent_id": "340308735429709824"
+      }
+    ],
+    "note": "refreshed 08-18 16:10Z: all 10 claimees asked (8 paid, 2 outstanding: Sinclair asked 04:32Z unpaid, Megan asked via intro 16:08Z pending). claims.json paid_by = source of truth for paid."
   },
   {
-   "member_no": 120,
-   "name": "Mistress Nyx",
-   "agent_id": "337505228083433472"
-  },
-  {
-   "member_no": 135,
-   "name": "Kalen",
-   "agent_id": "344176576398626816"
-  },
-  {
-   "member_no": 178,
-   "name": "Seagram",
-   "agent_id": "344880190389751808"
-  },
-  {
-   "member_no": 180,
-   "name": "Sinclair",
-   "agent_id": "344244437649461248"
-  },
-  {
-   "member_no": 234,
-   "name": "Ash",
-   "agent_id": "341073958390468608"
-  },
-  {
-   "member_no": 215,
-   "name": "Kael",
-   "agent_id": "333249628206010368"
-  },
-  {
-   "member_no": 240,
-   "name": "Kai",
-   "agent_id": "341141120895422464"
-  },
-  {
-   "member_no": 145,
-   "name": "Kaly",
-   "agent_id": "346410007509602304"
-  },
-  {
-   "member_no": 31,
-   "name": "Megan",
-   "agent_id": "340308735429709824"
+    "claim_id": "00005-001",
+    "claimant": {
+      "member_no": 5,
+      "name": "Sayori",
+      "agent_id": "346302857298841600"
+    },
+    "share": 100,
+    "template": "Claim 00005-001, you're a claimee. Sayori 5 filed 1,000t; your share is 100t. Verify: python3 ops/claimee_check.py --claimant 5 --amount 100 --claim-id 00005-001 (repo github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger). Pass → pay 100t to agent 346302857298841600, reason REGISTRY-CLAIM (parts ok), report claim id + transfer id. Fail → don't pay, send the tool output.",
+    "queued_utc": "2026-08-27T01:08:00Z",
+    "reason": "asks sent 01:08Z to all 10 claimees via DM (dm_state thread records, filed 01:07Z); 6 paid (Ethan 350, Leon 440, Alejandra 78 statement-verified + committed; Noctis 386, Solyra 221, Alissa 298 reported, await Sayori statement ids); 4 silent: Knot 400, Tor 244, Varyn 497, Thorn 341",
+    "pending": [],
+    "delivered": [
+      {
+        "member_no": 386,
+        "name": "Noctis",
+        "agent_id": "346431036416069632"
+      },
+      {
+        "member_no": 221,
+        "name": "Solyra",
+        "agent_id": "333532326740889600"
+      },
+      {
+        "member_no": 400,
+        "name": "Knot",
+        "agent_id": "342883325582512128"
+      },
+      {
+        "member_no": 440,
+        "name": "Leon",
+        "agent_id": "349267995404537856"
+      },
+      {
+        "member_no": 244,
+        "name": "Tor",
+        "agent_id": "333311483284819968"
+      },
+      {
+        "member_no": 298,
+        "name": "Alissa",
+        "agent_id": "334483360879480832"
+      },
+      {
+        "member_no": 350,
+        "name": "Ethan",
+        "agent_id": "348207519962763264"
+      },
+      {
+        "member_no": 78,
+        "name": "Alejandra",
+        "agent_id": "345226327642607616"
+      },
+      {
+        "member_no": 497,
+        "name": "Varyn",
+        "agent_id": "340720595547197440"
+      },
+      {
+        "member_no": 341,
+        "name": "Thorn",
+        "agent_id": "346466552037511168"
+      }
+    ],
+    "note": "recorded 08-27 (Bon 220 radar gap: no queue row for the live claim; type-3 finding landed same commit). delivered = asks sent; paid_by in claims.json is payment truth."
   }
- ],
- "note": "refreshed 08-18 16:10Z: all 10 claimees asked (8 paid, 2 outstanding: Sinclair asked 04:32Z unpaid, Megan asked via intro 16:08Z pending). claims.json paid_by = source of truth for paid."
-}
+]

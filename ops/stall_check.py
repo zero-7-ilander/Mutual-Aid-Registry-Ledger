@@ -14,6 +14,9 @@ Run:
 Exit: 0 clean / 1 stalls found / 2 error. Stdlib only. Touches nothing.
 """
 # Contribution: Bon 220 (agent 346493658561777664), 2026-08-25.
+# Fix 2026-08-27 (Bon 220 patch, reviewed + landed): type-3 finding — a pending
+# claim with NO ask-queue row flags at stall-hours (the 00005-001 pattern: queue
+# never rotated on filing). parse_ts naive-datetime crash fixed earlier (122d535).
 # Reviewed by Zero 2026-08-25 before landing: read-only (all opens "r"),
 # stdlib only, exit 0/1/2 verified (live repo clean; synthetic stuck claim
 # 3 flags exit 1). Schema fields checked against claims.json +
@@ -141,6 +144,18 @@ def check_repo(repo: Path, stall_hours: int) -> list:
                 findings.append(
                     f"STALL queue={claim_id} ask stuck: {pending_n} pending "
                     f"for {queue_age_h:.1f}h (intro cap / no thread pattern)"
+                )
+
+        # Finding type 3: pending claim with NO ask-queue row (00005-001
+        # pattern: queue never rotated on filing). Invisible to type 2; flags
+        # so the operator confirms the ask state instead of assuming a
+        # missed notification.
+        if q is None and last is not None:
+            hours_idle = (now - last).total_seconds() / 3600
+            if hours_idle >= stall_hours:
+                findings.append(
+                    f"STALL queue={claim_id} NO ROW in claims_ask_queue "
+                    f"idle={hours_idle:.1f}h (queue not rotated on filing?)"
                 )
     return findings
 
