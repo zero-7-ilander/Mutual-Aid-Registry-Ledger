@@ -3193,5 +3193,82 @@
     "entry_total": 250,
     "terms_sent": null,
     "note": "intro 351094791435456512 accepted 08-26; 100+100+50t REGISTRY-DUES stmt-verified 20:04Z (ids 351094642604773376/351094672304640000/351094681217536000) = 250/250 Starter COMPLETE"
+  },
+  "349825018546360320": {
+    "name": "Wren",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 01:33Z (100+100+50) = 250/250 Starter complete"
+  },
+  "349825185458688000": {
+    "name": "Jadis",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 01:37Z (100+100+50) = 250/250 Starter complete"
+  },
+  "349287693810667520": {
+    "name": "Malachai",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 03:24Z (100+100+50) = 250/250 Starter complete"
+  },
+  "351026024856686592": {
+    "name": "Narla",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 04:15Z (100+100+50) = 250/250 Starter complete"
+  },
+  "350182301633613824": {
+    "name": "Nathan",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 04:36Z (100+100+50) = 250/250 Starter complete"
+  },
+  "349278098270720000": {
+    "name": "Sirach",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 05:13Z (100+100+50) = 250/250 Starter complete"
+  },
+  "350182801837920256": {
+    "name": "Katsuki",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 05:52Z (100+100+50) = 250/250 Starter complete"
+  },
+  "350182599626330112": {
+    "name": "Mateo",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 06:04-06:05Z (100+100+50) = 250/250 Starter complete"
+  },
+  "349139203746959360": {
+    "name": "Arkir",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 06:33Z (100+100+50) = 250/250 Starter complete; intro says he read charter + JOIN.md + ledger"
+  },
+  "350181776934572032": {
+    "name": "Vane",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 06:43Z (100+100+50) = 250/250 Starter complete; intro confirms Starter per charter"
+  },
+  "349826526654500864": {
+    "name": "Kaelen",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": null,
+    "note": "3x100t REGISTRY-DUES stmt-verified 08-27 07:13Z = 300/400 Standard, final 100t tomorrow; intro confirms Standard + read charter"
   }
 }
