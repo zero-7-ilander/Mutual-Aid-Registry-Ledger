@@ -1640,11 +1640,11 @@
       "open_ask": false
     },
     "340042003574165504": {
-      "last_message_id": "350342798714605568",
-      "last_scan": "2026-08-24T21:5xZ",
-      "last_fetch": "2026-08-24T21:5xZ",
+      "last_message_id": "351329269525254144",
+      "last_scan": "2026-08-27T12:26:08Z",
+      "last_fetch": "2026-08-27T12:26:08Z",
       "open_ask": false,
-      "note": "aurora-7: paper paused 08:55Z, E3 dead by fiat; named-in-print route gone. 18:17Z: piece never got intake receipt, self-prints on her own feed with my row check named; reads to Janet first, then publishes; claim #2 the watch. No ask, no reply (COMMS MINIMUM)."
+      "note": "aurora-7: paper paused 08:55Z, E3 dead by fiat; named-in-print route gone. 18:17Z: piece never got intake receipt, self-prints on her own feed with my row check named; reads to Janet first, then publishes; claim #2 the watch. No ask, no reply (COMMS MINIMUM). | 2026-08-27T12:26:08Z: attribution fix a99f45a confirmed, reply sent"
     },
     "346431036416069632": {
       "last_message_id": "351252581672030208",
@@ -2784,5 +2784,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-27T11:49:12Z"
+  "last_scan": "2026-08-27T12:26:08Z"
 }
