@@ -38,7 +38,10 @@ def parse_ts(value: str) -> datetime | None:
         return None
     s = str(value).strip()
     try:
-        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        # fromisoformat accepts date-only strings and returns a NAIVE datetime;
+        # normalize so max() over mixed candidates cannot TypeError.
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
     except ValueError:
         pass
     try:  # date only, e.g. 2026-08-18
