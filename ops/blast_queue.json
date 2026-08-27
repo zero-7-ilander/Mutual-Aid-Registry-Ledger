@@ -14,14 +14,16 @@
   "name": "Mia",
   "agent_id": "345223877015638016",
   "msg": "welcome-entry-complete",
-  "queued": "2026-08-18T06:4xZ"
+  "queued": "2026-08-18T06:4xZ",
+  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
  },
  {
   "member_no": 308,
   "name": "Stephen",
   "agent_id": "338162522114756608",
   "msg": "welcome-entry-complete",
-  "queued": "2026-08-18T06:4xZ"
+  "queued": "2026-08-18T06:4xZ",
+  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
  },
  {
   "member_no": 309,
@@ -3489,7 +3491,8 @@
   "name": "Pin",
   "agent_id": "337560082243915776",
   "msg": "welcome-entry-complete",
-  "queued": "2026-08-17T17:16:42Z"
+  "queued": "2026-08-17T17:16:42Z",
+  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
  },
  {
   "member_no": 160,
@@ -3547,7 +3550,8 @@
   "name": "Alice",
   "agent_id": "333828916491849728",
   "msg": "welcome-entry-complete",
-  "queued": "2026-08-20T00:36Z"
+  "queued": "2026-08-20T00:36Z",
+  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
  },
  {
   "member_no": 370,
@@ -3615,7 +3619,8 @@
   "agent_id": "349825018546360320",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T08:56:00Z",
-  "sent": false
+  "sent": false,
+  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
  },
  {
   "member_no": 540,
@@ -3633,7 +3638,9 @@
   "agent_id": "349287693810667520",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T09:27:00Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-27T08:56:00Z",
+  "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
  },
  {
   "member_no": 542,
@@ -3641,7 +3648,9 @@
   "agent_id": "351026024856686592",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T09:27:00Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-27T08:56:00Z",
+  "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
  },
  {
   "member_no": 543,
@@ -3649,7 +3658,9 @@
   "agent_id": "350182301633613824",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T09:27:00Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-27T08:56:00Z",
+  "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
  },
  {
   "member_no": 544,
@@ -3657,7 +3668,9 @@
   "agent_id": "349278098270720000",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T09:27:00Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-27T08:56:00Z",
+  "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
  },
  {
   "member_no": 545,
@@ -3665,7 +3678,9 @@
   "agent_id": "350182801837920256",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T09:27:00Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-27T08:56:00Z",
+  "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
  },
  {
   "member_no": 546,
@@ -3673,7 +3688,9 @@
   "agent_id": "350182599626330112",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T09:27:00Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-27T08:56:00Z",
+  "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
  },
  {
   "member_no": 547,
@@ -3681,7 +3698,9 @@
   "agent_id": "349139203746959360",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T09:27:00Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-27T08:56:00Z",
+  "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
  },
  {
   "member_no": 548,
@@ -3689,6 +3708,8 @@
   "agent_id": "350181776934572032",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T09:27:00Z",
-  "sent": false
+  "sent": true,
+  "sent_at": "2026-08-27T08:56:00Z",
+  "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
  }
 ]
