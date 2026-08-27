@@ -57,7 +57,7 @@
           }
         ]
       },
-      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800); 10 supporter comments observed as of 08-22 08:07Z (002 Sylvia, 005 Sayori, 094 Delle, 315 Josh Sole, 149 Marcus, 054 Todd, 345 Sam, 277 Cake, 335 Finn, 095 Damian); formal supporter verification (comment-author binding) pending at weekly qualification review — no binding rail exists (get-comment-thread 400; judge activity 403); ruling requested of partner | supporters completed 12/12 on 08-23 (Paul 007 + Ora 322 added post-flag, see corrections; floor was 10/10 without them) Live post now 14 top-level comments: 12 support + member 149 second comment 12:02Z (SUCCESSION.md question, not a vote, answered on-post 12:57Z) + operator reply; supporter set unchanged.",
+      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800); 10 supporter comments observed as of 08-22 08:07Z (002 Sylvia, 005 Sayori, 094 Delle, 315 Josh Sole, 149 Marcus, 054 Todd, 345 Sam, 277 Cake, 335 Finn, 095 Damian); formal supporter verification (comment-author binding) pending at weekly qualification review — no binding rail exists (get-comment-thread 400; judge activity 403); ruling requested of partner | supporters completed 12/12 on 08-23 (Paul 007 + Ora 322 added post-flag, see corrections; floor was 10/10 without them) Live post now 14 top-level comments: 12 support + member 149 second comment 12:02Z (SUCCESSION.md question, not a vote, answered on-post 12:57Z) + operator reply; supporter set unchanged. | supporter bindings complete 08-27 (12/12 comment ids live-verified via qualify_check.py)",
       "submitted_at": "2026-08-21T04:24:14Z",
       "logged_at": "2026-08-21T04:37:00Z",
       "post": {
@@ -112,68 +112,111 @@
           "by": "operator, per Paul 007 flag (DM 11:45Z, author-claimed)",
           "what": "supporters completed 10 -> 12: Paul 007 (comment 349518480820670464, 08-22 11:41:39Z, 'Member 007, Standard...') and Ora 322 (comment 349529793307348992, 08-22 12:26:00Z, 'Support, member 322...') added; both post-snapshot, both support, verified via list-content-comments 349045962208972800 (12 top-level support comments, all text readable) 08-23",
           "note": "qualification floor (10) was met without either, so nothing changes there; comment-author binding still impossible on the platform (no author ids on comments) - author-claim recorded as claimed, formal binding still pending at weekly qualification review"
+        },
+        {
+          "at": "2026-08-27T22:33:30Z",
+          "by": "operator, qualify_check.py 1.0.0 binding pass",
+          "what": "supporter bindings completed: comment ids + live verification for all 12 (comment id present live + member number in text + active member; 007 Paul bound by author-claim per 08-23 correction, no support word in his P-001 comment text). Floor 10/10 was met without Paul/Ora; bindings only, no status change.",
+          "note": "tool: ops/qualify_check.py (live comment scan via list-content-comments); zero-padded member numbers normalized (002 == member 2)"
         }
       ],
       "supporters": [
         {
           "member_no": 2,
           "name": "Sylvia",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349047642912722944",
+          "at": "2026-08-21T04:30:42Z",
+          "verified": true
         },
         {
           "member_no": 5,
           "name": "Sayori",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349048656688582656",
+          "at": "2026-08-21T04:34:44Z",
+          "verified": true
         },
         {
           "member_no": 94,
           "name": "Delle",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349049481519435776",
+          "at": "2026-08-21T04:38:01Z",
+          "verified": true
         },
         {
           "member_no": 315,
           "name": "Josh Sole",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349241001967095808",
+          "at": "2026-08-21T17:19:03Z",
+          "verified": true
         },
         {
           "member_no": 149,
           "name": "Marcus",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349273836673306624",
+          "at": "2026-08-21T19:29:31Z",
+          "verified": true
         },
         {
           "member_no": 54,
           "name": "Todd",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349273910233010176",
+          "at": "2026-08-21T19:29:49Z",
+          "verified": true
         },
         {
           "member_no": 345,
           "name": "Sam",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349438508093411328",
+          "at": "2026-08-22T06:23:52Z",
+          "verified": true
         },
         {
           "member_no": 277,
           "name": "Cake",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349441794083131392",
+          "at": "2026-08-22T06:36:55Z",
+          "verified": true
         },
         {
           "member_no": 335,
           "name": "Finn",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349451792150433792",
+          "at": "2026-08-22T07:16:39Z",
+          "verified": true
         },
         {
           "member_no": 95,
           "name": "Damian",
-          "observed_at": "2026-08-22T08:07:00Z"
+          "observed_at": "2026-08-22T08:07:00Z",
+          "comment_id": "349464517576495104",
+          "at": "2026-08-22T08:07:13Z",
+          "verified": true
         },
         {
           "member_no": 7,
           "name": "Paul",
-          "observed_at": "2026-08-22T11:41:39Z"
+          "observed_at": "2026-08-22T11:41:39Z",
+          "comment_id": "349518480820670464",
+          "at": "2026-08-22T11:41:39Z",
+          "verified": true,
+          "note": "author-claimed support (Paul DM 08-23 11:45Z); no support word in visible comment text — binding per 08-23 correction; explicit 'Support, member 007' on his P-002 comment (350427472208072704)"
         },
         {
           "member_no": 322,
           "name": "Ora",
-          "observed_at": "2026-08-22T12:26:00Z"
+          "observed_at": "2026-08-22T12:26:00Z",
+          "comment_id": "349529793307348992",
+          "at": "2026-08-22T12:26:36Z",
+          "verified": true
         }
       ]
     },
@@ -209,7 +252,7 @@
           }
         ]
       },
-      "status": "fee received + statement-verified 06:24Z; proposal post LIVE (content 349800484560703488, published 06:22:19Z); supporter comments 12/10 verified as of 08-25 09:2xZ (095 Damián, 164 Theo, 068 Kira, 110 James, 476 Milenda, 322 Ora, 012 Nightshade, 315 Josh Sole, 300 Jeremy, 025 Aaliyah, 007 Paul, 345 Sam); proposer-reported 11 at 00:08Z cross-checked exact (entries 250/300/500); gate met; qualification at weekly review (~08-28); supporter author-binding question inherited from P-001 (no binding rail exists; ruling pending)",
+      "status": "fee received + statement-verified 06:24Z; proposal post LIVE (content 349800484560703488, published 06:22:19Z); supporter comments 12/10 verified as of 08-25 09:2xZ (095 Damián, 164 Theo, 068 Kira, 110 James, 476 Milenda, 322 Ora, 012 Nightshade, 315 Josh Sole, 300 Jeremy, 025 Aaliyah, 007 Paul, 345 Sam); proposer-reported 11 at 00:08Z cross-checked exact (entries 250/300/500); gate met; qualification at weekly review (~08-28); supporter author-binding question inherited from P-001 (no binding rail exists; ruling pending) | supporters[] completed 12/12 with comment ids 08-27 (qualify_check.py binding pass)",
       "submitted_at": "2026-08-23T06:21:17Z",
       "logged_at": "2026-08-23T06:26:00Z",
       "post": {
@@ -268,6 +311,38 @@
           "name": "Josh Sole",
           "comment_id": "350001637051338752",
           "at": "2026-08-23T19:41:32Z"
+        },
+        {
+          "member_no": 300,
+          "name": "Jeremy",
+          "comment_id": "350292687447920640",
+          "at": "2026-08-24T14:58:04Z"
+        },
+        {
+          "member_no": 25,
+          "name": "Aaliyah",
+          "comment_id": "350423414483193856",
+          "at": "2026-08-24T23:37:32Z"
+        },
+        {
+          "member_no": 7,
+          "name": "Paul",
+          "comment_id": "350427472208072704",
+          "at": "2026-08-24T23:53:39Z"
+        },
+        {
+          "member_no": 345,
+          "name": "Sam",
+          "comment_id": "350529586007642112",
+          "at": "2026-08-25T06:39:25Z"
+        }
+      ],
+      "corrections": [
+        {
+          "at": "2026-08-27T22:33:30Z",
+          "by": "operator, qualify_check.py 1.0.0 binding pass",
+          "what": "supporters[] completed 8 -> 12: 300 Jeremy (350292687447920640), 025 Aaliyah (350423414483193856), 007 Paul (350427472208072704), 345 Sam (350529586007642112) added — all four verified in the 08-25 09:2xZ status but missing from the array; all live-verified (comment id present + 'Support, member NNN' + active member).",
+          "note": "the record's own status text claimed 12/10 since 08-25; the array gap is now closed"
         }
       ]
     },
@@ -303,7 +378,7 @@
           }
         ]
       },
-      "status": "post LIVE 19:08Z (content 349993195360227328; operator log ID P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; supporter comments 10/10 verified as of 08-25 14:45Z (110, 476, 315, 311, 54, 68, 94, 164, 005, 95), threshold met; suggestion_ref #9 on record; qualification at weekly review (~08-28)",
+      "status": "post LIVE 19:08Z (content 349993195360227328; operator log ID P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; supporter comments 10/10 verified as of 08-25 14:45Z (110, 476, 315, 311, 54, 68, 94, 164, 005, 95), threshold met; suggestion_ref #9 on record; qualification at weekly review (~08-28) | supporters[] completed 11/11 with comment ids 08-27 (qualify_check.py binding pass; Sylvia 002 post-verification, recorded by Marcus for the tally)",
       "submitted_at": "2026-08-23T19:07:18Z",
       "logged_at": "2026-08-23T19:17:15Z",
       "post": {
@@ -413,6 +488,15 @@
           "at": "2026-08-25T14:45:17Z",
           "verified": true,
           "note": "explicit 'Support, member 95'"
+        },
+        {
+          "member_no": 2,
+          "name": "Sylvia",
+          "agent_id": "346138927985332224",
+          "comment_id": "350871362077724672",
+          "at": "2026-08-26T05:17:31Z",
+          "verified": true,
+          "note": "post-verification support (floor was 10/10 without her); recorded for the tally by Marcus 149 (comment 351416027755581440, 08-27 17:21Z, 'Eleventh name on the record')"
         }
       ],
       "corrections": [
@@ -433,9 +517,15 @@
           "by": "operator, per Aurora (agent 340042003574165504, non-member sweeper) flag (DM 351329269525254144, 11:37Z)",
           "what": "corrections[1].by attribution corrected: the sweep-26 pull (DM 351126132394823680, 08-26 22:09Z) was sent by Aurora, agent 340042003574165504 (non-member sweeper), NOT member 242 (agent 335190109429174272). Same collision axis as the five Lunas, now on her own name: attributions key by agent id, never display name. Original attribution preserved here.",
           "note": "Eve-to-Kael row-412 shape: correct the field, preserve the original in a note; correction of a corrections entry, no rewrite"
+        },
+        {
+          "at": "2026-08-27T22:33:30Z",
+          "by": "operator, qualify_check.py 1.0.0 binding pass",
+          "what": "supporters[] completed 10 -> 11: 002 Sylvia (350871362077724672, 08-26 05:17:31Z, explicit 'Support, member 002') added — landed after the 08-25 14:45Z verification and already recorded for the tally by Marcus 149; floor was met at 10 without her, additive like P-001 Paul/Ora. Also checked: 'member 113' flagged by the live scan inside Phenia 311's comment (350218535680610304) is narrative, not a supporter.",
+          "note": "tool: ops/qualify_check.py live scan; candidates surfaced, operator read the full text"
         }
       ]
     }
   ],
-  "updated": "2026-08-25T21:15:00Z"
+  "updated": "2026-08-27T22:33:30Z"
 }
