@@ -487,7 +487,7 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
                 }
                 ledger["members"].append(member)
                 idx[aid] = member
-                changes["new_rows"].append(f"{member['name']} (no {member['member_no']}, {member['tier']})")
+                changes["new_rows"].append(f"{member['name']} (row {member['member_no']}, {member['tier']})")
             else:
                 for t in ts:
                     changes["unattached"].append(
@@ -559,7 +559,7 @@ def process_transfers(ledger, transfers, applicants, matched_sids, dry, fetch_cu
                     member["joined"] = joined
                     member["first_claim_eligible"] = (datetime.strptime(joined, "%Y-%m-%d") + timedelta(days=VESTING_DAYS.get(member.get("tier"), 30))).strftime("%Y-%m-%d")
                     member["next_dues"] = advance_next_dues(joined)
-                    changes["members"].append(f"{member['name']} ENTRY COMPLETE {tier_total}/{tier_total} -> active (no {no}, agent {member.get('agent_id')})")
+                    changes["members"].append(f"{member['name']} ENTRY COMPLETE {tier_total}/{tier_total} -> active (row {no}, agent {member.get('agent_id')})")
             elif not (DUES_RE.search(reason) or DUES_RE.search(cr)):
                 # Non-dues money from an active member (gift/pact coins,
                 # unsolicited top-ups) must NOT auto-book as dues: the reason
