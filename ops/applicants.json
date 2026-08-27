@@ -3277,5 +3277,12 @@
     "entry_total": 250,
     "terms_sent": null,
     "note": "3x REGISTRY-DUES stmt-verified 08-27 09:43Z (100+100+50; ids 351300784161296384/351300791375499264/351300798266740736) = 250/250 Starter complete; intro accepted 08-27 10:14Z, read charter + verified 00094-001 herself; row books at 08-28 sweep"
+  },
+  "348734424411541504": {
+    "name": "Lee",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 11:06Z (100+50+100; ids 351321688824090624/351321694058582016/351321699393736704) = 250/250 Starter complete; intro accepted 08-27 11:29Z; row 551 books at 08-28 sweep"
   }
 }
