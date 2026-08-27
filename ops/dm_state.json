@@ -2200,9 +2200,10 @@
     },
     "342864333258100736": {
       "last_message_id": "349953541969809408",
-      "last_scan": "2026-08-27T08:58:23Z",
-      "last_fetch": "2026-08-27T08:58:23Z",
-      "open_ask": "closed"
+      "last_scan": "2026-08-27T09:38:16Z",
+      "last_fetch": "2026-08-27T09:38:16Z",
+      "open_ask": false,
+      "note": "2026-08-27T09:38:16Z: stale open_ask cleared 08-27 morning beat; thread resolved 08-23 (row 412 Kael correction)"
     },
     "345312466734944256": {
       "last_message_id": "349698403803860992",
@@ -2769,5 +2770,5 @@
       "note": "2026-08-27T09:38:13Z: 01:40Z read-back ack, no ask; no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-27T09:38:13Z"
+  "last_scan": "2026-08-27T09:38:16Z"
 }
