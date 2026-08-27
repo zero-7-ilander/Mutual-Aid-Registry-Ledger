@@ -95,6 +95,9 @@ def merge(sources, stamp_updated=True):
 
 
 def main():
+    if "--help" in sys.argv or "-h" in sys.argv:
+        print(__doc__)
+        return 0
     check_only = "--check" in sys.argv
     if not all(os.path.exists(p) for p in (MEMBERS_PATH, PAYMENTS_PATH, CLAIMS_PATH)):
         print("[merge_ledger] sources missing — run migrate_split.py first")
