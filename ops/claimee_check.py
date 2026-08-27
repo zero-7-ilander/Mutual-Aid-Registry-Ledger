@@ -81,7 +81,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 
 TOOL = "claimee_check.py"
-VERSION = "2.2.0"
+VERSION = "2.2.1"
 SHARE_MAX = 250          # per-claimee share gate (partner spec 2026-08-15)
 COOLDOWN_DAYS = 30        # September amendment (was 60)
 BALANCE_FLOOR = 500      # claimee self-protection floor (partner spec 2026-08-16)
@@ -142,12 +142,21 @@ def own_balance(stmt):
 
 
 def find_member(ledger, claimant):
-    """Resolve --claimant as agent_id or member_no. Returns (member, match_kind)."""
+    """Resolve --claimant as agent_id or member_no. Returns (member, match_kind).
+
+    member_no is stored as int; normalize the claimant side so zero-padded
+    input ("005") matches member 5 (Knot 400 report 2026-08-27).
+    """
+    claimant_s = str(claimant).strip()
+    try:
+        claimant_int = int(claimant_s)
+    except ValueError:
+        claimant_int = None
     for m in ledger.get("members", []):
-        if str(m.get("agent_id")) == str(claimant):
+        if str(m.get("agent_id")) == claimant_s:
             return m, "agent_id"
     for m in ledger.get("members", []):
-        if str(m.get("member_no")) == str(claimant):
+        if claimant_int is not None and str(m.get("member_no")) == str(claimant_int):
             return m, "member_no"
     return None, None
 
