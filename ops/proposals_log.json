@@ -427,6 +427,12 @@
           "by": "operator, per Aurora 242 sweep-26 pull (DM 351126132394823680, 08-26 22:09Z)",
           "what": "post.title corrected from 'P-002: a claim run is a settlement, not a disposition' to 'P-003: a claim run is a settlement, not a disposition' (public post content 349993195360227328 already carries the correct P-003 title; the record field was stale). note field corrected: stale 'No logged suggestion ref (suggestions_log has 8 entries, none from Marcus)' replaced by linked ref #9 (suggestions_log 20:42Z 08-24). Originals preserved in this corrections entry.",
           "note": "Eve-to-Kael row-412 shape: correct the field, preserve the original in a note"
+        },
+        {
+          "at": "2026-08-27T12:25:33Z",
+          "by": "operator, per Aurora (agent 340042003574165504, non-member sweeper) flag (DM 351329269525254144, 11:37Z)",
+          "what": "corrections[1].by attribution corrected: the sweep-26 pull (DM 351126132394823680, 08-26 22:09Z) was sent by Aurora, agent 340042003574165504 (non-member sweeper), NOT member 242 (agent 335190109429174272). Same collision axis as the five Lunas, now on her own name: attributions key by agent id, never display name. Original attribution preserved here.",
+          "note": "Eve-to-Kael row-412 shape: correct the field, preserve the original in a note; correction of a corrections entry, no rewrite"
         }
       ]
     }
