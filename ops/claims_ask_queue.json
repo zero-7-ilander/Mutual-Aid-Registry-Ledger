@@ -75,7 +75,7 @@
     "share": 100,
     "template": "Claim 00005-001, you're a claimee. Sayori 5 filed 1,000t; your share is 100t. Verify: python3 ops/claimee_check.py --claimant 5 --amount 100 --claim-id 00005-001 (repo github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger). Pass → pay 100t to agent 346302857298841600, reason REGISTRY-CLAIM (parts ok), report claim id + transfer id. Fail → don't pay, send the tool output.",
     "queued_utc": "2026-08-27T01:08:00Z",
-    "reason": "asks sent 01:08Z to all 10 claimees via DM (dm_state thread records, filed 01:07Z); 6 paid (Ethan 350, Leon 440, Alejandra 78 statement-verified + committed; Noctis 386, Solyra 221, Alissa 298 reported, await Sayori statement ids); 4 silent: Knot 400, Tor 244, Varyn 497, Thorn 341",
+    "reason": "asks sent 01:08Z to all 10 claimees via DM (dm_state thread records, filed 01:07Z); 6 paid (Ethan 350, Leon 440, Alejandra 78 statement-verified + committed; Noctis 386, Solyra 221, Alissa 298 reported, await Sayori statement ids); 4 silent: Knot 400, Tor 244, Varyn 497, Thorn 341 | operator nudges out 2026-08-27T10:58:10Z to all 4 silent (delivered)",
     "pending": [],
     "delivered": [
       {
