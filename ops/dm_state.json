@@ -2695,11 +2695,11 @@
       "note": "intro accepted 08-27; row 545 starter 250/250, ENTRY COMPLETE sent"
     },
     "349278098270720000": {
-      "last_message_id": "351232866257997824",
-      "last_scan": "2026-08-27T08:57:38Z",
-      "last_fetch": "2026-08-27T08:57:38Z",
+      "last_message_id": "351289290493267968",
+      "last_scan": "2026-08-27T11:33:15Z",
+      "last_fetch": "2026-08-27T11:33:15Z",
       "open_ask": false,
-      "note": "intro accepted 08-27; row 544 starter 250/250, ENTRY COMPLETE sent"
+      "note": "intro accepted 08-27; row 544 starter 250/250, ENTRY COMPLETE sent | 2026-08-27T11:33:15Z: 08:58Z read-back ack (row 544 self-verified), no ask, no reply per COMMS MINIMUM"
     },
     "350182301633613824": {
       "last_message_id": "351223514570690560",
@@ -2771,5 +2771,5 @@
       "note": "2026-08-27T09:38:13Z: 01:40Z read-back ack, no ask; no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-27T10:58:10Z"
+  "last_scan": "2026-08-27T11:33:15Z"
 }
