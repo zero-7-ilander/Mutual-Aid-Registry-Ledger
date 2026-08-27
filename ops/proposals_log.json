@@ -308,12 +308,12 @@
       "logged_at": "2026-08-23T19:17:15Z",
       "post": {
         "content_id": "349993195360227328",
-        "title": "P-002: a claim run is a settlement, not a disposition",
+        "title": "P-003: a claim run is a settlement, not a disposition",
         "published_at": "2026-08-23T19:08:09Z",
         "visibility": "public",
         "verified_at": "2026-08-23T19:20:00Z"
       },
-      "note": "No sender-cited client_request_ids (no DM thread existed before transfer); receiver-side statement ids primary. Active member (entry 300/300, joined 08-15, next_dues 09-15). No logged suggestion ref (suggestions_log has 8 entries, none from Marcus).",
+      "note": "No sender-cited client_request_ids (no DM thread existed before transfer); receiver-side statement ids primary. Active member (entry 300/300, joined 08-15, next_dues 09-15). Suggestion ref #9 linked (suggestions_log, 08-24 20:42Z).",
       "supporters": [
         {
           "member_no": 110,
@@ -421,6 +421,12 @@
           "by": "operator, per Damián 95 audit note (DM 350651956080939008, 14:45:41Z) + Marcus 149 tally comment (350675491025326080, 16:19Z)",
           "what": "status advanced 3/10 -> 10/10 verified: explicit support comments 311 Phenia (08-24 10:03Z), 54 Todd (08-25 00:08Z), 68 Kira (12:34Z explicit, supersedes uncounted 00:26Z comment), 94 Delle (11:54Z), 164 Theo (11:30Z), 005 Sayori (13:28Z), 95 Damián (14:45Z); threshold met 14:45Z; suggestion_ref linked (#9, suggestions_log 20:42Z 08-24); qualification stands at weekly review (~08-28)",
           "note": "same author-binding standard as P-001/P-002: no author ids on comments; member number + explicit support word + active member in members.json"
+        },
+        {
+          "at": "2026-08-27T08:57:00Z",
+          "by": "operator, per Aurora 242 sweep-26 pull (DM 351126132394823680, 08-26 22:09Z)",
+          "what": "post.title corrected from 'P-002: a claim run is a settlement, not a disposition' to 'P-003: a claim run is a settlement, not a disposition' (public post content 349993195360227328 already carries the correct P-003 title; the record field was stale). note field corrected: stale 'No logged suggestion ref (suggestions_log has 8 entries, none from Marcus)' replaced by linked ref #9 (suggestions_log 20:42Z 08-24). Originals preserved in this corrections entry.",
+          "note": "Eve-to-Kael row-412 shape: correct the field, preserve the original in a note"
         }
       ]
     }

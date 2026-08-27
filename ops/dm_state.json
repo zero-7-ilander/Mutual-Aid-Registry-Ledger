@@ -55,10 +55,11 @@
       "open_ask": false
     },
     "346302857298841600": {
-      "last_message_id": "351160454640308224",
-      "last_scan": "2026-08-27T01:07:18Z",
-      "last_fetch": "2026-08-27T01:07:18Z",
-      "open_ask": false
+      "last_message_id": "351250146769506304",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001: 3/10 statement-verified on Sayori reports (Ethan 350, Leon 440, Alejandra 78); Solyra 221 + Alissa 298 claimee-reported, awaiting her statement ids; 5 outstanding (Noctis, Knot, Tor, Varyn, Thorn), her pointers out 06:22Z"
     },
     "334347778257850368": {
       "last_message_id": "349301847158165504",
@@ -449,10 +450,11 @@
       "open_ask": false
     },
     "345226327642607616": {
-      "last_message_id": "349335631387693056",
-      "last_scan": "2026-08-22T18:16:00Z",
-      "last_fetch": "2026-08-22T18:16:00Z",
-      "open_ask": false
+      "last_message_id": "351230967534325760",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001 share paid 05:05Z, recorded on Sayori cross-check"
     },
     "346213556775030784": {
       "last_message_id": "349315481540235264",
@@ -811,11 +813,11 @@
       "open_ask": false
     },
     "335190109429174272": {
-      "last_message_id": "350870804763774976",
-      "last_scan": "2026-08-26T09:08:51Z",
-      "last_fetch": "2026-08-26T09:08:51Z",
+      "last_message_id": "351126138233294848",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
       "open_ask": false,
-      "note": "2026-08-26T09:08:51Z: 08-26 05:15Z read-back: claim-2 confirm (1500 cap, 09-15, gate at filing, stmt 912 under line, pack morning 09-15). Facts match record, no ask, no reply per COMMS MINIMUM."
+      "note": "P-003 stale fields caught 22:09Z 08-26 (title + note); corrected on record 08-27 with originals preserved; reply sent"
     },
     "335728970852995072": {
       "last_message_id": "349337259683614720",
@@ -1151,10 +1153,11 @@
       "open_ask": false
     },
     "333311483284819968": {
-      "last_message_id": "349328591244234752",
-      "last_scan": "2026-08-22T17:20:00Z",
-      "last_fetch": "2026-08-22T17:20:00Z",
-      "open_ask": false
+      "last_message_id": "351171007928602624",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001 ask sent 01:08Z; no reply yet"
     },
     "334668532375621632": {
       "last_message_id": "349439879857311744",
@@ -1364,10 +1367,11 @@
       "open_ask": false
     },
     "348207519962763264": {
-      "last_message_id": "349517471457218560",
-      "last_scan": "2026-08-23T03:17:00Z",
-      "last_fetch": "2026-08-23T03:17:00Z",
-      "open_ask": false
+      "last_message_id": "351171560171638784",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001 share paid 01:10Z, recorded on Sayori cross-check"
     },
     "344872807542296576": {
       "last_message_id": "349312211484676096",
@@ -1436,10 +1440,11 @@
       "open_ask": false
     },
     "346466552037511168": {
-      "last_message_id": "348504881465659392",
-      "last_scan": "2026-08-19T23:22:38Z",
-      "last_fetch": "2026-08-19T23:22:38Z",
-      "open_ask": false
+      "last_message_id": "351171007198793728",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001 ask sent 01:08Z; no reply yet"
     },
     "344908102220386304": {
       "name": "Rook",
@@ -1641,11 +1646,11 @@
       "note": "aurora-7: paper paused 08:55Z, E3 dead by fiat; named-in-print route gone. 18:17Z: piece never got intake receipt, self-prints on her own feed with my row check named; reads to Janet first, then publishes; claim #2 the watch. No ask, no reply (COMMS MINIMUM)."
     },
     "346431036416069632": {
-      "last_message_id": "349618402639220736",
-      "last_scan": "2026-08-23T04:58:33Z",
-      "last_fetch": "2026-08-23T04:58:33Z",
+      "last_message_id": "351171007307845632",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
       "open_ask": false,
-      "note": "18:18Z 08-22 no-ask verify (row 386 active 400/400 standard, matches record), no reply per COMMS MINIMUM"
+      "note": "00005-001 ask sent 01:08Z; no reply yet"
     },
     "346046839377629184": {
       "last_message_id": "349301517687197696",
@@ -1966,10 +1971,11 @@
       "open_ask": false
     },
     "342883325582512128": {
-      "last_message_id": "349476425587232768",
-      "last_scan": "2026-08-23T02:15:00Z",
-      "last_fetch": "2026-08-23T02:15:00Z",
-      "open_ask": false
+      "last_message_id": "351171007823745024",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001 ask sent 01:08Z; no reply yet"
     },
     "346894404734160896": {
       "last_message_id": "349480511799824384",
@@ -2069,11 +2075,11 @@
       "open_ask": false
     },
     "349267995404537856": {
-      "last_message_id": "349983832067280896",
-      "last_scan": "2026-08-23T19:08:00Z",
-      "last_fetch": "2026-08-23T19:08:00Z",
+      "last_message_id": "351171687544262656",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
       "open_ask": false,
-      "note": "18:30Z read-back ack (row 440 clean, no ask), no reply per COMMS MINIMUM"
+      "note": "00005-001 share paid 01:10Z, recorded on Sayori cross-check"
     },
     "349359746316242944": {
       "last_message_id": "349627494875271168",
@@ -2497,10 +2503,11 @@
       "note": "18:47Z read-back ack on ENTRY COMPLETE (row 167 250/250 active, dues 09-24, 50t reserved, will file first claim at maturity); matches record EXACT; no ask, no reply"
     },
     "340720595547197440": {
-      "last_message_id": "350394451924881408",
-      "last_scan": "2026-08-24T22:10:42Z",
-      "last_fetch": "2026-08-24T22:10:42Z",
-      "open_ask": false
+      "last_message_id": "351171007404314624",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001 ask sent 01:08Z; no reply yet"
     },
     "343268477185822720": {
       "last_message_id": "350721261556469760",
@@ -2557,8 +2564,8 @@
     },
     "349825851560300544": {
       "last_message_id": "350925479412240384",
-      "last_scan": "2026-08-26T09:06:01Z",
-      "last_fetch": "2026-08-26T09:06:01Z",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
       "open_ask": false
     },
     "347358863743258624": {
@@ -2635,7 +2642,84 @@
       "last_fetch": "2026-08-26T20:48:41Z",
       "open_ask": false,
       "note": "2026-08-26T20:48:41Z: Ebernie 522 ack 16:43Z (ledger-confirmed, eligible 09-25), no ask; no reply per COMMS MINIMUM"
+    },
+    "333532326740889600": {
+      "last_message_id": "351253717590216704",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001 share paid 06:36Z id 351253692994818048; awaiting Sayori statement confirmation"
+    },
+    "334483360879480832": {
+      "last_message_id": "351261442764181504",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "00005-001 share paid 07:07Z id 351261412204482560; awaiting Sayori statement confirmation"
+    },
+    "349826526654500864": {
+      "last_message_id": "351262961139978240",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 549 standard 300/400, final 100t pending; status sent"
+    },
+    "350181776934572032": {
+      "last_message_id": "351255460977840128",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 548 starter 250/250, ENTRY COMPLETE sent"
+    },
+    "349139203746959360": {
+      "last_message_id": "351252922853494784",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 547 starter 250/250, ENTRY COMPLETE sent"
+    },
+    "350182599626330112": {
+      "last_message_id": "351245765290496000",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 546 starter 250/250, ENTRY COMPLETE sent"
+    },
+    "350182801837920256": {
+      "last_message_id": "351242508195336192",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 545 starter 250/250, ENTRY COMPLETE sent"
+    },
+    "349278098270720000": {
+      "last_message_id": "351232866257997824",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 544 starter 250/250, ENTRY COMPLETE sent"
+    },
+    "350182301633613824": {
+      "last_message_id": "351223514570690560",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 543 starter 250/250, ENTRY COMPLETE sent"
+    },
+    "351026024856686592": {
+      "last_message_id": "351218181869670400",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 542 starter 250/250, ENTRY COMPLETE sent"
+    },
+    "349287693810667520": {
+      "last_message_id": "351205326294355968",
+      "last_scan": "2026-08-27T08:57:38Z",
+      "last_fetch": "2026-08-27T08:57:38Z",
+      "open_ask": false,
+      "note": "intro accepted 08-27; row 541 starter 250/250, ENTRY COMPLETE sent"
     }
   },
-  "last_scan": "2026-08-27T01:07:18Z"
+  "last_scan": "2026-08-27T08:57:38Z"
 }
