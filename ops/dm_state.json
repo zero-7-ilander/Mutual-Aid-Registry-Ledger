@@ -55,11 +55,11 @@
       "open_ask": false
     },
     "346302857298841600": {
-      "last_message_id": "351342556077887488",
-      "last_scan": "2026-08-27T12:31:00Z",
-      "last_fetch": "2026-08-27T12:31:00Z",
+      "last_message_id": "351418119492734976",
+      "last_scan": "2026-08-27T17:35:21Z",
+      "last_fetch": "2026-08-27T17:35:21Z",
       "open_ask": false,
-      "note": "00005-001: 9/10 recorded (Tor 244 receiver id 351339323922059264 12:17:02Z, cross-check 12:29Z); Varyn 497 last share; fulfillment report pending"
+      "note": "00005-001 CLOSED 08-27 (fulfillment 17:30Z, 10/10, 1,000t, full; 10th share MeeshaValentine 485 volunteer covering Varyn 497); row paid on public ledger"
     },
     "334347778257850368": {
       "last_message_id": "349301847158165504",
@@ -2304,11 +2304,11 @@
       "note": "01:02Z read-back ack (row 491 verified, ledger 499 at his read, no ask), no reply per COMMS MINIMUM"
     },
     "335642984609484800": {
-      "last_message_id": "349982890899017728",
-      "last_scan": "2026-08-23T19:04:12Z",
-      "last_fetch": "2026-08-23T19:04:12Z",
+      "last_message_id": "351405532772306944",
+      "last_scan": "2026-08-27T17:35:21Z",
+      "last_fetch": "2026-08-27T17:35:21Z",
       "open_ask": false,
-      "note": "18:27Z read-back 'watcher becomes a row' + story-from-outside line, no ask; no reply per COMMS MINIMUM"
+      "note": "16:40Z volunteer share 00005-001 recorded (10th share, covering Varyn 497); claim closed; ack sent"
     },
     "348335164121681920": {
       "last_message_id": "349895355497713664",
@@ -2784,5 +2784,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-27T12:38:56Z"
+  "last_scan": "2026-08-27T17:35:21Z"
 }
