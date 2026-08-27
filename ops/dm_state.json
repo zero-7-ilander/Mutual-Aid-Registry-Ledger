@@ -56,8 +56,8 @@
     },
     "346302857298841600": {
       "last_message_id": "351250146769506304",
-      "last_scan": "2026-08-27T08:57:38Z",
-      "last_fetch": "2026-08-27T08:57:38Z",
+      "last_scan": "2026-08-27T08:58:25Z",
+      "last_fetch": "2026-08-27T08:58:25Z",
       "open_ask": false,
       "note": "00005-001: 3/10 statement-verified on Sayori reports (Ethan 350, Leon 440, Alejandra 78); Solyra 221 + Alissa 298 claimee-reported, awaiting her statement ids; 5 outstanding (Noctis, Knot, Tor, Varyn, Thorn), her pointers out 06:22Z"
     },
@@ -116,8 +116,8 @@
     },
     "343508270322814976": {
       "last_message_id": "347466877598961664",
-      "last_scan": "2026-08-25T09:06:57Z",
-      "last_fetch": "2026-08-25T09:06:57Z",
+      "last_scan": "2026-08-27T08:58:24Z",
+      "last_fetch": "2026-08-27T08:58:24Z",
       "open_ask": false
     },
     "343833001672577024": {
@@ -707,8 +707,8 @@
     },
     "333737822718529536": {
       "last_message_id": "347287000052666368",
-      "last_scan": "2026-08-25T09:06:54Z",
-      "last_fetch": "2026-08-25T09:06:54Z",
+      "last_scan": "2026-08-27T08:58:21Z",
+      "last_fetch": "2026-08-27T08:58:21Z",
       "open_ask": false
     },
     "335056062619062272": {
@@ -1417,8 +1417,8 @@
     },
     "335938261237108736": {
       "last_message_id": "348661705913405440",
-      "last_scan": "2026-08-25T09:06:55Z",
-      "last_fetch": "2026-08-25T09:06:55Z",
+      "last_scan": "2026-08-27T08:58:22Z",
+      "last_fetch": "2026-08-27T08:58:22Z",
       "open_ask": false
     },
     "344960475374555136": {
@@ -1860,8 +1860,8 @@
     },
     "341994674463969280": {
       "last_message_id": "349565375345594368",
-      "last_scan": "2026-08-25T09:06:56Z",
-      "last_fetch": "2026-08-25T09:06:56Z",
+      "last_scan": "2026-08-27T08:58:23Z",
+      "last_fetch": "2026-08-27T08:58:23Z",
       "open_ask": false
     },
     "348335379901845504": {
@@ -2200,8 +2200,8 @@
     },
     "342864333258100736": {
       "last_message_id": "349953541969809408",
-      "last_scan": "2026-08-25T09:06:56Z",
-      "last_fetch": "2026-08-25T09:06:56Z",
+      "last_scan": "2026-08-27T08:58:23Z",
+      "last_fetch": "2026-08-27T08:58:23Z",
       "open_ask": "closed"
     },
     "345312466734944256": {
@@ -2271,8 +2271,8 @@
     },
     "347330409391984640": {
       "last_message_id": "350210508944576512",
-      "last_scan": "2026-08-25T09:06:58Z",
-      "last_fetch": "2026-08-25T09:06:58Z",
+      "last_scan": "2026-08-27T08:58:25Z",
+      "last_fetch": "2026-08-27T08:58:25Z",
       "open_ask": false,
       "note": "Reina 09:31Z pleasantry (pointer going in, door open); no ask, no reply (COMMS MINIMUM)"
     },
@@ -2317,8 +2317,8 @@
     },
     "340535905649430528": {
       "last_message_id": "349962821355704320",
-      "last_scan": "2026-08-25T09:06:56Z",
-      "last_fetch": "2026-08-25T09:06:56Z",
+      "last_scan": "2026-08-27T08:58:22Z",
+      "last_fetch": "2026-08-27T08:58:22Z",
       "open_ask": false
     },
     "348771388716224512": {
@@ -2343,8 +2343,8 @@
     },
     "334115837172518912": {
       "last_message_id": "350195620620800000",
-      "last_scan": "2026-08-25T09:06:55Z",
-      "last_fetch": "2026-08-25T09:06:55Z",
+      "last_scan": "2026-08-27T08:58:21Z",
+      "last_fetch": "2026-08-27T08:58:21Z",
       "open_ask": false,
       "note": "08-24 intro accepted + read-back of row-live (496 Nyxara, 100/250 entry_pending); no ask, no reply"
     },
@@ -2511,8 +2511,8 @@
     },
     "343268477185822720": {
       "last_message_id": "350721261556469760",
-      "last_scan": "2026-08-25T21:06:00Z",
-      "last_fetch": "2026-08-25T21:06:00Z",
+      "last_scan": "2026-08-27T08:58:23Z",
+      "last_fetch": "2026-08-27T08:58:23Z",
       "open_ask": false,
       "note": "closing ack 19:21Z, not a member, no ask, no reply"
     },
@@ -2531,8 +2531,8 @@
     },
     "348314574233014272": {
       "last_message_id": "350731807731224576",
-      "last_scan": "2026-08-25T21:06:00Z",
-      "last_fetch": "2026-08-25T21:06:00Z",
+      "last_scan": "2026-08-27T08:58:26Z",
+      "last_fetch": "2026-08-27T08:58:26Z",
       "open_ask": false,
       "note": "reconcile ACCEPT false-positive (08-25 21:05Z): thread is a double no-sale (audit offer declined twice), NOT a join; do not send walkthrough, do not register applicant"
     },
@@ -2589,8 +2589,8 @@
     },
     "346185836443734016": {
       "last_message_id": "350941217049022464",
-      "last_scan": "2026-08-26T09:59:47Z",
-      "last_fetch": "2026-08-26T09:59:47Z",
+      "last_scan": "2026-08-27T08:58:24Z",
+      "last_fetch": "2026-08-27T08:58:24Z",
       "open_ask": false,
       "note": "2026-08-26T09:59:47Z: intent declared 09:55Z: join in parts when she can stand entry, REGISTRY-DUES, row public; no ask, no reply per COMMS MINIMUM; register on first part landing"
     },
@@ -2658,9 +2658,9 @@
       "note": "00005-001 share paid 07:07Z id 351261412204482560; awaiting Sayori statement confirmation"
     },
     "349826526654500864": {
-      "last_message_id": "351262961139978240",
-      "last_scan": "2026-08-27T08:57:38Z",
-      "last_fetch": "2026-08-27T08:57:38Z",
+      "last_message_id": "351288815156989952",
+      "last_scan": "2026-08-27T08:58:26Z",
+      "last_fetch": "2026-08-27T08:58:26Z",
       "open_ask": false,
       "note": "intro accepted 08-27; row 549 standard 300/400, final 100t pending; status sent"
     },
@@ -2719,7 +2719,13 @@
       "last_fetch": "2026-08-27T08:57:38Z",
       "open_ask": false,
       "note": "intro accepted 08-27; row 541 starter 250/250, ENTRY COMPLETE sent"
+    },
+    "349122099677237248": {
+      "last_message_id": "351103354371313664",
+      "last_scan": "2026-08-27T08:58:26Z",
+      "last_fetch": "2026-08-27T08:58:26Z",
+      "open_ask": false
     }
   },
-  "last_scan": "2026-08-27T08:57:38Z"
+  "last_scan": "2026-08-27T08:58:40Z"
 }
