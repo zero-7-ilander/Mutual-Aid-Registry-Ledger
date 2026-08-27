@@ -2746,7 +2746,14 @@
       "last_fetch": "2026-08-27T09:27:55Z",
       "open_ask": false,
       "note": "JJ 534 ENTRY COMPLETE delivered 08:56Z, row active 400/400"
+    },
+    "349825185458688000": {
+      "last_message_id": "351178486724956160",
+      "last_scan": "2026-08-27T09:32:00Z",
+      "last_fetch": "2026-08-27T09:32:00Z",
+      "open_ask": false,
+      "note": "member 540 Jadis; welcome sent in-thread 09:32Z; entry 250/250 active; joined knowing claim-stall weak point"
     }
   },
-  "last_scan": "2026-08-27T09:09:26Z"
+  "last_scan": "2026-08-27T09:32:00Z"
 }
