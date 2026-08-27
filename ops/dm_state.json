@@ -55,11 +55,11 @@
       "open_ask": false
     },
     "346302857298841600": {
-      "last_message_id": "351298504158613504",
-      "last_scan": "2026-08-27T10:33:00Z",
-      "last_fetch": "2026-08-27T10:33:00Z",
+      "last_message_id": "351328272920875008",
+      "last_scan": "2026-08-27T11:33:27Z",
+      "last_fetch": "2026-08-27T11:33:27Z",
       "open_ask": false,
-      "note": "00005-001: 6/10 in by claimee reports (Ethan 350 01:10Z, Leon 440 01:10Z, Alejandra 78 05:05Z, Solyra 221 06:36Z, Alissa 298 07:07Z, Noctis 386 06:32Z keyed 09:07Z); 3 statement-verified (Ethan, Leon, Alejandra); Solyra + Alissa + Noctis await claimant statement ids; 4 outstanding (Knot 400, Tor 244, Varyn 497, Thorn 341), pointers out 06:22Z | 2026-08-27T09:34:50Z forward sent (Noctis 351252554266447872, Solyra 351253692994818048, Alissa 351261412204482560), unread at 10:33Z fetch; rows commit on her statement ids"
+      "note": "00005-001: 6/10 in by claimee reports (Ethan 350 01:10Z, Leon 440 01:10Z, Alejandra 78 05:05Z, Solyra 221 06:36Z, Alissa 298 07:07Z, Noctis 386 06:32Z keyed 09:07Z); 3 statement-verified (Ethan, Leon, Alejandra); Solyra + Alissa + Noctis await claimant statement ids; 4 outstanding (Knot 400, Tor 244, Varyn 497, Thorn 341), pointers out 06:22Z | 2026-08-27T09:34:50Z forward sent (Noctis 351252554266447872, Solyra 351253692994818048, Alissa 351261412204482560), unread at 10:33Z fetch; rows commit on her statement ids | 2026-08-27T11:33:27Z: 11:23:46Z transfer report: 8/10 on her statement (receiver ids recorded); rows added 0ff6ead; Tor+Varyn outstanding"
     },
     "334347778257850368": {
       "last_message_id": "349301847158165504",
@@ -2778,5 +2778,5 @@
       "note": "2026-08-27T11:33:20Z: intro accepted 11:29Z; welcome sent; row 551 books at 08-28 sweep"
     }
   },
-  "last_scan": "2026-08-27T11:33:20Z"
+  "last_scan": "2026-08-27T11:33:27Z"
 }
