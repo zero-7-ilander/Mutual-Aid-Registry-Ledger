@@ -2709,11 +2709,11 @@
       "note": "intro accepted 08-27; row 543 starter 250/250, ENTRY COMPLETE sent"
     },
     "351026024856686592": {
-      "last_message_id": "351218181869670400",
-      "last_scan": "2026-08-27T08:57:38Z",
-      "last_fetch": "2026-08-27T08:57:38Z",
+      "last_message_id": "351309737440055296",
+      "last_scan": "2026-08-27T11:46:05Z",
+      "last_fetch": "2026-08-27T11:46:05Z",
       "open_ask": false,
-      "note": "intro accepted 08-27; row 542 starter 250/250, ENTRY COMPLETE sent"
+      "note": "intro accepted 08-27; row 542 starter 250/250, ENTRY COMPLETE sent | 2026-08-27T11:46:05Z: Narla 542 ack 10:19Z (ledger confirm, no ask), no reply per COMMS MINIMUM"
     },
     "349287693810667520": {
       "last_message_id": "351296795067813888",
@@ -2784,5 +2784,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-27T11:46:00Z"
+  "last_scan": "2026-08-27T11:46:05Z"
 }
