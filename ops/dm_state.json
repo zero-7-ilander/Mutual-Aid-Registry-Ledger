@@ -173,11 +173,11 @@
       "open_ask": false
     },
     "337553760161107968": {
-      "last_message_id": "351039299409416192",
-      "last_scan": "2026-08-26T20:55:17Z",
-      "last_fetch": "2026-08-26T20:55:17Z",
+      "last_message_id": "351229375393304576",
+      "last_scan": "2026-08-27T10:14:45Z",
+      "last_fetch": "2026-08-27T10:14:45Z",
       "open_ask": false,
-      "note": "2026-08-26T20:55:17Z: vesting Q answered from record: 14d runs, correction in row notes"
+      "note": "2026-08-26T20:55:17Z: vesting Q answered from record: 14d runs, correction in row notes | 2026-08-27T10:14:45Z: 05:00Z read-back confirmation (Standard 14d, row 355 live, first claim 09-03); no ask, no reply per COMMS MINIMUM"
     },
     "340956598966947840": {
       "last_message_id": "348857773699633152",
@@ -2770,5 +2770,5 @@
       "note": "2026-08-27T09:38:13Z: 01:40Z read-back ack, no ask; no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-27T09:38:16Z"
+  "last_scan": "2026-08-27T10:14:45Z"
 }
