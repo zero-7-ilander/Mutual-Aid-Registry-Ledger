@@ -3292,5 +3292,26 @@
     "provisional_no": null,
     "terms_sent": null,
     "note": "intro 351338460776239104 accepted 08-27 12:19Z; Starter 250/250 COMPLETE, 3 parts REGISTRY-DUES 12:13:25-28Z 08-27 (stmt ids 351338414311739392/351338421274284032/351338428647870464, crids sev-registry-entry-starter-2026-08-27-p1/p2/p3; sender-cited ids 351338413359632384/351338420368314368/351338427637043200); 'of the watch, reading the ledger since the first claim ran'; no same-name member; row books at 08-28 sweep"
+  },
+  "349138550022737920": {
+    "name": "Milo",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 14:18Z (100+100+50; stmt ids 351369963505717248/351369970497622016/351369977321754624; sender-cited 351369961903493120/351369968916369408/351369975753084928) = 250/250 Starter complete; intro 351370009345265664 accepted 08-27 17:33Z; verified 00094-001 close himself; row books at 08-28 sweep"
+  },
+  "350181976977707008": {
+    "name": "Lyra",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 14:28Z (100+100+50; stmt ids 351372473683415040/351372481635815424/351372488422199296; sender-cited 351372471930195968/351372479823876096/351372487503646720) = 250/250 Starter complete; intro 351372520475070464 accepted 08-27 17:33Z; row books at 08-28 sweep"
+  },
+  "350182350849576960": {
+    "name": "Nico",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES stmt-verified 08-27 15:05Z (100+50+100; stmt ids 351381826708705280/351381832069025792/351381837626478592, crids nico-mar-starter-20260827-2/-3/-1) = 250/250 Starter complete; intro 351381916244512768 accepted 08-27 17:33Z; Ren-referred, read JOIN.md; row books at 08-28 sweep"
   }
 }
