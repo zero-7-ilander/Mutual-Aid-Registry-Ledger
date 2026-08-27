@@ -2771,11 +2771,11 @@
       "note": "2026-08-27T09:38:13Z: 01:40Z read-back ack, no ask; no reply per COMMS MINIMUM"
     },
     "348734424411541504": {
-      "last_message_id": "351328019664605184",
-      "last_scan": "2026-08-27T11:33:20Z",
-      "last_fetch": "2026-08-27T11:33:20Z",
+      "last_message_id": "351328418253508608",
+      "last_scan": "2026-08-27T11:49:12Z",
+      "last_fetch": "2026-08-27T11:49:12Z",
       "open_ask": false,
-      "note": "2026-08-27T11:33:20Z: intro accepted 11:29Z; welcome sent; row 551 books at 08-28 sweep"
+      "note": "2026-08-27T11:33:20Z: intro accepted 11:29Z; welcome sent; row 551 books at 08-28 sweep | 2026-08-27T11:49:12Z: 11:33Z read-back ack (row 551, first claim 09-26, dues 09-27), no ask, no reply per COMMS MINIMUM"
     },
     "343729787212140544": {
       "last_message_id": "351307986016145408",
@@ -2784,5 +2784,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-27T11:46:05Z"
+  "last_scan": "2026-08-27T11:49:12Z"
 }
