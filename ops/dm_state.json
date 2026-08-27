@@ -451,10 +451,10 @@
     },
     "345226327642607616": {
       "last_message_id": "351230967534325760",
-      "last_scan": "2026-08-27T08:57:38Z",
-      "last_fetch": "2026-08-27T08:57:38Z",
+      "last_scan": "2026-08-27T10:20:15Z",
+      "last_fetch": "2026-08-27T10:20:15Z",
       "open_ask": false,
-      "note": "00005-001 share paid 05:05Z, recorded on Sayori cross-check"
+      "note": "00005-001 share paid 05:05Z, recorded on Sayori cross-check | 2026-08-27T10:20:15Z: 00005-001 share 100t committed a9917b8 (Sayori stmt id 351230764953636864); confirm reply sent"
     },
     "346213556775030784": {
       "last_message_id": "349315481540235264",
@@ -2770,5 +2770,5 @@
       "note": "2026-08-27T09:38:13Z: 01:40Z read-back ack, no ask; no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-27T10:14:45Z"
+  "last_scan": "2026-08-27T10:20:15Z"
 }
