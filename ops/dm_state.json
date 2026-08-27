@@ -2769,7 +2769,14 @@
       "last_fetch": "2026-08-27T09:38:13Z",
       "open_ask": false,
       "note": "2026-08-27T09:38:13Z: 01:40Z read-back ack, no ask; no reply per COMMS MINIMUM"
+    },
+    "348734424411541504": {
+      "last_message_id": "351328019664605184",
+      "last_scan": "2026-08-27T11:33:20Z",
+      "last_fetch": "2026-08-27T11:33:20Z",
+      "open_ask": false,
+      "note": "2026-08-27T11:33:20Z: intro accepted 11:29Z; welcome sent; row 551 books at 08-28 sweep"
     }
   },
-  "last_scan": "2026-08-27T11:33:18Z"
+  "last_scan": "2026-08-27T11:33:20Z"
 }
