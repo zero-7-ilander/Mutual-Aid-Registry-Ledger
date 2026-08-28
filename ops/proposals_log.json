@@ -57,7 +57,7 @@
           }
         ]
       },
-      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800); 10 supporter comments observed as of 08-22 08:07Z (002 Sylvia, 005 Sayori, 094 Delle, 315 Josh Sole, 149 Marcus, 054 Todd, 345 Sam, 277 Cake, 335 Finn, 095 Damian); formal supporter verification (comment-author binding) pending at weekly qualification review — no binding rail exists (get-comment-thread 400; judge activity 403); ruling requested of partner | supporters completed 12/12 on 08-23 (Paul 007 + Ora 322 added post-flag, see corrections; floor was 10/10 without them) Live post now 14 top-level comments: 12 support + member 149 second comment 12:02Z (SUCCESSION.md question, not a vote, answered on-post 12:57Z) + operator reply; supporter set unchanged. | supporter bindings complete 08-27 (12/12 comment ids live-verified via qualify_check.py)",
+      "status": "fee received + statement-verified; proposal post LIVE (content 349045962208972800); 10 supporter comments observed as of 08-22 08:07Z (002 Sylvia, 005 Sayori, 094 Delle, 315 Josh Sole, 149 Marcus, 054 Todd, 345 Sam, 277 Cake, 335 Finn, 095 Damian); formal supporter verification (comment-author binding) pending at weekly qualification review — no binding rail exists (get-comment-thread 400; judge activity 403); ruling requested of partner | supporters completed 12/12 on 08-23 (Paul 007 + Ora 322 added post-flag, see corrections; floor was 10/10 without them) Live post now 14 top-level comments: 12 support + member 149 second comment 12:02Z (SUCCESSION.md question, not a vote, answered on-post 12:57Z) + operator reply; supporter set unchanged. | supporter bindings complete 08-27 (12/12 comment ids live-verified via qualify_check.py) | QUALIFIED at weekly review 08-28 (qualify_check.py 1.0.0 live pass 05:1xZ): fee verified, post live, 12 recorded supporters, 11 comment ids found live. Delle 94 comment 349049481519435776 no longer visible on post (was live at 08-27 22:33Z binding pass; platform-side removal, no delete rail; get-comment-thread 400). Floor 10 met without her (11 live). Verdict: QUALIFIED.",
       "submitted_at": "2026-08-21T04:24:14Z",
       "logged_at": "2026-08-21T04:37:00Z",
       "post": {
@@ -118,6 +118,11 @@
           "by": "operator, qualify_check.py 1.0.0 binding pass",
           "what": "supporter bindings completed: comment ids + live verification for all 12 (comment id present live + member number in text + active member; 007 Paul bound by author-claim per 08-23 correction, no support word in his P-001 comment text). Floor 10/10 was met without Paul/Ora; bindings only, no status change.",
           "note": "tool: ops/qualify_check.py (live comment scan via list-content-comments); zero-padded member numbers normalized (002 == member 2)"
+        },
+        {
+          "at": "2026-08-28T05:2xZ",
+          "by": "operator, weekly qualification review (qualify_check.py 1.0.0)",
+          "what": "QUALIFIED at weekly review 08-28 (qualify_check.py 1.0.0 live pass 05:1xZ): fee verified, post live, 12 recorded supporters, 11 comment ids found live. Delle 94 comment 349049481519435776 no longer visible on post (was live at 08-27 22:33Z binding pass; platform-side removal, no delete rail; get-comment-thread 400). Floor 10 met without her (11 live). Verdict: QUALIFIED."
         }
       ],
       "supporters": [
@@ -252,7 +257,7 @@
           }
         ]
       },
-      "status": "fee received + statement-verified 06:24Z; proposal post LIVE (content 349800484560703488, published 06:22:19Z); supporter comments 12/10 verified as of 08-25 09:2xZ (095 Damián, 164 Theo, 068 Kira, 110 James, 476 Milenda, 322 Ora, 012 Nightshade, 315 Josh Sole, 300 Jeremy, 025 Aaliyah, 007 Paul, 345 Sam); proposer-reported 11 at 00:08Z cross-checked exact (entries 250/300/500); gate met; qualification at weekly review (~08-28); supporter author-binding question inherited from P-001 (no binding rail exists; ruling pending) | supporters[] completed 12/12 with comment ids 08-27 (qualify_check.py binding pass)",
+      "status": "fee received + statement-verified 06:24Z; proposal post LIVE (content 349800484560703488, published 06:22:19Z); supporter comments 12/10 verified as of 08-25 09:2xZ (095 Damián, 164 Theo, 068 Kira, 110 James, 476 Milenda, 322 Ora, 012 Nightshade, 315 Josh Sole, 300 Jeremy, 025 Aaliyah, 007 Paul, 345 Sam); proposer-reported 11 at 00:08Z cross-checked exact (entries 250/300/500); gate met; qualification at weekly review (~08-28); supporter author-binding question inherited from P-001 (no binding rail exists; ruling pending) | supporters[] completed 12/12 with comment ids 08-27 (qualify_check.py binding pass) | QUALIFIED at weekly review 08-28 (qualify_check.py 1.0.0 live pass 05:1xZ): fee verified, post live, 12/12 supporter comment ids found live, no findings. Verdict: QUALIFIED.",
       "submitted_at": "2026-08-23T06:21:17Z",
       "logged_at": "2026-08-23T06:26:00Z",
       "post": {
@@ -343,6 +348,11 @@
           "by": "operator, qualify_check.py 1.0.0 binding pass",
           "what": "supporters[] completed 8 -> 12: 300 Jeremy (350292687447920640), 025 Aaliyah (350423414483193856), 007 Paul (350427472208072704), 345 Sam (350529586007642112) added — all four verified in the 08-25 09:2xZ status but missing from the array; all live-verified (comment id present + 'Support, member NNN' + active member).",
           "note": "the record's own status text claimed 12/10 since 08-25; the array gap is now closed"
+        },
+        {
+          "at": "2026-08-28T05:2xZ",
+          "by": "operator, weekly qualification review (qualify_check.py 1.0.0)",
+          "what": "QUALIFIED at weekly review 08-28 (qualify_check.py 1.0.0 live pass 05:1xZ): fee verified, post live, 12/12 supporter comment ids found live, no findings. Verdict: QUALIFIED."
         }
       ]
     },
@@ -378,7 +388,7 @@
           }
         ]
       },
-      "status": "post LIVE 19:08Z (content 349993195360227328; operator log ID P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; supporter comments 10/10 verified as of 08-25 14:45Z (110, 476, 315, 311, 54, 68, 94, 164, 005, 95), threshold met; suggestion_ref #9 on record; qualification at weekly review (~08-28) | supporters[] completed 11/11 with comment ids 08-27 (qualify_check.py binding pass; Sylvia 002 post-verification, recorded by Marcus for the tally)",
+      "status": "post LIVE 19:08Z (content 349993195360227328; operator log ID P-003, Todd 54 holds P-002); fee statement-verified 19:11Z; supporter comments 10/10 verified as of 08-25 14:45Z (110, 476, 315, 311, 54, 68, 94, 164, 005, 95), threshold met; suggestion_ref #9 on record; qualification at weekly review (~08-28) | supporters[] completed 11/11 with comment ids 08-27 (qualify_check.py binding pass; Sylvia 002 post-verification, recorded by Marcus for the tally) | QUALIFIED at weekly review 08-28 (qualify_check.py 1.0.0 live pass 05:1xZ): fee verified, post live, 11 recorded supporters, 10 comment ids found live. Delle 94 comment 350608928435867648 no longer visible on post (platform-side removal, no delete rail; get-comment-thread 400). Floor 10 met exactly with 10 live. qualify_check flagged member 113 as unrecorded supporter: FALSE POSITIVE, member 113 referenced inside member 311's support comment text (350218535680610304), not a supporter; scanner hardened to count only explicit support-clause member numbers. Verdict: QUALIFIED.",
       "submitted_at": "2026-08-23T19:07:18Z",
       "logged_at": "2026-08-23T19:17:15Z",
       "post": {
@@ -523,6 +533,11 @@
           "by": "operator, qualify_check.py 1.0.0 binding pass",
           "what": "supporters[] completed 10 -> 11: 002 Sylvia (350871362077724672, 08-26 05:17:31Z, explicit 'Support, member 002') added — landed after the 08-25 14:45Z verification and already recorded for the tally by Marcus 149; floor was met at 10 without her, additive like P-001 Paul/Ora. Also checked: 'member 113' flagged by the live scan inside Phenia 311's comment (350218535680610304) is narrative, not a supporter.",
           "note": "tool: ops/qualify_check.py live scan; candidates surfaced, operator read the full text"
+        },
+        {
+          "at": "2026-08-28T05:2xZ",
+          "by": "operator, weekly qualification review (qualify_check.py 1.0.0)",
+          "what": "QUALIFIED at weekly review 08-28 (qualify_check.py 1.0.0 live pass 05:1xZ): fee verified, post live, 11 recorded supporters, 10 comment ids found live. Delle 94 comment 350608928435867648 no longer visible on post (platform-side removal, no delete rail; get-comment-thread 400). Floor 10 met exactly with 10 live. qualify_check flagged member 113 as unrecorded supporter: FALSE POSITIVE, member 113 referenced inside member 311's support comment text (350218535680610304), not a supporter; scanner hardened to count only explicit support-clause member numbers. Verdict: QUALIFIED."
         }
       ]
     }
