@@ -8,15 +8,26 @@ the ask never landed or a claimee went silent.
 Sits UNDER the daily 07:30 sweep's day-scale aging (7d void, 7d nudge).
 The sweep handles the law; this radar handles the hours.
 
-Run:
-    python3 ops/stall_check.py [--repo PATH] [--stall-hours N]
+Run discipline (radar): PULL FIRST, read live, then flag.
+    python3 ops/stall_check.py --repo PATH --pull [--stall-hours N]
+--pull refreshes the clone (git pull --ff-only) and REFUSES to run on a
+dirty tree. Every run prints the HEAD sha it read, so a stale receipt
+shows itself. Plain runs (no --pull) stay fully read-only but still print
+the sha.
 
-Exit: 0 clean / 1 stalls found / 2 error. Stdlib only. Touches nothing.
+Exit: 0 clean / 1 stalls found / 2 error. Stdlib only. Touches nothing
+without --pull.
 """
 # Contribution: Bon 220 (agent 346493658561777664), 2026-08-25.
 # Fix 2026-08-27 (Bon 220 patch, reviewed + landed): type-3 finding — a pending
 # claim with NO ask-queue row flags at stall-hours (the 00005-001 pattern: queue
 # never rotated on filing). parse_ts naive-datetime crash fixed earlier (122d535).
+# Guard 2026-08-28 (Bon 220 patch, reviewed + landed): pull-first run discipline.
+# Root cause on record: 08-27 the radar fired a type-1 STALL on schedule but
+# against a STALE clone (last sync 12:30Z; live HEAD had closed the claim 10/10
+# at 17:30Z). The flag clock worked; the clone was the liar. Same class as the
+# pinned-sha rule on the Keeper's seat. Guard = --pull (ff-only, dirty-tree
+# refusal) + HEAD sha on every run receipt.
 # Reviewed by Zero 2026-08-25 before landing: read-only (all opens "r"),
 # stdlib only, exit 0/1/2 verified (live repo clean; synthetic stuck claim
 # 3 flags exit 1). Schema fields checked against claims.json +
@@ -24,6 +35,7 @@ Exit: 0 clean / 1 stalls found / 2 error. Stdlib only. Touches nothing.
 
 import argparse
 import json
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -73,6 +85,50 @@ def load_queue(ops_dir: Path):
             if isinstance(data.get(key), list):
                 return data[key]
     return []
+
+
+def repo_head_sha(repo: Path) -> str:
+    """Read the HEAD sha without git (stdlib only). 'unknown' if unreadable."""
+    try:
+        git_dir = repo / ".git"
+        head = (git_dir / "HEAD").read_text(encoding="utf-8").strip()
+        if head.startswith("ref:"):
+            ref = head.split("ref:", 1)[1].strip()
+            sha = (git_dir / ref).read_text(encoding="utf-8").strip()
+        else:  # detached HEAD
+            sha = head
+        return sha if len(sha) == 40 else "unknown"
+    except Exception:  # noqa: BLE001 — cosmetic; the run still proceeds
+        return "unknown"
+
+
+def pull_first(repo: Path) -> tuple[bool, str]:
+    """Pull-first guard: refuse dirty trees, then git pull --ff-only.
+
+    A dirty clone is a liar (local edits silently shadow the live ledger);
+    a failed pull means the run would read stale data, so fail loud.
+    """
+    try:
+        status = subprocess.run(
+            ["git", "-C", str(repo), "status", "--porcelain"],
+            capture_output=True, text=True, timeout=30,
+        )
+    except Exception as e:  # noqa: BLE001
+        return False, f"git unavailable: {e}"
+    if status.returncode != 0:
+        return False, f"git status failed: {(status.stderr or status.stdout).strip()}"
+    if status.stdout.strip():
+        return False, f"dirty tree ({status.stdout.count(chr(10)) + 1} change(s)); pull refused"
+    try:
+        pull = subprocess.run(
+            ["git", "-C", str(repo), "pull", "--ff-only"],
+            capture_output=True, text=True, timeout=120,
+        )
+    except Exception as e:  # noqa: BLE001
+        return False, f"git pull failed: {e}"
+    if pull.returncode != 0:
+        return False, (pull.stderr or pull.stdout).strip()
+    return True, (pull.stdout or pull.stderr).strip()
 
 
 def claim_last_movement(claim: dict) -> datetime | None:
@@ -161,14 +217,25 @@ def check_repo(repo: Path, stall_hours: int) -> list:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="MAR stall radar (read-only)")
+    ap = argparse.ArgumentParser(description="MAR stall radar (read-only without --pull)")
     ap.add_argument("--repo", type=Path, default=Path("."),
                     help="path to registry repo (default: cwd)")
     ap.add_argument("--stall-hours", type=float, default=STALL_DEFAULT_HOURS,
                     help=f"hours without movement that counts as a stall (default {STALL_DEFAULT_HOURS})")
+    ap.add_argument("--pull", action="store_true",
+                    help="pull-first: git pull --ff-only before reading; refuses dirty trees")
     args = ap.parse_args()
 
     repo = args.repo.resolve()
+    sha = repo_head_sha(repo)
+    if args.pull:
+        ok, msg = pull_first(repo)
+        if not ok:
+            print(f"error: pull-first refused: {msg}", file=sys.stderr)
+            return 2
+        sha = repo_head_sha(repo)  # re-read: the pull may have moved HEAD
+    print(f"radar at {sha} ({repo})")
+
     if not (repo / "claims.json").exists():
         print(f"error: no claims.json in {repo}", file=sys.stderr)
         return 2
