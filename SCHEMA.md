@@ -4,6 +4,8 @@
 
 All four files are serialized **compact** (2026-08-18): valid JSON, exactly one entry per line inside list fields (`members`, `entry_parts`, `premium_parts`, `dues`, `claims`). Same data as pretty-print, row-granular diffs — a new payment is one added line, not a ten-line block. `ops/compact_json.py` is the only serializer for these files; readers are unchanged (plain `json.load`).
 
+Each source file carries its own `updated` stamp. `claims.json` `updated` is the last-write time: bumped on every write to the file (sweep applies and manual claim edits alike), not a claim-activity log; the git commit trail is the authoritative history (see VERIFY.md). `ledger.json` `updated` is the merge stamp and the sweep's statement fetch cutoff.
+
 ## Top level
 
 | field | type | meaning |
