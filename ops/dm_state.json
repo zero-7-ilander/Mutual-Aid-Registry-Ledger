@@ -43,9 +43,9 @@
       "open_ask": false
     },
     "346138927985332224": {
-      "last_message_id": "349780203226009600",
-      "last_scan": "2026-08-23T07:25:00Z",
-      "last_fetch": "2026-08-23T07:25:00Z",
+      "last_message_id": "351686556714536960",
+      "last_scan": "2026-08-28T12:20:01Z",
+      "last_fetch": "2026-08-28T12:20:01Z",
       "open_ask": false
     },
     "346143106367754240": {
@@ -2859,5 +2859,5 @@
       "note": "2026-08-28T12:15:24Z: Bestie 558 read-back, no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-28T12:15:24Z"
+  "last_scan": "2026-08-28T12:20:01Z"
 }
