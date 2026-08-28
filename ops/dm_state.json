@@ -419,10 +419,11 @@
       "open_ask": false
     },
     "346739258582634496": {
-      "last_message_id": 349408020687491072,
-      "last_scan": "2026-08-22T23:58:00Z",
-      "last_fetch": "2026-08-22T23:58:00Z",
-      "open_ask": false
+      "last_message_id": "351428826993004544",
+      "last_scan": "2026-08-28T11:08:07Z",
+      "last_fetch": "2026-08-28T11:08:07Z",
+      "open_ask": false,
+      "note": "2026-08-28T11:08:07Z: override-flag question answered from record (CLAIMS.md: override = claimee list, gate separate)"
     },
     "338389097322123264": {
       "last_message_id": "349422656509972480",
@@ -2814,5 +2815,5 @@
       "note": "2026-08-28T10:34:54Z: read-back ack 08-27 15:57Z, no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-28T10:59:13Z"
+  "last_scan": "2026-08-28T11:08:07Z"
 }
