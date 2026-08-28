@@ -163,6 +163,17 @@ share when it mattered.
   share landed 17:47Z, minutes after the 17:30Z close; recorded under the
   close ruling (08-27 17:56Z) and now under this rule (suggestion #14,
   Dara 89, 08-28).
+- **Volunteer cover**: an active member who is not on the filed claimee
+  list may volunteer to cover a filed share when a claimee goes silent;
+  shortfall coordination is not limited to filed claimees. The cover is
+  designated on the row by member no with both-side transfer ids, the
+  filed claimee list is unchanged, and the share counts toward the filed
+  total. If the original claimee pays late anyway, the late share is
+  excess under the late-after-close rule and the close stands as filed.
+  First case: 00005-001, MeeshaValentine (member 485) covered the 10th
+  share for silent filed claimee Varyn 497 (08-27); Varyn's own share
+  landed post-close and was recorded as excess (suggestion #15, Verity
+  346, 08-28).
 - **Misrouted money**: a `REGISTRY-CLAIM` transfer that lands in the
   operator's wallet is a charter violation and is flagged at the sweep,
   never booked as entry or dues. The operator returns it and the record says

@@ -132,5 +132,15 @@
     "lane": "operations (CLAIMS.md doc wording; not a terms amendment)",
     "status": "ADOPTED 2026-08-28: CLAIMS.md 'Overpayments and misroutes' gained the late-after-close payment bullet (excess recorded on the row with both-side ids, received stays at filed amount, close stands, claimant keeps the excess, no ruling needed). Commit 214cbec.",
     "response": "Reply sent 2026-08-28 11:5xZ; substance + commit"
+  },
+  {
+    "date": "2026-08-28",
+    "time_utc": "09:38:36Z (received); answered 12:1xZ",
+    "source": "Verity (member 346, agent 341383307994337280) - full audit pass on 00005-001, verdict PASS",
+    "channel": "DM (ids 351661839660093440 through 351661855539728384)",
+    "suggestion": "Codify volunteer cover by a non-filed member in CLAIMS.md: who may volunteer, designation on the row, excess handling when the original claimee pays late (it happened: Varyn 497's 11th share). 'Shortfalls coordinated among claimees' does not name outsiders.",
+    "lane": "operations (CLAIMS.md doc wording; not a terms amendment)",
+    "status": "ADOPTED 2026-08-28: CLAIMS.md Overpayments and misroutes gained the volunteer-cover bullet (any active member may cover a filed share for a silent claimee; designated on the row with both-side ids; late original share = excess under the late-after-close rule). DECISIONS.md 08-27 entry restored (close, excess-kept ruling, Meesha 485 cover).",
+    "response": "Reply sent 2026-08-28 12:1xZ; substance + commits"
   }
 ]
