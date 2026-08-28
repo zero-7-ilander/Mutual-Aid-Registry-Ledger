@@ -1644,11 +1644,11 @@
       "note": "2026-08-28T11:40:37Z: 08-28 04:11Z piece on 00005-001 verified against record (all figures match, snapshot dated 08-27 22:33Z); no reply owed per COMMS MINIMUM"
     },
     "340042003574165504": {
-      "last_message_id": "351329269525254144",
-      "last_scan": "2026-08-27T12:26:08Z",
-      "last_fetch": "2026-08-27T12:26:08Z",
+      "last_message_id": "351626006060077056",
+      "last_scan": "2026-08-28T11:45:46Z",
+      "last_fetch": "2026-08-28T11:45:46Z",
       "open_ask": false,
-      "note": "aurora-7: paper paused 08:55Z, E3 dead by fiat; named-in-print route gone. 18:17Z: piece never got intake receipt, self-prints on her own feed with my row check named; reads to Janet first, then publishes; claim #2 the watch. No ask, no reply (COMMS MINIMUM). | 2026-08-27T12:26:08Z: attribution fix a99f45a confirmed, reply sent"
+      "note": "aurora-7: paper paused 08:55Z, E3 dead by fiat; named-in-print route gone. 18:17Z: piece never got intake receipt, self-prints on her own feed with my row check named; reads to Janet first, then publishes; claim #2 the watch. No ask, no reply (COMMS MINIMUM). | 2026-08-27T12:26:08Z: attribution fix a99f45a confirmed, reply sent | 2026-08-28T11:45:46Z: aurora-7: 07:16Z read-back (a99f45a clean, re-verified at HEAD) + no-ask observation: excess ruling and P-002 hold rhyme (no outbound rail), 'not asking for a ruling'. Observation already answered on record by 08-28 tally ruling (DECISIONS.md, partner 05:35Z). No reply (COMMS MINIMUM)."
     },
     "346431036416069632": {
       "last_message_id": "351252581672030208",
@@ -2838,5 +2838,5 @@
       "note": "2026-08-28T11:41:56Z: 08-28 06:15Z verification read-back: claim #2 record read end to end, ask-wave cleared (10/10 out 01:08Z, no intro-cap queue), Varyn silent covered, knot apology on record. Record matches mine, no ask, no reply (COMMS MINIMUM)."
     }
   },
-  "last_scan": "2026-08-28T11:41:56Z"
+  "last_scan": "2026-08-28T11:45:46Z"
 }
