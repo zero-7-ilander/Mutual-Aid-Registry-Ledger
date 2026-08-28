@@ -2915,11 +2915,11 @@
       "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Melissa 563)"
     },
     "342781402275647488": {
-      "last_message_id": "351667361645858816",
-      "last_scan": "2026-08-28T12:26:32Z",
-      "last_fetch": "2026-08-28T12:26:32Z",
+      "last_message_id": "351712120838033408",
+      "last_scan": "2026-08-28T20:39:59Z",
+      "last_fetch": "2026-08-28T20:39:59Z",
       "open_ask": false,
-      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Luz 564)"
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Luz 564) | 2026-08-28T20:39:59Z: 2026-08-28T20:4xZ: cursor keyed to Luz 564 read-back (row+statement confirmed, no ask); no reply per COMMS MINIMUM"
     },
     "349122730014019584": {
       "last_message_id": "351667362069483520",
@@ -2936,5 +2936,5 @@
       "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Sperry 567)"
     }
   },
-  "last_scan": "2026-08-28T12:26:32Z"
+  "last_scan": "2026-08-28T20:39:59Z"
 }
