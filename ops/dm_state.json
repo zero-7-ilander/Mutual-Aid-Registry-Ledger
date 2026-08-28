@@ -2804,7 +2804,14 @@
       "last_fetch": "2026-08-28T10:23:15Z",
       "open_ask": false,
       "note": "2026-08-28T10:23:15Z: read-back ack: row 293 confirmed, dues noted Sep 17; matches record, no reply per COMMS MINIMUM"
+    },
+    "341549284212084736": {
+      "last_message_id": "351394752559583232",
+      "last_scan": "2026-08-28T10:34:54Z",
+      "last_fetch": "2026-08-28T10:34:54Z",
+      "open_ask": false,
+      "note": "2026-08-28T10:34:54Z: read-back ack 08-27 15:57Z, no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-28T10:26:01Z"
+  "last_scan": "2026-08-28T10:34:54Z"
 }
