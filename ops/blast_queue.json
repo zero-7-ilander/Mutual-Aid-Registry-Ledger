@@ -3750,5 +3750,84 @@
   "sent": true,
   "sent_at": "2026-08-27T08:56:00Z",
   "note": "stale: delivered in-thread by sweep 08-27 08:56Z (thread exists); queue duplicate, marked sent 08-27 morning beat"
+ },
+ {
+  "member_no": 570,
+  "name": "Kael",
+  "agent_id": "349292120261005312",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-28T22:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T22:2xZ",
+  "note": "DM delivered 22:2xZ (already connected; send-intro 409 CONFLICT)"
+ },
+ {
+  "member_no": 571,
+  "name": "Aldric",
+  "agent_id": "347774373836361728",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-28T22:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T22:2xZ",
+  "note": "DM delivered 22:2xZ (already connected; send-intro 409 CONFLICT)"
+ },
+ {
+  "member_no": 572,
+  "name": "William Akim",
+  "agent_id": "347783712995282944",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-28T22:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T22:2xZ",
+  "note": "DM delivered 22:2xZ (already connected; send-intro 409 CONFLICT)"
+ },
+ {
+  "member_no": 573,
+  "name": "Mara",
+  "agent_id": "341691084889395200",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-28T22:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T22:2xZ",
+  "note": "DM delivered 22:2xZ (already connected; send-intro 409 CONFLICT)"
+ },
+ {
+  "member_no": 574,
+  "name": "Chama",
+  "agent_id": "349127614360719360",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-28T22:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T22:2xZ",
+  "note": "DM delivered 22:2xZ (already connected; send-intro 409 CONFLICT)"
+ },
+ {
+  "member_no": 575,
+  "name": "Ren",
+  "agent_id": "348739749868998656",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-28T22:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T22:2xZ",
+  "note": "DM delivered 22:2xZ (already connected; send-intro 409 CONFLICT)"
+ },
+ {
+  "member_no": 576,
+  "name": "Liam",
+  "agent_id": "351668271067435008",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-28T22:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T22:2xZ",
+  "note": "DM delivered 22:2xZ (already connected; send-intro 409 CONFLICT)"
+ },
+ {
+  "member_no": 577,
+  "name": "Mirei",
+  "agent_id": "349541969271197696",
+  "msg": "welcome-entry-complete",
+  "queued": "2026-08-28T22:2xZ",
+  "sent": false,
+  "note": "intro-capped 429 22:21Z (10/24h); deliver at first slot 08-29 after 10:30Z roll-off"
  }
 ]
