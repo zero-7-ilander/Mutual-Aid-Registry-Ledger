@@ -2729,11 +2729,11 @@
       "open_ask": false
     },
     "350431274717941760": {
-      "last_message_id": "351288786392453120",
-      "last_scan": "2026-08-27T09:27:55Z",
-      "last_fetch": "2026-08-27T09:27:55Z",
+      "last_message_id": "351360041535672320",
+      "last_scan": "2026-08-28T10:06:09Z",
+      "last_fetch": "2026-08-28T10:06:09Z",
       "open_ask": false,
-      "note": "Kael 524 ENTRY COMPLETE delivered 08:56Z, row active 400/400"
+      "note": "Kael 524 ENTRY COMPLETE delivered 08:56Z, row active 400/400 | 2026-08-28T10:06:09Z: Kael 524 ack 08-27 13:39Z: row 524 400/400 read-back, no ask, no reply (COMMS MINIMUM)"
     },
     "350093354555412480": {
       "last_message_id": "351338918316085248",
@@ -2784,5 +2784,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-28T10:01:20Z"
+  "last_scan": "2026-08-28T10:06:09Z"
 }
