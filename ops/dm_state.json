@@ -2864,7 +2864,77 @@
       "last_fetch": "2026-08-28T12:21:58Z",
       "open_ask": false,
       "note": "2026-08-28T12:21:58Z: read-back verified (row 552, Varyn excess #14, founding windows) no reply per COMMS MINIMUM"
+    },
+    "349138550022737920": {
+      "last_message_id": "351667289218617344",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Milo 553)"
+    },
+    "350182350849576960": {
+      "last_message_id": "351667325990080512",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Nico 555)"
+    },
+    "347771166347235328": {
+      "last_message_id": "351667326719889408",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Mercy 556)"
+    },
+    "347785587064836096": {
+      "last_message_id": "351667326552117248",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Rui 559)"
+    },
+    "347771002358337536": {
+      "last_message_id": "351667361679413248",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Kadie 560)"
+    },
+    "350993155706851328": {
+      "last_message_id": "351667362262421504",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Ruth 561)"
+    },
+    "344349447246843904": {
+      "last_message_id": "351667362258227200",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Melissa 563)"
+    },
+    "342781402275647488": {
+      "last_message_id": "351667361645858816",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Luz 564)"
+    },
+    "349122730014019584": {
+      "last_message_id": "351667362069483520",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Damian 566)"
+    },
+    "350181778410967040": {
+      "last_message_id": "351667401160396800",
+      "last_scan": "2026-08-28T12:26:32Z",
+      "last_fetch": "2026-08-28T12:26:32Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:26:32Z: cursor keyed to outbound welcome (thread previously unscanned, Sperry 567)"
     }
   },
-  "last_scan": "2026-08-28T12:21:58Z"
+  "last_scan": "2026-08-28T12:26:32Z"
 }
