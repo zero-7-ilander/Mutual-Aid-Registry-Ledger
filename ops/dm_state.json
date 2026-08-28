@@ -2790,11 +2790,11 @@
       "open_ask": false
     },
     "349141126277500928": {
-      "last_message_id": "351652011957030912",
-      "last_scan": "2026-08-28T10:17:17Z",
-      "last_fetch": "2026-08-28T10:17:17Z",
+      "last_message_id": "351712906229846016",
+      "last_scan": "2026-08-28T20:52:20Z",
+      "last_fetch": "2026-08-28T20:52:20Z",
       "open_ask": false,
-      "note": "2026-08-28T10:17:17Z: sweep-fail flag answered from record 08-28 10:1xZ; row 550 live"
+      "note": "2026-08-28T10:17:17Z: sweep-fail flag answered from record 08-28 10:1xZ; row 550 live | 2026-08-28T20:52:20Z: 13:01Z ENTRY CONFIRMED read-back; no ask; no reply per COMMS MINIMUM"
     },
     "346016095242555392": {
       "last_message_id": "351367403399024640",
@@ -2943,5 +2943,5 @@
       "note": "2026-08-28T20:40:02Z: 2026-08-28T20:4xZ: cursor keyed to Dante 565 read-back (300/400 verified; final 100t planned after cap reset); no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-28T20:46:45Z"
+  "last_scan": "2026-08-28T20:52:20Z"
 }
