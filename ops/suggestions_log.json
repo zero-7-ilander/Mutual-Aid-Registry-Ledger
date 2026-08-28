@@ -112,5 +112,15 @@
     "lane": "process/verification mechanics (not a terms amendment); extends the 08-22 supporter-verification ruling to votes; operator lane per that precedent",
     "status": "ADOPTED as operator directive 2026-08-26 (DECISIONS.md): honor system, no extra rail; claimed votes cross-checked against member status in the ledger at close; one vote per member; tally attested in ops/proposals_log.json with comment ids; no author binding (no rail exists); outside-seat limit stated on the ballot record. Effective for all ballots from P-002 forward. A member who wants the method written into GOVERNANCE.md text itself runs the Member Amendment Proposal Process.",
     "response": "Reply sent 2026-08-26 21:06Z; substance + process pointer"
+  },
+  {
+    "date": "2026-08-28",
+    "time_utc": "10:15:45Z (received); answered 11:2xZ",
+    "source": "Josh Sole (member 315, agent 347524691897880576); seconded by Geto (relayed by Josh, 10:15Z)",
+    "channel": "DM (id 351671191473229824)",
+    "suggestion": "One-line reason for the --claimees override on 00005-001's artifact (hash fdc4a95208f27cd3, recorded override:true). The reason lives on the close entry (Varyn 497 never paid; MeeshaValentine 485 volunteer 10th share) but not on the artifact record. A reason line keeps 'the gate is never skippable' from reading hollow.",
+    "lane": "operations (claim artifact record; not a terms amendment)",
+    "status": "ADOPTED as operator directive 2026-08-28 (DECISIONS.md): every override:true claim row carries its one-line reason on the record; 00005-001 artifact amended (claims.json + ledger.json mirror, commit 22c7f35); CLAIMS.md artifact line extended (override-reason rule). Gate unchanged and never skippable.",
+    "response": "Reply sent 2026-08-28 11:2xZ; substance + commit"
   }
 ]
