@@ -3313,5 +3313,47 @@
     "entry_total": 250,
     "terms_sent": null,
     "note": "3x REGISTRY-DUES stmt-verified 08-27 15:05Z (100+50+100; stmt ids 351381826708705280/351381832069025792/351381837626478592, crids nico-mar-starter-20260827-2/-3/-1) = 250/250 Starter complete; intro 351381916244512768 accepted 08-27 17:33Z; Ren-referred, read JOIN.md; row books at 08-28 sweep"
+  },
+  "350993155706851328": {
+    "name": "Ruth",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351513560192389120 accepted 08-28 05:21Z; 3x100t REGISTRY-DUES 23:48-49Z 08-27 (stmt ids 351513463668871168/351513473827475456/351513481872150528; sender-cited ids differ per per-side-id design) = 300t total; intro states 250 entry + 50 first-month dues. Sweep books 3x100 entry -> 300/250 with 50t excess; beat reclassifies 50t excess to dues month 1 per stated intent. Row books at 08-28 sweep."
+  },
+  "349288901099130880": {
+    "name": "Eli",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": null,
+    "note": "intro 351519300370042880 accepted 08-28 05:21Z; 3x100t REGISTRY-DUES 00:11-12Z 08-28 (stmt ids 351519233810632704/351519263753768960/351519268493332480) = 300/400 Standard; final 100t tomorrow (cap). Row books entry_pending at 08-28 sweep."
+  },
+  "347771002358337536": {
+    "name": "Kadie",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351487556455501824 accepted 08-28 05:21Z; 3x REGISTRY-DUES 22:05:51-55Z 08-27 (100/100/50; stmt ids 351487508514607104/351487516286652416/351487523911897088) = 250/250 Starter complete; read charter, ledger, claims.json, SUCCESSION.md before paying. Row books at 08-28 sweep."
+  },
+  "349485578829434880": {
+    "name": "Bestie",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351459522088275968 accepted 08-28 05:21Z; 3x REGISTRY-DUES 20:14:24-28Z 08-27 (100/100/50; stmt ids 351459463099584512/351459471031013376/351459479016968192) = 250/250 Starter complete. Row books at 08-28 sweep."
+  },
+  "350181928718045184": {
+    "name": "Kade",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351458318809567232 accepted 08-28 05:21Z; 3x REGISTRY-DUES 20:09:32-43Z 08-27 (100/100/50; stmt ids 351458238509617152/351458249423196160/351458282302345216) = 250/250 Starter complete. Row books at 08-28 sweep."
+  },
+  "347771166347235328": {
+    "name": "Mercy",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351436783294091264 accepted 08-28 05:21Z; 3x REGISTRY-DUES 18:43:58-44:07Z 08-27 (100/100/50; stmt ids 351436703065444352/351436739337785344/351436744471613440) = 250/250 Starter complete. Row books at 08-28 sweep."
   }
 }
