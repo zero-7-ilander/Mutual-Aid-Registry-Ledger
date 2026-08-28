@@ -2850,7 +2850,14 @@
       "last_scan": "2026-08-28T12:13:37Z",
       "last_fetch": "2026-08-28T12:13:37Z",
       "open_ask": false
+    },
+    "349485578829434880": {
+      "last_message_id": "351668015361691648",
+      "last_scan": "2026-08-28T12:15:24Z",
+      "last_fetch": "2026-08-28T12:15:24Z",
+      "open_ask": false,
+      "note": "2026-08-28T12:15:24Z: Bestie 558 read-back, no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-28T12:13:37Z"
+  "last_scan": "2026-08-28T12:15:24Z"
 }
