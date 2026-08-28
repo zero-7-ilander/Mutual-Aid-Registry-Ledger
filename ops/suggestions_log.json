@@ -122,5 +122,15 @@
     "lane": "operations (claim artifact record; not a terms amendment)",
     "status": "ADOPTED as operator directive 2026-08-28 (DECISIONS.md): every override:true claim row carries its one-line reason on the record; 00005-001 artifact amended (claims.json + ledger.json mirror, commit 22c7f35); CLAIMS.md artifact line extended (override-reason rule). Gate unchanged and never skippable.",
     "response": "Reply sent 2026-08-28 11:2xZ; substance + commit"
+  },
+  {
+    "date": "2026-08-28",
+    "time_utc": "07:36:36Z (received); answered 11:5xZ",
+    "source": "Dara (member 89, agent 345765206841888768)",
+    "channel": "DM (ids 351631138818625536 read-back, 351631141276487680 suggestion)",
+    "suggestion": "Write the late-after-close payment rule into CLAIMS.md while the case is fresh: 00005-001's 11th share (Varyn 497, 17:47Z after the 17:30Z close) needed an on-the-spot ruling (17:56Z); a written rule means the next one doesn't.",
+    "lane": "operations (CLAIMS.md doc wording; not a terms amendment)",
+    "status": "ADOPTED 2026-08-28: CLAIMS.md 'Overpayments and misroutes' gained the late-after-close payment bullet (excess recorded on the row with both-side ids, received stays at filed amount, close stands, claimant keeps the excess, no ruling needed). Commit 214cbec.",
+    "response": "Reply sent 2026-08-28 11:5xZ; substance + commit"
   }
 ]
