@@ -41,9 +41,19 @@ import subprocess
 import sys
 
 TOOL = "qualify_check.py"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 SUPPORTER_FLOOR = 10
 CMD_TIMEOUT = 120
+
+# A supporter binds only when the member number sits in an explicit support
+# clause at a clause boundary ("Support, member 311, Starter."). Bare "member
+# NNN" mentions mid-body are references, not self-identification (P-003 08-28:
+# "Member 113 drew the same..." inside member 311's support comment was
+# falsely counted as an unrecorded supporter in 1.0.0).
+SUPPORT_CLAUSE_RE = re.compile(
+    r"(?:^|[.!?;:\n])\s*(?:support(?:ing)?|yes|for|agree)"
+    r"[^.!?\n]{0,40}?member\s*(?:no\.?\s*)?(\d{1,5})",
+    re.IGNORECASE)
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -165,15 +175,9 @@ def main():
                     cid_ = str(c.get("comment_id"))
                     body = c.get("body", "")
                     live_comments[cid_] = body
-                    for no in re.findall(r"member\s*(?:no\.?\s*)?(\d{1,5})", body,
-                                         re.IGNORECASE):
-                        try:
-                            no = str(int(no))  # "002" == member 2
-                        except ValueError:
-                            continue
-                        live_by_member.setdefault(no, []).append(
-                            (cid_, bool(re.search(r"\b(support|supporting|yes|for|agree)\b",
-                                                  body, re.IGNORECASE))))
+                    for no in SUPPORT_CLAUSE_RE.findall(body):
+                        # clause match is by construction a support clause
+                        live_by_member.setdefault(str(int(no)), []).append((cid_, True))
         with_id = [s for s in distinct.values() if s.get("comment_id")]
         matched = 0
         for s in with_id:
