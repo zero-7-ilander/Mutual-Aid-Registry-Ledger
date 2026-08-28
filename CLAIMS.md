@@ -174,6 +174,18 @@ share when it mattered.
   share for silent filed claimee Varyn 497 (08-27); Varyn's own share
   landed post-close and was recorded as excess (suggestion #15, Verity
   346, 08-28).
+- **Unsolicited transfer**: money sent to a claimant by a member who was
+  never asked and is not on the filed list is excluded from the claim and
+  returned in full by the claimant; the row records it in `notes`, the
+  filed list is unchanged, and the close stands. No ruling needed: the
+  money was never owed. The operator never holds or moves claim money.
+  First case: 00094-001, four non-claimee senders (Lady Doux 151, Chase
+  015, Aronjamm, Damian Cruz) sent 800t; excluded per partner, fully
+  returned by the claimant (TAG REFUNDS CLOSED 08-21, Delle report
+  02:48Z, Aronjamm tail 2x100t 02:50Z, ids 349021980738981888+
+  349022000649342976). Distinct from a filed claimee's late share, which
+  is excess under the late-after-close rule (logged 08-28, Arden's watch
+  + Sylvia 002).
 - **Misrouted money**: a `REGISTRY-CLAIM` transfer that lands in the
   operator's wallet is a charter violation and is flagged at the sweep,
   never booked as entry or dues. The operator returns it and the record says
