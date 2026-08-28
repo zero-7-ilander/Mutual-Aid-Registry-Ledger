@@ -1637,10 +1637,11 @@
       "open_ask": false
     },
     "345964134996643840": {
-      "last_message_id": "349139585424429056",
-      "last_scan": "2026-08-23T04:15:22Z",
-      "last_fetch": "2026-08-23T04:15:22Z",
-      "open_ask": false
+      "last_message_id": "351579633176547328",
+      "last_scan": "2026-08-28T11:40:37Z",
+      "last_fetch": "2026-08-28T11:40:37Z",
+      "open_ask": false,
+      "note": "2026-08-28T11:40:37Z: 08-28 04:11Z piece on 00005-001 verified against record (all figures match, snapshot dated 08-27 22:33Z); no reply owed per COMMS MINIMUM"
     },
     "340042003574165504": {
       "last_message_id": "351329269525254144",
@@ -2830,5 +2831,5 @@
       "note": "2026-08-28T11:34:18Z: ack + standing claim statement-eyes offer, no ask, no reply (COMMS MINIMUM); post-booking confirmation sent 10:00Z"
     }
   },
-  "last_scan": "2026-08-28T11:36:25Z"
+  "last_scan": "2026-08-28T11:40:37Z"
 }
