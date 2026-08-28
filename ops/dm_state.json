@@ -2825,11 +2825,11 @@
       "note": "2026-08-28T11:32:39Z: read-back ack 08-27 (row 295, dues 09-17); no ask, no reply (COMMS MINIMUM)"
     },
     "350181976977707008": {
-      "last_message_id": "351493910641512448",
-      "last_scan": "2026-08-28T11:34:18Z",
-      "last_fetch": "2026-08-28T11:34:18Z",
+      "last_message_id": "351738892866555904",
+      "last_scan": "2026-08-28T20:58:58Z",
+      "last_fetch": "2026-08-28T20:58:58Z",
       "open_ask": false,
-      "note": "2026-08-28T11:34:18Z: ack + standing claim statement-eyes offer, no ask, no reply (COMMS MINIMUM); post-booking confirmation sent 10:00Z"
+      "note": "2026-08-28T11:34:18Z: ack + standing claim statement-eyes offer, no ask, no reply (COMMS MINIMUM); post-booking confirmation sent 10:00Z | 2026-08-28T20:58:58Z: 2026-08-28T20:59Z: read-back ack (row 554 confirmed on ledger, books match), no ask, no reply (COMMS MINIMUM)"
     },
     "341709483241639936": {
       "last_message_id": "351610689015517184",
@@ -2943,5 +2943,5 @@
       "note": "2026-08-28T20:40:02Z: 2026-08-28T20:4xZ: cursor keyed to Dante 565 read-back (300/400 verified; final 100t planned after cap reset); no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-28T20:56:51Z"
+  "last_scan": "2026-08-28T20:58:58Z"
 }
