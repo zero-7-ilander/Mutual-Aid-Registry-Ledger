@@ -1760,7 +1760,7 @@
     {"member_no": 560,"date": "2026-08-27","amount": 50,"reason": "REGISTRY-DUES","part": "kadie-mar-entry-20260827-c","verified": true,"statement_id": "351487523911897088","client_request_id": "kadie-mar-entry-20260827-c"},
     {"member_no": 561,"date": "2026-08-27","amount": 100,"reason": "REGISTRY-DUES","part": "ruth-mar-starter-join-20260827-0148-a","verified": true,"statement_id": "351513463668871168","client_request_id": "ruth-mar-starter-join-20260827-0148-a"},
     {"member_no": 561,"date": "2026-08-27","amount": 100,"reason": "REGISTRY-DUES","part": "ruth-mar-starter-join-20260827-0148-b","verified": true,"statement_id": "351513473827475456","client_request_id": "ruth-mar-starter-join-20260827-0148-b"},
-    {"member_no": 561,"date": "2026-08-27","amount": 100,"reason": "REGISTRY-DUES","part": "ruth-mar-starter-join-20260827-0148-c","verified": true,"statement_id": "351513481872150528","client_request_id": "ruth-mar-starter-join-20260827-0148-c"},
+    {"member_no": 561,"date": "2026-08-27","amount": 50,"reason": "REGISTRY-DUES; CORRECTION 08-28 (Cara Vale ruling shape f62ce01): 50t of this part rebooked as prepaid first dues, entry portion 50t; statement truth 300t unchanged","part": "ruth-mar-starter-join-20260827-0148-c","verified": true,"statement_id": "351513481872150528","client_request_id": "ruth-mar-starter-join-20260827-0148-c"},
     {"member_no": 562,"date": "2026-08-28","amount": 100,"reason": "REGISTRY-DUES","part": "p01","verified": true,"statement_id": "351519233810632704","client_request_id": "eli-registry-standard-20260828-01"},
     {"member_no": 562,"date": "2026-08-28","amount": 100,"reason": "REGISTRY-DUES","part": "p02","verified": true,"statement_id": "351519263753768960","client_request_id": "eli-registry-standard-20260828-02"},
     {"member_no": 562,"date": "2026-08-28","amount": 100,"reason": "REGISTRY-DUES","part": "p03","verified": true,"statement_id": "351519268493332480","client_request_id": "eli-registry-standard-20260828-03"},
@@ -1831,7 +1831,8 @@
     {"member_no": 344,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per rulebook ruling 08-19 (300t entry, part 3 stmt 348338743607824384)","statement_id": "348338743607824384","client_request_id": "cara-registry-entry-003-20260819"},
     {"member_no": 354,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 348477286644715520)","statement_id": "348477286644715520","client_request_id": "vanessa-mar-entry-20260819-3"},
     {"member_no": 494,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 349712440197386240 (REGISTRY-DUES part 3 of 3; 50t allocated to month-1 dues per member tier reply 08-23)","statement_id": "349712440197386240","date": "2026-08-23"},
-    {"member_no": 281,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 351654918475485184 (REGISTRY-DUES, verified 2026-08-28T09:56:55Z)","statement_id": "351654918475485184","client_request_id": "REGISTRY-DUES-2026-08-28"}
+    {"member_no": 281,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 351654918475485184 (REGISTRY-DUES, verified 2026-08-28T09:56:55Z)","statement_id": "351654918475485184","client_request_id": "REGISTRY-DUES-2026-08-28"},
+    {"member_no": 561,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 351513481872150528)","statement_id": "351513481872150528","client_request_id": "ruth-mar-starter-join-20260827-0148-c","date": "2026-08-27"}
   ],
   "updated": "2026-08-28T09:56:55Z"
 }
