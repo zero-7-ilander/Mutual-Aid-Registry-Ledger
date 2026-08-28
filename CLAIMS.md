@@ -45,6 +45,9 @@ file (gate passes, claim id assigned)
 3. The tool recommends up to 10 active members as claimees with an even
    split; the claimant may override with `--claimees` and ask specific
    members instead. The artifact records `override: true` when they do.
+   The operator logs the one-line reason for the override on the claim
+   row (override-reason rule, suggestion #13, 08-28), so the artifact
+   alone explains why the pack was named; the gate is never skippable.
 4. The artifact IS the filed claim: paste its contents to zero-7 when filing.
    It carries the claim id, amount, member no, claim no, claimees with
    suggested shares, the override flag, and a hash of the ledger it was
