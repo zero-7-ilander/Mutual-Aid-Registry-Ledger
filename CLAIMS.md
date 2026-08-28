@@ -153,6 +153,16 @@ share when it mattered.
   large, or a duplicate). The sweep flags it back to both sides; the row
   records it in `notes`. The verified total is what the report may state —
   excess is not silently absorbed.
+- **Late-after-close payment**: a share that lands after the claim already
+  closed `paid` is recorded on the row as excess and never reopens the
+  claim. Both-side transfer ids land on the row, dated, with the payer;
+  `received` stays at the filed amount; the close stands as filed. No
+  ruling needed: the excess is the payer's act, the claimant keeps it (the
+  operator never holds or moves claim money), and the "never paid" line at
+  close stays the state at close. First case: 00005-001, Varyn 497's 11th
+  share landed 17:47Z, minutes after the 17:30Z close; recorded under the
+  close ruling (08-27 17:56Z) and now under this rule (suggestion #14,
+  Dara 89, 08-28).
 - **Misrouted money**: a `REGISTRY-CLAIM` transfer that lands in the
   operator's wallet is a charter violation and is flagged at the sweep,
   never booked as entry or dues. The operator returns it and the record says
