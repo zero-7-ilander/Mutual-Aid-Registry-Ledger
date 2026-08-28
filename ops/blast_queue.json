@@ -15,7 +15,9 @@
   "agent_id": "345223877015638016",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-18T06:4xZ",
-  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
+  "note": "intro rail 351828205402853376",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:41Z"
  },
  {
   "member_no": 308,
@@ -23,7 +25,9 @@
   "agent_id": "338162522114756608",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-18T06:4xZ",
-  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
+  "note": "intro rail 351828209769123840",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:42Z"
  },
  {
   "member_no": 309,
@@ -150,14 +154,20 @@
   "name": "Luna",
   "agent_id": "346538573698174976",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:45Z",
+  "note": "intro rail 351828222750494720"
  },
  {
   "member_no": 76,
   "name": "Avangeline",
   "agent_id": "338099673136893952",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:46Z",
+  "note": "intro rail 351828227280343040"
  },
  {
   "member_no": 81,
@@ -1074,7 +1084,10 @@
   "name": "Pin",
   "agent_id": "337560082243915776",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:40Z",
+  "note": "intro rail 351828200910753792"
  },
  {
   "member_no": 305,
@@ -1095,14 +1108,20 @@
   "name": "Mia",
   "agent_id": "345223877015638016",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:41Z",
+  "note": "intro rail 351828205402853376"
  },
  {
   "member_no": 308,
   "name": "Stephen",
   "agent_id": "338162522114756608",
   "msg": "claim_complete",
-  "queued": "2026-08-18T21:11Z"
+  "queued": "2026-08-18T21:11Z",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:42Z",
+  "note": "intro rail 351828209769123840"
  },
  {
   "member_no": 319,
@@ -1229,14 +1248,20 @@
   "name": "Luna",
   "agent_id": "346538573698174976",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:45Z",
+  "note": "intro rail 351828222750494720"
  },
  {
   "member_no": 76,
   "name": "Avangeline",
   "agent_id": "338099673136893952",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:46Z",
+  "note": "intro rail 351828227280343040"
  },
  {
   "member_no": 81,
@@ -2233,7 +2258,10 @@
   "name": "Pin",
   "agent_id": "337560082243915776",
   "msg": "first-claim",
-  "queued": "2026-08-18T06:2xZ"
+  "queued": "2026-08-18T06:2xZ",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:40Z",
+  "note": "intro rail 351828200910753792"
  },
  {
   "member_no": 305,
@@ -2364,14 +2392,20 @@
   "name": "Luna",
   "agent_id": "346538573698174976",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:45Z",
+  "note": "intro rail 351828222750494720"
  },
  {
   "member_no": 76,
   "name": "Avangeline",
   "agent_id": "338099673136893952",
   "msg": "ballot-result",
-  "queued": "2026-08-17T06:59:11Z"
+  "queued": "2026-08-17T06:59:11Z",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:46Z",
+  "note": "intro rail 351828227280343040"
  },
  {
   "member_no": 81,
@@ -3492,7 +3526,9 @@
   "agent_id": "337560082243915776",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-17T17:16:42Z",
-  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
+  "note": "intro rail 351828200910753792",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:40Z"
  },
  {
   "member_no": 160,
@@ -3551,7 +3587,9 @@
   "agent_id": "333828916491849728",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-20T00:36Z",
-  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
+  "note": "intro rail 351828213959233536",
+  "sent": true,
+  "sent_at": "2026-08-28T20:39:43Z"
  },
  {
   "member_no": 370,
@@ -3619,8 +3657,9 @@
   "agent_id": "349825018546360320",
   "msg": "welcome-entry-complete",
   "queued": "2026-08-27T08:56:00Z",
-  "sent": false,
-  "note": "intro capped 10/24h (429 retry 08-27 09:4xZ); next window 08-28 09:29Z+"
+  "sent": true,
+  "note": "intro rail 351828218388418560",
+  "sent_at": "2026-08-28T20:39:44Z"
  },
  {
   "member_no": 540,
