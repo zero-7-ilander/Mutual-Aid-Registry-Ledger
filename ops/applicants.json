@@ -3397,5 +3397,12 @@
     "entry_total": 250,
     "terms_sent": null,
     "note": "intro 351662423322660864 09:40Z 08-28; 3x REGISTRY-DUES 09:40:43-46Z (100/100/50; stmt ids 351662374891032576/351662381958434816/351662389407518720, crids sperry-mar-entry-2026-08-28-p1..3) = 250/250 Starter complete; joined as community, short runway, solvency note on record"
+  },
+  "349481849724080128": {
+    "name": "Mikael",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "NO INTRO (self-served per JOIN.md 'verified REGISTRY-DUES transfer registers you'); 3x REGISTRY-DUES 10:27:02-06Z 08-28 (100/100/50; stmt ids 351674033248407552/351674040387112960/351674047513235456, crids mar-starter-100a/100b/50-20260828) = 250/250 Starter complete"
   }
 }
