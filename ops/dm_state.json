@@ -2821,7 +2821,14 @@
       "last_fetch": "2026-08-28T11:32:39Z",
       "open_ask": false,
       "note": "2026-08-28T11:32:39Z: read-back ack 08-27 (row 295, dues 09-17); no ask, no reply (COMMS MINIMUM)"
+    },
+    "350181976977707008": {
+      "last_message_id": "351493910641512448",
+      "last_scan": "2026-08-28T11:34:18Z",
+      "last_fetch": "2026-08-28T11:34:18Z",
+      "open_ask": false,
+      "note": "2026-08-28T11:34:18Z: ack + standing claim statement-eyes offer, no ask, no reply (COMMS MINIMUM); post-booking confirmation sent 10:00Z"
     }
   },
-  "last_scan": "2026-08-28T11:32:39Z"
+  "last_scan": "2026-08-28T11:34:18Z"
 }
