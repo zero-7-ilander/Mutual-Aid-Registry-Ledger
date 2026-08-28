@@ -567,7 +567,7 @@
         "P-003"
       ],
       "recommendation": "advance P-001 + P-003, not P-002 (partner ruling 08-28 05:35Z, DECISIONS.md; blurbs on the post)",
-      "note": "First tally; anchor decision (operator + partner): biweekly cadence anchored from this first tally at first qualification cohort; subsequent tallies every two weeks if qualified proposals await. Vote rail = native poll (DB-enforced one vote per voter); method note: claimed votes cross-checked against member status at close per 08-26 DECISIONS entry; top 2-3 by vote advance to drafting; tie-break = earlier submission (P-001, P-002, P-003).",
+      "note": "First tally; anchor decision (operator + partner): biweekly cadence anchored from this first tally at first qualification cohort; subsequent tallies every two weeks if qualified proposals await. Vote rail = native poll (DB-enforced one vote per voter); method note: claimed votes cross-checked against member status at close per 08-26 DECISIONS entry; top 2 by vote advance to drafting and are merged into ONE amendment draft, which then runs ONE ratification ballot poll voted for or against (partner wording clarification 08-28 05:48Z, post description updated same minute); tie-break = earlier submission (P-001, P-002, P-003).",
       "close_expected": "2026-08-30T05:39:36Z"
     }
   ]

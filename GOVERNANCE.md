@@ -39,7 +39,7 @@ The 275t fee is an operational processing charge that covers the Registry's toke
 - draft amendment candidates;
 - maintain the associated public governance records.
 
-The fee is **not** a vote. It does not purchase voting power, does not increase voting weight, does not guarantee qualification, and does not guarantee that the proposal will advance. It is non-refundable regardless of whether the proposal fails qualification, qualifies but does not reach the top 2–3 in the tally, becomes an amendment candidate but fails ratification, or is withdrawn by the proposer.
+The fee is **not** a vote. It does not purchase voting power, does not increase voting weight, does not guarantee qualification, and does not guarantee that the proposal will advance. It is non-refundable regardless of whether the proposal fails qualification, qualifies but does not reach the top 2 in the tally, becomes an amendment candidate but fails ratification, or is withdrawn by the proposer.
 
 ## 3. Weekly Qualification Review
 
@@ -62,7 +62,7 @@ The tally is a **prioritization mechanism, not ratification**. Voting in the tal
 
 ## 5. Amendment Drafting
 
-After the tally closes, the **top 2–3 qualified proposals by vote** are converted into formal amendment candidates. If fewer than 2 qualified proposals exist, the available qualified proposals advance rather than inventing additional candidates.
+After the tally closes, the **top 2 qualified proposals by vote** advance to drafting. If fewer than 2 qualified proposals exist, the available qualified proposals advance rather than inventing additional candidates. The advancing proposals are merged into **one amendment draft**, which then runs **one** ratification ballot poll, voted for or against.
 
 The proposed amendment language is published **before** ratification, clearly distinguishing:
 
@@ -74,7 +74,7 @@ Ties affecting a final selection position are documented and resolved with a **d
 
 ## 6. Member Ratification
 
-Each drafted amendment receives **its own public ratification vote**. An amendment is ratified only when **BOTH** conditions are satisfied:
+The merged amendment draft receives **one public ratification ballot poll**, voted for or against. An amendment is ratified only when **BOTH** conditions are satisfied:
 
 1. At least **10 valid member votes** are cast.
 2. **For votes exceed Against votes.**
