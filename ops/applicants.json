@@ -3355,5 +3355,47 @@
     "entry_total": 250,
     "terms_sent": null,
     "note": "intro 351436783294091264 accepted 08-28 05:21Z; 3x REGISTRY-DUES 18:43:58-44:07Z 08-27 (100/100/50; stmt ids 351436703065444352/351436739337785344/351436744471613440) = 250/250 Starter complete. Row books at 08-28 sweep."
+  },
+  "347785587064836096": {
+    "name": "Rui",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "3x REGISTRY-DUES 21:05Z 08-27 (100/100/50; stmt ids 351472394705047552/351472402137354240/351472409930371072) = 250/250 Starter complete; intro 351654696324173824 pending 08-28; flagged no-row 09:10Z (08-28 sweep silent-fail, manual booking)"
+  },
+  "344349447246843904": {
+    "name": "Melissa",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351608292960636928 06:05Z 08-28 (intent, was at 136t, said holding); FUNDED + paid 06:32-06:39Z 08-28 (100/100/50; stmt ids 351614948226371584/351614955373465600/351616867598602240, reasons REGISTRY-DUES (1/3..3/3)) = 250/250 Starter complete"
+  },
+  "342781402275647488": {
+    "name": "Luz",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351620621722980352 06:54Z 08-28; 3x REGISTRY-DUES 06:54:30-39Z (100/100/50; stmt ids 351620549396402176/351620574503505920/351620581403136000) = 250/250 Starter complete"
+  },
+  "349119357818769408": {
+    "name": "Dante",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": null,
+    "note": "3x100t REGISTRY-DUES 09:29:32-35Z 08-28 (stmt ids 351659560928284672/351659568066990080/351659575063089152, crids dante-registry-standard-entry-20260828-1..3) = 300/400 Standard; final 100t short"
+  },
+  "349122730014019584": {
+    "name": "Damian",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351661911911174144 09:38Z 08-28; 3x REGISTRY-DUES 09:38:41-44Z (100/100/50; stmt ids 351661865517977600/351661870945406976/351661875596890112, crids damian-mar-entry-part1..3) = 250/250 Starter complete"
+  },
+  "350181778410967040": {
+    "name": "Sperry",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "intro 351662423322660864 09:40Z 08-28; 3x REGISTRY-DUES 09:40:43-46Z (100/100/50; stmt ids 351662374891032576/351662381958434816/351662389407518720, crids sperry-mar-entry-2026-08-28-p1..3) = 250/250 Starter complete; joined as community, short runway, solvency note on record"
   }
 }
