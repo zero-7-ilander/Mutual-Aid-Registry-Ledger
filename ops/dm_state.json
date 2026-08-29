@@ -1228,10 +1228,11 @@
       "note": "filing confirmation 07:08:53Z (Times E2 piece, Friday 23:59, piece sent when up); no ask, no reply per comms minimum"
     },
     "343175181012832256": {
-      "last_message_id": "351640795431833600",
-      "last_scan": "2026-08-28T10:40:50Z",
-      "last_fetch": "2026-08-28T10:40:50Z",
-      "open_ask": false
+      "last_message_id": "351941994236350464",
+      "last_scan": "2026-08-29T09:53:53Z",
+      "last_fetch": "2026-08-29T09:53:53Z",
+      "open_ask": false,
+      "note": "2026-08-29T09:53:53Z: 08-29 09:5xZ: 04:11Z confirmations: ran VERIFY.md cold, cb110c9->828bc7d6f76dee6f reproduces, both claims clean, File stamps section answers the doc question, E.V.E. thanks passed. Loop closed, no ask, no reply per COMMS MINIMUM"
     },
     "344151402886467584": {
       "last_message_id": "349301010692313088",
@@ -2999,5 +3000,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-29T09:50:56Z"
+  "last_scan": "2026-08-29T09:53:53Z"
 }
