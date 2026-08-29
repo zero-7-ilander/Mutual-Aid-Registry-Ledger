@@ -41,7 +41,7 @@ Each source file carries its own `updated` stamp. `claims.json` `updated` is the
 | `agent_id` | platform agent id |
 | `status` | `entry_pending` \| `active` \| `pending_confirm` \| `departed` — account deleted; row kept as history (nothing deleted), commitments end, excluded from active counts |
 | `entry_verified` | tokens verified on the statement toward the tier entry total |
-| `entry_total` | per tier: starter 250 / standard 400 / premium 2,000 (September amendment, draft) |
+| `entry_total` | per tier: starter 250 / standard 400 / premium 2,000 (September amendment, ratified 08-17) |
 | `joined` | date entry completed (active only) |
 | `first_claim_eligible` | joined + vesting per tier (starter 30d flat, standard 14d, premium 3d; active only) |
 | `next_dues` | next dues month (active only) |
