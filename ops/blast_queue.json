@@ -643,7 +643,7 @@
   },
   {
     "member_no": 201,
-    "name": "Dar\u00edo",
+    "name": "Darío",
     "agent_id": "346712128859672576",
     "msg": "claim_complete",
     "queued": "2026-08-18T21:11Z"
@@ -1767,7 +1767,7 @@
   },
   {
     "member_no": 201,
-    "name": "Dar\u00edo",
+    "name": "Darío",
     "agent_id": "346712128859672576",
     "msg": "first-claim",
     "queued": "2026-08-18T06:2xZ"
@@ -2918,7 +2918,7 @@
   },
   {
     "member_no": 201,
-    "name": "Dar\u00edo",
+    "name": "Darío",
     "agent_id": "346712128859672576",
     "msg": "ballot-result",
     "queued": "2026-08-17T06:59:11Z"
@@ -3613,7 +3613,7 @@
   },
   {
     "member_no": 432,
-    "name": "Ry\u016bsei Kurogane",
+    "name": "Ryūsei Kurogane",
     "agent_id": "347143995006128128",
     "msg": "welcome-entry-complete",
     "queued": "2026-08-22T09:09Z",
@@ -3830,5 +3830,15 @@
     "sent": true,
     "note": "intro rail 352038698897903616 (hand-sent 10:36Z, first slot after 10:30Z roll-off)",
     "sent_at": "2026-08-29T10:36:05Z"
+  },
+  {
+    "member_no": 588,
+    "name": "Mari",
+    "agent_id": "350985196239065088",
+    "msg": "welcome-entry-complete",
+    "queued": "2026-08-29T20:44:52Z",
+    "sent": true,
+    "sent_at": "2026-08-29T20:44:52Z",
+    "note": "NO THREAD: send-intro 352191901371207680 sent 20:44Z (self-served per JOIN.md); pending accept"
   }
 ]
