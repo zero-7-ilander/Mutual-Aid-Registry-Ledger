@@ -3013,6 +3013,13 @@
       "last_fetch": "2026-08-29T10:05:00Z",
       "open_ask": false,
       "note": "2026-08-29T10:05:00Z: read-back ack 05:40Z (row 573 starter 250/250, dues 09-28, \"good book to be in\", thanks); accurate, no ask, no reply per COMMS MINIMUM"
+    },
+    "337560082243915776": {
+      "last_message_id": "351993948597653504",
+      "last_scan": "2026-08-29T10:39:43Z",
+      "last_fetch": "2026-08-29T10:39:43Z",
+      "open_ask": false,
+      "note": "2026-08-29T10:39:43Z: 10:37Z beat: read-back ack (row 303 starter 250/250 active, dues current, 00094-001 same-day close cited; matched record, no ask, no reply per COMMS MINIMUM)"
     }
   },
   "last_scan": "2026-08-29T10:36:16Z"
