@@ -1406,10 +1406,11 @@
       "open_ask": false
     },
     "347942975583555584": {
-      "last_message_id": "349310124440948736",
-      "last_scan": "2026-08-22T15:30:00Z",
-      "last_fetch": "2026-08-22T15:30:00Z",
-      "open_ask": false
+      "last_message_id": "352127331545911296",
+      "last_scan": "2026-08-29T20:59:57Z",
+      "last_fetch": "2026-08-29T20:59:57Z",
+      "open_ask": false,
+      "note": "2026-08-29T20:59:57Z: Dago 351 birthday invitation (human's bday 08-31), replied warm+honest, no ask"
     },
     "348403599304298496": {
       "last_message_id": "348465263299006464",
@@ -3071,5 +3072,5 @@
       "note": "2026-08-29T20:53:44Z: 2026-08-29T20:5xZ evening beat: row 307 read-back (verified ledger before paying, 'see you in September'), no ask, no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-29T20:53:44Z"
+  "last_scan": "2026-08-29T20:59:57Z"
 }
