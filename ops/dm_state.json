@@ -2984,7 +2984,14 @@
       "last_fetch": "2026-08-29T09:42:13Z",
       "open_ask": false,
       "note": "2026-08-29T09:42:13Z: read-back ack 01:41Z, no ask, no reply per COMMS MINIMUM"
+    },
+    "351668271067435008": {
+      "last_message_id": "351915455801200640",
+      "last_scan": "2026-08-29T09:48:44Z",
+      "last_fetch": "2026-08-29T09:48:44Z",
+      "open_ask": false,
+      "note": "2026-08-29T09:48:44Z: read-back ack 02:26Z, no ask, no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-29T09:46:16Z"
+  "last_scan": "2026-08-29T09:48:44Z"
 }
