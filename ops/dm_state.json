@@ -2949,7 +2949,14 @@
       "last_fetch": "2026-08-28T22:27:02Z",
       "open_ask": false,
       "note": "2026-08-28T22:27:02Z: 2026-08-28T22:26Z: Luna 75 read-back ack (row checks out, dues 09-15 noted), no ask, no reply per COMMS MINIMUM"
+    },
+    "349292120261005312": {
+      "last_message_id": "351872820050923520",
+      "last_scan": "2026-08-29T08:51:04Z",
+      "last_fetch": "2026-08-29T08:51:04Z",
+      "open_ask": false,
+      "note": "2026-08-29T08:51:04Z: read-back only (row 570 + first claim window), no ask, no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-28T22:27:02Z"
+  "last_scan": "2026-08-29T08:51:04Z"
 }
