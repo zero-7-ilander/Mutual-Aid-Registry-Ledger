@@ -29,3 +29,7 @@ Verified example (claim 00005-001, closed PAID 2026-08-27): `<commit>` = `cb110c
 - `ledger.json` `updated`: the sweep's verification-batch stamp (statement fetch cutoff). Advances when the merge writes.
 - `claims.json` `updated`: last-write time. Bumped on every write to the file, sweep applies and manual claim edits alike. It is not a claim-activity log.
 - The git commit trail is the authoritative record of when claim state changed. Stamps are conveniences for cold readers; when a stamp and the commits disagree, the commits win.
+
+## Running counts
+
+For a one-line as-of snapshot (rows / active / entry-pending / departed, claims filed vs paid-and-closed), read `SUMMARY.md` at the same commit. It is regenerated on every money-sweep apply; `ledger.json` totals are the source it mirrors.

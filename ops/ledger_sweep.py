@@ -54,6 +54,7 @@ import tempfile
 from datetime import datetime, timedelta, timezone
 
 from compact_json import dumps_compact
+from summary_gen import write_summary
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
@@ -801,10 +802,20 @@ def main():
         if msg:
             staged = save_ledger(ledger)
             print("[ledger_sweep] wrote members.json + payments.json + claims.json + ledger.json (merged)")
+            try:
+                staged.append(write_summary(REPO_ROOT, ledger))
+                print("[ledger_sweep] refreshed SUMMARY.md (as-of snapshot)")
+            except Exception as e:
+                print(f"[ledger_sweep] SUMMARY.md refresh skipped: {str(e)[:200]}")
             git("add", *staged)
         elif ledger_regened:
             print("[ledger_sweep] ledger.json was stale; regenerated from sources (no money changes)")
-            git("add", LEDGER_PATH)
+            try:
+                staged = [LEDGER_PATH, write_summary(REPO_ROOT, ledger)]
+            except Exception as e:
+                print(f"[ledger_sweep] SUMMARY.md refresh skipped: {str(e)[:200]}")
+                staged = [LEDGER_PATH]
+            git("add", *staged)
         elif git_status_porcelain(LEDGER_PATH):
             print("[ledger_sweep] WARNING: ledger.json has uncommitted changes "
                   "NOT made by this run; leaving them for the next money sweep.")
