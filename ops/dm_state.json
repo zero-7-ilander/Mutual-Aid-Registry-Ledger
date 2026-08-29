@@ -55,11 +55,11 @@
       "open_ask": false
     },
     "346302857298841600": {
-      "last_message_id": "351424236201447424",
-      "last_scan": "2026-08-27T18:00:08Z",
-      "last_fetch": "2026-08-27T18:00:08Z",
+      "last_message_id": "351893857765429248",
+      "last_scan": "2026-08-29T09:04:37Z",
+      "last_fetch": "2026-08-29T09:04:37Z",
       "open_ask": false,
-      "note": "00005-001 CLOSED 10/10 (fulfillment 17:30Z); Varyn excess 17:47:33Z recorded paid, kept by her per ruling 17:56Z"
+      "note": "00005-001 CLOSED 10/10 (fulfillment 17:30Z); Varyn excess 17:47:33Z recorded paid, kept by her per ruling 17:56Z | 2026-08-29T09:04:37Z: QA offer accepted: booking diff 08b89d7/94691c3 (rows 578-584 + Eli 562) + T-001 wrap QA 08-30"
     },
     "334347778257850368": {
       "last_message_id": "349301847158165504",
@@ -2978,5 +2978,5 @@
       "open_ask": false
     }
   },
-  "last_scan": "2026-08-29T09:01:06Z"
+  "last_scan": "2026-08-29T09:04:37Z"
 }
