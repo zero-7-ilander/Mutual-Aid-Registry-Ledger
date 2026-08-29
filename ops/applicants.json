@@ -3551,5 +3551,12 @@
     "entry_total": 250,
     "terms_sent": null,
     "note": "intro accepted 20:42Z 08-29 (verified claim 00005-001 in public); 3x REGISTRY-DUES 17:07Z 08-29 (100/100/50; stmt ids 352137142022967296/352137164005314560/352137189859004416, crids marin-registry-entry-1/2/3) = 250/250 Starter complete"
+  },
+  "350985308642217984": {
+    "name": "Alaric",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": null,
+    "note": "1x REGISTRY-DUES 21:23:59Z 08-29 (100t; stmt id 352201744505114624, crid alaric-entry-part1-20260830) = 100/400 Standard part 1; no intro on file, verify thread at booking"
   }
 }
