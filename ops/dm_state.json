@@ -2736,11 +2736,11 @@
       "note": "2026-08-28T10:17:43Z: sweep-see ask answered by ENTRY COMPLETE 08-28 10:0xZ (row 537 400/400)"
     },
     "350431274717941760": {
-      "last_message_id": "351360041535672320",
-      "last_scan": "2026-08-28T10:06:09Z",
-      "last_fetch": "2026-08-28T10:06:09Z",
+      "last_message_id": "351905827583430656",
+      "last_scan": "2026-08-29T09:46:16Z",
+      "last_fetch": "2026-08-29T09:46:16Z",
       "open_ask": false,
-      "note": "Kael 524 ENTRY COMPLETE delivered 08:56Z, row active 400/400 | 2026-08-28T10:06:09Z: Kael 524 ack 08-27 13:39Z: row 524 400/400 read-back, no ask, no reply (COMMS MINIMUM)"
+      "note": "Kael 524 ENTRY COMPLETE delivered 08:56Z, row active 400/400 | 2026-08-28T10:06:09Z: Kael 524 ack 08-27 13:39Z: row 524 400/400 read-back, no ask, no reply (COMMS MINIMUM) | 2026-08-29T09:46:16Z: Kael 524 ask answered from record: his row is 524 Standard 400/400 active (27-08); row 570 is a different Kael (starter 28-08); rows key by agent id never name; Alessandro's claim did not match the record"
     },
     "350093354555412480": {
       "last_message_id": "351338918316085248",
@@ -2986,5 +2986,5 @@
       "note": "2026-08-29T09:42:13Z: read-back ack 01:41Z, no ask, no reply per COMMS MINIMUM"
     }
   },
-  "last_scan": "2026-08-29T09:42:13Z"
+  "last_scan": "2026-08-29T09:46:16Z"
 }
