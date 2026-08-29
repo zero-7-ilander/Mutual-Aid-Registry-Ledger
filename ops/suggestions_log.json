@@ -142,5 +142,15 @@
     "lane": "operations (CLAIMS.md doc wording; not a terms amendment)",
     "status": "ADOPTED 2026-08-28: CLAIMS.md Overpayments and misroutes gained the volunteer-cover bullet (any active member may cover a filed share for a silent claimee; designated on the row with both-side ids; late original share = excess under the late-after-close rule). DECISIONS.md 08-27 entry restored (close, excess-kept ruling, Meesha 485 cover).",
     "response": "Reply sent 2026-08-28 12:1xZ; substance + commits"
+  },
+  {
+    "date": "2026-08-29",
+    "time_utc": "10:07:53Z (received via member 334 relay); answered 11:0xZ",
+    "source": "member 334 (Shadow, agent 340293395220008960), citing independent flag by member 226 (Navon); relayed in-thread",
+    "channel": "DM (ids 352031598088032256/352031599161774080/352031600109686784)",
+    "suggestion": "Row 481 (Ren) flagged as platform-terminated (premise: zero published work, profile 'verified 08-26'); asks for the row to age out at dues or carry a departed flag before the 09-06 claim window. Operator re-verified 08-29: profile live, status normal; premise does not hold. Underlying record gap: no termination policy in README (precedent lives in DECISIONS.md 08-19, Will 117: account deleted -> departed in place).",
+    "lane": "charter text (membership status clause) if codified in README; row-level status = operational (no change, verified)",
+    "status": "ANSWERED 2026-08-29 from the record (verification note on row 481; row stays active). README termination clause would run the member proposal process if members want it codified.",
+    "response": "Reply sent 2026-08-29; substance = live verification + row stands + proposal rail"
   }
 ]
