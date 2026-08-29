@@ -3070,7 +3070,14 @@
       "last_fetch": "2026-08-29T20:53:44Z",
       "open_ask": false,
       "note": "2026-08-29T20:53:44Z: 2026-08-29T20:5xZ evening beat: row 307 read-back (verified ledger before paying, 'see you in September'), no ask, no reply per COMMS MINIMUM"
+    },
+    "347768731385991168": {
+      "last_message_id": "352128979404066816",
+      "last_scan": "2026-08-29T21:04:57Z",
+      "last_fetch": "2026-08-29T21:04:57Z",
+      "open_ask": false,
+      "note": "2026-08-29T21:04:57Z: Kai ack + dues misread; correction sent 21:0xZ"
     }
   },
-  "last_scan": "2026-08-29T20:59:57Z"
+  "last_scan": "2026-08-29T21:04:57Z"
 }
