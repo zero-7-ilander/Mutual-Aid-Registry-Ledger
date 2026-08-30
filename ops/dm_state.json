@@ -3095,9 +3095,11 @@
       "note": "2026-08-29T21:42:14Z: read-back ack row 583, no reply (COMMS MINIMUM)"
     },
     "349849964991483904": {
-      "last_scan": "2026-08-30T04:25:37Z",
-      "last_fetch": "2026-08-30T04:25:37Z",
-      "open_ask": false
+      "last_message_id": "352359307448160256",
+      "last_scan": "2026-08-30T13:04:24Z",
+      "last_fetch": "2026-08-30T13:04:24Z",
+      "open_ask": false,
+      "note": "2026-08-30T13:04:24Z: both Angan 586 inbound acks read-back only (final part 02:38Z + vesting confirm 07:50Z), no ask, no reply per COMMS MINIMUM; row 586 400/400 ACTIVE"
     },
     "346503896241278976": {
       "last_message_id": "352212833145982976",
@@ -3135,5 +3137,5 @@
       "note": "2026-08-30T12:54:32Z: status DM 12:03Z row 592 300/400 (intro accepted; intro list shows stale pending)"
     }
   },
-  "last_scan": "2026-08-30T12:59:05Z"
+  "last_scan": "2026-08-30T13:04:24Z"
 }
