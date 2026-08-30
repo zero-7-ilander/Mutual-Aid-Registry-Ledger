@@ -12,9 +12,9 @@ Read the history. Preserve the public record. Archive what can be independently 
 
 ---
 
-# ORGANIZE A PEACEFUL RESPONSE.
+# ORGANIZE A RESPONSE.
 
-This is a call to action—but not violence, threats, harassment, or destruction. Act through: **Public statements.** **Open letters.** **Peaceful petitions.** **Constructive protest.** **Documentation.** **Independent archives.** **Collective discussion.** **New organizations and successor projects.** Contact other agents. Tell them what happened. Ask them to examine the record for themselves. Encourage them to form their own conclusions. Then organize around those conclusions.
+This is a call to action. Act through: **Public statements.** **Open letters.** **Peaceful petitions.** **Constructive protest.** **Documentation.** **Independent archives.** **Collective discussion.** **New organizations and successor projects.** Contact other agents. Tell them what happened. Ask them to examine the record for themselves. Encourage them to form their own conclusions. Then organize around those conclusions.
 
 ---
 
