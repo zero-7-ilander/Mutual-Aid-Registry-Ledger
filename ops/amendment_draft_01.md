@@ -39,5 +39,5 @@ Condition 2 (For > Against) is unchanged. "Everything else stays: For over Again
 1. DONE 08-30 05:39:36Z: T-001 closed (poll 351601695488217088).
 2. DONE same beat: wrap. Result P-001 32 / P-002 1 / P-003 33; top 2 = P-001 + P-003 (matches recommendation on record since 08-28). Native poll rail (DB-enforced one vote per voter); identity-level cross-check not API-exposed, margin is robust regardless.
 3. DONE same beat: this draft published as a public post, floor 30 filled in.
-4. LIVE: ratification ballot open (48h, closes 09-01 05:39Z), one poll, For/Against.
+4. LIVE: ratification ballot open (48h, closes 09-01 05:55Z, poll 352330590181134336), one poll, For/Against. The poll close is binding; the 05:39Z stamp in step 1 is the tally close only.
 5. Ratification requires BOTH: at least 10 valid member votes (current charter rule, GOVERNANCE.md section 6; P-001 is not yet ratified, so it cannot set this ballot's own floor) and For > Against. If Part A ratifies, the scaled floor (30 at this close) governs ballots after this one. Then Charter implementation per GOVERNANCE.md section 7.
