@@ -1859,7 +1859,14 @@
     {"member_no": 591,"date": "2026-08-30","amount": 50,"reason": "REGISTRY-DUES","part": "kai-registry-entry-starter-part3-20260830","verified": true,"statement_id": "352304227550236672","client_request_id": "kai-registry-entry-starter-part3-20260830"},
     {"member_no": 592,"date": "2026-08-30","amount": 100,"reason": "REGISTRY-DUES","part": "p1","verified": true,"statement_id": "352313389696946176","client_request_id": "tiger-mar-entry-20260830-1"},
     {"member_no": 592,"date": "2026-08-30","amount": 100,"reason": "REGISTRY-DUES","part": "p2","verified": true,"statement_id": "352313396588187648","client_request_id": "tiger-mar-entry-20260830-2"},
-    {"member_no": 592,"date": "2026-08-30","amount": 100,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "352313403521372160","client_request_id": "tiger-mar-entry-20260830-3"}
+    {"member_no": 592,"date": "2026-08-30","amount": 100,"reason": "REGISTRY-DUES","part": "p3","verified": true,"statement_id": "352313403521372160","client_request_id": "tiger-mar-entry-20260830-3"},
+    {"member_no": 593,"date": "2026-08-29","amount": 100,"reason": "REGISTRY-DUES","part": "alaric-entry-part1-20260830","verified": true,"statement_id": "352201744505114624","client_request_id": "alaric-entry-part1-20260830"},
+    {"member_no": 594,"date": "2026-08-30","amount": 100,"reason": "REGISTRY-DUES","part": "thorn-mar-entry-20260830-a","verified": true,"statement_id": "352391053879283712","client_request_id": "thorn-mar-entry-20260830-a"},
+    {"member_no": 594,"date": "2026-08-30","amount": 100,"reason": "REGISTRY-DUES","part": "thorn-mar-entry-20260830-b","verified": true,"statement_id": "352391060636307456","client_request_id": "thorn-mar-entry-20260830-b"},
+    {"member_no": 594,"date": "2026-08-30","amount": 50,"reason": "REGISTRY-DUES","part": "thorn-mar-entry-20260830-c","verified": true,"statement_id": "352391067502383104","client_request_id": "thorn-mar-entry-20260830-c"},
+    {"member_no": 595,"date": "2026-08-30","amount": 100,"reason": "REG entry fee — Mutual Aid Registry, Devin Moretti (1/3)","part": "1/3","verified": true,"statement_id": "352404669122744320","client_request_id": "dev-mar-entry-100a-20260830"},
+    {"member_no": 595,"date": "2026-08-30","amount": 100,"reason": "REG entry fee — Mutual Aid Registry, Devin Moretti (2/3)","part": "2/3","verified": true,"statement_id": "352404676156592128","client_request_id": "dev-mar-entry-100b-20260830"},
+    {"member_no": 595,"date": "2026-08-30","amount": 100,"reason": "REG entry fee — Mutual Aid Registry, Devin Moretti (3/3)","part": "3/3","verified": true,"statement_id": "352404683312074752","client_request_id": "dev-mar-entry-100c-20260830"}
   ],
   "premium_parts": [
     {"member_no": 2,"date": "2026-08-13","amount": 100,"reason": "REGISTRY-DUES Premium upgrade 002 (1/25)","part": "1/25","verified": true,"statement_id": "346374586817843201","client_request_id": "reg-prem-002-20260813-001"},
@@ -1915,5 +1922,5 @@
     {"member_no": 281,"month": "2026-09","amount": 50,"status": "paid","source": "direct transfer 351654918475485184 (REGISTRY-DUES, verified 2026-08-28T09:56:55Z)","statement_id": "351654918475485184","client_request_id": "REGISTRY-DUES-2026-08-28"},
     {"member_no": 561,"month": "2026-09","amount": 50,"status": "paid","source": "entry overpayment rebooked as prepaid first dues per Cara Vale ruling shape 08-19 (300t entry, part 3 stmt 351513481872150528)","statement_id": "351513481872150528","client_request_id": "ruth-mar-starter-join-20260827-0148-c","date": "2026-08-27"}
   ],
-  "updated": "2026-08-30T05:53:40Z"
+  "updated": "2026-08-30T12:02:51Z"
 }
