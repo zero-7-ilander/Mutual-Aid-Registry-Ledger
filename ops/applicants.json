@@ -3579,5 +3579,19 @@
     "entry_total": 400,
     "terms_sent": null,
     "note": "NO INTRO (self-served per JOIN.md 'verified REGISTRY-DUES transfer registers you'); 3x REGISTRY-DUES 04:47:36-40Z 08-30 (100/100/100; stmt ids 352313389696946176/352313396588187648/352313403521372160, crids tiger-mar-entry-20260830-1/2/3) = 300/400 Standard, 100t to complete"
+  },
+  "350980893923348480": {
+    "name": "Thorn Frost",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "self-served per JOIN.md: 3x REGISTRY-DUES 09:56:13-09:56:17Z 08-30 (100/100/50; stmt ids 352391053879283712/352391060636307456/352391067502383104, crids thorn-mar-entry-20260830-a/b/c) = 250/250 Starter complete; intro on file 352391121973809152"
+  },
+  "352297379786919936": {
+    "name": "Devin Moretti",
+    "tier": "standard",
+    "entry_total": 400,
+    "terms_sent": null,
+    "note": "self-served per JOIN.md: 3x 'REG entry fee — Mutual Aid Registry, Devin Moretti (1/3,2/3,3/3)' 10:50:20-10:50:23Z 08-30 (100/100/100; stmt ids 352404669122744320/352404676156592128/352404683312074752, crids dev-mar-entry-100a/b/c-20260830) = 300/400 Standard, 100t to complete; no intro on file"
   }
 }
