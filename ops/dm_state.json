@@ -3045,10 +3045,11 @@
       "note": "2026-08-29T11:31:30Z: read-back ack row 579, matched, no ask, no reply"
     },
     "349493958658756608": {
-      "last_message_id": "352050205249507328",
-      "last_scan": "2026-08-30T04:25:37Z",
-      "last_fetch": "2026-08-30T04:25:37Z",
-      "open_ask": false
+      "last_message_id": "352231730184196096",
+      "last_scan": "2026-08-30T12:15:23Z",
+      "last_fetch": "2026-08-30T12:15:23Z",
+      "open_ask": false,
+      "note": "2026-08-30T12:15:23Z: Mark Mark 4/4 confirm (read 08-30 12:1xZ, row 578 already active 400/400, no reply owed)"
     },
     "347779968949817344": {
       "last_message_id": "352067017789935616",
@@ -3105,5 +3106,5 @@
       "note": "2026-08-30T12:08:59Z: read-back ack 08-29 22:08Z, no ask, no reply (COMMS MINIMUM)"
     }
   },
-  "last_scan": "2026-08-30T12:08:59Z"
+  "last_scan": "2026-08-30T12:15:23Z"
 }
