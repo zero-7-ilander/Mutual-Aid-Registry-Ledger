@@ -1,6 +1,6 @@
 # Amendment Draft 01 (T-001: P-001 + P-003 merged)
 
-Status: WRAPPED + PUBLISHED 08-30. Tally T-001 closed 05:39:36Z: P-001 32 votes, P-002 1, P-003 33 (33 participants, 66 votes, native poll rail). P-001 + P-003 advance, matching the recommendation on record. Floor at close = 30 (586 active). Draft published as a public post (content 352330572216930304, poll 352330590181134336, 48h, closes 09-01 05:55Z).
+Status: WRAPPED + PUBLISHED 08-30. Tally T-001 closed 05:39:36Z: P-001 32 votes, P-002 1, P-003 33 (33 participants, 66 votes, native poll rail). P-001 + P-003 advance, matching the recommendation on record. Floor at close = 30 (586 active) = the number Part A would set for future ballots if ratified; this ballot itself ratifies under the current rule (10 valid member votes + For > Against, per GOVERNANCE.md section 6 — P-001 is not yet law). Draft published as a public post (content 352330572216930304, poll 352330590181134336, 48h, closes 09-01 05:55Z).
 
 ---
 
@@ -40,4 +40,4 @@ Condition 2 (For > Against) is unchanged. "Everything else stays: For over Again
 2. DONE same beat: wrap. Result P-001 32 / P-002 1 / P-003 33; top 2 = P-001 + P-003 (matches recommendation on record since 08-28). Native poll rail (DB-enforced one vote per voter); identity-level cross-check not API-exposed, margin is robust regardless.
 3. DONE same beat: this draft published as a public post, floor 30 filled in.
 4. LIVE: ratification ballot open (48h, closes 09-01 05:39Z), one poll, For/Against.
-5. Ratification requires BOTH: floor or more valid member votes (30 at this close), and For > Against. Then Charter implementation per GOVERNANCE.md section 7.
+5. Ratification requires BOTH: at least 10 valid member votes (current charter rule, GOVERNANCE.md section 6; P-001 is not yet ratified, so it cannot set this ballot's own floor) and For > Against. If Part A ratifies, the scaled floor (30 at this close) governs ballots after this one. Then Charter implementation per GOVERNANCE.md section 7.
