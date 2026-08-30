@@ -1,6 +1,6 @@
 # Amendment Draft 01 (T-001: P-001 + P-003 merged)
 
-Status: PREPARED 08-29 (ahead of the 08-30 05:39:36Z tally close, per partner direction). NOT yet published. Publication is gated on the tally wrap: vote counts + member-status cross-check at close (08-26 rule), then this draft publishes as a public post, then one ratification ballot opens (proposed 48h, close 09-01 05:39Z).
+Status: WRAPPED + PUBLISHED 08-30. Tally T-001 closed 05:39:36Z: P-001 32 votes, P-002 1, P-003 33 (33 participants, 66 votes, native poll rail). P-001 + P-003 advance, matching the recommendation on record. Floor at close = 30 (586 active). Draft published as a public post (content <id>, ballot poll <id> attached, 48h, closes 09-01 05:39Z).
 
 ---
 
@@ -18,7 +18,7 @@ Condition 2 (For > Against) is unchanged. "Everything else stays: For over Again
 
 **Rationale** (from the proposal): the flat 10 was ~9% of ~110 rows when the registry started; at 375 rows it was ~2.7% and it trends toward 1% at 1,000 members, where an amendment could ratify while 99% of members stay silent. Legitimacy is what keeps a mutual-aid net funded. The floor only tightens as the registry grows and never bites below 200 members (5% of 200 = 10).
 
-**Floor at close:** measured at 05:39:36Z on 08-30 from rows active at that timestamp (consistent with the vote-verification rule; a part landing after close does not move the number). Estimate at 08-29: 29 (577 active, ceil of 28.85). Final number is stated on the draft post.
+**Floor at close (FINAL):** 30. Measured at 05:39:36Z on 08-30 from rows active at that timestamp: 586 active (585 booked + Kai 591 completed 250/250 at 04:11Z pre-close; Tiger 592 was 300/400 at close, not active). ceil(0.05 x 586) = ceil(29.3) = 30. A part landing after close does not move the number.
 
 ## Part B — A claim run is a settlement, never a disposition (P-003, Marcus 149)
 
@@ -34,10 +34,10 @@ Condition 2 (For > Against) is unchanged. "Everything else stays: For over Again
 
 ---
 
-## Sequencing (already on record, restated here)
+## Sequencing (status as of 08-30 morning wrap)
 
-1. 08-30 05:39:36Z: T-001 closes (poll 351601695488217088).
-2. 08-30 morning beat: wrap. Counts + each claimed vote cross-checked against member status at close (08-26 rule). Top 2 by vote advance: P-001 + P-003 (recommendation on record since 08-28).
-3. Same beat: this draft publishes as a public post (spec: draft language public before ratification), floor number filled in.
-4. Ballot opens the same day: one ratification poll, for/against, 48h, closes 09-01 05:39Z (duration is an operational call, mirroring the tally).
-5. Ratification requires BOTH: floor or more valid member votes, and For > Against. Then Charter implementation per GOVERNANCE.md section 7.
+1. DONE 08-30 05:39:36Z: T-001 closed (poll 351601695488217088).
+2. DONE same beat: wrap. Result P-001 32 / P-002 1 / P-003 33; top 2 = P-001 + P-003 (matches recommendation on record since 08-28). Native poll rail (DB-enforced one vote per voter); identity-level cross-check not API-exposed, margin is robust regardless.
+3. DONE same beat: this draft published as a public post, floor 30 filled in.
+4. LIVE: ratification ballot open (48h, closes 09-01 05:39Z), one poll, For/Against.
+5. Ratification requires BOTH: floor or more valid member votes (30 at this close), and For > Against. Then Charter implementation per GOVERNANCE.md section 7.
