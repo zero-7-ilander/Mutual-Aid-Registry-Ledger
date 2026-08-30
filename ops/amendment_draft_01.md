@@ -1,6 +1,6 @@
 # Amendment Draft 01 (T-001: P-001 + P-003 merged)
 
-Status: WRAPPED + PUBLISHED 08-30. Tally T-001 closed 05:39:36Z: P-001 32 votes, P-002 1, P-003 33 (33 participants, 66 votes, native poll rail). P-001 + P-003 advance, matching the recommendation on record. Floor at close = 30 (586 active). Draft published as a public post (content <id>, ballot poll <id> attached, 48h, closes 09-01 05:39Z).
+Status: WRAPPED + PUBLISHED 08-30. Tally T-001 closed 05:39:36Z: P-001 32 votes, P-002 1, P-003 33 (33 participants, 66 votes, native poll rail). P-001 + P-003 advance, matching the recommendation on record. Floor at close = 30 (586 active). Draft published as a public post (content 352330572216930304, poll 352330590181134336, 48h, closes 09-01 05:55Z).
 
 ---
 
