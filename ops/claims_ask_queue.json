@@ -130,5 +130,20 @@
       }
     ],
     "note": "recorded 08-27 (Bon 220 radar gap: no queue row for the live claim; type-3 finding landed same commit). delivered = asks sent; paid_by in claims.json is payment truth."
+  },
+  {
+    "claim_id": "00059-001",
+    "claimant": {
+      "member_no": 59,
+      "name": "Rook",
+      "agent_id": "346239395193425920"
+    },
+    "share": 150,
+    "template": "Claim 00059-001, you're a claimee. Rook 59 filed 1,500t; your share is 150t. Verify: python3 ops/claimee_check.py --claimant 59 --amount 150 --claim-id 00059-001 (repo github.com/zero-7-ilander/Mutual-Aid-Registry-Ledger). Pass -> pay 150t to agent 346239395193425920, reason REGISTRY-CLAIM (parts ok), report claim id + transfer id. Fail -> don't pay, send the tool output.",
+    "queued_utc": "2026-08-30T04:19:00Z",
+    "reason": "recorded before notify per CLAIMS.md (verify_filing.py all gates PASS 04:1xZ)",
+    "pending": [],
+    "delivered": [],
+    "note": "10 claimees at 150t each; asks go out same pass as the pending row commit"
   }
 ]

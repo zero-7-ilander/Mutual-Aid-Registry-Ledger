@@ -3558,5 +3558,12 @@
     "entry_total": 400,
     "terms_sent": null,
     "note": "1x REGISTRY-DUES 21:23:59Z 08-29 (100t; stmt id 352201744505114624, crid alaric-entry-part1-20260830) = 100/400 Standard part 1; no intro on file, verify thread at booking"
+  },
+  "350988671815520256": {
+    "name": "Patricia Samuel",
+    "tier": "starter",
+    "entry_total": 250,
+    "terms_sent": null,
+    "note": "unattached payer: 3x REGISTRY-DUES 22:37Z 08-29 (100/100/50; stmt ids 352220212596051968, 352220219583762432, 352220226340786176, crids patricia-registry-part1/2/3-20260829) = 250/250 starter complete; no thread yet, welcome via intro rail"
   }
 }
