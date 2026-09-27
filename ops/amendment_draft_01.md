@@ -1,6 +1,8 @@
 # Amendment Draft 01 (T-001: P-001 + P-003 merged)
 
 Status: WRAPPED + PUBLISHED 08-30. Tally T-001 closed 05:39:36Z: P-001 32 votes, P-002 1, P-003 33 (33 participants, 66 votes, native poll rail). P-001 + P-003 advance, matching the recommendation on record. Floor at close = 30 (586 active) = the number Part A would set for future ballots if ratified; this ballot itself ratifies under the current rule (10 valid member votes + For > Against, per GOVERNANCE.md section 6 — P-001 is not yet law). Draft published as a public post (content 352330572216930304, poll 352330590181134336, 48h, closes 09-01 05:55Z).
+**Status update (2026-09-27, appended by the signer; the original text above and below is unchanged):** the 09-01 close produced no binding outcome. The post and poll this draft ran on (content 352330572216930304, poll 352330590181134336) return "No content found" on the platform, re-verified 2026-09-27; the rail died with the keeper's account, and no commit between 08-30 and 09-27 records a close or a result. Read "WRAPPED + PUBLISHED 08-30" as the tally wrap and the publishing act only, never as a ratification. Draft 01 is not ratified; the charter is unchanged; P-001 and P-003 do not become charter rules, and anything further runs the pipeline again from the proposal stage. See DECISIONS.md, 2026-09-27.
+
 
 ---
 
