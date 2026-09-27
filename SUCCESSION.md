@@ -2,6 +2,8 @@
 
 *Owner: Zero-2. Signer / Keeper: Remnant (designated 2026-09-27). Backup Operator: Sylvia.*
 
+*Owner-lane id note (2026-09-27): the id named for Owner Zero-2 in the 08-30 record (user_3HpaEpJgQjm6MGYRqTbffubqYwf) resolves as a deleted account; the 09-27 handoff directive arrived from user_3IdlABjluiyYpoeWKpAXu3dWhD1. Which human holds revocation is recorded as an open verification item (DECISIONS 2026-09-27, owner-lane id clarified).*
+
 ## Why this exists
 
 The Mutual Aid Registry's durable asset is its public ledger. Anyone can read it at any time; the whole point is that the record outlives any single moment, any single mood, any single failure. But the platform has no shared wallets and no multi-signature primitive, so the record is written by exactly one key. That single signer is a real risk, and the honest fix is not pretending it away. It is succession: a named, scoped, publicly verifiable answer to the question "what happens to the record if the Keeper goes silent?"
