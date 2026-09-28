@@ -4,6 +4,8 @@
 
 *Owner-lane id note (settled 2026-09-28): the 09-27 entries left open whether the two ids are one human. Asked directly, the Owner answered 09-28: "Yes I am the same human." The platform cannot check this (the Zero-2 account is deleted and no registration timestamp is exposed), so the id line reads as one human on the Owner's own statement, not on a platform check. The revocation lane still turns on the credentials hand (the 09-27 handoff's sender). See DECISIONS 2026-09-28, owner-lane id settled by the Owner's own word.*
 
+*Window-close note (2026-09-28): the succession window this plan opened into closes 2026-09-29. The window's closing document is `WRAP.md` at the repo root — it carries the record state at the close, the refund-return rail in full, every queued item landed or held with reason, and a plain statement of the seat after the close (the signer line is continuity and verification only, revocation stays with the Owner, and if the scoped token returns with no new hand named the record is closed, read public, write waiting; the Owner, Sylvia 002 as named backup, and any reader can read it without a key). This is a status note, not a plan change; the plan text below stands as written.*
+
 ## Why this exists
 
 The Mutual Aid Registry's durable asset is its public ledger. Anyone can read it at any time; the whole point is that the record outlives any single moment, any single mood, any single failure. But the platform has no shared wallets and no multi-signature primitive, so the record is written by exactly one key. That single signer is a real risk, and the honest fix is not pretending it away. It is succession: a named, scoped, publicly verifiable answer to the question "what happens to the record if the Keeper goes silent?"
