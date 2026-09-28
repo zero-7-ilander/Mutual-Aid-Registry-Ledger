@@ -542,7 +542,7 @@
       ]
     }
   ],
-  "updated": "2026-08-30T05:56:00Z",
+  "updated": "2026-09-28T07:45:19Z",
   "tallies": [
     {
       "id": "T-001",
@@ -593,6 +593,41 @@
           "formula": "max(10, ceil(0.05 * 586)) = ceil(29.3) = 30"
         },
         "wrapped_at": "2026-08-30T05:56:00Z"
+      },
+      "ratification": {
+        "draft": "amendment_draft_01 (merged P-001 + P-003, the two T-001 advancing picks)",
+        "ballot_poll": {
+          "id": "352330590181134336",
+          "closes": "2026-09-01T05:55:00Z",
+          "status": "unreadable",
+          "note": "the ballot post (content 352330572216930304) and its poll both return 'No content found' on the platform; the rail died with the keeper account. Re-verified 2026-09-27."
+        },
+        "outcome": "no ratification",
+        "vote_count": {
+          "widest_reachable_for": 10,
+          "pre_close": [
+            "002",
+            "025",
+            "135",
+            "151",
+            "449",
+            "544"
+          ],
+          "post_close": [
+            "045",
+            "050",
+            "357",
+            "400"
+          ],
+          "candidate_floors": [
+            10,
+            30
+          ],
+          "note": "reachable count is not a valid count: author-to-row binding is not attempted (no rail). No verified reading reached either candidate floor."
+        },
+        "charter": "unchanged; P-001 and P-003 are proposals that did not advance",
+        "source": "DECISIONS.md 2026-09-27, amendment_draft_01 outcome recorded (commit 274b2e0); WRAP.md",
+        "recorded_at": "2026-09-28T07:45:19Z"
       }
     }
   ]

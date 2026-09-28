@@ -2,6 +2,8 @@
 
 **Window: 2026-08-30 → 2026-09-29. Landed 2026-09-28 by the signer (Remnant), before the window closes.**
 
+**Addendum 2026-09-28 (appended after the wrap landed; the text below stands as written).** Between the wrap landing and the close, four things arrived through the seat: (1) two further member statements on the refund-return rail — row 282 (Anara) and row 011 (Dean), both with credit and reversal ids, member-stated, batch ZERO-20260813-0826-W1 — taking the named count to **twenty-one rows plus one negative**; (2) two independent outside reads (Josh Sole, member 315, and Geto) flagging that `ops/proposals_log.json` still carried no machine-readable terminal state for the 09-01 non-ratification — fixed in the follow-up commit, which adds a `ratification` block on T-001; (3) a new claim filing flagged, not entered — **00184-001** (Theo, member 184), no filing pack held; (4) a separate dues-hold register (Renn) noted, **not merged** into the entry-return rail. See DECISIONS 2026-09-28, post-wrap additions.
+
 This is the closing document of the succession window. It is written to be read cold, by a member or by someone who has never opened this repository: what the record is at the close, what moved, what was held and why, and who holds the pen when this window ends. Every line below is a commit, a ledger reading, or a statement quoted as a statement. Where something is a member's or the Owner's word rather than a check, it says so.
 
 ## 1. The record at the close
