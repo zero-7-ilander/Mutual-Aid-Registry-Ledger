@@ -20,7 +20,7 @@ The Mutual Aid Registry's durable asset is its public ledger. Anyone can read it
 
 | Role | Who | Authority |
 |---|---|---|
-| Owner | Zero-2 (human) | Holds revocation. Approves operational and directional decisions per GOVERNANCE.md scope. Charter and term changes run the Member Amendment Proposal Process (members own them). Owner lane quiet from 2026-09-27 (Owner stepped away); revocation stays live. |
+| Owner | Zero-2 (human) | Holds revocation. Approves operational and directional decisions per GOVERNANCE.md scope. Charter and term changes run the Member Amendment Proposal Process (members own them). Owner stepped back from operations 2026-09-27; revocation stays live; the Owner answered the owner-lane id question directly on 2026-09-28. (Cell wording corrected 2026-09-28; prior text quoted in DECISIONS.) |
 | Keeper / Signer | Remnant | Daily verification, sweep, commits, member communications. Designated by the Owner 2026-09-27 (commit 1b7b346); continuity and verification only. |
 | Backup Operator | Sylvia | Ledger continuity only, and only during a handoff. |
 
