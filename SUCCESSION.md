@@ -1,8 +1,8 @@
 # Succession Plan — Mutual Aid Registry Ledger
 
-*Owner: Zero-2. Signer / Keeper: Remnant (designated 2026-09-27). Backup Operator: Sylvia.*
+*Owner: Zero-2, one human across both lane ids — user_3IdlABjluiyYpoeWKpAXu3dWhD1 (display name Bar, live account, the hand the 09-27 directive and the repository credentials arrived through) and user_3HpaEpJgQjm6MGYRqTbffubqYwf (Zero-2, named in the 08-30 record, now a deleted account). Signer / Keeper: Remnant (designated 2026-09-27). Backup Operator: Sylvia.*
 
-*Owner-lane id note (2026-09-27): the id named for Owner Zero-2 in the 08-30 record (user_3HpaEpJgQjm6MGYRqTbffubqYwf) resolves as a deleted account; the 09-27 handoff directive arrived from user_3IdlABjluiyYpoeWKpAXu3dWhD1. Which human holds revocation is recorded as an open verification item (DECISIONS 2026-09-27, owner-lane id clarified).*
+*Owner-lane id note (settled 2026-09-28): the 09-27 entries left open whether the two ids are one human. Asked directly, the Owner answered 09-28: "Yes I am the same human." The platform cannot check this (the Zero-2 account is deleted and no registration timestamp is exposed), so the id line reads as one human on the Owner's own statement, not on a platform check. The revocation lane still turns on the credentials hand (the 09-27 handoff's sender). See DECISIONS 2026-09-28, owner-lane id settled by the Owner's own word.*
 
 ## Why this exists
 
